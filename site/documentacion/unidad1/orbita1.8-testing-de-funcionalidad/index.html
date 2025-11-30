@@ -1,0 +1,1778 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://iesrafaelalberti.es/documentacion/unidad1/orbita1.8-testing-de-funcionalidad/">
+      
+      
+        <link rel="prev" href="../orbita1.7-componentes-reutilizables/">
+      
+      
+        <link rel="next" href="../../unidad2/intro/">
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>1.8 Testing - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8-testing-funcional-del-wireframe-principal" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.8 Testing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../proyectos/" class="md-tabs__link">
+          
+  
+  Proyectos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Índice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.1-disenar-para-que-funcione/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 UI/UX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.2-patrones-y-antipatrones/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 Patrones y Antipatrones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.3-arquitectura-de-la-informacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 Arquitectura de la información
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.4-wireframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 Wireframes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.5-prototipado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 Prototipado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.6-MVP-centrarse-en-lo-esencial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.6 MVP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita1.7-componentes-reutilizables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.7 Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.8 Testing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1.8 Testing
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#8-testing-funcional-del-wireframe-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Testing funcional del wireframe principal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Testing funcional del wireframe principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-el-testing-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el testing funcional?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-testear-wireframes-y-no-esperar-al-diseno-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué testear wireframes y no esperar al diseño final?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-estas-testeando-exactamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué estás testeando exactamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funciona-un-test-funcional-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo funciona un test funcional básico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-haces-con-lo-que-descubres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué haces con lo que descubres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-vas-a-aprender-aunque-duela-un-poco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lo que vas a aprender (aunque duela un poco)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximo-paso-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximo paso: la práctica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.1-percepcion-visual-y-gestalt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 Percepción visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.2-color/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 Color
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.3-iconos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 Iconos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.4-tipografia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 Tipografía
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.5-guia-de-estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 Guía de estilos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/orbita3.1-HTML5-semantico-la-base-de-todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/orbita3.2-css-moderno-arquitectura-y-organizacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 CSS3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyectos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secuencia de proyectos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#8-testing-funcional-del-wireframe-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Testing funcional del wireframe principal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Testing funcional del wireframe principal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-el-testing-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el testing funcional?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-testear-wireframes-y-no-esperar-al-diseno-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué testear wireframes y no esperar al diseño final?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-estas-testeando-exactamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué estás testeando exactamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-funciona-un-test-funcional-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo funciona un test funcional básico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-haces-con-lo-que-descubres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué haces con lo que descubres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-vas-a-aprender-aunque-duela-un-poco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lo que vas a aprender (aunque duela un poco)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximo-paso-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximo paso: la práctica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>1.8 Testing</h1>
+
+<h2 id="8-testing-funcional-del-wireframe-principal"><strong>8. Testing funcional del wireframe principal</strong></h2>
+<p>Has diseñado el user flow principal de tu MVP en wireframes navegables. Tienes pantallas conectadas, botones que llevan a sitios, formularios que avanzan al siguiente paso. En tu cabeza tiene todo el sentido del mundo. Pero hay un problema: <strong>tú no eres el usuario</strong>.</p>
+<p>Por eso necesitas testear. Y necesitas hacerlo ahora, mientras cambiar las cosas sigue siendo fácil y rápido.</p>
+<h3 id="que-es-el-testing-funcional"><strong>¿Qué es el testing funcional?</strong></h3>
+<p>El testing funcional no evalúa si tu diseño es más o menos bonito, como ya os he dicho varias veces en clase, eso vendrá después. Ahora lo que necesitas saber es si tu wireframe <strong>funciona</strong>: si el usuario entiende qué tiene que hacer, si encuentra lo que busca, si puede completar la tarea principal sin perderse.</p>
+<p>Es testing funcional porque te centras en la <strong>función</strong>, no en la forma. ¿El botón está donde el usuario espera? ¿El flujo tiene sentido? ¿Falta algún paso intermedio? ¿Sobran pantallas que solo generan fricción?</p>
+<p>La buena noticia es que este tipo de testing es barato y rápido. No necesitas un laboratorio ni herramientas caras. Con tres personas que no conozcan tu proyecto y 10 min por cada una, ya tienes información valiosísima.</p>
+<h3 id="por-que-testear-wireframes-y-no-esperar-al-diseno-final"><strong>¿Por qué testear wireframes y no esperar al diseño final?</strong></h3>
+<p>Porque <strong>arreglar un wireframe lleva 5 segundos</strong>. Mover un botón, añadir un paso intermedio, cambiar el orden de un menú... son cambios que haces en Figma sin esfuerzo. Pero si esperas a tener el diseño visual completo, o peor aún, a que esté programado, cada cambio multiplica su coste por diez o por cien.</p>
+<p>Testear ahora te permite detectar problemas estructurales antes de invertir tiempo en aspectos visuales o técnicos. Si descubres que tu flujo de registro confunde a todo el mundo, mejor saberlo ahora que después de haber diseñado cinco pantallas preciosas que hay que tirar.</p>
+<h3 id="que-estas-testeando-exactamente"><strong>Qué estás testeando exactamente</strong></h3>
+<p>No toda tu aplicación. No todas las pantallas. Solo <strong>el flujo principal</strong> del MVP que definiste en las fases anteriores. Ese flujo que resuelve el problema principal de tu usuario.</p>
+<p>Si diseñaste una app de gestión de gastos compartidos, el flujo principal podría ser "crear un nuevo gasto y dividirlo entre varias personas". Si es una app de recetas, quizás sea "buscar una receta, ver los ingredientes y guardarla en favoritos". Si es una herramienta de productividad, puede ser "crear una tarea nueva y asignarla a un proyecto".</p>
+<p>Ese flujo. Solo ese. El que, si no funciona bien, hace que toda tu aplicación pierda sentido.</p>
+<h3 id="como-funciona-un-test-funcional-basico"><strong>Cómo funciona un test funcional básico</strong></h3>
+<p>El proceso es simple pero requiere disciplina. La clave está en <strong>no ayudar al usuario</strong>. Tienes que morderte la lengua y observar en silencio, aunque veas que está a punto de hacer algo que sabes que no va a funcionar.</p>
+<p><strong>Preparación:</strong> Define una tarea concreta y realista que el usuario debe completar usando tu wireframe. Tiene que ser específica: no vale "explora la app", sino "registra que has gastado 25€ en una cena con dos amigos". Consigue tres personas que no conozcan tu proyecto en absoluto. Familiares, amigos de otras clases, compañeros de otros cursos. Lo importante es que no tengan ni idea de lo que has estado haciendo.</p>
+<p><strong>Durante el test:</strong> Le das el contexto mínimo necesario: "Esta es una app para gestionar gastos compartidos. Te voy a pedir que hagas una tarea, pero no te voy a explicar cómo. Piensa en voz alta mientras lo usas, dime qué ves, qué esperas, qué te confunde". Luego le das la tarea y te quedas callado.</p>
+<p>Observas. Anotas todo. Dónde hace clic. Cuánto tarda en encontrar el botón que necesita. Si duda entre dos opciones. Si dice "no sé dónde está esto" o "¿esto para qué sirve?". Si completa la tarea o se rinde a mitad. Todo importa.</p>
+<p>Al final, tres preguntas rápidas: ¿Qué fue lo más confuso? ¿Esperabas encontrar algo que no estaba? ¿Sobró algo?</p>
+<p><strong>Después del test:</strong> Repasas tus notas y buscas patrones. Si una persona se atasca en un sitio, puede ser casualidad. Si dos de tres personas se atascan en el mismo sitio, ahí hay un problema real que tienes que solucionar.</p>
+<h3 id="que-haces-con-lo-que-descubres"><strong>Qué haces con lo que descubres</strong></h3>
+<p>Los problemas que encuentres los clasificas por gravedad. Algunos son críticos: impiden completar la tarea. Si el botón de "Guardar" no existe o está tan escondido que nadie lo encuentra, eso es crítico. Otros son importantes: generan mucha fricción pero al final la gente lo consigue. Y otros son menores: pequeñas incomodidades que no bloquean nada.</p>
+<p>Empiezas arreglando los críticos. Modificas tu wireframe en Figma basándote en lo que has observado. No en lo que te han dicho que les gusta o no les gusta, sino en lo que les ha impedido avanzar. Si tres personas buscaron el botón de confirmación arriba a la derecha y tú lo tenías abajo, lo mueves. Si nadie entendió para qué servía una pantalla intermedia, la eliminas o la haces más clara.</p>
+<p>Tomas capturas antes y después. Documentas qué has cambiado y por qué. Justificas tus decisiones con evidencia: "Moví el botón aquí porque 2 de 3 usuarios lo buscaron en este sitio primero". Eso es diseño basado en datos, no en opiniones.</p>
+<h3 id="lo-que-vas-a-aprender-aunque-duela-un-poco"><strong>Lo que vas a aprender (aunque duela un poco)</strong></h3>
+<p>El testing funcional es incómodo. Ver cómo alguien se atasca en algo que a ti te parece obvio duele. Escuchar "no entiendo esto" cuando has pasado horas diseñándolo es frustrante. Pero es <strong>la mejor forma de aprender</strong>.</p>
+<p>Vas a descubrir que los usuarios no piensan como tú. Que algo que a ti te parece clarísimo porque llevas semanas trabajando en ello, para alguien que lo ve por primera vez es confuso. Que los patrones mentales que tú das por sentados, otros no los comparten.</p>
+<p>Y eso es bueno. Porque te obliga a salir de tu burbuja y diseñar para la gente real, no para la gente que imaginas en tu cabeza. Te enseña a ser humilde con tu trabajo y a iterar constantemente. Te entrena en algo fundamental: <strong>separar tu ego del diseño</strong>. El diseño no es tuyo, es del usuario (aunque es nuestra resposabilidad el diseño que hacemos). Si no funciona para el usuario, no funciona.</p>
+<h3 id="proximo-paso-la-practica"><strong>Próximo paso: la práctica</strong></h3>
+<p>Ahora que entiendes qué es el testing funcional y por qué es importante, toca hacerlo de verdad. Vamos a organizar una dinámica de testing cruzado en clase donde cada uno va a testear el wireframe de otros compañeros y compañeras, dónde va a recibir feedback sobre el suyo.</p>
+<p>Vas a ver problemas que nunca habrías detectado solo. Vas a aprender tanto de los fallos de tu diseño como de los aciertos. Y sobre todo, vas a entender que diseñar bien no es acertar a la primera, sino <strong>iterar rápido basándote en lo que observas</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

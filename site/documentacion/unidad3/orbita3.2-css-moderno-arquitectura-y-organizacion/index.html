@@ -1,0 +1,2494 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://iesrafaelalberti.es/documentacion/unidad3/orbita3.2-css-moderno-arquitectura-y-organizacion/">
+      
+      
+        <link rel="prev" href="../orbita3.1-HTML5-semantico-la-base-de-todo/">
+      
+      
+        <link rel="next" href="../../../proyectos/">
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>3.2 CSS3 - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-css-moderno-arquitectura-y-organizacion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.2 CSS3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../proyectos/" class="md-tabs__link">
+          
+  
+  Proyectos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Índice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.1-disenar-para-que-funcione/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 UI/UX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.2-patrones-y-antipatrones/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 Patrones y Antipatrones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.3-arquitectura-de-la-informacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 Arquitectura de la información
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.4-wireframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 Wireframes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.5-prototipado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 Prototipado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.6-MVP-centrarse-en-lo-esencial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.6 MVP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.7-componentes-reutilizables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.7 Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.8-testing-de-funcionalidad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.8 Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.1-percepcion-visual-y-gestalt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 Percepción visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.2-color/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 Color
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.3-iconos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 Iconos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.4-tipografia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 Tipografía
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.5-guia-de-estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 Guía de estilos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Unidad 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Unidad 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita3.1-HTML5-semantico-la-base-de-todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3.2 CSS3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    3.2 CSS3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2-css-moderno-arquitectura-y-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. CSS moderno: Arquitectura y organización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. CSS moderno: Arquitectura y organización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-css-a-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      El problema de CSS a escala
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-pensando-en-capas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura: Pensando en capas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cascade-layers-haciendo-explicito-el-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cascade Layers: Haciendo explícito el orden
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-css-custom-properties-tu-sistema-de-diseno-en-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables CSS (Custom Properties): Tu sistema de diseño en código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope-css-que-sabe-donde-vive" class="md-nav__link">
+    <span class="md-ellipsis">
+      @scope: CSS que sabe dónde vive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-queries-componentes-que-se-adaptan-a-su-contenedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container Queries: Componentes que se adaptan a su contenedor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-selector-has-css-aprende-a-mirar-hacia-adelante" class="md-nav__link">
+    <span class="md-ellipsis">
+      El selector :has() — CSS aprende a mirar hacia adelante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sistemas-de-layout-grid-y-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sistemas de Layout: Grid y Flexbox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sistemas de Layout: Grid y Flexbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuando-usar-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuándo usar cada uno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexbox-los-patrones-que-mas-usaras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox: Los patrones que más usarás
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-pensando-en-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid: Pensando en áreas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgrid-alineacion-entre-generaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgrid: Alineación entre generaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-diseno-responsive-mas-alla-de-los-breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Diseño Responsive: Más allá de los breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Diseño Responsive: Más allá de los breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobile-first-por-que-y-como" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile-first: Por qué y cómo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unidades-fluidas-tipografia-que-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades fluidas: Tipografía que escala
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aspect-ratio-imagenes-que-no-saltan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspect Ratio: Imágenes que no saltan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scss-y-preprocesadores-organizacion-a-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. SCSS y Preprocesadores: Organización a escala
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCSS y Preprocesadores: Organización a escala">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#necesitas-scss-en-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Necesitas SCSS en 2024?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-archivos-escalable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura de archivos escalable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixins-utiles-para-proyectos-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixins útiles para proyectos reales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-para-sistemas-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funciones para sistemas de diseño
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyectos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secuencia de proyectos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/enunciado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enunciado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2-css-moderno-arquitectura-y-organizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. CSS moderno: Arquitectura y organización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. CSS moderno: Arquitectura y organización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-problema-de-css-a-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      El problema de CSS a escala
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-pensando-en-capas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura: Pensando en capas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cascade-layers-haciendo-explicito-el-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cascade Layers: Haciendo explícito el orden
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-css-custom-properties-tu-sistema-de-diseno-en-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables CSS (Custom Properties): Tu sistema de diseño en código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope-css-que-sabe-donde-vive" class="md-nav__link">
+    <span class="md-ellipsis">
+      @scope: CSS que sabe dónde vive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-queries-componentes-que-se-adaptan-a-su-contenedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container Queries: Componentes que se adaptan a su contenedor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-selector-has-css-aprende-a-mirar-hacia-adelante" class="md-nav__link">
+    <span class="md-ellipsis">
+      El selector :has() — CSS aprende a mirar hacia adelante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sistemas-de-layout-grid-y-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sistemas de Layout: Grid y Flexbox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sistemas de Layout: Grid y Flexbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuando-usar-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuándo usar cada uno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexbox-los-patrones-que-mas-usaras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox: Los patrones que más usarás
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-pensando-en-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid: Pensando en áreas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgrid-alineacion-entre-generaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgrid: Alineación entre generaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-diseno-responsive-mas-alla-de-los-breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Diseño Responsive: Más allá de los breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Diseño Responsive: Más allá de los breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobile-first-por-que-y-como" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile-first: Por qué y cómo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unidades-fluidas-tipografia-que-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades fluidas: Tipografía que escala
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aspect-ratio-imagenes-que-no-saltan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspect Ratio: Imágenes que no saltan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scss-y-preprocesadores-organizacion-a-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. SCSS y Preprocesadores: Organización a escala
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCSS y Preprocesadores: Organización a escala">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#necesitas-scss-en-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Necesitas SCSS en 2024?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-archivos-escalable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura de archivos escalable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixins-utiles-para-proyectos-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixins útiles para proyectos reales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-para-sistemas-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funciones para sistemas de diseño
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>3.2 CSS3</h1>
+
+<h2 id="2-css-moderno-arquitectura-y-organizacion">2. CSS moderno: Arquitectura y organización</h2>
+<h3 id="el-problema-de-css-a-escala">El problema de CSS a escala</h3>
+<p>CSS es fácil de empezar pero difícil de mantener. Sin estructura, acabas con:</p>
+<ul>
+<li>Estilos globales que se pisan entre sí</li>
+<li>Especificidad fuera de control</li>
+<li>Código duplicado por todas partes</li>
+<li>Miedo a cambiar algo porque "no sé qué más se romperá"</li>
+</ul>
+<p>La solución no es escribir más CSS, sino <strong>organizarlo mejor</strong>.</p>
+<h3 id="arquitectura-pensando-en-capas">Arquitectura: Pensando en capas</h3>
+<p>El CSS moderno nos da herramientas para organizar estilos en capas explícitas. Piensa en tu CSS como una cebolla con diferentes niveles de especificidad:</p>
+<p><strong>Capa 1: Reset/Normalize</strong><br />
+Neutraliza las diferencias entre navegadores y establece una base consistente.</p>
+<p><strong>Capa 2: Tokens de diseño</strong><br />
+Variables que definen tu sistema visual: colores, espaciado, tipografía, sombras.</p>
+<p><strong>Capa 3: Estilos base</strong><br />
+Estilos aplicados directamente a elementos HTML sin clases.</p>
+<p><strong>Capa 4: Layouts</strong><br />
+Estructuras de página reutilizables (grids, contenedores, regiones).</p>
+<p><strong>Capa 5: Componentes</strong><br />
+Bloques de interfaz independientes y reutilizables.</p>
+<p><strong>Capa 6: Utilidades</strong><br />
+Clases de propósito único para ajustes rápidos.</p>
+<p><strong>Capa 7: Overrides</strong><br />
+Estados especiales, temas, o excepciones controladas.</p>
+<h3 id="cascade-layers-haciendo-explicito-el-orden">Cascade Layers: Haciendo explícito el orden</h3>
+<p>CSS Cascade Layers (<code>@layer</code>) es una de las características más importantes añadidas a CSS en años. Te permite definir explícitamente el orden de prioridad de tus estilos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">/* Definimos el orden de las capas */</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">reset</span><span class="o">,</span><span class="w"> </span><span class="nt">tokens</span><span class="o">,</span><span class="w"> </span><span class="nt">base</span><span class="o">,</span><span class="w"> </span><span class="nt">layouts</span><span class="o">,</span><span class="w"> </span><span class="nt">components</span><span class="o">,</span><span class="w"> </span><span class="nt">utilities</span><span class="o">,</span><span class="w"> </span><span class="nt">overrides</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c">/* Cada capa tiene su archivo */</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">reset</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="o">*,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">tokens</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mf">0.6</span><span class="w"> </span><span class="mf">0.2</span><span class="w"> </span><span class="mi">250</span><span class="p">);</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nv">--spacing-sm</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nv">--spacing-md</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">components</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">  </span><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--spacing-sm</span><span class="p">)</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--spacing-md</span><span class="p">);</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="p">}</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">overrides</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">  </span><span class="p">.</span><span class="nc">button</span><span class="p">.</span><span class="nc">is-disabled</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="k">pointer-events</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Ventaja clave</strong>: Los estilos en capas superiores SIEMPRE ganan, sin importar la especificidad. Esto elimina gran parte de la guerra de <code>!important</code>.</p>
+<h3 id="variables-css-custom-properties-tu-sistema-de-diseno-en-codigo">Variables CSS (Custom Properties): Tu sistema de diseño en código</h3>
+<p>Las variables CSS son mucho más poderosas que las variables de preprocesadores porque:</p>
+<ol>
+<li><strong>Son reactivas</strong>: Puedes cambiarlas con JavaScript</li>
+<li><strong>Heredan</strong>: Puedes redefinirlas en contextos específicos</li>
+<li><strong>Se inspeccionan en DevTools</strong>: Ves los valores computados en tiempo real</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="c">/* Colores primitivos */</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nv">--color-blue-50</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mf">0.95</span><span class="w"> </span><span class="mf">0.02</span><span class="w"> </span><span class="mi">250</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nv">--color-blue-500</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mf">0.6</span><span class="w"> </span><span class="mf">0.2</span><span class="w"> </span><span class="mi">250</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nv">--color-blue-900</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mf">0.3</span><span class="w"> </span><span class="mf">0.15</span><span class="w"> </span><span class="mi">250</span><span class="p">);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="c">/* Tokens semánticos */</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-blue-</span><span class="mi">500</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nv">--color-surface</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-blue-</span><span class="mi">50</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="c">/* Espaciado con escala */</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="nv">--space-unit</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="nv">--space-1</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-unit</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="nv">--space-2</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-unit</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="nv">--space-3</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-unit</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c">/* Tema oscuro */</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-color-scheme</span><span class="o">:</span><span class="w"> </span><span class="nt">dark</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nv">--color-surface</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-blue-</span><span class="mi">900</span><span class="p">);</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-blue-</span><span class="mi">50</span><span class="p">);</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="p">}</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="c">/* Contexto específico */</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">  </span><span class="nv">--card-padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--card-padding</span><span class="p">);</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">}</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="p">.</span><span class="nc">card</span><span class="p">.</span><span class="nc">is-compact</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">  </span><span class="nv">--card-padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="scope-css-que-sabe-donde-vive">@scope: CSS que sabe dónde vive</h3>
+<p><code>@scope</code> te permite limitar el alcance de tus estilos a un contexto específico sin aumentar la especificidad:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">/* Sin @scope: colisiones globales */</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">.</span><span class="nc">modal</span><span class="w"> </span><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c">/* Con @scope: contexto explícito */</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">@</span><span class="k">scope</span><span class="w"> </span><span class="o">(</span><span class="p">.</span><span class="nc">card</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">@</span><span class="k">scope</span><span class="w"> </span><span class="o">(</span><span class="p">.</span><span class="nc">modal</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">}</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c">/* Límites de scope: afecta dentro de .card pero no dentro de .nested */</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="p">@</span><span class="k">scope</span><span class="w"> </span><span class="o">(</span><span class="p">.</span><span class="nc">card</span><span class="o">)</span><span class="w"> </span><span class="nt">to</span><span class="w"> </span><span class="o">(</span><span class="p">.</span><span class="nc">nested</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Caso de uso real</strong>: Componentes de Angular o React que necesitan estilos aislados sin usar CSS Modules o styled-components.</p>
+<h3 id="container-queries-componentes-que-se-adaptan-a-su-contenedor">Container Queries: Componentes que se adaptan a su contenedor</h3>
+<p>Durante años, hemos usado media queries que miran el tamaño de la ventana. Pero los componentes realmente necesitan saber <strong>su propio tamaño</strong>, no el tamaño de la pantalla.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c">/* Definir un contenedor */</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.</span><span class="nc">card-container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="k">container-type</span><span class="p">:</span><span class="w"> </span><span class="kc">inline</span><span class="o">-</span><span class="n">size</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="k">container-name</span><span class="p">:</span><span class="w"> </span><span class="n">card</span><span class="p">;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c">/* El componente se adapta a su contenedor */</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">@</span><span class="k">container</span><span class="w"> </span><span class="nt">card</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">400px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="p">.</span><span class="nc">card__image</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="k">aspect-ratio</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">}</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="p">@</span><span class="k">container</span><span class="w"> </span><span class="nt">card</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">600px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Por qué es revolucionario</strong>: Puedes reutilizar el mismo componente en una barra lateral estrecha y en el contenido principal, y se adaptará automáticamente sin saber dónde está.</p>
+<h3 id="el-selector-has-css-aprende-a-mirar-hacia-adelante">El selector :has() — CSS aprende a mirar hacia adelante</h3>
+<p><code>:has()</code> es básicamente un "selector padre" que CSS nunca tuvo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">/* Estilizar un formulario que contiene errores */</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">form</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="p">.</span><span class="nc">error</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c">/* Card con imagen */</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="nt">img</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">}</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c">/* Card sin imagen */</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="nt">img</span><span class="o">))</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c">/* Artículo seguido de otro artículo (no el primero) */</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nt">article</span><span class="p">:</span><span class="nd">has</span><span class="o">(+</span><span class="w"> </span><span class="nt">article</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">  </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">gray</span><span class="p">;</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">}</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="c">/* Lista con al menos 5 items */</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="nt">ul</span><span class="p">:</span><span class="nd">has</span><span class="o">(&gt;</span><span class="w"> </span><span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">5</span><span class="o">))</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">  </span><span class="k">columns</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Caso de uso real</strong>: Adaptar layouts según el contenido que realmente existe, sin JavaScript.</p>
+<h2 id="3-sistemas-de-layout-grid-y-flexbox">3. Sistemas de Layout: Grid y Flexbox</h2>
+<h3 id="cuando-usar-cada-uno">Cuándo usar cada uno</h3>
+<p><strong>Flexbox</strong>: Para layouts <strong>unidimensionales</strong> (fila O columna)
+- Barras de navegación
+- Botones con iconos
+- Centrado de elementos
+- Distribución de espacio entre items</p>
+<p><strong>Grid</strong>: Para layouts <strong>bidimensionales</strong> (filas Y columnas)
+- Layouts de página completos
+- Galerías de imágenes
+- Formularios complejos
+- Dashboards</p>
+<h3 id="flexbox-los-patrones-que-mas-usaras">Flexbox: Los patrones que más usarás</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c">/* Centrado perfecto */</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">.</span><span class="nc">center</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c">/* Distribución espaciada */</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">.</span><span class="nc">navbar</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-between</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">}</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c">/* Columnas de igual altura */</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="p">.</span><span class="nc">card-grid</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="p">}</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">  </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c">/* Todos crecen igual */</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="p">}</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="c">/* Botón con icono */</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="grid-pensando-en-areas">Grid: Pensando en áreas</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c">/* Layout de página clásico */</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">.</span><span class="nc">page</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="k">grid-template-areas</span><span class="p">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="s2">&quot;header header header&quot;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="s2">&quot;sidebar main aside&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="s2">&quot;footer footer footer&quot;</span><span class="p">;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">}</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">.</span><span class="nc">header</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">.</span><span class="nc">sidebar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">sidebar</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="p">.</span><span class="nc">main</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="p">.</span><span class="nc">aside</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">aside</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="p">.</span><span class="nc">footer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">footer</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="c">/* Galería responsive sin media queries */</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="p">.</span><span class="nc">gallery</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="nv">-fit</span><span class="p">,</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">250</span><span class="kt">px</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Patrón clave</strong>: <code>auto-fit</code> + <code>minmax()</code> = Grid responsivo sin breakpoints.</p>
+<h3 id="subgrid-alineacion-entre-generaciones">Subgrid: Alineación entre generaciones</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">.</span><span class="nc">card-list</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="n">subgrid</span><span class="p">;</span><span class="w"> </span><span class="c">/* Hereda las filas del padre */</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="k">grid-row</span><span class="p">:</span><span class="w"> </span><span class="n">span</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">}</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c">/* Ahora todos los títulos, contenidos y botones se alinean */</span>
+</code></pre></div>
+<h2 id="4-diseno-responsive-mas-alla-de-los-breakpoints">4. Diseño Responsive: Más allá de los breakpoints</h2>
+<h3 id="mobile-first-por-que-y-como">Mobile-first: Por qué y cómo</h3>
+<p>Empezar por móvil te obliga a priorizar. Si funciona en una pantalla pequeña, escalar hacia arriba es más fácil que lo contrario.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c">/* Base: móvil */</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">.</span><span class="nc">grid</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="p">}</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c">/* Tablet */</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">  </span><span class="p">.</span><span class="nc">grid</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="p">}</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="c">/* Desktop */</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">1024px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">  </span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">    </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="w">    </span><span class="k">margin-inline</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">  </span><span class="p">.</span><span class="nc">grid</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="unidades-fluidas-tipografia-que-escala">Unidades fluidas: Tipografía que escala</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="c">/* Escala entre 16px y 24px según el viewport */</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nv">--font-size-fluid</span><span class="p">:</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="mi">1</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mf">0.8</span><span class="kt">rem</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="kt">vw</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="p">);</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="mi">2</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="kt">vw</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="kt">rem</span><span class="p">);</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">}</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">  </span><span class="c">/* Padding fluido entre 1rem y 3rem */</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="k">padding-inline</span><span class="p">:</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="mi">1</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="kt">rem</span><span class="p">);</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Función clave</strong>: <code>clamp(mínimo, preferido, máximo)</code> — tu nueva mejor amiga.</p>
+<h3 id="aspect-ratio-imagenes-que-no-saltan">Aspect Ratio: Imágenes que no saltan</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">.</span><span class="nc">video-container</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="k">aspect-ratio</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">.</span><span class="nc">thumbnail</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span><span class="k">aspect-ratio</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">  </span><span class="k">object-fit</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">}</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="c">/* Fallback para navegadores antiguos */</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="p">@</span><span class="k">supports</span><span class="w"> </span><span class="nt">not</span><span class="w"> </span><span class="o">(</span><span class="nt">aspect-ratio</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">  </span><span class="p">.</span><span class="nc">thumbnail</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">    </span><span class="k">padding-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="c">/* Hack del padding */</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="5-scss-y-preprocesadores-organizacion-a-escala">5. SCSS y Preprocesadores: Organización a escala</h2>
+<h3 id="necesitas-scss-en-2024">¿Necesitas SCSS en 2024?</h3>
+<p>CSS nativo ha incorporado muchas características que antes requerían preprocesadores (variables, nesting). Sin embargo, SCSS sigue siendo valioso por:</p>
+<ul>
+<li><strong>Mixins</strong>: Reutilización de bloques de código</li>
+<li><strong>Funciones</strong>: Lógica en tiempo de compilación</li>
+<li><strong>Partials</strong>: Organización en archivos</li>
+<li><strong>Ecosistema</strong>: Herramientas maduras y bien documentadas</li>
+</ul>
+<h3 id="estructura-de-archivos-escalable">Estructura de archivos escalable</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>styles/
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>├── abstracts/
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>│   ├── _variables.scss
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>│   ├── _functions.scss
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>│   └── _mixins.scss
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>├── base/
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>│   ├── _reset.scss
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>│   └── _typography.scss
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>├── layouts/
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>│   ├── _grid.scss
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>│   └── _containers.scss
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>├── components/
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>│   ├── _buttons.scss
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>│   ├── _cards.scss
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>│   └── _forms.scss
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>├── utilities/
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>│   └── _helpers.scss
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>└── main.scss
+</code></pre></div>
+<h3 id="mixins-utiles-para-proyectos-reales">Mixins útiles para proyectos reales</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">// Responsive breakpoints</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">@mixin</span><span class="nf"> respond-to</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="k">@if</span><span class="w"> </span><span class="nv">$breakpoint</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">tablet</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="p">(</span><span class="no">min-width</span><span class="o">:</span><span class="w"> </span><span class="mi">768</span><span class="kt">px</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">@content</span><span class="o">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">@else</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="err">$</span><span class="nt">breakpoint</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nt">desktop</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="k">@media</span><span class="w"> </span><span class="p">(</span><span class="no">min-width</span><span class="o">:</span><span class="w"> </span><span class="mi">1024</span><span class="kt">px</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">@content</span><span class="o">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="p">}</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1">// Uso</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="nc">.card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">  </span><span class="nt">padding</span><span class="nd">:</span><span class="w"> </span><span class="nt">1rem</span><span class="o">;</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">  </span><span class="o">@</span><span class="nt">include</span><span class="w"> </span><span class="nt">respond-to</span><span class="o">(</span><span class="nt">tablet</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">    </span><span class="nt">padding</span><span class="nd">:</span><span class="w"> </span><span class="nt">2rem</span><span class="o">;</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="p">}</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="c1">// Truncate text</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="k">@mixin</span><span class="nf"> truncate</span><span class="p">(</span><span class="nv">$lines</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">  </span><span class="k">@if</span><span class="w"> </span><span class="nv">$lines</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">    </span><span class="nt">overflow</span><span class="nd">:</span><span class="w"> </span><span class="nt">hidden</span><span class="o">;</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">    </span><span class="nt">text-overflow</span><span class="nd">:</span><span class="w"> </span><span class="nt">ellipsis</span><span class="o">;</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">    </span><span class="nt">white-space</span><span class="nd">:</span><span class="w"> </span><span class="nt">nowrap</span><span class="o">;</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">@else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">    </span><span class="nt">display</span><span class="nd">:</span><span class="w"> </span><span class="nt">-webkit-box</span><span class="o">;</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="w">    </span><span class="nt">-webkit-line-clamp</span><span class="nd">:</span><span class="w"> </span><span class="err">$</span><span class="nt">lines</span><span class="o">;</span>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="w">    </span><span class="nt">-webkit-box-orient</span><span class="nd">:</span><span class="w"> </span><span class="nt">vertical</span><span class="o">;</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="w">    </span><span class="nt">overflow</span><span class="nd">:</span><span class="w"> </span><span class="nt">hidden</span><span class="o">;</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="p">}</span>
+<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>
+<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="c1">// Focus visible accesible</span>
+<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="k">@mixin</span><span class="nf"> focus-visible</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="w">  </span><span class="k">&amp;</span><span class="nd">:focus-visible</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="w">    </span><span class="nt">outline</span><span class="nd">:</span><span class="w"> </span><span class="nt">2px</span><span class="w"> </span><span class="nt">solid</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--color-primary</span><span class="o">);</span>
+<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="w">    </span><span class="nt">outline-offset</span><span class="nd">:</span><span class="w"> </span><span class="nt">2px</span><span class="o">;</span>
+<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="funciones-para-sistemas-de-diseno">Funciones para sistemas de diseño</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">// Escala de espaciado</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">@function</span><span class="w"> </span><span class="nt">spacing</span><span class="o">(</span><span class="err">$</span><span class="nt">multiplier</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="k">@return</span><span class="w"> </span><span class="nt">calc</span><span class="o">(</span><span class="nt">var</span><span class="o">(</span><span class="nt">--space-unit</span><span class="o">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">multiplier</span><span class="p">}</span><span class="o">);</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">}</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1">// Uso</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nc">.card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">  </span><span class="nt">padding</span><span class="nd">:</span><span class="w"> </span><span class="nt">spacing</span><span class="o">(</span><span class="nt">2</span><span class="o">);</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nt">1rem</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">  </span><span class="nt">margin-bottom</span><span class="nd">:</span><span class="w"> </span><span class="nt">spacing</span><span class="o">(</span><span class="nt">4</span><span class="o">);</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nt">2rem</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="p">}</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="c1">// Colores con transparencia</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="k">@function</span><span class="w"> </span><span class="nt">alpha</span><span class="o">(</span><span class="err">$</span><span class="nt">color</span><span class="o">,</span><span class="w"> </span><span class="err">$</span><span class="nt">opacity</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">  </span><span class="k">@return</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="err">$</span><span class="nt">color</span><span class="o">,</span><span class="w"> </span><span class="err">$</span><span class="nt">opacity</span><span class="o">);</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="conclusion">Conclusión</h2>
+<p>La maquetación moderna no se trata de memorizar propiedades CSS, sino de:</p>
+<ol>
+<li><strong>Entender la plataforma web</strong>: HTML semántico, cascada, herencia</li>
+<li><strong>Pensar en sistemas</strong>: Tokens, componentes, arquitectura escalable</li>
+<li><strong>Usar las herramientas modernas</strong>: Grid, Flexbox, Container Queries, Layers</li>
+<li><strong>Optimizar para usuarios reales</strong>: Performance, accesibilidad, responsive</li>
+</ol>
+<p>El código que escribes hoy será leído (y maldecido o bendecido) por alguien mañana, posiblemente tú mismo. Escribe CSS como si fueras a volver a él en 6 meses sin recordar nada. Tu yo futuro te lo agradecerá.</p>
+<p>Ahora ve y construye interfaces que no solo se vean bien, sino que <strong>funcionen bien</strong>, <strong>se mantengan bien</strong>, y <strong>escalen bien</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
