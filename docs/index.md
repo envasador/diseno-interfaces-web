@@ -5,7 +5,7 @@ hide:
 
 # Bienvenido al Módulo de Diseño de Interfaces.
 
-Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.
+Aquí encontrarás el material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.
 
 Esta web está dividida en dos secciones principales:
 
