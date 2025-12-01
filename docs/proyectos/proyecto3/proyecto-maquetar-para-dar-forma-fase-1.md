@@ -18,7 +18,7 @@ Crea la carpeta `src/styles/00-settings/` y dentro el archivo `_variables.scss` 
 
 **Escala tipográfica:** Define las fuentes que usarás y los tamaños. La escala debe ser coherente (usa una escala modular, por ejemplo con ratio 1.25). Necesitas definir familias (font-primary para texto, font-secondary si usas otra para títulos), tamaños desde xs hasta 5xl, pesos (light, regular, medium, semibold, bold), y line-heights (tight para títulos, normal para párrafos, relaxed para textos largos).
 
-**Sistema de espaciado:** Crea una escala basada en 4px u 8px. Define spacing-1 (4px), spacing-2 (8px), spacing-3 (12px), spacing-4 (16px), spacing-5 (20px), y así hasta spacing-24 (96px). Esto te permite mantener consistencia en márgenes y paddings.
+**Sistema de espaciado:** Crea una escala basada en 4px u 8px. Define spacing-1 (0.25rem), spacing-2 (0.5rem), spacing-3 (0.75rem), spacing-4 (1rem), spacing-5 (1.25rem), y así hasta spacing-24 (6rem). Esto te permite mantener consistencia en márgenes y paddings.
 
 **Breakpoints genéricos:** Define los puntos de quiebre para responsive. Usa al menos: sm (640px para móvil grande), md (768px para tablet), lg (1024px para desktop), xl (1280px para desktop grande).
 
