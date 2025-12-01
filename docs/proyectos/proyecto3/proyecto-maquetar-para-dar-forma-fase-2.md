@@ -91,4 +91,4 @@ Esta sección debe incluir:
 - Un formulario completo estructurado
 - Estilos SCSS para todos los componentes siguiendo BEM
 - CSS Custom Properties básicas en `_css-variables.scss`
-- Sección 2 del `docs/DOCUMENTACION.md` completada
+- Sección 2 del `docs/design/DOCUMENTACION.md` completada

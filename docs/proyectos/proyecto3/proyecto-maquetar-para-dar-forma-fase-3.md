@@ -186,4 +186,4 @@ Esta sección debe incluir:
 - Componentes adicionales opcionales (según tiempo)
 - Archivo SCSS por cada componente siguiendo BEM
 - Style Guide funcional en `/style-guide`
-- Sección 3 del `docs/DOCUMENTACION.md` completada con capturas
+- Sección 3 del `docs/design/DOCUMENTACION.md` completada con capturas

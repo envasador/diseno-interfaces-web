@@ -54,7 +54,7 @@ En `04-layout/_grid.scss` crea un sistema de grid básico usando CSS Grid. Tambi
 
 ### ***7\. Documentación en DOCUMENTACION.md***
 
-Crea el archivo `docs/DOCUMENTACION.md` y escribe la **Sección 1: Arquitectura CSS y comunicación visual**.
+Crea el archivo `docs/design/DOCUMENTACION.md` y escribe la **Sección 1: Arquitectura CSS y comunicación visual**.
 
 Esta sección debe incluir:
 
@@ -90,4 +90,4 @@ Incluye capturas de pantalla de tu diseño de Figma señalando dónde aplicas ca
 * Reset CSS implementado
 * Estilos base de elementos HTML
 * Sistema de grid básico
-* Sección 1 del `docs/DOCUMENTACION.md` completada con capturas
+* Sección 1 del `docs/design/DOCUMENTACION.md` completada con capturas

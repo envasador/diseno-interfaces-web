@@ -44,6 +44,7 @@ Este proyecto trabaja sobre **RA1**, **RA2**, **RA3**, **RA4** y **RA5**:
 Los criterios de evaluación que aborda este proyecto son:
 
 * a) Se ha reconocido la importancia de la comunicación visual y sus principios básicos.
+* b) Se han analizado y seleccionado los colores y tipografías adecuados para su visualización en pantalla.
 * f) Se han creado y utilizado plantillas de diseño.
 
 **RA2: Crea interfaces web homogéneos definiendo y aplicando estilos.**
