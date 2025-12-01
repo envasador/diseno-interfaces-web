@@ -51,5 +51,6 @@ Los criterios específicos que trabajamos son:
 | **C5. Creación de plantillas y componentes** | Evalúa la creación de plantillas visuales o componentes reutilizables. | No existen plantillas o son inconsistentes. | Plantillas simples o incoherentes entre sí. | Plantillas funcionales y aplicadas correctamente. | Sistema de componentes coherente y reutilizable. | Sistema visual completo, modular y escalable, documentado como Design System. | RA1.f            |
 | **C6. Adecuación al usuario y objetivo** | Evalúa si el diseño visual se ajusta al propósito del producto y a su público objetivo. | No refleja el objetivo del producto ni las necesidades del usuario. | El diseño comunica parcialmente la identidad o el propósito. | Diseño adecuado al contexto general del producto. | Diseño coherente con el público objetivo y el propósito. | Diseño perfectamente alineado con las necesidades del usuario y la identidad del producto. | RA6.g            |
 
+---
 
 
