@@ -1,6 +1,7 @@
 # **FASE 3: COMPONENTES UI BÁSICOS**
 
-**Criterios:** RA2.g, RA2.e, RA2.f, RA1.f  
+**Criterios:** RA2.g, RA2.e, RA2.f, RA1.f
+
 **Entrega:** 18 de diciembre
 
 ## **OBJETIVOS DE LA FASE**
