@@ -50,7 +50,7 @@ En `03-elements/` define estilos base para elementos HTML sin clases:
 
 ### ***6\. Sistema de Grid***
 
-En `04-layout/_grid.scss` crea un sistema de grid básico usando CSS Grid. También puedes usar Flex y otros métodos de Layout.
+En `04-layout/_layout.scss` crea un sistema de grid básico usando CSS Grid. También puedes usar Flex y otros métodos de Layout.
 
 ### ***7\. Documentación en DOCUMENTACION.md***
 
