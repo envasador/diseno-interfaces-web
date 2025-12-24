@@ -33,6 +33,11 @@ Al final de este proyecto tendrás una aplicación Angular completamente funcion
 * [Fase 1: Fundamentos y arquitectura CSS.](proyecto-maquetar-para-dar-forma-fase-1.md)
 * [Fase 2: HTML semántico y estructura.](proyecto-maquetar-para-dar-forma-fase-2.md)
 * [Fase 3: Sistema de componentes visuales.](proyecto-maquetar-para-dar-forma-fase-3.md)
+* [Fase 4: Resposive design y layouts](proyecto-maquetar-para-dar-forma-fase-4.md)
+* [Fase 5: Multimedia optimizada](proyecto-maquetar-para-dar-forma-fase-5.md)
+* [Fase 6: Temas y modo oscuro](proyecto-maquetar-para-dar-forma-fase-6.md)
+* [Fase 7: Aplicación web completa](proyecto-maquetar-para-dar-forma-fase-7.md)
+
 
 
 ### **Resultados de Aprendizaje y Criterios de Evaluación**
