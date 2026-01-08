@@ -1,7 +1,7 @@
 # **FASE 6: TEMAS Y MODO OSCURO**
 
 **Criterios:** RA2.d, RA2.e  
-**Entrega:** Después de Navidad
+**Entrega:** 14 de enero
 
 ## **OBJETIVOS DE LA FASE**
 

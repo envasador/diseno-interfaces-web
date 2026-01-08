@@ -1,7 +1,7 @@
 # **FASE 7: APLICACIÓN COMPLETA Y DESPLIEGUE**
 
 **Criterios:** RA2.c, RA2.f, RA4.g  
-**Entrega:** Después de Navidad (1 semana después de Fase 6)
+**Entrega:** 14 de enero
 
 ## **OBJETIVOS DE LA FASE**
 
