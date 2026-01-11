@@ -78,21 +78,21 @@ nav:
       - 3.3 Arquitectura CSS: documentacion/unidad3/orbita3.3-arquitectura-CSS-con-frameworks.md
     - Unidad 4:
       - Introducción: documentacion/unidad4/intro.md
-      - 4.1 Imágenes: orbita4.1-imagenes.md
-      - 4.2 Audio: orbita4.2-audio.md
-      - 4.3 Video: orbita4.3-video.md
-      - 4.4 Documentacion y recursos: orbita4.4-documentacion-y-recursos.md
-      - 4.5 Elementos interactivos: orbita4.5-elementos-interactivos.md
+      - 4.1 Imágenes: documentacion/unidad4/orbita4.1-imagenes.md
+      - 4.2 Audio: documentacion/unidad4/orbita4.2-audio.md
+      - 4.3 Video: documentacion/unidad4/orbita4.3-video.md
+      - 4.4 Documentacion y recursos: documentacion/unidad4/orbita4.4-documentacion-y-recursos.md
+      - 4.5 Elementos interactivos: documentacion/unidad4/orbita4.5-elementos-interactivos.md
     - Unidad 5:
       - Introducción: documentacion/unidad5/intro.md
-      - 5.1 ¿Qué es la accesibilidad?: orbita5.1-que-es-la-accesibilidad.md
-      - 5.2 WCAG y POUR: orbita5.2-WCAG-POUR.md
-      - 5.3 Cómo gestionar la accesibilidad: orbita5.3-como-gestionar-la-accesibilidad.md
-      - 5.4 HML semántico: orbita5.4-HTML-semantico.md
-      - 5.5 Aria: orbita5.5-aria.md
-      - 5.6 Aspectos claves adicionales: orbita5.6-aspectos-claves-adicionales.md
-      - 5.7 Recursos y referencias: orbita5.7-recursos-y-referencias.md
-      - 5.8 Checklist: orbita5.8-checklist.md
+      - 5.1 ¿Qué es la accesibilidad?: documentacion/unidad5/orbita5.1-que-es-la-accesibilidad.md
+      - 5.2 WCAG y POUR: documentacion/unidad5/orbita5.2-WCAG-POUR.md
+      - 5.3 Cómo gestionar la accesibilidad: documentacion/unidad5/orbita5.3-como-gestionar-la-accesibilidad.md
+      - 5.4 HML semántico: documentacion/unidad5/orbita5.4-HTML-semantico.md
+      - 5.5 Aria: documentacion/unidad5/orbita5.5-aria.md
+      - 5.6 Aspectos claves adicionales: documentacion/unidad5/orbita5.6-aspectos-claves-adicionales.md
+      - 5.7 Recursos y referencias: documentacion/unidad5/orbita5.7-recursos-y-referencias.md
+      - 5.8 Checklist: documentacion/unidad5/orbita5.8-checklist.md
   
   - Proyectos:
     - proyectos/index.md
