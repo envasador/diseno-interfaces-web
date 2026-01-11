@@ -1,5 +1,4 @@
 # 5.1 ¿Qué es la accesibilidad web?
-
 ## 1. Introducción
 ### 1.1. Definición y alcance
 

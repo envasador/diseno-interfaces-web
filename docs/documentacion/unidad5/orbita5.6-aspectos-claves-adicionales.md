@@ -1,4 +1,6 @@
-## 6. Aspectos clave adicionales
+
+# 5.6 Aspectos claves adicionales
+## 6. Qué más tenemos que tener en cuenta.
 ### 6.1. Navegación por teclado
 
 **Principio:** Todo accesible con ratón debe ser accesible con teclado.

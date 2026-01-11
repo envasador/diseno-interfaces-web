@@ -1,8 +1,8 @@
-## 8. Checklist de accesibilidad
+# 8. Checklist de accesibilidad
 
 Antes de lanzar una aplicación debes tener en cuenta este checklist:
 
-### HTML y estructura
+## HTML y estructura
 
 * [ ] HTML válido (validador W3C)
 * [ ] Un solo `<h1>` por página
@@ -10,7 +10,7 @@ Antes de lanzar una aplicación debes tener en cuenta este checklist:
 * [ ] Landmarks usados (`<header>`, `<nav>`, `<main>`, `<footer>`)
 * [ ] `lang` en `<html>`
 
-### ARIA
+## ARIA
 
 * [ ] ARIA solo cuando HTML nativo no basta
 * [ ] Roles correctos y consistentes
@@ -18,7 +18,7 @@ Antes de lanzar una aplicación debes tener en cuenta este checklist:
 * [ ] Live regions para cambios importantes
 * [ ] Sin aria-hidden en elementos enfocables
 
-### Teclado
+## Teclado
 
 * [ ] Todo accesible con teclado
 * [ ] Orden de foco lógico
@@ -26,30 +26,30 @@ Antes de lanzar una aplicación debes tener en cuenta este checklist:
 * [ ] Modales atrapan foco y cierran con Escape
 * [ ] Sin trampas de teclado
 
-### Color y contraste
+## Color y contraste
 
 * [ ] Contraste ≥4.5:1 (texto normal)
 * [ ] Información no solo por color
 
-### Multimedia
+## Multimedia
 
 * [ ] Vídeos con subtítulos
 * [ ] Audio con transcripción
 * [ ] Imágenes con alt apropiado
 
-### Formularios
+## Formularios
 
 * [ ] Cada campo con `<label>`
 * [ ] Campos obligatorios indicados
 * [ ] Errores descriptivos
 
-### Testing
+## Testing
 
 * [ ] Lighthouse >90
 * [ ] Probado con teclado completo
 * [ ] Probado con lector de pantalla (básico)
 
-**Recursos clave para llevar:**
+## **Recursos clave para llevar:**
 
 * **Guía de referencia:** https://www.w3.org/WAI/WCAG21/quickref/
 * **Aprende con ejemplos:** https://accesible.es/

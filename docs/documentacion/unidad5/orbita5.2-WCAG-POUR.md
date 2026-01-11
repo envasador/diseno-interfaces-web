@@ -1,5 +1,5 @@
+# 5.2 WCAG y POUR
 ## 2. Principios fundamentales: WCAG y POUR
-
 ### 2.1. ¿Qué son las WCAG?
 
 Las **Web Content Accessibility Guidelines (WCAG)** son el estándar internacional de accesibilidad web, desarrollado por el **W3C** (World Wide Web Consortium), la organización que define los estándares web.

@@ -1,5 +1,5 @@
+# 5.4 HTML Semántico
 ## 4. HTML semántico: la base fundamental
-
 ### 4.1. Por qué HTML semántico es el 80% de la accesibilidad
 
 El HTML semántico usa etiquetas que describen el **significado** del contenido, no solo su apariencia. Esta semántica es la que leen los lectores de pantalla, los navegadores, los buscadores.

@@ -1,5 +1,5 @@
-## 5. ARIA: Accessible Rich Internet Applications
-
+# 5.5 ARIA
+## 5. Accessible Rich Internet Applications
 ### 5.1. ¿Qué es ARIA y cuándo usarla?
 
 **ARIA** es un conjunto de atributos HTML que añaden información semántica adicional para tecnologías de asistencia cuando el HTML nativo no es suficiente.

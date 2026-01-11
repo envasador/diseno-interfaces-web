@@ -1,5 +1,5 @@
-## 7. Recursos y referencias
-
+# 5.7 Recursos y referencias
+## 7. ¿Dónde busco?
 ### 7.1. Documentación oficial
 
 **WCAG 2.1 en español:**

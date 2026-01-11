@@ -1,5 +1,5 @@
+# 5.3 Cómo gestionar la accesibilidad en un proyecto.
 ## 3. Cómo gestionar la accesibilidad en un proyecto
-
 ### 3.1. Accesibilidad desde el diseño (no como parche)
 
 **El error común:**
