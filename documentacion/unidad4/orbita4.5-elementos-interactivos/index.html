@@ -1,0 +1,3655 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://iesrafaelalberti.es/documentacion/unidad4/orbita4.5-elementos-interactivos/">
+      
+      
+        <link rel="prev" href="../orbita4.4-documentacion-y-recursos/">
+      
+      
+        <link rel="next" href="../../unidad5/intro/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>4.5 Elementos interactivos - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#45-integrar-para-que-interactue" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4.5 Elementos interactivos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../proyectos/" class="md-tabs__link">
+          
+  
+  
+  Proyectos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.1-disenar-para-que-funcione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 UI/UX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.2-patrones-y-antipatrones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Patrones y Antipatrones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.3-arquitectura-de-la-informacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Arquitectura de la información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.4-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Wireframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.5-prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.6-MVP-centrarse-en-lo-esencial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.6 MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.7-componentes-reutilizables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.7 Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.8-testing-de-funcionalidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.8 Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.1-percepcion-visual-y-gestalt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Percepción visual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.2-color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Color
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.3-iconos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Iconos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.4-tipografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Tipografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.5-guia-de-estilo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.5 Guía de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/orbita3.1-HTML5-semantico-la-base-de-todo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/orbita3.2-css-moderno-arquitectura-y-organizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 CSS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/orbita3.3-arquitectura-CSS-con-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Arquitectura CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita4.1-imagenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Imágenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita4.2-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita4.3-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita4.4-documentacion-y-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Documentacion y recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.5 Elementos interactivos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.5 Elementos interactivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-son-los-elementos-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ¿Qué son los elementos interactivos?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ¿Qué son los elementos interactivos?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-de-documentos-a-aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. De documentos a aplicaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-diferencia-fundamental-estatico-vs-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Diferencia fundamental: estático vs interactivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-por-que-anadir-interactividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. ¿Por qué añadir interactividad?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tipos-de-elementos-interactivos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tipos de elementos interactivos comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tipos de elementos interactivos comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-navegacion-y-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Navegación y menús
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modales-y-dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Modales y diálogos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-acordeones-y-pestanas-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Acordeones y pestañas (tabs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-formularios-inteligentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Formularios inteligentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-tooltips-y-ayuda-contextual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Tooltips y ayuda contextual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-animaciones-y-efectos-visuales-modernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Animaciones y efectos visuales modernos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Animaciones y efectos visuales modernos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-animaciones-al-hacer-scroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Animaciones al hacer scroll
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-parallax-scrolling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Parallax scrolling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-hover-effects-efectos-al-pasar-el-cursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Hover effects (efectos al pasar el cursor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-cursor-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Cursor personalizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-transiciones-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Transiciones de página
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas-profesionales-para-interactividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Herramientas profesionales para interactividad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Herramientas profesionales para interactividad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-threejs-graficos-3d-en-el-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Three.js: Gráficos 3D en el navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-gsap-animaciones-profesionales-2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. GSAP: Animaciones profesionales 2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-otras-librerias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Otras librerías útiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cuando-usar-cada-herramienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cuándo usar cada herramienta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cuándo usar cada herramienta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-threejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Three.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-gsap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. GSAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-css-javascript-vanilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. CSS + JavaScript vanilla
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-inspiracion-y-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Inspiración y aprendizaje
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Inspiración y aprendizaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sitios-donde-inspirarte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Sitios donde inspirarte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-comunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Comunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-el-equilibrio-interactividad-con-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. El equilibrio: interactividad con propósito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. El equilibrio: interactividad con propósito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-menos-es-mas-a-veces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1. Menos es más (a veces)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-el-portfolio-paradox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2. El portfolio paradox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        **Conclusión **
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.1-que-es-la-accesibilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 ¿Qué es la accesibilidad?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.2-WCAG-POUR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 WCAG y POUR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.3-como-gestionar-la-accesibilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 Cómo gestionar la accesibilidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.4-HTML-semantico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.4 HML semántico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.5-aria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.5 Aria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.6-aspectos-claves-adicionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.6 Aspectos claves adicionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.7-recursos-y-referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.7 Recursos y referencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.8-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.8 Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyectos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Secuencia de proyectos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-son-los-elementos-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ¿Qué son los elementos interactivos?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ¿Qué son los elementos interactivos?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-de-documentos-a-aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. De documentos a aplicaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-diferencia-fundamental-estatico-vs-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Diferencia fundamental: estático vs interactivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-por-que-anadir-interactividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. ¿Por qué añadir interactividad?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tipos-de-elementos-interactivos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tipos de elementos interactivos comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tipos de elementos interactivos comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-navegacion-y-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Navegación y menús
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modales-y-dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. Modales y diálogos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-acordeones-y-pestanas-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Acordeones y pestañas (tabs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-formularios-inteligentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Formularios inteligentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-tooltips-y-ayuda-contextual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Tooltips y ayuda contextual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-animaciones-y-efectos-visuales-modernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Animaciones y efectos visuales modernos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Animaciones y efectos visuales modernos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-animaciones-al-hacer-scroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Animaciones al hacer scroll
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-parallax-scrolling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Parallax scrolling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-hover-effects-efectos-al-pasar-el-cursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Hover effects (efectos al pasar el cursor)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-cursor-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Cursor personalizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-transiciones-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Transiciones de página
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-herramientas-profesionales-para-interactividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Herramientas profesionales para interactividad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Herramientas profesionales para interactividad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-threejs-graficos-3d-en-el-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Three.js: Gráficos 3D en el navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-gsap-animaciones-profesionales-2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. GSAP: Animaciones profesionales 2D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-otras-librerias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Otras librerías útiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cuando-usar-cada-herramienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cuándo usar cada herramienta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cuándo usar cada herramienta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-threejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Three.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-gsap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. GSAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-css-javascript-vanilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. CSS + JavaScript vanilla
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-inspiracion-y-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Inspiración y aprendizaje
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Inspiración y aprendizaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sitios-donde-inspirarte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Sitios donde inspirarte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-comunidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Comunidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-el-equilibrio-interactividad-con-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. El equilibrio: interactividad con propósito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. El equilibrio: interactividad con propósito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-menos-es-mas-a-veces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1. Menos es más (a veces)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-el-portfolio-paradox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2. El portfolio paradox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        **Conclusión **
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="45-integrar-para-que-interactue">4.5: Integrar para que interactúe</h1>
+<h2 id="1-que-son-los-elementos-interactivos">1. ¿Qué son los elementos interactivos?</h2>
+<h3 id="11-de-documentos-a-aplicaciones">1.1. De documentos a aplicaciones</h3>
+<p>Durante décadas, la web fue principalmente un medio para <strong>leer</strong>: documentos estáticos con texto, imágenes y enlaces. Hacías click, cargaba otra página, repetías.</p>
+<p>Los <strong>elementos interactivos</strong> transforman esa experiencia pasiva en algo activo. Ya no solo lees: exploras, manipulas, juegas, descubres. La web deja de ser un libro digital y se convierte en una aplicación.</p>
+<p><strong>Un ejemplo concreto:</strong></p>
+<p>Imagina la página de producto de Apple para el iPhone. No es solo una imagen estática con texto descriptivo. Cuando haces scroll:
+- El iPhone aparece desde el lateral y rota mientras bajas
+- Las diferentes capas del dispositivo se separan mostrando el interior
+- Los colores cambian según la sección en la que estés
+- El texto aparece sincronizado con el movimiento del producto</p>
+<p>Esto no es un vídeo pregrabado. Es <strong>interactivo</strong>: responde a tu velocidad de scroll, puedes ir hacia atrás y adelante, se adapta al tamaño de tu pantalla. Tú controlas la experiencia.</p>
+<h3 id="12-diferencia-fundamental-estatico-vs-interactivo">1.2. Diferencia fundamental: estático vs interactivo</h3>
+<p><strong>Contenido estático:</strong>
+- Una foto de un producto que siempre se ve igual
+- Un párrafo que simplemente está ahí para leer
+- Un vídeo que reproduce linealmente de principio a fin</p>
+<p><strong>Contenido interactivo:</strong>
+- Una galería donde puedes deslizar entre fotos, hacer zoom, ver desde diferentes ángulos
+- Un formulario que valida en tiempo real ("Este email ya está registrado") sin recargar la página
+- Un gráfico donde puedes filtrar datos, cambiar rangos de fechas, y la visualización se actualiza al instante
+- Un modelo 3D que puedes rotar con el ratón o arrastrar con el dedo
+- Un menú que se expande cuando pasas el cursor por encima
+- Animaciones que solo se activan cuando llegas a esa parte de la página</p>
+<h3 id="13-por-que-anadir-interactividad">1.3. ¿Por qué añadir interactividad?</h3>
+<p><strong>Feedback inmediato:</strong>
+Cuando escribes mal tu email en un formulario, no necesitas enviarlo, esperar, y que la página te diga "error". La interactividad te avisa mientras escribes: "ese formato no es válido". Reduces frustración.</p>
+<p><strong>Exploración sin fricción:</strong>
+En vez de tener 20 páginas diferentes de producto mostrando cada color, tienes una sola página donde puedes cambiar el color haciendo click. La transición es instantánea, fluida. No pierdes contexto.</p>
+<p><strong>Experiencia memorable:</strong>
+Una web estática se olvida. Una web que responde a tus acciones de forma sorprendente o deliciosa se recuerda. La tienda de Stripe, la página de producto de Apple, los portfolios ganadores de Awwwards: todos usan interactividad para crear momentos "wow".</p>
+<p><strong>El equilibrio:</strong>
+No todo necesita moverse. Demasiada interactividad distrae, ralentiza, marea. Un artículo de blog probablemente no necesita que cada palabra flote al pasar el cursor. Pero una landing page de producto se beneficia de mostrar el producto desde todos los ángulos.</p>
+<h2 id="2-tipos-de-elementos-interactivos-comunes">2. Tipos de elementos interactivos comunes</h2>
+<h3 id="21-navegacion-y-menus">2.1. Navegación y menús</h3>
+<p><strong>El menú hamburguesa:</strong>
+Ese ícono de tres líneas en móvil que al tocarlo despliega el menú completo. Es interactivo porque:
+- Responde al toque/click
+- Anima la transición (no aparece de golpe, se desliza)
+- Cambia de estado: de ☰ a ✕
+- A veces incluye un overlay oscuro que aparece detrás</p>
+<p><strong>Menús dropdown:</strong>
+Pasas el cursor sobre "Productos" y aparece un submenú con todas las categorías. En móvil, haces tap y se expande. La interactividad te ahorra tener que ir a una página intermedia.</p>
+<p><strong>Breadcrumbs (migas de pan):</strong>
+Esas rutas que dicen "Inicio &gt; Productos &gt; Zapatillas &gt; Nike Air". Cada elemento es clickable, te permite volver atrás sin usar el botón del navegador.</p>
+<h3 id="22-modales-y-dialogos">2.2. Modales y diálogos</h3>
+<p>Un <strong>modal</strong> es esa ventana que aparece sobre el contenido actual. Ejemplos:
+- Click en "Ver tallas disponibles" → aparece modal con tabla de tallas
+- Click en una imagen pequeña → aparece modal con imagen grande (lightbox)
+- "¿Estás seguro de eliminar?" → modal de confirmación</p>
+<p>La interactividad:
+- Aparece con animación (fade in, slide down)
+- El fondo se oscurece (overlay)
+- Puedes cerrar presionando ESC o clickeando fuera
+- El foco del teclado queda atrapado dentro del modal (no puedes navegar fuera accidentalmente)</p>
+<h3 id="23-acordeones-y-pestanas-tabs">2.3. Acordeones y pestañas (tabs)</h3>
+<p><strong>Acordeones:</strong>
+Típico en FAQs. Una lista de preguntas, al hacer click en una se expande mostrando la respuesta. Click en otra, la anterior se colapsa. Ahorras espacio mostrando solo lo relevante.</p>
+<p><strong>Pestañas (tabs):</strong>
+En vez de tener tres páginas separadas para "Descripción", "Especificaciones", "Opiniones" de un producto, las tienes en pestañas. Click en una, cambia el contenido. No recarga la página, es instantáneo.</p>
+<h3 id="24-formularios-inteligentes">2.4. Formularios inteligentes</h3>
+<p><strong>Validación en tiempo real:</strong>
+Mientras escribes tu email, un pequeño ícono verde aparece si es válido, o rojo con mensaje de error si no. No esperas a enviar para saber que algo está mal.</p>
+<p><strong>Autocompletado:</strong>
+Empiezas a escribir tu ciudad y aparece un dropdown con sugerencias. Click en una y se rellena automáticamente.</p>
+<p><strong>Campos dependientes:</strong>
+Seleccionas "España" en país → el campo de provincia se actualiza con provincias españolas. Seleccionas "Portugal" → cambian las opciones. Todo sin recargar.</p>
+<p><strong>Mostrar/ocultar según contexto:</strong>
+Checkbox "Dirección de facturación es diferente" → aparecen campos adicionales solo si lo marcas.</p>
+<h3 id="25-tooltips-y-ayuda-contextual">2.5. Tooltips y ayuda contextual</h3>
+<p>Pasas el cursor sobre un ícono de interrogación → aparece un pequeño cuadro explicativo. Quitas el cursor → desaparece. Es información adicional que no ocupa espacio hasta que la necesitas.</p>
+<h2 id="3-animaciones-y-efectos-visuales-modernos">3. Animaciones y efectos visuales modernos</h2>
+<h3 id="31-animaciones-al-hacer-scroll">3.1. Animaciones al hacer scroll</h3>
+<p>Uno de los efectos más populares en webs modernas. Mientras bajas por la página:
+- Elementos aparecen desde abajo con fade (empiezan invisibles y opacos, terminan visibles)
+- Títulos se deslizan desde el lateral
+- Números cuentan desde 0 hasta el valor final ("Más de 10,000 clientes satisfechos" cuenta de 0 a 10,000)
+- Barras de progreso se llenan</p>
+<p><strong>Por qué funciona:</strong>
+Llama la atención del usuario hacia contenido nuevo. En vez de que todo esté ahí desde el inicio (abrumador), va apareciendo conforme avanzas (guiado, narrativo).</p>
+<h3 id="32-parallax-scrolling">3.2. Parallax scrolling</h3>
+<p>El efecto donde diferentes capas de la página se mueven a <strong>diferentes velocidades</strong> al hacer scroll. Crea sensación de profundidad.</p>
+<p>Ejemplo clásico:
+- Fondo (montañas lejanas): se mueve lento
+- Capa intermedia (árboles): se mueve normal
+- Primer plano (texto): se mueve rápido</p>
+<p>El cerebro interpreta esto como "las montañas están lejos, el texto está cerca". Efecto 3D con elementos 2D.</p>
+<p><strong>Dónde lo ves:</strong>
+Landing pages de videojuegos, sitios de storytelling (periodismo interactivo), portfolios creativos.</p>
+<p><strong>Precaución:</strong>
+Puede marear a algunas personas. Se debe poder desactivar (lo veremos en accesibilidad).</p>
+<h3 id="33-hover-effects-efectos-al-pasar-el-cursor">3.3. Hover effects (efectos al pasar el cursor)</h3>
+<p>Cuando pasas el cursor sobre un botón:
+- Cambia de color
+- Se eleva (sombra más pronunciada)
+- El texto cambia
+- Un ícono se anima</p>
+<p>Es <strong>feedback visual inmediato</strong> de que ese elemento es interactivo.</p>
+<p>En portfolios de diseño:
+- Pasas sobre una imagen de proyecto → se oscurece y aparece título + descripción
+- Pasas sobre un enlace → aparece una línea animada debajo
+- Pasas sobre el logo → rota o cambia de forma</p>
+<h3 id="34-cursor-personalizado">3.4. Cursor personalizado</h3>
+<p>En vez del cursor estándar del sistema, algunos sitios usan uno personalizado que:
+- Es un círculo que sigue el ratón
+- Se agranda al pasar sobre elementos clicables
+- Cambia de color según la sección de la página
+- Arrastra una "estela" detrás</p>
+<p><strong>Cuándo usarlo:</strong>
+Portfolios creativos, agencias de diseño, sitios experimentales. No lo uses en e-commerce o sitios corporativos (puede confundir).</p>
+<h3 id="35-transiciones-de-pagina">3.5. Transiciones de página</h3>
+<p>En vez del efecto tradicional (click → página blanca → carga nueva página), algunas webs usan:
+- Fade out de la página actual, fade in de la nueva
+- Wipe effect (la nueva página entra deslizándose)
+- Morphing: elementos de la página actual se transforman en los de la siguiente</p>
+<h2 id="4-herramientas-profesionales-para-interactividad">4. Herramientas profesionales para interactividad</h2>
+<h3 id="41-threejs-graficos-3d-en-el-navegador">4.1. Three.js: Gráficos 3D en el navegador</h3>
+<p><strong>¿Qué es?</strong>
+Three.js es una librería JavaScript que permite crear gráficos 3D directamente en el navegador. Es lo que Apple usa para mostrar sus productos en 3D, lo que permite a Nike crear configuradores de zapatillas personalizadas, y lo que hace posibles los portfolios creativos con mundos 3D navegables.</p>
+<p><strong>Para qué sirve:</strong>
+- Visualizar productos en 3D que el usuario puede rotar y explorar
+- Crear backgrounds animados con partículas o geometrías abstractas
+- Desarrollar experiencias inmersivas (recorridos virtuales, galerías 3D)
+- Sincronizar animaciones 3D con el scroll (como hace Apple)
+- Crear configuradores interactivos (cambiar colores, materiales, componentes de un producto)</p>
+<p><strong>Nivel de complejidad:</strong>
+Alto. Requiere conocimientos de matemáticas 3D, conceptos de iluminación, materiales, cámaras. La curva de aprendizaje es de semanas/meses. Solo lo usas cuando el proyecto realmente lo justifica.</p>
+<p><strong>Documentación y recursos:</strong>
+- Sitio oficial: https://threejs.org/
+- Ejemplos oficiales: https://threejs.org/examples/
+- Three.js Journey (curso completo): https://threejs-journey.com/</p>
+<h3 id="42-gsap-animaciones-profesionales-2d">4.2. GSAP: Animaciones profesionales 2D</h3>
+<p><strong>¿Qué es?</strong>
+GSAP (GreenSock Animation Platform) es la librería de animaciones JavaScript más usada en la industria. Apple, Google, Nike, Adobe la usan. Es extremadamente potente para animar cualquier cosa: elementos HTML, propiedades CSS, SVG, valores numéricos, lo que sea.</p>
+<p><strong>Para qué sirve:</strong>
+- Crear animaciones complejas sincronizadas con timing perfecto
+- Efectos de scroll sofisticados (ScrollTrigger plugin)
+- Transiciones suaves entre estados
+- Secuencias de animaciones orquestadas
+- Efectos de texto avanzados (revelar letra por letra, animaciones por palabra)
+- Control total: pausar, revertir, acelerar, saltar a cualquier punto de la animación</p>
+<p><strong>Ventaja sobre CSS:</strong>
+CSS animations son limitadas. GSAP ofrece control milimétrico, curvas de easing profesionales (bounce, elastic), y capacidad de animar absolutamente cualquier propiedad o valor numérico.</p>
+<p><strong>Nivel de complejidad:</strong>
+Medio. Más fácil que Three.js, pero requiere práctica para dominarlo. La documentación es excelente.</p>
+<p><strong>Documentación y recursos:</strong>
+- Sitio oficial: https://greensock.com/gsap/
+- Documentación completa: https://greensock.com/docs/
+- Showcase (inspírate): https://greensock.com/showcase/</p>
+<h3 id="43-otras-librerias-utiles">4.3. Otras librerías útiles</h3>
+<p><strong>Lottie:</strong>
+Reproduce animaciones creadas en After Effects directamente en la web. Los diseñadores crean la animación en After Effects, la exportan como JSON, y Lottie la reproduce en el navegador.
+- Sitio: https://airbnb.io/lottie/</p>
+<p><strong>Barba.js:</strong>
+Especializada en transiciones entre páginas. Hace que la navegación entre páginas sea fluida, sin el típico "flash" de recarga.
+- Sitio: https://barba.js.org/</p>
+<p><strong>Swiper:</strong>
+Ya lo vimos en órbitas anteriores. Carruseles y galerías táctiles profesionales.
+- Sitio: https://swiperjs.com/</p>
+<p><strong>Locomotive Scroll:</strong>
+Smooth scroll avanzado con efectos parallax integrados.
+- Sitio: https://locomotivemtl.github.io/locomotive-scroll/</p>
+<h2 id="5-cuando-usar-cada-herramienta">5. Cuándo usar cada herramienta</h2>
+<h3 id="51-threejs">5.1. Three.js</h3>
+<p><strong>Úsalo cuando:</strong>
+- El proyecto tiene presupuesto y tiempo suficiente
+- Necesitas mostrar productos en 3D manipulables
+- Quieres crear experiencias inmersivas o visualizaciones de datos 3D
+- El cliente valora la innovación y la diferenciación visual
+- La audiencia tiene dispositivos modernos (Three.js requiere GPU decente)</p>
+<p><strong>No lo uses si:</strong>
+- Es un proyecto simple o con presupuesto limitado
+- No tienes experiencia 3D y el deadline es ajustado
+- La audiencia es principalmente móvil con dispositivos antiguos
+- El valor no justifica la complejidad (a veces una buena foto funciona mejor)</p>
+<h3 id="52-gsap">5.2. GSAP</h3>
+<p><strong>Úsalo cuando:</strong>
+- El diseño incluye animaciones complejas o efectos de scroll sofisticados
+- Necesitas timing preciso y control total sobre las animaciones
+- Quieres crear experiencias fluidas y pulidas estilo Apple/Nike
+- El proyecto es profesional y la experiencia visual importa</p>
+<p><strong>NO lo uses si:</strong>
+- Las animaciones son muy simples (CSS animations pueden bastar)
+- Quieres minimizar dependencias de JavaScript
+- Es un proyecto de aprendizaje básico (empieza con CSS)</p>
+<h3 id="53-css-javascript-vanilla">5.3. CSS + JavaScript vanilla</h3>
+<p><strong>Úsalo cuando:</strong>
+- Las animaciones son simples (fade, slide, rotate básicos)
+- Quieres evitar dependencias externas
+- Performance es crítica y el sitio debe ser ultra ligero
+- Estás aprendiendo y quieres entender los fundamentos</p>
+<h2 id="6-inspiracion-y-aprendizaje">6. Inspiración y aprendizaje</h2>
+<h3 id="61-sitios-donde-inspirarte">6.1. Sitios donde inspirarte</h3>
+<p><strong>Awwwards:</strong>
+Los mejores sitios web del mundo, premiados por diseño, interactividad y experiencia. Filtra por "Developer Award" para ver sitios técnicamente impresionantes.
+- https://www.awwwards.com/</p>
+<p><strong>Codrops:</strong>
+Tutoriales y demos de efectos específicos. "Cómo hacer este efecto de cursor personalizado", "Cómo crear esta transición de página".
+- https://tympanus.net/codrops/</p>
+<p><strong>CodePen:</strong>
+Miles de ejemplos de la comunidad. Busca "three.js", "gsap", "scroll animation" y encuentra demos interactivos que puedes explorar y modificar.
+- https://codepen.io/</p>
+<h3 id="62-comunidades">6.2. Comunidades</h3>
+<p><strong>Discord de Three.js:</strong>
+Ayuda de la comunidad, compartir proyectos, resolver dudas técnicas.</p>
+<p><strong>Foros de GSAP:</strong>
+GreenSock tiene foros muy activos donde los desarrolladores (incluso el creador de GSAP) responden preguntas.</p>
+<p><strong>Twitter/X:</strong>
+Sigue hashtags #webgl #threejs #gsap #creativecoding. Desarrolladores creativos comparten sus trabajos en progreso, tutoriales, tips.</p>
+<h2 id="7-el-equilibrio-interactividad-con-proposito">7. El equilibrio: interactividad con propósito</h2>
+<h3 id="71-menos-es-mas-a-veces">7.1. Menos es más (a veces)</h3>
+<p>La tentación del desarrollador que aprende Three.js o GSAP es usarlo en todo. Resultado: sitios sobrecargados, lentos, mareantes.</p>
+<p><strong>Pregúntate siempre:</strong>
+- ¿Esta animación <strong>comunica</strong> algo o solo es decoración?
+- ¿Mejora la <strong>comprensión</strong> del contenido o distrae?
+- ¿El usuario lo va a <strong>valorar</strong> o solo pensará "qué lento carga esto"?</p>
+<p><strong>Buenos usos de interactividad:</strong>
+- Visualizar un producto 3D porque realmente ayuda a entenderlo (muebles en AR, dispositivos electrónicos)
+- Animar datos para contar una historia (periodismo de datos)
+- Guiar la atención mediante animaciones sutiles hacia CTAs importantes
+- Crear momentos memorables en páginas de marca/producto premium</p>
+<p><strong>Malos usos:</strong>
+- Animar cada elemento solo porque puedes
+- Parallax extremo que desorienta
+- Cursores personalizados en sitios corporativos serios
+- Animaciones de carga que tardan más que el contenido en cargar</p>
+<h3 id="72-el-portfolio-paradox">7.2. El portfolio paradox</h3>
+<p>Los portfolios creativos premiados en Awwwards están llenos de interactividad experimental extrema. <strong>Pero esos sitios son su propio producto</strong>: demuestran capacidades técnicas.</p>
+<p>Un e-commerce, un blog, un sitio corporativo, una web gubernamental: no necesitan ni deben tener ese nivel de interactividad. Necesitan claridad, rapidez, accesibilidad.</p>
+<p><strong>Usa la herramienta apropiada para el contexto.</strong></p>
+<h2 id="conclusion">**Conclusión **</h2>
+<p>Has comprendido qué son los elementos interactivos y por qué transforman la web de documentos a aplicaciones. Conoces los tipos comunes (menús, modales, formularios inteligentes, animaciones) y las herramientas profesionales (Three.js para 3D, GSAP para animaciones 2D avanzadas).</p>
+<p>Sabes dónde buscar inspiración, dónde aprender, y lo más importante: <strong>cuándo</strong> usar cada herramienta y cuándo no. La interactividad bien ejecutada comunica, guía, deleita. La interactividad mal ejecutada distrae, ralentiza, frustra.</p>
+<p>En la siguiente órbita veremos cómo garantizar que toda esta magia interactiva sea accesible para todas las personas, cumpliendo con estándares internacionales y mejores prácticas de inclusión.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

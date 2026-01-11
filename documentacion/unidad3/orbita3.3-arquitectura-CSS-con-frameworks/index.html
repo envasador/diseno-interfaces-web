@@ -1,0 +1,3456 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://iesrafaelalberti.es/documentacion/unidad3/orbita3.3-arquitectura-CSS-con-frameworks/">
+      
+      
+        <link rel="prev" href="../orbita3.2-css-moderno-arquitectura-y-organizacion/">
+      
+      
+        <link rel="next" href="../../unidad4/intro/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>3.3 Arquitectura CSS - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-arquitectura-css-en-aplicaciones-modernas-un-enfoque-practico" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.3 Arquitectura CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../proyectos/" class="md-tabs__link">
+          
+  
+  
+  Proyectos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Índice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.1-disenar-para-que-funcione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 UI/UX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.2-patrones-y-antipatrones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Patrones y Antipatrones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.3-arquitectura-de-la-informacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Arquitectura de la información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.4-wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Wireframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.5-prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.6-MVP-centrarse-en-lo-esencial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.6 MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.7-componentes-reutilizables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.7 Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/orbita1.8-testing-de-funcionalidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.8 Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.1-percepcion-visual-y-gestalt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Percepción visual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.2-color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Color
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.3-iconos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Iconos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.4-tipografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Tipografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad2/orbita2.5-guia-de-estilo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.5 Guía de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita3.1-HTML5-semantico-la-base-de-todo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbita3.2-css-moderno-arquitectura-y-organizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 CSS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Arquitectura CSS
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Arquitectura CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitectura-css-en-aplicaciones-modernas-un-enfoque-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Arquitectura CSS en aplicaciones modernas: un enfoque práctico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitectura CSS en aplicaciones modernas: un enfoque práctico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-metodologias-y-tipo-de-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Metodologías y tipo de DOM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estructura-del-enfoque-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Estructura del enfoque híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-selectores-especiales-en-enfoque-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Selectores especiales en enfoque híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cuando-usar-cada-capa-en-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cuándo usar cada capa en híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-estructura-de-archivos-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estructura de archivos híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ejemplo-de-componente-encapsulado-usando-variables-globales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ejemplo de componente encapsulado usando variables globales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Ejemplo de componente encapsulado usando variables globales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardcomponentts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        card.component.ts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardcomponentscss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        card.component.scss
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-comparativa-de-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Comparativa de rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-resumen-que-enfoque-elegir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Resumen: qué enfoque elegir
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-regla-practica-para-decidir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Regla práctica para decidir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/orbita4.1-imagenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Imágenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/orbita4.2-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/orbita4.3-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/orbita4.4-documentacion-y-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Documentacion y recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad4/orbita4.5-elementos-interactivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.5 Elementos interactivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.1-que-es-la-accesibilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 ¿Qué es la accesibilidad?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.2-WCAG-POUR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 WCAG y POUR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.3-como-gestionar-la-accesibilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 Cómo gestionar la accesibilidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.4-HTML-semantico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.4 HML semántico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.5-aria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.5 Aria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.6-aspectos-claves-adicionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.6 Aspectos claves adicionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.7-recursos-y-referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.7 Recursos y referencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad5/orbita5.8-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.8 Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyectos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Secuencia de proyectos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/proyecto-disenar-para-que-funcione-fase-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto2/proyecto-disenar-para-que-se-entienda-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enunciado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-arquitectura-css-en-aplicaciones-modernas-un-enfoque-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Arquitectura CSS en aplicaciones modernas: un enfoque práctico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arquitectura CSS en aplicaciones modernas: un enfoque práctico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-metodologias-y-tipo-de-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Metodologías y tipo de DOM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estructura-del-enfoque-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Estructura del enfoque híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-selectores-especiales-en-enfoque-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Selectores especiales en enfoque híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cuando-usar-cada-capa-en-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cuándo usar cada capa en híbrido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-estructura-de-archivos-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estructura de archivos híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ejemplo-de-componente-encapsulado-usando-variables-globales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ejemplo de componente encapsulado usando variables globales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Ejemplo de componente encapsulado usando variables globales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardcomponentts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        card.component.ts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardcomponentscss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        card.component.scss
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-comparativa-de-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Comparativa de rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-resumen-que-enfoque-elegir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Resumen: qué enfoque elegir
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-regla-practica-para-decidir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Regla práctica para decidir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>3.3 Arquitectura CSS</h1>
+
+<h2 id="3-arquitectura-css-en-aplicaciones-modernas-un-enfoque-practico">3. Arquitectura CSS en aplicaciones modernas: un enfoque práctico</h2>
+<p>Cuando desarrollamos interfaces web con frameworks como Angular, React o Vue, una de las decisiones más importantes es cómo organizar nuestros estilos. No existe una única respuesta correcta: cada proyecto, equipo y contexto requiere un enfoque diferente.</p>
+<p>Tradicionalmente, CSS ha sido global por naturaleza. Esto significa que cualquier estilo que escribamos puede afectar a cualquier parte de nuestra aplicación, lo cual genera problemas de mantenibilidad a medida que los proyectos crecen. Para resolver esto, la comunidad ha desarrollado dos tipos de soluciones que abordan el problema desde ángulos distintos.</p>
+<p>Por un lado, tenemos las <strong>metodologías de organización</strong> como BEM (Block Element Modifier) e ITCSS (Inverted Triangle CSS). Estas no modifican cómo funciona CSS, sino que establecen convenciones de nomenclatura y estructura que, si todo el equipo las sigue, evitan conflictos y mantienen la especificidad bajo control. Su ventaja es que funcionan en cualquier proyecto sin dependencias adicionales y permiten entender CSS en su forma más pura.</p>
+<p>Por otro lado, los frameworks modernos ofrecen <strong>mecanismos de encapsulación</strong> que aíslan los estilos de cada componente automáticamente. Angular ofrece tres modos de encapsulación (None, Emulated y ShadowDom), Vue tiene su atributo <code>scoped</code>, y React cuenta con soluciones como CSS Modules o Styled Components. Estas herramientas modifican el comportamiento del CSS para garantizar que los estilos de un componente no afecten a otros, lo cual facilita el trabajo en equipos grandes donde no todos conocen el código de los demás.</p>
+<p>Sin embargo, ninguno de estos enfoques es perfecto por sí solo. Las metodologías requieren disciplina y no ofrecen protección real contra errores. La encapsulación total puede generar duplicación de código y dificulta mantener una coherencia visual global.</p>
+<p>Es aquí donde surge el <strong>enfoque híbrido</strong>: combinar lo mejor de ambos mundos. La idea es utilizar ITCSS + BEM para los estilos que deben ser globales (variables, reset, tipografía, layouts, componentes de estructura) y reservar la encapsulación para los componentes de UI que tienen múltiples variantes o que desarrollan diferentes personas del equipo.</p>
+<p>La clave que hace posible esta combinación son las <strong>custom properties de CSS</strong> (variables CSS). A diferencia de las variables SASS, las custom properties existen en tiempo de ejecución y pueden atravesar cualquier tipo de encapsulación, incluido Shadow DOM. Esto nos permite definir nuestros tokens de diseño (colores, espaciados, tipografías) de forma global y utilizarlos dentro de componentes encapsulados sin ningún problema.</p>
+<p>Las siguientes tablas resumen las diferentes opciones disponibles, cuándo usar cada una y cómo combinarlas de forma efectiva. El objetivo no es memorizar todas las posibilidades, sino entender los principios subyacentes para poder tomar decisiones informadas en cada proyecto.</p>
+<h3 id="1-metodologias-y-tipo-de-dom">1. Metodologías y tipo de DOM</h3>
+<table>
+<thead>
+<tr>
+<th>Metodología</th>
+<th>Tipo de DOM</th>
+<th>Encapsulación</th>
+<th>Cómo funciona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITCSS + BEM</td>
+<td>Normal</td>
+<td>❌ No</td>
+<td>Los estilos son globales. El contexto se define mediante la nomenclatura de clases (<code>.bloque__elemento--modificador</code>). No hay aislamiento real, solo convención de nombres.</td>
+</tr>
+<tr>
+<td>Angular <code>ViewEncapsulation.None</code></td>
+<td>Normal</td>
+<td>❌ No</td>
+<td>Angular no añade ningún atributo. Los estilos son completamente globales, igual que CSS tradicional. Ideal para usar con ITCSS + BEM.</td>
+</tr>
+<tr>
+<td>Angular <code>ViewEncapsulation.Emulated</code></td>
+<td>Normal + atributos</td>
+<td>✅ Simulada</td>
+<td>Angular añade atributos únicos (<code>_ngcontent-xxx</code>) a los elementos y selectores. Los estilos parecen encapsulados pero siguen en el DOM global. Es el comportamiento por defecto.</td>
+</tr>
+<tr>
+<td>Angular <code>ViewEncapsulation.ShadowDom</code></td>
+<td>Shadow DOM</td>
+<td>✅ Nativa</td>
+<td>Usa Shadow DOM real del navegador. Los estilos están completamente aislados y no pueden filtrarse hacia fuera ni hacia dentro.</td>
+</tr>
+<tr>
+<td><strong>Híbrido: ITCSS + BEM + Emulated</strong></td>
+<td>Normal + atributos</td>
+<td>✅ Parcial</td>
+<td>Base global (variables, reset, elementos, objetos) con ITCSS. Componentes específicos encapsulados con Angular Emulated. Combina coherencia visual con aislamiento donde interesa.</td>
+</tr>
+<tr>
+<td><strong>Híbrido: ITCSS + BEM + ShadowDom</strong></td>
+<td>Normal + Shadow DOM</td>
+<td>✅ Parcial + Nativa</td>
+<td>Base global con ITCSS para tokens y layouts. Componentes complejos o reutilizables usan Shadow DOM real. Máximo rendimiento en aislamiento crítico.</td>
+</tr>
+<tr>
+<td>Web Components</td>
+<td>Shadow DOM</td>
+<td>✅ Nativa</td>
+<td>Estándar del navegador para componentes. Cada componente tiene su propio árbol DOM aislado con estilos que no afectan al resto de la página.</td>
+</tr>
+<tr>
+<td>React (CSS Modules)</td>
+<td>Normal</td>
+<td>✅ Por clase</td>
+<td>Las clases se hashean en tiempo de compilación (<code>.card</code> → <code>.card_abc123</code>). Evita colisiones sin modificar el DOM, solo los nombres de clase.</td>
+</tr>
+<tr>
+<td>React (Styled Components)</td>
+<td>Normal</td>
+<td>✅ Por clase</td>
+<td>Genera clases únicas dinámicamente en runtime. Los estilos se definen dentro de JavaScript usando template literals.</td>
+</tr>
+<tr>
+<td><strong>Híbrido React: ITCSS + CSS Modules</strong></td>
+<td>Normal</td>
+<td>✅ Parcial</td>
+<td>Base global con ITCSS (variables, reset, layouts). Componentes específicos usan CSS Modules para aislamiento. Mejor de ambos mundos.</td>
+</tr>
+<tr>
+<td>Vue (<code>scoped</code>)</td>
+<td>Normal + atributos</td>
+<td>✅ Simulada</td>
+<td>Vue añade atributos únicos (<code>data-v-xxx</code>) similar a Angular Emulated. Los estilos solo aplican a elementos con ese atributo.</td>
+</tr>
+<tr>
+<td><strong>Híbrido Vue: ITCSS + scoped</strong></td>
+<td>Normal + atributos</td>
+<td>✅ Parcial</td>
+<td>Base global con ITCSS importada en <code>main.js</code>. Componentes específicos usan <code>&lt;style scoped&gt;</code> para extensiones locales.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-estructura-del-enfoque-hibrido">2. Estructura del enfoque híbrido</h3>
+<table>
+<thead>
+<tr>
+<th>Capa ITCSS</th>
+<th>Ubicación</th>
+<th>Encapsulación</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Settings</td>
+<td><code>styles/settings/_variables.scss</code></td>
+<td>❌ Global</td>
+<td>Custom properties CSS accesibles desde cualquier lugar, incluso dentro de Shadow DOM.</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td><code>styles/tools/_mixins.scss</code></td>
+<td>❌ Global</td>
+<td>Mixins SCSS reutilizables. Se importan donde se necesiten con <code>@use</code>.</td>
+</tr>
+<tr>
+<td>Generic</td>
+<td><code>styles/generic/_reset.scss</code></td>
+<td>❌ Global</td>
+<td>Reset y normalize. Debe ser global para afectar a todo el documento.</td>
+</tr>
+<tr>
+<td>Elements</td>
+<td><code>styles/elements/_base.scss</code></td>
+<td>❌ Global</td>
+<td>Estilos base de elementos HTML (<code>body</code>, <code>a</code>, <code>h1</code>). Global por naturaleza.</td>
+</tr>
+<tr>
+<td>Objects</td>
+<td><code>styles/objects/_layouts.scss</code></td>
+<td>❌ Global</td>
+<td>Patrones estructurales (<code>.container</code>, <code>.grid</code>). Globales para reutilizar en cualquier página.</td>
+</tr>
+<tr>
+<td>Components (layout)</td>
+<td><code>styles/components/_header.scss</code></td>
+<td>❌ Global</td>
+<td>Componentes de layout únicos (header, footer). Globales porque solo existen una vez.</td>
+</tr>
+<tr>
+<td>Components (UI)</td>
+<td><code>component.scss</code> del componente</td>
+<td>✅ Encapsulada</td>
+<td>Componentes UI reutilizables (cards, modales, botones). Encapsulados para evitar conflictos.</td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><code>styles/utilities/_helpers.scss</code></td>
+<td>❌ Global</td>
+<td>Clases de utilidad (<code>.visually-hidden</code>, <code>.text-center</code>). Globales para usar en cualquier lugar.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-selectores-especiales-en-enfoque-hibrido">3. Selectores especiales en enfoque híbrido</h3>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>ITCSS + BEM (global)</th>
+<th>Híbrido (Emulated)</th>
+<th>Híbrido (ShadowDom)</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.clase</code></td>
+<td>✅ Uso principal</td>
+<td>✅ En capas globales</td>
+<td>✅ En capas globales</td>
+<td>Selector básico. Funciona en todos los contextos.</td>
+</tr>
+<tr>
+<td><code>var(--custom)</code></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Atraviesa Shadow DOM</td>
+<td>Custom properties. La clave del híbrido: variables globales accesibles dentro de componentes encapsulados.</td>
+</tr>
+<tr>
+<td><code>:scope</code></td>
+<td>❌ Innecesario</td>
+<td>⚠️ Limitado</td>
+<td>✅ En componentes Shadow</td>
+<td>Selecciona raíz del contexto. Útil solo en Shadow DOM real.</td>
+</tr>
+<tr>
+<td><code>:host</code></td>
+<td>❌ No aplica</td>
+<td>✅ En componentes encapsulados</td>
+<td>✅ En componentes Shadow</td>
+<td>Estiliza el elemento host desde dentro. Esencial para componentes encapsulados.</td>
+</tr>
+<tr>
+<td><code>:host-context()</code></td>
+<td>❌ No aplica</td>
+<td>✅ En componentes encapsulados</td>
+<td>✅ En componentes Shadow</td>
+<td>Aplica estilos según contexto ancestro. Útil para temas (<code>.dark-theme</code>).</td>
+</tr>
+<tr>
+<td><code>::slotted()</code></td>
+<td>❌ No aplica</td>
+<td>❌ No aplica</td>
+<td>✅ Solo en Shadow DOM</td>
+<td>Estiliza contenido proyectado. Solo funciona con Shadow DOM real.</td>
+</tr>
+<tr>
+<td><code>@use</code></td>
+<td>✅ Para importar mixins</td>
+<td>✅ En componentes que necesiten mixins</td>
+<td>✅ En componentes que necesiten mixins</td>
+<td>Importa mixins y variables SCSS en componentes encapsulados.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-cuando-usar-cada-capa-en-hibrido">4. Cuándo usar cada capa en híbrido</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de estilo</th>
+<th>¿Global o encapsulado?</th>
+<th>Razón</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variables CSS</td>
+<td>✅ Global</td>
+<td>Las custom properties atraviesan Shadow DOM. Defínelas una vez, úsalas en todas partes.</td>
+<td><code>--color-primary</code>, <code>--spacing-md</code></td>
+</tr>
+<tr>
+<td>Reset/Normalize</td>
+<td>✅ Global</td>
+<td>Debe aplicar a todo el documento base.</td>
+<td><code>*, *::before, *::after { box-sizing: border-box; }</code></td>
+</tr>
+<tr>
+<td>Tipografía base</td>
+<td>✅ Global</td>
+<td>Consistencia en todo el sitio.</td>
+<td><code>body { font-family: var(--font-family-base); }</code></td>
+</tr>
+<tr>
+<td>Layouts</td>
+<td>✅ Global</td>
+<td>Patrones reutilizables en cualquier página.</td>
+<td><code>.container</code>, <code>.grid</code>, <code>.flex</code></td>
+</tr>
+<tr>
+<td>Header/Footer</td>
+<td>✅ Global</td>
+<td>Solo existen una vez. No hay riesgo de colisión.</td>
+<td><code>.site-header</code>, <code>.site-footer</code></td>
+</tr>
+<tr>
+<td>Cards</td>
+<td>⚠️ Depende</td>
+<td>Si hay muchas variantes o equipos grandes → encapsulado. Si son pocas y controladas → global con BEM.</td>
+<td><code>.card</code>, <code>.card--blog</code>, <code>.card--product</code></td>
+</tr>
+<tr>
+<td>Modales/Diálogos</td>
+<td>✅ Encapsulado</td>
+<td>Componentes complejos que pueden entrar en conflicto. Mejor aislar.</td>
+<td>Estilos en <code>modal.component.scss</code></td>
+</tr>
+<tr>
+<td>Formularios complejos</td>
+<td>✅ Encapsulado</td>
+<td>Muchos estados y variantes. El aislamiento previene bugs.</td>
+<td>Estilos en <code>form.component.scss</code></td>
+</tr>
+<tr>
+<td>Botones simples</td>
+<td>✅ Global</td>
+<td>Reutilizables en toda la app. BEM maneja las variantes bien.</td>
+<td><code>.btn</code>, <code>.btn--primary</code>, <code>.btn--large</code></td>
+</tr>
+<tr>
+<td>Utilidades</td>
+<td>✅ Global</td>
+<td>Deben estar disponibles en cualquier lugar.</td>
+<td><code>.visually-hidden</code>, <code>.text-center</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-estructura-de-archivos-hibrida">5. Estructura de archivos híbrida</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>src/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── styles/                              # ITCSS Global
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── settings/
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   │   └── _variables.scss              # ✅ Global - Custom properties
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── tools/
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   │   └── _mixins.scss                 # ✅ Global - Se importa con @use
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   ├── generic/
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   │   └── _reset.scss                  # ✅ Global
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── elements/
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   │   └── _base.scss                   # ✅ Global
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── objects/
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   │   └── _layouts.scss                # ✅ Global
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│   ├── components/
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│   │   ├── _header.scss                 # ✅ Global - Layout único
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│   │   ├── _footer.scss                 # ✅ Global - Layout único
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   │   └── _buttons.scss                # ✅ Global - Simples y reutilizables
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   ├── utilities/
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   │   └── _helpers.scss                # ✅ Global
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│   └── main.scss                        # Punto de entrada
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>├── app/
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│   ├── layout/
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>│   │   ├── header/
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│   │   │   ├── header.component.ts      # ViewEncapsulation.None
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│   │   │   ├── header.component.html
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│   │   │   └── header.component.scss    # Vacío - estilos en global
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>│   │   └── footer/
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>│   │       └── ...                      # ViewEncapsulation.None
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>│   │
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>│   ├── components/
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>│   │   ├── card/
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>│   │   │   ├── card.component.ts        # ViewEncapsulation.Emulated (default)
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>│   │   │   ├── card.component.html
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>│   │   │   └── card.component.scss      # ✅ Encapsulado - Usa variables globales
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>│   │   └── modal/
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>│   │       ├── modal.component.ts       # ViewEncapsulation.Emulated
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>│   │       ├── modal.component.html
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>│   │       └── modal.component.scss     # ✅ Encapsulado
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>│   │
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>│   └── pages/
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>│       └── ...
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>│
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>└── styles.scss                          # @use &#39;styles/main&#39;
+</code></pre></div>
+<h3 id="6-ejemplo-de-componente-encapsulado-usando-variables-globales">6. Ejemplo de componente encapsulado usando variables globales</h3>
+<h4 id="cardcomponentts">card.component.ts</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">@Component</span><span class="p">({</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-card&#39;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./card.component.html&#39;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nx">styleUrls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;./card.component.scss&#39;</span><span class="p">]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="c1">// Encapsulation.Emulated por defecto</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">})</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">CardComponent</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="kd">@Input</span><span class="p">()</span><span class="w"> </span><span class="nx">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="cardcomponentscss">card.component.scss</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Usa variables globales definidas en ITCSS</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// Las custom properties atraviesan la encapsulación</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nd">:host</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">display</span><span class="nd">:</span><span class="w"> </span><span class="nt">block</span><span class="o">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nc">.card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nt">background-color</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--color-surface</span><span class="o">);</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">border-radius</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--radius</span><span class="o">);</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nt">box-shadow</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--shadow</span><span class="o">);</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="nt">overflow</span><span class="nd">:</span><span class="w"> </span><span class="nt">hidden</span><span class="o">;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="k">&amp;</span><span class="nt">__image</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nt">width</span><span class="nd">:</span><span class="w"> </span><span class="nt">100</span><span class="err">%</span><span class="o">;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="nt">aspect-ratio</span><span class="nd">:</span><span class="w"> </span><span class="nt">16</span><span class="o">/</span><span class="nt">9</span><span class="o">;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="nt">object-fit</span><span class="nd">:</span><span class="w"> </span><span class="nt">cover</span><span class="o">;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="k">&amp;</span><span class="nt">__body</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nt">padding</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--spacing-md</span><span class="o">);</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="k">&amp;</span><span class="nt">__title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="nt">font-size</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--font-size-lg</span><span class="o">);</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="nt">margin-bottom</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--spacing-sm</span><span class="o">);</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="p">}</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="c1">// Tema oscuro usando :host-context</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="nd">:host-context</span><span class="o">(</span><span class="nc">.dark-theme</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">  </span><span class="nc">.card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="nt">background-color</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--color-surface-dark</span><span class="o">);</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="7-comparativa-de-rendimiento">7. Comparativa de rendimiento</h3>
+<table>
+<thead>
+<tr>
+<th>Enfoque</th>
+<th>Tamaño CSS</th>
+<th>Repintado</th>
+<th>Especificidad</th>
+<th>Mantenibilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITCSS + BEM puro</td>
+<td>⭐ Menor</td>
+<td>⭐ Óptimo</td>
+<td>⭐ Controlada</td>
+<td>⚠️ Requiere disciplina</td>
+</tr>
+<tr>
+<td>Todo encapsulado</td>
+<td>⚠️ Mayor (duplicación)</td>
+<td>⚠️ Más cálculos</td>
+<td>✅ Aislada</td>
+<td>✅ Fácil por componente</td>
+</tr>
+<tr>
+<td><strong>Híbrido</strong></td>
+<td>✅ Equilibrado</td>
+<td>✅ Equilibrado</td>
+<td>✅ Controlada + aislada</td>
+<td>✅ Mejor de ambos mundos</td>
+</tr>
+<tr>
+<td>Shadow DOM puro</td>
+<td>⚠️ Mayor</td>
+<td>⭐ Óptimo (aislado)</td>
+<td>✅ Totalmente aislada</td>
+<td>⚠️ Más complejo</td>
+</tr>
+<tr>
+<td><strong>Híbrido con Shadow DOM</strong></td>
+<td>✅ Equilibrado</td>
+<td>⭐ Óptimo donde importa</td>
+<td>✅ Máximo control</td>
+<td>✅ Profesional</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-resumen-que-enfoque-elegir">8. Resumen: qué enfoque elegir</h3>
+<table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>Enfoque recomendado</th>
+<th>Configuración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proyecto educativo</td>
+<td>ITCSS + BEM puro</td>
+<td><code>ViewEncapsulation.None</code> en todo</td>
+</tr>
+<tr>
+<td>Proyecto pequeño, equipo disciplinado</td>
+<td>ITCSS + BEM puro</td>
+<td><code>ViewEncapsulation.None</code> en todo</td>
+</tr>
+<tr>
+<td>Proyecto mediano, varios desarrolladores</td>
+<td><strong>Híbrido con Emulated</strong></td>
+<td>Layout global + componentes UI encapsulados</td>
+</tr>
+<tr>
+<td>Proyecto grande, múltiples equipos</td>
+<td><strong>Híbrido con Emulated</strong></td>
+<td>ITCSS global + encapsulación por defecto</td>
+</tr>
+<tr>
+<td>Librería de componentes</td>
+<td><strong>Híbrido con Shadow DOM</strong></td>
+<td>Variables globales + Shadow DOM en componentes</td>
+</tr>
+<tr>
+<td>Microfrontends</td>
+<td>Shadow DOM puro</td>
+<td>Máximo aislamiento entre aplicaciones</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-regla-practica-para-decidir">9. Regla práctica para decidir</h3>
+<table>
+<thead>
+<tr>
+<th>Pregunta</th>
+<th>Si la respuesta es SÍ →</th>
+<th>Si la respuesta es NO →</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿El componente se usa solo una vez?</td>
+<td>Global con BEM</td>
+<td>Evaluar encapsulación</td>
+</tr>
+<tr>
+<td>¿El componente tiene muchas variantes?</td>
+<td>Encapsulado</td>
+<td>Global con modificadores BEM</td>
+</tr>
+<tr>
+<td>¿Varios desarrolladores tocan este componente?</td>
+<td>Encapsulado</td>
+<td>Global está bien</td>
+</tr>
+<tr>
+<td>¿Es un componente de layout (header, footer)?</td>
+<td>Global con BEM</td>
+<td>Evaluar según complejidad</td>
+</tr>
+<tr>
+<td>¿Necesita funcionar en cualquier contexto externo?</td>
+<td>Shadow DOM</td>
+<td>Emulated o global</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
