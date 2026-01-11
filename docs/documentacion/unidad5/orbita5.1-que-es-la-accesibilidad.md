@@ -15,11 +15,13 @@ No es solo "ayudar a personas con discapacidad". Es reconocer que todos somos di
 * Una persona con daltonismo no puede distinguir verde de rojo
 
 **Situaciones temporales:**
+
 * Tienes un brazo escayolado → solo puedes usar una mano
 * Tienes conjuntivitis → la luz brillante te molesta, necesitas alto contraste
 * Te operaron de cataratas → visión borrosa temporalmente
 
 **Situaciones contextuales:**
+
 * Estás en un tren ruidoso → necesitas subtítulos aunque no tengas sordera
 * Estás bajo el sol → la pantalla apenas se ve, necesitas alto contraste
 * Tienes conexión lenta → necesitas que el sitio funcione sin JavaScript pesado
@@ -44,6 +46,7 @@ El acceso a la información y servicios digitales es un **derecho humano**. La O
 Crear barreras digitales es discriminación. Si tu web no permite que una persona con ceguera compre un producto, la estás excluyendo del mercado.
 
 **Datos:**
+
 * Más del 15% de la población mundial tiene alguna discapacidad (OMS)
 * En España: ~4 millones de personas con discapacidad reconocida
 * Si tu web no es accesible, estás excluyendo a millones de potenciales usuarios
@@ -52,13 +55,9 @@ Crear barreras digitales es discriminación. Si tu web no permite que una person
 
 La accesibilidad no es solo lo correcto, es **buen negocio**:
 
-**Mercado más amplio:** Más personas pueden usar tus productos/servicios. En España, el sector de personas con discapacidad tiene un poder adquisitivo de miles de millones de euros anuales.
-
-**Mejor SEO:** Google prioriza sitios accesibles. HTML semántico, textos alternativos en imágenes, estructura clara: todo lo que mejora accesibilidad también mejora posicionamiento.
-
-**Menos costes de soporte:** Sitios claros, bien estructurados, con formularios que explican qué necesitas, generan menos consultas de soporte.
-
-**Mejor reputación de marca:** Las empresas inclusivas generan más confianza y lealtad. La Generación Z especialmente valora marcas con valores sociales.
-
-**Código de mayor calidad:** Las prácticas de accesibilidad coinciden con buenas prácticas de desarrollo: HTML semántico, separación contenido/presentación, progressive enhancement. Resulta en código más mantenible y robusto.
+* **Mercado más amplio:** Más personas pueden usar tus productos/servicios. En España, el sector de personas con discapacidad tiene un poder adquisitivo de miles de millones de euros anuales.
+* **Mejor SEO:** Google prioriza sitios accesibles. HTML semántico, textos alternativos en imágenes, estructura clara: todo lo que mejora accesibilidad también mejora posicionamiento.
+* **Menos costes de soporte:** Sitios claros, bien estructurados, con formularios que explican qué necesitas, generan menos consultas de soporte.
+* **Mejor reputación de marca:** Las empresas inclusivas generan más confianza y lealtad. La Generación Z especialmente valora marcas con valores sociales.
+* **Código de mayor calidad:** Las prácticas de accesibilidad coinciden con buenas prácticas de desarrollo: HTML semántico, separación contenido/presentación, progressive enhancement. Resulta en código más mantenible y robusto.
 

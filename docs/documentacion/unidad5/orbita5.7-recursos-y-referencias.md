@@ -21,14 +21,17 @@ Patrones de diseño oficiales para componentes complejos con ARIA.
 ### 7.2. Herramientas
 
 **Auditoría:**
+
 * Lighthouse (Chrome DevTools integrado)
 * axe DevTools: https://www.deque.com/axe/devtools/
 * WAVE: https://wave.webaim.org/
 
 **Contraste:**
+
 * WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
 
 **Lectores de pantalla:**
+
 * NVDA (Windows, gratis): https://www.nvaccess.org/
 * VoiceOver (macOS/iOS, integrado)
 * TalkBack (Android, integrado)
@@ -38,11 +41,13 @@ Patrones de diseño oficiales para componentes complejos con ARIA.
 Para implementaciones detalladas de menús, modales, carruseles, formularios complejos y otros componentes con código completo:
 
 **Accesible.es * Componentes y ejemplos:**
-https://accesible.es/componentes
-https://accesible.es/ejemplos
+
+* https://accesible.es/componentes
+* https://accesible.es/ejemplos
 
 **ARIA Authoring Practices * Patterns:**
-https://www.w3.org/WAI/ARIA/apg/patterns/
+
+* https://www.w3.org/WAI/ARIA/apg/patterns/
 
 Estos recursos muestran paso a paso la implementación completa de cada componente.
 

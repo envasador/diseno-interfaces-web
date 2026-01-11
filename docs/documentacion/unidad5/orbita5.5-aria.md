@@ -10,6 +10,7 @@
 El `<button>` nativo ya tiene todo lo necesario. Solo usas ARIA cuando HTML no puede expresar lo que necesitas.
 
 **ARIA es necesaria cuando:**
+
 1. Creas widgets personalizados que no existen en HTML (tabs, acordeones complejos, tooltips)
 2. Añades interactividad dinámica con JavaScript (contenido que cambia sin recargar)
 3. Necesitas comunicar estados que HTML no expresa (loading, expandido/colapsado, seleccionado)
@@ -18,6 +19,7 @@ El `<button>` nativo ya tiene todo lo necesario. Solo usas ARIA cuando HTML no p
 
 #### Roles
 Definen **qué tipo de elemento es**:
+
 * `role="navigation"` * Navegación
 * `role="tab"` * Pestaña
 * `role="dialog"` * Modal/diálogo
@@ -26,6 +28,7 @@ Definen **qué tipo de elemento es**:
 
 #### Propiedades
 Definen **características** que normalmente no cambian:
+
 * `aria-label` * Da nombre al elemento
 * `aria-labelledby` * Referencia a elemento que actúa como etiqueta
 * `aria-describedby` * Descripción adicional
@@ -34,6 +37,7 @@ Definen **características** que normalmente no cambian:
 
 #### Estados
 Definen el **estado actual** que puede cambiar:
+
 * `aria-expanded` * Expandido (true) o colapsado (false)
 * `aria-pressed` * Botón toggle presionado o no
 * `aria-selected` * Elemento seleccionado
@@ -46,16 +50,19 @@ Definen el **estado actual** que puede cambiar:
 #### Etiquetar elementos sin texto visible
 
 Botones con solo iconos necesitan nombre:
+
 * `aria-label="Cerrar modal"` en un botón con solo "×"
 * `aria-label="Buscar"` en botón con solo icono de lupa
 
 #### Comunicar estados dinámicos
 
 Cuando algo se expande/colapsa con JavaScript:
+
 * `aria-expanded="false"` → cambia a `"true"` cuando se abre
 * El lector anuncia: "colapsado" o "expandido"
 
 Botones toggle (modo oscuro, favorito):
+
 * `aria-pressed="false"` → cambia a `"true"` cuando se activa
 
 #### Anunciar cambios dinámicos (live regions)
@@ -63,20 +70,24 @@ Botones toggle (modo oscuro, favorito):
 Cuando contenido cambia con JavaScript sin recargar:
 
 **aria-live:**
+
 * `aria-live="polite"` * Anuncia cuando el lector termine de hablar (notificaciones, confirmaciones)
 * `aria-live="assertive"` * Anuncia inmediatamente interrumpiendo (errores críticos, alertas)
 
 **Roles equivalentes:**
+
 * `role="alert"` = `aria-live="assertive"` (urgente)
 * `role="status"` = `aria-live="polite"` (normal)
 
 Ejemplos:
+
 * "Producto añadido al carrito" → `role="status"`
 * "Error: sesión expirada" → `role="alert"`
 
 #### Ocultar contenido decorativo
 
 `aria-hidden="true"` oculta elementos de lectores de pantalla (pero siguen visibles):
+
 * Iconos decorativos cuando hay texto explicativo
 * Separadores visuales sin significado
 * Contenido duplicado

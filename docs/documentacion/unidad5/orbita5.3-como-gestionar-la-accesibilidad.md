@@ -12,6 +12,7 @@ La accesibilidad se integra **desde el inicio**, en cada fase:
 
 **Contraste de color:**
 Mientras eliges la paleta, verifica contraste. Herramientas:
+
 * Plugin de Figma "Contrast" o "Stark"
 * WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
 
@@ -55,22 +56,26 @@ HTML nativo es preferible. Solo usa ARIA cuando HTML no ofrece la semántica nec
 ### 3.2. El rol del equipo
 
 **Diseñador:**
+
 * Verifica contraste
 * Diseña estados de foco visibles
 * Documenta comportamientos interactivos (¿cómo se navega este menú con teclado?)
 
 **Desarrollador frontend:**
+
 * Implementa HTML semántico
 * Asegura navegación por teclado
 * Añade ARIA cuando corresponde
 * Prueba con lectores de pantalla
 
 **Creador de contenido:**
+
 * Escribe textos alternativos descriptivos
 * Crea estructura de encabezados lógica
 * Proporciona transcripciones para multimedia
 
 **QA (testing):**
+
 * Auditorías automáticas (Lighthouse, axe)
 * Testing manual con teclado
 * Testing con lectores de pantalla
@@ -82,14 +87,17 @@ HTML nativo es preferible. Solo usa ARIA cuando HTML no ofrece la semántica nec
 
 **Lighthouse (Chrome DevTools):**
 Integrado en Chrome. Audita accesibilidad, performance, SEO. Da puntuación y lista problemas concretos.
+
 * Abre DevTools → pestaña Lighthouse → Generate report
 
 **axe DevTools:**
 Extensión de navegador. Más detallada que Lighthouse. Explica cada problema y cómo solucionarlo.
+
 * Chrome/Firefox extension: https://www.deque.com/axe/devtools/
 
 **WAVE:**
 Herramienta visual que muestra directamente en la página dónde están los problemas de accesibilidad.
+
 * Web: https://wave.webaim.org/
 * Extensión de navegador disponible
 
@@ -99,6 +107,7 @@ Herramienta visual que muestra directamente en la página dónde están los prob
 
 **Navegación por teclado:**
 Desconecta el ratón. Usa solo teclado:
+
 * Tab: siguiente elemento interactivo
 * Shift+Tab: anterior
 * Enter: activar botón/enlace
@@ -112,6 +121,7 @@ Navegador → Zoom texto al 200%. ¿Todo sigue visible y funcional? ¿Aparecen s
 
 **Lectores de pantalla (básico):**
 Activa el lector de pantalla nativo:
+
 * Windows: NVDA (descargar gratis: https://www.nvaccess.org/)
 * macOS: VoiceOver (Cmd+F5)
 * iOS: VoiceOver en Settings → Accessibility
@@ -128,6 +138,7 @@ En proyectos profesionales, documenta:
 
 **Declaración de accesibilidad:**
 Página pública explicando:
+
 * Nivel de conformidad alcanzado (WCAG 2.1 AA)
 * Fecha de la última evaluación
 * Problemas conocidos y timeline de solución
@@ -135,12 +146,14 @@ Página pública explicando:
 
 **Guía de implementación interna:**
 Para el equipo:
+
 * Checklist de accesibilidad (qué verificar antes de cada release)
 * Ejemplos de código accesible (componentes reutilizables)
 * Procesos de testing
 
 **Informe de auditoría:**
 Después de cada auditoría:
+
 * Qué se probó
 * Problemas encontrados (priorizados por severidad)
 * Soluciones propuestas

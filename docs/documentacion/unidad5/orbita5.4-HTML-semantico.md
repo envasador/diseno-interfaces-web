@@ -5,6 +5,7 @@
 El HTML semántico usa etiquetas que describen el **significado** del contenido, no solo su apariencia. Esta semántica es la que leen los lectores de pantalla, los navegadores, los buscadores.
 
 **Beneficios:**
+
 * Lectores de pantalla pueden navegar eficientemente (saltar entre encabezados, ir directo a navegación, etc.)
 * Navegadores aplican comportamientos nativos correctos (botones son clicables con Enter, checkboxes con Espacio)
 * SEO mejorado (Google entiende la estructura)
@@ -30,6 +31,7 @@ Una persona con ceguera puede presionar una tecla y saltar entre landmarks: head
 Los encabezados (`<h1>` a `<h6>`) crean el índice del documento.
 
 **Reglas:**
+
 1. Un solo `<h1>` por página (título principal)
 2. No saltar niveles (después de `<h2>` viene `<h3>`, no `<h5>`)
 3. Reflejar jerarquía real del contenido
