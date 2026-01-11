@@ -65,6 +65,7 @@ Los criterios de evaluación que aborda este proyecto son:
 * e) Se han redefinido estilos.
 * f) Se han identificado las distintas propiedades de cada elemento.
 * g) Se han creado clases de estilos.
+* j) Se han analizado y utilizado preprocesadores de estilos para traducir estilos comunes a un código estándar y reconocible por los navegadores. 
 
 **RA3: Prepara archivos multimedia para la Web, analizando sus características y manejando herramientas específicas.**
 
@@ -74,6 +75,7 @@ Los criterios de evaluación que aborda este proyecto son:
 * c) Se han analizado las herramientas disponibles para generar contenido multimedia.
 * d) Se han empleado herramientas para el tratamiento digital de la imagen.
 * f) Se han realizado animaciones a partir de imágenes fijas.
+* g) Se ha aplicado la guía de estilo.
 
 **RA4: Integra contenido multimedia en documentos web valorando su aportación y seleccionando adecuadamente los elementos interactivos.**
 
