@@ -18,68 +18,68 @@ El `<button>` nativo ya tiene todo lo necesario. Solo usas ARIA cuando HTML no p
 
 #### Roles
 Definen **qué tipo de elemento es**:
-- `role="navigation"` - Navegación
-- `role="tab"` - Pestaña
-- `role="dialog"` - Modal/diálogo
-- `role="alert"` - Alerta importante
-- `role="button"` - Botón (solo si no usas `<button>`)
+* `role="navigation"` * Navegación
+* `role="tab"` * Pestaña
+* `role="dialog"` * Modal/diálogo
+* `role="alert"` * Alerta importante
+* `role="button"` * Botón (solo si no usas `<button>`)
 
 #### Propiedades
 Definen **características** que normalmente no cambian:
-- `aria-label` - Da nombre al elemento
-- `aria-labelledby` - Referencia a elemento que actúa como etiqueta
-- `aria-describedby` - Descripción adicional
-- `aria-required` - Campo obligatorio
-- `aria-controls` - Qué elemento controla
+* `aria-label` * Da nombre al elemento
+* `aria-labelledby` * Referencia a elemento que actúa como etiqueta
+* `aria-describedby` * Descripción adicional
+* `aria-required` * Campo obligatorio
+* `aria-controls` * Qué elemento controla
 
 #### Estados
 Definen el **estado actual** que puede cambiar:
-- `aria-expanded` - Expandido (true) o colapsado (false)
-- `aria-pressed` - Botón toggle presionado o no
-- `aria-selected` - Elemento seleccionado
-- `aria-hidden` - Oculto de lectores de pantalla
-- `aria-invalid` - Valor inválido
-- `aria-busy` - Cargando
+* `aria-expanded` * Expandido (true) o colapsado (false)
+* `aria-pressed` * Botón toggle presionado o no
+* `aria-selected` * Elemento seleccionado
+* `aria-hidden` * Oculto de lectores de pantalla
+* `aria-invalid` * Valor inválido
+* `aria-busy` * Cargando
 
 ### 5.3. Usos fundamentales de ARIA
 
 #### Etiquetar elementos sin texto visible
 
 Botones con solo iconos necesitan nombre:
-- `aria-label="Cerrar modal"` en un botón con solo "×"
-- `aria-label="Buscar"` en botón con solo icono de lupa
+* `aria-label="Cerrar modal"` en un botón con solo "×"
+* `aria-label="Buscar"` en botón con solo icono de lupa
 
 #### Comunicar estados dinámicos
 
 Cuando algo se expande/colapsa con JavaScript:
-- `aria-expanded="false"` → cambia a `"true"` cuando se abre
-- El lector anuncia: "colapsado" o "expandido"
+* `aria-expanded="false"` → cambia a `"true"` cuando se abre
+* El lector anuncia: "colapsado" o "expandido"
 
 Botones toggle (modo oscuro, favorito):
-- `aria-pressed="false"` → cambia a `"true"` cuando se activa
+* `aria-pressed="false"` → cambia a `"true"` cuando se activa
 
 #### Anunciar cambios dinámicos (live regions)
 
 Cuando contenido cambia con JavaScript sin recargar:
 
 **aria-live:**
-- `aria-live="polite"` - Anuncia cuando el lector termine de hablar (notificaciones, confirmaciones)
-- `aria-live="assertive"` - Anuncia inmediatamente interrumpiendo (errores críticos, alertas)
+* `aria-live="polite"` * Anuncia cuando el lector termine de hablar (notificaciones, confirmaciones)
+* `aria-live="assertive"` * Anuncia inmediatamente interrumpiendo (errores críticos, alertas)
 
 **Roles equivalentes:**
-- `role="alert"` = `aria-live="assertive"` (urgente)
-- `role="status"` = `aria-live="polite"` (normal)
+* `role="alert"` = `aria-live="assertive"` (urgente)
+* `role="status"` = `aria-live="polite"` (normal)
 
 Ejemplos:
-- "Producto añadido al carrito" → `role="status"`
-- "Error: sesión expirada" → `role="alert"`
+* "Producto añadido al carrito" → `role="status"`
+* "Error: sesión expirada" → `role="alert"`
 
 #### Ocultar contenido decorativo
 
 `aria-hidden="true"` oculta elementos de lectores de pantalla (pero siguen visibles):
-- Iconos decorativos cuando hay texto explicativo
-- Separadores visuales sin significado
-- Contenido duplicado
+* Iconos decorativos cuando hay texto explicativo
+* Separadores visuales sin significado
+* Contenido duplicado
 
 **Cuidado:** Nunca en elementos interactivos o con contenido importante.
 
@@ -89,7 +89,7 @@ Para componentes como **tabs, modales, menús desplegables, tooltips**, ARIA es 
 
 **Dónde aprender los patrones:**
 
-**Accesible.es - Componentes:**
+**Accesible.es * Componentes:**
 https://accesible.es/componentes
 Ejemplos en español de cómo implementar cada tipo de componente accesible.
 

@@ -5,22 +5,22 @@
 El HTML semántico usa etiquetas que describen el **significado** del contenido, no solo su apariencia. Esta semántica es la que leen los lectores de pantalla, los navegadores, los buscadores.
 
 **Beneficios:**
-- Lectores de pantalla pueden navegar eficientemente (saltar entre encabezados, ir directo a navegación, etc.)
-- Navegadores aplican comportamientos nativos correctos (botones son clicables con Enter, checkboxes con Espacio)
-- SEO mejorado (Google entiende la estructura)
-- Mantenibilidad del código
+* Lectores de pantalla pueden navegar eficientemente (saltar entre encabezados, ir directo a navegación, etc.)
+* Navegadores aplican comportamientos nativos correctos (botones son clicables con Enter, checkboxes con Espacio)
+* SEO mejorado (Google entiende la estructura)
+* Mantenibilidad del código
 
 ### 4.2. Estructura de página con landmarks
 
 Los **landmarks** son regiones semánticas de la página:
 
-- `<header>` - Encabezado del sitio o sección
-- `<nav>` - Navegación principal, secundaria, breadcrumbs
-- `<main>` - Contenido principal (solo uno por página)
-- `<article>` - Contenido autocontenido (post, producto, noticia)
-- `<section>` - Sección temática del documento
-- `<aside>` - Contenido complementario (sidebar, widgets)
-- `<footer>` - Pie de página o sección
+* `<header>` * Encabezado del sitio o sección
+* `<nav>` * Navegación principal, secundaria, breadcrumbs
+* `<main>` * Contenido principal (solo uno por página)
+* `<article>` * Contenido autocontenido (post, producto, noticia)
+* `<section>` * Sección temática del documento
+* `<aside>` * Contenido complementario (sidebar, widgets)
+* `<footer>` * Pie de página o sección
 
 **Por qué importan:**
 Una persona con ceguera puede presionar una tecla y saltar entre landmarks: header → nav → main → aside → footer. Sin landmarks, tiene que escuchar todo linealmente.

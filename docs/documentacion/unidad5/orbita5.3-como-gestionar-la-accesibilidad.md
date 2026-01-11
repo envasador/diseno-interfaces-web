@@ -12,8 +12,8 @@ La accesibilidad se integra **desde el inicio**, en cada fase:
 
 **Contraste de color:**
 Mientras eliges la paleta, verifica contraste. Herramientas:
-- Plugin de Figma "Contrast" o "Stark"
-- WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
+* Plugin de Figma "Contrast" o "Stark"
+* WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
 
 **Tamaño de elementos interactivos:**
 Botones, enlaces, campos de formulario: mínimo 24×24 píxeles (WCAG 2.2), idealmente 44×44px.
@@ -55,26 +55,26 @@ HTML nativo es preferible. Solo usa ARIA cuando HTML no ofrece la semántica nec
 ### 3.2. El rol del equipo
 
 **Diseñador:**
-- Verifica contraste
-- Diseña estados de foco visibles
-- Documenta comportamientos interactivos (¿cómo se navega este menú con teclado?)
+* Verifica contraste
+* Diseña estados de foco visibles
+* Documenta comportamientos interactivos (¿cómo se navega este menú con teclado?)
 
 **Desarrollador frontend:**
-- Implementa HTML semántico
-- Asegura navegación por teclado
-- Añade ARIA cuando corresponde
-- Prueba con lectores de pantalla
+* Implementa HTML semántico
+* Asegura navegación por teclado
+* Añade ARIA cuando corresponde
+* Prueba con lectores de pantalla
 
 **Creador de contenido:**
-- Escribe textos alternativos descriptivos
-- Crea estructura de encabezados lógica
-- Proporciona transcripciones para multimedia
+* Escribe textos alternativos descriptivos
+* Crea estructura de encabezados lógica
+* Proporciona transcripciones para multimedia
 
 **QA (testing):**
-- Auditorías automáticas (Lighthouse, axe)
-- Testing manual con teclado
-- Testing con lectores de pantalla
-- Testing con usuarios reales con discapacidad (ideal)
+* Auditorías automáticas (Lighthouse, axe)
+* Testing manual con teclado
+* Testing con lectores de pantalla
+* Testing con usuarios reales con discapacidad (ideal)
 
 ### 3.3. Herramientas de auditoría
 
@@ -82,16 +82,16 @@ HTML nativo es preferible. Solo usa ARIA cuando HTML no ofrece la semántica nec
 
 **Lighthouse (Chrome DevTools):**
 Integrado en Chrome. Audita accesibilidad, performance, SEO. Da puntuación y lista problemas concretos.
-- Abre DevTools → pestaña Lighthouse → Generate report
+* Abre DevTools → pestaña Lighthouse → Generate report
 
 **axe DevTools:**
 Extensión de navegador. Más detallada que Lighthouse. Explica cada problema y cómo solucionarlo.
-- Chrome/Firefox extension: https://www.deque.com/axe/devtools/
+* Chrome/Firefox extension: https://www.deque.com/axe/devtools/
 
 **WAVE:**
 Herramienta visual que muestra directamente en la página dónde están los problemas de accesibilidad.
-- Web: https://wave.webaim.org/
-- Extensión de navegador disponible
+* Web: https://wave.webaim.org/
+* Extensión de navegador disponible
 
 **Importante:** Las herramientas automáticas detectan ~30-40% de problemas. El resto requiere testing manual.
 
@@ -99,11 +99,11 @@ Herramienta visual que muestra directamente en la página dónde están los prob
 
 **Navegación por teclado:**
 Desconecta el ratón. Usa solo teclado:
-- Tab: siguiente elemento interactivo
-- Shift+Tab: anterior
-- Enter: activar botón/enlace
-- Espacio: activar botón, checkbox
-- Escape: cerrar modal
+* Tab: siguiente elemento interactivo
+* Shift+Tab: anterior
+* Enter: activar botón/enlace
+* Espacio: activar botón, checkbox
+* Escape: cerrar modal
 
 ¿Funciona todo? ¿Ves dónde está el foco? ¿Quedas atrapado en algún sitio?
 
@@ -112,10 +112,10 @@ Navegador → Zoom texto al 200%. ¿Todo sigue visible y funcional? ¿Aparecen s
 
 **Lectores de pantalla (básico):**
 Activa el lector de pantalla nativo:
-- Windows: NVDA (descargar gratis: https://www.nvaccess.org/)
-- macOS: VoiceOver (Cmd+F5)
-- iOS: VoiceOver en Settings → Accessibility
-- Android: TalkBack en Settings → Accessibility
+* Windows: NVDA (descargar gratis: https://www.nvaccess.org/)
+* macOS: VoiceOver (Cmd+F5)
+* iOS: VoiceOver en Settings → Accessibility
+* Android: TalkBack en Settings → Accessibility
 
 Navega tu sitio. ¿Se anuncia todo correctamente? ¿Los nombres de botones tienen sentido? ¿Se leen las imágenes?
 
@@ -128,21 +128,21 @@ En proyectos profesionales, documenta:
 
 **Declaración de accesibilidad:**
 Página pública explicando:
-- Nivel de conformidad alcanzado (WCAG 2.1 AA)
-- Fecha de la última evaluación
-- Problemas conocidos y timeline de solución
-- Forma de contacto para reportar problemas
+* Nivel de conformidad alcanzado (WCAG 2.1 AA)
+* Fecha de la última evaluación
+* Problemas conocidos y timeline de solución
+* Forma de contacto para reportar problemas
 
 **Guía de implementación interna:**
 Para el equipo:
-- Checklist de accesibilidad (qué verificar antes de cada release)
-- Ejemplos de código accesible (componentes reutilizables)
-- Procesos de testing
+* Checklist de accesibilidad (qué verificar antes de cada release)
+* Ejemplos de código accesible (componentes reutilizables)
+* Procesos de testing
 
 **Informe de auditoría:**
 Después de cada auditoría:
-- Qué se probó
-- Problemas encontrados (priorizados por severidad)
-- Soluciones propuestas
-- Estado (pendiente, en progreso, resuelto)
+* Qué se probó
+* Problemas encontrados (priorizados por severidad)
+* Soluciones propuestas
+* Estado (pendiente, en progreso, resuelto)
 

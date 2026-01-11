@@ -8,21 +8,22 @@ La **accesibilidad web** significa diseñar y desarrollar sitios web que **cualq
 No es solo "ayudar a personas con discapacidad". Es reconocer que todos somos diversos y que todos, en algún momento, nos beneficiamos de un diseño accesible:
 
 **Situaciones permanentes:**
-- Una persona con ceguera usa un lector de pantalla
-- Una persona con sordera necesita subtítulos en vídeos
-- Una persona con movilidad reducida navega solo con teclado
-- Una persona con daltonismo no puede distinguir verde de rojo
+
+* Una persona con ceguera usa un lector de pantalla
+* Una persona con sordera necesita subtítulos en vídeos
+* Una persona con movilidad reducida navega solo con teclado
+* Una persona con daltonismo no puede distinguir verde de rojo
 
 **Situaciones temporales:**
-- Tienes un brazo escayolado → solo puedes usar una mano
-- Tienes conjuntivitis → la luz brillante te molesta, necesitas alto contraste
-- Te operaron de cataratas → visión borrosa temporalmente
+* Tienes un brazo escayolado → solo puedes usar una mano
+* Tienes conjuntivitis → la luz brillante te molesta, necesitas alto contraste
+* Te operaron de cataratas → visión borrosa temporalmente
 
 **Situaciones contextuales:**
-- Estás en un tren ruidoso → necesitas subtítulos aunque no tengas sordera
-- Estás bajo el sol → la pantalla apenas se ve, necesitas alto contraste
-- Tienes conexión lenta → necesitas que el sitio funcione sin JavaScript pesado
-- Estás cocinando → tienes las manos ocupadas, usas comandos de voz
+* Estás en un tren ruidoso → necesitas subtítulos aunque no tengas sordera
+* Estás bajo el sol → la pantalla apenas se ve, necesitas alto contraste
+* Tienes conexión lenta → necesitas que el sitio funcione sin JavaScript pesado
+* Estás cocinando → tienes las manos ocupadas, usas comandos de voz
 
 La accesibilidad mejora la experiencia para **todos**, no solo para un grupo específico.
 
@@ -32,9 +33,9 @@ La accesibilidad mejora la experiencia para **todos**, no solo para un grupo esp
 
 En España, el **Real Decreto 1112/2018** obliga a organismos públicos a cumplir con **WCAG 2.1 nivel AA**. Pero la legislación se extiende al sector privado:
 
-- **Directiva Europea de Accesibilidad (2025):** Obligatoria para empresas privadas que ofrecen ciertos servicios (e-commerce, banca, transportes)
-- **Multas y sanciones:** El incumplimiento puede resultar en multas económicas y exclusión de contratos públicos
-- **Demandas:** En EEUU hay miles de demandas anuales contra webs inaccesibles. Es tendencia global.
+* **Directiva Europea de Accesibilidad (2025):** Obligatoria para empresas privadas que ofrecen ciertos servicios (e-commerce, banca, transportes)
+* **Multas y sanciones:** El incumplimiento puede resultar en multas económicas y exclusión de contratos públicos
+* **Demandas:** En EEUU hay miles de demandas anuales contra webs inaccesibles. Es tendencia global.
 
 #### Razón ética (derecho humano)
 
@@ -43,9 +44,9 @@ El acceso a la información y servicios digitales es un **derecho humano**. La O
 Crear barreras digitales es discriminación. Si tu web no permite que una persona con ceguera compre un producto, la estás excluyendo del mercado.
 
 **Datos:**
-- Más del 15% de la población mundial tiene alguna discapacidad (OMS)
-- En España: ~4 millones de personas con discapacidad reconocida
-- Si tu web no es accesible, estás excluyendo a millones de potenciales usuarios
+* Más del 15% de la población mundial tiene alguna discapacidad (OMS)
+* En España: ~4 millones de personas con discapacidad reconocida
+* Si tu web no es accesible, estás excluyendo a millones de potenciales usuarios
 
 #### Razón de negocio (rentabilidad)
 
