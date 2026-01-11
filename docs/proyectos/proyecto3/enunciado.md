@@ -151,6 +151,15 @@ Las rúbricas están organizadas por cada criterio de evaluación. Cada criterio
 | Cantidad y calidad | 8+ componentes con nomenclatura BEM consistente, totalmente reutilizables | 6-7 componentes con nomenclatura mayormente consistente | 4-5 componentes con nomenclatura básica | < 4 componentes o sin metodología |
 | Estados y modificadores | Modificadores para todas las variantes, estados con clases apropiadas | Modificadores presentes, estados definidos | Algunos modificadores y estados | Sin modificadores ni estados |
 
+## **RA2.j - Preprocesadores de estilos (2.75%)**
+
+| Criterio | Excelente (10) | Notable (8) | Aprobado (5) | Suspenso (0-4) |
+|----------|----------------|-------------|--------------|----------------|
+| **Mixins y funciones** | Mínimo 5 mixins reutilizables creados, funciones personalizadas implementadas, uso apropiado de @extend/@mixin | Mínimo 3 mixins funcionales y reutilizables | Al menos 2 mixins básicos utilizados | Sin mixins o con errores |
+| **Arquitectura ITCSS** | Estructura completa y organizada: 00-settings, 01-tools, 02-generic, 03-elements, 04-layout, 05-components, 06-utilities | Estructura modular clara con carpetas organizadas | Estructura básica de carpetas presente | Sin estructura o desorganizada |
+| **Compilación** | CSS compilado optimizado, sin redundancias, válido W3C | CSS compila sin errores, válido W3C | CSS compila correctamente | Errores de compilación |
+| **Documentación** | DOCUMENTACION.md sección 1 completa: justificación SCSS, estructura explicada, mixins con ejemplos de uso, proceso de compilación | Documentación presente con estructura y mixins explicados | Documentación mínima del preprocesado | Sin documentación |
+
 #### **RA3.b * Formatos multimedia (1.90%)**
 
 | Criterio | Excelente (10) | Notable (8) | Aprobado (5) | Suspenso (0-4) |
@@ -169,11 +178,32 @@ Las rúbricas están organizadas por cada criterio de evaluación. Cada criterio
 |----------|----------------|-------------|--------------|----------------|
 | Optimización | Todas las imágenes procesadas, tabla antes/después en DOCUMENTACION.md, múltiples tamaños, WebP, SVGs optimizados | Imágenes procesadas, evidencia antes/después, varios tamaños | Optimización básica con alguna evidencia | Sin procesar ni documentar |
 
-#### **RA3.f * Animaciones CSS (1.90%)**
+## **RA3.f - Importar/exportar multimedia en diversos formatos (1.90%)**
+
+| Criterio | Excelente (10) | Notable (8) | Aprobado (5) | Suspenso (0-4) |
+|----------|----------------|-------------|--------------|----------------|
+| **Formatos de imagen** | Usa AVIF con fallback WebP y JPG correctamente mediante `<picture>`, PNG para transparencias, SVG optimizado para iconos | Usa WebP con fallback JPG, PNG para transparencias, SVG para iconos | Usa al menos 2 formatos diferentes apropiadamente (WebP/JPG, PNG, SVG) | Solo un formato o formatos inadecuados |
+| **Optimización multimedia** | Todas las imágenes < 200KB, múltiples tamaños (small, medium, large), SVGs optimizados con SVGO, tabla de optimización completa | Mayoría de imágenes optimizadas, al menos 2 tamaños por imagen, SVGs optimizados | Imágenes básicamente optimizadas, un tamaño disponible | Sin optimización |
+| **Implementación técnica** | Implementa `<picture>`, `srcset`, `sizes`, `loading="lazy"` correctamente en todas las imágenes | Implementa `srcset` y `sizes` en imágenes principales, lazy loading presente | Implementa al menos una técnica responsive (srcset o picture) | Sin técnicas responsive |
+| **Documentación** | DOCUMENTACION.md sección 5 completa: formatos elegidos justificados, herramientas utilizadas, tabla de resultados con 5+ imágenes, ejemplos de código | Documentación presente con formatos, herramientas y tabla de resultados | Documentación básica con formatos y algunas evidencias | Sin documentación |
+
+#### **RA3.g * Animaciones CSS (0.42%)**
 
 | Criterio | Excelente (10) | Notable (8) | Aprobado (5) | Suspenso (0-4) |
 |----------|----------------|-------------|--------------|----------------|
 | Implementación | 3+ animaciones @keyframes, spinner, transiciones hover/focus (5+), micro-interacciones, optimizadas (transform/opacity), documentadas | 3 animaciones funcionales, spinner, transiciones, documentadas | 2-3 animaciones básicas | < 2 animaciones o muy deficientes |
+
+## **RA3.h - Aplicación de guía de estilo (1.90%)**
+
+| Criterio | Excelente (10) | Notable (8) | Aprobado (5) | Suspenso (0-4) |
+|----------|----------------|-------------|--------------|----------------|
+| **Guía de estilo visual** | Guía completa documentada en Figma/documento: tipografía, colores, espaciado, iconografía, componentes con estados | Guía definida con elementos principales: tipografía, colores, componentes básicos | Guía básica con colores y tipografía principales | Sin guía de estilo documentada |
+| **Sistema de diseño** | Sistema atómico implementado (átomos, moléculas, organismos), componentes reutilizables siguiendo patrones | Sistema de diseño básico con componentes organizados | Algunos componentes reutilizables | Sin sistema de diseño |
+| **Nomenclatura BEM** | BEM aplicado consistentemente en todo el proyecto, sin excepciones | BEM aplicado con pequeñas inconsistencias puntuales | BEM presente pero con inconsistencias | Sin nomenclatura clara o incorrecta |
+| **Style Guide página** | Style Guide completo mostrando todos los componentes con todas sus variantes, tamaños y estados | Style Guide mostrando componentes principales con variantes básicas | Style Guide básico o incompleto | Sin Style Guide página |
+| **Aplicación consistente** | Todos los componentes siguen estrictamente la guía, consistencia total en colores, tipografía, espaciado | Mayoría de componentes siguen la guía, consistencia general | Aplicación parcial de la guía | Inconsistencias evidentes, guía no aplicada |
+| **Documentación** | DOCUMENTACION.md secciones 2 y 3: principios visuales, guía de estilo completa, Style Guide con capturas de todos los componentes | Documentación presente con guía y Style Guide explicados | Documentación mínima | Sin documentación |
+
 
 #### **RA4.a * Tecnologías multimedia (2.81%)**
 
