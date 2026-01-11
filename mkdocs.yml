@@ -76,7 +76,23 @@ nav:
       - 3.1 HTML5: documentacion/unidad3/orbita3.1-HTML5-semantico-la-base-de-todo.md
       - 3.2 CSS3: documentacion/unidad3/orbita3.2-css-moderno-arquitectura-y-organizacion.md
       - 3.3 Arquitectura CSS: documentacion/unidad3/orbita3.3-arquitectura-CSS-con-frameworks.md
-
+    - Unidad 4:
+      - Introducción: documentacion/unidad4/intro.md
+      - 4.1 Imágenes: orbita4.1-imagenes.md
+      - 4.2 Audio: orbita4.2-audio.md
+      - 4.3 Video: orbita4.3-video.md
+      - 4.4 Documentacion y recursos: orbita4.4-documentacion-y-recursos.md
+      - 4.5 Elementos interactivos: orbita4.5-elementos-interactivos.md
+    - Unidad 5:
+      - Introducción: documentacion/unidad5/intro.md
+      - 5.1 ¿Qué es la accesibilidad?: orbita5.1-que-es-la-accesibilidad.md
+      - 5.2 WCAG y POUR: orbita5.2-WCAG-POUR.md
+      - 5.3 Cómo gestionar la accesibilidad: orbita5.3-como-gestionar-la-accesibilidad.md
+      - 5.4 HML semántico: orbita5.4-HTML-semantico.md
+      - 5.5 Aria: orbita5.5-aria.md
+      - 5.6 Aspectos claves adicionales: orbita5.6-aspectos-claves-adicionales.md
+      - 5.7 Recursos y referencias: orbita5.7-recursos-y-referencias.md
+      - 5.8 Checklist: orbita5.8-checklist.md
   
   - Proyectos:
     - proyectos/index.md
@@ -98,4 +114,8 @@ nav:
         - Fase 1: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-1.md
         - Fase 2: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-2.md
         - Fase 3: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-3.md
+        - Fase 4: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-4.md
+        - Fase 5: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-5.md
+        - Fase 6: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-6.md
+        - Fase 7: proyectos/proyecto3/proyecto-maquetar-para-dar-forma-fase-7.md
 
