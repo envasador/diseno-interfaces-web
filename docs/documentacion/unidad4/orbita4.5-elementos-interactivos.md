@@ -327,3 +327,5 @@ Los portfolios creativos premiados en Awwwards están llenos de interactividad e
 Un e-commerce, un blog, un sitio corporativo, una web gubernamental: no necesitan ni deben tener ese nivel de interactividad. Necesitan claridad, rapidez, accesibilidad.
 
 **Usa la herramienta apropiada para el contexto.**
+
+---
