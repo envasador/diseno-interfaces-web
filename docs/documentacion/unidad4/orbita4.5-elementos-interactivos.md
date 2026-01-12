@@ -327,14 +327,3 @@ Los portfolios creativos premiados en Awwwards están llenos de interactividad e
 Un e-commerce, un blog, un sitio corporativo, una web gubernamental: no necesitan ni deben tener ese nivel de interactividad. Necesitan claridad, rapidez, accesibilidad.
 
 **Usa la herramienta apropiada para el contexto.**
-
-
-
-## **Conclusión **
-
-Has comprendido qué son los elementos interactivos y por qué transforman la web de documentos a aplicaciones. Conoces los tipos comunes (menús, modales, formularios inteligentes, animaciones) y las herramientas profesionales (Three.js para 3D, GSAP para animaciones 2D avanzadas).
-
-Sabes dónde buscar inspiración, dónde aprender, y lo más importante: **cuándo** usar cada herramienta y cuándo no. La interactividad bien ejecutada comunica, guía, deleita. La interactividad mal ejecutada distrae, ralentiza, frustra.
-
-En la siguiente órbita veremos cómo garantizar que toda esta magia interactiva sea accesible para todas las personas, cumpliendo con estándares internacionales y mejores prácticas de inclusión.
-
