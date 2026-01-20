@@ -1,4 +1,4 @@
-# Proyecto Órbita 4: Diseñar para todos
+# Proyecto Órbita 4: Diseñar para todo el mundo
 
 ## Contexto del proyecto
 
