@@ -47,15 +47,7 @@ Añade **UNO** de estos elementos a tu proyecto:
 - Navegación con teclado
 - Indicador de posición
 
-**Código obligatorio:**
-```css
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-```
+
 
 
 ### Parte 2: Análisis de accesibilidad (4h)
@@ -68,11 +60,8 @@ Crear un único documento en `docs/accesibilidad/README.md`.
 ### Estructura del repositorio
 
 ```
-proyecto-4/
-├── index.html              
-├── css/
-├── js/
-├── media/
+proyecto-4/             
+├── src/
 ├── docs/
 │   └── accesibilidad/
 │       ├── README.md          # Documento único
