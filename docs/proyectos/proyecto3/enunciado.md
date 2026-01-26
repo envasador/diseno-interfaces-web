@@ -253,7 +253,7 @@ Tu proyecto será **excelente** si:
 
 1. Traduce fielmente el diseño de Figma a código
 2. Tiene arquitectura CSS escalable y profesional
-3. Usa HTML semántico impecable
+3. Usa HTML semántico impecable. 
 4. Funciona perfectamente en mobile, tablet, desktop
 5. Carga rápido (< 2MB página completa)
 6. Tiene modo claro y oscuro funcional
