@@ -53,7 +53,7 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
 
 **Criterios evaluados:** RA4.e, RA4.f
 
-
+---
 
 ### Tarea 2: Crear documentación de accesibilidad (4 horas)
 
@@ -96,6 +96,8 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
 
 **Criterios evaluados:** RA5.a, RA5.c
 
+---
+
 #### **Sección 2: Componente multimedia implementado**
 
 **Qué debes incluir:**
@@ -107,6 +109,8 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
     - Ejemplo: "Todas las imágenes tienen alt descriptivo", "Se puede navegar con teclado"
 
 **Criterio evaluado:** RA4.e, RA4.f
+
+---
 
 #### **Sección 3: Auditoría automatizada inicial**
 
@@ -145,6 +149,8 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
 3. **Listar los 3 problemas más graves** que han detectado las herramientas
 
 **Criterios evaluados:** RA5.d, RA5.f
+
+---
 
 #### **Sección 4: Análisis y corrección de errores** 
 
@@ -186,6 +192,8 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
 
 **Criterios evaluados:** RA5.d, RA5.e
 
+---
+
 #### **Sección 5: Análisis de estructura semántica** 
 
 **Qué debes incluir:**
@@ -225,6 +233,8 @@ Vais a añadir un elemento multimedia simple a vuestro proyecto y someterlo a un
    ```
 
 **Criterio evaluado:** RA5.b
+
+---
 
 #### **Sección 6: Verificación manual**
 
@@ -297,6 +307,8 @@ Abre tu proyecto en **3 navegadores diferentes** y verifica que todo funciona.
 
 **Criterios evaluados:** RA5.g, RA4.g
 
+---
+
 #### **Sección 7: Resultados finales después de correcciones** 
 
 **Qué debes hacer:**
@@ -348,6 +360,8 @@ Abre tu proyecto en **3 navegadores diferentes** y verifica que todo funciona.
    Justifica en 2-3 líneas: ¿Qué criterios cumples completamente? ¿Cuáles no y por qué?
 
 **Criterios evaluados:** RA5.e, RA5.f
+
+---
 
 #### **Sección 8: Conclusiones y reflexión** 
 
