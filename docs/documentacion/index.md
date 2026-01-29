@@ -11,6 +11,7 @@ Bienvenido a la sección de documentación del curso. Aquí encontrarás todo el
 | [Órbita 3](unidad3/intro.md) | Maquetar para dar forma      | ✅ Disponible |
 | [Órbita 4](unidad4/intro.md) | Pulir para que brille        | ✅ Disponible |
 | [Órbita 5](unidad5/intro.md) | Diseñar para todos           | ✅ Disponible |
+| [Órbita 6](unidad6/intro.md) | Diseñar para conectar        | ✅ Disponible |
 
 ## Cómo usar esta documentación
 
