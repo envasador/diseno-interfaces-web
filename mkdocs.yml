@@ -52,60 +52,60 @@ nav:
   - Inicio: index.md
 
   - Órbita 1:
-      - Resumen y entregables: orbitas/orbita1/index.md
-      - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
-      - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
-      - 2. Qué es una persona: orbitas/orbita1/02_que_es_una_persona.md
-      - 3. Cómo se construye una persona: orbitas/orbita1/03_como_se_construye_una_persona.md
-      - 4. User flows: orbitas/orbita1/04_user_flows.md
-      - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
-      - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
+    - Resumen y entregables: orbitas/orbita1/index.md
+    - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
+    - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
+    - 2. Qué es una persona: orbitas/orbita1/02_que_es_una_persona.md
+    - 3. Cómo se construye una persona: orbitas/orbita1/03_como_se_construye_una_persona.md
+    - 4. User flows: orbitas/orbita1/04_user_flows.md
+    - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
+    - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
 
   - Órbita 2:
-      - Resumen y entregables: orbitas/orbita2/index.md
-      - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
-      - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
-      - 3. Tipografía — escala y jerarquía semántica: orbitas/orbita2/03_tipografia.md
-      - 4. Espaciado, radio y elevación: orbitas/orbita2/04_espaciado.md
-      - 5. Variables en Figma: orbitas/orbita2/05_variables_figma.md
-      - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
-      - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
+    - Resumen y entregables: orbitas/orbita2/index.md
+    - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
+    - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
+    - 3. Tipografía — escala y jerarquía semántica: orbitas/orbita2/03_tipografia.md
+    - 4. Espaciado, radio y elevación: orbitas/orbita2/04_espaciado.md
+    - 5. Variables en Figma: orbitas/orbita2/05_variables_figma.md
+    - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
+    - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
 
   - Órbita 3:
-      - Resumen y entregables: orbitas/orbita3/index.md
-      - 1. HTML semántico: orbitas/orbita3/01_html_semantico.md
-      - 2. CSS custom properties: orbitas/orbita3/02_css_custom_properties.md
-      - 3. Arquitectura ITCSS: orbitas/orbita3/03_itcss.md
-      - 4. Nomenclatura BEM: orbitas/orbita3/04_bem.md
-      - 5. SCSS y preprocesadores: orbitas/orbita3/05_scss.md
-      - 6. Responsive y breakpoints: orbitas/orbita3/06_responsive.md
-      - 7. Multimedia y ecodiseño: orbitas/orbita3/07_multimedia_ecodiseno.md
-      - 8. Componentes — el set mínimo: orbitas/orbita3/08_componentes.md
+    - Resumen y entregables: orbitas/orbita3/index.md
+    - 1. HTML semántico: orbitas/orbita3/01_html_semantico.md
+    - 2. CSS custom properties: orbitas/orbita3/02_css_custom_properties.md
+    - 3. Arquitectura ITCSS: orbitas/orbita3/03_itcss.md
+    - 4. Nomenclatura BEM: orbitas/orbita3/04_bem.md
+    - 5. SCSS y preprocesadores: orbitas/orbita3/05_scss.md
+    - 6. Responsive y breakpoints: orbitas/orbita3/06_responsive.md
+    - 7. Multimedia y ecodiseño: orbitas/orbita3/07_multimedia_ecodiseno.md
+    - 8. Componentes — el set mínimo: orbitas/orbita3/08_componentes.md
 
   - Órbita 4:
-      - Resumen y entregables: orbitas/orbita4/index.md
-      - 1. Accesibilidad como propiedad del sistema: orbitas/orbita4/01_accesibilidad_sistema.md
-      - 2. WCAG 2.2 — principios y criterios: orbitas/orbita4/02_wcag.md
-      - 3. HTML semántico y estructura: orbitas/orbita4/03_html_accesible.md
-      - 4. ARIA — roles, estados y propiedades: orbitas/orbita4/04_aria.md
-      - 5. Navegación por teclado y gestión del foco: orbitas/orbita4/05_teclado_foco.md
-      - 6. Multimedia accesible: orbitas/orbita4/06_multimedia_accesible.md
-      - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
-      - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
+    - Resumen y entregables: orbitas/orbita4/index.md
+    - 1. Accesibilidad como propiedad del sistema: orbitas/orbita4/01_accesibilidad_sistema.md
+    - 2. WCAG 2.2 — principios y criterios: orbitas/orbita4/02_wcag.md
+    - 3. HTML semántico y estructura: orbitas/orbita4/03_html_accesible.md
+    - 4. ARIA — roles, estados y propiedades: orbitas/orbita4/04_aria.md
+    - 5. Navegación por teclado y gestión del foco: orbitas/orbita4/05_teclado_foco.md
+    - 6. Multimedia accesible: orbitas/orbita4/06_multimedia_accesible.md
+    - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
+    - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
 
   - Órbita 5:
-      - Resumen y entregables: orbitas/orbita5/index.md
-      - 1. Evaluación heurística de Nielsen: orbitas/orbita5/01_heuristica.md
-      - 2. Cognitive walkthrough: orbitas/orbita5/02_cognitive_walkthrough.md
-      - 3. Patrones engañosos — auditoría ética: orbitas/orbita5/03_dark_patterns.md
-      - 4. Auditoría de sostenibilidad WSG: orbitas/orbita5/04_sostenibilidad.md
-      - 5. SEO y visibilidad: orbitas/orbita5/05_seo.md
-      - 6. El informe de evaluación: orbitas/orbita5/06_informe.md
+    - Resumen y entregables: orbitas/orbita5/index.md
+    - 1. Evaluación heurística de Nielsen: orbitas/orbita5/01_heuristica.md
+    - 2. Cognitive walkthrough: orbitas/orbita5/02_cognitive_walkthrough.md
+    - 3. Patrones engañosos — auditoría ética: orbitas/orbita5/03_dark_patterns.md
+    - 4. Auditoría de sostenibilidad WSG: orbitas/orbita5/04_sostenibilidad.md
+    - 5. SEO y visibilidad: orbitas/orbita5/05_seo.md
+    - 6. El informe de evaluación: orbitas/orbita5/06_informe.md
 
   - Órbita 6:
-      - Resumen y entregables: orbitas/orbita6/index.md
-      - 1. README — visión y decisiones técnicas: orbitas/orbita6/01_readme.md
-      - 2. DESIGN.md — documentación del sistema: orbitas/orbita6/02_design_md.md
-      - 3. CHANGELOG.md — trazabilidad completa: orbitas/orbita6/03_changelog.md
-      - 4. Despliegue en GitHub Pages: orbitas/orbita6/04_despliegue.md
-      - 5. Preparar y defender el proyecto: orbitas/orbita6/05_defensa.md
+    - Resumen y entregables: orbitas/orbita6/index.md
+    - 1. README — visión y decisiones técnicas: orbitas/orbita6/01_readme.md
+    - 2. DESIGN.md — documentación del sistema: orbitas/orbita6/02_design_md.md
+    - 3. CHANGELOG.md — trazabilidad completa: orbitas/orbita6/03_changelog.md
+    - 4. Despliegue en GitHub Pages: orbitas/orbita6/04_despliegue.md
+    - 5. Preparar y defender el proyecto: orbitas/orbita6/05_defensa.md
