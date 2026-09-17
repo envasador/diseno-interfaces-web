@@ -51,7 +51,7 @@ markdown_extensions:
 nav:
   - Inicio: index.md
 
-  - Órbita 1 — Conocer a las personas:
+  - Órbita 1:
       - Resumen y entregables: orbitas/orbita1/index.md
       - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
       - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
@@ -61,7 +61,7 @@ nav:
       - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
       - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
 
-  - Órbita 2 — Fundar el sistema visual:
+  - Órbita 2:
       - Resumen y entregables: orbitas/orbita2/index.md
       - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
       - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
@@ -71,7 +71,7 @@ nav:
       - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
       - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
 
-  - Órbita 3 — Maquetar para dar forma:
+  - Órbita 3:
       - Resumen y entregables: orbitas/orbita3/index.md
       - 1. HTML semántico: orbitas/orbita3/01_html_semantico.md
       - 2. CSS custom properties: orbitas/orbita3/02_css_custom_properties.md
@@ -82,7 +82,7 @@ nav:
       - 7. Multimedia y ecodiseño: orbitas/orbita3/07_multimedia_ecodiseno.md
       - 8. Componentes — el set mínimo: orbitas/orbita3/08_componentes.md
 
-  - Órbita 4 — Diseñar para todos:
+  - Órbita 4:
       - Resumen y entregables: orbitas/orbita4/index.md
       - 1. Accesibilidad como propiedad del sistema: orbitas/orbita4/01_accesibilidad_sistema.md
       - 2. WCAG 2.2 — principios y criterios: orbitas/orbita4/02_wcag.md
@@ -93,7 +93,7 @@ nav:
       - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
       - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
 
-  - Órbita 5 — Verificar con personas reales:
+  - Órbita 5:
       - Resumen y entregables: orbitas/orbita5/index.md
       - 1. Evaluación heurística de Nielsen: orbitas/orbita5/01_heuristica.md
       - 2. Cognitive walkthrough: orbitas/orbita5/02_cognitive_walkthrough.md
@@ -102,7 +102,7 @@ nav:
       - 5. SEO y visibilidad: orbitas/orbita5/05_seo.md
       - 6. El informe de evaluación: orbitas/orbita5/06_informe.md
 
-  - Órbita 6 — Documentar y defender:
+  - Órbita 6:
       - Resumen y entregables: orbitas/orbita6/index.md
       - 1. README — visión y decisiones técnicas: orbitas/orbita6/01_readme.md
       - 2. DESIGN.md — documentación del sistema: orbitas/orbita6/02_design_md.md
