@@ -42,6 +42,6 @@ Las herramientas de IA pueden ayudarte en la fase de investigación: organizar n
 
 Si usas IA en cualquier parte de esta fase, lo documentas en el `CHANGELOG.md`: qué le pediste, qué generó, qué mantuviste y qué cambiaste. Eso es lo que demuestra que las decisiones son tuyas.
 
-### Qué sale de esta órbita
+### Qué producto de esta órbita
 
 Al terminar la Órbita 1 tendrás cuatro cosas listas para usar en el resto del módulo: el brief de proyecto, las personas, los user flows y el sitemap. Cada decisión de tipografía, color, componente o estructura de navegación que tomes después debería poder justificarse señalando algo de lo que construiste aquí.
