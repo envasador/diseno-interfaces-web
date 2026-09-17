@@ -3,7 +3,8 @@ hide:
   - navigation
 ---
 
-# Diseño de Interfaces Web (0615 · DAW FP Grado Superior · IES Rafael Alberti, Cádiz)
+# Diseño de Interfaces Web 
+## 0615 · DAW FP Grado Superior · IES Rafael Alberti, Cádiz
 
 En este módulo aprenderás a tomar decisiones de diseño y a justificarlas. Cada elección que hagas (un color, una estructura de navegación, un componente) tiene que poder explicarse en términos de las personas para las que diseñas.
 
