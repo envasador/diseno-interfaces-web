@@ -18,3 +18,11 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Sesiones de seminario — solo en local, no se publican en GitHub
+docs/orbitas/orbita1/sesiones/
+docs/orbitas/orbita2/sesiones/
+docs/orbitas/orbita3/sesiones/
+docs/orbitas/orbita4/sesiones/
+docs/orbitas/orbita5/sesiones/
+docs/orbitas/orbita6/sesiones/
