@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="430" viewBox="0 0 680 430" role="img" font-family="system-ui, sans-serif">
+  <title>Ejemplo de sitemap con tres tipos de nodo y trazado de un user flow</title>
+  <desc>Sitemap jerárquico de una aplicación de comercio electrónico con pantallas principales, secundarias y de sistema. Una línea discontinua muestra el recorrido del flujo de compra superpuesto a la estructura.</desc>
+  <defs>
+    <marker id="arrowf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Jerarquía: líneas ===== -->
+  <!-- Home a nivel 1 -->
+  <line x1="340" y1="78" x2="340" y2="100" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="120" y1="100" x2="560" y2="100" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="120" y1="100" x2="120" y2="122" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="266" y1="100" x2="266" y2="122" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="412" y1="100" x2="412" y2="122" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="560" y1="100" x2="560" y2="122" stroke="#B4B2A9" stroke-width="0.75"/>
+
+  <!-- Catálogo a nivel 2 -->
+  <line x1="120" y1="166" x2="120" y2="188" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="120" y1="188" x2="120" y2="210" stroke="#B4B2A9" stroke-width="0.75"/>
+  <!-- Ficha producto a carrito (secundaria) -->
+  <line x1="120" y1="254" x2="120" y2="276" stroke="#B4B2A9" stroke-width="0.75"/>
+  <!-- Mi cuenta a nivel 2 -->
+  <line x1="412" y1="166" x2="412" y2="188" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="336" y1="188" x2="488" y2="188" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="336" y1="188" x2="336" y2="210" stroke="#B4B2A9" stroke-width="0.75"/>
+  <line x1="488" y1="188" x2="488" y2="210" stroke="#B4B2A9" stroke-width="0.75"/>
+
+  <!-- ===== Nodos ===== -->
+  <!-- Home (raíz) -->
+  <rect x="270" y="34" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="340" y="61" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489">Home</text>
+
+  <!-- Nivel 1: principales -->
+  <rect x="50" y="122" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="120" y="149" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489">Catálogo</text>
+
+  <rect x="196" y="122" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="266" y="149" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489">Ofertas</text>
+
+  <rect x="342" y="122" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="412" y="149" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489">Mi cuenta</text>
+
+  <rect x="490" y="122" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="560" y="149" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489">Ayuda</text>
+
+  <!-- Nivel 2: secundarias -->
+  <rect x="50" y="210" width="140" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="120" y="231" text-anchor="middle" font-size="13" font-weight="600" fill="#444441">Ficha de producto</text>
+  <text x="120" y="246" text-anchor="middle" font-size="11" fill="#5F5E5A">Secundaria</text>
+
+  <rect x="50" y="276" width="140" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="120" y="297" text-anchor="middle" font-size="13" font-weight="600" fill="#444441">Carrito y pago</text>
+  <text x="120" y="312" text-anchor="middle" font-size="11" fill="#5F5E5A">Secundaria</text>
+
+  <rect x="266" y="210" width="140" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="336" y="231" text-anchor="middle" font-size="13" font-weight="600" fill="#444441">Mis pedidos</text>
+  <text x="336" y="246" text-anchor="middle" font-size="11" fill="#5F5E5A">Secundaria</text>
+
+  <rect x="418" y="210" width="140" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="488" y="231" text-anchor="middle" font-size="13" font-weight="600" fill="#444441">Mis datos</text>
+  <text x="488" y="246" text-anchor="middle" font-size="11" fill="#5F5E5A">Secundaria</text>
+
+  <!-- Pantallas de sistema -->
+  <rect x="490" y="276" width="140" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.75" stroke-dasharray="5 3"/>
+  <text x="560" y="294" text-anchor="middle" font-size="13" font-weight="600" fill="#854F0B">Login / registro</text>
+  <text x="560" y="308" text-anchor="middle" font-size="11" fill="#BA7517">Sistema</text>
+
+  <rect x="490" y="326" width="140" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.75" stroke-dasharray="5 3"/>
+  <text x="560" y="344" text-anchor="middle" font-size="13" font-weight="600" fill="#854F0B">Error / confirmación</text>
+  <text x="560" y="358" text-anchor="middle" font-size="11" fill="#BA7517">Sistema</text>
+
+  <!-- ===== Flujo de compra superpuesto ===== -->
+  <path d="M268 56 Q70 56 60 122" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.85"/>
+  <path d="M60 166 Q44 180 50 210" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.85"/>
+  <path d="M60 254 Q44 258 50 276" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.85" marker-end="url(#arrowf)"/>
+  <text x="36" y="190" text-anchor="middle" font-size="11" fill="#993C1D" transform="rotate(-90 36 190)">Flujo de compra</text>
+
+  <!-- ===== Leyenda ===== -->
+  <rect x="50" y="376" width="14" height="14" rx="3" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.75"/>
+  <text x="72" y="387" font-size="12" fill="#444441">Pantalla principal (en navegación)</text>
+
+  <rect x="290" y="376" width="14" height="14" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.75"/>
+  <text x="312" y="387" font-size="12" fill="#444441">Pantalla secundaria</text>
+
+  <rect x="50" y="402" width="14" height="14" rx="3" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.75" stroke-dasharray="4 2"/>
+  <text x="72" y="413" font-size="12" fill="#444441">Pantalla de sistema</text>
+
+  <line x1="290" y1="409" x2="320" y2="409" stroke="#D85A30" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="328" y="413" font-size="12" fill="#444441">User flow superpuesto (verificación)</text>
+</svg>
