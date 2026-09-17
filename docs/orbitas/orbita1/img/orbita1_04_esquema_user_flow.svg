@@ -6,19 +6,18 @@
       .txt { fill: #1F0318; }
       .caja { fill: #ffffff; stroke: #1F0318; stroke-width: 1.5; }
       .decision { fill: #FFE156; stroke: #1F0318; stroke-width: 1.5; }
-      .limite { fill: #FFB8DE; stroke: #1F0318; stroke-width: 1.5; }
-      .entrada { fill: #E93456; }
-      .salida { fill: #FFE156; }
+      .limite { fill: #C42A48; stroke: #1F0318; stroke-width: 1.5; }
+      .entrada { fill: #E93456; stroke: #1F0318; stroke-width: 1.5; }
+      .salida { fill: #FFE156; stroke: #1F0318; stroke-width: 1.5; }
       .linea { stroke: #1F0318; stroke-width: 1.5; }
-      .linea-ret { stroke: #E93456; stroke-width: 1.5; stroke-dasharray: 5 3; }
+      .linea-ret { stroke: #E93456; stroke-width: 1.5; stroke-dasharray: 5 3; fill: none; }
       @media (prefers-color-scheme: dark) {
         .bg { fill: #121212; }
         .txt { fill: #e0e0e0; }
         .caja { fill: #262626; stroke: #888888; stroke-width: 1.5; }
         .decision { fill: #3a3000; stroke: #888888; stroke-width: 1.5; }
-        .limite { fill: #3a1a2e; stroke: #888888; stroke-width: 1.5; }
+        .limite { fill: #7a1a28; stroke: #888888; stroke-width: 1.5; }
         .linea { stroke: #888888; stroke-width: 1.5; }
-        .linea-ret { stroke: #E93456; stroke-width: 1.5; stroke-dasharray: 5 3; }
       }
     </style>
     <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -32,7 +31,7 @@
   <rect width="680" height="540" class="bg"/>
 
   <!-- Entrada -->
-  <rect x="80" y="30" width="160" height="44" rx="22" class="entrada" stroke="#1F0318" stroke-width="1.5"/>
+  <rect x="80" y="30" width="160" height="44" rx="22" class="entrada"/>
   <text x="160" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Entrada</text>
   <text x="160" y="64" text-anchor="middle" font-size="11" fill="#ffffff">Enlace de producto</text>
 
@@ -49,14 +48,14 @@
 
   <!-- Caso límite: sin stock -->
   <rect x="330" y="184" width="204" height="48" rx="6" class="limite"/>
-  <text x="432" y="204" text-anchor="middle" font-size="12" font-weight="600" class="txt">Aviso disponibilidad</text>
-  <text x="432" y="222" text-anchor="middle" font-size="11" class="txt">Caso límite: sin stock</text>
+  <text x="432" y="204" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Aviso disponibilidad</text>
+  <text x="432" y="222" text-anchor="middle" font-size="11" fill="#ffffff">Caso límite: sin stock</text>
   <text x="290" y="202" text-anchor="middle" font-size="10" class="txt">No</text>
   <line x1="232" y1="208" x2="330" y2="208" class="linea" marker-end="url(#arr)"/>
 
   <text x="172" y="258" font-size="10" class="txt">Sí</text>
 
-  <!-- Carrito y pago -->
+  <!-- Carrito -->
   <rect x="80" y="268" width="160" height="40" rx="6" class="caja"/>
   <text x="160" y="293" text-anchor="middle" font-size="12" font-weight="600" class="txt">Carrito y pago</text>
   <line x1="160" y1="244" x2="160" y2="268" class="linea" marker-end="url(#arr)"/>
@@ -69,30 +68,30 @@
 
   <!-- Caso límite: pago fallido -->
   <rect x="330" y="348" width="204" height="48" rx="6" class="limite"/>
-  <text x="432" y="368" text-anchor="middle" font-size="12" font-weight="600" class="txt">Reintento de pago</text>
-  <text x="432" y="386" text-anchor="middle" font-size="11" class="txt">Caso límite: error</text>
+  <text x="432" y="368" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Reintento de pago</text>
+  <text x="432" y="386" text-anchor="middle" font-size="11" fill="#ffffff">Caso límite: error</text>
   <text x="290" y="366" text-anchor="middle" font-size="10" class="txt">No</text>
   <line x1="232" y1="372" x2="330" y2="372" class="linea" marker-end="url(#arr)"/>
 
   <!-- Vuelta al carrito -->
-  <path d="M534 348 Q580 308 242 288" fill="none" class="linea-ret" marker-end="url(#arr-red)"/>
+  <path d="M534 348 Q580 308 242 288" class="linea-ret" marker-end="url(#arr-red)"/>
 
   <text x="172" y="422" font-size="10" class="txt">Sí</text>
 
-  <!-- Salida: éxito -->
-  <rect x="80" y="430" width="160" height="44" rx="22" class="salida" stroke="#1F0318" stroke-width="1.5"/>
+  <!-- Salida -->
+  <rect x="80" y="430" width="160" height="44" rx="22" class="salida"/>
   <text x="160" y="449" text-anchor="middle" font-size="12" font-weight="700" class="txt">Pedido confirmado</text>
   <text x="160" y="465" text-anchor="middle" font-size="11" class="txt">Salida exitosa</text>
   <line x1="160" y1="408" x2="160" y2="430" class="linea" marker-end="url(#arr)"/>
 
   <!-- Leyenda -->
   <rect x="40" y="494" width="600" height="36" rx="6" class="caja"/>
-  <rect x="56" y="506" width="14" height="14" rx="7" class="entrada" stroke="#1F0318" stroke-width="1"/>
+  <rect x="56" y="506" width="14" height="14" rx="7" class="entrada"/>
   <text x="78" y="517" font-size="10" class="txt">Entrada/Salida</text>
   <rect x="178" y="506" width="14" height="14" rx="3" class="caja"/>
   <text x="200" y="517" font-size="10" class="txt">Pantalla</text>
   <polygon points="283,513 290,520 283,527 276,520" class="decision"/>
   <text x="300" y="517" font-size="10" class="txt">Decisión</text>
   <rect x="388" y="506" width="14" height="14" rx="3" class="limite"/>
-  <text x="410" y="517" font-size="10" class="txt">Caso límite</text>
+  <text x="410" y="517" font-size="10" fill="#ffffff">Caso límite</text>
 </svg>

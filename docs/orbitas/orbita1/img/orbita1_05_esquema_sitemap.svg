@@ -4,9 +4,8 @@
     <style>
       .bg { fill: #ffffff; }
       .txt { fill: #1F0318; }
-      .txt-inv { fill: #ffffff; }
       .principal { fill: #E93456; stroke: #1F0318; stroke-width: 1.5; }
-      .secundaria { fill: #FFB8DE; stroke: #1F0318; stroke-width: 1.5; }
+      .secundaria { fill: #C42A48; stroke: #1F0318; stroke-width: 1.5; }
       .sistema { fill: #FFE156; stroke: #1F0318; stroke-width: 1.5; stroke-dasharray: 5 3; }
       .caja { fill: #ffffff; stroke: #1F0318; stroke-width: 1; }
       .linea { stroke: #1F0318; stroke-width: 1; }
@@ -14,8 +13,7 @@
       @media (prefers-color-scheme: dark) {
         .bg { fill: #121212; }
         .txt { fill: #e0e0e0; }
-        .txt-inv { fill: #e0e0e0; }
-        .secundaria { fill: #3a1a2e; stroke: #888888; stroke-width: 1.5; }
+        .secundaria { fill: #7a1a28; stroke: #888888; stroke-width: 1.5; }
         .sistema { fill: #3a3000; stroke: #888888; stroke-width: 1.5; stroke-dasharray: 5 3; }
         .caja { fill: #262626; stroke: #888888; stroke-width: 1; }
         .linea { stroke: #888888; stroke-width: 1; }
@@ -28,7 +26,7 @@
 
   <rect width="680" height="440" class="bg"/>
 
-  <!-- Líneas de jerarquía -->
+  <!-- Líneas jerarquía -->
   <line x1="340" y1="80" x2="340" y2="102" class="linea"/>
   <line x1="110" y1="102" x2="570" y2="102" class="linea"/>
   <line x1="110" y1="102" x2="110" y2="124" class="linea"/>
@@ -47,32 +45,29 @@
   <!-- Nivel 1 -->
   <rect x="50" y="124" width="120" height="44" rx="6" class="principal"/>
   <text x="110" y="151" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Catálogo</text>
-
   <rect x="196" y="124" width="120" height="44" rx="6" class="principal"/>
   <text x="256" y="151" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Ofertas</text>
-
   <rect x="364" y="124" width="120" height="44" rx="6" class="principal"/>
   <text x="424" y="151" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Mi cuenta</text>
-
   <rect x="510" y="124" width="120" height="44" rx="6" class="principal"/>
   <text x="570" y="151" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Ayuda</text>
 
   <!-- Nivel 2 secundarias -->
   <rect x="50" y="190" width="120" height="44" rx="6" class="secundaria"/>
-  <text x="110" y="208" text-anchor="middle" font-size="11" font-weight="600" class="txt">Ficha de</text>
-  <text x="110" y="224" text-anchor="middle" font-size="11" class="txt">producto</text>
+  <text x="110" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Ficha de</text>
+  <text x="110" y="224" text-anchor="middle" font-size="11" fill="#ffffff">producto</text>
 
   <rect x="50" y="256" width="120" height="44" rx="6" class="secundaria"/>
-  <text x="110" y="274" text-anchor="middle" font-size="11" font-weight="600" class="txt">Carrito y</text>
-  <text x="110" y="290" text-anchor="middle" font-size="11" class="txt">pago</text>
+  <text x="110" y="274" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Carrito y</text>
+  <text x="110" y="290" text-anchor="middle" font-size="11" fill="#ffffff">pago</text>
 
   <rect x="290" y="190" width="120" height="44" rx="6" class="secundaria"/>
-  <text x="350" y="208" text-anchor="middle" font-size="11" font-weight="600" class="txt">Mis</text>
-  <text x="350" y="224" text-anchor="middle" font-size="11" class="txt">pedidos</text>
+  <text x="350" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Mis</text>
+  <text x="350" y="224" text-anchor="middle" font-size="11" fill="#ffffff">pedidos</text>
 
   <rect x="438" y="190" width="120" height="44" rx="6" class="secundaria"/>
-  <text x="498" y="208" text-anchor="middle" font-size="11" font-weight="600" class="txt">Mis</text>
-  <text x="498" y="224" text-anchor="middle" font-size="11" class="txt">datos</text>
+  <text x="498" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Mis</text>
+  <text x="498" y="224" text-anchor="middle" font-size="11" fill="#ffffff">datos</text>
 
   <!-- Sistema -->
   <rect x="510" y="256" width="120" height="40" rx="6" class="sistema"/>
