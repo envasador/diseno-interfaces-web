@@ -4,18 +4,20 @@
     <style>
       .bg { fill: #ffffff; }
       .txt { fill: #1F0318; }
-      .caja { fill: #ffffff; stroke: #1F0318; stroke-width: 1.5; }
-      .caja-alt { fill: #C42A48; stroke: #1F0318; stroke-width: 1.5; }
-      .caja-amarilla { fill: #FFE156; stroke: #1F0318; stroke-width: 1.5; }
-      .acento { fill: #E93456; stroke: #1F0318; stroke-width: 1.5; }
+      .caja { fill: #FAFAF8; stroke: #1F0318; stroke-width: 1.5; }
+      .paso { fill: #F9A8B8; stroke: #1F0318; stroke-width: 1.5; }
+      .cierre { fill: #FFF5B0; stroke: #1F0318; stroke-width: 1.5; }
+      .contenedor { fill: #F4C5CE; stroke: #1F0318; stroke-width: 1.5; }
+      .amarillo { fill: #FFF5B0; stroke: #1F0318; stroke-width: 1.5; }
       .linea { stroke: #1F0318; stroke-width: 1.5; }
       @media (prefers-color-scheme: dark) {
         .bg { fill: #121212; }
         .txt { fill: #e0e0e0; }
-        .caja { fill: #262626; stroke: #888888; stroke-width: 1.5; }
-        .caja-alt { fill: #C42A48; stroke: #888888; stroke-width: 1.5; }
-        .caja-amarilla { fill: #3a3000; stroke: #888888; stroke-width: 1.5; }
-        .linea { stroke: #888888; stroke-width: 1.5; }
+        .caja { fill: #262626; stroke: #555; stroke-width: 1.5; }
+        .paso { fill: #5a2030; stroke: #555; stroke-width: 1.5; }
+        .cierre { fill: #3a3000; stroke: #555; stroke-width: 1.5; }
+        .contenedor { fill: #3a1a24; stroke: #555; stroke-width: 1.5; }
+        .linea { stroke: #555; stroke-width: 1.5; }
       }
     </style>
     <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -26,66 +28,61 @@
   <rect width="680" height="340" class="bg"/>
   <line x1="40" y1="90" x2="640" y2="90" class="linea"/>
 
-  <!-- Paso 1 -->
-  <circle cx="80" cy="90" r="16" class="acento"/>
-  <text x="80" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">1</text>
-  <rect x="32" y="116" width="96" height="52" rx="6" class="caja"/>
-  <text x="80" y="136" text-anchor="middle" font-size="11" font-weight="600" class="txt">Hipótesis</text>
-  <text x="80" y="152" text-anchor="middle" font-size="10" class="txt">2h</text>
+  <!-- Pasos 1-6 -->
+  <circle cx="80"  cy="90" r="16" class="paso"/>
+  <text x="80"  y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">1</text>
+  <rect x="32"  y="116" width="96"  height="60" rx="6" class="paso"/>
+  <text x="80"  y="136" text-anchor="middle" font-size="11" font-weight="600" class="txt">Hipótesis</text>
+  <text x="80"  y="152" text-anchor="middle" font-size="10" class="txt">2h</text>
 
-  <!-- Paso 2 -->
-  <circle cx="177" cy="90" r="16" class="acento"/>
-  <text x="177" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">2</text>
-  <rect x="122" y="116" width="110" height="60" rx="6" class="caja"/>
+  <circle cx="177" cy="90" r="16" class="paso"/>
+  <text x="177" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">2</text>
+  <rect x="122" y="116" width="110" height="60" rx="6" class="paso"/>
   <text x="177" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">Referentes</text>
   <text x="177" y="150" text-anchor="middle" font-size="10" class="txt">3h · test 5s</text>
   <text x="177" y="165" text-anchor="middle" font-size="10" class="txt">+ encuesta</text>
 
-  <!-- Paso 3 -->
-  <circle cx="277" cy="90" r="16" class="acento"/>
-  <text x="277" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">3</text>
-  <rect x="220" y="116" width="114" height="60" rx="6" class="caja"/>
+  <circle cx="277" cy="90" r="16" class="paso"/>
+  <text x="277" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">3</text>
+  <rect x="220" y="116" width="114" height="60" rx="6" class="paso"/>
   <text x="277" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">Entrevistas</text>
   <text x="277" y="150" text-anchor="middle" font-size="10" class="txt">4h</text>
   <text x="277" y="165" text-anchor="middle" font-size="10" class="txt">5-6 personas</text>
 
-  <!-- Paso 4 -->
-  <circle cx="377" cy="90" r="16" class="acento"/>
-  <text x="377" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">4</text>
-  <rect x="320" y="116" width="114" height="60" rx="6" class="caja"/>
+  <circle cx="377" cy="90" r="16" class="paso"/>
+  <text x="377" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">4</text>
+  <rect x="320" y="116" width="114" height="60" rx="6" class="paso"/>
   <text x="377" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">Personas</text>
   <text x="377" y="150" text-anchor="middle" font-size="10" class="txt">4h · affinity</text>
   <text x="377" y="165" text-anchor="middle" font-size="10" class="txt">mapping</text>
 
-  <!-- Paso 5 -->
-  <circle cx="470" cy="90" r="16" class="acento"/>
-  <text x="470" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">5</text>
-  <rect x="413" y="116" width="114" height="60" rx="6" class="caja"/>
+  <circle cx="470" cy="90" r="16" class="paso"/>
+  <text x="470" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">5</text>
+  <rect x="413" y="116" width="114" height="60" rx="6" class="paso"/>
   <text x="470" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">User flows</text>
   <text x="470" y="150" text-anchor="middle" font-size="10" class="txt">3h · tareas</text>
   <text x="470" y="165" text-anchor="middle" font-size="10" class="txt">críticas</text>
 
-  <!-- Paso 6 -->
-  <circle cx="555" cy="90" r="16" class="acento"/>
-  <text x="555" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">6</text>
-  <rect x="498" y="116" width="114" height="60" rx="6" class="caja"/>
+  <circle cx="555" cy="90" r="16" class="paso"/>
+  <text x="555" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">6</text>
+  <rect x="498" y="116" width="114" height="60" rx="6" class="paso"/>
   <text x="555" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">Sitemap</text>
   <text x="555" y="150" text-anchor="middle" font-size="10" class="txt">2h · card</text>
   <text x="555" y="165" text-anchor="middle" font-size="10" class="txt">sorting</text>
 
-  <!-- Paso 7 — amarillo -->
-  <circle cx="630" cy="90" r="16" class="caja-amarilla"/>
+  <!-- Paso 7 amarillo -->
+  <circle cx="630" cy="90" r="16" class="cierre"/>
   <text x="630" y="95" text-anchor="middle" font-size="13" font-weight="700" class="txt">7</text>
-  <rect x="577" y="116" width="106" height="60" rx="6" class="caja-amarilla"/>
+  <rect x="577" y="116" width="106" height="60" rx="6" class="cierre"/>
   <text x="630" y="134" text-anchor="middle" font-size="11" font-weight="600" class="txt">Brief</text>
   <text x="630" y="150" text-anchor="middle" font-size="10" class="txt">2h · entrega</text>
   <text x="630" y="165" text-anchor="middle" font-size="10" class="txt">final</text>
 
   <!-- Cadena de trazabilidad -->
-  <rect x="40" y="196" width="600" height="124" rx="10" class="caja-alt"/>
-  <text x="340" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Cadena de trazabilidad</text>
+  <rect x="40" y="196" width="600" height="124" rx="10" class="contenedor"/>
+  <text x="340" y="220" text-anchor="middle" font-size="12" font-weight="700" class="txt">Cadena de trazabilidad</text>
 
-  <rect x="60" y="232" width="118" height="36" rx="6" class="caja"/>
+  <rect x="60"  y="232" width="118" height="36" rx="6" class="caja"/>
   <text x="119" y="255" text-anchor="middle" font-size="11" class="txt">Personas reales</text>
   <line x1="178" y1="250" x2="216" y2="250" class="linea" marker-end="url(#arr)"/>
 
@@ -97,8 +94,8 @@
   <text x="408" y="255" text-anchor="middle" font-size="11" class="txt">Personas</text>
   <line x1="458" y1="250" x2="496" y2="250" class="linea" marker-end="url(#arr)"/>
 
-  <rect x="498" y="232" width="122" height="36" rx="6" class="caja-amarilla"/>
+  <rect x="498" y="232" width="122" height="36" rx="6" class="amarillo"/>
   <text x="559" y="255" text-anchor="middle" font-size="11" font-weight="600" class="txt">Brief</text>
 
-  <text x="340" y="300" text-anchor="middle" font-size="10" fill="#ffffff">El CHANGELOG.md acompaña todos los pasos desde el primero</text>
+  <text x="340" y="300" text-anchor="middle" font-size="10" class="txt">El CHANGELOG.md acompaña todos los pasos desde el primero</text>
 </svg>
