@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="540" viewBox="0 0 680 540" role="img" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <title>Ejemplo de user flow: compra como invitado</title>
+  <defs>
+    <style>
+      .bg   { fill: #ffffff; }
+      .txt  { fill: #1F0318; }
+      .caja { fill: #FAFAF8; stroke: #1F0318; stroke-width: 1.5; }
+      .entrada { fill: #F9A8B8; stroke: #1F0318; stroke-width: 1.5; }
+      .decision{ fill: #FFF5B0; stroke: #1F0318; stroke-width: 1.5; }
+      .limite  { fill: #C8CCF5; stroke: #1F0318; stroke-width: 1.5; }
+      .salida  { fill: #B8F0D8; stroke: #1F0318; stroke-width: 1.5; }
+      .linea   { stroke: #1F0318; stroke-width: 1.5; }
+      .retorno { stroke: #F9A8B8; stroke-width: 1.5; stroke-dasharray: 5 3; fill: none; }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #121212; }
+        .txt { fill: #e0e0e0; }
+        .caja { fill: #262626; stroke: #555; stroke-width: 1.5; }
+        .entrada { fill: #5a2030; stroke: #555; }
+        .decision{ fill: #3a3000; stroke: #555; }
+        .limite  { fill: #1e2050; stroke: #555; }
+        .salida  { fill: #0d3020; stroke: #555; }
+        .linea { stroke: #555; stroke-width: 1.5; }
+      }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#1F0318" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#F9A8B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="540" class="bg"/>
+
+  <!-- Entrada -->
+  <rect x="80" y="30" width="160" height="44" rx="22" class="entrada"/>
+  <text x="160" y="48" text-anchor="middle" font-size="12" font-weight="700" class="txt">Entrada</text>
+  <text x="160" y="64" text-anchor="middle" font-size="11" class="txt">Enlace de producto</text>
+
+  <!-- Ficha -->
+  <rect x="80" y="106" width="160" height="40" rx="6" class="caja"/>
+  <text x="160" y="131" text-anchor="middle" font-size="12" font-weight="600" class="txt">Ficha de producto</text>
+  <line x1="160" y1="74" x2="160" y2="106" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Decisión stock -->
+  <polygon points="160,172 232,208 160,244 88,208" class="decision"/>
+  <text x="160" y="204" text-anchor="middle" font-size="11" font-weight="600" class="txt">¿Hay stock</text>
+  <text x="160" y="220" text-anchor="middle" font-size="11" class="txt">disponible?</text>
+  <line x1="160" y1="146" x2="160" y2="172" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Límite sin stock -->
+  <rect x="330" y="184" width="204" height="48" rx="6" class="limite"/>
+  <text x="432" y="204" text-anchor="middle" font-size="12" font-weight="600" class="txt">Aviso disponibilidad</text>
+  <text x="432" y="222" text-anchor="middle" font-size="11" class="txt">Caso límite: sin stock</text>
+  <text x="290" y="202" text-anchor="middle" font-size="10" class="txt">No</text>
+  <line x1="232" y1="208" x2="330" y2="208" class="linea" marker-end="url(#arr)"/>
+  <text x="172" y="258" font-size="10" class="txt">Sí</text>
+
+  <!-- Carrito -->
+  <rect x="80" y="268" width="160" height="40" rx="6" class="caja"/>
+  <text x="160" y="293" text-anchor="middle" font-size="12" font-weight="600" class="txt">Carrito y pago</text>
+  <line x1="160" y1="244" x2="160" y2="268" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Decisión pago -->
+  <polygon points="160,336 232,372 160,408 88,372" class="decision"/>
+  <text x="160" y="368" text-anchor="middle" font-size="11" font-weight="600" class="txt">¿Pago</text>
+  <text x="160" y="384" text-anchor="middle" font-size="11" class="txt">correcto?</text>
+  <line x1="160" y1="308" x2="160" y2="336" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Límite pago -->
+  <rect x="330" y="348" width="204" height="48" rx="6" class="limite"/>
+  <text x="432" y="368" text-anchor="middle" font-size="12" font-weight="600" class="txt">Reintento de pago</text>
+  <text x="432" y="386" text-anchor="middle" font-size="11" class="txt">Caso límite: error</text>
+  <text x="290" y="366" text-anchor="middle" font-size="10" class="txt">No</text>
+  <line x1="232" y1="372" x2="330" y2="372" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Retorno al carrito -->
+  <path d="M534 348 Q580 308 242 288" class="retorno" marker-end="url(#arr2)"/>
+  <text x="172" y="422" font-size="10" class="txt">Sí</text>
+
+  <!-- Salida -->
+  <rect x="80" y="430" width="160" height="44" rx="22" class="salida"/>
+  <text x="160" y="449" text-anchor="middle" font-size="12" font-weight="700" class="txt">Pedido confirmado</text>
+  <text x="160" y="465" text-anchor="middle" font-size="11" class="txt">Salida exitosa</text>
+  <line x1="160" y1="408" x2="160" y2="430" class="linea" marker-end="url(#arr)"/>
+
+  <!-- Leyenda -->
+  <rect x="40" y="494" width="600" height="36" rx="6" class="caja"/>
+  <rect x="56" y="506" width="14" height="14" rx="7" class="entrada"/>
+  <text x="78" y="517" font-size="10" class="txt">Entrada/Salida</text>
+  <rect x="178" y="506" width="14" height="14" rx="3" class="caja"/>
+  <text x="200" y="517" font-size="10" class="txt">Pantalla</text>
+  <polygon points="290,513 297,520 290,527 283,520" class="decision"/>
+  <text x="307" y="517" font-size="10" class="txt">Decisión</text>
+  <rect x="395" y="506" width="14" height="14" rx="3" class="limite"/>
+  <text x="417" y="517" font-size="10" class="txt">Caso límite</text>
+  <rect x="510" y="506" width="14" height="14" rx="7" class="salida"/>
+  <text x="532" y="517" font-size="10" class="txt">Salida OK</text>
+</svg>
