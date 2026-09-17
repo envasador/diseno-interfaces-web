@@ -1,68 +1,51 @@
 # Semana 4 — Cómo se organiza y se cierra
 
-**Órbita 1 · 5 horas · 3 sesiones**
+**Órbita 1 · 5 horas · 2 sesiones**
 
 ---
 
-## Sesión A (2h) — Card sorting y sitemap
+## Lunes (3h) — Card sorting, sitemap y brief
 
 ### Antes de clase
 Tarjetas de card sorting listas en FigJam. Saber con qué dos compañeros se trabaja.
-
-### En clase
-
-**Primera parte (40 min) — Card sorting en grupos de tres**
-
-Cada alumno pasa sus tarjetas a los otros dos miembros del grupo para que las agrupen de forma independiente y en silencio, y nombren cada grupo. El alumno propietario observa y toma nota sin intervenir. Con tres agrupamientos distintos ya se ven los puntos de consenso y los de divergencia.
-
-**Segunda parte (80 min) — Construir el sitemap**
-
-Con los datos del card sorting y los flujos de la semana anterior, cada alumno construye el sitemap en FigJam: pantallas principales, secundarias y de sistema, diferenciadas visualmente.
-
-Verificación inmediata al terminar: ¿cada flujo crítico puede recorrerse en tres niveles o menos? Si un flujo exige saltar entre ramas alejadas, la arquitectura está penalizando una tarea importante.
-
-### Para cerrar
-El alumno señala en el sitemap qué secciones llegan al tercer nivel y anota si esa profundidad está justificada por sus personas o llegó por inercia.
-
-### Entregable
-Sitemap verificado contra los flujos.
-
----
-
-## Sesión B (2h) — Cerrar el brief
-
-### Antes de clase
-Leer el apartado 6 de la Órbita 1.
 Llegar con un borrador del brief escrito.
 
 ### En clase
 
-**Primera parte (30 min) — Los cinco elementos del brief**
+**Primera hora — Card sorting y sitemap**
 
-El profesor revisa con el grupo los cinco elementos: problema respaldado por datos, alcance, personas referenciadas, criterios de éxito verificables y restricciones.
+Card sorting en grupos de tres (40 min): cada alumno pasa sus tarjetas a los otros dos para que las agrupen de forma independiente y en silencio, y nombren cada grupo. El alumno propietario observa sin intervenir.
 
-Énfasis en los criterios de éxito: tienen que poder comprobarse. "La interfaz es fácil de usar" no es verificable. "[Persona primaria] puede completar [tarea crítica] sin ayuda en menos de [tiempo]" sí lo es. Y son exactamente los que usarás en la Órbita 5.
+Con los agrupamientos resultantes cada alumno construye el sitemap en FigJam (50 min): pantallas principales, secundarias y de sistema, diferenciadas visualmente. Verificación cruzada inmediata: ¿cada flujo crítico puede recorrerse en tres niveles o menos?
 
-**Segunda parte (90 min) — Cerrar y ordenar**
+**Segunda hora — Cerrar el brief**
 
-Cada alumno cierra el brief en FigJam y ordena el tablero completo. El tablero tiene que poder leerse en 30 segundos sin que el alumno esté presente para explicarlo. Primera versión definitiva del `CHANGELOG.md` con todos los usos de herramientas de la Órbita 1.
+El profesor revisa con el grupo los cinco elementos del brief (15 min): problema respaldado por datos, alcance, personas referenciadas, criterios de éxito verificables y restricciones. Énfasis en los criterios de éxito: tienen que poder comprobarse, porque serán el guión de los tests en la Órbita 5.
+
+Cada alumno cierra el brief y ordena el tablero completo (45 min). El tablero tiene que poder leerse en 30 segundos sin que el alumno esté presente para explicarlo.
+
+**Tercera hora — Ordenar y revisar la capa 0**
+
+Cada alumno revisa que los cuatro artefactos estén vinculados al Figma del proyecto y cierra la primera versión definitiva del `CHANGELOG.md` con todos los usos de herramientas de la Órbita 1.
+
+Revisión en parejas (30 min): ¿el brief tiene los cinco elementos? ¿Los criterios de éxito son verificables? ¿El tablero se entiende sin explicación?
 
 ### Para cerrar
-La capa 0 está completa y ordenada.
+La capa 0 está completa, ordenada y revisada por un compañero.
 
 ### Entregable
 Capa 0 completa: brief + personas + flujos + sitemap.
 
 ---
 
-## Sesión C (1h) — Galería de la capa 0
+## Miércoles (2h) — Galería de la capa 0
 
 ### Antes de clase
 El tablero terminado y ordenado. Brief legible en 30 segundos sin explicación oral.
 
 ### En clase
 
-**Galería (25 min)**
+**Galería (50 min)**
 
 Todos los tableros abiertos a la vez. Cada alumno recorre los proyectos de sus compañeros y deja exactamente dos comentarios escritos por tablero:
 
@@ -71,7 +54,7 @@ Todos los tableros abiertos a la vez. Cada alumno recorre los proyectos de sus c
 
 Los comentarios quedan en el tablero como registro permanente.
 
-**Puesta en común (25 min)**
+**Puesta en común (40 min)**
 
 El profesor selecciona cuatro o cinco tableros para comentar con el grupo. No los mejores, sino los más útiles pedagógicamente: el que tiene la persona más específica, el flujo con los casos límite mejor resueltos, y alguna decisión que merece discutirse porque podría haberse tomado de otra manera.
 

@@ -34,6 +34,6 @@ Un artefacto con errores formales pero con decisiones bien justificadas vale má
 
 ### De aquí a la Órbita 2
 
-Las personas y los flujos pueden refinarse si las órbitas siguientes revelan que algo estaba mal calibrado. Eso no es un problema, es el proceso normal. Lo que cambia a partir de ahora es el tipo de trabajo: en la Órbita 2 empezarás a fundar el sistema visual —color, tipografía, espaciado, todo como tokens— y cada elección tendrá que pasar por el filtro de lo que construiste aquí.
+Las personas y los flujos pueden refinarse si las órbitas siguientes revelan que algo estaba mal calibrado. Eso es parte del proceso. Lo que cambia a partir de ahora es el tipo de trabajo: en la Órbita 2 empezarás a fundar el sistema visual —color, tipografía, espaciado, todo como tokens— y cada elección tendrá que pasar por el filtro de lo que construiste aquí.
 
 ![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)

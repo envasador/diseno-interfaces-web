@@ -24,7 +24,7 @@ Investigar con personas reales conlleva responsabilidades. Antes de cada entrevi
 
 ### Paso 3: sintetiza los hallazgos
 
-Los datos en bruto no son todavía una persona. Necesitas encontrar los patrones que se repiten entre varias personas entrevistadas.
+Los datos en bruto son el punto de partida. Necesitas encontrar los patrones que se repiten entre varias personas entrevistadas para poder construir algo útil con ellos.
 
 El método más directo es el affinity mapping: escribes cada hallazgo en una nota separada y los agrupas por afinidad en FigJam. Los grupos que emergen solos son los que señalan patrones reales. Los que tienes que forzar probablemente reflejan categorías tuyas, no del usuario.
 
@@ -54,4 +54,4 @@ Para la persona con diversidad funcional, la ficha incluye también el tipo de d
 
 Los datos demográficos extensos —estado civil, ingresos, marca del móvil, aplicaciones favoritas— ocupan espacio sin orientar decisiones. Incluye solo lo que tenga consecuencias directas sobre cómo esa persona usa el producto.
 
-Y una cosa que aprendes enseguida cuando empiezas a testear con personas reales: tu diseño no te pertenece. Puedes haber dedicado días a construir algo que tiene todo el sentido del mundo para ti, y la primera persona que lo ve desde fuera se pierde en el segundo paso. Eso no es un fracaso, es información. Te está diciendo dónde hay que mejorar. El trabajo de diseño consiste en usar esa información para tomar mejores decisiones, no en defender lo que ya hiciste.
+Y una cosa que aprendes enseguida cuando empiezas a testear con personas reales: tu diseño no te pertenece. Puedes haber dedicado días a construir algo que tiene todo el sentido del mundo para ti, y la primera persona que lo ve desde fuera se pierde en el segundo paso. Eso es información. Te está diciendo dónde hay que mejorar. El trabajo de diseño consiste en usar esa información para tomar mejores decisiones.

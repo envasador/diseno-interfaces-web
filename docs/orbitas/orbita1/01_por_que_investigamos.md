@@ -24,7 +24,7 @@ En esta órbita vas a construir entre dos y tres personas. Una de ellas debe ten
 
 Antes de que empieces a investigar, hay un conjunto de principios sobre comportamiento humano que los profesionales del diseño usan como referencia. No son reglas absolutas, pero ayudan a entender por qué ciertas decisiones de diseño funcionan mejor que otras.
 
-**Ley de Hick.** Cuantas más opciones tiene una persona, más tarda en decidir. Un menú con doce opciones es más lento de procesar que uno con cuatro. Simplificar no es quitar contenido, es organizarlo para que el usuario llegue a lo que necesita sin tener que procesar todo lo demás.
+**Ley de Hick.** Cuantas más opciones tiene una persona, más tarda en decidir. Un menú con doce opciones es más lento de procesar que uno con cuatro. Simplificar significa organizar el contenido para que el usuario llegue a lo que necesita sin tener que procesar todo lo demás.
 
 **Ley de Fitts.** El tiempo que tardas en pulsar algo depende de lo grande que sea y de lo cerca que esté. En móvil, los elementos interactivos que más se usan tienen que ser lo suficientemente grandes y estar en zonas cómodas para el pulgar. Lo que cuesta alcanzar, se usa menos.
 
@@ -42,6 +42,6 @@ Las herramientas de IA pueden ayudarte en la fase de investigación: organizar n
 
 Si usas IA en cualquier parte de esta fase, lo documentas en el `CHANGELOG.md`: qué le pediste, qué generó, qué mantuviste y qué cambiaste. Eso es lo que demuestra que las decisiones son tuyas.
 
-### Qué producto de esta órbita
+### Qué sale de esta órbita
 
 Al terminar la Órbita 1 tendrás cuatro cosas listas para usar en el resto del módulo: el brief de proyecto, las personas, los user flows y el sitemap. Cada decisión de tipografía, color, componente o estructura de navegación que tomes después debería poder justificarse señalando algo de lo que construiste aquí.

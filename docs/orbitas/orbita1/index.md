@@ -30,20 +30,16 @@ Cuatro artefactos en FigJam vinculados al archivo principal de Figma:
 
 ## Sesiones de seminario
 
-| Semana | Sesión | Horas | Contenido |
+| Semana | Día | Horas | Contenido |
 |---|---|---|---|
-| 1 | A | 2h | Presentación · elección de proyecto · test 5s sobre referentes |
-| 1 | B | 2h | Qué es una persona · guión de entrevista · entrevistas en clase |
-| 1 | C | 1h | Puesta en común · lanzar encuesta Tally |
-| 2 | A | 2h | Affinity mapping · persona primaria |
-| 2 | B | 2h | Persona con diversidad funcional · persona secundaria |
-| 2 | C | 1h | Revisión cruzada de personas |
-| 3 | A | 2h | User flows: notación y happy path |
-| 3 | B | 2h | Casos límite · flujos de las 3 tareas críticas |
-| 3 | C | 1h | Preparar el card sorting |
-| 4 | A | 2h | Card sorting · sitemap |
-| 4 | B | 2h | Cerrar el brief · ordenar la capa 0 |
-| 4 | C | 1h | **Galería de la capa 0 · cierre de la Órbita 1** |
+| 1 | Lunes | 3h | Presentación · elección de proyecto · qué es una persona · guión de entrevista · test 5s |
+| 1 | Miércoles | 2h | Puesta en común de hallazgos · lanzar encuesta Tally |
+| 2 | Lunes | 3h | Affinity mapping · persona primaria · persona con diversidad funcional |
+| 2 | Miércoles | 2h | Persona secundaria · revisión cruzada de personas |
+| 3 | Lunes | 3h | User flows: notación · happy path · casos límite · flujos de las 3 tareas |
+| 3 | Miércoles | 2h | Preparar el card sorting |
+| 4 | Lunes | 3h | Card sorting · sitemap · cerrar el brief |
+| 4 | Miércoles | 2h | **Galería de la capa 0 · cierre de la Órbita 1** |
 
 [Ver hoja de ruta completa](00_hoja_de_ruta.md)
 
