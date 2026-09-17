@@ -23,9 +23,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
     - navigation.top
+    - navigation.prune
     - search.highlight
     - content.code.copy
   font: false
@@ -53,91 +52,91 @@ nav:
   - Inicio: index.md
 
   - Órbita 1 — Conocer a las personas:
-    - Resumen y entregables: orbitas/orbita1/index.md
-    - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
-    - Apuntes:
-      - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
-      - 2. Qué es una persona: orbitas/orbita1/02_que_es_una_persona.md
-      - 3. Cómo se construye una persona: orbitas/orbita1/03_como_se_construye_una_persona.md
-      - 4. User flows: orbitas/orbita1/04_user_flows.md
-      - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
-      - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
-    - Sesiones de seminario:
-      - Semana 1 — Por qué y para quién: orbitas/orbita1/sesiones/semana1.md
-      - Semana 2 — De los datos a las personas: orbitas/orbita1/sesiones/semana2.md
-      - Semana 3 — Cómo se mueve: orbitas/orbita1/sesiones/semana3.md
-      - Semana 4 — Cómo se organiza y se cierra: orbitas/orbita1/sesiones/semana4.md
+      - Resumen y entregables: orbitas/orbita1/index.md
+      - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
+      - Apuntes:
+          - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
+          - 2. Qué es una persona: orbitas/orbita1/02_que_es_una_persona.md
+          - 3. Cómo se construye una persona: orbitas/orbita1/03_como_se_construye_una_persona.md
+          - 4. User flows: orbitas/orbita1/04_user_flows.md
+          - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
+          - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
+      - Sesiones de seminario:
+          - Semana 1 — Por qué y para quién: orbitas/orbita1/sesiones/semana1.md
+          - Semana 2 — De los datos a las personas: orbitas/orbita1/sesiones/semana2.md
+          - Semana 3 — Cómo se mueve: orbitas/orbita1/sesiones/semana3.md
+          - Semana 4 — Cómo se organiza y se cierra: orbitas/orbita1/sesiones/semana4.md
 
   - Órbita 2 — Fundar el sistema visual:
-    - Resumen y entregables: orbitas/orbita2/index.md
-    - Apuntes:
-      - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
-      - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
-      - 3. Tipografía — escala y jerarquía semántica: orbitas/orbita2/03_tipografia.md
-      - 4. Espaciado, radio y elevación: orbitas/orbita2/04_espaciado.md
-      - 5. Variables en Figma: orbitas/orbita2/05_variables_figma.md
-      - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
-      - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
-    - Sesiones de seminario:
-      - Semana 5 — Tokens y color: orbitas/orbita2/sesiones/semana5.md
-      - Semana 6 — Tipografía y espaciado: orbitas/orbita2/sesiones/semana6.md
-      - Semana 7 — Sistema completo: orbitas/orbita2/sesiones/semana7.md
+      - Resumen y entregables: orbitas/orbita2/index.md
+      - Apuntes:
+          - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
+          - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
+          - 3. Tipografía — escala y jerarquía semántica: orbitas/orbita2/03_tipografia.md
+          - 4. Espaciado, radio y elevación: orbitas/orbita2/04_espaciado.md
+          - 5. Variables en Figma: orbitas/orbita2/05_variables_figma.md
+          - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
+          - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
+      - Sesiones de seminario:
+          - Semana 5 — Tokens y color: orbitas/orbita2/sesiones/semana5.md
+          - Semana 6 — Tipografía y espaciado: orbitas/orbita2/sesiones/semana6.md
+          - Semana 7 — Sistema completo: orbitas/orbita2/sesiones/semana7.md
 
   - Órbita 3 — Maquetar para dar forma:
-    - Resumen y entregables: orbitas/orbita3/index.md
-    - Apuntes:
-      - 1. HTML semántico: orbitas/orbita3/01_html_semantico.md
-      - 2. CSS custom properties: orbitas/orbita3/02_css_custom_properties.md
-      - 3. Arquitectura ITCSS: orbitas/orbita3/03_itcss.md
-      - 4. Nomenclatura BEM: orbitas/orbita3/04_bem.md
-      - 5. SCSS y preprocesadores: orbitas/orbita3/05_scss.md
-      - 6. Responsive y breakpoints: orbitas/orbita3/06_responsive.md
-      - 7. Multimedia y ecodiseño: orbitas/orbita3/07_multimedia_ecodiseno.md
-      - 8. Componentes — el set mínimo: orbitas/orbita3/08_componentes.md
-    - Sesiones de seminario:
-      - Semana 8 — HTML y custom properties: orbitas/orbita3/sesiones/semana8.md
-      - Semana 9 — ITCSS, BEM y SCSS: orbitas/orbita3/sesiones/semana9.md
-      - Semana 10 — Responsive y multimedia: orbitas/orbita3/sesiones/semana10.md
-      - Semana 11 — Componentes: orbitas/orbita3/sesiones/semana11.md
-      - Semana 12 — Cierre de la capa de código: orbitas/orbita3/sesiones/semana12.md
+      - Resumen y entregables: orbitas/orbita3/index.md
+      - Apuntes:
+          - 1. HTML semántico: orbitas/orbita3/01_html_semantico.md
+          - 2. CSS custom properties: orbitas/orbita3/02_css_custom_properties.md
+          - 3. Arquitectura ITCSS: orbitas/orbita3/03_itcss.md
+          - 4. Nomenclatura BEM: orbitas/orbita3/04_bem.md
+          - 5. SCSS y preprocesadores: orbitas/orbita3/05_scss.md
+          - 6. Responsive y breakpoints: orbitas/orbita3/06_responsive.md
+          - 7. Multimedia y ecodiseño: orbitas/orbita3/07_multimedia_ecodiseno.md
+          - 8. Componentes — el set mínimo: orbitas/orbita3/08_componentes.md
+      - Sesiones de seminario:
+          - Semana 8 — HTML y custom properties: orbitas/orbita3/sesiones/semana8.md
+          - Semana 9 — ITCSS, BEM y SCSS: orbitas/orbita3/sesiones/semana9.md
+          - Semana 10 — Responsive y multimedia: orbitas/orbita3/sesiones/semana10.md
+          - Semana 11 — Componentes: orbitas/orbita3/sesiones/semana11.md
+          - Semana 12 — Cierre de la capa de código: orbitas/orbita3/sesiones/semana12.md
 
   - Órbita 4 — Diseñar para todos:
-    - Resumen y entregables: orbitas/orbita4/index.md
-    - Apuntes:
-      - 1. Accesibilidad como propiedad del sistema: orbitas/orbita4/01_accesibilidad_sistema.md
-      - 2. WCAG 2.2 — principios y criterios: orbitas/orbita4/02_wcag.md
-      - 3. HTML semántico y estructura: orbitas/orbita4/03_html_accesible.md
-      - 4. ARIA — roles, estados y propiedades: orbitas/orbita4/04_aria.md
-      - 5. Navegación por teclado y gestión del foco: orbitas/orbita4/05_teclado_foco.md
-      - 6. Multimedia accesible: orbitas/orbita4/06_multimedia_accesible.md
-      - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
-      - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
-    - Sesiones de seminario:
-      - Semana 13 — Principios y HTML accesible: orbitas/orbita4/sesiones/semana13.md
-      - Semana 14 — ARIA y teclado: orbitas/orbita4/sesiones/semana14.md
-      - Semana 15 — Auditoría y correcciones: orbitas/orbita4/sesiones/semana15.md
+      - Resumen y entregables: orbitas/orbita4/index.md
+      - Apuntes:
+          - 1. Accesibilidad como propiedad del sistema: orbitas/orbita4/01_accesibilidad_sistema.md
+          - 2. WCAG 2.2 — principios y criterios: orbitas/orbita4/02_wcag.md
+          - 3. HTML semántico y estructura: orbitas/orbita4/03_html_accesible.md
+          - 4. ARIA — roles, estados y propiedades: orbitas/orbita4/04_aria.md
+          - 5. Navegación por teclado y gestión del foco: orbitas/orbita4/05_teclado_foco.md
+          - 6. Multimedia accesible: orbitas/orbita4/06_multimedia_accesible.md
+          - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
+          - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
+      - Sesiones de seminario:
+          - Semana 13 — Principios y HTML accesible: orbitas/orbita4/sesiones/semana13.md
+          - Semana 14 — ARIA y teclado: orbitas/orbita4/sesiones/semana14.md
+          - Semana 15 — Auditoría y correcciones: orbitas/orbita4/sesiones/semana15.md
 
   - Órbita 5 — Verificar con personas reales:
-    - Resumen y entregables: orbitas/orbita5/index.md
-    - Apuntes:
-      - 1. Evaluación heurística de Nielsen: orbitas/orbita5/01_heuristica.md
-      - 2. Cognitive walkthrough: orbitas/orbita5/02_cognitive_walkthrough.md
-      - 3. Patrones engañosos — auditoría ética: orbitas/orbita5/03_dark_patterns.md
-      - 4. Auditoría de sostenibilidad WSG: orbitas/orbita5/04_sostenibilidad.md
-      - 5. SEO y visibilidad: orbitas/orbita5/05_seo.md
-      - 6. El informe de evaluación: orbitas/orbita5/06_informe.md
-    - Sesiones de seminario:
-      - Semana 16 — Heurística y walkthrough: orbitas/orbita5/sesiones/semana16.md
-      - Semana 17 — Ética y sostenibilidad: orbitas/orbita5/sesiones/semana17.md
+      - Resumen y entregables: orbitas/orbita5/index.md
+      - Apuntes:
+          - 1. Evaluación heurística de Nielsen: orbitas/orbita5/01_heuristica.md
+          - 2. Cognitive walkthrough: orbitas/orbita5/02_cognitive_walkthrough.md
+          - 3. Patrones engañosos — auditoría ética: orbitas/orbita5/03_dark_patterns.md
+          - 4. Auditoría de sostenibilidad WSG: orbitas/orbita5/04_sostenibilidad.md
+          - 5. SEO y visibilidad: orbitas/orbita5/05_seo.md
+          - 6. El informe de evaluación: orbitas/orbita5/06_informe.md
+      - Sesiones de seminario:
+          - Semana 16 — Heurística y walkthrough: orbitas/orbita5/sesiones/semana16.md
+          - Semana 17 — Ética y sostenibilidad: orbitas/orbita5/sesiones/semana17.md
 
   - Órbita 6 — Documentar y defender:
-    - Resumen y entregables: orbitas/orbita6/index.md
-    - Apuntes:
-      - 1. README — visión y decisiones técnicas: orbitas/orbita6/01_readme.md
-      - 2. DESIGN.md — documentación del sistema: orbitas/orbita6/02_design_md.md
-      - 3. CHANGELOG.md — trazabilidad completa: orbitas/orbita6/03_changelog.md
-      - 4. Despliegue en GitHub Pages: orbitas/orbita6/04_despliegue.md
-      - 5. Preparar y defender el proyecto: orbitas/orbita6/05_defensa.md
-    - Sesiones de seminario:
-      - Semana 18 — Documentación: orbitas/orbita6/sesiones/semana18.md
-      - Semana 19 — Defensa oral: orbitas/orbita6/sesiones/semana19.md
+      - Resumen y entregables: orbitas/orbita6/index.md
+      - Apuntes:
+          - 1. README — visión y decisiones técnicas: orbitas/orbita6/01_readme.md
+          - 2. DESIGN.md — documentación del sistema: orbitas/orbita6/02_design_md.md
+          - 3. CHANGELOG.md — trazabilidad completa: orbitas/orbita6/03_changelog.md
+          - 4. Despliegue en GitHub Pages: orbitas/orbita6/04_despliegue.md
+          - 5. Preparar y defender el proyecto: orbitas/orbita6/05_defensa.md
+      - Sesiones de seminario:
+          - Semana 18 — Documentación: orbitas/orbita6/sesiones/semana18.md
+          - Semana 19 — Defensa oral: orbitas/orbita6/sesiones/semana19.md
