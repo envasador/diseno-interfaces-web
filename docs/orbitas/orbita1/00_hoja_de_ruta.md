@@ -3,7 +3,7 @@
 
 Esta guía secuencia el trabajo de la órbita. Cada paso indica qué se hace, con qué herramienta, qué produce y cuántas horas orientativas ocupa. Los apartados de los apuntes desarrollan el cómo de cada paso.
 
-![Hoja de ruta de la Órbita 1 en siete pasos](img/orbita1_00_esquema_hoja_de_ruta.svg)
+![Hoja de ruta de la Órbita 1 en ocho pasos](img/orbita1_00_esquema_hoja_de_ruta.svg)
 
 ### Paso 1 — Definir la hipótesis de proyecto (2h)
 
@@ -41,12 +41,18 @@ Card sorting con cuatro o cinco compañeros. Con los agrupamientos resultantes y
 
 Produce: sitemap verificado contra los flujos.
 
-### Paso 7 — Cerrar el brief y entregar (2h)
+### Paso 7 — Wireframear y prototipar (3h)
 
-Conviertes la hipótesis del paso 1 en brief definitivo: problema respaldado por datos, alcance acotado por las tareas críticas, personas referenciadas, criterios de éxito verificables y restricciones. Revisas que los cuatro artefactos estén vinculados al Figma del proyecto y que el `CHANGELOG.md` recoja todos los usos de IA de la órbita.
+Con el sitemap y los user flows como referencia, produces los wireframes lo-fi en Figma: una pantalla por paso del happy path, en escala de grises, sin tipografía real ni color. Nombras cada frame con el nombre del paso del flujo al que corresponde. Una vez tienes todas las pantallas, las conectas con interacciones básicas para formar el prototipo navegable. Lo testeas con cuatro o cinco personas del perfil de tu persona principal usando Lyssna.
 
-Produce: entregable completo de la Órbita 1 — brief, personas, user flows y sitemap.
+Produce: wireframes lo-fi + prototipo navegable en Figma, con resultados del test anotados.
+
+### Paso 8 — Cerrar el brief y entregar (2h)
+
+Conviertes la hipótesis del paso 1 en brief definitivo: problema respaldado por datos, alcance acotado por las tareas críticas, personas referenciadas, criterios de éxito verificables y restricciones. Revisas que los seis artefactos estén vinculados entre sí y que el `CHANGELOG.md` recoja todos los usos de IA de la órbita.
+
+Produce: entregable completo de la Órbita 1 — brief, personas, user flows, sitemap, wireframes y prototipo navegable.
 
 ---
 
-Las horas suman 20 y son orientativas. Las fases de entrevista y síntesis son las que más varían según la disponibilidad de participantes. Conviene empezar a reclutar desde el primer día.
+Las horas suman 23 y son orientativas. Las fases de entrevista y síntesis son las que más varían según la disponibilidad de participantes. Conviene empezar a reclutar desde el primer día.

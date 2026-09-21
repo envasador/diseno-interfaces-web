@@ -6,7 +6,7 @@
 
 ## Qué produce esta órbita
 
-Cuatro artefactos en FigJam vinculados al archivo principal de Figma:
+Seis artefactos vinculados entre sí — cuatro en FigJam y dos en Figma:
 
 | Artefacto | Qué es | Para qué sirve en el resto del módulo |
 |---|---|---|
@@ -14,6 +14,8 @@ Cuatro artefactos en FigJam vinculados al archivo principal de Figma:
 | **Personas** | 2-3 perfiles con diversidad funcional incluida | Filtro de decisiones en todas las órbitas |
 | **User flows** | Flujos de tareas críticas con casos límite | Guión del cognitive walkthrough en Órbita 5 |
 | **Sitemap** | Estructura jerárquica del producto | Base de la arquitectura de navegación |
+| **Wireframes lo-fi** | Pantallas del happy path en escala de grises | Esqueleto sobre el que el sistema visual toma forma en Órbita 2 |
+| **Prototipo navegable** | Wireframes conectados con interacciones básicas | Primer test de flujo antes de invertir en diseño visual |
 
 ---
 
@@ -24,4 +26,5 @@ Cuatro artefactos en FigJam vinculados al archivo principal de Figma:
 3. [Cómo se construye una persona](03_como_se_construye_una_persona.md)
 4. [User flows](04_user_flows.md)
 5. [Arquitectura de la información y sitemap](05_arquitectura_informacion.md)
-6. [El brief de proyecto y el entregable](06_brief_y_entregable.md)
+6. [Del flujo al wireframe](06_wireframes.md)
+7. [El brief de proyecto y el entregable](07_brief_y_entregable.md)
