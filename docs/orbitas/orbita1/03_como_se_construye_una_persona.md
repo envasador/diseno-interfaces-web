@@ -50,4 +50,4 @@ Una ficha bien construida incluye:
 
 Para la persona con diversidad funcional, la ficha incluye también el tipo de diversidad funcional, las tecnologías de apoyo que usa si las hay, y los ajustes de sistema que tiene configurados. Con esa información, esa persona se convierte en un criterio activo de accesibilidad a lo largo de todo el módulo (RA5-a).
 
-[Ejemplos de personas](ejemplos/personas.md)
+[Ejemplos de personas](ejemplos/personas.html). 
