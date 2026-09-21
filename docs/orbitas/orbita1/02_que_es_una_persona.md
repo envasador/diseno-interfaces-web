@@ -4,7 +4,7 @@
 
 Una persona es un perfil de usuario construido a partir de investigación real. Recoge los patrones de comportamiento, las motivaciones, las frustraciones y los contextos de uso que has encontrado en tus entrevistas y encuestas, y los sintetiza en un perfil concreto que puedas consultar mientras diseñas.
 
-La demografía —nombre, edad, profesión, foto— puede estar si te ayuda a visualizar mejor el perfil, pero lo que realmente hace útil a una persona son los detalles de comportamiento: cuándo usa el producto, desde qué dispositivo, en qué condiciones, qué quiere conseguir y qué se lo impide ahora mismo.
+La demografía (nombre, edad, profesión, foto) puede estar si te ayuda a visualizar mejor el perfil, pero lo que realmente hace útil a una persona son los detalles de comportamiento: cuándo usa el producto, desde qué dispositivo, en qué condiciones, qué quiere conseguir y qué se lo impide ahora mismo.
 
 ### Cuándo una persona te sirve
 

@@ -1,4 +1,4 @@
-# Semana 1 — Por qué y para quién
+ # Semana 1 — Por qué y para quién
 
 **Órbita 1 · 5 horas · 2 sesiones**
 

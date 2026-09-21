@@ -50,8 +50,4 @@ Una ficha bien construida incluye:
 
 Para la persona con diversidad funcional, la ficha incluye también el tipo de diversidad funcional, las tecnologías de apoyo que usa si las hay, y los ajustes de sistema que tiene configurados. Con esa información, esa persona se convierte en un criterio activo de accesibilidad a lo largo de todo el módulo (RA5-a).
 
-### Lo que no necesitas en la ficha
-
-Los datos demográficos extensos —estado civil, ingresos, marca del móvil, aplicaciones favoritas— ocupan espacio sin orientar decisiones. Incluye solo lo que tenga consecuencias directas sobre cómo esa persona usa el producto.
-
-Y una cosa que aprendes enseguida cuando empiezas a testear con personas reales: tu diseño no te pertenece. Puedes haber dedicado días a construir algo que tiene todo el sentido del mundo para ti, y la primera persona que lo ve desde fuera se pierde en el segundo paso. Eso es información. Te está diciendo dónde hay que mejorar. El trabajo de diseño consiste en usar esa información para tomar mejores decisiones.
+[Ejemplos de personas](ejemplos/personas.md)
