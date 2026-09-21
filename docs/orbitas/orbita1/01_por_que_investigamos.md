@@ -36,6 +36,9 @@ Antes de que empieces a investigar, hay un conjunto de principios sobre comporta
 
 Estas leyes no dictan cómo tiene que ser tu diseño, pero sí te dan un vocabulario para justificar tus decisiones. Cuando en la auditoría oral te pregunten por qué tomaste una decisión concreta, poder apoyarla en un principio de comportamiento humano es mucho más sólido que decir que "quedaba mejor así" (RA1-a, RA6-a).
 
+[Laws of UX](https://lawsofux.com/es/)
+
+
 ### La IA en la investigación
 
 Las herramientas de IA pueden ayudarte en la fase de investigación: organizar notas de entrevistas, generar preguntas para un guión, identificar patrones en respuestas de encuesta. Lo que no pueden hacer es investigar por ti: hablar con las personas, observar cómo usan los productos, detectar la diferencia entre lo que alguien dice que hace y lo que realmente hace.
