@@ -5,9 +5,10 @@
 :root {
   --color-primario: #E93456;
   --color-primario-hover: #c42a48;
-  --color-negro: #1a1a1a;
-  --color-blanco: #ffffff;
-  --color-amarillo: #ffe156;
+  --color-negro: #240509;
+  --color-blanco: #FBFBF8;
+  --color-amarillo: #F7D597;
+  --color-texto-secundario: #4A5568;
   --borde: 3px solid var(--color-negro);
   --sombra: 4px 4px 0 var(--color-negro);
   --sombra-hover: 6px 6px 0 var(--color-negro);
@@ -259,22 +260,33 @@ h4{
 
 /* Modo oscuro */
 [data-md-color-scheme="slate"] {
-  --color-blanco: #1a1a1a;
-  --color-negro: #fffef8;
+  --color-blanco: #240509;
+  --color-negro: #FBFBF8;
 }
 
 [data-md-color-scheme="slate"] body,
 [data-md-color-scheme="slate"] .md-main,
 [data-md-color-scheme="slate"] .md-content,
 [data-md-color-scheme="slate"] .md-sidebar {
-  background-color: #1a1a1a !important;
+  background-color: #240509 !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset {
-  color: #fffef8 !important;
+  color: #FBFBF8 !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
   background-color: #2a2a2a !important;
 }
 
+
+/* Texto secundario sobre fondo claro */
+.md-typeset p,
+.md-typeset li {
+  color: var(--color-texto-secundario);
+}
+
+.md-typeset strong,
+.md-typeset b {
+  color: var(--color-negro);
+}
