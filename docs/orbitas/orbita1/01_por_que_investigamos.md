@@ -2,6 +2,15 @@
 
 ## 1. Por qué investigamos antes de diseñar
 
+<div style="background:#1a1a1a; border:3px solid #1a1a1a; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+  <div>
+    <p style="margin:0 0 8px 0; color:#ffe156; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Por qué investigar antes de diseñar, las leyes de UX y el papel de la IA en la investigación.</p>
+  </div>
+  <a href="slides/orbita1_01_por_que_investigamos.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#1a1a1a; border:3px solid #1a1a1a; box-shadow:4px 4px 0 #1a1a1a; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+</div>
+
+
 Cuando empiezas un proyecto de diseño, la tentación es abrir Figma y ponerte a dibujar pantallas. Lo entiendo: tienes una idea, quieres ver cómo queda, y el diseño visual da sensación de avance. El problema es que si no sabes bien para quién estás diseñando ni qué necesita esa persona, estás tomando decisiones sin información suficiente. Y esas decisiones cuestan tiempo después, cuando hay que cambiarlas.
 
 La investigación sirve para tener esa información antes de tomar las decisiones, no después.

@@ -2,7 +2,16 @@
 
 ## 4. User flows: mapear el camino antes de dibujar las pantallas
 
-Un user flow es el recorrido que sigue una persona para conseguir algo dentro de tu aplicación. Muestra la secuencia de pasos, decisiones y pantallas desde que aparece la necesidad hasta que se resuelve o se abandona.
+<div style="background:#1a1a1a; border:3px solid #1a1a1a; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+  <div>
+    <p style="margin:0 0 8px 0; color:#ffe156; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Qué es un user flow, cómo se representa, el happy path y los casos límite.</p>
+  </div>
+  <a href="slides/orbita1_04_user_flows.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#1a1a1a; border:3px solid #1a1a1a; box-shadow:4px 4px 0 #1a1a1a; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+</div>
+
+
+Un **user flow** es el recorrido que sigue una persona para conseguir algo dentro de tu aplicación. Muestra la secuencia de pasos, decisiones y pantallas desde que aparece la necesidad hasta que se resuelve o se abandona.
 
 Mapear los flujos antes de dibujar pantallas tiene una razón práctica: una pantalla puede estar bien resuelta por sí sola y aun así formar parte de un flujo que no funciona. Un proceso de compra que pide datos que el usuario no tiene a mano, un registro que obliga a crear cuenta justo cuando alguien quiere hacer algo rápido, una confirmación que llega cuando la persona ya cerró la aplicación. Estos problemas no se ven mirando pantallas individuales. Se ven mirando el flujo completo (RA1-c, RA6-c).
 
@@ -10,15 +19,15 @@ Mapear los flujos antes de dibujar pantallas tiene una razón práctica: una pan
 
 La notación es simple. Una píldora o elipse para el punto de entrada o salida. Un rectángulo para cada pantalla o estado. Un rombo para cada decisión, ya sea del usuario o del sistema. Flechas para las transiciones entre ellos.
 
-El punto de entrada merece más atención de la que suele recibir. Las personas llegan a un flujo desde sitios distintos: desde la pantalla principal, desde una notificación, desde un enlace compartido, desde un resultado de búsqueda. Cada punto de entrada implica un estado de conocimiento diferente. El flujo tiene que funcionar para todos ellos.
+El **punto de entrada** merece más atención de la que suele recibir. Las personas llegan a un flujo desde sitios distintos: desde la pantalla principal, desde una notificación, desde un enlace compartido, desde un resultado de búsqueda. Cada punto de entrada implica un estado de conocimiento diferente. El flujo tiene que funcionar para todos ellos.
 
 Los rombos de decisión generan siempre al menos dos ramas. Cada rama tiene que llevar a algún sitio definido. Las ramas que terminan en el vacío son huecos del diseño que aparecerán después como pantallas de error sin resolver.
 
 ### El happy path y los casos límite
 
-El happy path es el recorrido ideal: el usuario hace exactamente lo que el diseño espera, todo funciona, el objetivo se cumple. Es el flujo más fácil de mapear y el que menos información aporta, porque describe el escenario que menos problemas va a tener.
+El **happy path** es el recorrido ideal: el usuario hace exactamente lo que el diseño espera, todo funciona, el objetivo se cumple. Es el flujo más fácil de mapear y el que menos información aporta, porque describe el escenario que menos problemas va a tener.
 
-El valor del mapeo está en los casos límite: qué pasa cuando el usuario introduce mal la contraseña tres veces, cuando se corta la conexión a mitad de un pago, cuando vuelve a un carrito de hace dos semanas, cuando intenta acceder a contenido que ya se ha eliminado. Cada uno de estos escenarios necesita una respuesta diseñada.
+El valor del mapeo está en los **casos límite**: qué pasa cuando el usuario introduce mal la contraseña tres veces, cuando se corta la conexión a mitad de un pago, cuando vuelve a un carrito de hace dos semanas, cuando intenta acceder a contenido que ya se ha eliminado. Cada uno de estos escenarios necesita una respuesta diseñada.
 
 Descubrir estos casos ahora, sobre un diagrama en FigJam, lleva minutos. Descubrirlos en producción lleva usuarios.
 
@@ -41,3 +50,8 @@ Los flujos se construyen en FigJam, junto a las personas y el brief, vinculados 
 Si usas IA para generar un primer borrador de flujo o para identificar casos límite, el protocolo es el habitual: registro en `CHANGELOG.md`. Un caso límite sugerido por la IA que no sabes explicar es un caso límite que no has analizado.
 
 ![Ejemplo de user flow: compra como invitado](img/orbita1_04_esquema_user_flow.svg)
+
+
+### Lo que te llevas de este apartado
+
+Un user flow mapea el camino completo, no una pantalla suelta. El happy path apenas aporta información nueva: el valor real está en los casos límite, revisados con cada persona como filtro.

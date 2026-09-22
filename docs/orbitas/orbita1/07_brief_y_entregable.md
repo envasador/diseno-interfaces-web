@@ -2,6 +2,15 @@
 
 ## 7. El brief de proyecto y el entregable de la órbita
 
+<div style="background:#1a1a1a; border:3px solid #1a1a1a; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+  <div>
+    <p style="margin:0 0 8px 0; color:#ffe156; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">El brief de proyecto, el entregable completo de la órbita y cómo se evalúa.</p>
+  </div>
+  <a href="slides/orbita1_07_brief_y_entregable.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#1a1a1a; border:3px solid #1a1a1a; box-shadow:4px 4px 0 #1a1a1a; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+</div>
+
+
 El brief de proyecto es el documento que define qué vas a construir, para quién y con qué criterios sabrás que funciona. Es el primero en orden lógico y el último en cerrarse, porque sus contenidos se van completando con lo que la investigación revela: empiezas con una hipótesis y terminas con una definición respaldada por datos.
 
 ### Qué contiene el brief
@@ -40,6 +49,6 @@ Un artefacto con errores formales pero con decisiones bien justificadas vale má
 
 ### De aquí a la Órbita 2
 
-Las personas, los flujos y los wireframes pueden refinarse si las órbitas siguientes revelan que algo estaba mal calibrado. Eso es parte del proceso. Lo que cambia a partir de ahora es el tipo de trabajo: en la Órbita 2 empezarás a fundar el sistema visual — color, tipografía, espaciado, todo como tokens — y cada elección tendrá que pasar por el filtro de lo que construiste aquí. Los wireframes que acabas de hacer son el esqueleto sobre el que ese sistema visual tomará forma.
+Las personas, los flujos y los wireframes pueden refinarse si las órbitas siguientes revelan que algo estaba mal calibrado. Eso es parte del proceso. Lo que cambia a partir de ahora es el tipo de trabajo: en la Órbita 2 empezarás a fundar el sistema visual (color, tipografía, espaciado, todo como tokens) y cada elección tendrá que pasar por el filtro de lo que construiste aquí. Los wireframes que acabas de hacer son el esqueleto sobre el que ese sistema visual tomará forma.
 
 ![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)

@@ -2,13 +2,22 @@
 
 ## 3. Cómo se construye una persona
 
+<div style="background:#1a1a1a; border:3px solid #1a1a1a; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+  <div>
+    <p style="margin:0 0 8px 0; color:#ffe156; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Los cuatro pasos para construir una persona: definir, recoger datos, sintetizar y redactar la ficha.</p>
+  </div>
+  <a href="slides/orbita1_03_como_se_construye_una_persona.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#1a1a1a; border:3px solid #1a1a1a; box-shadow:4px 4px 0 #1a1a1a; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+</div>
+
+
 Construir una persona es un proceso de cuatro pasos: defines qué quieres entender, recoges datos, los sintetizas y redactas la ficha. El riesgo en cada paso es el mismo: atajar con suposiciones en lugar de observar.
 
 ### Paso 1: define qué quieres entender
 
 Antes de hablar con nadie, acota qué información necesitas. Una investigación sin foco produce muchos datos que luego cuesta convertir en algo útil.
 
-Las preguntas que orientan esta fase son de tres tipos. Las de contexto describen la vida del usuario en relación con el problema que resuelve tu producto: ¿en qué situaciones aparece esa necesidad?, ¿con qué frecuencia?, ¿qué hace ahora para resolverla? Las de comportamiento revelan lo que la gente hace, no lo que dice que hace —la diferencia importa—. Las de fricción identifican los momentos de dificultad o abandono, que son los más valiosos para el diseño (RA6-a).
+Las preguntas que orientan esta fase son de tres tipos. Las de contexto describen la vida del usuario en relación con el problema que resuelve tu producto: ¿en qué situaciones aparece esa necesidad?, ¿con qué frecuencia?, ¿qué hace ahora para resolverla? Las de comportamiento revelan lo que la gente hace, no lo que dice que hace (la diferencia importa). Las de fricción identifican los momentos de dificultad o abandono, que son los más valiosos para el diseño (RA6-a).
 
 ### Paso 2: recoge datos
 
@@ -16,7 +25,7 @@ Para este módulo tienes tres métodos accesibles.
 
 Las **encuestas** sirven para recoger volumen y detectar patrones. Con Tally puedes crear formularios sin límite de respuestas. Son útiles para confirmar o descartar hipótesis y para identificar perfiles que entrevistar después. Su limitación es que recogen respuestas declaradas, no comportamiento real.
 
-Las **entrevistas** son el método que más información de calidad produce. Una conversación de veinte minutos con alguien que vive el problema que quieres resolver te da más que cien respuestas de encuesta. Las preguntas tienen que ser abiertas —"cuéntame la última vez que..."— y hay que resistir la tentación de sugerir respuestas. Con cinco o seis entrevistas bien hechas suelen aparecer los patrones principales.
+Las **entrevistas** son el método que más información de calidad produce. Una conversación de veinte minutos con alguien que vive el problema que quieres resolver te da más que cien respuestas de encuesta. Las preguntas tienen que ser abiertas ("cuéntame la última vez que...") y hay que resistir la tentación de sugerir respuestas. Con cinco o seis entrevistas bien hechas suelen aparecer los patrones principales.
 
 Los **tests de los cinco segundos** permiten evaluar qué comunica una interfaz en una primera impresión. En esta órbita todavía no tienes interfaz propia, así que los aplicas sobre productos de referencia: las webs o aplicaciones que ya resuelven el problema que vas a abordar. Saber qué percibe la gente en cinco segundos ante tus referentes es información útil para el brief. Con Lyssna puedes montar uno en minutos. Esta herramienta volverá en la Órbita 2, ya sobre tus propios mockups (RA1-c, RA6-a).
 

@@ -2,9 +2,18 @@
 
 ## 6. Del flujo al wireframe
 
+<div style="background:#1a1a1a; border:3px solid #1a1a1a; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+  <div>
+    <p style="margin:0 0 8px 0; color:#ffe156; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Del user flow al wireframe lo-fi en Figma y el prototipo navegable.</p>
+  </div>
+  <a href="slides/orbita1_06_wireframes.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#1a1a1a; border:3px solid #1a1a1a; box-shadow:4px 4px 0 #1a1a1a; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+</div>
+
+
 Cuando terminas el user flow tienes algo valioso: sabes qué tiene que hacer la interfaz y en qué orden. Lo que no tienes todavía es una propuesta de cómo va a verse. El wireframe es ese paso intermedio. Traduce el flujo en pantallas concretas sin entrar todavía en diseño visual.
 
-La distinción importa. Un wireframe no es un boceto rápido ni un diseño sin acabar. Es una herramienta de decisión: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
+La distinción importa. Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos, no un boceto rápido ni un diseño sin acabar.
 
 ### Qué pantallas hay que wireframear
 
@@ -14,7 +23,7 @@ Una pantalla que no está en el flujo no tiene justificación todavía. Si apare
 
 ### Cómo se hace un wireframe lo-fi en Figma
 
-La fidelidad baja tiene unas convenciones concretas. Escala de grises: negro, blanco y un gris medio. Sin tipografía real: los textos de cuerpo se representan con líneas horizontales de grosor uniforme. Los títulos sí pueden escribirse si ayudan a entender el contenido de la pantalla. Las imágenes van como rectángulos con una X dentro. Los botones, campos e iconos se representan como formas geométricas simples.
+La fidelidad baja tiene unas convenciones concretas. **Escala de grises**: negro, blanco y un gris medio. Sin tipografía real: los textos de cuerpo se representan con líneas horizontales de grosor uniforme. Los títulos sí pueden escribirse si ayudan a entender el contenido de la pantalla. Las imágenes van como rectángulos con una X dentro. Los botones, campos e iconos se representan como formas geométricas simples.
 
 El objetivo es que quien mire el wireframe entienda qué hace cada elemento sin que el estilo visual distraiga la atención.
 
@@ -30,8 +39,13 @@ La tentación más habitual es añadir color para distinguir elementos. Si neces
 
 ### El prototipo navegable
 
-Una vez tienes los wireframes de todas las pantallas del happy path, los conectas en Figma con interacciones básicas: un tap o click en un botón lleva a la siguiente pantalla. Nada más.
+Una vez tienes los wireframes de todas las pantallas del happy path, los conectas en Figma con **interacciones básicas**: un tap o click en un botón lleva a la siguiente pantalla. Nada más.
 
 Este prototipo lo-fi sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Si necesitas explicar algo durante el test, hay un problema de diseño que resolver antes de pasar a alta fidelidad.
 
 El test con el prototipo lo-fi es el mismo test de cinco segundos que usaste en la investigación, pero ahora sobre tu propio trabajo. Puedes hacerlo en Lyssna con el prototipo de Figma enlazado directamente. Con cuatro o cinco personas del perfil de tu persona principal es suficiente para detectar los problemas más graves (RA1-c, RA6-a).
+
+
+### Lo que te llevas de este apartado
+
+El wireframe traduce el user flow en pantallas sin entrar todavía en decisiones visuales. Wireframeas solo lo que aparece en el flujo, en escala de grises, y lo conectas en un prototipo navegable para validar que el camino funciona antes de invertir en diseño visual.
