@@ -2,12 +2,12 @@
 
 ## 5. Arquitectura de la información y sitemap
 
-<div style="background:#240509; border:3px solid #240509; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
+<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
   <div>
-    <p style="margin:0 0 8px 0; color:#F7D597; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#FBFBF8; font-size:1.1rem; font-weight:600;">Arquitectura de la información, card sorting, amplitud frente a profundidad y el sitemap.</p>
+    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Arquitectura de la información, card sorting, amplitud frente a profundidad y el sitemap.</p>
   </div>
-  <a href="slides/orbita1_05_arquitectura_informacion.pdf" target="_blank" rel="noopener" style="background:#E93456; color:#FBFBF8; border:3px solid #240509; box-shadow:4px 4px 0 #240509; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; white-space:nowrap;">Descargar presentación →</a>
+  <a href="../slides/orbita1_05_arquitectura_informacion.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
 </div>
 
 

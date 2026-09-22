@@ -17,6 +17,25 @@
 a{
     color: var(--color-negro);
 }
+
+/* Variables nativas de Material para el esquema "custom":
+   sin esto, varios componentes (botones, ripple de hover, resaltado
+   de búsqueda) quedan transparentes hasta que el estado hover fuerza
+   otro color. */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #E93456;
+  --md-primary-fg-color--light: #F16C86;
+  --md-primary-fg-color--dark: #C42A48;
+  --md-primary-bg-color: #FBFBF8;
+  --md-primary-bg-color--light: #FBFBF8;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #F7D597;
+  --md-accent-fg-color--transparent: rgba(247, 213, 151, 0.3);
+  --md-accent-bg-color: #240509;
+  --md-accent-bg-color--light: #240509;
+}
 /* Fondo general */
 body,
 .md-main,
@@ -124,6 +143,8 @@ h4{
 
 .md-button--primary {
   background-color: var(--color-negro) !important;
+  color: var(--color-blanco) !important;
+  border-color: var(--color-negro) !important;
 }
 
 .md-button--primary:hover {

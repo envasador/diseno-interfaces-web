@@ -70,25 +70,25 @@ body,
 }
 
 /* ===== ENLACES ===== */
-.md-typeset a,
-.md-typeset a:link{
+.md-typeset a:not(.md-button),
+.md-typeset a:not(.md-button):link{
   color: #E93456 !important;
   text-decoration: none !important;
   border-bottom: 1px solid #FFB8DE !important;
 }
 
-.md-typeset a:hover {
+.md-typeset a:not(.md-button):hover {
   color: #1F0318 !important;
   border-bottom-color: #E93456 !important;
 }
 
-[data-md-color-scheme="slate"] .md-typeset a,
-[data-md-color-scheme="slate"] .md-typeset a:link{
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button),
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):link{
   color: #a0a0a0 !important;
   border-bottom-color: #444 !important;
 }
 
-[data-md-color-scheme="slate"] .md-typeset a:hover {
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):hover {
   color: #ffffff !important;
   border-bottom-color: #888 !important;
 }
