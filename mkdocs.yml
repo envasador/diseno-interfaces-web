@@ -55,12 +55,11 @@ nav:
       - Resumen y entregables: orbitas/orbita1/index.md
       - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
       - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
-      - 2. Qué es una persona: orbitas/orbita1/02_que_es_una_persona.md
-      - 3. Cómo se construye una persona: orbitas/orbita1/03_como_se_construye_una_persona.md
-      - 4. User flows: orbitas/orbita1/04_user_flows.md
-      - 5. Arquitectura de la información y sitemap: orbitas/orbita1/05_arquitectura_informacion.md
-      - 6. Del flujo al wireframe: orbitas/orbita1/06_wireframes.md
-      - 7. El brief de proyecto y el entregable: orbitas/orbita1/07_brief_y_entregable.md
+      - "2. Personas: qué son y cómo se construyen": orbitas/orbita1/02_que_es_una_persona.md
+      - 3. User flows: orbitas/orbita1/03_user_flows.md
+      - 4. Arquitectura de la información y sitemap: orbitas/orbita1/04_arquitectura_informacion.md
+      - 5. Del flujo al wireframe: orbitas/orbita1/05_wireframes.md
+      - 6. El brief de proyecto y el entregable: orbitas/orbita1/06_brief_y_entregable.md
 
   - Órbita 2:
     - Resumen y entregables: orbitas/orbita2/index.md

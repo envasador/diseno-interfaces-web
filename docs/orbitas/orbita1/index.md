@@ -22,9 +22,8 @@ Seis artefactos vinculados entre sí — cuatro en FigJam y dos en Figma:
 ## Apartados
 
 1. [Por qué investigamos antes de diseñar](01_por_que_investigamos.md)
-2. [Qué es una persona](02_que_es_una_persona.md)
-3. [Cómo se construye una persona](03_como_se_construye_una_persona.md)
-4. [User flows](04_user_flows.md)
-5. [Arquitectura de la información y sitemap](05_arquitectura_informacion.md)
-6. [Del flujo al wireframe](06_wireframes.md)
-7. [El brief de proyecto y el entregable](07_brief_y_entregable.md)
+2. [Personas: qué son y cómo se construyen](02_que_es_una_persona.md)
+3. [User flows](03_user_flows.md)
+4. [Arquitectura de la información y sitemap](04_arquitectura_informacion.md)
+5. [Del flujo al wireframe](05_wireframes.md)
+6. [El brief de proyecto y el entregable](06_brief_y_entregable.md)
