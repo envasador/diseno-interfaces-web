@@ -37,6 +37,8 @@ En Figma: los wireframes lo-fi de todas las pantallas del happy path (nombrados 
 
 Los dos archivos van vinculados entre sí y son la referencia permanente del resto del módulo. Cualquier decisión de las Órbitas siguientes debería poder rastrearse hasta algo construido aquí.
 
+![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)
+
 Si has usado IA en cualquier punto de la órbita, el `CHANGELOG.md` del repositorio recoge cada uso: qué pediste, qué generó, qué mantuviste, qué cambiaste y por qué. Este registro arranca aquí y acompañará al proyecto hasta la defensa final.
 
 ### Cómo se evalúa
@@ -46,9 +48,3 @@ Esta órbita trabaja principalmente RA1 y RA6. La evaluación combina la rúbric
 Las preguntas de auditoría siempre piden el porqué de una decisión y esperan una respuesta anclada en datos: ¿por qué esta persona es la primaria?, ¿de qué entrevista sale esta frustración?, ¿por qué este flujo resuelve el error de pago con un reintento en lugar de volver al carrito?, ¿por qué esta sección está en el primer nivel de navegación?, ¿por qué este wireframe resuelve la tarea en tres pasos y no en cinco? Una respuesta válida señala investigación propia. Una respuesta del tipo "es lo habitual" o "lo sugirió la herramienta" señala una decisión que todavía es de otro.
 
 Un artefacto con errores formales pero con decisiones bien justificadas vale más en este módulo que un artefacto impecable que no sabes defender.
-
-### De aquí a la Órbita 2
-
-Las personas, los flujos y los wireframes pueden refinarse si las órbitas siguientes revelan que algo estaba mal calibrado. Eso es parte del proceso. Lo que cambia a partir de ahora es el tipo de trabajo: en la Órbita 2 empezarás a fundar el sistema visual (color, tipografía, espaciado, todo como tokens) y cada elección tendrá que pasar por el filtro de lo que construiste aquí. Los wireframes que acabas de hacer son el esqueleto sobre el que ese sistema visual tomará forma.
-
-![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)

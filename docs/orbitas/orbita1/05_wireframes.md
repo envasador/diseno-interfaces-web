@@ -44,8 +44,3 @@ Una vez tienes los wireframes de todas las pantallas del happy path, los conecta
 Este prototipo lo-fi sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Si necesitas explicar algo durante el test, hay un problema de diseño que resolver antes de pasar a alta fidelidad.
 
 El test con el prototipo lo-fi es el mismo test de cinco segundos que usaste en la investigación, pero ahora sobre tu propio trabajo. Puedes hacerlo en Lyssna con el prototipo de Figma enlazado directamente. Con cuatro o cinco personas del perfil de tu persona principal es suficiente para detectar los problemas más graves (RA1-c, RA6-a).
-
-
-### Lo que te llevas de este apartado
-
-El wireframe traduce el user flow en pantallas sin entrar todavía en decisiones visuales. Wireframeas solo lo que aparece en el flujo, en escala de grises, y lo conectas en un prototipo navegable para validar que el camino funciona antes de invertir en diseño visual.

@@ -44,7 +44,3 @@ El sitemap se construye en FigJam, en el mismo archivo donde viven las personas 
 Antes de dar el sitemap por terminado, superpón mentalmente cada user flow sobre él y comprueba que el recorrido es posible y razonable. Si un flujo crítico exige saltar entre ramas alejadas del árbol, la arquitectura está penalizando una tarea importante.
 
 Si usas IA para proponer una estructura inicial de sitemap, ten en cuenta que lo que genera es genérico: la arquitectura más frecuente para ese tipo de producto. Puede ser un punto de partida razonable, pero tu card sorting y tus personas son los que la tienen que corregir. La distancia entre la estructura genérica y la tuya final es la evidencia de que hubo un proceso de diseño (RA1-c).
-
-### El entregable de la órbita, completo
-
-Con el sitemap se cierra el conjunto de artefactos de la Órbita 1: brief de proyecto, personas, user flows y sitemap, todo en FigJam vinculado al archivo principal de Figma. En la Órbita 2 empezarás a tomar decisiones visuales —color, tipografía, espaciado— y cada una de ellas tendrá que poder justificarse señalando algo que está en esta capa.
