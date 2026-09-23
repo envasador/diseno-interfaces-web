@@ -13,7 +13,7 @@
 
 Cuando terminas el user flow tienes algo valioso: sabes qué tiene que hacer la interfaz y en qué orden. Lo que no tienes todavía es una propuesta de cómo va a verse. El wireframe es ese paso intermedio. Traduce el flujo en pantallas concretas sin entrar todavía en diseño visual.
 
-La distinción importa. Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos, no un boceto rápido ni un diseño sin acabar.
+La distinción importa. Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
 
 ### Qué pantallas hay que wireframear
 

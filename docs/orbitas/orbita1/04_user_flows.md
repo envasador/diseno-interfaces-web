@@ -54,4 +54,4 @@ Si usas IA para generar un primer borrador de flujo o para identificar casos lí
 
 ### Lo que te llevas de este apartado
 
-Un user flow mapea el camino completo, no una pantalla suelta. El happy path apenas aporta información nueva: el valor real está en los casos límite, revisados con cada persona como filtro.
+Un user flow mapea el camino completo, de principio a fin. El happy path apenas aporta información nueva: el valor real está en los casos límite, revisados con cada persona como filtro.

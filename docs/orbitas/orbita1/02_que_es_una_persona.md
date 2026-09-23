@@ -27,11 +27,11 @@ Los detalles que más te van a ayudar son los de comportamiento y contexto, los 
 
 ### Cómo reconocer una persona que no funciona
 
-El síntoma más frecuente es que la persona describe al **usuario ideal**: alguien cuyas motivaciones encajan perfectamente con lo que resuelve el producto, cuyas frustraciones son exactamente las que el producto soluciona, y que no tiene ningún comportamiento que complique el diseño. Esa persona sale de las hipótesis del diseñador, no de la investigación.
+Hay tres síntomas que delatan una persona mal construida:
 
-Otro síntoma es la **ficha llena de datos demográficos** sin ningún detalle de comportamiento. Nombre, foto, edad, profesión, aficiones... y nada que te diga cómo usa el producto o qué le dificulta usarlo. Ese tipo de perfil no orienta ninguna decisión.
-
-El tercer síntoma es la **coherencia perfecta**. Las personas reales se contradicen: dicen que les importa la privacidad pero usan la misma contraseña para todo, dicen que no tienen tiempo pero pasan horas en redes sociales. Una persona sin ninguna contradicción interna probablemente no está basada en observación real.
+1. **El usuario ideal.** Alguien cuyas motivaciones encajan perfectamente con lo que resuelve el producto, cuyas frustraciones son exactamente las que el producto soluciona, y que no tiene ningún comportamiento que complique el diseño. Esa persona sale de las hipótesis del diseñador, no de la investigación.
+2. **Solo datos demográficos.** Nombre, foto, edad, profesión, aficiones... y nada que diga cómo usa el producto o qué le dificulta usarlo. Ese tipo de perfil no orienta ninguna decisión.
+3. **Coherencia perfecta.** Las personas reales se contradicen: dicen que les importa la privacidad pero usan la misma contraseña para todo, dicen que no tienen tiempo pero pasan horas en redes sociales. Sin ninguna contradicción interna, sospecha.
 
 ### Personas primarias y secundarias
 
@@ -50,4 +50,4 @@ Lo que valida una persona es **su origen**: poder señalar qué dato de investig
 
 ### Lo que te llevas de este apartado
 
-Una persona es una síntesis de investigación real, no un personaje inventado. Te sirve si te obliga a tomar decisiones que no habrías tomado sin ella, y su origen (el dato concreto que respalda cada atributo) es lo único que la valida.
+Una persona es una síntesis de investigación real: cada atributo tiene detrás un dato concreto que lo respalda, y ese origen es lo único que la valida. Te sirve si te obliga a tomar decisiones que no habrías tomado sin ella.
