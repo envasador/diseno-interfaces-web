@@ -26,3 +26,6 @@ docs/orbitas/orbita3/sesiones/
 docs/orbitas/orbita4/sesiones/
 docs/orbitas/orbita5/sesiones/
 docs/orbitas/orbita6/sesiones/
+
+# Carpetas temporales de archivos superados, solo en local
+_to_delete/
