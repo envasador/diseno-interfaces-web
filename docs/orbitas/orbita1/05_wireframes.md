@@ -11,15 +11,21 @@
 </div>
 
 
-Cuando terminas el user flow tienes algo valioso: sabes qué tiene que hacer la interfaz y en qué orden. Lo que no tienes todavía es una propuesta de cómo va a verse. El wireframe es ese paso intermedio. Traduce el flujo en pantallas concretas sin entrar todavía en diseño visual.
+Cuando terminas el user flow y el sitemap tienes dos piezas que se complementan. El user flow te dice en qué orden pasa el usuario por las pantallas para completar una tarea. El sitemap te dice qué pantallas existen, cómo se llaman y cómo se relacionan entre sí. El wireframe traduce esas dos piezas en pantallas concretas, sin entrar todavía en diseño visual.
 
-La distinción importa. Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
+Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
+
+### Cómo se combinan el flujo y la arquitectura
+
+Cada wireframe que vas a dibujar corresponde a un nodo del sitemap, y el orden en que los dibujas y los conectas lo marca el user flow. El sitemap te da el nombre exacto de cada pantalla (el mismo que usaste al construirlo) y te dice si es principal, secundaria o de sistema, lo que ayuda a decidir cuánto detalle necesita: una pantalla principal suele requerir más elementos que una de sistema como una confirmación o un error. El flujo te dice qué pantalla sigue a cuál dentro del happy path, y esa secuencia es la que vas a poder recorrer en el prototipo navegable.
+
+Trabajar con las dos piezas a la vez evita dos errores típicos: wireframear una pantalla que no está en el sitemap (contenido inventado sobre la marcha) o conectar dos pantallas en un orden que el flujo no contempla (RA1-c).
 
 ### Qué pantallas hay que wireframear
 
-No todas. Las que necesitas son las que aparecen en el user flow del happy path más las pantallas de error o estado vacío que hayas identificado como críticas para tu persona. Si tu flujo tiene ocho pasos, necesitas wireframes para esos ocho pasos. No más.
+Solo las que aparecen en el user flow del happy path, más las pantallas de error o estado vacío que hayas identificado como críticas para tu persona. Si tu flujo tiene ocho pasos, necesitas wireframes para exactamente esos ocho pasos.
 
-Una pantalla que no está en el flujo no tiene justificación todavía. Si aparece más adelante, la añades entonces.
+Una pantalla que no está en el flujo no tiene justificación todavía, aunque exista en el sitemap. Si el flujo la necesita más adelante, la wireframeas entonces.
 
 ### Cómo se hace un wireframe lo-fi en Figma
 
@@ -29,13 +35,13 @@ El objetivo es que quien mire el wireframe entienda qué hace cada elemento sin 
 
 En Figma trabajas con un frame del tamaño del dispositivo de tu persona. Si tu persona primaria usa móvil Android, el frame de trabajo es 360×800. Si usa portátil, el frame es 1280×800. Si tienes ambos perfiles, wireframeas para los dos dispositivos desde el principio: las decisiones de layout que tomas en lo-fi son las que después condicionan el responsive en la Órbita 3.
 
-Nombra cada frame con el nombre del paso del flujo al que corresponde. Eso mantiene la trazabilidad entre el user flow y los wireframes a lo largo de todo el módulo (RA1-a).
+Nombra cada frame con el mismo nombre que tiene esa pantalla en el sitemap. Un flujo puede pasar dos veces por la misma pantalla (por ejemplo, "Carrito" en dos momentos distintos de una compra), y el nombre del sitemap deja claro que se trata de la misma pantalla las dos veces. Esa disciplina mantiene la trazabilidad entre el sitemap, el user flow y los wireframes a lo largo de todo el módulo (RA1-a).
 
 ### Lo que no se decide todavía
 
 Fuentes, colores, espaciado exacto, iconografía, imágenes. Esas decisiones son de la Órbita 2. Si en este punto te encuentras tomando decisiones visuales, para: estás saltando una fase.
 
-La tentación más habitual es añadir color para distinguir elementos. Si necesitas distinguir algo, usa el gris medio. Si aun así no queda claro qué hace el elemento, el problema es estructural, no visual, y hay que resolverlo antes de añadir color.
+La tentación más habitual es añadir color para distinguir elementos. Si necesitas distinguir algo, usa el gris medio. Si aun así no queda claro qué hace el elemento, el problema está en la estructura, y hay que resolverlo ahí antes de añadir color.
 
 ### El prototipo navegable
 
