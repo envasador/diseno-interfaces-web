@@ -11,42 +11,34 @@
 </div>
 
 
-La **arquitectura de la información** es la forma en que organizas y nombras el contenido de un producto para que las personas puedan encontrarlo. Si los user flows describen cómo se mueve alguien por la aplicación para conseguir algo, la arquitectura describe qué contiene la aplicación, cómo está agrupado y cómo se llama cada cosa. El **sitemap** es su representación visual: un diagrama jerárquico de todas las pantallas y las relaciones entre ellas (RA1-c).
+### Qué es
 
-Primero las personas, porque la organización correcta depende de cómo piensan quienes van a buscar el contenido. Después los flujos, porque revelan qué recorridos son críticos. Y solo entonces la arquitectura, porque a estas alturas ya sabes qué tiene que estar cerca de qué y qué puede vivir más profundo.
+La arquitectura de la información organiza y nombra el contenido de tu producto: qué pantallas y funcionalidades tiene, cómo se agrupan y cómo se llama cada cosa. El sitemap es el diagrama que representa esa organización: un árbol con la home en la raíz, un nodo por pantalla y líneas que marcan la jerarquía entre ellas (RA1-c).
 
-### El inventario, antes de agrupar
+### Para qué sirve
 
-Agrupar exige primero un inventario: la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Esa lista no se inventa en este paso, sale de lo que ya investigaste. Los referentes que analizaste al principio de la órbita muestran qué contenido incluyen productos parecidos al tuyo. Las tareas críticas de los user flows señalan qué pantallas son imprescindibles y cuáles son secundarias. Cruza ambas fuentes y tienes el inventario: la materia prima que vas a agrupar en el card sorting.
+Le sirve al usuario para encontrar contenido sin perderse: cuando la estructura y los nombres son predecibles, sabe dónde buscar y qué va a encontrar antes de pulsar. Te sirve a ti como diseñador para decidir, antes de dibujar ninguna pantalla, dónde vive cada pieza de contenido y qué tan cerca queda de las tareas críticas de tus personas.
 
-Un inventario incompleto produce un sitemap incompleto, por bien ejecutado que esté el card sorting sobre él. Si al llegar aquí descubres contenido que no apareció en los referentes ni en los flujos, es buen momento para preguntarte si de verdad hace falta o si es una idea suelta sin tarea que la respalde.
+### Cómo se crea
 
-### Organiza según cómo piensa el usuario, no según cómo funciona el sistema
+Se construye en tres pasos, siempre después de tener personas y user flows: la organización correcta depende de cómo piensan tus personas, y los flujos marcan qué recorridos son críticos.
 
-El error más habitual al estructurar una aplicación es organizarla según la lógica interna del sistema o del negocio: por tipos de datos, por departamentos, por módulos técnicos. Esa organización tiene sentido para quien construye el producto, pero no para quien lo usa.
+**1. Inventario.** Reúne la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Sale de dos fuentes: los referentes que analizaste al principio de la órbita (qué contenido incluyen productos parecidos al tuyo) y las tareas críticas de tus user flows (qué pantallas son imprescindibles). Si algo no aparece en ninguna de las dos fuentes, pregúntate si hace falta de verdad.
 
-La organización útil refleja cómo piensa el usuario. Si tus personas piensan en "cosas que tengo que hacer hoy" y la aplicación organiza por "proyectos, etiquetas y filtros", el usuario tiene que traducir constantemente entre su forma de pensar y la tuya. Cada traducción es un pequeño esfuerzo. El esfuerzo acumulado cansa y aleja.
+**2. Agrupación.** Descubre cómo agrupa el contenido la cabeza de tu usuario con el card sorting: das a varias personas una tarjeta por cada elemento del inventario y les pides que las agrupen como les parezca natural y pongan un nombre a cada grupo. Hazlo con cuatro o cinco compañeros que encajen en tus perfiles de persona, en FigJam, con notas adhesivas como tarjetas. Los agrupamientos que se repiten entre participantes marcan la estructura que tu producto debería tener.
 
-La técnica para descubrir cómo piensa el usuario es el **card sorting**: das a varias personas tarjetas con los contenidos de tu aplicación y les pides que las agrupen como les parezca natural y nombren cada grupo. Los agrupamientos que se repiten entre participantes son los que señalan la estructura que el producto debería tener. Para este módulo puedes hacerlo con compañeros de clase que encajen en tus perfiles de persona. Con cuatro o cinco participantes ya emergen los patrones principales. FigJam funciona perfectamente: notas adhesivas como tarjetas, diez minutos por participante.
-
-### Amplitud frente a profundidad
-
-Toda arquitectura decide entre dos extremos. Una estructura **amplia** ofrece muchas opciones en el primer nivel: todo está a pocos clics, pero el menú inicial puede abrumar. Una estructura **profunda** ofrece pocas opciones iniciales y muchos niveles: cada pantalla es simple, pero llegar al contenido requiere varios pasos.
-
-La decisión depende de tus personas y sus tareas. Como regla práctica para el proyecto de este módulo: las tareas críticas que identificaste en los flujos deberían ser alcanzables en un máximo de tres niveles de navegación. Lo que esté más profundo tiene que estarlo por una decisión justificada, no porque nadie pensó dónde ponerlo (RA6-c).
-
-### Nombrar es una decisión de diseño
-
-Cada sección del sitemap necesita un nombre, y ese nombre importa. Una etiqueta funciona cuando el usuario puede predecir qué encontrará detrás antes de pulsar. "Mis pedidos" es predecible. "Panel de actividad" obliga a pulsar para descubrir qué hay.
-
-Los nombres deben salir del vocabulario de tus personas, que ya conoces por las entrevistas. Las palabras que usaron para describir sus tareas son candidatas directas. La navegación funciona mejor cuanto más convencional es: el lugar para la originalidad es el contenido, no el menú (RA6-h).
-
-### Construir el sitemap
-
-El sitemap se construye en FigJam, en el mismo archivo donde viven las personas y los flujos. Un nodo por pantalla o sección, líneas que indican jerarquía, la home como nodo raíz. Distingue visualmente tres tipos de nodo: pantallas principales (accesibles desde la navegación), pantallas secundarias (accesibles desde otras pantallas) y pantallas de sistema (login, errores, confirmaciones).
+**3. Mapeo.** Convierte los grupos en el sitemap: un nodo por pantalla, la home como raíz, líneas que marcan jerarquía. Distingue tres tipos de nodo: pantallas principales (accesibles desde la navegación), secundarias (accesibles desde otras pantallas) y de sistema (login, errores, confirmaciones).
 
 ![Ejemplo de sitemap con tres tipos de nodo y flujo superpuesto](img/orbita1_04_esquema_sitemap.svg)
 
-Antes de dar el sitemap por terminado, superpón mentalmente cada user flow sobre él y comprueba que el recorrido es posible y razonable. Si un flujo crítico exige saltar entre ramas alejadas del árbol, la arquitectura está penalizando una tarea importante.
+### Dos decisiones al construirlo
 
-Si usas IA para proponer una estructura inicial de sitemap, ten en cuenta que lo que genera es genérico: la arquitectura más frecuente para ese tipo de producto. Puede ser un punto de partida razonable, pero tu card sorting y tus personas son los que la tienen que corregir. La distancia entre la estructura genérica y la tuya final es la evidencia de que hubo un proceso de diseño (RA1-c).
+**Amplitud o profundidad.** Una estructura amplia pone muchas opciones en el primer nivel: todo a pocos clics, pero el menú inicial puede abrumar. Una estructura profunda pone pocas opciones iniciales y más niveles: cada pantalla es simple, pero llegar al contenido cuesta más pasos. Para este módulo, las tareas críticas de tus flujos deben alcanzarse en tres niveles de navegación como máximo (RA6-c).
+
+**Cómo nombrar cada sección.** Usa las palabras que tus personas emplearon en las entrevistas para describir sus tareas. Un nombre funciona cuando el usuario predice qué va a encontrar antes de pulsar: "Mis pedidos" cumple, "Panel de actividad" no. La navegación funciona mejor cuanto más convencional es (RA6-h).
+
+### Verificación final
+
+Antes de dar el sitemap por terminado, superpón mentalmente cada user flow sobre él y comprueba que el recorrido es posible y razonable. Si un flujo crítico obliga a saltar entre ramas alejadas, la arquitectura penaliza una tarea importante.
+
+Si usas IA para proponer una estructura inicial, recuerda que genera la arquitectura más frecuente para ese tipo de producto: un punto de partida razonable, que tu card sorting y tus personas tienen que corregir. La distancia entre esa estructura genérica y la tuya final demuestra que hubo un proceso de diseño detrás (RA1-c).
