@@ -15,6 +15,12 @@ La **arquitectura de la información** es la forma en que organizas y nombras el
 
 Primero las personas, porque la organización correcta depende de cómo piensan quienes van a buscar el contenido. Después los flujos, porque revelan qué recorridos son críticos. Y solo entonces la arquitectura, porque a estas alturas ya sabes qué tiene que estar cerca de qué y qué puede vivir más profundo.
 
+### El inventario, antes de agrupar
+
+Agrupar exige primero un inventario: la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Esa lista no se inventa en este paso, sale de lo que ya investigaste. Los referentes que analizaste al principio de la órbita muestran qué contenido incluyen productos parecidos al tuyo. Las tareas críticas de los user flows señalan qué pantallas son imprescindibles y cuáles son secundarias. Cruza ambas fuentes y tienes el inventario: la materia prima que vas a agrupar en el card sorting.
+
+Un inventario incompleto produce un sitemap incompleto, por bien ejecutado que esté el card sorting sobre él. Si al llegar aquí descubres contenido que no apareció en los referentes ni en los flujos, es buen momento para preguntarte si de verdad hace falta o si es una idea suelta sin tarea que la respalde.
+
 ### Organiza según cómo piensa el usuario, no según cómo funciona el sistema
 
 El error más habitual al estructurar una aplicación es organizarla según la lógica interna del sistema o del negocio: por tipos de datos, por departamentos, por módulos técnicos. Esa organización tiene sentido para quien construye el producto, pero no para quien lo usa.

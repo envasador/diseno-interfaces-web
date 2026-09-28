@@ -51,6 +51,8 @@ markdown_extensions:
 nav:
   - Inicio: index.md
 
+  - Introducción: introduccion/index.md
+
   - Órbita 1:
       - Resumen y entregables: orbitas/orbita1/index.md
       - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
