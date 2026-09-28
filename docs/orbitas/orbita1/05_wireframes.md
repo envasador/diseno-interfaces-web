@@ -11,9 +11,9 @@
 </div>
 
 
-Cuando terminas el user flow y el sitemap tienes dos piezas que se complementan. El user flow te dice en qué orden pasa el usuario por las pantallas para completar una tarea. El sitemap te dice qué pantallas existen, cómo se llaman y cómo se relacionan entre sí. El wireframe traduce esas dos piezas en pantallas concretas, sin entrar todavía en diseño visual.
+El wireframe traduce el user flow y el sitemap en pantallas concretas, sin entrar todavía en diseño visual. El user flow aporta el orden: qué pantalla sigue a cuál para completar una tarea. El sitemap aporta el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan entre sí.
 
-Un wireframe es **una herramienta de decisión**: te permite validar que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
+Un wireframe es **una herramienta de decisión**: valida que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
 
 ### Cómo se combinan el flujo y la arquitectura
 
