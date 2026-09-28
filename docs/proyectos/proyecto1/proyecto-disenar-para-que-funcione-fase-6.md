@@ -8,10 +8,10 @@ Reúne el inventario completo de pantallas y funcionalidades de tu producto, con
 
 Haz el card sorting con cuatro o cinco compañeros que encajen en tus perfiles de persona: cada uno agrupa las tarjetas como le parezca natural y pone nombre a cada grupo. Con los agrupamientos resultantes, construye el sitemap: pantallas principales, secundarias y de sistema, diferenciadas visualmente, con la home como raíz.
 
-Verificación cruzada: todo lo que está dentro de tu MVP tiene una pantalla o sección donde vivir en el sitemap, y nada de lo que dejaste fuera del MVP se ha colado en él.
+Verificación cruzada: todo lo que está dentro de tu MVP tiene una pantalla o sección donde vivir en el sitemap, nada de lo que dejaste fuera se ha colado en él, y el user flow que mapeaste en la Fase 5 se puede recorrer sobre esta estructura sin huecos.
 
 #### **Entregable:**
 
-Sitemap verificado contra el MVP.
+Sitemap verificado contra el MVP y el user flow.
 
 ---

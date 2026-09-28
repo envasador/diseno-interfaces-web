@@ -21,7 +21,7 @@ Le sirve al usuario para encontrar contenido sin perderse: cuando la estructura 
 
 ### Cómo se crea
 
-Se construye en tres pasos, siempre después de tener personas y MVP: la organización correcta depende de cómo piensan tus personas, y el MVP marca qué contenido entra de verdad.
+Se construye en tres pasos, siempre después de tener personas, MVP y user flow: la organización correcta depende de cómo piensan tus personas, el MVP marca qué contenido entra de verdad, y el flujo que ya mapeaste te da una primera pista de cómo se conecta ese contenido.
 
 **1. Inventario.** Reúne la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Sale de dos fuentes: los referentes que analizaste al principio de la órbita (qué contenido incluyen productos parecidos al tuyo) y las funcionalidades de tu MVP (qué entra en esta versión y qué queda fuera). Si algo no aparece en ninguna de las dos fuentes, pregúntate si hace falta de verdad.
 
@@ -39,6 +39,6 @@ Se construye en tres pasos, siempre después de tener personas y MVP: la organiz
 
 ### Verificación final
 
-Antes de dar el sitemap por terminado, contrasta cada nodo con tu MVP: todo lo que está dentro del MVP tiene una pantalla o sección donde vivir, y nada de lo que dejaste fuera del MVP se ha colado en el sitemap. La comprobación contra el recorrido real de uso llega en el apartado siguiente, cuando mapees el user flow sobre esta misma estructura.
+Antes de dar el sitemap por terminado, verifica dos cosas. Primero, contra tu MVP: todo lo que está dentro tiene una pantalla o sección donde vivir, y nada de lo que dejaste fuera se ha colado en el sitemap. Segundo, contra el user flow que ya mapeaste: recórrelo sobre el sitemap y comprueba que cada paso encuentra una pantalla, sin huecos ni nombres que no coincidan.
 
 Si usas IA para proponer una estructura inicial, recuerda que genera la arquitectura más frecuente para ese tipo de producto: un punto de partida razonable, que tu card sorting y tus personas tienen que corregir. La distancia entre esa estructura genérica y la tuya final demuestra que hubo un proceso de diseño detrás (RA1-c).

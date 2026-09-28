@@ -1,6 +1,6 @@
 # Órbita 1 — Conocer a las personas
 
-## 7. El brief de proyecto y el entregable de la órbita
+## 6. El brief de proyecto y el entregable de la órbita
 
 <div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
   <div>
@@ -29,9 +29,9 @@ El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera p
 
 ### El entregable completo
 
-Con el brief cerrado, el entregable de la Órbita 1 queda compuesto por siete artefactos vinculados entre sí: cinco en FigJam y dos en Figma.
+Con el brief cerrado, el entregable de la Órbita 1 queda compuesto por seis artefactos vinculados entre sí: cuatro en FigJam y dos en Figma.
 
-En FigJam: el brief de proyecto, las fichas de personas, el MVP, el sitemap y el user flow completo del MVP.
+En FigJam: el brief de proyecto, las fichas de personas, el MVP con el user flow completo (y los flujos complementarios que hayas mapeado) y el sitemap.
 
 En Figma: los wireframes lo-fi de todas las pantallas del happy path (nombrados igual que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
 

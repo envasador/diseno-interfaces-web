@@ -1,4 +1,4 @@
-## **Fase 7: Wireframear y prototipar**
+## **Fase 8: Wireframear y prototipar**
 
 El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Ahora las dibujas.
 

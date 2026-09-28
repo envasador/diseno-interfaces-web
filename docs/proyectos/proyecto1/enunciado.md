@@ -14,7 +14,7 @@ Elige un problema real, algo que tú mismo usarías. Si no lo usarías tú, dif�
 
 ## Cronograma
 
-La Órbita 1 se organiza en nueve pasos con horas orientativas por paso, repartidos a lo largo de las primeras semanas del curso. El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
+La Órbita 1 se organiza en ocho pasos con horas orientativas por paso, repartidos a lo largo de las primeras semanas del curso. El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
 
 ## Fases del proyecto
 
@@ -22,11 +22,10 @@ La Órbita 1 se organiza en nueve pasos con horas orientativas por paso, reparti
 * [Fase 2: Investigar el terreno](proyecto-disenar-para-que-funcione-fase-2.md)
 * [Fase 3: Entrevistar](proyecto-disenar-para-que-funcione-fase-3.md)
 * [Fase 4: Sintetizar y construir las personas](proyecto-disenar-para-que-funcione-fase-4.md)
-* [Fase 5: Definir el MVP](proyecto-disenar-para-que-funcione-fase-5.md)
+* [Fase 5: Definir el MVP y mapear el user flow](proyecto-disenar-para-que-funcione-fase-5.md)
 * [Fase 6: Card sorting y sitemap](proyecto-disenar-para-que-funcione-fase-6.md)
-* [Fase 7: Mapear el user flow completo](proyecto-disenar-para-que-funcione-fase-7.md)
-* [Fase 8: Wireframear y prototipar](proyecto-disenar-para-que-funcione-fase-8.md)
-* [Fase 9: Cerrar el brief y entregar](proyecto-disenar-para-que-funcione-fase-9.md)
+* [Fase 7: Wireframear y prototipar](proyecto-disenar-para-que-funcione-fase-7.md)
+* [Fase 8: Cerrar el brief y entregar](proyecto-disenar-para-que-funcione-fase-8.md)
 
 ---
 
@@ -56,7 +55,7 @@ Los criterios específicos que trabajamos son:
 |--------------|-----------------|-------------------------|------------------|--------------------|--------------------|--------------------|------------------|
 | **C1. Personas fundamentadas en investigación** | Evalúa si las personas salen de datos reales (entrevistas, encuestas) y no de suposiciones. | Personas inventadas o solo demográficas. | Personas con algún dato real, mayoría de atributos sin respaldo. | Personas con atributos rastreables a la investigación en su mayoría. | Personas bien fundamentadas, incluida la de diversidad funcional. | Personas que cambian decisiones de diseño concretas, con cada atributo trazable a un dato. | RA1-a |
 | **C2. MVP y user flow completo** | Evalúa si el MVP está bien acotado y si el flujo cubre el recorrido completo con happy path y casos límite. | No hay MVP definido, o el flujo solo describe el happy path. | MVP con criterios débiles, flujo con algún caso límite poco desarrollado. | MVP justificado y flujo completo del MVP con casos límite básicos. | MVP acotado con criterios claros y flujo completo revisado desde la perspectiva de las personas. | MVP y flujo exhaustivos, con casos límite que anticipan fallos reales y el flujo listo como guión de test futuro. | RA6-c |
-| **C3. Arquitectura de la información y sitemap** | Evalúa si el sitemap refleja un inventario real y una organización centrada en el usuario. | Sin sitemap o estructura arbitraria. | Sitemap presente pero sin inventario ni card sorting detrás. | Sitemap basado en card sorting, jerarquía aceptable. | Sitemap verificado contra el MVP en tres niveles o menos. | Estructura y nomenclatura justificadas con datos de card sorting y entrevistas. | RA1-c |
+| **C3. Arquitectura de la información y sitemap** | Evalúa si el sitemap refleja un inventario real y una organización centrada en el usuario. | Sin sitemap o estructura arbitraria. | Sitemap presente pero sin inventario ni card sorting detrás. | Sitemap basado en card sorting, jerarquía aceptable. | Sitemap verificado contra el MVP y el user flow en tres niveles o menos. | Estructura y nomenclatura justificadas con datos de card sorting y entrevistas. | RA1-c |
 | **C4. Wireframes y prototipo navegable** | Evalúa si los wireframes resuelven el flujo y si el prototipo es navegable de verdad. | No hay wireframes o son decorativos. | Wireframes básicos sin conexión entre pantallas. | Wireframes del happy path conectados en un prototipo funcional. | Prototipo probado con personas reales, con cambios documentados. | Prototipo validado y trazable al sitemap y al flujo en cada pantalla. | RA6-a |
 | **C5. Brief de proyecto** | Evalúa si el brief tiene los cinco elementos y si el problema, el alcance y los criterios de éxito están respaldados por datos. | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos pero poco desarrollados. | Brief completo, problema respaldado por algún dato. | Brief conciso, legible en minutos, con alcance acotado por el MVP y criterios de éxito verificables. | Brief que cualquiera puede leer en cinco minutos y que ancla cada decisión de la órbita. | RA6-b |
 | **C6. Defensa de las decisiones (auditoría oral)** | Evalúa si el alumno puede justificar cualquier decisión con datos propios, no con "es lo habitual" o "lo sugirió la IA". | No puede justificar decisiones básicas. | Justifica algunas decisiones, otras con respuestas genéricas. | Justifica la mayoría de decisiones señalando su origen. | Justifica decisiones con datos concretos de su propia investigación. | Defiende cualquier decisión del proyecto en cualquier momento, con datos y criterio propio. | RA6-e |
