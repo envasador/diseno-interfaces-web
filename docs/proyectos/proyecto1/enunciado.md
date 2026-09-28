@@ -1,68 +1,63 @@
-# **Proyecto: 1. Diseñar para que funcione**
-### **¿De qué va esto?**
+# Proyecto — Órbita 1: Conocer a las personas
 
-Vais a desarrollar una aplicación web completa que resuelva un problema real. No es un ejercicio teórico: es un proyecto que funcionará de verdad y que coordinaréis entre DIW, DWES, DWEC y Despliegue durante todo el curso.
+### ¿De qué va esto?
 
-Tu rol en DIW durante esta primera órbita es diseñar la experiencia del usuario desde un enfoque puramente funcional. Olvídate de colores y logos por ahora. Tu trabajo es entender qué necesita la gente, cómo va a usar la aplicación, y diseñar una estructura que funcione sin fricciones.
+Vais a construir un design system completo para un producto digital real, coordinado entre DIW, DWES, DWEC y Despliegue durante todo el curso. Esta primera órbita es la que te toca a ti en DIW: investigar a las personas para las que vas a diseñar, antes de dibujar ninguna pantalla.
 
-## **Temáticas del proyecto**
+Tu trabajo en esta órbita es puramente funcional. Olvídate de colores, tipografías y logos por ahora. Entiendes qué necesita la gente, cómo va a usar tu aplicación, y construyes una estructura (personas, flujos, sitemap, wireframes) que funcione sin fricciones antes de pensar en el aspecto visual.
 
-Elige **una problemática real**. Tiene que ser algo que realmente usarías. Si no lo usarías tú, difícilmente va a funcionar para otros.
+## Temáticas del proyecto
+
+Elige un problema real, algo que tú mismo usarías. Si no lo usarías tú, difícilmente va a funcionar para otros. El proyecto arranca **outside-in**: la idea sale de una necesidad real que detectas en tu entorno y de la investigación que vas a hacer, no de un encargo ya cerrado (más sobre esto en la [introducción del módulo](../../introduccion/index.md)).
 
 ---
 
-## **Cronograma actualizado (4 semanas)**
+## Cronograma
 
-**Semana 1-2:** Fases 1 y 2 (Research UX \+ Arquitectura de información)
+La Órbita 1 se organiza en ocho pasos con horas orientativas por paso, repartidos a lo largo de las primeras semanas del curso. El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
 
-**Semana 3:** Fases 3 y 4 (Wireframes \+ Prototipo navegable inicial)
+## Fases del proyecto
 
-**Semana 4:** Fases 5, 6 y 7 (MVP \+ Componentes \+ Testing funcional \+ Iteración final)
+* [Fase 1: Definir la hipótesis de proyecto](proyecto-disenar-para-que-funcione-fase-1.md)
+* [Fase 2: Investigar el terreno](proyecto-disenar-para-que-funcione-fase-2.md)
+* [Fase 3: Entrevistar](proyecto-disenar-para-que-funcione-fase-3.md)
+* [Fase 4: Sintetizar y construir las personas](proyecto-disenar-para-que-funcione-fase-4.md)
+* [Fase 5: Mapear los user flows](proyecto-disenar-para-que-funcione-fase-5.md)
+* [Fase 6: Card sorting y sitemap](proyecto-disenar-para-que-funcione-fase-6.md)
+* [Fase 7: Wireframear y prototipar](proyecto-disenar-para-que-funcione-fase-7.md)
+* [Fase 8: Cerrar el brief y entregar](proyecto-disenar-para-que-funcione-fase-8.md)
 
-## **Fases del proyecto**
-
-* [Fase 1: Entender el problema real](proyecto-disenar-para-que-funcione-fase-1.md)
-* [Fase 2: Organizar la información](proyecto-disenar-para-que-funcione-fase-2.md)
-* [Fase 3: Bocetos que funcionen](proyecto-disenar-para-que-funcione-fase-3.md)
-* [Fase 4: Hazlo navegable ](proyecto-disenar-para-que-funcione-fase-4.md)
-* [Fase 5: Define tu MVP](proyecto-disenar-para-que-funcione-fase-5.md)
-* [Fase 6: Componentes reutilizables](proyecto-disenar-para-que-funcione-fase-6.md)
-* [Fase 7: Testing funcional y primera iteración](proyecto-disenar-para-que-funcione-fase-7.md)
 ---
 
-## **Resultados de Aprendizaje y Criterios de Evaluación**
+## Resultados de Aprendizaje y Criterios de Evaluación
 
-Este proyecto trabaja principalmente sobre el **RA1** y algunos aspectos del **RA6**:
+Este proyecto trabaja principalmente sobre el **RA1** y el **RA6**:
 
 **RA1: Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.**
 
 Los criterios de evaluación que aborda este proyecto son:
 
-* Se han analizado alternativas para la presentación de la información en documentos web
-* Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación web
-* Se han utilizado y valorado distintas tecnologías para el diseño de documentos web
-* Se han creado y utilizado plantillas de diseño
+* Se ha reconocido la importancia de la comunicación visual y sus principios básicos.
+* Se han analizado alternativas para la presentación de la información en documentos web.
+* Se han utilizado y valorado distintas tecnologías para el diseño de documentos web.
 
 **RA6: Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.**
 
 Los criterios específicos que trabajamos son:
 
-* Se ha analizado la usabilidad de diferentes documentos web
-* Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido
-* Se han analizado diferentes técnicas para verificar la usabilidad de un documento web
-
+* Se ha analizado la usabilidad de diferentes documentos web.
+* Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido.
+* Se han analizado diferentes técnicas para verificar la usabilidad de un documento web.
 
 ### Rúbrica de evaluación
 
 | **Criterio** | **Descripción** | **Insuficiente (1–3)** | **Básico (4–5)** | **Adecuado (6–7)** | **Avanzado (8–9)** | **Excelente (10)** | **RA vinculado** |
 |--------------|-----------------|-------------------------|------------------|--------------------|--------------------|--------------------|------------------|
-| **C1. Presentación y organización de la información** | Evalúa la claridad y efectividad con la que se presentan los contenidos y flujos de navegación. | Estructura desordenada, sin jerarquía ni propósito. | Organización parcial o confusa. | Estructura clara, jerarquía aceptable. | Presentación equilibrada y comprensible. | Organización excelente, jerarquía visual y funcional impecable. | RA1.b |
-| **C2. Guía de estilo y coherencia** | Evalúa la definición de normas visuales y su aplicación coherente en todo el diseño. | No existe guía o es incoherente. | Guía básica o incompleta. | Guía funcional con normas aplicadas. | Guía coherente y reutilizable. | Guía profesional y documentada que garantiza coherencia total. | RA1.c |
-| **C3. Uso de tecnologías de diseño** | Evalúa el uso de herramientas y recursos digitales (Figma, wireframes, prototipado, etc.). | No usa herramientas adecuadas o las usa mal. | Uso limitado con errores. | Manejo correcto y organizado. | Buen dominio de herramientas y documentación clara. | Uso avanzado, estructurado y profesional de las herramientas. | RA1.d |
-| **C4. Plantillas y componentes reutilizables** | Evalúa la creación y uso de estructuras o plantillas coherentes entre pantallas. | No hay plantillas o son inconsistentes. | Plantillas simples o con errores. | Plantillas funcionales aplicadas correctamente. | Sistema coherente de componentes reutilizables. | Sistema completo y modular que favorece la escalabilidad. | RA1.e |
-| **C5. Análisis de usabilidad** | Evalúa la capacidad de analizar y comparar diferentes documentos web en base a su usabilidad. | No se analiza la usabilidad o se hace sin criterio. | Análisis superficial o sin ejemplos claros. | Análisis correcto con observaciones básicas. | Buen análisis con criterios razonados y ejemplos concretos. | Análisis profundo, comparativo y bien argumentado con referencias a pautas de usabilidad. | RA6.a |
-| **C6. Adecuación al usuario y objetivo** | Evalúa si la propuesta responde al propósito del producto y al perfil del usuario. | No responde a las necesidades del usuario ni al propósito. | Parcialmente adaptado o incoherente. | Diseño adecuado al contexto general. | Diseño coherente con el público y objetivo. | Diseño perfectamente alineado con el usuario y el propósito comunicativo. | RA6.b |
-| **C7. Técnicas de verificación de usabilidad** | Evalúa la aplicación o conocimiento de métodos para comprobar la usabilidad (heurísticas, test, revisiones, etc.). | No se aplican ni mencionan técnicas. | Se mencionan sin aplicarlas. | Se aplican técnicas básicas de comprobación. | Se aplican y documentan correctamente varias técnicas. | Se aplican técnicas profesionales, justificadas y bien documentadas. | RA6.c |
+| **C1. Personas fundamentadas en investigación** | Evalúa si las personas salen de datos reales (entrevistas, encuestas) y no de suposiciones. | Personas inventadas o solo demográficas. | Personas con algún dato real, mayoría de atributos sin respaldo. | Personas con atributos rastreables a la investigación en su mayoría. | Personas bien fundamentadas, incluida la de diversidad funcional. | Personas que cambian decisiones de diseño concretas, con cada atributo trazable a un dato. | RA1-a |
+| **C2. User flows con casos límite** | Evalúa si los flujos cubren las tareas críticas con happy path y casos límite. | No hay flujos o solo describen el happy path. | Flujos con algún caso límite, poco desarrollados. | Flujos de las tareas críticas con casos límite básicos. | Flujos completos, revisados desde la perspectiva de las personas. | Flujos exhaustivos que anticipan fallos reales y quedan listos como guión de test futuro. | RA6-c |
+| **C3. Arquitectura de la información y sitemap** | Evalúa si el sitemap refleja un inventario real y una organización centrada en el usuario. | Sin sitemap o estructura arbitraria. | Sitemap presente pero sin inventario ni card sorting detrás. | Sitemap basado en card sorting, jerarquía aceptable. | Sitemap verificado contra los flujos críticos en tres niveles o menos. | Estructura y nomenclatura justificadas con datos de card sorting y entrevistas. | RA1-c |
+| **C4. Wireframes y prototipo navegable** | Evalúa si los wireframes resuelven el flujo y si el prototipo es navegable de verdad. | No hay wireframes o son decorativos. | Wireframes básicos sin conexión entre pantallas. | Wireframes del happy path conectados en un prototipo funcional. | Prototipo probado con personas reales, con cambios documentados. | Prototipo validado y trazable al sitemap y al flujo en cada pantalla. | RA6-a |
+| **C5. Brief de proyecto** | Evalúa si el brief tiene los cinco elementos y si el problema y los criterios de éxito están respaldados por datos. | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos pero poco desarrollados. | Brief completo, problema respaldado por algún dato. | Brief conciso, legible en minutos, con criterios de éxito verificables. | Brief que cualquiera puede leer en cinco minutos y que ancla cada decisión de la órbita. | RA6-b |
+| **C6. Defensa de las decisiones (auditoría oral)** | Evalúa si el alumno puede justificar cualquier decisión con datos propios, no con "es lo habitual" o "lo sugirió la IA". | No puede justificar decisiones básicas. | Justifica algunas decisiones, otras con respuestas genéricas. | Justifica la mayoría de decisiones señalando su origen. | Justifica decisiones con datos concretos de su propia investigación. | Defiende cualquier decisión del proyecto en cualquier momento, con datos y criterio propio. | RA6-e |
 
-
-
+Un artefacto con errores formales pero con decisiones bien justificadas vale más en este módulo que uno impecable que no se sabe defender.

@@ -1,17 +1,17 @@
-## **Fase 6: Componentes reutilizables**
+## **Fase 6: Card sorting y sitemap**
 
-Identifica qué elementos se repiten para que en el módulo de DWEC puedas reutilizarlos.
+Agrupar exige primero saber qué hay que agrupar.
 
 #### **Qué tienes que hacer:**
 
-El último paso es identificar todos los elementos que se repiten a lo largo de tu aplicación para convertirlos en componentes reutilizables. Esta fase es fundamental para la coordinación con el módulo de DWEC, que necesitarás implementar cada elemento una sola vez y luego reutilizarlo en diferentes pantallas.
+Reúne el inventario completo de pantallas y funcionalidades de tu producto, con lo que ya sabes de los referentes analizados en la Fase 2 y de las tareas críticas de tus flujos. Prepara una tarjeta por elemento del inventario en FigJam.
 
-Repasa todas las pantallas de tu prototipo y haz un inventario detallado de elementos repetidos. Fíjate en botones, campos de formulario, tarjetas de contenido, menús, cabeceras, elementos de navegación... cualquier cosa que aparezca más de una vez puede convertirse en un componente. Piensa también en las variaciones: por ejemplo, un botón puede tener estados normal, hover, desactivado, o de carga.
+Haz el card sorting con cuatro o cinco compañeros que encajen en tus perfiles de persona: cada uno agrupa las tarjetas como le parezca natural y pone nombre a cada grupo. Con los agrupamientos resultantes, construye el sitemap: pantallas principales, secundarias y de sistema, diferenciadas visualmente, con la home como raíz.
 
-Organiza estos componentes siguiendo la metodología Atomic Design que has visto en la unidad. Clasifícalos en átomos como botones individuales, moléculas como buscadores que combinan input y botón, y organismos como cabeceras completas con logo, menú y usuario. Esta clasificación ayudará enormemente al equipo de desarrollo a entender las dependencias entre componentes.
-
-Por último, documenta cada componente de forma clara. No hace falta que sea un manual exhaustivo, pero sí que incluya información básica sobre cuándo usar cada variante, qué contenido llevan, y cómo se comportan. Recuerda que esta documentación la van a leer personas que no han participado en el proceso de diseño.
+Verificación cruzada: cada flujo crítico tiene que poder recorrerse sobre el sitemap en tres niveles o menos.
 
 #### **Entregable:**
 
-El sistema de componentes funcionales desarrollado en Figma debe contener una librería organizada con mínimo 4 componentes clasificados según Atomic Design, las variantes funcionales necesarias para cada estado, y documentación básica que explique el propósito y uso de cada componente para el equipo de desarrollo.
+Sitemap verificado contra los user flows.
+
+---

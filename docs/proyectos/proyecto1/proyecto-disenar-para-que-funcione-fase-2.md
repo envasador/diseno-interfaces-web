@@ -1,17 +1,15 @@
-## **Fase 2: Organizar la información**
+## **Fase 2: Investigar el terreno**
 
-Antes de dibujar pantallas, hay que decidir qué va y dónde va.
+Antes de hablar con nadie, conviene mirar qué existe ya.
 
 #### **Qué tienes que hacer:**
 
-Ahora toca hacer el inventario de todo lo que necesita tu aplicación. Empieza listando todas las funcionalidades que se te ocurran, desde las más básicas hasta las más avanzadas. No te cortes en esta fase: mejor sobrar que quedarse corto.
+Elige dos o tres productos de referencia que resuelvan el mismo problema que tu hipótesis plantea. Sobre una pantalla de cada uno, aplica el test de los cinco segundos con Lyssna: qué comunican en la primera impresión, antes de usarlos de verdad. Toma nota de su estructura, su vocabulario y dónde generan fricción.
 
-Una vez tengas la lista completa, llega el momento de organizarlas. Piensa en cómo las agruparías de forma lógica para el usuario. No se trata de organizarlas por complejidad técnica, sino por la lógica mental de quien va a usar tu aplicación. Por ejemplo, en una app de gestión de gastos, quizás tengas secciones como "Registro de gastos", "Análisis y estadísticas", y "Configuración personal".
-
-Con las funcionalidades agrupadas, crea el sitemap de tu aplicación. Este mapa debe ser jerárquico y no tener más de tres niveles de profundidad: si necesitas más niveles, probablemente la estructura sea demasiado compleja. Recuerda que el usuario debe poder llegar a cualquier funcionalidad importante en máximo tres clics.
-
-Por último, identifica los flujos más críticos para tu usuario: ¿cuáles son las 2-3 tareas principales que van a realizar? Dibuja esos flujos paso a paso, desde que entra en la aplicación hasta que completa su objetivo.
+En paralelo, lanza una encuesta con Tally. Las preguntas salen de lo que todavía no sabes sobre tu hipótesis y sirven para dos cosas: detectar patrones y reclutar a las personas que vas a entrevistar en la fase siguiente.
 
 #### **Entregable:**
 
-La arquitectura de información desarrollada en Figma. Debe incluir el sitemap jerárquico con máximo tres niveles, los 2-3 flujos de usuario principales representados visualmente, y una justificación escrita de tus decisiones de agrupación y estructura.
+Notas de análisis de referentes + resultados del test de cinco segundos + encuesta activa.
+
+---
