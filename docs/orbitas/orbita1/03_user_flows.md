@@ -1,11 +1,11 @@
 # Órbita 1 — Conocer a las personas
 
-## 3. User flows: mapear el camino antes de dibujar las pantallas
+## 5. User flow: el recorrido completo de tu MVP
 
 <div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
   <div>
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Qué es un user flow, cómo se representa, el happy path y los casos límite.</p>
+    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Qué es un user flow, cómo se representa, el happy path y los casos límite sobre el recorrido completo del MVP.</p>
   </div>
   <a href="../slides/orbita1_03_user_flows.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
 </div>
@@ -13,7 +13,9 @@
 
 Un **user flow** es el recorrido que sigue una persona para conseguir algo dentro de tu aplicación. Muestra la secuencia de pasos, decisiones y pantallas desde que aparece la necesidad hasta que se resuelve o se abandona.
 
-Mapear los flujos antes de dibujar pantallas tiene una razón práctica: una pantalla puede estar bien resuelta por sí sola y aun así formar parte de un flujo que no funciona. Un proceso de compra que pide datos que el usuario no tiene a mano, un registro que obliga a crear cuenta justo cuando alguien quiere hacer algo rápido, una confirmación que llega cuando la persona ya cerró la aplicación. Estos problemas no se ven mirando pantallas individuales. Se ven mirando el flujo completo (RA1-c, RA6-c).
+En este módulo mapeas un único flujo que recorre tu MVP de principio a fin: entra en la aplicación, usa cada una de las funcionalidades que definiste en el MVP en el orden en que una persona real las usaría, y sale. Este apartado viene después del sitemap a propósito: el flujo recorre las pantallas que ya definiste ahí, no las inventa sobre la marcha.
+
+Mapear el flujo antes de dar el sitemap por completamente cerrado tiene una razón práctica: una pantalla puede estar bien resuelta por sí sola y aun así formar parte de un recorrido que no funciona. Un proceso de compra que pide datos que el usuario no tiene a mano, un registro que obliga a crear cuenta justo cuando alguien quiere hacer algo rápido, una confirmación que llega cuando la persona ya cerró la aplicación. Estos problemas no se ven mirando pantallas individuales ni el sitemap por sí solo. Se ven recorriendo el flujo completo (RA1-c, RA6-c).
 
 ### Cómo se representa un flujo
 
@@ -33,19 +35,21 @@ Descubrir estos casos ahora, sobre un diagrama en FigJam, lleva minutos. Descubr
 
 Aquí es donde las personas que construiste te son útiles. Recorre cada flujo desde la perspectiva de cada persona y pregúntate dónde se atascaría. La persona que usa la aplicación en el transporte público con una mano: ¿puede completar este flujo con interrupciones? ¿El flujo guarda el estado si cierra la aplicación a mitad? La persona que usa lector de pantalla: ¿hay algún paso que dependa exclusivamente de información visual? Estas preguntas hechas ahora sobre un diagrama evitan rediseños completos más adelante (RA5-a, RA6-c).
 
-### Cuántos flujos y con qué detalle
+### Un flujo, todo el MVP
 
-Para el proyecto de este módulo, cubre las tareas críticas: las que sin ellas la aplicación pierde su sentido. Entre tres y cinco flujos bien desarrollados son suficientes. Cada uno debe incluir el happy path y al menos dos o tres casos límite.
+Para el proyecto de este módulo, el flujo cubre el MVP completo, no una tarea suelta: recorre cada funcionalidad que definiste como parte del MVP, en el orden real de uso, apoyándote en el sitemap para saber por qué pantallas pasa. Si una pantalla del sitemap no aparece en ningún punto del flujo, pregúntate si de verdad pertenece al MVP o si sobra.
+
+Dentro de ese recorrido único, incluye el happy path completo y al menos dos o tres casos límite en los puntos más críticos (el pago, el registro, cualquier paso donde algo pueda salir mal).
 
 El nivel de detalle correcto es el que permite tomar decisiones. Un flujo que solo dice "el usuario se registra" no tiene información de diseño. Uno que detalla cada campo del formulario ya es un wireframe. El punto intermedio: pantallas como unidades, decisiones explícitas, estados de error y de éxito identificados.
 
-### Los flujos como guión de evaluación
+### El flujo como guión de evaluación
 
-Los user flows que construyas ahora tienen una segunda vida en la Órbita 5: serán el guión del cognitive walkthrough, donde recorres la interfaz terminada paso a paso comprobando si una persona real podría completar cada tarea sin ayuda. Un flujo bien documentado ahora es un protocolo de test gratuito después (RA6-e).
+El user flow que construyas ahora tiene una segunda vida en la Órbita 5: será el guión del cognitive walkthrough, donde recorres la interfaz terminada paso a paso comprobando si una persona real podría completarlo sin ayuda. Un flujo bien documentado ahora es un protocolo de test gratuito después (RA6-e).
 
 ### Formato y herramienta
 
-Los flujos se construyen en FigJam, junto a las personas y el brief, vinculados al proyecto principal de Figma. Usa las formas estándar y conectores automáticos. Cada flujo lleva un título con el objetivo que cubre, la persona o personas a las que sirve, y anotaciones en los puntos donde una decisión de diseño quedó abierta.
+El flujo se construye en FigJam, junto a las personas, el MVP y el sitemap, vinculado al proyecto principal de Figma. Usa las formas estándar y conectores automáticos. Lleva un título con el alcance que cubre, la persona o personas a las que sirve, y anotaciones en los puntos donde una decisión de diseño quedó abierta.
 
 Si usas IA para generar un primer borrador de flujo o para identificar casos límite, el protocolo es el habitual: registro en `CHANGELOG.md`. Un caso límite sugerido por la IA que no sabes explicar es un caso límite que no has analizado.
 

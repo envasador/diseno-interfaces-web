@@ -1,6 +1,6 @@
 # Órbita 1 — Conocer a las personas
 
-## 5. Del flujo al wireframe
+## 6. Del flujo al wireframe
 
 <div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
   <div>

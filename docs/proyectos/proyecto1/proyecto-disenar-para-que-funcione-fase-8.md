@@ -1,13 +1,15 @@
-## **Fase 8: Cerrar el brief y entregar**
+## **Fase 8: Wireframear y prototipar**
 
-El brief es el primero en orden lógico y el último en cerrarse: sus contenidos se completan con lo que la investigación reveló.
+El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Ahora las dibujas.
 
 #### **Qué tienes que hacer:**
 
-Convierte la hipótesis de la Fase 1 en el brief definitivo, con sus cinco elementos: el problema respaldado por datos, el alcance acotado por las tareas críticas, las personas referenciadas, los criterios de éxito verificables y las restricciones.
+Con el sitemap y el user flow como referencia, produce los wireframes lo-fi en Figma: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni color. Nombra cada frame igual que su pantalla correspondiente en el sitemap.
 
-Revisa que los seis artefactos de la órbita (brief, personas, user flows, sitemap, wireframes, prototipo) estén vinculados entre sí y que el `CHANGELOG.md` recoja todos los usos de IA de la órbita. El tablero completo tiene que poder leerse en cinco minutos sin que estés presente para explicarlo.
+Una vez tengas todas las pantallas, conéctalas con interacciones básicas para formar el prototipo navegable. Pruébalo con cuatro o cinco personas del perfil de tu persona principal usando Lyssna: dales una tarea concreta y observa sin explicar nada. Si tienes que aclarar algo durante la prueba, hay un problema de diseño que resolver antes de seguir.
 
 #### **Entregable:**
 
-Entregable completo de la Órbita 1: brief, personas, user flows, sitemap, wireframes y prototipo navegable, con el `CHANGELOG.md` cerrado.
+Wireframes lo-fi + prototipo navegable en Figma, con resultados del test anotados.
+
+---

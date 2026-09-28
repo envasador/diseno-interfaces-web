@@ -1,15 +1,15 @@
-## **Fase 5: Mapear los user flows**
+## **Fase 5: Definir el MVP**
 
-Una pantalla puede estar bien resuelta y aun así formar parte de un flujo que no funciona. Por eso se mapea antes de dibujar.
+Sin límites claros, cualquier funcionalidad parece tan necesaria como cualquier otra.
 
 #### **Qué tienes que hacer:**
 
-Identifica las tres a cinco tareas críticas de tu producto: las que sin ellas la aplicación pierde el sentido. Para cada una, mapea el flujo completo en FigJam con la notación estándar: píldora para el punto de entrada o salida, rectángulo para cada pantalla o estado, rombo para cada decisión, flechas para las transiciones.
+Parte de tu persona primaria y de sus objetivos, tal como los recogiste en su ficha. Pregúntate qué es lo mínimo que necesita para resolver su problema principal: eso es lo que entra en el MVP.
 
-Mapea siempre el happy path primero, y después al menos dos o tres casos límite por flujo: qué pasa si la contraseña falla, si se corta la conexión a mitad de un pago, si alguien vuelve a un proceso a medias. Recorre cada flujo con tus personas como filtro, en especial la de diversidad funcional, y anota las decisiones que queden abiertas.
+Separa las funcionalidades que se te ocurran en dos columnas, dentro y fuera del MVP, y justifica cada una con un criterio: ¿es necesaria para que tu persona primaria complete su tarea principal?, ¿es viable construirla con el tiempo y las herramientas del módulo?, ¿tiene una alternativa aceptable mientras tanto? Si la respuesta a la primera pregunta es no, la funcionalidad queda fuera de esta versión, no descartada para siempre.
 
 #### **Entregable:**
 
-User flows de las tareas críticas, con happy path y casos límite anotados.
+MVP definido en FigJam: lista de funcionalidades dentro del alcance y lista de las que quedan fuera, cada una con su justificación.
 
 ---

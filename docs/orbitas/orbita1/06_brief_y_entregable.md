@@ -1,6 +1,6 @@
 # Órbita 1 — Conocer a las personas
 
-## 6. El brief de proyecto y el entregable de la órbita
+## 7. El brief de proyecto y el entregable de la órbita
 
 <div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
   <div>
@@ -19,7 +19,7 @@ El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera p
 
 **El problema que resuelve el producto**, formulado desde la perspectiva de las personas y respaldado por la investigación. Si esta frase se sostiene sin los datos que recogiste, probablemente describes un problema que supusiste en lugar de uno que encontraste.
 
-**El alcance**: qué entra y qué queda fuera. Definir lo que el producto deliberadamente no hace es tan importante como definir lo que hace. El alcance se acota con las tareas críticas de los user flows: el producto resuelve bien esas tres a cinco tareas, y todo lo demás es secundario o queda fuera de esta versión. Esto conecta con el concepto de MVP que probablemente ya conoces: la versión mínima que resuelve el problema principal sin añadir nada que pueda esperar.
+**El alcance**: qué entra y qué queda fuera. Ya lo acotaste al definir tu MVP; el brief simplemente lo recoge. El producto resuelve bien las funcionalidades que decidiste que entraban, y todo lo demás queda fuera de esta versión, no descartado para siempre.
 
 **Las personas, referenciadas**. El brief enlaza a las fichas, con una línea por persona que resuma quién es y qué papel juega.
 
@@ -29,11 +29,11 @@ El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera p
 
 ### El entregable completo
 
-Con el brief cerrado, el entregable de la Órbita 1 queda compuesto por seis artefactos vinculados entre sí: cuatro en FigJam y dos en Figma.
+Con el brief cerrado, el entregable de la Órbita 1 queda compuesto por siete artefactos vinculados entre sí: cinco en FigJam y dos en Figma.
 
-En FigJam: el brief de proyecto, las fichas de personas, los user flows de las tareas críticas y el sitemap.
+En FigJam: el brief de proyecto, las fichas de personas, el MVP, el sitemap y el user flow completo del MVP.
 
-En Figma: los wireframes lo-fi de todas las pantallas del happy path (nombrados con el paso del flujo al que corresponden) y el prototipo navegable que las conecta con interacciones básicas.
+En Figma: los wireframes lo-fi de todas las pantallas del happy path (nombrados igual que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
 
 Los dos archivos van vinculados entre sí y son la referencia permanente del resto del módulo. Cualquier decisión de las Órbitas siguientes debería poder rastrearse hasta algo construido aquí.
 

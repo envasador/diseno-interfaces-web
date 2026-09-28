@@ -1,15 +1,15 @@
-## **Fase 7: Wireframear y prototipar**
+## **Fase 7: Mapear el user flow completo**
 
-El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Ahora las dibujas.
+Una pantalla puede estar bien resuelta y aun así formar parte de un recorrido que no funciona. Por eso se mapea sobre el sitemap ya construido.
 
 #### **Qué tienes que hacer:**
 
-Con el sitemap y los user flows como referencia, produce los wireframes lo-fi en Figma: una pantalla por paso del happy path, en escala de grises, sin tipografía real ni color. Nombra cada frame igual que su pantalla correspondiente en el sitemap.
+Mapea un único flujo en FigJam que recorra tu MVP de principio a fin: entra en la aplicación, usa cada una de las funcionalidades que definiste en el MVP en el orden en que una persona real las usaría, apoyándote en el sitemap para saber por qué pantallas pasa, y sale. Usa la notación estándar: píldora para el punto de entrada o salida, rectángulo para cada pantalla o estado, rombo para cada decisión, flechas para las transiciones.
 
-Una vez tengas todas las pantallas, conéctalas con interacciones básicas para formar el prototipo navegable. Pruébalo con cuatro o cinco personas del perfil de tu persona principal usando Lyssna: dales una tarea concreta y observa sin explicar nada. Si tienes que aclarar algo durante la prueba, hay un problema de diseño que resolver antes de seguir.
+Mapea siempre el happy path primero, y después al menos dos o tres casos límite en los puntos más críticos del recorrido: qué pasa si la contraseña falla, si se corta la conexión a mitad de un pago, si alguien vuelve a un proceso a medias. Recorre el flujo con tus personas como filtro, en especial la de diversidad funcional, y anota las decisiones que queden abiertas.
 
 #### **Entregable:**
 
-Wireframes lo-fi + prototipo navegable en Figma, con resultados del test anotados.
+User flow completo del MVP, con happy path y casos límite anotados.
 
 ---

@@ -17,13 +17,13 @@ La arquitectura de la información organiza y nombra el contenido de tu producto
 
 ### Para qué sirve
 
-Le sirve al usuario para encontrar contenido sin perderse: cuando la estructura y los nombres son predecibles, sabe dónde buscar y qué va a encontrar antes de pulsar. Te sirve a ti como diseñador para decidir, antes de dibujar ninguna pantalla, dónde vive cada pieza de contenido y qué tan cerca queda de las tareas críticas de tus personas.
+Le sirve al usuario para encontrar contenido sin perderse: cuando la estructura y los nombres son predecibles, sabe dónde buscar y qué va a encontrar antes de pulsar. Te sirve a ti como diseñador para decidir, antes de dibujar ninguna pantalla, dónde vive cada pieza de contenido de tu MVP.
 
 ### Cómo se crea
 
-Se construye en tres pasos, siempre después de tener personas y user flows: la organización correcta depende de cómo piensan tus personas, y los flujos marcan qué recorridos son críticos.
+Se construye en tres pasos, siempre después de tener personas y MVP: la organización correcta depende de cómo piensan tus personas, y el MVP marca qué contenido entra de verdad.
 
-**1. Inventario.** Reúne la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Sale de dos fuentes: los referentes que analizaste al principio de la órbita (qué contenido incluyen productos parecidos al tuyo) y las tareas críticas de tus user flows (qué pantallas son imprescindibles). Si algo no aparece en ninguna de las dos fuentes, pregúntate si hace falta de verdad.
+**1. Inventario.** Reúne la lista completa de pantallas, funcionalidades y tipos de contenido que va a tener tu producto. Sale de dos fuentes: los referentes que analizaste al principio de la órbita (qué contenido incluyen productos parecidos al tuyo) y las funcionalidades de tu MVP (qué entra en esta versión y qué queda fuera). Si algo no aparece en ninguna de las dos fuentes, pregúntate si hace falta de verdad.
 
 **2. Agrupación.** Descubre cómo agrupa el contenido la cabeza de tu usuario con el card sorting: das a varias personas una tarjeta por cada elemento del inventario y les pides que las agrupen como les parezca natural y pongan un nombre a cada grupo. Hazlo con cuatro o cinco compañeros que encajen en tus perfiles de persona, en FigJam, con notas adhesivas como tarjetas. Los agrupamientos que se repiten entre participantes marcan la estructura que tu producto debería tener.
 
@@ -33,12 +33,12 @@ Se construye en tres pasos, siempre después de tener personas y user flows: la 
 
 ### Dos decisiones al construirlo
 
-**Amplitud o profundidad.** Una estructura amplia pone muchas opciones en el primer nivel: todo a pocos clics, pero el menú inicial puede abrumar. Una estructura profunda pone pocas opciones iniciales y más niveles: cada pantalla es simple, pero llegar al contenido cuesta más pasos. Para este módulo, las tareas críticas de tus flujos deben alcanzarse en tres niveles de navegación como máximo (RA6-c).
+**Amplitud o profundidad.** Una estructura amplia pone muchas opciones en el primer nivel: todo a pocos clics, pero el menú inicial puede abrumar. Una estructura profunda pone pocas opciones iniciales y más niveles: cada pantalla es simple, pero llegar al contenido cuesta más pasos. Para este módulo, las funcionalidades de tu MVP deben alcanzarse en tres niveles de navegación como máximo (RA6-c).
 
 **Cómo nombrar cada sección.** Usa las palabras que tus personas emplearon en las entrevistas para describir sus tareas. Un nombre funciona cuando el usuario predice qué va a encontrar antes de pulsar: "Mis pedidos" cumple, "Panel de actividad" no. La navegación funciona mejor cuanto más convencional es (RA6-h).
 
 ### Verificación final
 
-Antes de dar el sitemap por terminado, superpón mentalmente cada user flow sobre él y comprueba que el recorrido es posible y razonable. Si un flujo crítico obliga a saltar entre ramas alejadas, la arquitectura penaliza una tarea importante.
+Antes de dar el sitemap por terminado, contrasta cada nodo con tu MVP: todo lo que está dentro del MVP tiene una pantalla o sección donde vivir, y nada de lo que dejaste fuera del MVP se ha colado en el sitemap. La comprobación contra el recorrido real de uso llega en el apartado siguiente, cuando mapees el user flow sobre esta misma estructura.
 
 Si usas IA para proponer una estructura inicial, recuerda que genera la arquitectura más frecuente para ese tipo de producto: un punto de partida razonable, que tu card sorting y tus personas tienen que corregir. La distancia entre esa estructura genérica y la tuya final demuestra que hubo un proceso de diseño detrás (RA1-c).
