@@ -1,4 +1,4 @@
-# Proyecto — Órbita 1: Conocer a las personas
+# Proyecto 1: Diseñar para que funcione
 
 ### ¿De qué va esto?
 

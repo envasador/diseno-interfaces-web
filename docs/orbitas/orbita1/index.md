@@ -27,3 +27,11 @@ Seis artefactos vinculados entre sí — cuatro en FigJam y dos en Figma:
 4. [Arquitectura de la información y sitemap](04_arquitectura_informacion.md)
 5. [Del flujo al wireframe](05_wireframes.md)
 6. [El brief de proyecto y el entregable](06_brief_y_entregable.md)
+
+---
+
+## El proyecto
+
+El enunciado completo, la rúbrica de evaluación y las fases paso a paso de esta órbita están en el proyecto **Diseñar para que funcione**.
+
+[Ir al enunciado del proyecto](../../proyectos/proyecto1/enunciado.md){ .md-button .md-button--primary }

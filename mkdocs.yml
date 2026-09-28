@@ -56,6 +56,7 @@ nav:
   - Órbita 1:
       - Resumen y entregables: orbitas/orbita1/index.md
       - Hoja de ruta: orbitas/orbita1/00_hoja_de_ruta.md
+      - "Proyecto: Diseñar para que funcione": proyectos/proyecto1/enunciado.md
       - 1. Por qué investigamos antes de diseñar: orbitas/orbita1/01_por_que_investigamos.md
       - "2. Personas: qué son y cómo se construyen": orbitas/orbita1/02_que_es_una_persona.md
       - 3. User flows - del MVP al recorrido completo: orbitas/orbita1/03_user_flows.md
