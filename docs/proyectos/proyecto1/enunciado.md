@@ -14,7 +14,7 @@ Elige un problema real, algo que tú mismo usarías. Si no lo usarías tú, dif�
 
 ## Cronograma
 
-La Órbita 1 se organiza en ocho pasos con horas orientativas por paso, repartidos a lo largo de las primeras semanas del curso. El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
+La Órbita 1 se organiza en ocho pasos, repartidos a lo largo de las primeras cuatro semanas del curso (~20 horas de clase en total). El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
 
 ## Fases del proyecto
 
