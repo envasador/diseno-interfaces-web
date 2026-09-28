@@ -21,3 +21,7 @@ Sostener las tres a la vez es el trabajo. Un diseño centrado solo en el usuario
 ## Dónde encaja este módulo
 
 Diseño de Interfaces Web se ocupa sobre todo de una capa de esa disciplina más amplia: la experiencia y la interfaz del producto, desde investigar a las personas hasta maquetar el sistema con código real. Las decisiones de negocio y buena parte de la arquitectura técnica del proyecto se trabajan en los módulos con los que este coordina (DAW, DWEC, DWES). En la empresa real esa frontera entre disciplinas es porosa: cuanto mejor entiendas las presiones de negocio y las limitaciones técnicas de tu propio proyecto, con más solidez vas a poder defender tus decisiones de interfaz en las seis órbitas que vienen a continuación.
+
+## Cómo arranca tu proyecto
+
+Un proyecto de producto digital puede arrancar de dos formas. Puede nacer **outside-in**, desde una necesidad detectada en usuarios reales, que es como vas a trabajar tú: investigas primero, y de esa investigación sale el problema que tu producto va a resolver. También puede nacer **inside-out**, cuando el negocio ya tiene una idea o un encargo concreto y la investigación llega después, para validarla o ajustarla antes de construir. Las dos son legítimas y las vas a encontrar en la empresa real. Este módulo trabaja siempre outside-in porque es la vía que mejor enseña a fundamentar decisiones en datos y no en intuiciones, pero conviene que sepas desde el principio que no es la única puerta de entrada a un proyecto, solo la que vas a practicar aquí.
