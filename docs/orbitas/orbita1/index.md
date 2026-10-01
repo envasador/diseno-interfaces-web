@@ -2,7 +2,7 @@
 
 **Horas:** unas 20 · **RA principales:** RA1 y RA6 · **Semanas:** de la 1 a la 4
 
-Durante cuatro semanas vas a aparcar los colores y las tipografías para averiguar quién va a usar tu producto, qué necesita y cómo se va a mover por él. Es la órbita menos vistosa del curso y la que más pesa en todas las demás: lo que decidas aquí lo vas a seguir usando, y defendiendo, hasta junio.
+Durante cuatro semanas vas a aparcar los colores y las tipografías para averiguar quién va a usar tu producto, qué necesita y cómo se va a mover por él. Es la órbita menos vistosa del curso y la que más pesa en todas las demás, pero es imprescindible a la hora de orgganizar cualquier proyecto que hagas durante el curso.
 
 ---
 
