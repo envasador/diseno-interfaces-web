@@ -7,6 +7,8 @@
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
     <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Del user flow al wireframe lo-fi en Figma y el prototipo navegable.</p>
   </div>
+  <a href="../slides/orbita1_05_wireframes.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
+</div>
 
 
 Antes de elegir los azulejos del baño, alguien dibujó el plano de la casa: dónde va cada habitación, por dónde se entra y qué puerta da a qué pasillo. Nadie discute el color de los azulejos con el arquitecto si el baño todavía no tiene puerta. El **wireframe** es ese plano para tu interfaz.

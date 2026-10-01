@@ -7,6 +7,8 @@
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
     <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">El MVP como punto de partida, qué es un user flow, cómo se representa, el happy path y los casos límite.</p>
   </div>
+  <a href="../slides/orbita1_03_user_flows.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
+</div>
 
 
 Un **user flow** es el camino que sigue una persona para conseguir algo dentro de tu aplicación: la secuencia de pasos, decisiones y pantallas desde que aparece la necesidad hasta que se resuelve (o hasta que la persona se rinde). Antes de dibujar ninguno, necesitas tener claro qué hace tu producto en esta primera versión. Y para eso está el MVP.
