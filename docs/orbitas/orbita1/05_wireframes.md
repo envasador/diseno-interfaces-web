@@ -4,7 +4,7 @@
 
 Antes de elegir los azulejos del baño, alguien dibujó el plano de la casa: dónde va cada habitación, por dónde se entra y qué puerta da a qué pasillo. Nadie discute el color de los azulejos con el arquitecto si el baño todavía no tiene puerta. El **wireframe** es ese plano para tu interfaz.
 
-Traduce el user flow y el sitemap en pantallas concretas, todavía sin diseño visual. El flujo pone el orden: qué pantalla viene después de cuál para completar una tarea. El sitemap pone el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan. Y el wireframe comprueba que la estructura de cada pantalla cumple lo que el flujo promete, antes de que inviertas una sola hora en tipografía o color. Es una **herramienta de decisión**, y como tal se juzga.
+Convierte el user flow y el sitemap en pantallas concretas, todavía sin diseño visual. El flujo pone el orden: qué pantalla viene después de cuál para completar una tarea. El sitemap pone el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan. Y el wireframe comprueba que la estructura de cada pantalla cumple lo que el flujo promete, antes de que inviertas una sola hora en tipografía o color. Es una **herramienta de decisión**, y como tal se juzga.
 
 ### Cómo se combinan el flujo y la arquitectura
 
@@ -38,6 +38,6 @@ La tentación más frecuente es meter color para distinguir elementos. Si necesi
 
 Cuando tengas los wireframes de todo el happy path, conéctalos en Figma con **interacciones básicas**: un toque o un clic en un botón lleva a la pantalla siguiente. Nada más. Ni animaciones ni transiciones bonitas.
 
-Este prototipo sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Y aquí vuelve la prueba incómoda del primer apartado. Si durante el test te descubres diciendo "no, eso es el botón de...", acabas de encontrar un problema de diseño, y hay que resolverlo antes de pasar a alta fidelidad.
+Este prototipo sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Y aquí vuelve la prueba incómoda del primer apartado. Si durante el test te pillas diciendo "no, eso es el botón de...", acabas de encontrar un problema de diseño, y hay que resolverlo antes de pasar a alta fidelidad.
 
 Puedes montar el test en Lyssna enlazando directamente el prototipo de Figma, igual que hiciste con los referentes en la investigación, pero ahora sobre tu propio trabajo. Con cuatro o cinco personas que encajen con tu persona primaria tienes suficiente para detectar los problemas más graves (RA1-c, RA6-a).

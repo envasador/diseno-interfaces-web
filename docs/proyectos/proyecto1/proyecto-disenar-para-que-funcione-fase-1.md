@@ -4,7 +4,7 @@ Para investigar necesitas un punto de partida, aunque sepas que va a cambiar. Na
 
 #### **Qué tienes que hacer:**
 
-**Elige el problema.** Que sea real y que lo hayas visto de cerca. La pista más fiable es preguntarte si tú usarías esa aplicación: si la respuesta es que no, difícilmente va a funcionar para nadie más. Piénsalo con calma, porque el proyecto se coordina con DWEC, DWES y Despliegue durante todo el curso y la elección tiene que aguantarte muchos meses.
+**Elige el problema.** Que sea real y que lo hayas visto de cerca. La pista más fiable es preguntarte si tú usarías esa aplicación: si la respuesta es que no, difícilmente le va a servir a nadie más. Piénsalo con calma, porque el proyecto se coordina con DWEC, DWES y Despliegue durante todo el curso y la elección tiene que aguantarte muchos meses.
 
 **Escribe la hipótesis.** Con esta estructura: "creo que las personas que [contexto] necesitan [objetivo] pero [fricción]". Por ejemplo: "creo que las personas que juegan al pádel en el polideportivo municipal necesitan reservar pista con antelación pero solo pueden hacerlo llamando por teléfono en horario de oficina". Escríbela en el tablero de FigJam con el que vas a trabajar el resto de la órbita.
 

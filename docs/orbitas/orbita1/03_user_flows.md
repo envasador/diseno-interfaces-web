@@ -12,13 +12,13 @@ En cuanto empiezas a pensar en tu app del polideportivo, las ideas llegan solas:
 
 El método es este. Abre la ficha de tu persona primaria y busca su objetivo principal. Haz dos columnas, dentro y fuera, y pasa cada funcionalidad por tres preguntas: ¿la necesita tu persona primaria para completar su tarea principal?, ¿puedes construirla con el tiempo y las herramientas del módulo?, ¿tiene mientras tanto una alternativa aceptable? Cada respuesta tiene que apoyarse en un criterio, y "me apetece" no cuenta. Si la respuesta a la primera es no, la funcionalidad se queda fuera de esta versión, a la espera de la siguiente (RA1-c).
 
-El resultado es una lista corta y defendible: lo que tendrá tu producto en esta versión y una frase por cada cosa que se quedó fuera explicando por qué puede esperar. Guárdala en el mismo tablero de FigJam donde vive el resto de la capa 0. A partir de aquí es tu referencia, empezando por los flujos de este mismo apartado.
+El resultado es una lista corta y defendible: lo que tendrá tu producto en esta versión y una frase por cada cosa que se quedó fuera explicando por qué puede esperar. Guárdala en el mismo tablero de FigJam donde tienes el resto de la capa 0. A partir de aquí es tu referencia, empezando por los flujos de este mismo apartado.
 
 ### Cómo se dibuja un flujo
 
 La notación es sencilla. Una píldora o elipse para la entrada y la salida. Un rectángulo para cada pantalla o estado. Un rombo para cada decisión, sea de la persona o del sistema. Y flechas para las transiciones.
 
-El **punto de entrada** merece más atención de la que suele recibir. La gente llega a un flujo desde sitios muy distintos: la pantalla principal, una notificación, un enlace que le ha pasado alguien por WhatsApp, un resultado de búsqueda. Cada entrada supone que la persona sabe cosas distintas. Quien llega desde el enlace del grupo ("he reservado la pista 3, ¿os viene bien?") aterriza en medio de una reserva sin haber visto la portada. El flujo tiene que funcionarle también a esa persona.
+El **punto de entrada** merece más atención de la que suele recibir. La gente llega a un flujo desde sitios muy distintos: la pantalla principal, una notificación, un enlace que le ha pasado alguien por WhatsApp, un resultado de búsqueda. Según por dónde entre, la persona sabrá más o menos de lo que está pasando. Quien llega desde el enlace del grupo ("he reservado la pista 3, ¿os viene bien?") aterriza en medio de una reserva sin haber visto la portada. El flujo tiene que funcionarle también a esa persona.
 
 Cada rombo abre al menos dos ramas, y cada rama tiene que acabar en algún sitio definido. Una rama que termina en el vacío es un hueco del diseño que algún día aparecerá como una pantalla de error que nadie diseñó.
 
@@ -28,9 +28,9 @@ El **happy path** es el recorrido ideal: la persona hace justo lo que el diseño
 
 Lo interesante está en los **casos límite**. Qué pasa cuando alguien falla la contraseña tres veces. Cuando se corta la conexión a mitad del pago. Cuando dos personas intentan reservar la misma pista en el mismo segundo. Cuando Manuel vuelve a una reserva que dejó a medias ayer. Cada uno de esos escenarios necesita una respuesta diseñada.
 
-Descubrir estos casos ahora, sobre un diagrama, te lleva minutos. Descubrirlos en producción te cuesta usuarios.
+Descubrir estos casos ahora, sobre un diagrama, te lleva minutos. Descubrirlos con la app ya publicada te cuesta perder gente.
 
-Aquí es donde tus personas empiezan a trabajar para ti. Recorre cada flujo en la piel de cada una y pregúntate dónde se atascaría. Lucía, en el autobús y con una mano: ¿puede terminar la reserva si la interrumpen dos veces? ¿Se guarda lo que llevaba si cierra la app para contestar un mensaje? Una persona que usa lector de pantalla: ¿hay algún paso que dependa solo de información visual, como una pista "libre" marcada únicamente en verde? Estas preguntas, hechas hoy sobre un diagrama, te ahorran rediseños enteros dentro de dos meses (RA5-a, RA6-c).
+Aquí es donde tus personas empiezan a serte útiles de verdad. Recorre cada flujo en la piel de cada una y pregúntate dónde se atascaría. Lucía, en el autobús y con una mano: ¿puede terminar la reserva si la interrumpen dos veces? ¿Se guarda lo que llevaba si cierra la app para contestar un mensaje? Una persona que usa lector de pantalla: ¿hay algún paso que dependa solo de información visual, como una pista "libre" marcada únicamente en verde? Estas preguntas, hechas hoy sobre un diagrama, te ahorran rediseños enteros dentro de dos meses (RA5-a, RA6-c).
 
 ### El flujo del MVP y los flujos complementarios
 
@@ -48,8 +48,8 @@ El user flow que hagas ahora tiene una segunda vida. En la Órbita 5 será el gu
 
 El flujo se dibuja en FigJam, junto a las personas y el MVP, con las formas estándar y conectores automáticos. Lleva un título con el alcance que cubre, la persona o personas a las que sirve y una anotación en cada punto donde una decisión de diseño quedó abierta.
 
-Si usas IA para un primer borrador del flujo o para buscar casos límite, el protocolo es el de siempre: registro en el `CHANGELOG.md`. Y una advertencia: un caso límite que te sugirió la IA y que no sabes explicar es un caso límite que todavía no has analizado.
+Si usas IA para un primer borrador del flujo o para buscar casos límite, el protocolo es el de siempre: registro en el `CHANGELOG.md`. Y una advertencia: si la IA te sugiere un caso límite y no sabes explicarlo, todavía no lo has analizado.
 
-El esquema de abajo muestra un flujo completo de otro dominio, una compra como invitado, con su happy path y sus ramas de error.
+El esquema de abajo muestra un flujo completo de otro tipo de producto, una compra como invitado, con su happy path y sus ramas de error.
 
 ![Ejemplo de user flow: compra como invitado](img/orbita1_03_esquema_user_flow.svg)

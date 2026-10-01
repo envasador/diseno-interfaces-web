@@ -16,7 +16,7 @@ Hay una prueba sencilla, y bastante incómoda. Dale tu prototipo a alguien de tu
 
 ### Para quién diseñas
 
-Diseñar para todo el mundo a la vez produce interfaces tibias, que a nadie le estorban y a nadie le resuelven nada.
+Cuando diseñas para todo el mundo a la vez, te salen interfaces tibias, que a nadie le estorban y a nadie le resuelven nada.
 
 Pongamos que vas a diseñar una app para reservar las pistas del polideportivo municipal. "Para todo el mundo" no te da ni una pista (perdón). Ahora piensa en Manuel: 64 años, juega al pádel los martes con tres amigos, tiene baja visión y reserva desde el móvil con la letra al 200 %. De repente tienes preguntas útiles. ¿Cabe el calendario en la pantalla con ese tamaño de letra? ¿Distingue una pista libre de una ocupada si la única diferencia es el color? ¿Qué pasa cuando uno de los cuatro se cae del partido el martes a las siete? Con Manuel delante, cada decisión tiene un criterio: **¿esto le funciona a esta persona, en este contexto?** (RA6-a).
 
@@ -36,7 +36,7 @@ Antes de salir a investigar conviene saber lo que otros ya averiguaron. Hay un p
 
 **Ley de Tesler.** Todo sistema tiene una complejidad mínima que nadie puede eliminar, solo cambiar de sitio. Si el diseño no se encarga de ella, se la encuentra la persona usuaria. Repartirla por pasos, por niveles o por contexto es parte de tu trabajo.
 
-**Ley de Miller.** La memoria de trabajo maneja con comodidad unos pocos elementos a la vez (la cifra clásica es siete, más o menos dos). Una pantalla con demasiadas cosas pidiendo atención bloquea a cualquiera. Para eso existen la jerarquía visual, el espacio en blanco y la agrupación.
+**Ley de Miller.** La memoria de trabajo maneja con comodidad unos pocos elementos a la vez (la cifra clásica es siete, más o menos dos). Una pantalla con demasiadas cosas que reclaman atención bloquea a cualquiera. Para eso existen la jerarquía visual, el espacio en blanco y la agrupación.
 
 Cuando en la auditoría oral te pregunte por qué el botón de reservar está abajo y ocupa todo el ancho, el gusto no te va a servir de argumento. Esto sí: "por la ley de Fitts; es la acción principal y Manuel la pulsa con el pulgar, con la letra ampliada". Una frase, un principio y una persona. Con eso la decisión queda defendida (RA1-a, RA6-a).
 

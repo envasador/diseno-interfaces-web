@@ -20,7 +20,7 @@ Los detalles que más te van a ayudar responden a preguntas como estas: ¿en qu�
 
 Hay tres síntomas que delatan una persona mal construida:
 
-1. **Es la usuaria ideal.** Sus motivaciones encajan a la perfección con lo que resuelve el producto, sus frustraciones son justo las que el producto soluciona y no tiene ni un comportamiento que complique el diseño. Esa persona sale de las hipótesis de quien diseña. La investigación nunca devuelve a alguien tan cómodo.
+1. **Es la usuaria ideal.** Sus motivaciones encajan a la perfección con lo que resuelve el producto, sus frustraciones son justo las que el producto soluciona y no tiene ni un comportamiento que complique el diseño. Esa persona sale de las hipótesis de quien diseña. En una investigación de verdad nunca aparece alguien tan cómodo.
 2. **Solo tiene datos demográficos.** Nombre, foto, edad, profesión, aficiones... y ni una línea sobre cómo usa el producto o qué le cuesta. Es Laura y su yoga otra vez.
 3. **Es perfectamente coherente.** La gente real se contradice. Dice que le importa mucho la privacidad y usa la misma contraseña para todo. Manuel jura que no se fía de las apps y lleva tres años pagando el pádel por Bizum. Si tu persona no tiene ni una contradicción, sospecha.
 
@@ -34,7 +34,7 @@ De tus dos o tres personas, una tendrá algún tipo de diversidad funcional (vis
 
 ### Cómo se construye una persona
 
-Con cualquier IA puedes generar una ficha de persona en treinta segundos. Tendrá buen aspecto y parecerá completa. Y estará hecha con los patrones más repetidos que el modelo ha visto, que se parecen mucho a Laura y muy poco a la gente que va a usar tu producto.
+Con cualquier IA puedes generar una ficha de persona en treinta segundos. Quedará resultona y parecerá completa. Y estará hecha con los patrones más repetidos que el modelo ha visto, que se parecen mucho a Laura y muy poco a la gente que va a usar tu producto.
 
 Lo que valida una persona es **su origen**: poder señalar qué dato de tu investigación respalda cada atributo de comportamiento. Si no puedes hacerlo, la persona está a medias, por bonita que sea la ficha.
 
@@ -50,7 +50,7 @@ Las preguntas que orientan esta fase son de tres tipos. Las de **contexto** desc
 
 En este módulo vas a trabajar con tres métodos.
 
-Las **encuestas** sirven para recoger volumen y detectar patrones. Con Tally puedes crear formularios sin límite de respuestas. Te ayudan a confirmar o descartar hipótesis y a encontrar a quién entrevistar después. Su límite es que recogen lo que la gente declara, y lo que declara la gente es optimista.
+Las **encuestas** sirven para recoger volumen y detectar patrones. Con Tally puedes crear formularios sin límite de respuestas. Te ayudan a confirmar o descartar hipótesis y a encontrar a quién entrevistar después. Su límite es que recogen lo que la gente declara, y cuando la gente declara tiende a quedar bien.
 
 Las **entrevistas** son el método que más información buena te va a dar. Veinte minutos de conversación con alguien que vive el problema valen más que cien respuestas de encuesta. Las preguntas tienen que ser abiertas ("cuéntame la última vez que reservaste pista") y tienes que resistir la tentación de sugerir respuestas. Con cinco o seis entrevistas bien hechas suelen aparecer los patrones principales. Las dos primeras dan algo de vergüenza, eso sí. A la tercera se pasa.
 
@@ -70,11 +70,11 @@ Puedes usar IA para ordenar notas, detectar temas o reformular preguntas. Si lo 
 
 #### Paso 4: redacta la ficha
 
-La ficha vive en Figma, en el archivo principal del proyecto, y su trabajo es estar a mano mientras diseñas. Una ficha bien construida incluye:
+La ficha se guarda en Figma, en el archivo principal del proyecto, para tenerla a mano mientras diseñas. Una ficha bien construida incluye:
 
 **Un nombre** y, si quieres, una ilustración que te ayude a imaginar el perfil. Nunca una foto de una persona real.
 
-**Una cita** que capture la tensión central de esa persona con el problema. Algo que alguien podría haber dicho de verdad en una entrevista, como "yo reservo el lunes por la noche, porque el martes a las nueve ya no queda nada".
+**Una cita** que resuma el conflicto principal de esa persona con el problema. Algo que alguien podría haber dicho de verdad en una entrevista, como "yo reservo el lunes por la noche, porque el martes a las nueve ya no queda nada".
 
 **El contexto de uso**: cuándo, dónde y en qué condiciones usa el producto. Dispositivos, conectividad, entorno físico, momento del día. Presta atención especial a la conectividad. Si una de tus personas se conecta con una red lenta o desde un móvil modesto, ese dato decidirá en la Órbita 3 cuánto puede pesar tu interfaz, porque cada kilobyte tiene para ella un coste de acceso y, para todos, un coste energético (C6.f).
 

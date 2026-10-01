@@ -1,6 +1,6 @@
 ## **Fase 6: Card sorting y sitemap**
 
-Tú sabes dónde pondrías cada cosa. El problema es que la app no la vas a usar tú. Esta fase averigua dónde la buscarían tus personas.
+Tú sabes dónde pondrías cada cosa. El problema es que la app no la vas a usar tú. En esta fase averiguas dónde la buscarían tus personas.
 
 #### **Qué tienes que hacer:**
 
@@ -10,7 +10,7 @@ Tú sabes dónde pondrías cada cosa. El problema es que la app no la vas a usar
 
 **Construye el sitemap.** Con esos grupos, dibuja el sitemap con la home como raíz y con las pantallas principales, secundarias y de sistema bien diferenciadas.
 
-**Compruébalo dos veces.** Contra el MVP: todo lo que está dentro tiene una pantalla donde vivir, y nada de lo que dejaste fuera se ha colado. Contra el user flow de la Fase 5: se puede recorrer entero sobre esta estructura sin encontrar un hueco.
+**Compruébalo dos veces.** Contra el MVP: todo lo que está dentro tiene su pantalla, y nada de lo que dejaste fuera se ha colado. Contra el user flow de la Fase 5: se puede recorrer entero sobre esta estructura sin encontrar un hueco.
 
 #### **Entregable:**
 

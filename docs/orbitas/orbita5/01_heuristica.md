@@ -14,7 +14,7 @@ El primer paso es la **evaluación heurística**, un método de Jakob Nielsen qu
 
 **3. Control y libertad.** Toda acción importante necesita una salida: deshacer, cancelar, confirmar antes de borrar. Gmail te deja recuperar un correo enviado durante unos segundos, y casi todas las redes sociales preguntan "¿Eliminar esta publicación?" antes de borrarla. Sin esas salidas, un toque equivocado es un error sin remedio.
 
-**4. Consistencia y estándares.** Un mismo botón se comporta igual en toda la aplicación y un icono significa siempre lo mismo. Reinventar un patrón asentado (mover el carrito de la esquina donde todo el mundo lo busca, por ejemplo) exige una razón de peso, porque el coste de aprender lo nuevo lo paga la persona usuaria.
+**4. Coherencia y estándares.** (En muchas traducciones aparece como "consistencia".) Un mismo botón se comporta igual en toda la aplicación y un icono significa siempre lo mismo. Reinventar un patrón asentado (mover el carrito de la esquina donde todo el mundo lo busca, por ejemplo) exige una razón de peso, porque el coste de aprender lo nuevo lo paga la persona usuaria.
 
 **5. Prevención de errores.** Mejor evitar el problema que explicarlo después. El autocompletado, el aviso antes de una acción irreversible o el recordatorio de que mencionas un adjunto que no has adjuntado son formas de prevención: el sistema se adelanta al error típico antes de que ocurra.
 
@@ -36,6 +36,6 @@ Si tu proyecto incluye alguna funcionalidad con IA generativa, ten en cuenta que
 
 Si recorres tu interfaz pantalla por pantalla preguntándote si cumple cada heurística, acabarás con una lista de problemas. Larga, probablemente. Y una lista larga, sola, sirve de poco, porque no todos los fallos pesan igual ni cuesta lo mismo arreglarlos.
 
-Para cada problema, anota tres cosas: qué heurística incumple, qué **gravedad** tiene (desde un detalle cosmético hasta algo que impide completar la tarea) y qué **dificultad** tendría corregirlo. Cruzando gravedad y dificultad sale el orden en el que merece la pena actuar. Lo grave y fácil va primero. Lo cosmético y costoso puede esperar, o quedar documentado como una decisión consciente de no tocarlo ahora, que también es una decisión defendible.
+Para cada problema, anota tres cosas: qué heurística incumple, qué **gravedad** tiene (desde un detalle estético sin importancia hasta algo que impide completar la tarea) y qué **dificultad** tendría corregirlo. Cruzando gravedad y dificultad sale el orden en el que merece la pena actuar. Lo grave y fácil va primero. Lo menor y costoso puede esperar, o quedar documentado como una decisión consciente de no tocarlo ahora, que también es una decisión defendible.
 
-Ese informe de severidad es la materia prima del apartado 6 de esta órbita, junto con lo que salga del cognitive walkthrough y de las auditorías de patrones engañosos y de sostenibilidad. La evaluación heurística les despeja el camino a todas ellas quitando de en medio lo evidente (RA6-e).
+Ese informe ordenado por gravedad es la materia prima del apartado 6 de esta órbita, junto con lo que salga del cognitive walkthrough y de las auditorías de patrones engañosos y de sostenibilidad. La evaluación heurística les despeja el camino a todas ellas quitando de en medio lo evidente (RA6-e).

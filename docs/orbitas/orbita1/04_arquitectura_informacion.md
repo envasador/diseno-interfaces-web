@@ -8,7 +8,7 @@ Eso es la **arquitectura de la información**: cómo se organiza y cómo se nomb
 
 ### Para qué sirve
 
-A la persona usuaria le sirve para encontrar las cosas sin perderse. Cuando la estructura y los nombres son predecibles, sabe dónde buscar y qué va a encontrar antes de pulsar. A ti te sirve para decidir dónde vive cada pieza de tu MVP antes de dibujar una sola pantalla, que es cuando mover cosas de sitio sale gratis.
+A la persona usuaria le sirve para encontrar las cosas sin perderse. Cuando la estructura y los nombres son predecibles, sabe dónde buscar y qué va a encontrar antes de pulsar. A ti te sirve para decidir dónde va cada pieza de tu MVP antes de dibujar una sola pantalla, que es cuando mover cosas de sitio sale gratis.
 
 ### Cómo se crea
 
@@ -30,6 +30,6 @@ Se construye en tres pasos, y siempre después de tener personas, MVP y user flo
 
 ### Antes de darlo por terminado
 
-Comprueba el sitemap dos veces. Primero contra tu MVP: todo lo que está dentro tiene una pantalla donde vivir, y nada de lo que dejaste fuera se ha colado por la puerta de atrás. Después contra tu user flow: recórrelo sobre el sitemap y comprueba que cada paso encuentra su pantalla, sin huecos y con los mismos nombres en los dos sitios.
+Comprueba el sitemap dos veces. Primero contra tu MVP: todo lo que está dentro tiene su pantalla, y nada de lo que dejaste fuera se ha colado por la puerta de atrás. Después contra tu user flow: recórrelo sobre el sitemap y comprueba que cada paso encuentra su pantalla, sin huecos y con los mismos nombres en los dos sitios.
 
 Si usas IA para proponer una estructura inicial, ten presente que te va a dar la arquitectura más habitual para ese tipo de producto. Es un punto de partida razonable, y tu card sorting y tus personas tienen que corregirlo. La distancia entre esa estructura genérica y tu sitemap final es la prueba de que hubo un proceso de diseño detrás (RA1-c).

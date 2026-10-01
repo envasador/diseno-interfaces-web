@@ -8,7 +8,7 @@ Durante cuatro semanas no vas a elegir ni un color. Ni una tipografía, ni un lo
 
 ## Qué problema vas a resolver
 
-El tema lo eliges tú, con una condición: tiene que ser un problema que hayas visto de cerca. Algo que te pasa a ti, a tu familia, a tu equipo o a la gente de tu barrio. La pista más fiable es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, difícilmente va a funcionar para nadie, y es mejor descubrirlo esta semana que en febrero.
+El tema lo eliges tú, con una condición: tiene que ser un problema que hayas visto de cerca. Algo que te pasa a ti, a tu familia, a tu equipo o a la gente de tu barrio. La pista más fiable es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, difícilmente le va a servir a nadie, y es mejor descubrirlo esta semana que en febrero.
 
 Por eso el proyecto arranca **outside-in**: la idea sale de una necesidad que detectas en tu entorno y de la investigación que haces sobre ella. Aquí nadie te va a dar un encargo cerrado. (La diferencia entre outside-in e inside-out la tienes en la [introducción del módulo](../../introduccion/index.md).)
 
@@ -53,7 +53,7 @@ Los criterios específicos que trabajamos son:
 
 ### Rúbrica de evaluación
 
-Seis criterios. Fíjate sobre todo en el último, la defensa oral: es el que más gente subestima y el que sostiene a todos los demás. Si no sabes explicar de dónde sale una decisión, el criterio correspondiente no se da por superado, por bien hecho que esté el artefacto.
+Seis criterios. Fíjate sobre todo en el último, la defensa oral: es el que más gente subestima y del que dependen todos los demás. Si no sabes explicar de dónde sale una decisión, el criterio correspondiente no se da por superado, por bien hecho que esté el artefacto.
 
 | **Criterio** | **Descripción** | **Insuficiente (1–3)** | **Básico (4–5)** | **Adecuado (6–7)** | **Avanzado (8–9)** | **Excelente (10)** | **RA vinculado** |
 |--------------|-----------------|-------------------------|------------------|--------------------|--------------------|--------------------|------------------|
