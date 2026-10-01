@@ -7,46 +7,44 @@
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
     <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Del user flow al wireframe lo-fi en Figma y el prototipo navegable.</p>
   </div>
-  <a href="../slides/orbita1_05_wireframes.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
 
 
-El wireframe traduce el user flow y el sitemap en pantallas concretas, sin entrar todavía en diseño visual. El user flow aporta el orden: qué pantalla sigue a cuál para completar una tarea. El sitemap aporta el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan entre sí.
+Antes de elegir los azulejos del baño, alguien dibujó el plano de la casa: dónde va cada habitación, por dónde se entra y qué puerta da a qué pasillo. Nadie discute el color de los azulejos con el arquitecto si el baño todavía no tiene puerta. El **wireframe** es ese plano para tu interfaz.
 
-Un wireframe es **una herramienta de decisión**: valida que la estructura de cada pantalla resuelve lo que el flujo promete, antes de invertir tiempo en tipografía, color o estilos.
+Traduce el user flow y el sitemap en pantallas concretas, todavía sin diseño visual. El flujo pone el orden: qué pantalla viene después de cuál para completar una tarea. El sitemap pone el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan. Y el wireframe comprueba que la estructura de cada pantalla cumple lo que el flujo promete, antes de que inviertas una sola hora en tipografía o color. Es una **herramienta de decisión**, y como tal se juzga.
 
 ### Cómo se combinan el flujo y la arquitectura
 
-Cada wireframe que vas a dibujar corresponde a un nodo del sitemap, y el orden en que los dibujas y los conectas lo marca el user flow. El sitemap te da el nombre exacto de cada pantalla (el mismo que usaste al construirlo) y te dice si es principal, secundaria o de sistema, lo que ayuda a decidir cuánto detalle necesita: una pantalla principal suele requerir más elementos que una de sistema como una confirmación o un error. El flujo te dice qué pantalla sigue a cuál dentro del happy path, y esa secuencia es la que vas a poder recorrer en el prototipo navegable.
+Cada wireframe corresponde a un nodo del sitemap, y el orden en que los dibujas y los conectas lo marca el user flow. El sitemap te da el nombre exacto de cada pantalla y te dice si es principal, secundaria o de sistema, lo que te orienta sobre cuánto detalle necesita: una pantalla principal suele llevar bastantes más elementos que una confirmación o un error. El flujo te dice qué pantalla sigue a cuál dentro del happy path, y esa secuencia es la que luego podrás recorrer en el prototipo.
 
-Trabajar con las dos piezas a la vez evita dos errores típicos: wireframear una pantalla que no está en el sitemap (contenido inventado sobre la marcha) o conectar dos pantallas en un orden que el flujo no contempla (RA1-c).
+Trabajar con las dos piezas delante te protege de dos errores muy típicos: dibujar una pantalla que no está en el sitemap (contenido inventado sobre la marcha) y conectar dos pantallas en un orden que el flujo no contempla (RA1-c).
 
-### Qué pantallas hay que wireframear
+### Qué pantallas hay que dibujar
 
-Solo las que aparecen en el user flow del happy path, más las pantallas de error o estado vacío que hayas identificado como críticas para tu persona. Si tu flujo tiene ocho pasos, necesitas wireframes para exactamente esos ocho pasos.
+Las del happy path de tu user flow, más las pantallas de error o de estado vacío que hayas marcado como críticas para tus personas. Si tu flujo tiene ocho pasos, necesitas ocho wireframes. Ni siete ni doce.
 
-Una pantalla que no está en el flujo no tiene justificación todavía, aunque exista en el sitemap. Si el flujo la necesita más adelante, la wireframeas entonces.
+Una pantalla que existe en el sitemap pero no aparece en el flujo puede esperar. Cuando el flujo la necesite, la dibujas.
 
 ### Cómo se hace un wireframe lo-fi en Figma
 
-La fidelidad baja tiene unas convenciones concretas. **Escala de grises**: negro, blanco y un gris medio. Sin tipografía real: los textos de cuerpo se representan con líneas horizontales de grosor uniforme. Los títulos sí pueden escribirse si ayudan a entender el contenido de la pantalla. Las imágenes van como rectángulos con una X dentro. Los botones, campos e iconos se representan como formas geométricas simples.
+La baja fidelidad tiene unas convenciones bastante concretas. **Escala de grises**: negro, blanco y un gris medio. Nada de tipografía real: los textos de cuerpo se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes son rectángulos con una X dentro. Botones, campos e iconos, formas geométricas simples.
 
-El objetivo es que quien mire el wireframe entienda qué hace cada elemento sin que el estilo visual distraiga la atención.
+La idea es que quien lo mire entienda qué hace cada elemento sin que nada le distraiga de la pregunta importante, que es si la pantalla funciona.
 
-En Figma trabajas con un frame del tamaño del dispositivo de tu persona. Si tu persona primaria usa móvil Android, el frame de trabajo es 360×800. Si usa portátil, el frame es 1280×800. Si tienes ambos perfiles, wireframeas para los dos dispositivos desde el principio: las decisiones de layout que tomas en lo-fi son las que después condicionan el responsive en la Órbita 3.
+Trabajas en un frame del tamaño del dispositivo de tu persona. Lucía reserva desde un Android, así que su frame es de 360×800. Si tu persona primaria trabaja con portátil, 1280×800. Si tienes los dos perfiles, dibujas para los dos dispositivos desde el principio, porque las decisiones de layout que tomas aquí son las que luego condicionan el responsive de la Órbita 3.
 
-Nombra cada frame con el mismo nombre que tiene esa pantalla en el sitemap. Un flujo puede pasar dos veces por la misma pantalla (por ejemplo, "Carrito" en dos momentos distintos de una compra), y el nombre del sitemap deja claro que se trata de la misma pantalla las dos veces. Esa disciplina mantiene la trazabilidad entre el sitemap, el user flow y los wireframes a lo largo de todo el módulo (RA1-a).
+Ponle a cada frame el mismo nombre que tiene esa pantalla en el sitemap. Un flujo puede pasar dos veces por la misma pantalla (el "Detalle de reserva" antes de pagar y después de cancelar, por ejemplo), y el nombre deja claro que es la misma las dos veces. Parece una manía. Es lo que mantiene unidos el sitemap, el flujo y los wireframes durante todo el módulo (RA1-a).
 
-### Lo que no se decide todavía
+### Lo que todavía no se decide
 
-Fuentes, colores, espaciado exacto, iconografía, imágenes. Esas decisiones son de la Órbita 2. Si en este punto te encuentras tomando decisiones visuales, para: estás saltando una fase.
+Fuentes, colores, espaciados exactos, iconografía, imágenes. Todo eso es de la Órbita 2. Si te sorprendes eligiendo un tono de azul, para: te estás saltando una fase.
 
-La tentación más habitual es añadir color para distinguir elementos. Si necesitas distinguir algo, usa el gris medio. Si aun así no queda claro qué hace el elemento, el problema está en la estructura, y hay que resolverlo ahí antes de añadir color.
+La tentación más frecuente es meter color para distinguir elementos. Si necesitas distinguir algo, usa el gris medio. Y si aun así no se entiende qué hace ese elemento, el problema está en la estructura, que es donde hay que arreglarlo. Si en grises no funciona, el color no lo va a rescatar.
 
 ### El prototipo navegable
 
-Una vez tienes los wireframes de todas las pantallas del happy path, los conectas en Figma con **interacciones básicas**: un tap o click en un botón lleva a la siguiente pantalla. Nada más.
+Cuando tengas los wireframes de todo el happy path, conéctalos en Figma con **interacciones básicas**: un toque o un clic en un botón lleva a la pantalla siguiente. Nada más. Ni animaciones ni transiciones bonitas.
 
-Este prototipo lo-fi sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Si necesitas explicar algo durante el test, hay un problema de diseño que resolver antes de pasar a alta fidelidad.
+Este prototipo sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Y aquí vuelve la prueba incómoda del primer apartado. Si durante el test te descubres diciendo "no, eso es el botón de...", acabas de encontrar un problema de diseño, y hay que resolverlo antes de pasar a alta fidelidad.
 
-El test con el prototipo lo-fi es el mismo test de cinco segundos que usaste en la investigación, pero ahora sobre tu propio trabajo. Puedes hacerlo en Lyssna con el prototipo de Figma enlazado directamente. Con cuatro o cinco personas del perfil de tu persona principal es suficiente para detectar los problemas más graves (RA1-c, RA6-a).
+Puedes montar el test en Lyssna enlazando directamente el prototipo de Figma, igual que hiciste con los referentes en la investigación, pero ahora sobre tu propio trabajo. Con cuatro o cinco personas que encajen con tu persona primaria tienes suficiente para detectar los problemas más graves (RA1-c, RA6-a).

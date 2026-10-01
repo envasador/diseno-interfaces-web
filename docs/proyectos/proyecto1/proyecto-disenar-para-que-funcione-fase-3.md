@@ -1,17 +1,19 @@
 ## **Fase 3: Entrevistar**
 
-Los datos declarados y el comportamiento real no siempre coinciden. Las entrevistas te dan el segundo.
+Lo que la gente cuenta en una encuesta y lo que hace de verdad se parecen menos de lo que crees. La encuesta te da lo primero. Para lo segundo hay que sentarse a hablar.
 
 #### **Qué tienes que hacer:**
 
-Con las respuestas de la encuesta, identifica perfiles y entrevista a cinco o seis personas que encajen en ellos. Las preguntas son abiertas y se centran en comportamiento real ("cuéntame la última vez que..."), no en lo que el usuario cree que necesita.
+**Elige a quién.** Con las respuestas de la encuesta, identifica perfiles y entrevista a cinco o seis personas que encajen en ellos.
 
-Antes de cada entrevista, la persona tiene que saber para qué vas a usar sus respuestas y dar su conformidad. En las notas y en la documentación del proyecto, anonimiza los datos: lo que te interesa son los patrones, no quién dijo qué.
+**Pregunta por lo que hacen.** Las preguntas son abiertas y van al comportamiento real: "cuéntame la última vez que...". Lo que la persona cree que necesita es interesante, pero lo que hizo el martes pasado lo es mucho más. Resiste la tentación de sugerir respuestas, y deja que los silencios duren un poco. Es justo después de un silencio cuando la gente cuenta lo importante.
 
-Las notas van al tablero de FigJam, una nota adhesiva por hallazgo.
+**Cuida los datos.** Antes de cada entrevista, la persona tiene que saber para qué vas a usar sus respuestas y dar su conformidad. En las notas y en la documentación del proyecto, anonimiza: te interesan los patrones, y quién dijo qué se queda fuera.
+
+**Vuelca lo que encuentres.** Las notas van al tablero de FigJam, una nota adhesiva por hallazgo. Hazlo el mismo día de la entrevista. Al día siguiente ya no te acuerdas de la mitad.
 
 #### **Entregable:**
 
-Notas de entrevista anonimizadas en FigJam, con consentimiento registrado.
+Las notas de entrevista en FigJam, anonimizadas y con el consentimiento registrado.
 
 ---

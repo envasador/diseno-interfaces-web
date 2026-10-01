@@ -7,44 +7,42 @@
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
     <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">El brief de proyecto, el entregable completo de la órbita y cómo se evalúa.</p>
   </div>
-  <a href="../slides/orbita1_06_brief_y_entregable.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
 
 
-El brief de proyecto es el documento que define qué vas a construir, para quién y con qué criterios sabrás que funciona. Es el primero en orden lógico y el último en cerrarse, porque sus contenidos se van completando con lo que la investigación revela: empiezas con una hipótesis y terminas con una definición respaldada por datos.
+El **brief de proyecto** es el documento que dice qué vas a construir, para quién y cómo sabrás que funciona. Tiene una particularidad curiosa: es el primero en orden lógico y el último en cerrarse. Lo empiezas el primer día con una hipótesis y lo terminas cuatro semanas después con una definición respaldada por datos. Si al final se parece demasiado a lo que escribiste el primer día, algo no ha ido bien en medio.
 
 ### Qué contiene el brief
 
-El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera pueda leer en cinco minutos. Tiene cinco elementos.
+El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera pueda leer en cinco minutos. Si tu profesor necesita diez, sobra algo. Tiene cinco elementos.
 
-**El problema que resuelve el producto**, formulado desde la perspectiva de las personas y respaldado por la investigación. Si esta frase se sostiene sin los datos que recogiste, probablemente describes un problema que supusiste en lugar de uno que encontraste.
+**El problema que resuelve el producto**, contado desde las personas y respaldado por la investigación. Haz una prueba: tapa tus datos y lee la frase. Si se sostiene igual de bien sin ellos, seguramente describe un problema que supusiste. Los problemas que encuentras investigando llevan datos pegados.
 
-**El alcance**: qué entra y qué queda fuera. Ya lo acotaste al definir tu MVP; el brief simplemente lo recoge. El producto resuelve bien las funcionalidades que decidiste que entraban, y todo lo demás queda fuera de esta versión, no descartado para siempre.
+**El alcance**: qué entra y qué se queda fuera. Ya lo acotaste al definir el MVP, y el brief lo recoge. El producto resuelve bien lo que decidiste que entraba. Lo demás espera a la siguiente versión.
 
-**Las personas, referenciadas**. El brief enlaza a las fichas, con una línea por persona que resuma quién es y qué papel juega.
+**Las personas**, enlazadas. El brief enlaza a las fichas, con una línea por persona que resume quién es y qué papel juega.
 
-**Los criterios de éxito**: cómo sabrás que el diseño funciona. En este módulo tienen forma de afirmaciones verificables sobre las personas: "[persona primaria] puede completar [tarea crítica] sin ayuda en menos de [tiempo razonable]", "[persona con diversidad funcional] puede completar el mismo flujo con su tecnología de apoyo". Estos criterios serán el guión de los tests de la Órbita 5. Escribirlos ahora es escribir tu propia evaluación (RA6-b, RA6-f).
+**Los criterios de éxito**: cómo sabrás que el diseño funciona. En este módulo se escriben como afirmaciones verificables sobre tus personas. Por ejemplo: "Lucía puede reservar una pista para el jueves sin ayuda y en menos de un minuto" o "Manuel puede completar la misma reserva con la letra al 200 % y sin perder ningún botón fuera de la pantalla". Estos criterios serán el guion de los tests de la Órbita 5, así que escribirlos ahora es, literalmente, escribir tu propio examen (RA6-b, RA6-f).
 
-**Las restricciones**: tecnológicas (las del proyecto coordinado con DWEC y DWES), de tiempo y las que impongan tus propias personas (dispositivos, conectividad, tecnologías de apoyo).
+**Las restricciones**: las tecnológicas (las del proyecto coordinado con DWEC y DWES), las de tiempo y las que imponen tus personas (dispositivos, conectividad, tecnologías de apoyo).
 
 ### El entregable completo
 
-Con el brief cerrado, el entregable de la Órbita 1 queda compuesto por seis artefactos vinculados entre sí: cuatro en FigJam y dos en Figma.
+Con el brief cerrado, el entregable de la Órbita 1 son seis artefactos vinculados entre sí, cuatro en FigJam y dos en Figma.
 
-En FigJam: el brief de proyecto, las fichas de personas, el MVP con el user flow completo (y los flujos complementarios que hayas mapeado) y el sitemap.
+En **FigJam**: el brief de proyecto, las fichas de personas, el MVP con el user flow completo (y los flujos complementarios que hayas dibujado) y el sitemap.
 
-En Figma: los wireframes lo-fi de todas las pantallas del happy path (nombrados igual que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
+En **Figma**: los wireframes lo-fi de todas las pantallas del happy path (con los mismos nombres que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
 
-Los dos archivos van vinculados entre sí y son la referencia permanente del resto del módulo. Cualquier decisión de las Órbitas siguientes debería poder rastrearse hasta algo construido aquí.
+Los dos archivos van enlazados y son la referencia permanente del resto del módulo. Cualquier decisión de las órbitas siguientes tendría que poder rastrearse hasta algo que construiste aquí.
 
 ![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)
 
-Si has usado IA en cualquier punto de la órbita, el `CHANGELOG.md` del repositorio recoge cada uso: qué pediste, qué generó, qué mantuviste, qué cambiaste y por qué. Este registro arranca aquí y acompañará al proyecto hasta la defensa final.
+Si has usado IA en cualquier momento de la órbita, el `CHANGELOG.md` del repositorio recoge cada uso: qué pediste, qué te dio, qué conservaste, qué cambiaste y por qué. Ese registro empieza aquí y te acompaña hasta la defensa final.
 
 ### Cómo se evalúa
 
-Esta órbita trabaja principalmente RA1 y RA6. La evaluación combina la rúbrica sobre los artefactos entregados con la auditoría de decisión oral, que puede producirse en cualquier momento del curso, incluso meses después de cerrar esta órbita.
+Esta órbita trabaja sobre todo el RA1 y el RA6. La evaluación combina la rúbrica sobre lo que entregas con la **auditoría de decisión oral**, que puede llegar en cualquier momento del curso. También en marzo, sobre algo que cerraste en octubre.
 
-Las preguntas de auditoría siempre piden el porqué de una decisión y esperan una respuesta anclada en datos: ¿por qué esta persona es la primaria?, ¿de qué entrevista sale esta frustración?, ¿por qué este flujo resuelve el error de pago con un reintento en lugar de volver al carrito?, ¿por qué esta sección está en el primer nivel de navegación?, ¿por qué este wireframe resuelve la tarea en tres pasos y no en cinco? Una respuesta válida señala investigación propia. Una respuesta del tipo "es lo habitual" o "lo sugirió la herramienta" señala una decisión que todavía es de otro.
+Las preguntas de la auditoría siempre piden el porqué de una decisión y esperan una respuesta anclada en datos. ¿Por qué Lucía es la persona primaria? ¿De qué entrevista sale esta frustración? ¿Por qué el error de pago se resuelve con un reintento y no devolviéndote al calendario? ¿Por qué "Mis reservas" está en el primer nivel de navegación? ¿Por qué esta reserva se completa en tres pantallas? Una respuesta válida señala tu propia investigación. Una respuesta del tipo "es lo habitual" o "me lo sugirió la herramienta" señala una decisión que todavía es de otro.
 
-Un artefacto con errores formales pero con decisiones bien justificadas vale más en este módulo que un artefacto impecable que no sabes defender.
+Así que guarda tus notas de entrevista como si fueran a pedírtelas. Porque te las voy a pedir.

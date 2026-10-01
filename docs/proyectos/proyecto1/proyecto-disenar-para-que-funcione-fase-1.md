@@ -1,19 +1,19 @@
 ## **Fase 1: Definir la hipótesis de proyecto**
 
-No podemos investigar sin un punto de partida, aunque ese punto de partida vaya a cambiar.
+Para investigar necesitas un punto de partida, aunque sepas que va a cambiar. Nadie sale a preguntar "¿qué problemas tienes?" a desconocidos y vuelve con algo útil. Se sale con una apuesta, y la investigación te dice si era buena.
 
 #### **Qué tienes que hacer:**
 
-Elige un problema real, algo que tú mismo usarías: si no lo usarías tú, difícilmente va a funcionar para otros. El proyecto se coordina con DWEC, DWES y Despliegue durante todo el curso, así que la elección tiene que sostenerse muchos meses.
+**Elige el problema.** Que sea real y que lo hayas visto de cerca. La pista más fiable es preguntarte si tú usarías esa aplicación: si la respuesta es que no, difícilmente va a funcionar para nadie más. Piénsalo con calma, porque el proyecto se coordina con DWEC, DWES y Despliegue durante todo el curso y la elección tiene que aguantarte muchos meses.
 
-Formula tu hipótesis de proyecto con esta estructura: "creo que las personas que [contexto] necesitan [objetivo] pero [fricción]". Escríbela en el tablero de FigJam con el que vas a trabajar el resto de la órbita.
+**Escribe la hipótesis.** Con esta estructura: "creo que las personas que [contexto] necesitan [objetivo] pero [fricción]". Por ejemplo: "creo que las personas que juegan al pádel en el polideportivo municipal necesitan reservar pista con antelación pero solo pueden hacerlo llamando por teléfono en horario de oficina". Escríbela en el tablero de FigJam con el que vas a trabajar el resto de la órbita.
 
-Inicializa el repositorio de GitHub con el `CHANGELOG.md` vacío. Ahí vas a registrar cada uso de IA a partir de ahora: qué le pediste, qué generó, qué mantuviste y qué cambiaste.
+**Prepara el repositorio.** Inicializa el repositorio de GitHub con un `CHANGELOG.md` vacío. Desde hoy, cada uso de IA va ahí: qué le pediste, qué te dio, qué conservaste y qué cambiaste.
 
-La hipótesis es provisional. Los pasos siguientes la van a confirmar, matizar o desmontar con datos.
+No te obsesiones con acertar. La hipótesis es provisional, y las fases siguientes están para confirmarla, matizarla o desmontarla con datos.
 
 #### **Entregable:**
 
-Hipótesis de proyecto escrita en FigJam + repositorio inicializado con `CHANGELOG.md` vacío.
+La hipótesis de proyecto escrita en FigJam y el repositorio inicializado con su `CHANGELOG.md` vacío.
 
 ---

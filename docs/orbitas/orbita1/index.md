@@ -6,13 +6,13 @@
 
 ## Qué produce esta órbita
 
-Seis artefactos vinculados entre sí — cuatro en FigJam y dos en Figma:
+Seis artefactos vinculados entre sí, cuatro en FigJam y dos en Figma. Cada uno se apoya en el anterior y todos se usan hasta el final del curso:
 
 | Artefacto | Qué es | Para qué sirve en el resto del módulo |
 |---|---|---|
 | **Brief de proyecto** | Problema, alcance, criterios de éxito | Referencia permanente de qué se diseña y para quién |
 | **Personas** | 2-3 perfiles con diversidad funcional incluida | Filtro de decisiones en todas las órbitas |
-| **MVP y user flows** | Qué entra en la primera versión y el recorrido completo que la atraviesa, con casos límite | Acota el inventario de la arquitectura; guión del cognitive walkthrough en Órbita 5 |
+| **MVP y user flows** | Qué entra en la primera versión y el recorrido completo que la atraviesa, con casos límite | Acota el inventario de la arquitectura; guion del cognitive walkthrough en Órbita 5 |
 | **Sitemap** | Estructura jerárquica del producto | Base de la arquitectura de navegación |
 | **Wireframes lo-fi** | Pantallas del happy path en escala de grises | Esqueleto sobre el que el sistema visual toma forma en Órbita 2 |
 | **Prototipo navegable** | Wireframes conectados con interacciones básicas | Primer test de flujo antes de invertir en diseño visual |

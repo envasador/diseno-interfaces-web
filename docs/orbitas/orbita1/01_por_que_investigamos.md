@@ -7,49 +7,50 @@
     <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
     <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Por qué investigar antes de diseñar, las leyes de UX y el papel de la IA en la investigación.</p>
   </div>
-  <a href="../slides/orbita1_01_por_que_investigamos.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
 
 
-Cuando empiezas un proyecto de diseño, la tentación es abrir Figma y ponerte a dibujar pantallas. Lo entiendo: tienes una idea, quieres ver cómo queda, y el diseño visual da sensación de avance. El problema es que si no sabes bien para quién estás diseñando ni qué necesita esa persona, estás tomando decisiones sin información suficiente. Y esas decisiones cuestan tiempo después, cuando hay que cambiarlas.
+Abres Figma, creas un frame del tamaño de un móvil y en veinte minutos tienes una pantalla de inicio preciosa. Da gusto. Da tanto gusto que es fácil saltarse una pregunta pequeña: ¿para quién es esa pantalla? Si la respuesta es "para la gente", acabas de tomar veinte decisiones sin información. Cada una te la va a cobrar alguien más adelante. Normalmente tú, y normalmente en la semana de la entrega.
 
-La investigación sirve para tener esa información antes de tomar las decisiones, no después.
+Investigar sirve para tener esa información **antes** de decidir. Cuesta unos días al principio del proyecto y ahorra semanas al final, que es el mejor negocio que vas a hacer en todo el curso.
 
 ### Tú no eres el usuario
 
-Cuando llevas días o semanas trabajando en un producto, conoces cada detalle de cómo funciona. Sabes dónde está cada opción, qué hace cada botón, cómo fluye la navegación. Eso es útil para construirlo, pero te pone en una posición muy diferente a la de alguien que lo ve por primera vez.
+Después de tres semanas con tu proyecto sabes dónde está cada botón, qué hace cada icono y por qué el menú se abre hacia la izquierda. Esa familiaridad te viene muy bien para construirlo y fatal para juzgarlo. Te has convertido en la única persona del mundo para quien tu interfaz es obvia.
 
-Don Norman lo explica en *La psicología de los objetos cotidianos*: cada persona construye un modelo mental de cómo funciona algo, y ese modelo suele ser diferente al de quien lo diseñó. Cuando coinciden, la interfaz parece intuitiva. Cuando no coinciden, el usuario se pierde, se frustra y se va. La investigación te ayuda a entender ese modelo mental antes de diseñar, para que tus decisiones partan de ahí y no de tus propias suposiciones.
+Don Norman lo explica en *La psicología de los objetos cotidianos*: cada persona se construye un **modelo mental** de cómo funciona algo, y el de quien usa un producto casi nunca coincide con el de quien lo diseñó. Cuando coinciden, la interfaz parece intuitiva. Cuando no, la persona se pierde, se frustra y cierra la pestaña sin avisarte. Investigar te deja ver ese modelo mental antes de dibujar, para que tus decisiones salgan de ahí y tus suposiciones se queden donde estaban.
+
+Hay una prueba sencilla, y bastante incómoda. Dale tu prototipo a alguien de tu casa, sin explicarle nada, y pídele que haga una tarea. No toques el ratón. No digas "es que ahí arriba...". Aguanta. Lo que pase en esos dos minutos vale más que cualquier opinión tuya sobre tu propio diseño.
 
 ### Para quién diseñas
 
-Diseñar para todo el mundo a la vez suele terminar en un producto que no funciona especialmente bien para nadie. Una interfaz pensada para un perfil genérico e indefinido acaba siendo demasiado vaga para responder bien a las necesidades reales de nadie en concreto.
+Diseñar para todo el mundo a la vez produce interfaces tibias, que a nadie le estorban y a nadie le resuelven nada.
 
-La investigación te permite elegir y definir perfiles reales de personas: con sus contextos, sus limitaciones, sus objetivos concretos. Cuando tienes eso claro, cada decisión de diseño tiene un criterio: ¿esto funciona para esta persona, en este contexto? (RA6-a).
+Pongamos que vas a diseñar una app para reservar las pistas del polideportivo municipal. "Para todo el mundo" no te da ni una pista (perdón). Ahora piensa en Manuel: 64 años, juega al pádel los martes con tres amigos, tiene baja visión y reserva desde el móvil con la letra al 200 %. De repente tienes preguntas útiles. ¿Cabe el calendario en la pantalla con ese tamaño de letra? ¿Distingue una pista libre de una ocupada si la única diferencia es el color? ¿Qué pasa cuando uno de los cuatro se cae del partido el martes a las siete? Con Manuel delante, cada decisión tiene un criterio: **¿esto le funciona a esta persona, en este contexto?** (RA6-a).
 
-En esta órbita vas a construir entre dos y tres personas. Una de ellas debe tener algún tipo de diversidad funcional, ya sea visual, motora, cognitiva o auditiva. La razón es práctica: si desde el principio tienes presente a alguien que usa un lector de pantalla o que navega solo con teclado, las decisiones de accesibilidad que tomes en las órbitas siguientes saldrán del proceso de diseño de forma natural, no como una corrección de última hora.
+Manuel es inventado, eso sí. Los tuyos van a salir de entrevistas con gente real, y en el apartado siguiente verás cómo.
 
-### Las leyes de UX como punto de partida
+En esta órbita vas a construir dos o tres personas, y una de ellas tendrá algún tipo de diversidad funcional: visual, motora, cognitiva o auditiva. El motivo es práctico. Si alguien que usa lector de pantalla o navega solo con teclado está en tu proyecto desde el primer día, las decisiones de accesibilidad de las órbitas siguientes salen solas del proceso. Si aparece en la última semana, llega como un parche, y los parches siempre se notan.
 
-Antes de que empieces a investigar, hay un conjunto de principios sobre comportamiento humano que los profesionales del diseño usan como referencia. No son reglas absolutas, pero ayudan a entender por qué ciertas decisiones de diseño funcionan mejor que otras.
+### Las leyes de UX: lo que ya se sabe de cómo se comporta la gente
 
-**Ley de Hick.** Cuantas más opciones tiene una persona, más tarda en decidir. Un menú con doce opciones es más lento de procesar que uno con cuatro. Simplificar significa organizar el contenido para que el usuario llegue a lo que necesita sin tener que procesar todo lo demás.
+Antes de salir a investigar conviene saber lo que otros ya averiguaron. Hay un puñado de principios sobre comportamiento humano que el oficio usa como referencia. Son tendencias muy fiables (todas tienen sus excepciones) y te dan algo que vas a necesitar en la auditoría oral: vocabulario.
 
-**Ley de Fitts.** El tiempo que tardas en pulsar algo depende de lo grande que sea y de lo cerca que esté. En móvil, los elementos interactivos que más se usan tienen que ser lo suficientemente grandes y estar en zonas cómodas para el pulgar. Lo que cuesta alcanzar, se usa menos.
+**Ley de Hick.** Cuantas más opciones, más se tarda en decidir. Un menú con doce entradas se procesa más despacio que uno con cuatro. Simplificar consiste en ordenar el contenido para que la persona llegue a lo suyo sin leerse todo lo demás.
 
-**Ley de Jakob.** Los usuarios pasan la mayor parte de su tiempo en otras aplicaciones, no en la tuya. Eso significa que ya tienen expectativas formadas sobre cómo funcionan las cosas: dónde suele estar el carrito, qué hace la lupa, cómo funciona un formulario. Cuando tu diseño respeta esas convenciones, el usuario no tiene que aprender nada nuevo para usarlo.
+**Ley de Fitts.** Lo grande y cercano se pulsa antes que lo pequeño y lejano. En móvil, las acciones frecuentes van donde el pulgar llega sin estirarse. Lo que cuesta alcanzar se usa menos, y lo que se usa menos acaba pareciendo que sobra.
 
-**Ley de Tesler.** Todo sistema tiene una complejidad mínima que no se puede eliminar. Si el diseñador no la gestiona, la asume el usuario. Organizar bien esa complejidad —por pasos, por niveles, por contexto— es parte del trabajo de diseño.
+**Ley de Jakob.** La gente pasa la mayor parte de su tiempo en otras webs. Llega a la tuya sabiendo dónde suele estar el carrito, qué hace la lupa y cómo se rellena un formulario. Si respetas esas convenciones, no tiene que aprender nada. Si te las saltas, más vale que tengas un motivo muy bueno.
 
-**Ley de Miller.** El cerebro humano maneja con comodidad entre cinco y nueve elementos a la vez. Si una pantalla tiene demasiadas cosas activas al mismo tiempo, el usuario se bloquea. La jerarquía visual, el espacio y la agrupación sirven precisamente para evitar esa sobrecarga.
+**Ley de Tesler.** Todo sistema tiene una complejidad mínima que nadie puede eliminar, solo cambiar de sitio. Si el diseño no se encarga de ella, se la encuentra la persona usuaria. Repartirla por pasos, por niveles o por contexto es parte de tu trabajo.
 
-Estas leyes no dictan cómo tiene que ser tu diseño, pero sí te dan un vocabulario para justificar tus decisiones. Cuando en la auditoría oral te pregunten por qué tomaste una decisión concreta, poder apoyarla en un principio de comportamiento humano es mucho más sólido que decir que "quedaba mejor así" (RA1-a, RA6-a).
+**Ley de Miller.** La memoria de trabajo maneja con comodidad unos pocos elementos a la vez (la cifra clásica es siete, más o menos dos). Una pantalla con demasiadas cosas pidiendo atención bloquea a cualquiera. Para eso existen la jerarquía visual, el espacio en blanco y la agrupación.
 
-[Laws of UX](https://lawsofux.com/es/)
+Cuando en la auditoría oral te pregunte por qué el botón de reservar está abajo y ocupa todo el ancho, el gusto no te va a servir de argumento. Esto sí: "por la ley de Fitts; es la acción principal y Manuel la pulsa con el pulgar, con la letra ampliada". Una frase, un principio y una persona. Con eso la decisión queda defendida (RA1-a, RA6-a).
 
+Las tienes todas, bien explicadas y con ejemplos, en [Laws of UX](https://lawsofux.com/es/).
 
 ### La IA en la investigación
 
-Las herramientas de IA pueden ayudarte en la fase de investigación: organizar notas de entrevistas, generar preguntas para un guión, identificar patrones en respuestas de encuesta. Lo que no pueden hacer es investigar por ti: hablar con las personas, observar cómo usan los productos, detectar la diferencia entre lo que alguien dice que hace y lo que realmente hace.
+Una IA te puede ayudar bastante en esta fase: ordenar las notas de seis entrevistas, proponerte preguntas para el guion, encontrar temas que se repiten en las respuestas de una encuesta. Lo que no puede hacer es sentarse delante de una persona y notar que tarda cuatro segundos en contestar cuando le preguntas cómo paga. Esos cuatro segundos son investigación, y para verlos hay que estar delante.
 
-Si usas IA en cualquier parte de esta fase, lo documentas en el `CHANGELOG.md`: qué le pediste, qué generó, qué mantuviste y qué cambiaste. Eso es lo que demuestra que las decisiones son tuyas.
+Si usas IA en cualquier parte de esta fase, apúntalo en el `CHANGELOG.md`: qué le pediste, qué te dio, qué conservaste y qué cambiaste. Ese registro es la prueba de que las decisiones son tuyas, y en la auditoría oral te lo voy a pedir.

@@ -1,17 +1,19 @@
 ## **Fase 6: Card sorting y sitemap**
 
-Agrupar exige primero saber qué hay que agrupar.
+Tú sabes dónde pondrías cada cosa. El problema es que la app no la vas a usar tú. Esta fase averigua dónde la buscarían tus personas.
 
 #### **Qué tienes que hacer:**
 
-Reúne el inventario completo de pantallas y funcionalidades de tu producto, con lo que ya sabes de los referentes analizados en la Fase 2 y de las funcionalidades de tu MVP. Prepara una tarjeta por elemento del inventario en FigJam.
+**Haz el inventario.** Reúne la lista completa de pantallas y funcionalidades de tu producto a partir de los referentes que analizaste en la Fase 2 y de tu MVP. Prepara en FigJam una tarjeta por cada elemento.
 
-Haz el card sorting con cuatro o cinco compañeros que encajen en tus perfiles de persona: cada uno agrupa las tarjetas como le parezca natural y pone nombre a cada grupo. Con los agrupamientos resultantes, construye el sitemap: pantallas principales, secundarias y de sistema, diferenciadas visualmente, con la home como raíz.
+**Haz el card sorting.** Con cuatro o cinco compañeros que encajen en tus perfiles de persona: cada uno agrupa las tarjetas como le parezca natural y le pone nombre a cada grupo. Tú observas y no intervienes, aunque te muerdas la lengua. Los agrupamientos que se repiten son los que valen.
 
-Verificación cruzada: todo lo que está dentro de tu MVP tiene una pantalla o sección donde vivir en el sitemap, nada de lo que dejaste fuera se ha colado en él, y el user flow que mapeaste en la Fase 5 se puede recorrer sobre esta estructura sin huecos.
+**Construye el sitemap.** Con esos grupos, dibuja el sitemap con la home como raíz y con las pantallas principales, secundarias y de sistema bien diferenciadas.
+
+**Compruébalo dos veces.** Contra el MVP: todo lo que está dentro tiene una pantalla donde vivir, y nada de lo que dejaste fuera se ha colado. Contra el user flow de la Fase 5: se puede recorrer entero sobre esta estructura sin encontrar un hueco.
 
 #### **Entregable:**
 
-Sitemap verificado contra el MVP y el user flow.
+El sitemap, verificado contra el MVP y el user flow.
 
 ---

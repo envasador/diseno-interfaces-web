@@ -1,20 +1,22 @@
 # Proyecto 1: Diseñar para que funcione
 
-### ¿De qué va esto?
+## ¿De qué va esto?
 
-Vais a construir un design system completo para un producto digital real, coordinado entre DIW, DWES, DWEC y Despliegue durante todo el curso. Esta primera órbita es la que te toca a ti en DIW: investigar a las personas para las que vas a diseñar, antes de dibujar ninguna pantalla.
+Este curso vais a diseñar un producto digital real de principio a fin, con su design system completo, y lo vais a hacer en cuatro módulos a la vez: DIW, DWES, DWEC y Despliegue. Cada módulo se encarga de una parte. Esta primera, la de la Órbita 1 en DIW, es la menos vistosa y la que más condiciona todo lo demás.
 
-Tu trabajo en esta órbita es puramente funcional. Olvídate de colores, tipografías y logos por ahora. Entiendes qué necesita la gente, cómo va a usar tu aplicación, y construyes una estructura (personas, flujos, sitemap, wireframes) que funcione sin fricciones antes de pensar en el aspecto visual.
+Durante cuatro semanas no vas a elegir ni un color. Ni una tipografía, ni un logo. Vas a averiguar qué necesita la gente, cómo usaría tu aplicación y qué estructura (personas, flujos, sitemap, wireframes) hace falta para que funcione sin tropiezos. Si al terminar la órbita tu proyecto en escala de grises se entiende y se recorre bien, el resto del curso consiste en vestirlo con criterio. Si en grises no funciona, el color no lo va a rescatar.
 
-## Temáticas del proyecto
+## Qué problema vas a resolver
 
-Elige un problema real, algo que tú mismo usarías. Si no lo usarías tú, difícilmente va a funcionar para otros. El proyecto arranca **outside-in**: la idea sale de una necesidad real que detectas en tu entorno y de la investigación que vas a hacer, no de un encargo ya cerrado (más sobre esto en la [introducción del módulo](../../introduccion/index.md)).
+El tema lo eliges tú, con una condición: tiene que ser un problema que hayas visto de cerca. Algo que te pasa a ti, a tu familia, a tu equipo o a la gente de tu barrio. La pista más fiable es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, difícilmente va a funcionar para nadie, y es mejor descubrirlo esta semana que en febrero.
+
+Por eso el proyecto arranca **outside-in**: la idea sale de una necesidad que detectas en tu entorno y de la investigación que haces sobre ella. Aquí nadie te va a dar un encargo cerrado. (La diferencia entre outside-in e inside-out la tienes en la [introducción del módulo](../../introduccion/index.md).)
 
 ---
 
 ## Cronograma
 
-La Órbita 1 se organiza en ocho pasos, repartidos a lo largo de las primeras cuatro semanas del curso (~20 horas de clase en total). El detalle completo, con la herramienta y el producto de cada paso, está en la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md).
+La Órbita 1 son ocho pasos repartidos en las cuatro primeras semanas del curso, unas 20 horas de clase. La [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md) tiene el detalle de cada uno: qué herramienta usas y qué tienes que tener en la mano al terminarlo.
 
 ## Fases del proyecto
 
@@ -31,7 +33,7 @@ La Órbita 1 se organiza en ocho pasos, repartidos a lo largo de las primeras cu
 
 ## Resultados de Aprendizaje y Criterios de Evaluación
 
-Este proyecto trabaja principalmente sobre el **RA1** y el **RA6**:
+Este proyecto trabaja sobre todo el **RA1** y el **RA6**. Los textos son los que marca la normativa, tal cual:
 
 **RA1: Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.**
 
@@ -51,6 +53,8 @@ Los criterios específicos que trabajamos son:
 
 ### Rúbrica de evaluación
 
+Seis criterios. Fíjate sobre todo en el último, la defensa oral: es el que más gente subestima y el que sostiene a todos los demás. Si no sabes explicar de dónde sale una decisión, el criterio correspondiente no se da por superado, por bien hecho que esté el artefacto.
+
 | **Criterio** | **Descripción** | **Insuficiente (1–3)** | **Básico (4–5)** | **Adecuado (6–7)** | **Avanzado (8–9)** | **Excelente (10)** | **RA vinculado** |
 |--------------|-----------------|-------------------------|------------------|--------------------|--------------------|--------------------|------------------|
 | **C1. Personas fundamentadas en investigación** | Evalúa si las personas salen de datos reales (entrevistas, encuestas) y no de suposiciones. | Personas inventadas o solo demográficas. | Personas con algún dato real, mayoría de atributos sin respaldo. | Personas con atributos rastreables a la investigación en su mayoría. | Personas bien fundamentadas, incluida la de diversidad funcional. | Personas que cambian decisiones de diseño concretas, con cada atributo trazable a un dato. | RA1-a |
@@ -58,6 +62,6 @@ Los criterios específicos que trabajamos son:
 | **C3. Arquitectura de la información y sitemap** | Evalúa si el sitemap refleja un inventario real y una organización centrada en el usuario. | Sin sitemap o estructura arbitraria. | Sitemap presente pero sin inventario ni card sorting detrás. | Sitemap basado en card sorting, jerarquía aceptable. | Sitemap verificado contra el MVP y el user flow en tres niveles o menos. | Estructura y nomenclatura justificadas con datos de card sorting y entrevistas. | RA1-c |
 | **C4. Wireframes y prototipo navegable** | Evalúa si los wireframes resuelven el flujo y si el prototipo es navegable de verdad. | No hay wireframes o son decorativos. | Wireframes básicos sin conexión entre pantallas. | Wireframes del happy path conectados en un prototipo funcional. | Prototipo probado con personas reales, con cambios documentados. | Prototipo validado y trazable al sitemap y al flujo en cada pantalla. | RA6-a |
 | **C5. Brief de proyecto** | Evalúa si el brief tiene los cinco elementos y si el problema, el alcance y los criterios de éxito están respaldados por datos. | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos pero poco desarrollados. | Brief completo, problema respaldado por algún dato. | Brief conciso, legible en minutos, con alcance acotado por el MVP y criterios de éxito verificables. | Brief que cualquiera puede leer en cinco minutos y que ancla cada decisión de la órbita. | RA6-b |
-| **C6. Defensa de las decisiones (auditoría oral)** | Evalúa si el alumno puede justificar cualquier decisión con datos propios, no con "es lo habitual" o "lo sugirió la IA". | No puede justificar decisiones básicas. | Justifica algunas decisiones, otras con respuestas genéricas. | Justifica la mayoría de decisiones señalando su origen. | Justifica decisiones con datos concretos de su propia investigación. | Defiende cualquier decisión del proyecto en cualquier momento, con datos y criterio propio. | RA6-e |
+| **C6. Defensa de las decisiones (auditoría oral)** | Evalúa si el alumno puede justificar cualquier decisión con datos propios. "Es lo habitual" o "lo sugirió la IA" no cuentan como justificación. | No puede justificar decisiones básicas. | Justifica algunas decisiones, otras con respuestas genéricas. | Justifica la mayoría de decisiones señalando su origen. | Justifica decisiones con datos concretos de su propia investigación. | Defiende cualquier decisión del proyecto en cualquier momento, con datos y criterio propio. | RA6-e |
 
-Un artefacto con errores formales pero con decisiones bien justificadas vale más en este módulo que uno impecable que no se sabe defender.
+En este módulo, un wireframe con algún fallo formal que sabes defender vale más que uno impecable que no sabes explicar. Si dudas en qué invertir la última tarde antes de la entrega, ya tienes la respuesta.
