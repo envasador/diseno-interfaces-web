@@ -2,15 +2,6 @@
 
 ## 6. El brief de proyecto y el entregable de la órbita
 
-<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
-  <div>
-    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">El brief de proyecto, el entregable completo de la órbita y cómo se evalúa.</p>
-  </div>
-  <a href="../slides/orbita1_06_brief_y_entregable.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
-
-
 El **brief de proyecto** es el documento que dice qué vas a construir, para quién y cómo sabrás que funciona. Tiene una particularidad curiosa: es el primero en orden lógico y el último en cerrarse. Lo empiezas el primer día con una hipótesis y lo terminas cuatro semanas después con una definición respaldada por datos. Si al final se parece demasiado a lo que escribiste el primer día, algo no ha ido bien en medio.
 
 ### Qué contiene el brief

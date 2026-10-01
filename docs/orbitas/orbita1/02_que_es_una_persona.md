@@ -2,15 +2,6 @@
 
 ## 2. Personas: qué son y cómo se construyen
 
-<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
-  <div>
-    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Qué es una persona, cuándo sirve, cómo reconocer una que no funciona y los cuatro pasos para construirla.</p>
-  </div>
-  <a href="../slides/orbita1_02_que_es_una_persona.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
-
-
 Seguro que has visto alguna. Foto de banco de imágenes, sonrisa perfecta y una ficha que dice: "Laura, 32 años, trabaja en marketing, le encanta el yoga y viajar". Queda muy bien en una presentación. Ahora intenta usarla para diseñar. ¿Qué botón cambiarías sabiendo que a Laura le gusta el yoga?
 
 Una **persona** es un perfil construido a partir de **investigación real**. Recoge los patrones de comportamiento, las motivaciones, las frustraciones y los contextos de uso que has encontrado en tus entrevistas y encuestas, y los condensa en un personaje que puedes consultar mientras diseñas. El nombre, la edad o la profesión pueden estar si te ayudan a imaginarla. Lo que la hace útil son los **detalles de comportamiento**: cuándo usa el producto, desde qué dispositivo, en qué condiciones, qué quiere conseguir y qué se lo impide ahora mismo.

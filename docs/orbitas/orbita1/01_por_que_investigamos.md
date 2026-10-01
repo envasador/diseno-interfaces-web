@@ -2,15 +2,6 @@
 
 ## 1. Por qué investigamos antes de diseñar
 
-<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
-  <div>
-    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Por qué investigar antes de diseñar, las leyes de UX y el papel de la IA en la investigación.</p>
-  </div>
-  <a href="../slides/orbita1_01_por_que_investigamos.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
-
-
 Abres Figma, creas un frame del tamaño de un móvil y en veinte minutos tienes una pantalla de inicio preciosa. Da gusto. Da tanto gusto que es fácil saltarse una pregunta pequeña: ¿para quién es esa pantalla? Si la respuesta es "para la gente", acabas de tomar veinte decisiones sin información. Cada una te la va a cobrar alguien más adelante. Normalmente tú, y normalmente en la semana de la entrega.
 
 Investigar sirve para tener esa información **antes** de decidir. Cuesta unos días al principio del proyecto y ahorra semanas al final, que es el mejor negocio que vas a hacer en todo el curso.

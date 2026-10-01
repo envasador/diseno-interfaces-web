@@ -2,15 +2,6 @@
 
 ## 4. Arquitectura de la información y sitemap
 
-<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
-  <div>
-    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Arquitectura de la información, card sorting, amplitud frente a profundidad y el sitemap.</p>
-  </div>
-  <a href="../slides/orbita1_04_arquitectura_informacion.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
-
-
 En el supermercado de tu barrio vas directo a la leche sin pensar. En uno que no conoces das tres vueltas, preguntas a alguien con chaleco y acabas encontrándola junto a los yogures, que tiene su lógica, pero no la tuya. Las estanterías eran las mismas. Lo que cambiaba era cómo estaban ordenadas y qué ponía en los carteles.
 
 Eso es la **arquitectura de la información**: cómo se organiza y cómo se nombra el contenido de tu producto. Qué pantallas y funcionalidades tiene, cómo se agrupan y cómo se llama cada cosa. El **sitemap** es el diagrama que la representa: un árbol con la home en la raíz, un nodo por pantalla y líneas que marcan la jerarquía (RA1-c).

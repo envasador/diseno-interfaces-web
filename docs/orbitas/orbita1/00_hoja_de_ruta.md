@@ -1,15 +1,6 @@
 # Órbita 1 — Conocer a las personas
 ## Hoja de ruta
 
-<div style="background:#1F0318; border:3px solid #1F0318; box-shadow:6px 6px 0 #E93456; padding:28px 36px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; margin:32px 0;">
-  <div>
-    <p style="margin:0 0 8px 0; color:#FFB8DE; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.85rem;">Diapositivas del apartado</p>
-    <p style="margin:0; color:#ffffff; font-size:1.1rem; font-weight:600;">Los ocho pasos de la Órbita 1, en el orden en que de verdad los vas a necesitar.</p>
-  </div>
-  <a href="../slides/orbita1_00_hoja_de_ruta.pdf" target="_blank" rel="noopener" style="background:#E93456 !important; color:#ffffff !important; border:3px solid #1F0318 !important; box-shadow:4px 4px 0 #1F0318 !important; padding:14px 28px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none !important; white-space:nowrap; border-bottom:none !important;">Descargar presentación →</a>
-</div>
-
-
 ¿Por dónde se empieza a diseñar algo que va a usar gente de verdad? La tentación dice que por Figma. Se empieza por entender a quién le vas a resolver el problema, y eso te va a llevar ocho pasos a lo largo de las próximas cuatro semanas. No hace falta que te los aprendas de memoria: para eso está esta página. Lo que sí importa es el orden. Cada paso existe porque el anterior le deja el terreno preparado, y saltarte uno se nota siempre en el que viene después. Normalmente, en la peor semana posible.
 
 ![Hoja de ruta de la Órbita 1 en ocho pasos](img/orbita1_00_esquema_hoja_de_ruta.svg)
