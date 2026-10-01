@@ -20,7 +20,7 @@ Los detalles que más te van a ayudar responden a preguntas como estas: ¿en qu�
 
 Hay tres síntomas que delatan una persona mal construida:
 
-1. **Es la usuaria ideal.** Sus motivaciones encajan a la perfección con lo que resuelve el producto, sus frustraciones son justo las que el producto soluciona y no tiene ni un comportamiento que complique el diseño. Esa persona sale de las hipótesis de quien diseña. En una investigación de verdad nunca aparece alguien tan cómodo.
+1. **Parece hecha a medida del producto.** Sus motivaciones encajan a la perfección con lo que ofreces, sus frustraciones son justo las que tu app soluciona y no tiene ni una costumbre que te complique el diseño. Esa persona sale de las hipótesis de quien diseña. En una investigación de verdad nunca aparece alguien tan cómodo.
 2. **Solo tiene datos demográficos.** Nombre, foto, edad, profesión, aficiones... y ni una línea sobre cómo usa el producto o qué le cuesta. Es Laura y su yoga otra vez.
 3. **Es perfectamente coherente.** La gente real se contradice. Dice que le importa mucho la privacidad y usa la misma contraseña para todo. Manuel jura que no se fía de las apps y lleva tres años pagando el pádel por Bizum. Si tu persona no tiene ni una contradicción, sospecha.
 
