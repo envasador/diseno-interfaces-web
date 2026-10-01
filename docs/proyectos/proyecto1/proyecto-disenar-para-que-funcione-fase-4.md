@@ -14,6 +14,6 @@ Si usas IA para ayudarte con la síntesis, regístralo en el `CHANGELOG.md`: qu�
 
 #### **Entregable:**
 
-Las fichas de personas en Figma, con la jerarquía definida (primaria y secundarias).
+Las fichas de personas en FigJam, con la jerarquía definida (primaria y secundarias).
 
 ---

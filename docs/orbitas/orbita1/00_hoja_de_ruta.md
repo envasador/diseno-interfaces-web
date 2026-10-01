@@ -43,7 +43,7 @@ Antes de darlo por bueno, compruébalo dos veces: que todo lo que está dentro d
 
 ### Paso 7: Dibuja las pantallas, todavía sin color
 
-Con el sitemap y el flujo delante, haz los **wireframes lo-fi** en Figma: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni ningún color que no sea gris. Nombra cada frame igual que su pantalla en el sitemap. Te va a ahorrar confusiones más adelante, te lo prometo.
+Con el sitemap y el flujo delante, haz los **wireframes lo-fi** en Figma Design: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni ningún color que no sea gris. Nombra cada frame igual que su pantalla en el sitemap. Te va a ahorrar confusiones más adelante, te lo prometo.
 
 Conecta todas las pantallas con interacciones básicas y ya tienes tu **prototipo navegable**. Pásaselo a cuatro o cinco personas del perfil de tu persona principal en Lyssna, dales una tarea y no les expliques nada. Si tienes que intervenir para que lo entiendan, ya sabes dónde está el problema.
 

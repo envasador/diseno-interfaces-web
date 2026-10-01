@@ -20,11 +20,11 @@ El brief de este módulo es corto: una o dos páginas en FigJam que cualquiera p
 
 ### El entregable completo
 
-Con el brief cerrado, el entregable de la Órbita 1 son seis artefactos vinculados entre sí, cuatro en FigJam y dos en Figma.
+Con el brief cerrado, el entregable de la Órbita 1 son seis piezas enlazadas entre sí: cuatro en FigJam, la pizarra colaborativa de Figma, y dos en Figma Design.
 
 En **FigJam**: el brief de proyecto, las fichas de personas, el MVP con el user flow completo (y los flujos complementarios que hayas dibujado) y el sitemap.
 
-En **Figma**: los wireframes lo-fi de todas las pantallas del happy path (con los mismos nombres que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
+En **Figma Design**: los wireframes lo-fi de todas las pantallas del happy path (con los mismos nombres que en el sitemap) y el prototipo navegable que las conecta con interacciones básicas.
 
 Los dos archivos van enlazados y son la referencia permanente del resto del módulo. Cualquier decisión de las órbitas siguientes tendría que poder rastrearse hasta algo que construiste aquí.
 

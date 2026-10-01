@@ -4,7 +4,7 @@ El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Aho
 
 #### **Qué tienes que hacer:**
 
-**Dibuja los wireframes.** Con el sitemap y el user flow delante, haz los wireframes lo-fi en Figma: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni color. Ponle a cada frame el mismo nombre que tiene su pantalla en el sitemap.
+**Dibuja los wireframes.** Con el sitemap y el user flow delante, haz los wireframes lo-fi en Figma Design: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni color. Ponle a cada frame el mismo nombre que tiene su pantalla en el sitemap.
 
 **Conéctalos.** Cuando tengas todas las pantallas, únelas con interacciones básicas y ya tienes el prototipo navegable.
 
@@ -12,6 +12,6 @@ El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Aho
 
 #### **Entregable:**
 
-Los wireframes lo-fi y el prototipo navegable en Figma, con los resultados del test anotados.
+Los wireframes lo-fi y el prototipo navegable en Figma Design, con los resultados del test anotados.
 
 ---

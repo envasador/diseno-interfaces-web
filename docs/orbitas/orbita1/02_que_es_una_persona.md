@@ -70,7 +70,7 @@ Puedes usar IA para ordenar notas, detectar temas o reformular preguntas. Si lo 
 
 #### Paso 4: redacta la ficha
 
-La ficha se guarda en Figma, en el archivo principal del proyecto, para tenerla a mano mientras diseñas. Una ficha bien construida incluye:
+La ficha se guarda en FigJam, en el mismo tablero que el resto de la investigación, para tenerla a mano mientras diseñas. Una ficha bien construida incluye:
 
 **Un nombre** y, si quieres, una ilustración que te ayude a imaginar el perfil. Nunca una foto de una persona real.
 

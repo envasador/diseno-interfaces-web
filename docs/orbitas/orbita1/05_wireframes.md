@@ -18,7 +18,7 @@ Las del happy path de tu user flow, más las pantallas de error o de estado vac�
 
 Una pantalla que existe en el sitemap pero no aparece en el flujo puede esperar. Cuando el flujo la necesite, la dibujas.
 
-### Cómo se hace un wireframe lo-fi en Figma
+### Cómo se hace un wireframe lo-fi en Figma Design
 
 La baja fidelidad tiene unas convenciones bastante concretas. **Escala de grises**: negro, blanco y un gris medio. Nada de tipografía real: los textos de cuerpo se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes son rectángulos con una X dentro. Botones, campos e iconos, formas geométricas simples.
 
@@ -36,8 +36,8 @@ La tentación más frecuente es meter color para distinguir elementos. Si necesi
 
 ### El prototipo navegable
 
-Cuando tengas los wireframes de todo el happy path, conéctalos en Figma con **interacciones básicas**: un toque o un clic en un botón lleva a la pantalla siguiente. Nada más. Ni animaciones ni transiciones bonitas.
+Cuando tengas los wireframes de todo el happy path, conéctalos en Figma Design con **interacciones básicas**: un toque o un clic en un botón lleva a la pantalla siguiente. Nada más. Ni animaciones ni transiciones bonitas.
 
 Este prototipo sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Y aquí vuelve la prueba incómoda del primer apartado. Si durante el test te pillas diciendo "no, eso es el botón de...", acabas de encontrar un problema de diseño, y hay que resolverlo antes de pasar a alta fidelidad.
 
-Puedes montar el test en Lyssna enlazando directamente el prototipo de Figma, igual que hiciste con los referentes en la investigación, pero ahora sobre tu propio trabajo. Con cuatro o cinco personas que encajen con tu persona primaria tienes suficiente para detectar los problemas más graves (RA1-c, RA6-a).
+Puedes montar el test en Lyssna enlazando directamente el prototipo de Figma Design, igual que hiciste con los referentes en la investigación, pero ahora sobre tu propio trabajo. Con cuatro o cinco personas que encajen con tu persona primaria tienes suficiente para detectar los problemas más graves (RA1-c, RA6-a).

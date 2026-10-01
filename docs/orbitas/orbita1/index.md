@@ -1,21 +1,23 @@
 # Órbita 1 — Conocer a las personas
 
-**Horas:** ~20h · **RA principales:** RA1, RA6 · **Semanas:** 1-4
+**Horas:** unas 20 · **RA principales:** RA1 y RA6 · **Semanas:** de la 1 a la 4
+
+Durante cuatro semanas vas a aparcar los colores y las tipografías para averiguar quién va a usar tu producto, qué necesita y cómo se va a mover por él. Es la órbita menos vistosa del curso y la que más pesa en todas las demás: lo que decidas aquí lo vas a seguir usando, y defendiendo, hasta junio.
 
 ---
 
-## Qué produce esta órbita
+## Qué vas a entregar
 
-Seis artefactos vinculados entre sí, cuatro en FigJam y dos en Figma. Cada uno se apoya en el anterior y todos se usan hasta el final del curso:
+Seis piezas enlazadas entre sí. Cuatro se hacen en FigJam, la pizarra colaborativa de Figma, y dos en Figma Design. Cada una sale de la anterior y ninguna se queda en un cajón: todas vuelven a aparecer en las órbitas siguientes.
 
-| Artefacto | Qué es | Para qué sirve en el resto del módulo |
-|---|---|---|
-| **Brief de proyecto** | Problema, alcance, criterios de éxito | Referencia permanente de qué se diseña y para quién |
-| **Personas** | 2-3 perfiles con diversidad funcional incluida | Filtro de decisiones en todas las órbitas |
-| **MVP y user flows** | Qué entra en la primera versión y el recorrido completo que la atraviesa, con casos límite | Acota el inventario de la arquitectura; guion del cognitive walkthrough en Órbita 5 |
-| **Sitemap** | Estructura jerárquica del producto | Base de la arquitectura de navegación |
-| **Wireframes lo-fi** | Pantallas del happy path en escala de grises | Esqueleto sobre el que el sistema visual toma forma en Órbita 2 |
-| **Prototipo navegable** | Wireframes conectados con interacciones básicas | Primer test de flujo antes de invertir en diseño visual |
+| Pieza | Herramienta | Qué es | Para qué te va a servir después |
+|---|---|---|---|
+| **Brief de proyecto** | FigJam | El problema, el alcance y cómo sabrás que el diseño funciona | Es la referencia de todo el curso: qué diseñas y para quién |
+| **Personas** | FigJam | Dos o tres perfiles sacados de tu investigación, uno de ellos con diversidad funcional | Son el filtro de cada decisión en todas las órbitas |
+| **MVP y user flow** | FigJam | Lo que entra en la primera versión y el recorrido completo por ella, con sus casos límite | Marca qué contenido entra en el sitemap y será el guion del cognitive walkthrough en la Órbita 5 |
+| **Sitemap** | FigJam | Cómo se organizan y cómo se llaman las pantallas | Es la base de la navegación |
+| **Wireframes lo-fi** | Figma Design | Las pantallas del happy path, en escala de grises | Son el esqueleto que vestirás con el sistema visual en la Órbita 2 |
+| **Prototipo navegable** | Figma Design | Los wireframes conectados con interacciones básicas | Es tu primera prueba con personas antes de invertir en diseño visual |
 
 ---
 
@@ -32,6 +34,6 @@ Seis artefactos vinculados entre sí, cuatro en FigJam y dos en Figma. Cada uno 
 
 ## El proyecto
 
-El enunciado completo, la rúbrica de evaluación y las fases paso a paso de esta órbita están en el proyecto **Diseñar para que funcione**.
+Todo esto lo vas a aplicar a tu propio proyecto, **Diseñar para que funcione**. En el enunciado tienes la rúbrica y las ocho fases, paso a paso.
 
 [Ir al enunciado del proyecto](../../proyectos/proyecto1/enunciado.md){ .md-button .md-button--primary }
