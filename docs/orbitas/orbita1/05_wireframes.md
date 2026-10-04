@@ -36,6 +36,14 @@ En Figma Design trabajarás sobre un **frame** (el lienzo que representa la pant
 
 Pon a cada frame el mismo nombre que tiene esa pantalla en el sitemap. Un user flow puede pasar dos veces por la misma pantalla (por ejemplo, por el "Detalle de reserva" antes de pagar y después de cancelar), y si usas siempre el mismo nombre quedará claro que se trata de la misma pantalla. Aunque parezca un detalle sin importancia, es lo que permite relacionar el sitemap, el user flow y los wireframes durante todo el módulo (RA1-a).
 
+Cuando ya te manejes con lo básico de Figma, este segundo vídeo, de Codex Community, te enseña paso a paso a hacer un wireframe de baja fidelidad, que es justo lo que tienes que hacer en esta fase. Está en inglés, así que, si te cuesta seguirlo, activa los subtítulos desde la configuración del reproductor.
+
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin:24px 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/qWIdforZ9x0" title="How to Wireframe in Figma in 2026, de Codex Community" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
+
+Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=qWIdforZ9x0).
+
 ### Lo que todavía no se decide
 
 Las tipografías, los colores, los espacios exactos entre elementos, los iconos y las imágenes son decisiones que tomarás en la Órbita 2. Si te das cuenta de que estás eligiendo un tono de azul, para, porque te estás adelantando a una fase que todavía no toca.
