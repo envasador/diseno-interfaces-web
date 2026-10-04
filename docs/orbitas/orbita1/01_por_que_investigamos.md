@@ -2,48 +2,48 @@
 
 ## 1. Por qué investigamos antes de diseñar
 
-Abres Figma, creas un frame del tamaño de un móvil y en veinte minutos tienes una pantalla de inicio preciosa. Da gusto. Da tanto gusto que es fácil saltarse una pregunta pequeña: ¿para quién es esa pantalla? Si la respuesta es "para la gente", acabas de tomar veinte decisiones sin información. Cada una te la va a cobrar alguien más adelante. Normalmente tú, y normalmente en la semana de la entrega.
+Cuando tienes una idea para una aplicación, lo normal es querer verla cuanto antes en una pantalla. Abres una herramienta de diseño, dibujas la página de inicio y en un rato tienes algo que parece una aplicación de verdad, lo que da mucha sensación de avance. El problema es que, si todavía no sabes bien para quién estás diseñando ni qué necesita esa persona, cada botón que colocas y cada texto que escribes es una decisión tomada a ciegas. Muchas de esas decisiones habrá que cambiarlas más adelante, y cuanto más avanzado esté el proyecto, más trabajo costará hacerlo.
 
-Investigar sirve para tener esa información **antes** de decidir. Cuesta unos días al principio del proyecto y ahorra semanas al final, que es el mejor negocio que vas a hacer en todo el curso.
+Investigar sirve para tener esa información **antes** de decidir. Te llevará unos días al principio del proyecto, pero te ahorrará semanas de correcciones al final.
 
 ### Tú no eres el usuario
 
-Después de tres semanas con tu proyecto sabes dónde está cada botón, qué hace cada icono y por qué el menú se abre hacia la izquierda. Esa familiaridad te viene muy bien para construirlo y fatal para juzgarlo. Te has convertido en la única persona del mundo para quien tu interfaz es obvia.
+Después de varias semanas trabajando en tu proyecto conocerás cada detalle de cómo funciona: dónde está cada opción, qué hace cada botón y por qué el menú está colocado donde está. Ese conocimiento te viene muy bien para construirlo, pero te pone en una situación muy distinta a la de alguien que abre tu aplicación por primera vez. Sin darte cuenta, te habrás convertido en la persona para la que todo resulta evidente.
 
-Don Norman lo explica en *La psicología de los objetos cotidianos*: cada persona se construye un **modelo mental** de cómo funciona algo, y el de quien usa un producto casi nunca coincide con el de quien lo diseñó. Cuando coinciden, la interfaz parece intuitiva. Cuando no, la persona se pierde, se frustra y cierra la pestaña sin avisarte. Investigar te deja ver ese modelo mental antes de dibujar, para que tus decisiones salgan de ahí y tus suposiciones se queden donde estaban.
+Don Norman lo explica en su libro *La psicología de los objetos cotidianos*. Cada persona se construye un **modelo mental**, es decir, una idea propia de cómo funciona algo, y el modelo mental de quien usa un producto casi nunca coincide con el de quien lo ha diseñado. Si coinciden, la interfaz resulta intuitiva. El problema aparece cuando no coinciden, porque entonces la persona se pierde, se frustra y acaba cerrando la aplicación. Investigar te permite conocer ese modelo mental antes de dibujar, de modo que tus decisiones partan de cómo piensan las personas que van a usar tu aplicación y no de tus propias suposiciones.
 
-Hay una prueba sencilla, y bastante incómoda. Dale tu prototipo a alguien de tu casa, sin explicarle nada, y pídele que haga una tarea. No toques el ratón. No digas "es que ahí arriba...". Aguanta. Lo que pase en esos dos minutos vale más que cualquier opinión tuya sobre tu propio diseño.
+Hay una prueba muy sencilla que puedes hacer en cualquier momento del curso. Dale tu prototipo a alguien de tu familia, sin explicarle nada, y pídele que haga una tarea concreta. Mientras lo intenta, no toques el ratón ni le des pistas, aunque te cueste. Lo que ocurra en esos dos minutos te enseñará más sobre tu diseño que cualquier opinión tuya.
 
 ### Para quién diseñas
 
-Cuando diseñas para todo el mundo a la vez, te salen interfaces tibias, que a nadie le estorban y a nadie le resuelven nada.
+Cuando intentas diseñar para todo el mundo a la vez, el resultado suele ser una aplicación que no molesta a nadie pero que tampoco le resuelve bien el problema a nadie en concreto.
 
-Pongamos que vas a diseñar una app para reservar las pistas del polideportivo municipal. "Para todo el mundo" no te da ni una pista (perdón). Ahora piensa en Manuel: 64 años, juega al pádel los martes con tres amigos, tiene baja visión y reserva desde el móvil con la letra al 200 %. De repente tienes preguntas útiles. ¿Cabe el calendario en la pantalla con ese tamaño de letra? ¿Distingue una pista libre de una ocupada si la única diferencia es el color? ¿Qué pasa cuando uno de los cuatro se cae del partido el martes a las siete? Con Manuel delante, cada decisión tiene un criterio: **¿esto le funciona a esta persona, en este contexto?** (RA6-a).
+Para verlo con un ejemplo, imagina que vas a diseñar una aplicación para reservar las pistas del polideportivo municipal. Si piensas en "todo el mundo", no tienes ninguna pista sobre qué decidir (y perdón por el juego de palabras). En cambio, si piensas en Manuel, que tiene 64 años, juega al pádel los martes con tres amigos, tiene baja visión y reserva desde el móvil con la letra ampliada al 200 %, enseguida te surgen preguntas útiles. ¿Cabe el calendario en la pantalla con ese tamaño de letra? ¿Distinguirá una pista libre de una ocupada si la única diferencia es el color? ¿Qué pasa si uno de los cuatro amigos no puede ir al partido el mismo martes por la tarde? Con Manuel en mente, cada decisión de diseño tiene un criterio claro: **¿esto le funciona a esta persona, en esta situación?** (RA6-a).
 
-Manuel es inventado, eso sí. Los tuyos van a salir de entrevistas con gente real, y en el apartado siguiente verás cómo.
+Manuel es un personaje inventado para el ejemplo. Las personas de tu proyecto saldrán de entrevistas con gente real, y en el apartado siguiente verás cómo se construyen.
 
-En esta órbita vas a construir dos o tres personas, y una de ellas tendrá algún tipo de diversidad funcional: visual, motora, cognitiva o auditiva. El motivo es práctico. Si alguien que usa lector de pantalla o navega solo con teclado está en tu proyecto desde el primer día, las decisiones de accesibilidad de las órbitas siguientes salen solas del proceso. Si aparece en la última semana, llega como un parche, y los parches siempre se notan.
+En esta órbita vas a crear dos o tres personas, y una de ellas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva). El motivo es práctico. Si desde el primer día tienes presente a alguien que usa un lector de pantalla o que navega solo con el teclado, las decisiones de accesibilidad de las órbitas siguientes saldrán de forma natural durante el diseño. Si lo dejas para la última semana, tendrás que añadirlas como un parche, y los parches casi siempre se notan.
 
-### Las leyes de UX: lo que ya se sabe de cómo se comporta la gente
+### Las leyes de UX: lo que ya se sabe sobre cómo se comporta la gente
 
-Antes de salir a investigar conviene saber lo que otros ya averiguaron. Hay un puñado de principios sobre comportamiento humano que el oficio usa como referencia. Son tendencias muy fiables (todas tienen sus excepciones) y te dan algo que vas a necesitar en la auditoría oral: vocabulario.
+Antes de salir a investigar, conviene que conozcas algunos principios sobre el comportamiento de las personas que los profesionales del diseño utilizan como referencia. Se conocen como **leyes de UX** (de *user experience*, experiencia de usuario). No son reglas exactas y todas tienen excepciones, pero describen tendencias muy fiables y te darán un vocabulario muy útil para explicar tus decisiones en la auditoría oral.
 
-**Ley de Hick.** Cuantas más opciones, más se tarda en decidir. Un menú con doce entradas se procesa más despacio que uno con cuatro. Simplificar consiste en ordenar el contenido para que la persona llegue a lo suyo sin leerse todo lo demás.
+**Ley de Hick.** Cuantas más opciones tiene una persona delante, más tarda en decidirse. Un menú con doce opciones se lee más despacio que uno con cuatro, así que simplificar consiste en ordenar el contenido para que cada persona llegue a lo que busca sin tener que leer todo lo demás.
 
-**Ley de Fitts.** Lo grande y cercano se pulsa antes que lo pequeño y lejano. En móvil, las acciones frecuentes van donde el pulgar llega sin estirarse. Lo que cuesta alcanzar se usa menos, y lo que se usa menos acaba pareciendo que sobra.
+**Ley de Fitts.** Un elemento grande y cercano se pulsa antes y con menos errores que uno pequeño y lejano. En el móvil, esto significa que las acciones que más se usan deben estar en las zonas a las que el pulgar llega sin esfuerzo, porque lo que cuesta alcanzar se acaba usando menos.
 
-**Ley de Jakob.** La gente pasa la mayor parte de su tiempo en otras webs. Llega a la tuya sabiendo dónde suele estar el carrito, qué hace la lupa y cómo se rellena un formulario. Si respetas esas convenciones, no tiene que aprender nada. Si te las saltas, más vale que tengas un motivo muy bueno.
+**Ley de Jakob.** La gente pasa la mayor parte de su tiempo en otras webs y aplicaciones, de modo que llega a la tuya sabiendo ya dónde suele estar el carrito, qué hace el icono de la lupa o cómo se rellena un formulario. Si respetas esas costumbres, nadie tendrá que aprender nada nuevo para usar tu aplicación, así que cambiarlas solo tiene sentido cuando hay un motivo de peso.
 
-**Ley de Tesler.** Todo sistema tiene una complejidad mínima que nadie puede eliminar, solo cambiar de sitio. Si el diseño no se encarga de ella, se la encuentra la persona usuaria. Repartirla por pasos, por niveles o por contexto es parte de tu trabajo.
+**Ley de Tesler.** Todo sistema tiene una parte de complejidad que no se puede eliminar, solo trasladar de un sitio a otro. Si el diseño no se ocupa de ella, acaba recayendo en quien usa la aplicación. Repartir esa complejidad en pasos, en niveles o según el contexto forma parte de tu trabajo como diseñador.
 
-**Ley de Miller.** La memoria de trabajo maneja con comodidad unos pocos elementos a la vez (la cifra clásica es siete, más o menos dos). Una pantalla con demasiadas cosas que reclaman atención bloquea a cualquiera. Para eso existen la jerarquía visual, el espacio en blanco y la agrupación.
+**Ley de Miller.** Nuestra memoria a corto plazo solo puede manejar con comodidad unos pocos elementos a la vez (la cifra clásica es siete, más o menos dos). Por eso una pantalla con demasiadas cosas reclamando atención acaba bloqueando a cualquiera, y para evitarlo existen recursos como la jerarquía visual, el espacio en blanco y la agrupación.
 
-Cuando en la auditoría oral te pregunte por qué el botón de reservar está abajo y ocupa todo el ancho, el gusto no te va a servir de argumento. Esto sí: "por la ley de Fitts; es la acción principal y Manuel la pulsa con el pulgar, con la letra ampliada". Una frase, un principio y una persona. Con eso la decisión queda defendida (RA1-a, RA6-a).
+Imagina que en la auditoría oral te pregunto por qué has puesto el botón de reservar en la parte de abajo de la pantalla y ocupando todo el ancho. Para que tu respuesta sea válida tendrás que apoyarla en algo más que el gusto personal, por ejemplo explicando que lo has hecho por la ley de Fitts, porque es la acción principal y Manuel la pulsa con el pulgar y con la letra ampliada. Así la decisión queda justificada con un principio y con una persona concreta (RA1-a, RA6-a).
 
-Las tienes todas, bien explicadas y con ejemplos, en [Laws of UX](https://lawsofux.com/es/).
+Puedes consultar todas estas leyes, con explicaciones y ejemplos, en [Laws of UX](https://lawsofux.com/es/).
 
 ### La IA en la investigación
 
-Una IA te puede ayudar bastante en esta fase: ordenar las notas de seis entrevistas, proponerte preguntas para el guion, encontrar temas que se repiten en las respuestas de una encuesta. Lo que no puede hacer es sentarse delante de una persona y notar que tarda cuatro segundos en contestar cuando le preguntas cómo paga. Esos cuatro segundos son investigación, y para verlos hay que estar delante.
+Las herramientas de IA te pueden ayudar bastante en esta fase, por ejemplo a ordenar las notas de tus entrevistas, a proponerte preguntas para el guion o a encontrar temas que se repiten en las respuestas de una encuesta. Lo que no pueden hacer es sentarse delante de una persona y darse cuenta de que tarda varios segundos en contestar cuando le preguntas cómo paga, un detalle que puede decirte mucho sobre lo que le preocupa. Ese tipo de información solo se obtiene hablando con la gente.
 
-Si usas IA en cualquier parte de esta fase, apúntalo en el `CHANGELOG.md`: qué le pediste, qué te dio, qué conservaste y qué cambiaste. Ese registro es la prueba de que las decisiones son tuyas, y en la auditoría oral te lo voy a pedir.
+Si usas IA en cualquier momento de esta fase, anótalo en el `CHANGELOG.md`: qué le pediste, qué te devolvió, qué conservaste y qué cambiaste. Ese registro demuestra que las decisiones son tuyas, y te lo pediré en la auditoría oral.

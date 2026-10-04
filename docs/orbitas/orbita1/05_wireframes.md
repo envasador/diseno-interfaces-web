@@ -2,42 +2,42 @@
 
 ## 5. Del flujo al wireframe
 
-Antes de elegir los azulejos del baño, alguien dibujó el plano de la casa: dónde va cada habitación, por dónde se entra y qué puerta da a qué pasillo. Nadie discute el color de los azulejos con el arquitecto si el baño todavía no tiene puerta. El **wireframe** es ese plano para tu interfaz.
+Antes de construir una casa, alguien dibuja el plano: dónde va cada habitación, por dónde se entra y qué puerta comunica con qué pasillo. En ese momento nadie se preocupa todavía del color de los azulejos, porque primero hay que asegurarse de que la casa se puede recorrer bien. El **wireframe** cumple esa misma función en una aplicación: es un boceto sencillo de una pantalla, en el que se ve qué elementos tiene y dónde está colocado cada uno, sin colores ni imágenes.
 
-Convierte el user flow y el sitemap en pantallas concretas, todavía sin diseño visual. El flujo pone el orden: qué pantalla viene después de cuál para completar una tarea. El sitemap pone el contenido: qué pantallas existen, cómo se llaman y cómo se relacionan. Y el wireframe comprueba que la estructura de cada pantalla cumple lo que el flujo promete, antes de que inviertas una sola hora en tipografía o color. Es una **herramienta de decisión**, y como tal se juzga.
+Para dibujar los wireframes vas a usar los dos documentos de los apartados anteriores. El user flow te indica el orden, es decir, qué pantalla viene después de cuál para completar una tarea, y el sitemap te indica el contenido, es decir, qué pantallas existen, cómo se llaman y cómo se relacionan entre sí. Con los wireframes comprobarás que la estructura de cada pantalla permite hacer lo que el user flow promete, antes de dedicar tiempo a elegir tipografías o colores. Por eso los consideramos una **herramienta para tomar decisiones**, y así es como se evalúan.
 
-### Cómo se combinan el flujo y la arquitectura
+### Cómo se combinan el user flow y el sitemap
 
-Cada wireframe corresponde a un nodo del sitemap, y el orden en que los dibujas y los conectas lo marca el user flow. El sitemap te da el nombre exacto de cada pantalla y te dice si es principal, secundaria o de sistema, lo que te orienta sobre cuánto detalle necesita: una pantalla principal suele llevar bastantes más elementos que una confirmación o un error. El flujo te dice qué pantalla sigue a cuál dentro del happy path, y esa secuencia es la que luego podrás recorrer en el prototipo.
+Cada wireframe corresponde a una pantalla del sitemap, y el orden en que los dibujas y los conectas lo marca el user flow. El sitemap te da el nombre exacto de cada pantalla y te dice si es principal, secundaria o de sistema, lo que te orienta sobre cuánto detalle necesita, ya que una pantalla principal suele tener bastantes más elementos que un mensaje de confirmación o de error. El user flow, por su parte, te dice qué pantalla sigue a cuál dentro del happy path, y esa secuencia es la que luego podrás recorrer en el prototipo.
 
-Trabajar con las dos piezas delante te protege de dos errores muy típicos: dibujar una pantalla que no está en el sitemap (contenido inventado sobre la marcha) y conectar dos pantallas en un orden que el flujo no contempla (RA1-c).
+Trabajar con los dos documentos delante te protege de dos errores muy habituales: dibujar una pantalla que no está en el sitemap (con contenido que te inventas sobre la marcha) y conectar dos pantallas en un orden que el user flow no contempla (RA1-c).
 
 ### Qué pantallas hay que dibujar
 
-Las del happy path de tu user flow, más las pantallas de error o de estado vacío que hayas marcado como críticas para tus personas. Si tu flujo tiene ocho pasos, necesitas ocho wireframes. Ni siete ni doce.
+Tienes que dibujar las pantallas que aparecen en el happy path de tu user flow y, además, las pantallas de error o de estado vacío (por ejemplo, la lista de reservas cuando todavía no has hecho ninguna) que hayas considerado importantes para tus personas. Si tu user flow tiene ocho pasos, necesitarás exactamente ocho wireframes.
 
-Una pantalla que existe en el sitemap pero no aparece en el flujo puede esperar. Cuando el flujo la necesite, la dibujas.
+Puede que en el sitemap haya pantallas que no aparecen en el user flow. Esas pantallas pueden esperar, y las dibujarás cuando algún flujo las necesite.
 
-### Cómo se hace un wireframe lo-fi en Figma Design
+### Cómo se hace un wireframe de baja fidelidad en Figma Design
 
-La baja fidelidad tiene unas convenciones bastante concretas. **Escala de grises**: negro, blanco y un gris medio. Nada de tipografía real: los textos de cuerpo se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes son rectángulos con una X dentro. Botones, campos e iconos, formas geométricas simples.
+Los wireframes de esta órbita son de **baja fidelidad** (en inglés, *lo-fi*), lo que significa que se parecen poco al aspecto final de la aplicación y siguen unas convenciones muy concretas. Se dibujan en **escala de grises**, usando solo negro, blanco y un gris medio. No se usan tipografías reales: los textos largos se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes se representan con un rectángulo con una X dentro, y los botones, los campos de formulario y los iconos, con formas geométricas sencillas.
 
-La idea es que quien lo mire entienda qué hace cada elemento sin que nada le distraiga de la pregunta importante, que es si la pantalla funciona.
+La idea es que cualquiera que mire el wireframe entienda para qué sirve cada elemento sin que nada le distraiga de lo que importa en esta fase, que es comprobar si la pantalla funciona.
 
-Trabajas en un frame del tamaño del dispositivo de tu persona. Lucía reserva desde un Android, así que su frame es de 360×800. Si tu persona primaria trabaja con portátil, 1280×800. Si tienes los dos perfiles, dibujas para los dos dispositivos desde el principio, porque las decisiones de layout que tomas aquí son las que luego condicionan el responsive de la Órbita 3.
+En Figma Design trabajarás sobre un **frame** (el lienzo que representa la pantalla) del tamaño del dispositivo que usa tu persona. Lucía reserva desde un móvil Android, así que su frame mediría 360 × 800 píxeles, mientras que si tu persona principal usara un portátil trabajarías con un frame de 1280 × 800. Si tienes personas de los dos tipos, dibuja para los dos dispositivos desde el principio, porque la forma en que coloques los elementos ahora condicionará cómo se adapta tu web a cada pantalla en la Órbita 3.
 
-Ponle a cada frame el mismo nombre que tiene esa pantalla en el sitemap. Un flujo puede pasar dos veces por la misma pantalla (el "Detalle de reserva" antes de pagar y después de cancelar, por ejemplo), y el nombre deja claro que es la misma las dos veces. Parece una manía. Es lo que mantiene unidos el sitemap, el flujo y los wireframes durante todo el módulo (RA1-a).
+Pon a cada frame el mismo nombre que tiene esa pantalla en el sitemap. Un user flow puede pasar dos veces por la misma pantalla (por ejemplo, por el "Detalle de reserva" antes de pagar y después de cancelar), y si usas siempre el mismo nombre quedará claro que se trata de la misma pantalla. Aunque parezca un detalle sin importancia, es lo que permite relacionar el sitemap, el user flow y los wireframes durante todo el módulo (RA1-a).
 
 ### Lo que todavía no se decide
 
-Fuentes, colores, espaciados exactos, iconografía, imágenes. Todo eso es de la Órbita 2. Si te sorprendes eligiendo un tono de azul, para: te estás saltando una fase.
+Las tipografías, los colores, los espacios exactos entre elementos, los iconos y las imágenes son decisiones que tomarás en la Órbita 2. Si te das cuenta de que estás eligiendo un tono de azul, para, porque te estás adelantando a una fase que todavía no toca.
 
-La tentación más frecuente es meter color para distinguir elementos. Si necesitas distinguir algo, usa el gris medio. Y si aun así no se entiende qué hace ese elemento, el problema está en la estructura, que es donde hay que arreglarlo. Si en grises no funciona, el color no lo va a rescatar.
+Es muy habitual sentir la tentación de usar colores para distinguir unos elementos de otros. Si necesitas diferenciar algo, usa el gris medio, y si aun así no se entiende para qué sirve ese elemento, el problema está en la estructura de la pantalla, que es donde tendrás que resolverlo. Cuando una pantalla no se entiende en escala de grises, añadirle color no la hará más clara.
 
 ### El prototipo navegable
 
-Cuando tengas los wireframes de todo el happy path, conéctalos en Figma Design con **interacciones básicas**: un toque o un clic en un botón lleva a la pantalla siguiente. Nada más. Ni animaciones ni transiciones bonitas.
+Cuando tengas los wireframes de todo el happy path, conéctalos en Figma Design con **interacciones básicas**, de modo que al pulsar un botón se pase a la pantalla siguiente. No hace falta añadir animaciones ni transiciones, porque en esta fase solo necesitas que se pueda navegar.
 
-Este prototipo sirve para una sola cosa: comprobar que el flujo funciona cuando alguien lo recorre sin que nadie le explique nada. Y aquí vuelve la prueba incómoda del primer apartado. Si durante el test te pillas diciendo "no, eso es el botón de...", acabas de encontrar un problema de diseño, y hay que resolverlo antes de pasar a alta fidelidad.
+Este prototipo sirve para comprobar si el user flow funciona cuando alguien lo recorre sin que nadie le explique nada. Aquí puedes repetir la prueba que se proponía en el primer apartado: si durante el test te sorprendes explicando para qué sirve un botón, has encontrado un problema de diseño que tendrás que resolver antes de pasar a diseñar el aspecto definitivo.
 
-Puedes montar el test en Lyssna enlazando directamente el prototipo de Figma Design, igual que hiciste con los referentes en la investigación, pero ahora sobre tu propio trabajo. Con cuatro o cinco personas que encajen con tu persona primaria tienes suficiente para detectar los problemas más graves (RA1-c, RA6-a).
+Puedes organizar la prueba en Lyssna enlazando directamente el prototipo de Figma Design, igual que hiciste con los referentes durante la investigación, aunque esta vez sobre tu propio trabajo. Con cuatro o cinco personas que se parezcan a tu persona principal tendrás suficiente para detectar los problemas más graves (RA1-c, RA6-a).
