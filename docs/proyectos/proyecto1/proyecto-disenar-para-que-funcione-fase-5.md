@@ -1,23 +1,23 @@
 ## **Fase 5: Definir el MVP y mapear el user flow**
 
-A estas alturas tienes personas, un tablero lleno de notas y una lista de ideas que no para de crecer: notificaciones, modo oscuro, un chat, un ranking, sincronizar con el calendario. Todas parecen imprescindibles. Ninguna lo es hasta que demuestre lo contrario. Esta fase le pone límites a esa lista y comprueba que lo que queda dentro se puede recorrer de principio a fin.
+A estas alturas tendrás tus personas, un tablero lleno de notas y una lista de ideas para tu aplicación que no deja de crecer: notificaciones, modo oscuro, un chat, una clasificación de jugadores o la sincronización con el calendario. Todas parecen imprescindibles, pero la primera versión tiene que limitarse a lo esencial. En esta fase vas a decidir qué entra en esa versión y a comprobar que se puede recorrer de principio a fin.
 
 #### **Qué tienes que hacer:**
 
-**Acota el MVP.** Abre la ficha de tu persona primaria y busca su objetivo principal. Lo mínimo que necesita para cumplirlo es tu MVP. Haz dos columnas, dentro y fuera, y pasa cada funcionalidad por tres preguntas:
+**Define el MVP.** Abre la ficha de tu persona principal y busca su objetivo más importante, porque lo mínimo que necesita para cumplirlo será tu MVP (producto mínimo viable). Haz dos columnas, una con las funciones que entran y otra con las que se quedan fuera, y pasa cada función por estas tres preguntas:
 
-1. ¿La necesita tu persona primaria para completar su tarea principal?
+1. ¿La necesita tu persona principal para completar su tarea más importante?
 2. ¿Puedes construirla con el tiempo y las herramientas del módulo?
-3. ¿Tiene, mientras tanto, una alternativa aceptable?
+3. ¿Existe, mientras tanto, otra forma aceptable de resolverla?
 
-Si la respuesta a la primera es no, se queda fuera de esta versión. Apúntala en la columna de fuera con su motivo: ahí te espera para la siguiente.
+Si la respuesta a la primera pregunta es no, la función se queda fuera de esta versión. Anótala en la columna correspondiente junto con el motivo, para tenerla en cuenta en la siguiente versión.
 
-**Mapea el flujo.** Con el MVP cerrado, dibuja en FigJam un único flujo que lo recorra entero, con la notación estándar: píldora para la entrada y la salida, rectángulo para cada pantalla o estado, rombo para cada decisión y flechas para las transiciones. Empieza siempre por el happy path, el recorrido en el que todo sale bien. Después añade al menos dos o tres casos límite en los puntos críticos: la contraseña falla, la conexión se corta a mitad del pago, alguien vuelve a un proceso que dejó a medias. Es justo ahí donde las aplicaciones reales pierden a la gente, así que merecen más atención de la que parece. Si descubres una tarea crítica que el flujo principal no cubre bien, mapéala aparte como flujo complementario.
+**Dibuja el user flow.** Con el MVP decidido, dibuja en FigJam un único flujo que lo recorra entero, usando la notación habitual: una píldora para el principio y el final, un rectángulo para cada pantalla o estado, un rombo para cada decisión y flechas para indicar cómo se pasa de un paso a otro. Empieza siempre por el happy path, que es el recorrido en el que todo sale bien, y después añade al menos dos o tres casos límite en los momentos más delicados, por ejemplo qué ocurre si la contraseña es incorrecta, si se corta la conexión a mitad del pago o si alguien vuelve a una reserva que dejó a medias. Esos son los momentos en los que las aplicaciones suelen perder a sus usuarios, así que merecen más atención de la que parece. Si descubres una tarea importante que el flujo principal no cubre bien, dibújala aparte como un flujo complementario.
 
-**Recórrelo con tus personas.** Cuando lo tengas, recórrelo paso a paso en la piel de cada persona, empezando por la de diversidad funcional. ¿Ese rombo se resuelve con teclado? ¿Ese mensaje de error se entiende sin distinguir el rojo? Anota las decisiones que queden abiertas. Las cerrarás en los wireframes.
+**Recórrelo con tus personas.** Cuando lo tengas, recórrelo paso a paso poniéndote en el lugar de cada persona, empezando por la que tiene diversidad funcional. Pregúntate, por ejemplo, si cada decisión se puede tomar usando solo el teclado o si un mensaje de error se entiende aunque la persona no distinga el color rojo. Anota las decisiones que queden pendientes, porque las resolverás al dibujar los wireframes.
 
 #### **Entregable:**
 
-El MVP definido, con lo que queda fuera y el motivo de cada exclusión, y el user flow completo del MVP (más los flujos complementarios, si los hay), con el happy path y los casos límite anotados.
+El MVP definido, con las funciones que se quedan fuera y el motivo de cada una, y el user flow completo del MVP (junto con los flujos complementarios, si los hay), con el happy path y los casos límite anotados.
 
 ---

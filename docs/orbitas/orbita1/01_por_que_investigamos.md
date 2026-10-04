@@ -22,7 +22,7 @@ Para verlo con un ejemplo, imagina que vas a diseñar una aplicación para reser
 
 Manuel es un personaje inventado para el ejemplo. Las personas de tu proyecto saldrán de entrevistas con gente real, y en el apartado siguiente verás cómo se construyen.
 
-En esta órbita vas a crear dos o tres personas, y una de ellas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva). El motivo es práctico. Si desde el primer día tienes presente a alguien que usa un lector de pantalla o que navega solo con el teclado, las decisiones de accesibilidad de las órbitas siguientes saldrán de forma natural durante el diseño. Si lo dejas para la última semana, tendrás que añadirlas como un parche, y los parches casi siempre se notan.
+En esta órbita vas a crear dos o tres personas, y una de ellas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva). Lo hacemos por un motivo práctico, porque si desde el primer día tienes presente a alguien que usa un lector de pantalla o que navega solo con el teclado, las decisiones de accesibilidad de las órbitas siguientes saldrán de forma natural durante el diseño. Si lo dejas para la última semana, tendrás que añadirlas como un parche, y los parches casi siempre se notan.
 
 ### Las leyes de UX: lo que ya se sabe sobre cómo se comporta la gente
 

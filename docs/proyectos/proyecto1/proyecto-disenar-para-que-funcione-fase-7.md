@@ -1,17 +1,17 @@
 ## **Fase 7: Wireframear y prototipar**
 
-El sitemap dice qué pantallas hay. El flujo dice en qué orden se conectan. Ahora toca dibujarlas, y todavía en grises.
+El sitemap te dice qué pantallas tiene tu aplicación y el user flow te dice en qué orden se recorren. En esta fase vas a dibujar esas pantallas, todavía en escala de grises, y a comprobar con personas reales si se entienden.
 
 #### **Qué tienes que hacer:**
 
-**Dibuja los wireframes.** Con el sitemap y el user flow delante, haz los wireframes lo-fi en Figma Design: una pantalla por cada nodo del sitemap que aparece en el flujo, en escala de grises, sin tipografía real ni color. Ponle a cada frame el mismo nombre que tiene su pantalla en el sitemap.
+**Dibuja los wireframes.** Con el sitemap y el user flow delante, dibuja en Figma Design los wireframes de baja fidelidad: uno por cada pantalla del sitemap que aparezca en el user flow, en escala de grises y sin tipografías reales ni colores. Pon a cada frame el mismo nombre que tiene esa pantalla en el sitemap.
 
-**Conéctalos.** Cuando tengas todas las pantallas, únelas con interacciones básicas y ya tienes el prototipo navegable.
+**Conéctalos.** Cuando tengas todas las pantallas, enlázalas con interacciones básicas para que al pulsar un botón se pase a la pantalla siguiente. Así tendrás tu prototipo navegable.
 
-**Pruébalo.** Pásaselo en Lyssna a cuatro o cinco personas que encajen con tu persona primaria. Dales una tarea concreta ("reserva una pista para el jueves a las siete") y observa sin explicar nada. Si en algún momento tienes que aclarar algo, apúntalo: ahí hay un problema de diseño que resolver antes de seguir.
+**Pruébalo.** Organiza una prueba en Lyssna con cuatro o cinco personas que se parezcan a tu persona principal. Dales una tarea concreta, como "reserva una pista para el jueves a las siete", y observa cómo la resuelven sin explicarles nada. Si en algún momento tienes que aclararles algo, anótalo, porque has encontrado un problema de diseño que tendrás que resolver antes de seguir.
 
 #### **Entregable:**
 
-Los wireframes lo-fi y el prototipo navegable en Figma Design, con los resultados del test anotados.
+Los wireframes y el prototipo navegable en Figma Design, con los resultados de la prueba anotados.
 
 ---

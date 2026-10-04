@@ -1,19 +1,19 @@
 ## **Fase 6: Card sorting y sitemap**
 
-Tú sabes dónde pondrías cada cosa. El problema es que la app no la vas a usar tú. En esta fase averiguas dónde la buscarían tus personas.
+Seguramente tienes clara la forma en que tú organizarías las pantallas de tu aplicación, pero quienes la van a usar pueden pensar de otra manera. En esta fase vas a averiguar dónde buscarían cada cosa tus personas y, con esa información, construirás el sitemap.
 
 #### **Qué tienes que hacer:**
 
-**Haz el inventario.** Reúne la lista completa de pantallas y funcionalidades de tu producto a partir de los referentes que analizaste en la Fase 2 y de tu MVP. Prepara en FigJam una tarjeta por cada elemento.
+**Haz el inventario.** Reúne la lista completa de pantallas y funciones de tu aplicación a partir de los referentes que analizaste en la Fase 2 y de tu MVP, y prepara en FigJam una tarjeta por cada elemento.
 
-**Haz el card sorting.** Con cuatro o cinco compañeros que encajen en tus perfiles de persona: cada uno agrupa las tarjetas como le parezca natural y le pone nombre a cada grupo. Tú observas y no intervienes, aunque te muerdas la lengua. Los agrupamientos que se repiten son los que valen.
+**Haz el card sorting.** Pide a cuatro o cinco compañeros que se parezcan a tus personas que agrupen las tarjetas como les parezca más lógico y que pongan un nombre a cada grupo. Mientras lo hacen, limítate a observar sin intervenir, aunque te cueste. Los grupos que se repiten entre participantes son los que debes tener en cuenta.
 
-**Construye el sitemap.** Con esos grupos, dibuja el sitemap con la home como raíz y con las pantallas principales, secundarias y de sistema bien diferenciadas.
+**Construye el sitemap.** A partir de esos grupos, dibuja el sitemap con la pantalla de inicio como punto de partida y distingue con claridad las pantallas principales, las secundarias y las de sistema.
 
-**Compruébalo dos veces.** Contra el MVP: todo lo que está dentro tiene su pantalla, y nada de lo que dejaste fuera se ha colado. Contra el user flow de la Fase 5: se puede recorrer entero sobre esta estructura sin encontrar un hueco.
+**Revísalo dos veces.** Primero compáralo con el MVP, para comprobar que cada función tiene su pantalla y que no se ha colado nada de lo que dejaste fuera. Después recorre sobre él el user flow de la Fase 5, para asegurarte de que no falta ninguna pantalla.
 
 #### **Entregable:**
 
-El sitemap, verificado contra el MVP y el user flow.
+El sitemap, revisado frente al MVP y al user flow.
 
 ---

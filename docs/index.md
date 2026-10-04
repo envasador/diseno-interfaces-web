@@ -6,15 +6,15 @@ hide:
 # Diseño de Interfaces Web 
 **0615 · DAW FP Grado Superior · IES Rafael Alberti, Cádiz**
 
-Este módulo va de tomar decisiones de diseño y saber defenderlas. Cada cosa que elijas (un color, una estructura de navegación, un componente) tiene que poder explicarse a partir de las personas para las que diseñas. "Porque queda bien" no va a ser suficiente, y lo vas a oír bastante este curso.
+En este módulo vas a aprender a tomar decisiones de diseño y a explicar por qué las has tomado. Cada elección que hagas en tu proyecto, ya sea un color, la organización de un menú o la forma de un botón, tendrá que poder justificarse pensando en las personas que van a usar tu aplicación, y te pediré esa justificación muchas veces a lo largo del curso.
 
-Durante el curso vas a construir un design system completo para un producto digital real, desde la investigación de usuario hasta el código y la documentación. Empieza hablando con gente y termina con una defensa oral en la que te pueden preguntar por cualquier decisión del proyecto.
+El trabajo del curso consiste en construir un **design system** (el conjunto de colores, tipografías, componentes y normas que dan forma a una aplicación) para un producto digital real. Empezarás investigando y hablando con posibles usuarios, seguirás con el diseño y el código, y terminarás con una defensa oral en la que tendrás que explicar cualquier decisión de tu proyecto.
 
 ---
 
 ## Las seis órbitas
 
-El módulo se organiza en seis fases. Cada una se apoya en lo que dejó hecho la anterior, así que saltarse una se paga en la siguiente.
+El módulo se organiza en seis fases, que llamamos órbitas. Cada una se apoya en el trabajo de la anterior, así que es importante seguirlas en orden.
 
 | Órbita | Qué se trabaja | Horas |
 |---|---|---|
@@ -29,14 +29,14 @@ El módulo se organiza en seis fases. Cada una se apoya en lo que dejó hecho la
 
 ## Cómo funciona la evaluación
 
-Además de los entregables de cada órbita, te puedo preguntar por cualquier decisión del proyecto en cualquier momento. La respuesta tiene que apoyarse en tus datos de investigación, en las personas de la Órbita 1 o en criterios de diseño documentados. Si un artefacto está bien resuelto y no sabes defenderlo, el criterio no se supera.
+Además de evaluar los documentos que entregues en cada órbita, te puedo preguntar en cualquier momento por qué tomaste una decisión concreta. Tu respuesta tendrá que apoyarse en los datos de tu investigación, en las personas que definas en la Órbita 1 o en criterios de diseño documentados. Aunque un trabajo esté bien hecho, si no sabes explicar las decisiones que hay detrás, el criterio correspondiente no se dará por superado.
 
-Cada vez que uses una herramienta de IA, lo apuntas en el `CHANGELOG.md` del proyecto: qué le pediste, qué te dio, qué conservaste y qué cambiaste. Ese registro forma parte del entregable y se evalúa.
+Cada vez que uses una herramienta de IA tendrás que anotarlo en el archivo `CHANGELOG.md` de tu proyecto, indicando qué le pediste, qué te devolvió, qué conservaste y qué cambiaste. Ese registro forma parte del trabajo que se entrega y también se evalúa.
 
 ---
 
 ## Por dónde empezar
 
-La Órbita 1 arranca la primera semana de clase. Antes de la segunda sesión tienes que haber elegido tu proyecto y haber hablado con al menos dos personas que vivan el problema que quieres resolver. Dos conversaciones. Cuanto antes las tengas, antes empieza a tener sentido todo lo demás.
+La Órbita 1 empieza la primera semana de clase. Antes de la segunda sesión tendrás que haber elegido el tema de tu proyecto y haber hablado con al menos dos personas que tengan el problema que quieres resolver, porque esas primeras conversaciones te ayudarán a entender todo lo que viene después.
 
 [Ir a la Órbita 1](orbitas/orbita1/index.md){ .md-button .md-button--primary }

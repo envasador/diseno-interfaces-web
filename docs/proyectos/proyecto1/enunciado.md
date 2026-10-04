@@ -2,21 +2,21 @@
 
 ## ¿De qué va esto?
 
-Este curso vais a diseñar un producto digital real de principio a fin, con su design system completo, y lo vais a hacer en cuatro módulos a la vez: DIW, DWES, DWEC y Despliegue. Cada módulo se encarga de una parte. Esta primera, la de la Órbita 1 en DIW, es la menos vistosa y la que más condiciona todo lo demás.
+Durante este curso vais a diseñar un producto digital real de principio a fin, incluido su design system, y lo vais a hacer en cuatro módulos a la vez: DIW, DWES, DWEC y Despliegue. Cada módulo se encarga de una parte del proyecto, y esta primera, la que corresponde a la Órbita 1 de DIW, es la menos vistosa pero también la que más influye en todo lo demás.
 
-Durante cuatro semanas no vas a elegir ni un color. Ni una tipografía, ni un logo. Vas a averiguar qué necesita la gente, cómo usaría tu aplicación y qué estructura (personas, flujos, sitemap, wireframes) hace falta para que funcione sin tropiezos. Si al terminar la órbita tu proyecto en escala de grises se entiende y se recorre bien, el resto del curso consiste en vestirlo con criterio. Si en grises no funciona, el color no lo va a rescatar.
+En estas cuatro semanas todavía no te vas a ocupar del aspecto de tu aplicación, así que no elegirás colores, tipografías ni logotipos. Lo que vas a hacer es averiguar qué necesita la gente, cómo usaría tu aplicación y qué estructura (personas, flujos, sitemap y wireframes) hace falta para que funcione bien. Si al terminar la órbita tu proyecto se entiende y se puede recorrer sin problemas aunque esté dibujado solo en grises, el resto del curso consistirá en darle forma con criterio, porque el color y la tipografía pueden mejorar una aplicación que ya funciona, pero no arreglan una que no se entiende.
 
 ## Qué problema vas a resolver
 
-El tema lo eliges tú, con una condición: tiene que ser un problema que hayas visto de cerca. Algo que te pasa a ti, a tu familia, a tu equipo o a la gente de tu barrio. La pista más fiable es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, difícilmente le va a servir a nadie, y es mejor descubrirlo esta semana que en febrero.
+El tema del proyecto lo eliges tú, con una condición: tiene que ser un problema que conozcas de cerca, porque te afecta a ti, a tu familia, a tu equipo o a la gente de tu barrio. Una buena forma de comprobar si has elegido bien es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, es difícil que le resulte útil a otras personas, y es mucho mejor darse cuenta en la primera semana que a mitad de curso.
 
-Por eso el proyecto arranca **outside-in**: la idea sale de una necesidad que detectas en tu entorno y de la investigación que haces sobre ella. Aquí nadie te va a dar un encargo cerrado. (La diferencia entre outside-in e inside-out la tienes en la [introducción del módulo](../../introduccion/index.md).)
+Por eso el proyecto empieza **outside-in**, es decir, la idea sale de una necesidad que detectas en tu entorno y de la investigación que haces sobre ella, sin un encargo cerrado de partida. (La diferencia entre outside-in e inside-out la tienes explicada en la [introducción del módulo](../../introduccion/index.md).)
 
 ---
 
 ## Cronograma
 
-La Órbita 1 son ocho pasos repartidos en las cuatro primeras semanas del curso, unas 20 horas de clase. La [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md) tiene el detalle de cada uno: qué herramienta usas y qué tienes que tener en la mano al terminarlo.
+La Órbita 1 se organiza en ocho pasos repartidos a lo largo de las cuatro primeras semanas del curso, con unas 20 horas de clase en total. En la [hoja de ruta de la Órbita 1](../../orbitas/orbita1/00_hoja_de_ruta.md) tienes el detalle de cada paso, con la herramienta que vas a usar y lo que tienes que tener terminado al acabarlo.
 
 ## Fases del proyecto
 
@@ -33,7 +33,7 @@ La Órbita 1 son ocho pasos repartidos en las cuatro primeras semanas del curso,
 
 ## Resultados de Aprendizaje y Criterios de Evaluación
 
-Este proyecto trabaja sobre todo el **RA1** y el **RA6**. Los textos son los que marca la normativa, tal cual:
+Este proyecto trabaja sobre todo los resultados de aprendizaje **RA1** y **RA6**. Los textos que aparecen a continuación son los que recoge la normativa, sin modificar:
 
 **RA1: Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.**
 
@@ -53,7 +53,7 @@ Los criterios específicos que trabajamos son:
 
 ### Rúbrica de evaluación
 
-Seis criterios. Fíjate sobre todo en el último, la defensa oral: es el que más gente subestima y del que dependen todos los demás. Si no sabes explicar de dónde sale una decisión, el criterio correspondiente no se da por superado, por bien hecho que esté el artefacto.
+La rúbrica tiene seis criterios. Presta especial atención al último, la defensa oral, porque suele ser el que más se subestima y de él dependen todos los demás: si no sabes explicar de dónde sale una decisión, el criterio correspondiente no se dará por superado, por bien hecho que esté el documento.
 
 | **Criterio** | **Descripción** | **Insuficiente (1–3)** | **Básico (4–5)** | **Adecuado (6–7)** | **Avanzado (8–9)** | **Excelente (10)** | **RA vinculado** |
 |--------------|-----------------|-------------------------|------------------|--------------------|--------------------|--------------------|------------------|
@@ -64,4 +64,4 @@ Seis criterios. Fíjate sobre todo en el último, la defensa oral: es el que má
 | **C5. Brief de proyecto** | Evalúa si el brief tiene los cinco elementos y si el problema, el alcance y los criterios de éxito están respaldados por datos. | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos pero poco desarrollados. | Brief completo, problema respaldado por algún dato. | Brief conciso, legible en minutos, con alcance acotado por el MVP y criterios de éxito verificables. | Brief que cualquiera puede leer en cinco minutos y que ancla cada decisión de la órbita. | RA6-b |
 | **C6. Defensa de las decisiones (auditoría oral)** | Evalúa si el alumno puede justificar cualquier decisión con datos propios. "Es lo habitual" o "lo sugirió la IA" no cuentan como justificación. | No puede justificar decisiones básicas. | Justifica algunas decisiones, otras con respuestas genéricas. | Justifica la mayoría de decisiones señalando su origen. | Justifica decisiones con datos concretos de su propia investigación. | Defiende cualquier decisión del proyecto en cualquier momento, con datos y criterio propio. | RA6-e |
 
-En este módulo, un wireframe con algún fallo formal que sabes defender vale más que uno impecable que no sabes explicar. Si dudas en qué invertir la última tarde antes de la entrega, ya tienes la respuesta.
+En este módulo, un wireframe con algún fallo de forma pero con decisiones que sabes justificar vale más que uno impecable que no sabes explicar. Tenlo en cuenta cuando tengas que decidir en qué dedicar el tiempo antes de una entrega.
