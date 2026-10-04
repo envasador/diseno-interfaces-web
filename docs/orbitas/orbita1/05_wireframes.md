@@ -20,6 +20,14 @@ Puede que en el sitemap haya pantallas que no aparecen en el user flow. Esas pan
 
 ### Cómo se hace un wireframe de baja fidelidad en Figma Design
 
+En este apartado es cuando empezamos a trabajar con Figma. Si nunca lo has usado, te recomiendo que antes de dibujar tus wireframes veas este curso de introducción de afor digital, que explica la herramienta desde cero y te servirá de base para todo lo que hagas en Figma Design durante el módulo.
+
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin:24px 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/VdS9ZGHHXWQ" title="Curso de Figma 2025 desde cero, de afor digital" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
+
+Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=VdS9ZGHHXWQ).
+
 Los wireframes de esta órbita son de **baja fidelidad** (en inglés, *lo-fi*), lo que significa que se parecen poco al aspecto final de la aplicación y siguen unas convenciones muy concretas. Se dibujan en **escala de grises**, usando solo negro, blanco y un gris medio. No se usan tipografías reales: los textos largos se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes se representan con un rectángulo con una X dentro, y los botones, los campos de formulario y los iconos, con formas geométricas sencillas.
 
 La idea es que cualquiera que mire el wireframe entienda para qué sirve cada elemento sin que nada le distraiga de lo que importa en esta fase, que es comprobar si la pantalla funciona.
