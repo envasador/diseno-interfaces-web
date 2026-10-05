@@ -1,0 +1,1371 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita1/03_user_flows/">
+      
+      
+        <link rel="prev" href="../02_que_es_una_persona/">
+      
+      
+        <link rel="next" href="../04_arquitectura_informacion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>3. User flows - del MVP al recorrido completo - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#orbita-1-conocer-a-las-personas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. User flows - del MVP al recorrido completo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita3/" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen y entregables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_hoja_de_ruta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/proyecto1/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto: Diseñar para que funcione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_por_que_investigamos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Por qué investigamos antes de diseñar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_que_es_una_persona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Personas: qué son y cómo se construyen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. User flows - del MVP al recorrido completo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. User flows - del MVP al recorrido completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-user-flows-del-mvp-al-recorrido-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. User flows: del MVP al recorrido completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. User flows: del MVP al recorrido completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-mvp-que-entra-en-la-primera-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El MVP: qué entra en la primera versión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-dibuja-un-user-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se dibuja un user flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-happy-path-y-los-casos-limite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El happy path y los casos límite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-flujo-del-mvp-y-los-flujos-complementarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo del MVP y los flujos complementarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-flujo-como-guion-para-evaluar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo como guion para evaluar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formato-y-herramienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato y herramienta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_arquitectura_informacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Arquitectura de la información y sitemap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_wireframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Del flujo al wireframe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_brief_y_entregable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. El brief de proyecto y el entregable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita3/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-user-flows-del-mvp-al-recorrido-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. User flows: del MVP al recorrido completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. User flows: del MVP al recorrido completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-mvp-que-entra-en-la-primera-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El MVP: qué entra en la primera versión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-dibuja-un-user-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se dibuja un user flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-happy-path-y-los-casos-limite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El happy path y los casos límite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-flujo-del-mvp-y-los-flujos-complementarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo del MVP y los flujos complementarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-flujo-como-guion-para-evaluar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo como guion para evaluar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formato-y-herramienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato y herramienta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="orbita-1-conocer-a-las-personas">Órbita 1 — Conocer a las personas</h1>
+<h2 id="3-user-flows-del-mvp-al-recorrido-completo">3. User flows: del MVP al recorrido completo</h2>
+<p>Un <strong>user flow</strong> (flujo de usuario) es un diagrama que muestra el camino que sigue una persona para conseguir algo dentro de tu aplicación, con todos los pasos, decisiones y pantallas por los que pasa desde que aparece la necesidad hasta que la resuelve o abandona. Antes de dibujar ninguno, necesitas tener claro qué va a hacer tu aplicación en su primera versión, y para eso sirve el MVP.</p>
+<h3 id="el-mvp-que-entra-en-la-primera-version">El MVP: qué entra en la primera versión</h3>
+<p>El <strong>MVP</strong> (producto mínimo viable) es la versión más pequeña de tu aplicación que ya resuelve de verdad el problema de tu persona principal. Hace pocas cosas, pero las hace completas. Una comparación que se usa mucho es la de un coche: si el producto final fuera un coche, el MVP sería un patinete, porque aunque es mucho más sencillo ya permite ir de un sitio a otro, mientras que una rueda suelta, por muy bien fabricada que esté, no le sirve a nadie para desplazarse.</p>
+<p>En cuanto empiezas a pensar en tu aplicación del polideportivo, se te ocurren muchísimas ideas: un chat para el grupo, una clasificación de jugadores, un buscador de compañeros, avisos cuando quede una pista libre o la posibilidad de sincronizar las reservas con el calendario del móvil. Todas parecen buenas, pero el problema de Lucía es reservar la pista del jueves sin complicaciones, y para eso le basta con ver qué pistas están libres, reservar una, pagarla y poder cancelarla si hace falta. Eso sería el MVP, y el resto de ideas se apuntan para versiones posteriores.</p>
+<p>Para definir tu MVP, abre la ficha de tu persona principal y busca su objetivo más importante. Después haz dos columnas, una con las funciones que entran y otra con las que se quedan fuera, y pasa cada función por tres preguntas: si tu persona principal la necesita para completar su tarea más importante, si puedes construirla con el tiempo y las herramientas del módulo, y si existe mientras tanto otra forma aceptable de resolverla. Cada respuesta tiene que apoyarse en un motivo concreto, y el simple hecho de que una función te guste no es suficiente. Si la respuesta a la primera pregunta es no, esa función se queda fuera de esta versión y la apuntas para la siguiente (RA1-c).</p>
+<p>Acotar el MVP tiene, además, una ventaja ambiental. Cada función que añades supone más pantallas, más código y más datos que viajan por la red, y todo eso consume energía cada vez que alguien abre la aplicación, aunque casi nadie llegue a usar esa función. Por eso las Web Sustainability Guidelines recomiendan reducir el contenido, las interacciones y los recorridos que no son imprescindibles (criterio 2.6) y revisar qué funciones se usan de verdad y cuánto aportan (criterio 2.27).</p>
+<p>El resultado tiene que ser una lista corta y fácil de justificar, con lo que tendrá tu aplicación en esta versión y una frase por cada función que se ha quedado fuera explicando por qué puede esperar. Guárdala en el mismo tablero de FigJam donde tienes el resto de la investigación, porque a partir de ahora será tu referencia, empezando por los flujos que vas a dibujar en este mismo apartado.</p>
+<h3 id="como-se-dibuja-un-user-flow">Cómo se dibuja un user flow</h3>
+<p>Los user flows usan unos símbolos muy sencillos: una píldora o una elipse para el principio y el final del recorrido, un rectángulo para cada pantalla o estado, un rombo para cada decisión (ya la tome la persona o el sistema) y flechas para indicar cómo se pasa de un elemento a otro.</p>
+<p>El <strong>punto de entrada</strong>, es decir, el lugar desde el que la persona empieza el recorrido, merece más atención de la que se le suele dar. La gente puede llegar a un mismo flujo desde sitios muy distintos, como la pantalla de inicio, una notificación, un enlace que le ha pasado alguien por WhatsApp o un buscador, y según por dónde llegue sabrá más o menos de lo que está pasando. Por ejemplo, quien abre el enlace que un amigo ha enviado al grupo ("he reservado la pista 3, ¿os viene bien?") aparece directamente en medio de una reserva sin haber visto la pantalla de inicio, y el flujo también tiene que funcionar para esa persona.</p>
+<p>De cada rombo salen al menos dos caminos, y cada uno de ellos tiene que terminar en algún sitio definido. Si un camino se queda sin final, estás dejando un hueco en el diseño que más adelante aparecerá como una pantalla de error que nadie ha pensado.</p>
+<h3 id="el-happy-path-y-los-casos-limite">El happy path y los casos límite</h3>
+<p>El <strong>happy path</strong> es el recorrido ideal, aquel en el que la persona hace exactamente lo que el diseño espera, todo funciona y el objetivo se cumple. Es el flujo más fácil de dibujar, pero también el que menos te enseña, porque describe justo la situación que menos problemas va a dar.</p>
+<p>Lo realmente interesante son los <strong>casos límite</strong>, que son las situaciones en las que algo se sale de lo previsto. Por ejemplo, qué pasa cuando alguien se equivoca tres veces al escribir la contraseña, cuando se corta la conexión a mitad del pago, cuando dos personas intentan reservar la misma pista en el mismo momento o cuando Manuel vuelve a una reserva que dejó a medias el día anterior. Cada una de esas situaciones necesita una respuesta pensada en el diseño.</p>
+<p>Descubrir estos casos ahora, sobre un diagrama, te lleva unos minutos, mientras que descubrirlos cuando la aplicación ya está publicada te costará usuarios que se van y no vuelven.</p>
+<p>En este punto es donde tus personas empiezan a resultarte realmente útiles. Recorre cada flujo poniéndote en el lugar de cada una y pregúntate dónde se quedaría atascada. En el caso de Lucía, que reserva en el autobús con una sola mano, puedes preguntarte si podrá terminar la reserva aunque la interrumpan dos veces o si se guardará lo que llevaba hecho si cierra la aplicación para contestar un mensaje. En el caso de una persona que usa un lector de pantalla, tendrás que comprobar si hay algún paso que dependa solo de información visual, como una pista libre que únicamente se distingue por estar pintada de verde. Hacerte estas preguntas ahora, sobre un diagrama, te evitará tener que rediseñar pantallas enteras dentro de unos meses (RA5-a, RA6-c).</p>
+<h3 id="el-flujo-del-mvp-y-los-flujos-complementarios">El flujo del MVP y los flujos complementarios</h3>
+<p>Empieza dibujando un único flujo que recorra el MVP de principio a fin, desde que la persona entra en la aplicación hasta que sale, pasando por cada función del MVP en el orden en que se usaría de verdad. Ese flujo debe incluir el happy path completo y al menos dos o tres casos límite en los momentos más delicados, como el pago, el registro o cualquier paso en el que algo pueda salir mal. Este será el flujo de referencia durante todo el módulo.</p>
+<p>Si mientras lo dibujas descubres una tarea importante que ese flujo no cubre bien (por ejemplo, la tarea principal de una persona secundaria o una situación que se aparta del camino principal pero que tu aplicación tiene que resolver igualmente), dibújala aparte como un flujo complementario. Solo merece la pena hacer un flujo complementario cuando te obliga a tomar decisiones de diseño que el flujo del MVP no te plantea, así que no hagas flujos solo para tener más.</p>
+<p>El nivel de detalle adecuado es el que te permite tomar decisiones. Un flujo que solo dice "el usuario se registra" no te ayuda a diseñar nada, y uno que describe cada campo del formulario ya se parece más a un boceto de pantalla. Lo ideal es un punto intermedio, con las pantallas como unidades, las decisiones bien marcadas y las situaciones de error y de éxito identificadas.</p>
+<h3 id="el-flujo-como-guion-para-evaluar">El flujo como guion para evaluar</h3>
+<p>El user flow que hagas ahora volverá a aparecer en la Órbita 5, donde servirá de guion para el <strong>cognitive walkthrough</strong> (recorrido cognitivo), una prueba en la que se recorre la aplicación terminada paso a paso para comprobar si una persona podría completar cada tarea sin ayuda. Si ahora documentas bien tu flujo, dentro de unos meses tendrás preparada buena parte de esa prueba (RA6-e).</p>
+<h3 id="formato-y-herramienta">Formato y herramienta</h3>
+<p>El flujo se dibuja en FigJam, en el mismo tablero que las personas y el MVP, con las formas estándar y los conectores automáticos de la herramienta. Debe llevar un título que indique qué parte de la aplicación recorre, a qué persona o personas sirve y una anotación en cada punto donde haya quedado alguna decisión de diseño pendiente.</p>
+<p>Si usas IA para hacer un primer borrador del flujo o para buscar casos límite, el procedimiento es el mismo de siempre: lo anotas en el <code>CHANGELOG.md</code>. Ten en cuenta, además, que si la IA te sugiere un caso límite y no eres capaz de explicarlo, todavía no lo has analizado de verdad.</p>
+<p>El esquema siguiente muestra un flujo completo de otro tipo de aplicación, una compra en una tienda online sin registrarse, con su happy path y los caminos que se abren cuando algo falla.</p>
+<p><img alt="Ejemplo de user flow: compra como invitado" src="../img/orbita1_03_esquema_user_flow.svg" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
