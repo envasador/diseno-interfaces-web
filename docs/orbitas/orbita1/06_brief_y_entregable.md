@@ -16,7 +16,7 @@ En este módulo el brief es corto, una o dos páginas en FigJam que cualquiera p
 
 **Los criterios de éxito**, que indican cómo sabrás si el diseño funciona. En este módulo se escriben como frases que se puedan comprobar sobre tus personas, por ejemplo "Lucía puede reservar una pista para el jueves sin ayuda y en menos de un minuto" o "Manuel puede completar la misma reserva con la letra ampliada al 200 % sin que ningún botón se salga de la pantalla". Estos criterios servirán de guion para las pruebas de la Órbita 5, de modo que al escribirlos ahora estás preparando tú mismo la forma en que se evaluará tu diseño (RA6-b, RA6-f).
 
-**Las restricciones**, que son los límites con los que tienes que trabajar: los tecnológicos (los del proyecto que coordinamos con DWEC y DWES), los de tiempo y los que imponen tus propias personas, como los dispositivos que usan, la conexión a internet que tienen o las tecnologías de apoyo que necesitan.
+**Las restricciones**, que son los límites con los que tienes que trabajar: los tecnológicos (los del proyecto que coordinamos con DWEC y DWES), los de tiempo y los que imponen tus propias personas, como los dispositivos que usan, la conexión a internet que tienen o las tecnologías de apoyo que necesitan. Incluye también al menos una restricción ambiental, por ejemplo un peso máximo por página pensado para la persona que tiene peor conexión. Así aplicas desde el principio el criterio 2.4 de las Web Sustainability Guidelines, que pide integrar la sostenibilidad en todas las etapas del proceso de diseño, y tendrás una referencia concreta cuando empieces a maquetar en la Órbita 3.
 
 ### El entregable completo
 

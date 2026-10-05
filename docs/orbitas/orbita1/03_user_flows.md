@@ -12,6 +12,8 @@ En cuanto empiezas a pensar en tu aplicación del polideportivo, se te ocurren m
 
 Para definir tu MVP, abre la ficha de tu persona principal y busca su objetivo más importante. Después haz dos columnas, una con las funciones que entran y otra con las que se quedan fuera, y pasa cada función por tres preguntas: si tu persona principal la necesita para completar su tarea más importante, si puedes construirla con el tiempo y las herramientas del módulo, y si existe mientras tanto otra forma aceptable de resolverla. Cada respuesta tiene que apoyarse en un motivo concreto, y el simple hecho de que una función te guste no es suficiente. Si la respuesta a la primera pregunta es no, esa función se queda fuera de esta versión y la apuntas para la siguiente (RA1-c).
 
+Acotar el MVP tiene, además, una ventaja ambiental. Cada función que añades supone más pantallas, más código y más datos que viajan por la red, y todo eso consume energía cada vez que alguien abre la aplicación, aunque casi nadie llegue a usar esa función. Por eso las Web Sustainability Guidelines recomiendan reducir el contenido, las interacciones y los recorridos que no son imprescindibles (criterio 2.6) y revisar qué funciones se usan de verdad y cuánto aportan (criterio 2.27).
+
 El resultado tiene que ser una lista corta y fácil de justificar, con lo que tendrá tu aplicación en esta versión y una frase por cada función que se ha quedado fuera explicando por qué puede esperar. Guárdala en el mismo tablero de FigJam donde tienes el resto de la investigación, porque a partir de ahora será tu referencia, empezando por los flujos que vas a dibujar en este mismo apartado.
 
 ### Cómo se dibuja un user flow

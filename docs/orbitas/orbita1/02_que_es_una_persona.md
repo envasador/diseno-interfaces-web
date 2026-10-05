@@ -76,7 +76,7 @@ La ficha se guarda en FigJam, en el mismo tablero que el resto de la investigaci
 
 **Una cita** que resuma el principal problema de esa persona con el tema de tu aplicación. Tiene que ser algo que alguien podría haber dicho de verdad en una entrevista, como "yo reservo el lunes por la noche, porque el martes a las nueve ya no queda ninguna pista libre".
 
-**El contexto de uso**, es decir, cuándo, dónde y en qué condiciones usa la aplicación: qué dispositivos tiene, qué conexión a internet, en qué lugar suele estar y en qué momento del día. Presta especial atención a la conexión. Si una de tus personas se conecta con una red lenta o con un móvil poco potente, ese dato decidirá en la Órbita 3 cuánto puede pesar tu web, porque cada kilobyte le cuesta tiempo de carga a esa persona y consume energía en todos los casos (C6.f).
+**El contexto de uso**, es decir, cuándo, dónde y en qué condiciones usa la aplicación: qué dispositivos tiene, qué conexión a internet, en qué lugar suele estar y en qué momento del día. Presta especial atención a la conexión. Si una de tus personas se conecta con una red lenta o con un móvil poco potente, ese dato decidirá en la Órbita 3 cuánto puede pesar tu web, porque cada kilobyte le cuesta tiempo de carga a esa persona y consume energía en todos los casos (C6.f). Las Web Sustainability Guidelines recogen esta idea en su criterio 2.2, que pide comprender las necesidades y limitaciones de los usuarios y eliminar las barreras que les impiden acceder al producto.
 
 **Los objetivos**, tanto lo que quiere conseguir de forma inmediata como lo que busca en el fondo.
 

@@ -10,7 +10,7 @@ A estas alturas tendrás tus personas, un tablero lleno de notas y una lista de 
 2. ¿Puedes construirla con el tiempo y las herramientas del módulo?
 3. ¿Existe, mientras tanto, otra forma aceptable de resolverla?
 
-Si la respuesta a la primera pregunta es no, la función se queda fuera de esta versión. Anótala en la columna correspondiente junto con el motivo, para tenerla en cuenta en la siguiente versión.
+Si la respuesta a la primera pregunta es no, la función se queda fuera de esta versión. Anótala en la columna correspondiente junto con el motivo, para tenerla en cuenta en la siguiente versión. Ten en cuenta que cada función que dejas fuera también es contenido, datos y energía que tu aplicación no va a consumir.
 
 **Dibuja el user flow.** Con el MVP decidido, dibuja en FigJam un único flujo que lo recorra entero, usando la notación habitual: una píldora para el principio y el final, un rectángulo para cada pantalla o estado, un rombo para cada decisión y flechas para indicar cómo se pasa de un paso a otro. Empieza siempre por el happy path, que es el recorrido en el que todo sale bien, y después añade al menos dos o tres casos límite en los momentos más delicados, por ejemplo qué ocurre si la contraseña es incorrecta, si se corta la conexión a mitad del pago o si alguien vuelve a una reserva que dejó a medias. Esos son los momentos en los que las aplicaciones suelen perder a sus usuarios, así que merecen más atención de la que parece. Si descubres una tarea importante que el flujo principal no cubre bien, dibújala aparte como un flujo complementario.
 

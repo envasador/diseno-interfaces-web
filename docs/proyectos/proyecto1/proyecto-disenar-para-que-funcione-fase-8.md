@@ -4,7 +4,7 @@ La hipótesis que escribiste el primer día ha pasado por encuestas, entrevistas
 
 #### **Qué tienes que hacer:**
 
-**Escribe el brief definitivo.** Parte de la hipótesis de la Fase 1 y complétala con sus cinco elementos: el problema respaldado por datos, el alcance que marca tu MVP, las personas (con un enlace a cada ficha), unos criterios de éxito que se puedan comprobar y las restricciones del proyecto.
+**Escribe el brief definitivo.** Parte de la hipótesis de la Fase 1 y complétala con sus cinco elementos: el problema respaldado por datos, el alcance que marca tu MVP, las personas (con un enlace a cada ficha), unos criterios de éxito que se puedan comprobar y las restricciones del proyecto, entre ellas al menos una ambiental (por ejemplo, un peso máximo por página pensado para la persona con peor conexión).
 
 **Comprueba que todo está enlazado.** Revisa que los seis documentos de la órbita (brief, personas, MVP con user flow, sitemap, wireframes y prototipo) estén enlazados entre sí y que el `CHANGELOG.md` recoja todas las veces que has usado una IA durante la órbita.
 

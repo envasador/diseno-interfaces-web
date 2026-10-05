@@ -6,6 +6,8 @@ Cuando tienes una idea para una aplicación, lo normal es querer verla cuanto an
 
 Investigar sirve para tener esa información **antes** de decidir. Te llevará unos días al principio del proyecto, pero te ahorrará semanas de correcciones al final.
 
+Esas primeras decisiones también determinan buena parte del impacto ambiental de lo que vas a construir. La Comisión Europea calcula que alrededor del 80 % del impacto ambiental de un producto se decide en la fase de diseño, y en una aplicación eso se traduce en algo muy concreto: cada pantalla, cada imagen y cada función que no hace falta consume datos y energía cada vez que alguien la abre. Investigar para saber qué necesita de verdad la gente es, por tanto, el primer paso para diseñar de forma sostenible, lo que en este módulo llamamos [ecodiseño digital](../../introduccion/index.md#el-impacto-ambiental-de-lo-digital).
+
 ### Tú no eres el usuario
 
 Después de varias semanas trabajando en tu proyecto conocerás cada detalle de cómo funciona: dónde está cada opción, qué hace cada botón y por qué el menú está colocado donde está. Ese conocimiento te viene muy bien para construirlo, pero te pone en una situación muy distinta a la de alguien que abre tu aplicación por primera vez. Sin darte cuenta, te habrás convertido en la persona para la que todo resulta evidente.

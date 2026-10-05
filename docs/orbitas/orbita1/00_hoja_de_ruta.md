@@ -49,7 +49,7 @@ Después, enlaza las pantallas entre sí para que al pulsar un botón se pase a 
 
 ### Paso 8: Cierra el brief y entrega
 
-En este último paso, la hipótesis del primer día se convierte en el **brief** definitivo, un documento breve que recoge el problema respaldado por tus datos, lo que incluye la primera versión, las personas, unos criterios para comprobar si el diseño funciona y las limitaciones del proyecto. Revisa también que los seis documentos de la órbita estén enlazados entre sí y que el `CHANGELOG.md` recoja todas las veces que has usado una IA.
+En este último paso, la hipótesis del primer día se convierte en el **brief** definitivo, un documento breve que recoge el problema respaldado por tus datos, lo que incluye la primera versión, las personas, unos criterios para comprobar si el diseño funciona y las limitaciones del proyecto (entre ellas, alguna limitación ambiental, como el peso máximo de las páginas). Revisa también que los seis documentos de la órbita estén enlazados entre sí y que el `CHANGELOG.md` recoja todas las veces que has usado una IA.
 
 Una buena forma de saber si has terminado es enseñarle el tablero a alguien que no conozca tu proyecto, sin darle ninguna explicación. Si lo entiende sin que tengas que explicarle nada, el trabajo está listo.
 

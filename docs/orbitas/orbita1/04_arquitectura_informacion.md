@@ -28,6 +28,8 @@ La arquitectura de la información se construye en tres pasos, y siempre despué
 
 **Cómo se llama cada sección.** Usa las mismas palabras que emplearon tus personas en las entrevistas para hablar de sus tareas. Un nombre funciona cuando la persona adivina qué va a encontrar antes de pulsar. "Mis reservas", por ejemplo, se entiende a la primera, mientras que "Gestión de actividad" obliga a entrar para averiguar qué contiene, y mucha gente prefiere no hacerlo. En general, cuanto más convencional sea la navegación, mejor funcionará (RA6-h).
 
+Una buena arquitectura de la información también ahorra recursos. Cada vez que alguien entra en una sección equivocada y tiene que volver atrás, su dispositivo descarga páginas que no necesitaba, de modo que una navegación clara reduce los datos que se transfieren y la energía que se consume. Las Web Sustainability Guidelines lo recogen en dos criterios: que la navegación y la orientación estén bien estructuradas para evitar errores y cargas repetidas (criterio 2.8) y que se usen patrones de diseño conocidos, porque hacen más corto el recorrido de quien usa la aplicación (criterio 2.10).
+
 ### Antes de darlo por terminado
 
 Revisa el sitemap dos veces. Primero compáralo con tu MVP para asegurarte de que cada función tiene su pantalla y de que no se ha colado nada de lo que decidiste dejar fuera. Después recorre tu user flow sobre el sitemap y comprueba que cada paso encuentra su pantalla, sin huecos y con los mismos nombres en los dos documentos.
