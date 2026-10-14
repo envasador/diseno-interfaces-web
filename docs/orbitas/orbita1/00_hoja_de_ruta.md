@@ -13,7 +13,7 @@ No te preocupes si la hipótesis no es perfecta, porque los pasos siguientes sir
 
 ### Paso 2: Estudia lo que ya existe
 
-Es muy probable que alguien haya intentado resolver antes un problema parecido al tuyo, así que antes de inventar nada conviene ver qué ha hecho. Busca dos o tres aplicaciones o webs que traten el mismo problema (las llamaremos **referentes**) y aplica a una pantalla de cada una el **test de los cinco segundos** con Lyssna, que consiste en enseñar la pantalla a alguien durante cinco segundos y preguntarle qué ha entendido. Anota también cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios.
+Es muy probable que alguien haya intentado resolver antes un problema parecido al tuyo, así que antes de inventar nada conviene ver qué ha hecho. Busca dos o tres aplicaciones o webs que traten el mismo problema (las llamaremos **referentes**) y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios. Si quieres, puedes aplicar además a una pantalla de cada una el **test de los cinco segundos** con Lyssna, que consiste en enseñar la pantalla a alguien durante cinco segundos y preguntarle qué ha entendido. Este test es optativo.
 
 Al mismo tiempo, prepara una **encuesta** con Tally. Te servirá para detectar tendencias en un grupo más amplio de gente y, además, para encontrar a las personas a las que entrevistarás en el paso siguiente.
 

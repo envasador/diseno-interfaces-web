@@ -28,7 +28,9 @@ Apuntes: [1. Por qué investigamos antes de diseñar](../../orbitas/orbita1/01_p
 
 ### Paso 2. Estudia los referentes y lanza la encuesta
 
-Elige dos o tres aplicaciones o webs que intenten resolver el mismo problema que el tuyo. Aplica a una pantalla de cada una el **test de los cinco segundos** con Lyssna, y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios. Como todavía no tienes pantallas propias, este test se hace siempre sobre los referentes.
+Elige dos o tres aplicaciones o webs que intenten resolver el mismo problema que el tuyo y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios.
+
+Si quieres ir un paso más allá, puedes aplicar a una pantalla de cada referente el **test de los cinco segundos** con Lyssna, que te dirá qué transmite a primera vista. Es optativo. Si lo haces, añade los resultados al tablero junto al análisis de referentes.
 
 Al mismo tiempo, publica una **encuesta** con Tally. Las preguntas tienen que salir de lo que todavía no sabes sobre tu hipótesis (de contexto, de comportamiento y de dificultad), y al final tiene que incluir una pregunta para pedir permiso para contactar con quien la responda, porque de ahí saldrán las personas a las que vas a entrevistar.
 
@@ -42,7 +44,7 @@ Este es el paso que no puedes delegar en una IA. Lo que una persona tarda en con
 
 ### Paso 4. Construye las personas
 
-Agrupa todas las notas (entrevistas, encuesta y tests de cinco segundos) con un **affinity mapping** y deja que los grupos se formen solos. De esos grupos saldrán dos o tres **personas**. Cada ficha lleva un nombre, una cita verosímil, el contexto de uso (dispositivo, conexión, lugar y momento del día), los objetivos y las frustraciones. Indica cuál es la persona principal y cuáles son secundarias.
+Agrupa todas las notas (entrevistas, encuesta y análisis de referentes) con un **affinity mapping** y deja que los grupos se formen solos. De esos grupos saldrán dos o tres **personas**. Cada ficha lleva un nombre, una cita verosímil, el contexto de uso (dispositivo, conexión, lugar y momento del día), los objetivos y las frustraciones. Indica cuál es la persona principal y cuáles son secundarias.
 
 Una de las personas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva) y la misma importancia que las demás. Su ficha recoge además el tipo de diversidad funcional, las tecnologías de apoyo que utiliza, si usa alguna, y los ajustes que tiene en su dispositivo.
 
@@ -99,7 +101,7 @@ El entregable son seis documentos enlazados entre sí, repartidos en dos archivo
 | **Wireframes** | Figma Design | Las pantallas del happy path en escala de grises, con los mismos nombres que en el sitemap |
 | **Prototipo navegable** | Figma Design | Los wireframes conectados y los resultados de la prueba en Lyssna |
 
-En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes, los resultados del test de los cinco segundos, el resumen de la encuesta y las notas de las entrevistas, anonimizadas y con el consentimiento registrado. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
+En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes (con los resultados del test de los cinco segundos, si lo has hecho), el resumen de la encuesta y las notas de las entrevistas, anonimizadas y con el consentimiento registrado. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
 
 **Cómo se entrega.** En la tarea de Moodle Centros sube un documento con cuatro enlaces: el tablero de FigJam, el archivo de Figma Design, el prototipo en modo presentación y el repositorio de GitHub. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en estos archivos durante todo el curso, guarda en cada uno una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 1"), que será la que se evalúe.
 
@@ -129,7 +131,7 @@ Este proyecto trabaja sobre todo el RA1 y el RA6, y empieza a trabajar el RA5 a 
 
 | CE | Texto del criterio | Dónde se trabaja en el proyecto |
 |---|---|---|
-| RA6-a | Se ha analizado la usabilidad de diferentes documentos web. | Análisis de referentes y test de los cinco segundos |
+| RA6-a | Se ha analizado la usabilidad de diferentes documentos web. | Análisis de referentes |
 | RA6-c | Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido. | Personas, MVP, user flow y sitemap construidos a partir de la investigación |
 | RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Encuesta, entrevistas, card sorting, prueba del prototipo y criterios de éxito del brief |
 
@@ -143,7 +145,7 @@ La rúbrica tiene seis criterios, uno por cada parte del trabajo. Cada uno está
 
 | Criterio | Insuficiente (1–4) | Suficiente (5–6) | Notable (7–8) | Sobresaliente (9–10) | CE |
 |---|---|---|---|---|---|
-| **C1. Investigación** | Faltan referentes, encuesta o entrevistas, o las entrevistas no se han hecho con personas reales. | Referentes, test de cinco segundos, encuesta y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
+| **C1. Investigación** | Faltan referentes, encuesta o entrevistas, o las entrevistas no se han hecho con personas reales. | Referentes, encuesta y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
 | **C2. Personas** | Personas inventadas o solo con datos demográficos, o sin persona con diversidad funcional. | Dos o tres personas con algunos rasgos respaldados por datos y la persona con diversidad funcional poco desarrollada. | Personas con la mayoría de rasgos trazables a la investigación, principal y secundarias señaladas y ficha de accesibilidad completa. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. | RA1-a, RA5-a, RA6-c |
 | **C3. MVP y user flow** | Sin MVP, o flujo que solo describe el happy path. | MVP con motivos débiles y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas, flujo completo con punto de entrada y dos o tres casos límite, y cada rombo con todos sus caminos cerrados. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas y listo para usarse como guion de prueba en la Órbita 5. | RA1-c, RA6-c |
 | **C4. Arquitectura de la información y sitemap** | Sin sitemap o con una estructura que no sale de ningún dato. | Sitemap presente, sin card sorting detrás o con tipos de pantalla sin distinguir. | Sitemap construido a partir del card sorting, con los tres tipos de pantalla y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con los datos del card sorting y el vocabulario de las entrevistas, coherentes con el user flow. | RA1-c, RA6-c |

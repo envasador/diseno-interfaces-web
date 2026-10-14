@@ -48,13 +48,13 @@ Las preguntas que te ayudarán en esta fase son de tres tipos. Las de **contexto
 
 #### Paso 2: recoge datos
 
-En este módulo vas a trabajar con tres métodos.
+En este módulo vas a trabajar con dos métodos, las encuestas y las entrevistas, y puedes completarlos con un tercero optativo, el test de los cinco segundos.
 
 Las **encuestas** sirven para recoger muchas respuestas y detectar tendencias. Con Tally puedes crear formularios sin límite de respuestas, y te ayudarán a confirmar o descartar tu hipótesis y a encontrar a las personas a las que entrevistarás después. Tienen una limitación importante: recogen lo que la gente dice, y cuando alguien rellena una encuesta tiende a dar una imagen mejor de sí mismo.
 
 Las **entrevistas** son el método que más información útil te dará. Veinte minutos de conversación con alguien que vive el problema te enseñan más que cien respuestas de encuesta. Las preguntas tienen que ser abiertas, como "cuéntame la última vez que reservaste una pista", y debes evitar sugerir las respuestas. Con cinco o seis entrevistas bien hechas suelen aparecer los patrones principales. Es normal que las dos primeras te den algo de vergüenza, pero a partir de la tercera te sentirás mucho más cómodo.
 
-Los **tests de los cinco segundos** consisten en enseñar una pantalla a alguien durante cinco segundos y preguntarle qué ha entendido, de modo que te dicen qué transmite una interfaz a primera vista. Como en esta órbita todavía no tienes pantallas propias, los harás sobre tus referentes, es decir, sobre las webs o aplicaciones que ya intentan resolver el mismo problema que tú. Saber qué percibe la gente en esos cinco segundos te dará información muy útil para el brief. Con Lyssna puedes preparar uno en pocos minutos, y volverás a usar esta herramienta en la Órbita 2 con tus propios diseños (RA1-c, RA6-a).
+El **test de los cinco segundos**, que es optativo, consiste en enseñar una pantalla a alguien durante cinco segundos y preguntarle qué ha entendido, de modo que te dice qué transmite una interfaz a primera vista. Como en esta órbita todavía no tienes pantallas propias, si decides hacerlo será sobre tus referentes, es decir, sobre las webs o aplicaciones que ya intentan resolver el mismo problema que tú. Saber qué percibe la gente en esos cinco segundos te dará información muy útil para el brief. Con Lyssna puedes preparar uno en pocos minutos, y volverás a usar esta herramienta en la Órbita 2 con tus propios diseños (RA1-c, RA6-a).
 
 Investigar con personas reales también implica responsabilidades. Antes de cada entrevista o encuesta, la persona tiene que saber para qué vas a usar sus respuestas y dar su consentimiento. En los datos que guardes y en la documentación del proyecto, las respuestas deben aparecer anonimizadas, porque lo que te interesa son los patrones y no quién dijo cada cosa. Este es tu primer contacto con el diseño responsable, uno de los pilares del módulo: antes de revisar la ética de un producto en la Órbita 5, empezarás cuidando la ética de tu propio proceso de trabajo.
 

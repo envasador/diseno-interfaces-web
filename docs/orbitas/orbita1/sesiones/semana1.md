@@ -65,7 +65,7 @@ El profesor presenta tres fichas de persona: una bien construida, una con demogr
 
 **Análisis de referentes (30 min)**
 
-Cada alumno identifica dos o tres productos digitales que ya resuelven el problema elegido. Con Lyssna crea un test de los cinco segundos sobre una pantalla de cada uno y lo pasa a dos compañeros. Primera entrada en el `CHANGELOG.md`: herramienta usada, qué se testó, qué reveló.
+Cada alumno identifica dos o tres productos digitales que ya resuelven el problema elegido y anota cómo están organizados, qué palabras usan y en qué puntos se atascan sus usuarios. De forma optativa, puede crear con Lyssna un test de los cinco segundos sobre una pantalla de cada uno y pasárselo a dos compañeros.
 
 **Lanzar encuesta Tally (30 min)**
 
