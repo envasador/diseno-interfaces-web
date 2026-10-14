@@ -109,6 +109,10 @@ En el tablero de FigJam tiene que estar también la investigación que respalda 
 
 **Cómo se entrega.** En la tarea de Moodle Centros sube un documento con cuatro enlaces: el tablero de FigJam, el archivo de Figma Design, el prototipo en modo presentación y el repositorio de GitHub. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en estos archivos en las fases siguientes, guarda en cada uno una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 1"), que será la que se evalúe.
 
+En el repositorio de GitHub puedes añadir también el brief, en un archivo `BRIEF.md` o dentro del `README.md`, para tenerlo a mano junto al código cuando empieces a programar.
+
+**Cómo se presenta.** El tablero tiene que poder recorrerse sin que estés tú para explicarlo, así que ordénalo siguiendo los pasos del proyecto y pon un título a cada zona. Para que quede bien presentado, puedes partir de la plantilla de UI From Mars.
+
 **Cuándo.** Al final de la semana 4. La fecha y la hora exactas están en la tarea de Moodle Centros.
 
 ---
