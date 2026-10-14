@@ -86,7 +86,7 @@ Apuntes: [5. Del flujo al wireframe](../../orbitas/orbita1/05_wireframes.md).
 
 ### Paso 8. Cierra el brief
 
-Convierte la hipótesis del primer día en el **brief** del proyecto, una o dos páginas en FigJam que se lean en unos cinco minutos, con sus cinco elementos: el problema respaldado por datos, el alcance que marca el MVP, las personas (con un enlace a cada ficha), unos criterios de éxito que se puedan comprobar sobre tus personas y las restricciones del proyecto. Entre las restricciones tiene que haber al menos una ambiental, por ejemplo un peso máximo por página pensado para la persona con peor conexión, tal como pide el criterio 2.4 de las Web Sustainability Guidelines del W3C.
+Convierte la hipótesis del primer día en el **brief** del proyecto. Puedes hacer el borrador en FigJam, pero el brief final tiene que quedar escrito en el repositorio de GitHub, en un archivo `BRIEF.md`, con una extensión que se lea en unos cinco minutos y con sus cinco elementos: el problema respaldado por datos, el alcance que marca el MVP, las personas (con un enlace a cada ficha), unos criterios de éxito que se puedan comprobar sobre tus personas y las restricciones del proyecto. Entre las restricciones tiene que haber al menos una ambiental, por ejemplo un peso máximo por página pensado para la persona con peor conexión, tal como pide el criterio 2.4 de las Web Sustainability Guidelines del W3C.
 
 Por último, enseña el tablero a alguien que no conozca tu proyecto, sin explicarle nada. Si en unos cinco minutos entiende de qué trata y cómo funciona tu aplicación, está listo para entregar.
 
@@ -96,11 +96,11 @@ Apuntes: [6. El brief de proyecto y el entregable](../../orbitas/orbita1/06_brie
 
 ## Qué entregas
 
-El entregable son seis documentos enlazados entre sí, repartidos en dos archivos de Figma, más el repositorio del proyecto.
+El entregable son seis documentos enlazados entre sí, repartidos entre dos archivos de Figma y el repositorio del proyecto.
 
 | Documento | Dónde | Qué tiene que incluir |
 |---|---|---|
-| **Brief de proyecto** | FigJam | Los cinco elementos, con al menos una restricción ambiental, junto a la hipótesis inicial |
+| **Brief de proyecto** | GitHub (`BRIEF.md`) | Los cinco elementos, con al menos una restricción ambiental, enlazado desde el tablero junto a la hipótesis inicial |
 | **Personas** | FigJam | Dos o tres fichas, con la principal señalada y cada rasgo trazable a la investigación |
 | **MVP y user flow** | FigJam | Las dos columnas con el motivo de cada descarte, el flujo del MVP con happy path y casos límite y los flujos complementarios, si los hay |
 | **Sitemap** | FigJam | El árbol con pantallas principales, secundarias y de sistema, revisado frente al MVP y al user flow |
@@ -111,7 +111,7 @@ En el tablero de FigJam tiene que estar también la investigación que respalda 
 
 **Cómo se entrega.** En la tarea de Moodle Centros sube un documento con cuatro enlaces: el tablero de FigJam, el archivo de Figma Design, el prototipo en modo presentación y el repositorio de GitHub. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en estos archivos en las fases siguientes, guarda en cada uno una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 1"), que será la que se evalúe.
 
-En el repositorio de GitHub puedes añadir también el brief, en un archivo `BRIEF.md` o dentro del `README.md`, para tenerlo a mano junto al código cuando empieces a programar.
+El brief final tiene que estar en el repositorio de GitHub, en el archivo `BRIEF.md`, y el `README.md` tiene que enlazarlo. Así lo tendrás a mano junto al código cuando empieces a programar.
 
 **Cómo se presenta.** El tablero tiene que poder recorrerse sin que estés tú para explicarlo, así que ordénalo siguiendo los pasos del proyecto y pon un título a cada zona. Para que quede bien presentado, puedes partir de la plantilla de UI From Mars.
 
@@ -156,7 +156,7 @@ En este proyecto cuenta tanto lo que haces como la forma en que lo cuentas. Un b
 | **C3. MVP y user flow** | No hay MVP ni user flow. | Falta el MVP, o el flujo solo describe el happy path o no usa la notación habitual. | MVP sin motivos claros para lo que se queda fuera y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas y un motivo por cada función descartada. Flujo con punto de entrada, happy path y al menos dos o tres casos límite, con todos los caminos cerrados y la notación correcta. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas, legible de un vistazo y listo para usarse como guion de prueba de la aplicación terminada. | RA1-c, RA6-c |
 | **C4. Arquitectura de la información y sitemap** | No hay sitemap. | Sitemap con una estructura que no sale de ningún dato o que no cubre el MVP. | Sitemap sin inventario detrás, con tipos de pantalla sin distinguir o con nombres que no coinciden con el user flow. | Sitemap construido a partir del inventario, con pantallas principales, secundarias y de sistema diferenciadas y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con el vocabulario de las entrevistas (y con el card sorting, si se ha hecho), coherentes con el MVP y el user flow. | RA1-c, RA6-c |
 | **C5. Wireframes y prototipo** | No hay wireframes ni prototipo. | Wireframes con color o tipografías reales, sin conexión entre pantallas o que no cubren el happy path. | Wireframes del happy path con nombres distintos a los del sitemap, pantallas que faltan o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona principal, y un prototipo que se recorre de principio a fin, con cada pantalla trazable al sitemap y al user flow. | Prototipo probado en Lyssna con cuatro o cinco personas, con los resultados anotados y los cambios hechos y documentados a partir de la prueba. Sin esta prueba, el criterio no pasa de Notable. | RA1-a, RA1-e, RA6-e |
-| **C6. Brief** | No hay brief, o se limita a repetir la hipótesis inicial. | Brief al que le faltan elementos o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados o difíciles de leer. | Brief completo, con el problema respaldado por datos, el alcance del MVP, enlaces a las personas, criterios de éxito y al menos una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión del proyecto. | RA1-c, RA6-e |
+| **C6. Brief** | No hay brief en el repositorio, o se limita a repetir la hipótesis inicial. | Brief al que le faltan elementos o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados o difíciles de leer. | Brief completo en el `BRIEF.md` del repositorio, con el problema respaldado por datos, el alcance del MVP, enlaces a las personas, criterios de éxito y al menos una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión del proyecto. | RA1-c, RA6-e |
 | **C7. Redacción, organización y presentación** | Documentos que no se pueden leer ni recorrer: textos inexistentes o ininteligibles, tablero caótico o enlaces que no abren. | Faltas de ortografía frecuentes, frases que no se entienden o tablero desordenado que no se puede recorrer sin explicación. | Se entiende, pero con errores de ortografía o de redacción, zonas sin título o documentos mezclados que obligan a buscar. | Textos claros y sin faltas, tablero ordenado siguiendo los pasos del proyecto con un título en cada zona, nombres coherentes entre todos los documentos y enlaces que funcionan. | Presentación cuidada (por ejemplo, a partir de la plantilla de UI From Mars), con una jerarquía visual clara y textos breves y precisos. Cualquiera entiende el proyecto en cinco minutos sin ninguna explicación. | RA1-a, RA1-e |
 
 ### La auditoría de decisión oral
@@ -169,7 +169,7 @@ Guarda bien el texto de tus entrevistas, porque te lo pediré más adelante. Y t
 
 ## Antes de entregar
 
-* La hipótesis inicial sigue en el tablero, cerca del brief.
+* La hipótesis inicial sigue en el tablero, con un enlace al `BRIEF.md` del repositorio.
 * Hay al menos dos entrevistas en texto, anonimizadas y con el consentimiento registrado.
 * Cada rasgo de cada persona tiene su dato, y las suposiciones están marcadas.
 * Cada función descartada del MVP lleva su motivo.
@@ -177,7 +177,7 @@ Guarda bien el texto de tus entrevistas, porque te lo pediré más adelante. Y t
 * El user flow se recorre sobre el sitemap sin huecos y con los mismos nombres.
 * Cada frame de Figma Design se llama igual que su pantalla en el sitemap.
 * El prototipo se recorre de principio a fin y, si lo has probado, los resultados de la prueba están anotados.
-* El brief tiene sus cinco elementos, incluida la restricción ambiental.
+* El brief final está en el `BRIEF.md` del repositorio, enlazado desde el `README.md`, con sus cinco elementos, incluida la restricción ambiental.
 * Has revisado la ortografía y la redacción de todos los textos: brief, fichas, notas y anotaciones del flujo.
 * El tablero está ordenado siguiendo los pasos del proyecto y cada zona tiene su título.
 * El `CHANGELOG.md` recoge cada uso de IA del proyecto.

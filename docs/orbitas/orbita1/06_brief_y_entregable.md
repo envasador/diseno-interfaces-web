@@ -6,7 +6,7 @@ El **brief de proyecto** es un documento breve que explica qué vas a construir,
 
 ### Qué contiene el brief
 
-En este módulo el brief es corto, una o dos páginas en FigJam que cualquiera pueda leer en unos cinco minutos. Si se necesita mucho más tiempo para entenderlo, probablemente le sobra algo. Tiene cinco elementos.
+En este módulo el brief es corto, un documento que cualquiera pueda leer en unos cinco minutos. Puedes hacer el borrador en FigJam, pero la versión final se queda escrita en el repositorio de GitHub del proyecto, en un archivo `BRIEF.md`, para tenerla junto al código. Si se necesita mucho más tiempo para entenderlo, probablemente le sobra algo. Tiene cinco elementos.
 
 **El problema que resuelve tu aplicación**, contado desde el punto de vista de tus personas y respaldado por la investigación. Para comprobar si está bien planteado, imagina que no tienes ninguno de los datos que has recogido y vuelve a leer la frase. Si sigue pareciendo igual de convincente, es probable que describa un problema que has supuesto, porque los problemas que se descubren investigando vienen siempre acompañados de datos.
 
@@ -20,13 +20,15 @@ En este módulo el brief es corto, una o dos páginas en FigJam que cualquiera p
 
 ### El entregable completo
 
-Cuando cierres el brief, el entregable de la Órbita 1 estará formado por seis documentos enlazados entre sí. Cuatro de ellos se hacen en FigJam, la pizarra colaborativa de Figma, y los otros dos en Figma Design.
+Cuando cierres el brief, el entregable de la Órbita 1 estará formado por seis documentos enlazados entre sí. El brief está en el repositorio de GitHub, tres documentos se hacen en FigJam, la pizarra colaborativa de Figma, y los otros dos en Figma Design.
 
-En **FigJam** tendrás el brief de proyecto, las fichas de las personas, el MVP con el user flow completo (junto con los flujos complementarios que hayas dibujado) y el sitemap.
+En **GitHub** tendrás el brief final, en el archivo `BRIEF.md`, enlazado desde el `README.md`.
+
+En **FigJam** tendrás las fichas de las personas, el MVP con el user flow completo (junto con los flujos complementarios que hayas dibujado) y el sitemap.
 
 En **Figma Design** tendrás los wireframes de todas las pantallas del happy path, con los mismos nombres que en el sitemap, y el prototipo navegable que las conecta.
 
-Los dos archivos tienen que estar enlazados, porque serán la referencia de todo lo que hagas en el resto del módulo. Cualquier decisión que tomes en las órbitas siguientes debería poder relacionarse con algo que construiste aquí.
+Los dos archivos de Figma y el repositorio tienen que estar enlazados entre sí, porque serán la referencia de todo lo que hagas en el resto del módulo. Cualquier decisión que tomes en las órbitas siguientes debería poder relacionarse con algo que construiste aquí.
 
 ![El entregable de la Órbita 1 como capa 0 del design system](img/orbita1_06_esquema_entregable.svg)
 
