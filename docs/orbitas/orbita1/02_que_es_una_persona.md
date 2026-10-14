@@ -30,7 +30,7 @@ No todas las personas tienen el mismo peso en el diseño. La **persona principal
 
 Las **personas secundarias** también usarán la aplicación, y sus necesidades sirven para matizar lo que has decidido para la principal, sin llegar a cambiarlo por completo.
 
-Como ya viste en el apartado anterior, una de tus dos o tres personas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva), y tendrá la misma importancia que las demás. Si está bien construida, te acordarás de ella cada vez que tengas que decidir un contraste, el tamaño de un botón, la estructura del código o el orden en que se recorre una página con el teclado. Eso es justo lo que buscamos, que la accesibilidad forme parte del diseño desde el primer día (RA5-a).
+Como ya viste en el apartado anterior, es muy recomendable que una de tus dos o tres personas tenga algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva), con la misma importancia que las demás. Si está bien construida, te acordarás de ella cada vez que tengas que decidir un contraste, el tamaño de un botón, la estructura del código o el orden en que se recorre una página con el teclado. Eso es justo lo que buscamos, que la accesibilidad forme parte del diseño desde el primer día (RA5-a).
 
 ### Cómo se construye una persona
 
@@ -82,6 +82,6 @@ La ficha se guarda en FigJam, en el mismo tablero que el resto de la investigaci
 
 **Las frustraciones**, que son las cosas que le impiden conseguir esos objetivos ahora mismo y las que más te van a orientar a la hora de diseñar.
 
-En la ficha de la persona con diversidad funcional hay que añadir el tipo de diversidad funcional, las tecnologías de apoyo que utiliza (si usa alguna) y los ajustes que tiene configurados en su dispositivo, como el tamaño de letra o el modo de alto contraste. Con esa información, esa persona te servirá para comprobar la accesibilidad de tu diseño durante todo el módulo (RA5-a).
+Si incluyes una persona con diversidad funcional, en su ficha hay que añadir el tipo de diversidad funcional, las tecnologías de apoyo que utiliza (si usa alguna) y los ajustes que tiene configurados en su dispositivo, como el tamaño de letra o el modo de alto contraste. Con esa información, esa persona te servirá para comprobar la accesibilidad de tu diseño durante todo el módulo (RA5-a).
 
 Puedes consultar algunos [ejemplos de personas](ejemplos/personas.html) para ver cómo queda una ficha terminada.

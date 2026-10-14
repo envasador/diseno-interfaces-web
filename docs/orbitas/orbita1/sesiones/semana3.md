@@ -33,14 +33,14 @@ El profesor presenta situaciones que siempre ocurren y raramente se diseñan: co
 Dinámica de "romper el flujo": por parejas, cada alumno intenta encontrar caminos sin salida en el flujo del compañero. Los huecos se anotan como decisiones abiertas. Después cada alumno mapea los flujos de las dos tareas restantes.
 
 ### Para cerrar
-El alumno recorre sus flujos desde la perspectiva de la persona con diversidad funcional y anota un punto donde cada flujo podría fallarle.
+El alumno recorre sus flujos desde la perspectiva de cada persona (empezando por la de diversidad funcional, si la tiene) y anota un punto donde cada flujo podría fallarle.
 
 ### Entregable
 Flujos de las tres tareas críticas con happy path y casos límite.
 
 ---
 
-## Miércoles (2h) — Preparar el card sorting
+## Miércoles (2h) — Preparar el card sorting (optativo)
 
 ### Antes de clase
 Leer el apartado 4 de la Órbita 1.

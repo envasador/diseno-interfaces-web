@@ -12,7 +12,7 @@ Llegar con un borrador del brief escrito.
 
 ### En clase
 
-**Primera hora — Card sorting y sitemap**
+**Primera hora — Card sorting (optativo) y sitemap**
 
 Card sorting en grupos de tres (40 min): cada alumno pasa sus tarjetas a los otros dos para que las agrupen de forma independiente y en silencio, y nombren cada grupo. El alumno propietario observa sin intervenir.
 
@@ -50,7 +50,7 @@ El tablero terminado y ordenado. Brief legible en 30 segundos sin explicación o
 Todos los tableros abiertos a la vez. Cada alumno recorre los proyectos de sus compañeros y deja exactamente dos comentarios escritos por tablero:
 
 - Una pregunta de auditoría de decisión: "¿de dónde sale esta frustración?", "¿por qué esta sección está en el primer nivel?", "¿qué dato respalda este objetivo?"
-- Una observación concreta: "la persona con diversidad funcional no tiene tecnología de apoyo definida", "el flujo de pago no tiene caso límite para error de tarjeta"
+- Una observación concreta: "la persona secundaria no tiene contexto de uso definido", "el flujo de pago no tiene caso límite para error de tarjeta"
 
 Los comentarios quedan en el tablero como registro permanente.
 

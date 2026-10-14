@@ -26,7 +26,7 @@ Construcción de la persona primaria en Figma. Tiempo limitado: 45 minutos. La p
 
 Revisión en parejas (15 min): ¿con esta persona tomarías alguna decisión de diseño diferente a la que tomarías sin ella? Si la respuesta es no, la persona no tiene especificidad suficiente.
 
-**Tercera hora — Persona con diversidad funcional**
+**Tercera hora — Persona con diversidad funcional (recomendada)**
 
 El profesor introduce los cuatro tipos más relevantes para el diseño de interfaces (15 min):
 
@@ -35,13 +35,13 @@ El profesor introduce los cuatro tipos más relevantes para el diseño de interf
 - **Cognitiva**: dislexia, TDAH, ansiedad digital. Simplicidad, predecibilidad, carga cognitiva.
 - **Auditiva**: sordera, hipoacusia. Alternativas al audio, subtítulos, alertas visuales.
 
-Cada alumno construye la persona con diversidad funcional (45 min). Incluye: tipo de diversidad funcional, tecnologías de apoyo y ajustes de sistema. Criterio de calidad: el alumno escribe una decisión de diseño que ya cambia por tener esta persona en el set. Si no hay ninguna, la persona no está bien construida.
+Cada alumno construye una segunda persona (45 min), preferiblemente con diversidad funcional. Si la incluye, la ficha recoge el tipo de diversidad funcional, las tecnologías de apoyo y los ajustes de sistema. Criterio de calidad: el alumno escribe una decisión de diseño que ya cambia por tener esta persona en el set. Si no hay ninguna, la persona no está bien construida.
 
 ### Para cerrar
-El alumno tiene al menos dos personas en Figma: la primaria y la de diversidad funcional, con atributos rastreables hasta la investigación.
+El alumno tiene al menos dos personas en Figma: la primaria y una secundaria (preferiblemente con diversidad funcional), con atributos rastreables hasta la investigación.
 
 ### Entregable
-Affinity mapping · persona primaria · persona con diversidad funcional en Figma.
+Affinity mapping · persona primaria · persona secundaria en Figma.
 
 ---
 
