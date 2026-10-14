@@ -7,14 +7,16 @@
 ## Lunes (3h) — Affinity mapping y construcción de personas
 
 ### Antes de clase
-Tener todas las notas de investigación volcadas en FigJam.
-Haber leído el apartado 3 de la Órbita 1 (pasos 3 y 4).
+Haber realizado al menos dos entrevistas reales con el guión ya escrito. Notas volcadas en FigJam.
+Haber leído el apartado 2 de la Órbita 1 (pasos 3 y 4).
 
 ### En clase
 
-**Primera hora — Affinity mapping**
+**Primera hora — Puesta en común y affinity mapping**
 
-Cada alumno agrupa sus notas por afinidad en FigJam. El profesor circula con una sola pregunta por tablero: ¿este grupo es una temática del usuario o una categoría que estás imponiendo tú? Los grupos que hay que forzar probablemente no son del usuario.
+Puesta en común breve (10-15 min): ¿qué ha sorprendido? ¿Qué esperabais que dijera la gente y no dijo? ¿Qué no esperabais y apareció? El profesor recoge en el tablero compartido los patrones que se repiten entre proyectos distintos.
+
+Después, cada alumno agrupa sus notas por afinidad en FigJam. El profesor circula con una sola pregunta por tablero: ¿este grupo es una temática del usuario o una categoría que estás imponiendo tú? Los grupos que hay que forzar probablemente no son del usuario.
 
 De los grupos emergentes, el alumno extrae los patrones: comportamientos frecuentes, motivaciones principales, frustraciones recurrentes y contextos de uso. Cada atributo debe poder señalar la nota que lo respalda.
 

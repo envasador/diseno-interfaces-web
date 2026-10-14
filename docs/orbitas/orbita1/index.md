@@ -32,6 +32,6 @@ Al terminar la órbita entregarás seis documentos relacionados entre sí, porqu
 
 ## El proyecto
 
-Todo lo que aprendas en estos apartados lo vas a aplicar a tu propio proyecto, **Diseñar para que funcione**. En el enunciado tienes la rúbrica con la que se evalúa y las ocho fases explicadas paso a paso.
+Todo lo que aprendas en estos apartados lo vas a aplicar a tu propio proyecto, **Diseñar para que funcione**. En el enunciado tienes los ocho pasos, lo que tienes que entregar, los criterios de evaluación y la rúbrica.
 
-[Ir al enunciado del proyecto](../../proyectos/proyecto1/enunciado.md){ .md-button .md-button--primary }
+[Ir al enunciado del proyecto](../../proyectos/orbita1/enunciado.md){ .md-button .md-button--primary }

@@ -14,7 +14,7 @@ En este módulo el brief es corto, una o dos páginas en FigJam que cualquiera p
 
 **Las personas**, con un enlace a cada ficha y una línea que resuma quién es cada una y qué papel tiene en el diseño.
 
-**Los criterios de éxito**, que indican cómo sabrás si el diseño funciona. En este módulo se escriben como frases que se puedan comprobar sobre tus personas, por ejemplo "Lucía puede reservar una pista para el jueves sin ayuda y en menos de un minuto" o "Manuel puede completar la misma reserva con la letra ampliada al 200 % sin que ningún botón se salga de la pantalla". Estos criterios servirán de guion para las pruebas de la Órbita 5, de modo que al escribirlos ahora estás preparando tú mismo la forma en que se evaluará tu diseño (RA6-b, RA6-f).
+**Los criterios de éxito**, que indican cómo sabrás si el diseño funciona. En este módulo se escriben como frases que se puedan comprobar sobre tus personas, por ejemplo "Lucía puede reservar una pista para el jueves sin ayuda y en menos de un minuto" o "Manuel puede completar la misma reserva con la letra ampliada al 200 % sin que ningún botón se salga de la pantalla". Estos criterios servirán de guion para las pruebas de la Órbita 5, de modo que al escribirlos ahora estás preparando tú mismo la forma en que se evaluará tu diseño (RA6-e, RA6-f).
 
 **Las restricciones**, que son los límites con los que tienes que trabajar: los tecnológicos (los del proyecto que coordinamos con DWEC y DWES), los de tiempo y los que imponen tus propias personas, como los dispositivos que usan, la conexión a internet que tienen o las tecnologías de apoyo que necesitan. Incluye también al menos una restricción ambiental, por ejemplo un peso máximo por página pensado para la persona que tiene peor conexión. Así aplicas desde el principio el criterio 2.4 de las Web Sustainability Guidelines, que pide integrar la sostenibilidad en todas las etapas del proceso de diseño, y tendrás una referencia concreta cuando empieces a maquetar en la Órbita 3.
 
@@ -39,3 +39,7 @@ Esta órbita trabaja sobre todo los resultados de aprendizaje RA1 y RA6. Para ev
 Las preguntas de la auditoría siempre piden el motivo de una decisión y esperan una respuesta basada en datos. Por ejemplo, te puedo preguntar por qué Lucía es la persona principal, de qué entrevista sale una frustración concreta, por qué un error en el pago se resuelve dejando que la persona lo intente otra vez en lugar de devolverla al calendario, por qué "Mis reservas" está en el primer nivel del menú o por qué una reserva se completa en tres pantallas. Una respuesta válida remite a tu propia investigación, mientras que una respuesta como "es lo que se suele hacer" o "me lo sugirió la herramienta" indica que la decisión todavía no la has tomado tú.
 
 Por eso te recomiendo que guardes bien las notas de tus entrevistas, porque te las pediré a lo largo del curso.
+
+El enunciado del proyecto recoge todo lo que tienes que entregar en esta órbita, con los criterios de evaluación y la rúbrica.
+
+[Ir al enunciado del proyecto](../../proyectos/orbita1/enunciado.md){ .md-button .md-button--primary }

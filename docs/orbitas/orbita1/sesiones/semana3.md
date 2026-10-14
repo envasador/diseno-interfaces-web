@@ -7,7 +7,7 @@
 ## Lunes (3h) — User flows: de la teoría a los tres flujos críticos
 
 ### Antes de clase
-Leer el apartado 4 de la Órbita 1.
+Leer el apartado 3 de la Órbita 1.
 
 ### En clase
 
@@ -43,7 +43,7 @@ Flujos de las tres tareas críticas con happy path y casos límite.
 ## Miércoles (2h) — Preparar el card sorting
 
 ### Antes de clase
-Leer el apartado 5 de la Órbita 1.
+Leer el apartado 4 de la Órbita 1.
 
 ### En clase
 

@@ -1,69 +1,81 @@
- # Semana 1 — Por qué y para quién
+# Semana 1 — Por qué y para quién
 
 **Órbita 1 · 5 horas · 2 sesiones**
 
 ---
 
-## Lunes (3h) — Presentación del módulo, elección de proyecto y análisis de referentes
+## Lunes (3h) — Presentación del módulo, Leyes UX y elección de proyecto
+
+> Sesión reescrita para reflejar lo que pasó realmente el primer día: la presentación fue más completa (al estilo de la programación de aula), se metieron las Leyes UX, y el ejercicio de elección de proyecto se quedó abierto con varias ideas candidatas sin cerrar. El contenido de personas y entrevistas que estaba planificado para esta sesión se ha movido al miércoles.
 
 ### Antes de clase
 Nada. Primera sesión del curso.
 
 ### En clase
 
-**Primera hora — Presentación y arranque**
+**Presentación y arranque**
 
-Presentación del módulo: qué es un design system, qué son las órbitas, qué se produce y qué se defiende. El contrato de evaluación en una frase: cualquier decisión del proyecto puede ser preguntada en cualquier momento, y la respuesta tiene que apoyarse en datos reales o en criterios de diseño documentados.
+Presentación completa del módulo, al estilo de la programación de aula: qué es un design system, qué son las órbitas, qué se produce y qué se defiende en cada una. El contrato de evaluación en una frase: cualquier decisión del proyecto puede ser preguntada en cualquier momento, y la respuesta tiene que apoyarse en datos reales o en criterios de diseño documentados.
 
 Cada alumno inicializa el repositorio GitHub con el `CHANGELOG.md` vacío y abre el tablero de FigJam con el que trabajará todo el curso.
 
-Ejercicio de elección de proyecto — tres preguntas escritas en FigJam:
+**Leyes UX**
+
+Presentación de las Leyes UX (contenido del apartado 1, "Por qué investigamos antes de diseñar"): qué son, por qué importan antes de tener ni una sola pantalla diseñada, y cómo van a aparecer una y otra vez como criterio de decisión a lo largo del módulo.
+
+**Ejercicio de elección de proyecto**
+
+Tres preguntas escritas en FigJam:
 
 - ¿Qué problema resuelve el producto?
 - ¿Quién tiene ese problema en tu entorno cercano?
 - ¿Puedes hablar con esas personas esta semana?
 
-La tercera es el filtro real. Si la respuesta es no, el problema está mal elegido. Cada alumno comparte su problema en una frase. El profesor valida o redirige.
+La tercera es el filtro real. Si la respuesta es no, el problema está mal elegido.
 
-**Segunda hora — Qué es una persona y guión de entrevista**
-
-El profesor presenta tres fichas de persona: una bien construida, una con demografía sin comportamiento y una que describe al usuario ideal. El grupo las analiza. Después cada alumno redacta el guión de su primera entrevista: cinco a siete preguntas abiertas sobre comportamiento real. Revisión en parejas: ¿alguna pregunta sugiere la respuesta? ¿Alguna es cerrada cuando podría ser abierta?
-
-**Tercera hora — Entrevistas en clase y análisis de referentes**
-
-Primera parte (30 min): los alumnos se entrevistan entre sí siguiendo el guión, sobre el problema del entrevistado. Cuatro o cinco minutos por entrevista, cambiando de pareja dos veces. Las notas van a FigJam, una por hallazgo. Esto entrena la técnica pero no sustituye las entrevistas reales con usuarios externos.
-
-Segunda parte (30 min): cada alumno identifica dos o tres productos digitales que ya resuelven el problema elegido. Con Lyssna crea un test de los cinco segundos sobre una pantalla de cada uno y lo pasa a dos compañeros. Primera entrada en el `CHANGELOG.md`: herramienta usada, qué se testó, qué reveló.
+Cada alumno explora varias ideas candidatas que responden a las tres preguntas — no hace falta cerrar hoy en una sola, el objetivo es salir con dos o tres opciones viables. El profesor circula validando candidatas realistas y descartando las que no pasan el filtro de la tercera pregunta.
 
 ### Para cerrar
-El alumno sale con guión revisado, primeras notas en FigJam y análisis de referentes iniciado. Sabe a quién entrevistará fuera de clase antes del miércoles.
+El alumno sale con dos o tres ideas de proyecto candidatas, sin cerrar todavía en una sola, y con las Leyes UX vistas.
+
+### Antes del miércoles
+Cada alumno reduce sus candidatas a una única idea, aplicando otra vez el filtro de las tres preguntas — en particular la tercera.
 
 ### Entregable
-Hipótesis en FigJam · repositorio inicializado · guión de entrevista · primeras notas · primera entrada en `CHANGELOG.md`.
+Dos o tres ideas de proyecto candidatas en FigJam · repositorio inicializado · Leyes UX vistas.
 
 ---
 
-## Miércoles (2h) — Puesta en común y lanzar encuesta
+## Miércoles (2h) — Cierre de idea, personas y lanzar encuesta
+
+> Esta sesión absorbe el contenido de personas y guión de entrevista que originalmente estaba en el lunes, comprimido para caber en las dos horas.
 
 ### Antes de clase
-El alumno llega habiendo hecho al menos dos entrevistas reales fuera de clase. Las notas están en FigJam.
+Idea de proyecto reducida a una sola opción, aplicando el filtro de las tres preguntas del lunes.
 
 ### En clase
 
-**Primera parte (30 min) — Puesta en común de hallazgos**
+**Cierre de idea (15 min)**
 
-¿Qué ha sorprendido? ¿Qué esperabais que dijera la gente y no dijo? ¿Qué no esperabais y apareció? El profesor recoge en el tablero compartido los patrones que se repiten entre proyectos distintos.
+Cada alumno comparte su idea ya cerrada en una frase. El profesor valida o redirige.
 
-**Segunda parte (45 min) — Encuesta Tally**
+**Qué es una persona y guión de entrevista (35 min)**
 
-Cada alumno lanza la encuesta de Tally para ampliar el volumen de datos antes del affinity mapping. Las preguntas salen del guión de entrevista ya revisado.
+El profesor presenta tres fichas de persona: una bien construida, una con demografía sin comportamiento y una que describe al usuario ideal. El grupo las analiza. Después cada alumno redacta el guión de su primera entrevista: cinco a siete preguntas abiertas sobre comportamiento real. Revisión rápida en parejas: ¿alguna pregunta sugiere la respuesta? ¿Alguna es cerrada cuando podría ser abierta?
 
-**Tercera parte (30 min) — Lectura preparatoria**
+**Análisis de referentes (30 min)**
 
-El alumno lee el apartado 3 de la Órbita 1 (pasos 3 y 4) para llegar preparado al lunes siguiente. El profesor resuelve dudas sobre el texto.
+Cada alumno identifica dos o tres productos digitales que ya resuelven el problema elegido. Con Lyssna crea un test de los cinco segundos sobre una pantalla de cada uno y lo pasa a dos compañeros. Primera entrada en el `CHANGELOG.md`: herramienta usada, qué se testó, qué reveló.
+
+**Lanzar encuesta Tally (30 min)**
+
+Cada alumno lanza la encuesta de Tally para ampliar el volumen de datos antes del affinity mapping. Las preguntas salen del guión de entrevista recién escrito.
 
 ### Para cerrar
-Encuesta activa con el enlace compartido con al menos diez personas. Al menos seis notas de hallazgos en FigJam.
+El alumno sale con guión de entrevista terminado, encuesta activa y análisis de referentes iniciado.
+
+### Antes del lunes siguiente
+Al menos dos entrevistas reales fuera de clase con el guión ya escrito, notas en FigJam. Leer el apartado 2 de la Órbita 1 (pasos 3 y 4).
 
 ### Entregable
-Encuesta activa · notas de entrevistas reales en FigJam.
+Idea de proyecto cerrada · guión de entrevista · encuesta activa · análisis de referentes iniciado · primera entrada en `CHANGELOG.md`.

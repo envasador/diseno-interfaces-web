@@ -6,7 +6,7 @@ Bienvenido a la sección de proyectos. Aquí encontrarás los enunciados, recurs
 
 | Proyecto                             | Descripción                    | Fecha límite |
 |--------------------------------------|--------------------------------|--------------|
-| [Proyecto 1](proyecto1/enunciado.md) | Proyecto diseñar para funcione | Octubre      |
+| [Proyecto 1](orbita1/enunciado.md) | Diseñar para que funcione (Órbita 1) | Octubre      |
 | [Proyecto 2](proyecto2/enunciado.md) | Diseñar para que se entienda   | Noviembre    |
 | [Proyecto 3](proyecto3/enunciado.md) | Maquetar para dar forma        | Diciembre    |
 | [Proyecto 4](proyecto4/enunciado.md) | Diseñar para todo el mundo     | Enero        |
@@ -18,4 +18,4 @@ Bienvenido a la sección de proyectos. Aquí encontrarás los enunciados, recurs
 
 ## Entrega
 
-Los proyectos se entregan a través de la plataforma Moodle Centros.
+Los proyectos se entregan a través de la plataforma Moodle Centros. En el enunciado de cada uno tienes qué entregar, cómo hacerlo y una lista para repasar antes de subirlo.

@@ -1,0 +1,173 @@
+# Proyecto de la Órbita 1: Diseñar para que funcione
+
+**Horas:** unas 20 · **Semanas:** de la 1 a la 4 · **RA:** RA1, RA6 y RA5 · **Trabajo:** individual
+
+## El encargo
+
+Durante este curso vas a diseñar un producto digital de principio a fin, y lo vas a hacer en cuatro módulos a la vez: DIW, DWES, DWEC y Despliegue. Este proyecto es la primera parte de ese producto. En él vas a averiguar quién lo va a usar, qué problema tiene esa persona y qué estructura necesita tu aplicación para resolverlo, y vas a comprobar con gente real que esa estructura funciona antes de dedicarle un minuto a su aspecto.
+
+Por eso, durante estas cuatro semanas no vas a elegir colores, tipografías ni logotipos. Todo lo que dibujes será en escala de grises, porque el color y la tipografía pueden mejorar una aplicación que ya funciona, pero no arreglan una que no se entiende. Si al terminar la órbita tu proyecto se entiende y se puede recorrer sin ayuda, el resto del curso consistirá en darle forma con criterio.
+
+El tema lo eliges tú, con una condición: tiene que ser un problema que conozcas de cerca, porque te afecta a ti, a tu familia, a tu equipo o a la gente de tu barrio. Una buena forma de comprobar si has acertado es preguntarte si tú usarías esa aplicación. Si la respuesta es que no, es mejor darse cuenta en la primera semana que a mitad de curso, porque vas a trabajar en este proyecto hasta junio. A este punto de partida lo llamamos **outside-in**: la idea sale de una necesidad que detectas a tu alrededor y de lo que averiguas investigándola, sin un encargo cerrado de partida.
+
+En los apuntes de la órbita verás un ejemplo que se repite en todos los apartados, una aplicación para reservar las pistas del polideportivo municipal, con dos personas, Lucía y Manuel. Úsalo como referencia para entender qué se pide en cada paso, pero tu proyecto tiene que salir de tu propia investigación.
+
+---
+
+## Qué tienes que hacer
+
+El proyecto se organiza en ocho pasos, los mismos de la [hoja de ruta](../../orbitas/orbita1/00_hoja_de_ruta.md). Respeta el orden, porque cada paso utiliza lo que has obtenido en el anterior. En cada uno tienes enlazado el apartado de los apuntes donde se explica cómo hacerlo.
+
+Antes de empezar, crea dos cosas que vas a usar durante toda la órbita: un tablero de FigJam para el proyecto y un repositorio de GitHub con un archivo `CHANGELOG.md` vacío. Cada vez que uses una IA, anotarás en ese archivo qué le pediste, qué te devolvió, qué conservaste y qué cambiaste.
+
+### Paso 1. Escribe la hipótesis
+
+Escribe en el tablero tu punto de partida con esta estructura: "creo que las personas que [contexto] necesitan [objetivo] pero [dificultad]". Por ejemplo: "creo que las personas que juegan al pádel en el polideportivo municipal necesitan reservar pista con antelación, pero solo pueden hacerlo llamando por teléfono en horario de oficina". Es una suposición provisional, y los pasos siguientes sirven para confirmarla, matizarla o descartarla. Déjala en el tablero hasta el final, porque al cerrar el brief se tiene que ver cuánto ha cambiado.
+
+Apuntes: [1. Por qué investigamos antes de diseñar](../../orbitas/orbita1/01_por_que_investigamos.md).
+
+### Paso 2. Estudia los referentes y lanza la encuesta
+
+Elige dos o tres aplicaciones o webs que intenten resolver el mismo problema que el tuyo. Aplica a una pantalla de cada una el **test de los cinco segundos** con Lyssna, y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios. Como todavía no tienes pantallas propias, este test se hace siempre sobre los referentes.
+
+Al mismo tiempo, publica una **encuesta** con Tally. Las preguntas tienen que salir de lo que todavía no sabes sobre tu hipótesis (de contexto, de comportamiento y de dificultad), y al final tiene que incluir una pregunta para pedir permiso para contactar con quien la responda, porque de ahí saldrán las personas a las que vas a entrevistar.
+
+Apuntes: [2. Personas: qué son y cómo se construyen](../../orbitas/orbita1/02_que_es_una_persona.md), pasos 1 y 2.
+
+### Paso 3. Entrevista a cinco o seis personas
+
+Elige, entre quienes respondieron a la encuesta, a cinco o seis personas que encajen en los perfiles que has detectado y habla con cada una unos veinte minutos. Haz preguntas abiertas sobre situaciones reales ("cuéntame la última vez que...") y no sugieras respuestas. Antes de empezar, cada persona tiene que saber para qué vas a usar lo que te cuente y dar su consentimiento, y en tus notas los datos aparecerán anonimizados desde el principio (P1, P2, P3...). Pasa cada descubrimiento a una nota adhesiva del tablero el mismo día de la entrevista.
+
+Este es el paso que no puedes delegar en una IA. Lo que una persona tarda en contestar o lo que cuenta después de un silencio solo aparece en una conversación real.
+
+### Paso 4. Construye las personas
+
+Agrupa todas las notas (entrevistas, encuesta y tests de cinco segundos) con un **affinity mapping** y deja que los grupos se formen solos. De esos grupos saldrán dos o tres **personas**. Cada ficha lleva un nombre, una cita verosímil, el contexto de uso (dispositivo, conexión, lugar y momento del día), los objetivos y las frustraciones. Indica cuál es la persona principal y cuáles son secundarias.
+
+Una de las personas tendrá algún tipo de diversidad funcional (visual, motora, cognitiva o auditiva) y la misma importancia que las demás. Su ficha recoge además el tipo de diversidad funcional, las tecnologías de apoyo que utiliza, si usa alguna, y los ajustes que tiene en su dispositivo.
+
+Cada rasgo de cada ficha tiene que poder relacionarse con un dato de tu investigación. Si no sabes de dónde sale, márcalo como suposición o elimínalo. Presta especial atención al dato de la conexión, porque en la Órbita 3 decidirá cuánto puede pesar tu web.
+
+Apuntes: [2. Personas](../../orbitas/orbita1/02_que_es_una_persona.md), pasos 3 y 4, y los [ejemplos de personas](../../orbitas/orbita1/ejemplos/personas.html).
+
+### Paso 5. Define el MVP y dibuja el user flow
+
+Parte del objetivo más importante de tu persona principal y decide qué entra en la primera versión de tu aplicación. Haz dos columnas, las funciones que entran y las que se quedan fuera, y pasa cada función por tres preguntas: si tu persona principal la necesita para su tarea más importante, si puedes construirla con el tiempo y las herramientas del módulo y si existe mientras tanto otra forma aceptable de resolverla. Cada función que se queda fuera lleva una frase con el motivo. Recuerda que cada función que no entra también es contenido, código y datos que tu aplicación no va a gastar.
+
+Con el MVP decidido, dibuja en FigJam un único **user flow** que lo recorra entero, con la notación habitual (píldora, rectángulo, rombo y flechas). Marca el punto de entrada, dibuja el happy path completo y añade al menos dos o tres casos límite en los momentos delicados, como el registro o el pago. Si aparece una tarea importante que este flujo no cubre, dibújala aparte como flujo complementario.
+
+Después, recorre el flujo poniéndote en el lugar de cada persona, empezando por la que tiene diversidad funcional, y anota las decisiones que queden pendientes.
+
+Apuntes: [3. User flows: del MVP al recorrido completo](../../orbitas/orbita1/03_user_flows.md).
+
+### Paso 6. Haz el card sorting y el sitemap
+
+Haz el inventario de pantallas, funciones y contenidos a partir de los referentes y del MVP, con una tarjeta por elemento. Pide a cuatro o cinco compañeros que se parezcan a tus personas que las agrupen y pongan nombre a cada grupo, y observa sin intervenir. Con los grupos que se repiten, dibuja el **sitemap**, con la pantalla de inicio como raíz y las pantallas principales, secundarias y de sistema bien diferenciadas. Usa para cada sección las palabras que emplearon tus personas en las entrevistas.
+
+Revísalo dos veces: cada función del MVP tiene que tener su pantalla, a tres niveles de navegación como máximo, y el user flow tiene que poder recorrerse sobre el sitemap sin huecos y con los mismos nombres.
+
+Apuntes: [4. Arquitectura de la información y sitemap](../../orbitas/orbita1/04_arquitectura_informacion.md).
+
+### Paso 7. Dibuja los wireframes y prueba el prototipo
+
+En Figma Design, dibuja un **wireframe de baja fidelidad** por cada pantalla del happy path, más las pantallas de error o de estado vacío que sean importantes para tus personas. Usa solo negro, blanco y un gris medio, líneas en lugar de textos largos y un rectángulo con una X en lugar de imágenes. El frame tiene el tamaño del dispositivo de tu persona principal (360 × 800 para un móvil, 1280 × 800 para un portátil), y si tienes personas de los dos tipos, dibuja los dos. Cada frame se llama exactamente igual que su pantalla en el sitemap.
+
+Conecta los wireframes con interacciones básicas para tener un **prototipo navegable**. Pruébalo en Lyssna con cuatro o cinco personas que se parezcan a tu persona principal: dales una tarea concreta y no les expliques nada. Anota dónde se atascan y qué cambias a partir de ello.
+
+Apuntes: [5. Del flujo al wireframe](../../orbitas/orbita1/05_wireframes.md).
+
+### Paso 8. Cierra el brief
+
+Convierte la hipótesis del primer día en el **brief** del proyecto, una o dos páginas en FigJam que se lean en unos cinco minutos, con sus cinco elementos: el problema respaldado por datos, el alcance que marca el MVP, las personas (con un enlace a cada ficha), unos criterios de éxito que se puedan comprobar sobre tus personas y las restricciones del proyecto. Entre las restricciones tiene que haber al menos una ambiental, por ejemplo un peso máximo por página pensado para la persona con peor conexión, tal como pide el criterio 2.4 de las Web Sustainability Guidelines del W3C.
+
+Por último, enseña el tablero a alguien que no conozca tu proyecto, sin explicarle nada. Si en unos cinco minutos entiende de qué trata y cómo funciona tu aplicación, está listo para entregar.
+
+Apuntes: [6. El brief de proyecto y el entregable](../../orbitas/orbita1/06_brief_y_entregable.md).
+
+---
+
+## Qué entregas
+
+El entregable son seis documentos enlazados entre sí, repartidos en dos archivos de Figma, más el repositorio del proyecto.
+
+| Documento | Dónde | Qué tiene que incluir |
+|---|---|---|
+| **Brief de proyecto** | FigJam | Los cinco elementos, con al menos una restricción ambiental, junto a la hipótesis inicial |
+| **Personas** | FigJam | Dos o tres fichas, una con diversidad funcional, con la principal señalada y cada rasgo trazable a la investigación |
+| **MVP y user flow** | FigJam | Las dos columnas con el motivo de cada descarte, el flujo del MVP con happy path y casos límite y los flujos complementarios, si los hay |
+| **Sitemap** | FigJam | El árbol con pantallas principales, secundarias y de sistema, revisado frente al MVP y al user flow |
+| **Wireframes** | Figma Design | Las pantallas del happy path en escala de grises, con los mismos nombres que en el sitemap |
+| **Prototipo navegable** | Figma Design | Los wireframes conectados y los resultados de la prueba en Lyssna |
+
+En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes, los resultados del test de los cinco segundos, el resumen de la encuesta y las notas de las entrevistas, anonimizadas y con el consentimiento registrado. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
+
+**Cómo se entrega.** En la tarea de Moodle Centros sube un documento con cuatro enlaces: el tablero de FigJam, el archivo de Figma Design, el prototipo en modo presentación y el repositorio de GitHub. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en estos archivos durante todo el curso, guarda en cada uno una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 1"), que será la que se evalúe.
+
+**Cuándo.** Al final de la semana 4. La fecha y la hora exactas están en la tarea de Moodle Centros.
+
+---
+
+## Resultados de aprendizaje y criterios de evaluación
+
+Este proyecto trabaja sobre todo el RA1 y el RA6, y empieza a trabajar el RA5 a través de la persona con diversidad funcional. Los textos de los resultados de aprendizaje y de los criterios son los que fija la Orden de 16 de junio de 2011 (BOJA n.º 114), sin modificar.
+
+**RA1. Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.**
+
+| CE | Texto del criterio | Dónde se trabaja en el proyecto |
+|---|---|---|
+| RA1-a | Se ha reconocido la importancia de la comunicación visual y sus principios básicos. | Personas y wireframes: decisiones justificadas con las leyes de UX y con una persona concreta |
+| RA1-c | Se han analizado alternativas para la presentación de la información en documentos web. | MVP, user flow, card sorting, sitemap y brief |
+| RA1-e | Se han utilizado y valorado distintas tecnologías para el diseño de documentos web. | FigJam, Figma Design, Tally y Lyssna a lo largo de toda la órbita |
+
+**RA5. Desarrolla interfaces Web accesibles, analizando las pautas establecidas y aplicando técnicas de verificación.**
+
+| CE | Texto del criterio | Dónde se trabaja en el proyecto |
+|---|---|---|
+| RA5-a | Se ha reconocido la necesidad de diseñar webs accesibles. | La persona con diversidad funcional y el recorrido del user flow desde su punto de vista |
+
+**RA6. Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.**
+
+| CE | Texto del criterio | Dónde se trabaja en el proyecto |
+|---|---|---|
+| RA6-a | Se ha analizado la usabilidad de diferentes documentos web. | Análisis de referentes y test de los cinco segundos |
+| RA6-c | Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido. | Personas, MVP, user flow y sitemap construidos a partir de la investigación |
+| RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Encuesta, entrevistas, card sorting, prueba del prototipo y criterios de éxito del brief |
+
+Además de la rúbrica, algunos de estos criterios se completan con una prueba teórica o práctica, tal como recoge la programación del módulo.
+
+---
+
+## Rúbrica
+
+La rúbrica tiene seis criterios, uno por cada parte del trabajo. Cada uno está vinculado a los criterios de evaluación de la tabla anterior, y su nota es la que alimenta la de esos CE.
+
+| Criterio | Insuficiente (1–4) | Suficiente (5–6) | Notable (7–8) | Sobresaliente (9–10) | CE |
+|---|---|---|---|---|---|
+| **C1. Investigación** | Faltan referentes, encuesta o entrevistas, o las entrevistas no se han hecho con personas reales. | Referentes, test de cinco segundos, encuesta y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
+| **C2. Personas** | Personas inventadas o solo con datos demográficos, o sin persona con diversidad funcional. | Dos o tres personas con algunos rasgos respaldados por datos y la persona con diversidad funcional poco desarrollada. | Personas con la mayoría de rasgos trazables a la investigación, principal y secundarias señaladas y ficha de accesibilidad completa. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. | RA1-a, RA5-a, RA6-c |
+| **C3. MVP y user flow** | Sin MVP, o flujo que solo describe el happy path. | MVP con motivos débiles y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas, flujo completo con punto de entrada y dos o tres casos límite, y cada rombo con todos sus caminos cerrados. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas y listo para usarse como guion de prueba en la Órbita 5. | RA1-c, RA6-c |
+| **C4. Arquitectura de la información y sitemap** | Sin sitemap o con una estructura que no sale de ningún dato. | Sitemap presente, sin card sorting detrás o con tipos de pantalla sin distinguir. | Sitemap construido a partir del card sorting, con los tres tipos de pantalla y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con los datos del card sorting y el vocabulario de las entrevistas, coherentes con el user flow. | RA1-c, RA6-c |
+| **C5. Wireframes y prototipo** | Sin wireframes, con color o tipografías reales, o sin conexión entre pantallas. | Wireframes del happy path con algún nombre distinto al del sitemap o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona y un prototipo que se recorre de principio a fin. | Prototipo probado en Lyssna con cuatro o cinco personas y cambios documentados a partir de la prueba. | RA1-a, RA1-e, RA6-e |
+| **C6. Brief** | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados. | Brief completo, con el problema respaldado por datos, el alcance del MVP y una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión de la órbita. | RA1-c, RA6-e |
+
+### La auditoría de decisión oral
+
+Cada criterio de la rúbrica se confirma en la **auditoría de decisión oral**, que consiste en que te pregunte por qué tomaste una decisión concreta. Puede ser durante la órbita o en cualquier momento del curso. Una respuesta válida remite a tu investigación, a tus personas, a tu user flow o a un principio de usabilidad. Respuestas como "es lo que se suele hacer" o "me lo sugirió la IA" indican que esa decisión todavía no es tuya, y en ese caso el criterio correspondiente se queda en Insuficiente, por bien hecho que esté el documento. Por la misma razón, si aparece un uso de IA que no está anotado en el `CHANGELOG.md`, la decisión afectada no se da por justificada.
+
+Guarda bien las notas de tus entrevistas, porque te las pediré a lo largo del curso. Y tenlo en cuenta cuando tengas que decidir en qué emplear el tiempo antes de entregar: un wireframe con algún fallo de forma, pero con decisiones que sabes defender, vale más que uno impecable que no sabes explicar.
+
+---
+
+## Antes de entregar
+
+* La hipótesis inicial sigue en el tablero, cerca del brief.
+* Cada rasgo de cada persona tiene su dato, y las suposiciones están marcadas.
+* Las notas de las entrevistas están anonimizadas y el consentimiento está registrado.
+* Cada función descartada del MVP lleva su motivo.
+* El user flow tiene punto de entrada, happy path y al menos dos o tres casos límite.
+* El user flow se recorre sobre el sitemap sin huecos y con los mismos nombres.
+* Cada frame de Figma Design se llama igual que su pantalla en el sitemap.
+* El prototipo se recorre de principio a fin y los resultados de la prueba están anotados.
+* El brief tiene sus cinco elementos, incluida la restricción ambiental.
+* El `CHANGELOG.md` recoge cada uso de IA de la órbita.
+* Los dos archivos de Figma tienen guardada la versión "Entrega Órbita 1" y todos los enlaces se abren en una ventana privada.
