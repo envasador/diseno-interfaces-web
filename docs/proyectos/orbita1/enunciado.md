@@ -171,7 +171,7 @@ Si no has usado ninguna IA durante el proyecto, indícalo en el `CHANGELOG.md` c
 No he usado ninguna herramienta de IA durante este proyecto.
 ```
 
-Esa entrada se comprueba en la auditoría oral como cualquier otra decisión. Si aparece un uso de IA que no está anotado, el criterio C8 queda en Muy insuficiente.
+En la auditoría oral te puedo preguntar por ello igual que por cualquier otra parte del proyecto, y si aparece algún uso de IA que no hayas anotado, el criterio C8 se calificará como Muy insuficiente.
 
 ### La auditoría de decisión oral
 
