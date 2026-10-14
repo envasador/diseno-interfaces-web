@@ -44,6 +44,12 @@ Cuando ya te manejes con lo básico de Figma, este segundo vídeo, de Codex Comm
 
 Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=qWIdforZ9x0).
 
+### Componentes y plantilla de pantalla
+
+En casi todas las aplicaciones hay elementos que se repiten de una pantalla a otra, como la cabecera, el menú, el botón principal o las tarjetas de una lista. En lugar de dibujarlos de nuevo en cada frame, conviértelos en **componentes** de Figma: los dibujas una vez y colocas copias (instancias) donde los necesites. Si después cambias el componente principal, todas las copias se actualizan a la vez. Haz lo mismo con la estructura común de tus pantallas (cabecera, zona de contenido y navegación) y monta una **plantilla de pantalla** que sirva de punto de partida para cada frame.
+
+Además de ahorrarte trabajo y evitar que dos pantallas acaben con menús distintos sin que te des cuenta, esta forma de trabajar es el primer paso del sistema de diseño que construirás en la Órbita 2 (RA1-f).
+
 ### Lo que todavía no se decide
 
 Las tipografías, los colores, los espacios exactos entre elementos, los iconos y las imágenes son decisiones que tomarás en la Órbita 2. Si te das cuenta de que estás eligiendo un tono de azul, para, porque te estás adelantando a una fase que todavía no toca.
