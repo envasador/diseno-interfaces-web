@@ -19,7 +19,7 @@ Al mismo tiempo, prepara una **encuesta** con Tally. Te servirá para detectar t
 
 ### Paso 3: Entrevista a personas reales
 
-Con las respuestas de la encuesta ya podrás distinguir varios perfiles. Elige a cinco o seis personas que encajen en ellos y entrevístalas. Haz preguntas abiertas y céntrate en lo que hacen de verdad, porque lo que la gente dice que haría suele ser bastante más optimista que lo que hace. Antes de empezar, cada persona tiene que dar su consentimiento, y en tus notas los datos deben aparecer anonimizados desde el principio. Cada cosa interesante que descubras irá en una nota adhesiva del tablero de FigJam.
+Con las respuestas de la encuesta ya podrás distinguir varios perfiles. Elige al menos a dos personas que encajen en ellos y entrevístalas. Haz preguntas abiertas y céntrate en lo que hacen de verdad, porque lo que la gente dice que haría suele ser bastante más optimista que lo que hace. Antes de empezar, cada persona tiene que dar su consentimiento, y en tus notas los datos deben aparecer anonimizados desde el principio. Cada cosa interesante que descubras irá en una nota adhesiva del tablero de FigJam.
 
 Esta es la parte del proceso que menos se puede delegar en una IA, porque es en la conversación real, con sus silencios y sus rodeos, donde aparecen las cosas que nadie te contaría si le hicieras la pregunta directamente.
 

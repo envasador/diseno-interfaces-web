@@ -36,9 +36,9 @@ Al mismo tiempo, publica una **encuesta** con Tally. Las preguntas tienen que sa
 
 Apuntes: [2. Personas: qué son y cómo se construyen](../../orbitas/orbita1/02_que_es_una_persona.md), pasos 1 y 2.
 
-### Paso 3. Entrevista a cinco o seis personas
+### Paso 3. Entrevista al menos a dos personas
 
-Elige, entre quienes respondieron a la encuesta, a cinco o seis personas que encajen en los perfiles que has detectado y habla con cada una unos veinte minutos. Haz preguntas abiertas sobre situaciones reales ("cuéntame la última vez que...") y no sugieras respuestas. Antes de empezar, cada persona tiene que saber para qué vas a usar lo que te cuente y dar su consentimiento, y en tus notas los datos aparecerán anonimizados desde el principio (P1, P2, P3...). Pasa cada descubrimiento a una nota adhesiva del tablero el mismo día de la entrevista.
+Elige, entre quienes respondieron a la encuesta, al menos a dos personas que encajen en los perfiles que has detectado y habla con cada una unos veinte minutos. Dos es el mínimo, y cada entrevista que añadas te ayudará a distinguir mejor los patrones de los casos aislados. Haz preguntas abiertas sobre situaciones reales ("cuéntame la última vez que...") y no sugieras respuestas. Antes de empezar, cada persona tiene que saber para qué vas a usar lo que te cuente y dar su consentimiento, y en tus notas los datos aparecerán anonimizados desde el principio (P1, P2, P3...). Pasa cada descubrimiento a una nota adhesiva del tablero el mismo día de la entrevista.
 
 Este es el paso que no puedes delegar en una IA. Lo que una persona tarda en contestar o lo que cuenta después de un silencio solo aparece en una conversación real.
 
