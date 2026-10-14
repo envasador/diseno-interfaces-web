@@ -56,4 +56,4 @@ Cuando tengas los wireframes de todo el happy path, conéctalos en Figma Design 
 
 Este prototipo sirve para comprobar si el user flow funciona cuando alguien lo recorre sin que nadie le explique nada. Aquí puedes repetir la prueba que se proponía en el primer apartado: si durante el test te sorprendes explicando para qué sirve un botón, has encontrado un problema de diseño que tendrás que resolver antes de pasar a diseñar el aspecto definitivo.
 
-Puedes organizar la prueba en Lyssna enlazando directamente el prototipo de Figma Design, igual que hiciste con los referentes durante la investigación, aunque esta vez sobre tu propio trabajo. Con cuatro o cinco personas que se parezcan a tu persona principal tendrás suficiente para detectar los problemas más graves (RA1-c, RA6-a).
+La prueba es optativa en el proyecto, pero es lo que te permite llegar a la nota máxima en el prototipo. Puedes organizarla en Lyssna enlazando directamente el prototipo de Figma Design, esta vez sobre tu propio trabajo. Con cuatro o cinco personas que se parezcan a tu persona principal tendrás suficiente para detectar los problemas más graves (RA1-c, RA6-a).

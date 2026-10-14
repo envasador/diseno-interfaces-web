@@ -43,7 +43,7 @@ Antes de darlo por terminado, comprueba dos cosas: que cada función de tu MVP t
 
 Con el sitemap y el user flow delante, dibuja en Figma Design los **wireframes**, que son bocetos sencillos de las pantallas. Harás uno por cada pantalla que aparezca en el user flow, usando solo blanco, negro y gris, sin tipografías reales ni imágenes. A cada boceto ponle el mismo nombre que tiene esa pantalla en el sitemap, porque así te resultará mucho más fácil relacionar unos documentos con otros más adelante.
 
-Después, enlaza las pantallas entre sí para que al pulsar un botón se pase a la siguiente. Así obtendrás un **prototipo navegable**. Pruébalo en Lyssna con cuatro o cinco personas que se parezcan a tu persona principal: dales una tarea y no les expliques nada. Si en algún momento necesitas intervenir para que entiendan qué tienen que hacer, has encontrado un problema que debes resolver.
+Después, enlaza las pantallas entre sí para que al pulsar un botón se pase a la siguiente. Así obtendrás un **prototipo navegable**. Si quieres llegar más lejos, pruébalo en Lyssna (es optativo) con cuatro o cinco personas que se parezcan a tu persona principal: dales una tarea y no les expliques nada. Si en algún momento necesitas intervenir para que entiendan qué tienen que hacer, has encontrado un problema que debes resolver.
 
 ### Paso 8: Cierra el brief y entrega
 

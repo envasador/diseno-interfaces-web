@@ -74,11 +74,13 @@ Revísalo dos veces: cada función del MVP tiene que tener su pantalla, a tres n
 
 Apuntes: [4. Arquitectura de la información y sitemap](../../orbitas/orbita1/04_arquitectura_informacion.md).
 
-### Paso 7. Dibuja los wireframes y prueba el prototipo
+### Paso 7. Dibuja los wireframes y monta el prototipo
 
 En Figma Design, dibuja un **wireframe de baja fidelidad** por cada pantalla del happy path, más las pantallas de error o de estado vacío que sean importantes para tus personas. Usa solo negro, blanco y un gris medio, líneas en lugar de textos largos y un rectángulo con una X en lugar de imágenes. El frame tiene el tamaño del dispositivo de tu persona principal (360 × 800 para un móvil, 1280 × 800 para un portátil), y si tienes personas de los dos tipos, dibuja los dos. Cada frame se llama exactamente igual que su pantalla en el sitemap.
 
-Conecta los wireframes con interacciones básicas para tener un **prototipo navegable**. Pruébalo en Lyssna con cuatro o cinco personas que se parezcan a tu persona principal: dales una tarea concreta y no les expliques nada. Anota dónde se atascan y qué cambias a partir de ello.
+Conecta los wireframes con interacciones básicas para tener un **prototipo navegable**.
+
+Probar el prototipo es optativo, pero es lo que te permite llegar al 10 en el criterio C5 de la rúbrica. Si lo haces, organiza la prueba en Lyssna con cuatro o cinco personas que se parezcan a tu persona principal: dales una tarea concreta y no les expliques nada. Anota dónde se atascan y qué cambias a partir de ello.
 
 Apuntes: [5. Del flujo al wireframe](../../orbitas/orbita1/05_wireframes.md).
 
@@ -103,7 +105,7 @@ El entregable son seis documentos enlazados entre sí, repartidos en dos archivo
 | **MVP y user flow** | FigJam | Las dos columnas con el motivo de cada descarte, el flujo del MVP con happy path y casos límite y los flujos complementarios, si los hay |
 | **Sitemap** | FigJam | El árbol con pantallas principales, secundarias y de sistema, revisado frente al MVP y al user flow |
 | **Wireframes** | Figma Design | Las pantallas del happy path en escala de grises, con los mismos nombres que en el sitemap |
-| **Prototipo navegable** | Figma Design | Los wireframes conectados y los resultados de la prueba en Lyssna |
+| **Prototipo navegable** | Figma Design | Los wireframes conectados y, si lo has probado, los resultados de la prueba en Lyssna |
 
 En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes (con los resultados del test de los cinco segundos, si lo has hecho), el resumen de la encuesta, si la has hecho, el texto de las entrevistas (transcripciones, notas pasadas a limpio o respuestas escritas), anonimizado y con el consentimiento registrado, y los resultados del card sorting, si lo has hecho. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
 
@@ -135,7 +137,7 @@ Este proyecto trabaja el RA1 y el RA6. Los textos de los resultados de aprendiza
 |---|---|---|
 | RA6-a | Se ha analizado la usabilidad de diferentes documentos web. | Análisis de referentes |
 | RA6-c | Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido. | Personas, MVP, user flow y sitemap construidos a partir de la investigación |
-| RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Entrevistas, prueba del prototipo y criterios de éxito del brief |
+| RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Entrevistas, criterios de éxito del brief y prueba del prototipo, si se hace |
 
 Además de la rúbrica, algunos de estos criterios se completan con una prueba teórica o práctica, tal como recoge la programación del módulo.
 
@@ -153,7 +155,7 @@ En este proyecto cuenta tanto lo que haces como la forma en que lo cuentas. Un b
 | **C2. Personas** | No hay fichas de personas, o son inventadas sin ninguna relación con la investigación. | Fichas con solo datos demográficos o con rasgos que no se pueden relacionar con las entrevistas. | Dos o tres fichas con algunos rasgos respaldados por datos, con apartados vacíos o redactados a medias. | Fichas completas (nombre, cita, contexto de uso, objetivos y frustraciones), con la mayoría de rasgos trazables a la investigación y la persona principal señalada. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. Fichas claras y con el mismo formato. | RA1-a, RA6-c |
 | **C3. MVP y user flow** | No hay MVP ni user flow. | Falta el MVP, o el flujo solo describe el happy path o no usa la notación habitual. | MVP sin motivos claros para lo que se queda fuera y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas y un motivo por cada función descartada. Flujo con punto de entrada, happy path y al menos dos o tres casos límite, con todos los caminos cerrados y la notación correcta. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas, legible de un vistazo y listo para usarse como guion de prueba de la aplicación terminada. | RA1-c, RA6-c |
 | **C4. Arquitectura de la información y sitemap** | No hay sitemap. | Sitemap con una estructura que no sale de ningún dato o que no cubre el MVP. | Sitemap sin inventario detrás, con tipos de pantalla sin distinguir o con nombres que no coinciden con el user flow. | Sitemap construido a partir del inventario, con pantallas principales, secundarias y de sistema diferenciadas y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con el vocabulario de las entrevistas (y con el card sorting, si se ha hecho), coherentes con el MVP y el user flow. | RA1-c, RA6-c |
-| **C5. Wireframes y prototipo** | No hay wireframes ni prototipo. | Wireframes con color o tipografías reales, sin conexión entre pantallas o que no cubren el happy path. | Wireframes del happy path con nombres distintos a los del sitemap, pantallas que faltan o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona principal, y un prototipo que se recorre de principio a fin, probado en Lyssna con los resultados anotados. | Cambios hechos y documentados a partir de la prueba, y cada pantalla trazable al sitemap y al user flow. | RA1-a, RA1-e, RA6-e |
+| **C5. Wireframes y prototipo** | No hay wireframes ni prototipo. | Wireframes con color o tipografías reales, sin conexión entre pantallas o que no cubren el happy path. | Wireframes del happy path con nombres distintos a los del sitemap, pantallas que faltan o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona principal, y un prototipo que se recorre de principio a fin, con cada pantalla trazable al sitemap y al user flow. | Prototipo probado en Lyssna con cuatro o cinco personas, con los resultados anotados y los cambios hechos y documentados a partir de la prueba. Sin esta prueba, el criterio no pasa de Notable. | RA1-a, RA1-e, RA6-e |
 | **C6. Brief** | No hay brief, o se limita a repetir la hipótesis inicial. | Brief al que le faltan elementos o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados o difíciles de leer. | Brief completo, con el problema respaldado por datos, el alcance del MVP, enlaces a las personas, criterios de éxito y al menos una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión del proyecto. | RA1-c, RA6-e |
 | **C7. Redacción, organización y presentación** | Documentos que no se pueden leer ni recorrer: textos inexistentes o ininteligibles, tablero caótico o enlaces que no abren. | Faltas de ortografía frecuentes, frases que no se entienden o tablero desordenado que no se puede recorrer sin explicación. | Se entiende, pero con errores de ortografía o de redacción, zonas sin título o documentos mezclados que obligan a buscar. | Textos claros y sin faltas, tablero ordenado siguiendo los pasos del proyecto con un título en cada zona, nombres coherentes entre todos los documentos y enlaces que funcionan. | Presentación cuidada (por ejemplo, a partir de la plantilla de UI From Mars), con una jerarquía visual clara y textos breves y precisos. Cualquiera entiende el proyecto en cinco minutos sin ninguna explicación. | RA1-a, RA1-e |
 
@@ -174,7 +176,7 @@ Guarda bien el texto de tus entrevistas, porque te lo pediré más adelante. Y t
 * El user flow tiene punto de entrada, happy path y al menos dos o tres casos límite.
 * El user flow se recorre sobre el sitemap sin huecos y con los mismos nombres.
 * Cada frame de Figma Design se llama igual que su pantalla en el sitemap.
-* El prototipo se recorre de principio a fin y los resultados de la prueba están anotados.
+* El prototipo se recorre de principio a fin y, si lo has probado, los resultados de la prueba están anotados.
 * El brief tiene sus cinco elementos, incluida la restricción ambiental.
 * Has revisado la ortografía y la redacción de todos los textos: brief, fichas, notas y anotaciones del flujo.
 * El tablero está ordenado siguiendo los pasos del proyecto y cada zona tiene su título.
