@@ -26,19 +26,19 @@ Escribe en el tablero tu punto de partida con esta estructura: "creo que las per
 
 Apuntes: [1. Por qué investigamos antes de diseñar](../../orbitas/orbita1/01_por_que_investigamos.md).
 
-### Paso 2. Estudia los referentes y lanza la encuesta
+### Paso 2. Estudia los referentes
 
 Elige dos o tres aplicaciones o webs que intenten resolver el mismo problema que el tuyo y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios.
 
 Si quieres ir un paso más allá, puedes aplicar a una pantalla de cada referente el **test de los cinco segundos** con Lyssna, que te dirá qué transmite a primera vista. Es optativo. Si lo haces, añade los resultados al tablero junto al análisis de referentes.
 
-Al mismo tiempo, publica una **encuesta** con Tally. Las preguntas tienen que salir de lo que todavía no sabes sobre tu hipótesis (de contexto, de comportamiento y de dificultad), y al final tiene que incluir una pregunta para pedir permiso para contactar con quien la responda, porque de ahí saldrán las personas a las que vas a entrevistar.
+También puedes publicar una **encuesta** con Tally, que es optativa. Si la haces, las preguntas tienen que salir de lo que todavía no sabes sobre tu hipótesis (de contexto, de comportamiento y de dificultad), y conviene que al final incluyas una pregunta para pedir permiso para contactar con quien la responda, porque así encontrarás con más facilidad a las personas a las que vas a entrevistar.
 
 Apuntes: [2. Personas: qué son y cómo se construyen](../../orbitas/orbita1/02_que_es_una_persona.md), pasos 1 y 2.
 
 ### Paso 3. Entrevista al menos a dos personas
 
-Elige, entre quienes respondieron a la encuesta, al menos a dos personas que encajen en los perfiles que has detectado. Dos es el mínimo, y cada entrevista que añadas te ayudará a distinguir mejor los patrones de los casos aislados.
+Elige al menos a dos personas que vivan de cerca el problema de tu hipótesis. Pueden ser familiares, vecinos, compañeros de equipo o de trabajo, o quienes te dieron permiso para contactar en la encuesta, si la has hecho. Dos es el mínimo, y cada entrevista que añadas te ayudará a distinguir mejor los patrones de los casos aislados.
 
 La entrevista puede hacerse de la forma que mejor te funcione con cada persona: una charla en persona o por videollamada que grabas y después transcribes, una conversación en la que tomas notas y las pasas a limpio ese mismo día, o un formulario con preguntas abiertas que la persona contesta por escrito. Lo importante es que al final la conversación o las respuestas queden en texto, porque ese texto es el material con el que vas a trabajar en el paso siguiente y el que te pediré en la auditoría oral.
 
@@ -48,7 +48,7 @@ Este es el paso que no puedes delegar en una IA, porque las respuestas tienen qu
 
 ### Paso 4. Construye las personas
 
-Agrupa todas las notas (entrevistas, encuesta y análisis de referentes) con un **affinity mapping** y deja que los grupos se formen solos. De esos grupos saldrán dos o tres **personas**. Cada ficha lleva un nombre, una cita verosímil, el contexto de uso (dispositivo, conexión, lugar y momento del día), los objetivos y las frustraciones. Indica cuál es la persona principal y cuáles son secundarias.
+Agrupa todas las notas (entrevistas, análisis de referentes y encuesta, si la has hecho) con un **affinity mapping** y deja que los grupos se formen solos. De esos grupos saldrán dos o tres **personas**. Cada ficha lleva un nombre, una cita verosímil, el contexto de uso (dispositivo, conexión, lugar y momento del día), los objetivos y las frustraciones. Indica cuál es la persona principal y cuáles son secundarias.
 
 Cada rasgo de cada ficha tiene que poder relacionarse con un dato de tu investigación. Si no sabes de dónde sale, márcalo como suposición o elimínalo. Presta especial atención al dato de la conexión, porque en la Órbita 3 decidirá cuánto puede pesar tu web.
 
@@ -105,7 +105,7 @@ El entregable son seis documentos enlazados entre sí, repartidos en dos archivo
 | **Wireframes** | Figma Design | Las pantallas del happy path en escala de grises, con los mismos nombres que en el sitemap |
 | **Prototipo navegable** | Figma Design | Los wireframes conectados y los resultados de la prueba en Lyssna |
 
-En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes (con los resultados del test de los cinco segundos, si lo has hecho), el resumen de la encuesta, el texto de las entrevistas (transcripciones, notas pasadas a limpio o respuestas escritas), anonimizado y con el consentimiento registrado, y los resultados del card sorting, si lo has hecho. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
+En el tablero de FigJam tiene que estar también la investigación que respalda todo lo anterior: el análisis de referentes (con los resultados del test de los cinco segundos, si lo has hecho), el resumen de la encuesta, si la has hecho, el texto de las entrevistas (transcripciones, notas pasadas a limpio o respuestas escritas), anonimizado y con el consentimiento registrado, y los resultados del card sorting, si lo has hecho. En el repositorio, el `CHANGELOG.md` tiene que recoger cada uso de IA de la órbita.
 
 **Cómo se entrega.** En la tarea de Moodle Centros sube un documento con cuatro enlaces: el tablero de FigJam, el archivo de Figma Design, el prototipo en modo presentación y el repositorio de GitHub. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en estos archivos en las fases siguientes, guarda en cada uno una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 1"), que será la que se evalúe.
 
@@ -123,7 +123,7 @@ Este proyecto trabaja el RA1 y el RA6. Los textos de los resultados de aprendiza
 |---|---|---|
 | RA1-a | Se ha reconocido la importancia de la comunicación visual y sus principios básicos. | Personas y wireframes: decisiones justificadas con las leyes de UX y con una persona concreta |
 | RA1-c | Se han analizado alternativas para la presentación de la información en documentos web. | MVP, user flow, sitemap y brief |
-| RA1-e | Se han utilizado y valorado distintas tecnologías para el diseño de documentos web. | FigJam, Figma Design, Tally y Lyssna a lo largo de toda la órbita |
+| RA1-e | Se han utilizado y valorado distintas tecnologías para el diseño de documentos web. | FigJam, Figma Design y Lyssna a lo largo de toda la órbita |
 
 **RA6. Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.**
 
@@ -131,7 +131,7 @@ Este proyecto trabaja el RA1 y el RA6. Los textos de los resultados de aprendiza
 |---|---|---|
 | RA6-a | Se ha analizado la usabilidad de diferentes documentos web. | Análisis de referentes |
 | RA6-c | Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido. | Personas, MVP, user flow y sitemap construidos a partir de la investigación |
-| RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Encuesta, entrevistas, prueba del prototipo y criterios de éxito del brief |
+| RA6-e | Se han analizado diferentes técnicas para verificar la usabilidad de un documento web. | Entrevistas, prueba del prototipo y criterios de éxito del brief |
 
 Además de la rúbrica, algunos de estos criterios se completan con una prueba teórica o práctica, tal como recoge la programación del módulo.
 
@@ -143,7 +143,7 @@ La rúbrica tiene seis criterios, uno por cada parte del trabajo. Cada uno está
 
 | Criterio | Insuficiente (1–4) | Suficiente (5–6) | Notable (7–8) | Sobresaliente (9–10) | CE |
 |---|---|---|---|---|---|
-| **C1. Investigación** | Faltan referentes, encuesta o entrevistas, las entrevistas no se han hecho con personas reales o no están en texto. | Referentes, encuesta y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
+| **C1. Investigación** | Faltan los referentes o las entrevistas, las entrevistas no se han hecho con personas reales o no están en texto. | Referentes y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
 | **C2. Personas** | Personas inventadas o solo con datos demográficos. | Dos o tres personas con algunos rasgos respaldados por datos. | Personas con la mayoría de rasgos trazables a la investigación, principal y secundarias señaladas y contexto de uso completo. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. | RA1-a, RA6-c |
 | **C3. MVP y user flow** | Sin MVP, o flujo que solo describe el happy path. | MVP con motivos débiles y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas, flujo completo con punto de entrada y dos o tres casos límite, y cada rombo con todos sus caminos cerrados. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas y listo para usarse como guion de prueba en la Órbita 5. | RA1-c, RA6-c |
 | **C4. Arquitectura de la información y sitemap** | Sin sitemap o con una estructura que no sale de ningún dato. | Sitemap presente, sin inventario detrás o con tipos de pantalla sin distinguir. | Sitemap construido a partir del inventario, con los tres tipos de pantalla y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con el vocabulario de las entrevistas (y con el card sorting, si se ha hecho), coherentes con el user flow. | RA1-c, RA6-c |

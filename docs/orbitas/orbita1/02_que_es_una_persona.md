@@ -48,9 +48,9 @@ Las preguntas que te ayudarán en esta fase son de tres tipos. Las de **contexto
 
 #### Paso 2: recoge datos
 
-En este módulo vas a trabajar con dos métodos, las encuestas y las entrevistas, y puedes completarlos con un tercero optativo, el test de los cinco segundos.
+En este módulo el método obligatorio son las entrevistas, y puedes completarlas con dos métodos optativos, la encuesta y el test de los cinco segundos.
 
-Las **encuestas** sirven para recoger muchas respuestas y detectar tendencias. Con Tally puedes crear formularios sin límite de respuestas, y te ayudarán a confirmar o descartar tu hipótesis y a encontrar a las personas a las que entrevistarás después. Tienen una limitación importante: recogen lo que la gente dice, y cuando alguien rellena una encuesta tiende a dar una imagen mejor de sí mismo.
+Las **encuestas**, que son optativas, sirven para recoger muchas respuestas y detectar tendencias. Con Tally puedes crear formularios sin límite de respuestas, y te ayudarán a confirmar o descartar tu hipótesis y a encontrar a las personas a las que entrevistarás después. Tienen una limitación importante: recogen lo que la gente dice, y cuando alguien rellena una encuesta tiende a dar una imagen mejor de sí mismo.
 
 Las **entrevistas** son el método que más información útil te dará. Veinte minutos de conversación con alguien que vive el problema te enseñan más que cien respuestas de encuesta. Las preguntas tienen que ser abiertas, como "cuéntame la última vez que reservaste una pista", y debes evitar sugerir las respuestas. En este módulo tienes que hacer al menos dos, aunque con cada entrevista que añadas los patrones se ven con más claridad. Es normal que la primera te dé algo de vergüenza, pero en cuanto hagas un par te sentirás mucho más cómodo.
 

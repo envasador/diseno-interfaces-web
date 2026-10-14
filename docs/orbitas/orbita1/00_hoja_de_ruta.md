@@ -15,11 +15,11 @@ No te preocupes si la hipótesis no es perfecta, porque los pasos siguientes sir
 
 Es muy probable que alguien haya intentado resolver antes un problema parecido al tuyo, así que antes de inventar nada conviene ver qué ha hecho. Busca dos o tres aplicaciones o webs que traten el mismo problema (las llamaremos **referentes**) y anota cómo están organizadas, qué palabras usan y en qué puntos se atascan sus usuarios. Si quieres, puedes aplicar además a una pantalla de cada una el **test de los cinco segundos** con Lyssna, que consiste en enseñar la pantalla a alguien durante cinco segundos y preguntarle qué ha entendido. Este test es optativo.
 
-Al mismo tiempo, prepara una **encuesta** con Tally. Te servirá para detectar tendencias en un grupo más amplio de gente y, además, para encontrar a las personas a las que entrevistarás en el paso siguiente.
+Si quieres, prepara también una **encuesta** con Tally, que es optativa. Te servirá para detectar tendencias en un grupo más amplio de gente y, además, para encontrar a las personas a las que entrevistarás en el paso siguiente.
 
 ### Paso 3: Entrevista a personas reales
 
-Con las respuestas de la encuesta ya podrás distinguir varios perfiles. Elige al menos a dos personas que encajen en ellos y entrevístalas. Haz preguntas abiertas y céntrate en lo que hacen de verdad, porque lo que la gente dice que haría suele ser bastante más optimista que lo que hace. Antes de empezar, cada persona tiene que dar su consentimiento, y en tus notas los datos deben aparecer anonimizados desde el principio. Cada cosa interesante que descubras irá en una nota adhesiva del tablero de FigJam.
+Elige al menos a dos personas que vivan de cerca el problema (si has hecho la encuesta, sus respuestas te ayudarán a distinguir perfiles y a encontrarlas) y entrevístalas. Haz preguntas abiertas y céntrate en lo que hacen de verdad, porque lo que la gente dice que haría suele ser bastante más optimista que lo que hace. Antes de empezar, cada persona tiene que dar su consentimiento, y en tus notas los datos deben aparecer anonimizados desde el principio. Cada cosa interesante que descubras irá en una nota adhesiva del tablero de FigJam.
 
 Esta es la parte del proceso que menos se puede delegar en una IA, porque es en la conversación real, con sus silencios y sus rodeos, donde aparecen las cosas que nadie te contaría si le hicieras la pregunta directamente.
 

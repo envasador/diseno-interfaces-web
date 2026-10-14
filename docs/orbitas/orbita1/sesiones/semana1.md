@@ -67,15 +67,15 @@ El profesor presenta tres fichas de persona: una bien construida, una con demogr
 
 Cada alumno identifica dos o tres productos digitales que ya resuelven el problema elegido y anota cómo están organizados, qué palabras usan y en qué puntos se atascan sus usuarios. De forma optativa, puede crear con Lyssna un test de los cinco segundos sobre una pantalla de cada uno y pasárselo a dos compañeros.
 
-**Lanzar encuesta Tally (30 min)**
+**Lanzar encuesta Tally (optativo, 30 min)**
 
-Cada alumno lanza la encuesta de Tally para ampliar el volumen de datos antes del affinity mapping. Las preguntas salen del guión de entrevista recién escrito.
+El alumno que lo decida lanza la encuesta de Tally para ampliar el volumen de datos antes del affinity mapping. Las preguntas salen del guión de entrevista recién escrito.
 
 ### Para cerrar
-El alumno sale con guión de entrevista terminado, encuesta activa y análisis de referentes iniciado.
+El alumno sale con guión de entrevista terminado, análisis de referentes iniciado y, si la hace, encuesta activa.
 
 ### Antes del lunes siguiente
 Al menos dos entrevistas reales fuera de clase con el guión ya escrito, notas en FigJam. Leer el apartado 2 de la Órbita 1 (pasos 3 y 4).
 
 ### Entregable
-Idea de proyecto cerrada · guión de entrevista · encuesta activa · análisis de referentes iniciado · primera entrada en `CHANGELOG.md`.
+Idea de proyecto cerrada · guión de entrevista · encuesta activa (optativa) · análisis de referentes iniciado · primera entrada en `CHANGELOG.md`.
