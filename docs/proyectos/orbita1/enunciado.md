@@ -125,9 +125,9 @@ Este proyecto trabaja el RA1 y el RA6. Los textos de los resultados de aprendiza
 
 | CE | Texto del criterio | Dónde se trabaja en el proyecto |
 |---|---|---|
-| RA1-a | Se ha reconocido la importancia de la comunicación visual y sus principios básicos. | Personas y wireframes: decisiones justificadas con las leyes de UX y con una persona concreta |
+| RA1-a | Se ha reconocido la importancia de la comunicación visual y sus principios básicos. | Personas, wireframes y presentación del tablero: decisiones justificadas con las leyes de UX y con una persona concreta, y documentos claros y ordenados |
 | RA1-c | Se han analizado alternativas para la presentación de la información en documentos web. | MVP, user flow, sitemap y brief |
-| RA1-e | Se han utilizado y valorado distintas tecnologías para el diseño de documentos web. | FigJam, Figma Design y Lyssna a lo largo de toda la órbita |
+| RA1-e | Se han utilizado y valorado distintas tecnologías para el diseño de documentos web. | FigJam, Figma Design y Lyssna a lo largo de todo el proyecto, y la presentación final del tablero |
 
 **RA6. Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.**
 
@@ -143,35 +143,40 @@ Además de la rúbrica, algunos de estos criterios se completan con una prueba t
 
 ## Rúbrica
 
-La rúbrica tiene seis criterios, uno por cada parte del trabajo. Cada uno está vinculado a los criterios de evaluación de la tabla anterior, y su nota es la que alimenta la de esos CE.
+La rúbrica tiene siete criterios: seis corresponden a cada parte del trabajo y el séptimo a cómo está redactado, organizado y presentado el conjunto. Cada uno está vinculado a los criterios de evaluación de la tabla anterior, y su nota es la que alimenta la de esos CE.
+
+En este proyecto cuenta tanto lo que haces como la forma en que lo cuentas. Un brief con faltas de ortografía, unas fichas de personas escritas a medias o un tablero en el que hay que buscar las cosas transmiten un trabajo descuidado, por bueno que sea lo que hay detrás. Por eso la redacción, la organización y la presentación tienen un criterio propio (C7) y, además, pesan en todos los demás: **si un documento está tan mal redactado o tan desordenado que no se entiende sin que lo expliques tú, su criterio no pasa de Suficiente**, aunque el contenido sea correcto. Revisa la ortografía, escribe frases completas y claras, pon un título a cada zona del tablero y ordénalo siguiendo los pasos del proyecto.
 
 | Criterio | Insuficiente (1–4) | Suficiente (5–6) | Notable (7–8) | Sobresaliente (9–10) | CE |
 |---|---|---|---|---|---|
-| **C1. Investigación** | Faltan los referentes o las entrevistas, las entrevistas no se han hecho con personas reales o no están en texto. | Referentes y entrevistas hechos, con notas escasas o sin consentimiento registrado. | Investigación completa, con notas anonimizadas, consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa cuyos hallazgos cambian de forma visible la hipótesis inicial. | RA6-a, RA6-e |
-| **C2. Personas** | Personas inventadas o solo con datos demográficos. | Dos o tres personas con algunos rasgos respaldados por datos. | Personas con la mayoría de rasgos trazables a la investigación, principal y secundarias señaladas y contexto de uso completo. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. | RA1-a, RA6-c |
-| **C3. MVP y user flow** | Sin MVP, o flujo que solo describe el happy path. | MVP con motivos débiles y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas, flujo completo con punto de entrada y dos o tres casos límite, y cada rombo con todos sus caminos cerrados. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas y listo para usarse como guion de prueba en la Órbita 5. | RA1-c, RA6-c |
-| **C4. Arquitectura de la información y sitemap** | Sin sitemap o con una estructura que no sale de ningún dato. | Sitemap presente, sin inventario detrás o con tipos de pantalla sin distinguir. | Sitemap construido a partir del inventario, con los tres tipos de pantalla y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con el vocabulario de las entrevistas (y con el card sorting, si se ha hecho), coherentes con el user flow. | RA1-c, RA6-c |
-| **C5. Wireframes y prototipo** | Sin wireframes, con color o tipografías reales, o sin conexión entre pantallas. | Wireframes del happy path con algún nombre distinto al del sitemap o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona y un prototipo que se recorre de principio a fin. | Prototipo probado en Lyssna con cuatro o cinco personas y cambios documentados a partir de la prueba. | RA1-a, RA1-e, RA6-e |
-| **C6. Brief** | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados. | Brief completo, con el problema respaldado por datos, el alcance del MVP y una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión de la órbita. | RA1-c, RA6-e |
+| **C1. Investigación** | Falta el análisis de referentes, hay menos de dos entrevistas, no se han hecho con personas reales o no están en texto. | Análisis de referentes y al menos dos entrevistas en texto, con notas escasas, preguntas que sugieren la respuesta o sin consentimiento registrado. | Referentes analizados (organización, vocabulario y puntos de bloqueo) y entrevistas en texto, anonimizadas, con consentimiento registrado y preguntas abiertas sobre situaciones reales. | Investigación completa y bien ordenada cuyos hallazgos cambian de forma visible la hipótesis inicial. Las entrevistas adicionales o los métodos optativos (encuesta, test de los cinco segundos), si los hay, aportan datos que se usan después. | RA6-a, RA6-e |
+| **C2. Personas** | Personas inventadas, solo con datos demográficos o sin relación con las entrevistas. | Dos o tres fichas con algunos rasgos respaldados por datos, con apartados vacíos o redactados a medias. | Fichas completas (nombre, cita, contexto de uso, objetivos y frustraciones), con la mayoría de rasgos trazables a la investigación y la persona principal señalada. | Cada rasgo es trazable a un dato, las suposiciones están marcadas y las personas explican decisiones concretas del diseño. Fichas claras y con el mismo formato. | RA1-a, RA6-c |
+| **C3. MVP y user flow** | Sin MVP, o flujo que solo describe el happy path. | MVP sin motivos claros para lo que se queda fuera y flujo con casos límite poco desarrollados. | MVP justificado con las tres preguntas y un motivo por cada función descartada. Flujo con punto de entrada, happy path y al menos dos o tres casos límite, con todos los caminos cerrados y la notación correcta. | Flujo recorrido desde cada persona, con las decisiones pendientes anotadas, legible de un vistazo y listo para usarse como guion de prueba de la aplicación terminada. | RA1-c, RA6-c |
+| **C4. Arquitectura de la información y sitemap** | Sin sitemap o con una estructura que no sale de ningún dato. | Sitemap sin inventario detrás, con tipos de pantalla sin distinguir o con nombres que no coinciden con el user flow. | Sitemap construido a partir del inventario, con pantallas principales, secundarias y de sistema diferenciadas y todo el MVP a tres niveles como máximo. | Estructura y nombres justificados con el vocabulario de las entrevistas (y con el card sorting, si se ha hecho), coherentes con el MVP y el user flow. | RA1-c, RA6-c |
+| **C5. Wireframes y prototipo** | Sin wireframes, con color o tipografías reales, o sin conexión entre pantallas. | Wireframes del happy path con nombres distintos a los del sitemap, pantallas que faltan o un prototipo que se rompe. | Wireframes de baja fidelidad correctos, con el tamaño del dispositivo de la persona principal, y un prototipo que se recorre de principio a fin, probado en Lyssna con los resultados anotados. | Cambios hechos y documentados a partir de la prueba, y cada pantalla trazable al sitemap y al user flow. | RA1-a, RA1-e, RA6-e |
+| **C6. Brief** | Brief incompleto o basado en suposiciones. | Brief con los cinco elementos, poco desarrollados o difíciles de leer. | Brief completo, con el problema respaldado por datos, el alcance del MVP, enlaces a las personas, criterios de éxito y al menos una restricción ambiental. | Brief que se lee en cinco minutos, con criterios de éxito comprobables sobre las personas y que ancla cada decisión del proyecto. | RA1-c, RA6-e |
+| **C7. Redacción, organización y presentación** | Faltas de ortografía frecuentes, frases que no se entienden, tablero desordenado que no se puede recorrer sin explicación o enlaces que no abren. | Se entiende, pero con errores de ortografía o de redacción, zonas sin título o documentos mezclados que obligan a buscar. | Textos claros y sin faltas, tablero ordenado siguiendo los pasos del proyecto con un título en cada zona, nombres coherentes entre todos los documentos y enlaces que funcionan. | Presentación cuidada (por ejemplo, a partir de la plantilla de UI From Mars), con una jerarquía visual clara y textos breves y precisos. Cualquiera entiende el proyecto en cinco minutos sin ninguna explicación. | RA1-a, RA1-e |
 
 ### La auditoría de decisión oral
 
-Cada criterio de la rúbrica se confirma en la **auditoría de decisión oral**, que consiste en que te pregunte por qué tomaste una decisión concreta. Puede ser durante la órbita o en cualquier momento del curso. Una respuesta válida remite a tu investigación, a tus personas, a tu user flow o a un principio de usabilidad. Respuestas como "es lo que se suele hacer" o "me lo sugirió la IA" indican que esa decisión todavía no es tuya, y en ese caso el criterio correspondiente se queda en Insuficiente, por bien hecho que esté el documento. Por la misma razón, si aparece un uso de IA que no está anotado en el `CHANGELOG.md`, la decisión afectada no se da por justificada.
+Cada criterio de la rúbrica se confirma en la **auditoría de decisión oral**, que consiste en que te pregunte por qué tomaste una decisión concreta. Puede ser durante el proyecto o más adelante. Una respuesta válida remite a tu investigación, a tus personas, a tu user flow o a un principio de usabilidad. Respuestas como "es lo que se suele hacer" o "me lo sugirió la IA" indican que esa decisión todavía no es tuya, y en ese caso el criterio correspondiente se queda en Insuficiente, por bien hecho que esté el documento. Por la misma razón, si aparece un uso de IA que no está anotado en el `CHANGELOG.md`, la decisión afectada no se da por justificada.
 
-Guarda bien el texto de tus entrevistas, porque te las pediré a lo largo del curso. Y tenlo en cuenta cuando tengas que decidir en qué emplear el tiempo antes de entregar: un wireframe con algún fallo de forma, pero con decisiones que sabes defender, vale más que uno impecable que no sabes explicar.
+Guarda bien el texto de tus entrevistas, porque te lo pediré más adelante. Y tenlo en cuenta cuando tengas que decidir en qué emplear el tiempo antes de entregar: un wireframe con algún fallo de forma, pero con decisiones que sabes defender, vale más que uno impecable que no sabes explicar.
 
 ---
 
 ## Antes de entregar
 
 * La hipótesis inicial sigue en el tablero, cerca del brief.
+* Hay al menos dos entrevistas en texto, anonimizadas y con el consentimiento registrado.
 * Cada rasgo de cada persona tiene su dato, y las suposiciones están marcadas.
-* El texto de las entrevistas está anonimizado y el consentimiento está registrado.
 * Cada función descartada del MVP lleva su motivo.
 * El user flow tiene punto de entrada, happy path y al menos dos o tres casos límite.
 * El user flow se recorre sobre el sitemap sin huecos y con los mismos nombres.
 * Cada frame de Figma Design se llama igual que su pantalla en el sitemap.
 * El prototipo se recorre de principio a fin y los resultados de la prueba están anotados.
 * El brief tiene sus cinco elementos, incluida la restricción ambiental.
-* El `CHANGELOG.md` recoge cada uso de IA de la órbita.
+* Has revisado la ortografía y la redacción de todos los textos: brief, fichas, notas y anotaciones del flujo.
+* El tablero está ordenado siguiendo los pasos del proyecto y cada zona tiene su título.
+* El `CHANGELOG.md` recoge cada uso de IA del proyecto.
 * Los dos archivos de Figma tienen guardada la versión "Entrega Órbita 1" y todos los enlaces se abren en una ventana privada.
