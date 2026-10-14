@@ -163,7 +163,15 @@ En este proyecto cuenta tanto lo que haces como la forma en que lo cuentas. Un b
 | **C7. Redacción, organización y presentación** | Documentos que no se pueden leer ni recorrer: textos inexistentes o ininteligibles, tablero caótico o enlaces que no abren. | Faltas de ortografía frecuentes, frases que no se entienden o tablero desordenado que no se puede recorrer sin explicación. | Se entiende, pero con errores de ortografía o de redacción, zonas sin título o documentos mezclados que obligan a buscar. | Textos claros y sin faltas, tablero ordenado siguiendo los pasos del proyecto con un título en cada zona, nombres coherentes entre todos los documentos y enlaces que funcionan. | Presentación cuidada (por ejemplo, a partir de la plantilla de UI From Mars), con una jerarquía visual clara y textos breves y precisos. Cualquiera entiende el proyecto en cinco minutos sin ninguna explicación. | RA1-a, RA1-e, RA1-f |
 | **C8. Uso de la IA y trazabilidad** | No hay `CHANGELOG.md`, o hay un uso de IA evidente que no aparece en él. | Las entradas solo dicen qué herramienta se usó, sin qué se pidió ni qué se hizo con el resultado. | Entradas con lo que se pidió y lo que devolvió la IA, pero sin explicar qué se conservó, qué se cambió o por qué. | Cada uso de IA anotado con lo que se pidió, lo que devolvió, lo que se conservó y lo que se cambió, con el motivo de cada cambio. | Los cambios sobre lo que propuso la IA se justifican con datos de la propia investigación, y el registro permite reconstruir cómo se tomó cada decisión. | RA1-e |
 
-Si no has usado ninguna IA durante el proyecto, indícalo en el `CHANGELOG.md` y el criterio C8 no se tendrá en cuenta en tu nota.
+Si no has usado ninguna IA durante el proyecto, indícalo en el `CHANGELOG.md` con una entrada al cerrar la órbita, y el criterio C8 no se tendrá en cuenta en tu nota:
+
+```markdown
+## AAAA-MM-DD · Cierre de la Órbita 1
+
+No he usado ninguna herramienta de IA durante este proyecto.
+```
+
+Esa entrada se comprueba en la auditoría oral como cualquier otra decisión. Si aparece un uso de IA que no está anotado, el criterio C8 queda en Muy insuficiente.
 
 ### La auditoría de decisión oral
 
