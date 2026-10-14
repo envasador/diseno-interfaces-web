@@ -179,21 +179,3 @@ Cada criterio de la rúbrica se confirma en la **auditoría de decisión oral**,
 
 Guarda bien el texto de tus entrevistas, porque te lo pediré más adelante. Y tenlo en cuenta cuando tengas que decidir en qué emplear el tiempo antes de entregar: un wireframe con algún fallo de forma, pero con decisiones que sabes defender, vale más que uno impecable que no sabes explicar.
 
----
-
-## Antes de entregar
-
-* La hipótesis inicial sigue en el tablero, con un enlace al `BRIEF.md` del repositorio.
-* Hay al menos dos entrevistas en texto, anonimizadas y con el consentimiento registrado.
-* Cada rasgo de cada persona tiene su dato, y las suposiciones están marcadas.
-* Cada función descartada del MVP lleva su motivo.
-* El user flow tiene punto de entrada, happy path y al menos dos o tres casos límite.
-* El user flow se recorre sobre el sitemap sin huecos y con los mismos nombres.
-* Cada frame de Figma Design se llama igual que su pantalla en el sitemap.
-* El prototipo se recorre de principio a fin y, si lo has probado, los resultados de la prueba están anotados.
-* El brief final está en el `BRIEF.md` del repositorio, enlazado desde el `README.md`, con sus cinco elementos, incluida la restricción ambiental.
-* Has revisado la ortografía y la redacción de todos los textos: brief, fichas, notas y anotaciones del flujo.
-* El tablero está ordenado siguiendo los pasos del proyecto y cada zona tiene su título.
-* Los elementos que se repiten en los wireframes son componentes y todas las pantallas parten de la misma plantilla.
-* El `CHANGELOG.md` recoge cada uso de IA del proyecto, con lo que pediste, lo que conservaste, lo que cambiaste y por qué.
-* Los dos archivos de Figma tienen guardada la versión "Entrega Órbita 1" y todos los enlaces se abren en una ventana privada.
