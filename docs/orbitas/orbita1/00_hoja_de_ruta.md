@@ -21,8 +21,6 @@ Si quieres, prepara también una **encuesta** con Tally, que es optativa. Te ser
 
 Elige al menos a dos personas que vivan de cerca el problema (si has hecho la encuesta, sus respuestas te ayudarán a distinguir perfiles y a encontrarlas) y entrevístalas. Haz preguntas abiertas y céntrate en lo que hacen de verdad, porque lo que la gente dice que haría suele ser bastante más optimista que lo que hace. Antes de empezar, cada persona tiene que dar su consentimiento, y en tus notas los datos deben aparecer anonimizados desde el principio. Cada cosa interesante que descubras irá en una nota adhesiva del tablero de FigJam.
 
-Esta es la parte del proceso que menos se puede delegar en una IA, porque es en la conversación real, con sus silencios y sus rodeos, donde aparecen las cosas que nadie te contaría si le hicieras la pregunta directamente.
-
 ### Paso 4: Convierte tus notas en personas
 
 Al terminar las entrevistas tendrás muchas notas sueltas que, por sí solas, todavía no dicen gran cosa. Para ordenarlas vas a usar el **affinity mapping**, una técnica que consiste en agrupar las notas que se parecen y dejar que los grupos se formen solos, sin forzarlos para que encajen en categorías que ya tenías pensadas. De esos grupos saldrán tus dos o tres **personas**, que son fichas que describen a los usuarios típicos de tu aplicación. Es muy recomendable que una de ellas tenga algún tipo de diversidad funcional, con el mismo peso que las demás. Cada ficha recogerá una cita, el contexto en el que esa persona usaría la aplicación, sus objetivos y sus frustraciones.

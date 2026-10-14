@@ -44,7 +44,7 @@ La entrevista puede hacerse de la forma que mejor te funcione con cada persona: 
 
 Sea cual sea el formato, haz preguntas abiertas sobre situaciones reales ("cuéntame la última vez que...") y no sugieras respuestas. Antes de empezar, cada persona tiene que saber para qué vas a usar lo que te cuente y dar su consentimiento, y si vas a grabar, tiene que aceptar también la grabación. En el texto, los datos aparecerán anonimizados desde el principio (P1, P2, P3...). Después, pasa cada descubrimiento a una nota adhesiva del tablero.
 
-Este es el paso que no puedes delegar en una IA, porque las respuestas tienen que venir de personas reales. Si usas una herramienta de IA para transcribir una grabación, anótalo en el `CHANGELOG.md` y revisa la transcripción con el audio delante, porque es fácil que cambie palabras o se coma frases.
+Si usas una herramienta de IA para transcribir una grabación, anótalo en el `CHANGELOG.md` y revisa la transcripción con el audio delante, porque es fácil que cambie palabras o se coma frases.
 
 ### Paso 4. Construye las personas
 
