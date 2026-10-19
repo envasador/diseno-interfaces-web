@@ -1,0 +1,1244 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita2/01_tokens_antes_que_pantallas/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02_percepcion_visual/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>1. Por qué los tokens antes que las pantallas - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#orbita-2-fundar-el-sistema-visual" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Por qué los tokens antes que las pantallas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita3/" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen y entregables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Por qué los tokens antes que las pantallas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Por qué los tokens antes que las pantallas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-por-que-los-tokens-antes-que-las-pantallas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Por qué los tokens antes que las pantallas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Por qué los tokens antes que las pantallas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-token-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un token de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-niveles-de-tokens-primitivos-y-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dos niveles de tokens: primitivos y semánticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-decisiones-se-convierten-en-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué decisiones se convierten en token
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-hacerlo-ahora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué hacerlo ahora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-tokens-y-las-herramientas-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los tokens y las herramientas de IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_percepcion_visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Percepción visual y jerarquía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita3/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-por-que-los-tokens-antes-que-las-pantallas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Por qué los tokens antes que las pantallas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Por qué los tokens antes que las pantallas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-token-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un token de diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-niveles-de-tokens-primitivos-y-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dos niveles de tokens: primitivos y semánticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-decisiones-se-convierten-en-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué decisiones se convierten en token
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-hacerlo-ahora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué hacerlo ahora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-tokens-y-las-herramientas-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los tokens y las herramientas de IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="orbita-2-fundar-el-sistema-visual">Órbita 2 — Fundar el sistema visual</h1>
+<h2 id="1-por-que-los-tokens-antes-que-las-pantallas">1. Por qué los tokens antes que las pantallas</h2>
+<p>Al terminar la Órbita 1 tienes los wireframes de todo el recorrido de tu aplicación, en blanco, negro y gris, enlazados en un prototipo que ya has podido probar. Lo más natural ahora sería abrir el primero y empezar a darle color: eliges un azul para el botón de reservar, pruebas un par de tipografías hasta dar con una que te guste y pasas a la pantalla siguiente. Ese método funciona bien en la primera pantalla, pero en cuanto llegas a la tercera empiezan los problemas, porque ya no recuerdas qué azul exacto pusiste en el botón, si el título medía 24 o 28 píxeles ni cuánto espacio dejaste entre las tarjetas. Por eso en esta órbita vas a trabajar en otro orden: <strong>primero decidirás todos los valores visuales de tu aplicación y les pondrás nombre</strong>, y al final de la órbita los aplicarás a todas tus pantallas.</p>
+<p>Piensa en lo que ocurriría en la aplicación del polideportivo si se diseñara pantalla a pantalla. Después de dos semanas de trabajo, el botón "Reservar" aparece en cinco pantallas con tres azules ligeramente distintos, porque cada vez se eligió a ojo, y nadie se ha dado cuenta porque las pantallas nunca se han visto juntas. Entonces Manuel, que lee el móvil con la letra al 200 %, prueba el prototipo y apenas distingue el texto blanco sobre el más claro de esos azules. Para arreglarlo hay que buscar cada botón en cada pantalla y cambiarlo a mano, con el riesgo de dejarse alguno. Si el color del botón hubiera estado definido una sola vez y con un nombre, <strong>el arreglo habría consistido en cambiar un único valor</strong>.</p>
+<h3 id="que-es-un-token-de-diseno">Qué es un token de diseño</h3>
+<p>Un <strong>token de diseño</strong> es una decisión visual a la que le das un nombre para poder reutilizarla siempre igual. Tiene dos partes, el nombre y el valor: el token <code>color-primary</code> puede valer <code>#1A5FB4</code>, y el token <code>space-4</code>, 16 píxeles. A partir de ese momento, cuando diseñas un botón le aplicas el nombre del token en lugar de escribir el valor, y si más adelante decides cambiar el color principal de la aplicación, lo cambias en el token y se actualizan a la vez todos los elementos que lo usan.</p>
+<p>Esta idea ya la conoces de programación, porque es la misma que la de una variable. En lugar de repetir un número por todo el código, lo guardas en una variable con un nombre que explica para qué sirve y usas ese nombre cada vez que lo necesitas. Los tokens son las variables del diseño, y de hecho en Figma se crean con una función que se llama así, <strong>variables</strong>, que aprenderás a usar en el apartado 8. En la Órbita 3, esos mismos tokens se convertirán en propiedades personalizadas de CSS (<code>--color-primary</code>), de modo que el diseño y el código compartirán los mismos nombres. En eso consiste el sistema de diseño que vas a construir durante el curso: una única colección de decisiones con dos representaciones, una en Figma y otra en código, que tienen que coincidir siempre (RA1-d).</p>
+<p>Verás que <strong>los nombres de los tokens están en inglés</strong>. Es la convención habitual en los sistemas de diseño (nombres como <code>primary</code>, <code>surface</code> u <code>on-surface</code> vienen de Material Design, el sistema de diseño de Google) y además te ahorra traducirlos cuando pasen al código, que también escribes en inglés.</p>
+<h3 id="dos-niveles-de-tokens-primitivos-y-semanticos">Dos niveles de tokens: primitivos y semánticos</h3>
+<p>Si al color principal de tu aplicación lo llamas <code>azul</code>, tendrás un problema el día que decidas que tu marca será verde, porque tendrás que cambiar el nombre en todas partes o quedarte con un token llamado <code>azul</code> que vale verde. Para evitarlo, <strong>los sistemas de diseño organizan los tokens en niveles</strong>, y en este módulo vas a trabajar con dos.</p>
+<p>Los <strong>tokens primitivos</strong> recogen todos los valores que tienes disponibles y se nombran por lo que son: <code>blue-100</code>, <code>blue-500</code>, <code>gray-900</code> o <code>space-4</code>. Juntos forman la paleta completa de la que vas a ir eligiendo, como la caja de lápices de colores que tienes delante antes de empezar un dibujo. Un primitivo solo indica un valor, sin decir dónde se usa.</p>
+<p>Los <strong>tokens semánticos</strong> se nombran por la función que cumplen en la interfaz. <code>color-primary</code> es el color de las acciones principales, <code>color-surface</code> es el fondo sobre el que se colocan los contenidos, <code>color-on-surface</code> es el color del texto que va encima de ese fondo y <code>color-error</code> es el de los mensajes de error. Un token semántico apunta a un primitivo en lugar de tener un valor propio, de modo que <code>color-primary</code> apunta a <code>blue-500</code>. En Figma, a esa referencia de un token a otro se le llama <strong>alias</strong>.</p>
+<p><strong>Las pantallas usan únicamente tokens semánticos</strong>. El botón "Reservar" lleva <code>color-primary</code> como fondo, y nunca <code>blue-500</code> directamente. Así, si la marca pasa a ser verde, basta con que <code>color-primary</code> apunte a <code>green-500</code> y no tienes que tocar ningún botón.</p>
+<p><img alt="Los tokens primitivos guardan los valores, los semánticos apuntan a un primitivo distinto en cada modo y las pantallas solo usan los semánticos" src="../img/orbita2_01_esquema_niveles_tokens.svg" /></p>
+<p>Esta separación es también la que hace posible el <strong>modo oscuro</strong>, que forma parte obligatoria del entregable de esta órbita. En el modo claro, <code>color-surface</code> apunta a un gris casi blanco y <code>color-on-surface</code> a un gris casi negro, y en el modo oscuro los dos se intercambian. Los componentes siguen usando exactamente los mismos tokens semánticos, y lo único que cambia de un modo a otro es el primitivo al que apunta cada uno. Lucía, que lleva el brillo del móvil al mínimo para que la batería le aguante todo el día, es muy probable que use el modo oscuro, y en las pantallas OLED de muchos móviles un fondo oscuro también reduce el consumo de energía (lo verás con más detalle en el apartado 8).</p>
+<p>Algunos sistemas de diseño grandes añaden un tercer nivel, los tokens de componente (por ejemplo, <code>button-background</code>), que se usan solo dentro de un componente concreto. En este módulo los dejaremos para la Órbita 3, cuando construyas los componentes en código.</p>
+<h3 id="que-decisiones-se-convierten-en-token">Qué decisiones se convierten en token</h3>
+<p>En esta órbita vas a crear tokens para cinco tipos de decisiones, y cada una tiene su apartado (RA1-b, RA1-d):</p>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Qué decide</th>
+<th>Ejemplo</th>
+<th>Apartado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color</strong></td>
+<td>La paleta de marca y el uso de cada color en la interfaz, en modo claro y oscuro</td>
+<td><code>color-primary</code>, <code>color-surface</code>, <code>color-error</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Tipografía</strong></td>
+<td>Las familias, los tamaños, los pesos y la altura de línea, organizados en niveles con nombre</td>
+<td><code>display</code>, <code>heading</code>, <code>body</code>, <code>caption</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Espaciado</strong></td>
+<td>La separación entre elementos y el relleno interior de cada uno, sobre una cuadrícula de 4 u 8 píxeles</td>
+<td><code>space-2</code> (8 px), <code>space-4</code> (16 px)</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>Radio</strong></td>
+<td>Cuánto se redondean las esquinas de botones, tarjetas y campos</td>
+<td><code>radius-sm</code>, <code>radius-full</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>Elevación</strong></td>
+<td>Las sombras que indican qué elementos quedan por encima de otros</td>
+<td><code>elevation-1</code>, <code>elevation-2</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Para saber si un valor merece convertirse en token, hazte una pregunta sencilla: <strong>¿lo vas a usar en más de un sitio o expresa una regla de tu aplicación?</strong> El azul de los botones principales, el tamaño de los títulos de pantalla o la separación entre tarjetas cumplen las dos condiciones. El color concreto de una ilustración que solo aparece en la pantalla de bienvenida no cumple ninguna, así que no hace falta convertirlo en token.</p>
+<h3 id="por-que-hacerlo-ahora">Por qué hacerlo ahora</h3>
+<p>Las decisiones que tomes en esta órbita las vas a arrastrar durante el resto del curso, y eso es una buena noticia si las tomas con cuidado. En la Órbita 3, si tus tokens están bien nombrados en Figma, pasarlos a CSS será casi copiarlos, mientras que si cada pantalla tiene sus propios valores sueltos tendrás que interpretarlos uno a uno y acabarás con un código igual de desordenado. En la Órbita 4 vas a comprobar la accesibilidad de tu sistema, y el contraste entre el texto y el fondo es mucho más fácil de revisar cuando solo tienes que comprobar unas pocas parejas de tokens (<code>color-on-surface</code> sobre <code>color-surface</code>, <code>color-on-primary</code> sobre <code>color-primary</code>) que cuando tienes que ir pantalla por pantalla. Si una pareja no llega al contraste mínimo, <strong>lo corriges en el token y queda corregido en toda la aplicación</strong> (RA5-a).</p>
+<p>Un sistema de tokens también reduce el impacto ambiental de tu aplicación. Las <strong>Web Sustainability Guidelines (WSG)</strong> del W3C lo recogen en su <strong>criterio 2.13, "Usar un sistema de diseño para mantener la coherencia de la interfaz"</strong>, porque un conjunto pequeño de valores que se reutilizan genera hojas de estilo más ligeras que decenas de colores y tamaños que solo se usan una vez, y una interfaz coherente obliga a quien la usa a aprender menos cosas. En el apartado 4 verás otro caso concreto, el de las tipografías, donde cada familia y cada peso que añades es un archivo más que tiene que descargar el móvil de Lucía.</p>
+<p>Y, por último, al final de esta órbita vas a aplicar el sistema a todos los wireframes del recorrido de tu user flow para convertirlos en <strong>mockups</strong>, que son las pantallas con su aspecto definitivo (apartado 9). Si para entonces tienes los tokens bien definidos, ese trabajo consistirá en asignar nombres a cada elemento, y cualquier cambio que te pidan las pruebas con personas lo podrás hacer en un solo sitio.</p>
+<h3 id="los-tokens-y-las-herramientas-de-ia">Los tokens y las herramientas de IA</h3>
+<p>Hay herramientas que generan una paleta de colores en un segundo, como Coolors, o que proponen combinaciones de tipografías, como Fontjoy, y los asistentes de IA son capaces de devolver un sistema completo de tokens con muy buen aspecto. <strong>Lo que ninguna de ellas puede hacer es tomar las decisiones por ti</strong>, porque no conoce a tus personas, y tampoco sabe que Manuel necesita un contraste alto, que Lucía mira la pantalla con el brillo al mínimo o que tu color de error tiene que distinguirse bien de tu color principal.</p>
+<p>Por eso, <strong>cada valor de tu sistema necesita un motivo que puedas explicar</strong>, y ese motivo tiene que salir de tus personas, del contraste, de la legibilidad o de la coherencia con el resto de tus decisiones. En la auditoría oral te voy a preguntar por qué tu <code>color-primary</code> es ese y no otro, y una respuesta como "lo elegí entre cinco propuestas de Coolors porque es el único que llega a un contraste de 4,5:1 con el texto blanco, que es lo que necesita Manuel" demuestra que has tomado tú la decisión, aunque la propuesta saliera de una herramienta. Cada vez que uses una de estas herramientas, anótalo en el <code>CHANGELOG.md</code>: qué le pediste, qué te propuso, qué conservaste y qué cambiaste.</p>
+<h3 id="antes-de-seguir">Antes de seguir</h3>
+<p>Antes de pasar al apartado siguiente, coge uno de tus wireframes y haz una lista con todas las decisiones visuales que tendrás que tomar para convertirlo en una pantalla terminada: el color del fondo, el del texto, el tamaño de cada título, la separación entre los elementos, la forma de los botones, etc. Al lado de cada una, <strong>escribe el nombre del token semántico que le pondrías</strong>. Si te salen nombres que describen el aspecto (<code>azul-oscuro</code>, <code>titulo-grande-negrita</code>) en lugar de la función, repasa la diferencia entre primitivos y semánticos, porque en el apartado 8 vas a crear estos tokens en Figma y conviene que tengas claros los nombres antes de empezar. Guarda esa lista, porque es el primer borrador de tu sistema.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
