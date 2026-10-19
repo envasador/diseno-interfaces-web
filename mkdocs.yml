@@ -67,12 +67,7 @@ nav:
   - Órbita 2:
     - Resumen y entregables: orbitas/orbita2/index.md
     - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
-    - 2. Color — de la intuición al sistema: orbitas/orbita2/02_color.md
-    - 3. Tipografía — escala y jerarquía semántica: orbitas/orbita2/03_tipografia.md
-    - 4. Espaciado, radio y elevación: orbitas/orbita2/04_espaciado.md
-    - 5. Variables en Figma: orbitas/orbita2/05_variables_figma.md
-    - 6. El sistema en modo claro y oscuro: orbitas/orbita2/06_modo_claro_oscuro.md
-    - 7. Entregable — la capa de foundations: orbitas/orbita2/07_entregable.md
+    - 2. Percepción visual y jerarquía: orbitas/orbita2/02_percepcion_visual.md
 
   - Órbita 3:
     - Resumen y entregables: orbitas/orbita3/index.md
