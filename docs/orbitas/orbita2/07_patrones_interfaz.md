@@ -48,7 +48,7 @@ Si quieres un repaso rápido de todo esto, en este vídeo Kole Jain recorre en m
   <iframe src="https://www.youtube-nocookie.com/embed/EcbgbKtOELY" title="Every UI/UX Concept Explained in Under 10 Minutes, de Kole Jain" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=EcbgbKtOELY).
+<small>**Fuente:** vídeo de Kole Jain publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=EcbgbKtOELY), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 ### Cómo se organizan los componentes: Atomic Design
 

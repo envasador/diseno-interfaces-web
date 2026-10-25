@@ -44,7 +44,7 @@ Si quieres ver estas ideas aplicadas, en este vídeo el diseñador Eze Cichello 
   <iframe src="https://www.youtube-nocookie.com/embed/wEocy9cz3yw?start=74" title="Principios de composición, de Eze Cichello" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=wEocy9cz3yw&t=74s).
+<small>**Fuente:** vídeo de Eze Cichello publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=wEocy9cz3yw&t=74s), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 En Figma, la herramienta que te permite aplicar todo esto sin tener que medir es **Auto layout**, que coloca los elementos de un frame en fila o en columna con una separación y un relleno fijos. Cuando crees tus variables en Figma verás que esa separación y ese relleno pueden usar directamente tus tokens de espaciado.
 

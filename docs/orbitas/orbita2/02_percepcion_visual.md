@@ -45,7 +45,7 @@ Si quieres ver estas herramientas aplicadas a ejemplos concretos, en este vídeo
   <iframe src="https://www.youtube-nocookie.com/embed/_F4MTXXydWA?start=252" title="Jerarquía visual en diseño gráfico, de Hey Jaime" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=_F4MTXXydWA&t=252s).
+<small>**Fuente:** vídeo de Hey Jaime publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=_F4MTXXydWA&t=252s), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 ### Por dónde recorre la vista una pantalla
 

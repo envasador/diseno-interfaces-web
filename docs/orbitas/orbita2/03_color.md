@@ -49,7 +49,7 @@ Si quieres repasar estas ideas con ejemplos, en este vídeo breve Eze Cichello e
   <iframe src="https://www.youtube-nocookie.com/embed/yRiyah61rU4" title="Curso breve de color, de Eze Cichello" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=yRiyah61rU4).
+<small>**Fuente:** vídeo de Eze Cichello publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=yRiyah61rU4), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 ### La paleta de marca
 

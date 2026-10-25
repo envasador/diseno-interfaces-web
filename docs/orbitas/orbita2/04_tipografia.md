@@ -41,7 +41,7 @@ Si quieres repasar todo esto con ejemplos, en este vídeo breve Eze Cichello exp
   <iframe src="https://www.youtube-nocookie.com/embed/M-MUn0Zi3yA" title="Curso breve de tipografía, de Eze Cichello" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=M-MUn0Zi3yA).
+<small>**Fuente:** vídeo de Eze Cichello publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=M-MUn0Zi3yA), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 ### Cuánto pesa una tipografía
 

@@ -26,7 +26,7 @@ En este apartado es cuando empezamos a trabajar con Figma. Si nunca lo has usado
   <iframe src="https://www.youtube-nocookie.com/embed/VdS9ZGHHXWQ" title="Curso de Figma 2025 desde cero, de afor digital" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=VdS9ZGHHXWQ).
+<small>**Fuente:** vídeo de afor digital publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=VdS9ZGHHXWQ), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 Los wireframes de esta órbita son de **baja fidelidad** (en inglés, *lo-fi*), lo que significa que se parecen poco al aspecto final de la aplicación y siguen unas convenciones muy concretas. Se dibujan en **escala de grises**, usando solo negro, blanco y un gris medio. No se usan tipografías reales: los textos largos se representan con líneas horizontales del mismo grosor, y los títulos solo se escriben si ayudan a entender qué hay en la pantalla. Las imágenes se representan con un rectángulo con una X dentro, y los botones, los campos de formulario y los iconos, con formas geométricas sencillas.
 
@@ -42,7 +42,7 @@ Cuando ya te manejes con lo básico de Figma, este segundo vídeo, de Codex Comm
   <iframe src="https://www.youtube-nocookie.com/embed/qWIdforZ9x0" title="How to Wireframe in Figma in 2026, de Codex Community" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
 
-Si el vídeo no se carga, puedes verlo directamente en [YouTube](https://www.youtube.com/watch?v=qWIdforZ9x0).
+<small>**Fuente:** vídeo de Codex Community publicado en YouTube ([ver en YouTube](https://www.youtube.com/watch?v=qWIdforZ9x0), por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small>
 
 ### Componentes y plantilla de pantalla
 
