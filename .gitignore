@@ -6,19 +6,14 @@ docs/orbitas/orbita2/sesiones/guion_profesor.md
 
 # Órbita 2: pendiente de publicar (se quitará de aquí al subir el resto)
 docs/orbitas/orbita2/00_hoja_de_ruta.md
-docs/orbitas/orbita2/03_color.md
-docs/orbitas/orbita2/04_tipografia.md
-docs/orbitas/orbita2/05_espaciado_reticula.md
-docs/orbitas/orbita2/06_iconos_imagenes.md
-docs/orbitas/orbita2/07_patrones_interfaz.md
-docs/orbitas/orbita2/08_variables_modos.md
-docs/orbitas/orbita2/09_mockups_entregable.md
+docs/orbitas/orbita2/08_mockups_entregable.md
 docs/orbitas/orbita2/img/orbita2_00_*
-docs/orbitas/orbita2/img/orbita2_03_*
-docs/orbitas/orbita2/img/orbita2_04_*
-docs/orbitas/orbita2/img/orbita2_05_*
-docs/orbitas/orbita2/img/orbita2_06_*
-docs/orbitas/orbita2/img/orbita2_07_*
 docs/orbitas/orbita2/img/orbita2_08_*
-docs/orbitas/orbita2/img/orbita2_09_*
 docs/orbitas/orbita2/sesiones/
+mkdocs.local.yml
+local_hooks.py
+__pycache__/
+
+# Órbita 2: ayuda del profesor, solo en local (no se publica nunca)
+docs/orbitas/orbita2/sesiones/ayuda_variables_figma.md
+docs/orbitas/orbita2/img/orbita2_ayuda_*

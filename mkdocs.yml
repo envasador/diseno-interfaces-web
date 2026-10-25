@@ -68,6 +68,11 @@ nav:
     - Resumen y entregables: orbitas/orbita2/index.md
     - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
     - 2. Percepción visual y jerarquía: orbitas/orbita2/02_percepcion_visual.md
+    - '3. Color: de la intuición al sistema': orbitas/orbita2/03_color.md
+    - '4. Tipografía: legibilidad, escala y jerarquía': orbitas/orbita2/04_tipografia.md
+    - 5. Espaciado, retícula y composición: orbitas/orbita2/05_espaciado_reticula.md
+    - 6. Iconos e imágenes: orbitas/orbita2/06_iconos_imagenes.md
+    - 7. Patrones de interfaz: orbitas/orbita2/07_patrones_interfaz.md
 
   - Órbita 3:
     - Resumen y entregables: orbitas/orbita3/index.md
