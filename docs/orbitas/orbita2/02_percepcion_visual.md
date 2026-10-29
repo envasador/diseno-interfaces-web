@@ -37,7 +37,7 @@ Hay varias propiedades que hacen que un elemento atraiga la mirada antes que otr
 
 En la pantalla de detalle de una pista, lo que Lucía necesita ver primero es si hay hora libre y cómo reservarla, así que el botón "Reservar" lleva el color principal y es el único elemento de la pantalla con ese color. A este efecto se le llama **efecto de aislamiento** (o de Von Restorff, otra de las Leyes UX): cuando un elemento es distinto de todos los que lo rodean, se ve y se recuerda mejor. La consecuencia práctica es que cada pantalla debería tener una sola acción principal. Si en la misma pantalla hay tres botones con el color principal, has perdido el efecto, y la persona tendrá que leerlos los tres para decidir.
 
-Una forma muy sencilla de comprobar la jerarquía es la **prueba del desenfoque**. Haz una captura de tu pantalla, desenfócala hasta que no se pueda leer ningún texto (en Figma puedes añadir un efecto de desenfoque a una copia del frame) y mira qué destaca. Si lo primero que ves es la acción más importante del paso del user flow en el que está esa pantalla, la jerarquía funciona. Si lo primero que ves es una foto decorativa o el logotipo, hay que corregirla.
+Con estas herramientas puedes **replantearte la jerarquía de cualquier pantalla**, y la forma más directa de hacerlo es preguntarte qué tiene que ver primero la persona que llega a ella. Si la respuesta es la acción más importante del paso del user flow en el que está esa pantalla y eso es lo que más destaca, la jerarquía funciona. Si lo que más destaca es una foto decorativa, el logotipo o una opción secundaria, hay que rediseñar la pantalla: cambiar el orden, agrupar de otra forma, dar más tamaño o más espacio a lo importante o quitar lo que sobra.
 
 Si quieres ver estas herramientas aplicadas a ejemplos concretos, en este vídeo Jaime, del canal Hey Jaime, explica cómo se construye la jerarquía visual en diseño gráfico con el tamaño, el color y el contraste, la tipografía, el espacio y la composición, que son casi las mismas propiedades de la lista anterior. El vídeo empieza directamente en la parte práctica (a partir del minuto 4), después de la presentación y de un fragmento patrocinado.
 
@@ -67,4 +67,12 @@ La pregunta que tienes que hacerte para evitarlo es a quién sirve la jerarquía
 
 ### Antes de seguir
 
-Antes de pasar al color, coge el wireframe de la pantalla más importante de tu user flow y **haz con él la prueba del desenfoque**. Después escribe, junto al wireframe, qué elemento tiene que verse en primer lugar, cuáles en segundo lugar y cuáles pueden quedar en un plano discreto, y comprueba que lo que has escrito coincide con lo que se ve desenfocado. Revisa también los grupos de la pantalla: dentro de cada grupo, los elementos tienen que estar más cerca entre sí que del grupo de al lado. Guarda estas notas, porque en el apartado 8, cuando apliques el sistema a tus wireframes, tendrás que comprobar que el color y la tipografía refuerzan esa jerarquía en lugar de cambiarla.
+Antes de pasar al color, vuelve a tus wireframes de la Órbita 1 y **replantéate su jerarquía**. Duplica las pantallas del happy path en una sección nueva llamada "Wireframes rediseñados" (los originales se quedan como estaban) y repasa cada una con estas preguntas:
+
+- ¿Qué es lo primero que tiene que ver tu persona en esta pantalla? ¿Es lo que más destaca?
+- ¿Hay un único botón principal, y dice lo que va a pasar?
+- ¿Están juntos los elementos que van juntos? Dentro de cada grupo, los elementos tienen que estar más cerca entre sí que del grupo de al lado.
+- ¿El orden de la pantalla sigue el orden en que tu persona toma las decisiones?
+- ¿Sobra algo que no ayuda a la tarea?
+
+Rediseña en la copia todo lo que no pase estas preguntas, sin salir de la escala de grises, y escribe junto a cada pantalla qué has cambiado y por qué. Los mockups del apartado 8 se construyen a partir de estos wireframes rediseñados, y al terminarlos tendrás que comprobar que el color y la tipografía refuerzan la jerarquía que has decidido aquí.

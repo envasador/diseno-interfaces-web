@@ -66,6 +66,8 @@ nav:
 
   - Órbita 2:
     - Resumen y entregables: orbitas/orbita2/index.md
+    - Hoja de ruta: orbitas/orbita2/00_hoja_de_ruta.md
+    - "Proyecto: Diseñar para que se entienda": proyectos/orbita2/enunciado.md
     - 1. Por qué los tokens antes que las pantallas: orbitas/orbita2/01_tokens_antes_que_pantallas.md
     - 2. Percepción visual y jerarquía: orbitas/orbita2/02_percepcion_visual.md
     - '3. Color: de la intuición al sistema': orbitas/orbita2/03_color.md
@@ -73,6 +75,9 @@ nav:
     - 5. Espaciado, retícula y composición: orbitas/orbita2/05_espaciado_reticula.md
     - 6. Iconos e imágenes: orbitas/orbita2/06_iconos_imagenes.md
     - 7. Patrones de interfaz: orbitas/orbita2/07_patrones_interfaz.md
+    - "8. Del wireframe al mockup: guía de estilo y entregable": orbitas/orbita2/08_mockups_entregable.md
+    - "Ayuda: variables en Figma": orbitas/orbita2/sesiones/ayuda_variables_figma.md
+    - "Ayuda: Auto layout, responsive y variables": orbitas/orbita2/sesiones/ayuda_autolayout_figma.md
 
   - Órbita 3:
     - Resumen y entregables: orbitas/orbita3/index.md

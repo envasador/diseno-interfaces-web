@@ -33,7 +33,7 @@ Para la mayoría de las interfaces basta con **una sola familia de palo seco** c
 
 Para comparar combinaciones te puede servir Fontjoy, que propone parejas de tipografías al azar. Antes de decidirte, **prueba la combinación con textos reales de tu aplicación** (el nombre de una pista, una hora, un precio y un mensaje de error), porque una tipografía que queda muy bien en el texto de muestra puede funcionar mal con cifras. Como siempre, anota en el `CHANGELOG.md` las herramientas que hayas usado y por qué te has quedado con lo que elegiste.
 
-La mayoría de las tipografías de Google Fonts tienen una licencia libre (la SIL Open Font License) que permite usarlas en una web sin pagar. Si eliges una tipografía de otro sitio, **comprueba su licencia antes de usarla**, porque muchas fuentes comerciales cobran por usarlas en una web aunque sean gratuitas para uso personal.
+En este módulo vas a elegir tus tipografías en **Google Fonts**. Sus tipografías tienen una licencia libre (la SIL Open Font License) que permite usarlas en una web sin pagar, y además están todas disponibles en Figma. Si en otro proyecto eliges una tipografía de otro sitio, comprueba su licencia antes de usarla, porque muchas fuentes comerciales cobran por usarlas en una web aunque sean gratuitas para uso personal.
 
 Si quieres repasar todo esto con ejemplos, en este vídeo breve Eze Cichello explica la diferencia entre tipografía y fuente, las familias con serifa y de palo seco, cómo combinar dos tipografías, cómo elegirlas y qué hay que mirar en sus licencias. Está pensado para el diseño gráfico en general, así que, cuando lo veas, piensa en cada consejo aplicado a una pantalla pequeña y a textos de interfaz.
 
@@ -47,12 +47,12 @@ Si quieres repasar todo esto con ejemplos, en este vídeo breve Eze Cichello exp
 
 Cada familia y cada peso que eliges es un archivo que el navegador tiene que descargar antes de mostrar el texto con su aspecto definitivo, y con conexiones lentas, como la del móvil de Lucía en algunas zonas del polideportivo, eso se nota en el tiempo de carga y en el consumo de datos. Las **Web Sustainability Guidelines (WSG)** del W3C lo recogen en su **criterio 2.18, "Usar tipografía web optimizada y apropiada"**, que pide servir las fuentes en un formato optimizado y dar preferencia a las tipografías que ya vienen instaladas en el dispositivo siempre que sea posible.
 
-En este módulo puedes elegir tus tipografías con libertad, pero con unos límites:
+Por eso, en este módulo puedes elegir tus tipografías con libertad, pero con dos límites:
 
 - Como máximo **dos familias**.
-- Como máximo **cuatro archivos en total** (por ejemplo, el 400 y el 700 de la familia del texto y el 700 de la de los títulos). Si tu familia es **variable**, es decir, si incluye todos sus pesos en un único archivo, cuenta como uno solo, aunque suele pesar más que un peso suelto.
-- Los archivos tienen que estar en formato **WOFF2**, que es el más comprimido, y a ser posible solo con los caracteres que necesitas (los del alfabeto latino, en lugar de incluir también el griego o el cirílico).
-- En la guía de estilo tienes que indicar **cuánto pesan en total** tus tipografías y por qué te compensa ese peso.
+- Solo los **pesos que de verdad uses** (por ejemplo, el 400 y el 700 de la familia del texto y el 700 de la de los títulos). Cada peso es un archivo más.
+
+Cómo se cargan esos archivos en la web, y en qué formato, lo verás en la Órbita 3.
 
 La alternativa más ligera es usar las **tipografías del sistema**, que son las que ya tiene instaladas cada dispositivo (San Francisco en los de Apple, Roboto en Android y Segoe UI en Windows) y que no hay que descargar. Su inconveniente es que tu aplicación se verá con una tipografía distinta en cada dispositivo, pero para muchas interfaces es una opción excelente y perfectamente defendible en la auditoría oral.
 
@@ -82,4 +82,4 @@ Cuando definas la escala, recuerda lo que viste sobre jerarquía. Si el `heading
 
 ### Antes de seguir
 
-Antes de pasar al espaciado, comprueba que tienes elegidas una o dos familias, con su licencia comprobada y el peso total de los archivos anotado, y que tu escala tiene entre seis y ocho niveles con nombre, tamaño, altura de línea y peso. Después coge un texto real de tu aplicación (por ejemplo, la pantalla de confirmación de una reserva) y escríbelo con tu escala, asignando un nivel a cada línea. Si alguna línea no encaja en ningún nivel, o si dudas entre dos, apúntalo, porque o te falta un nivel o te sobra uno que se parece demasiado a otro. Por último, **duplica todos los tamaños de ese texto** para simular la letra al 200 % de Manuel y comprueba que la pantalla sigue entendiéndose.
+Antes de pasar al espaciado, comprueba que tienes elegidas una o dos familias, con los pesos justos, y que tu escala tiene entre seis y ocho niveles con nombre, tamaño, altura de línea y peso. Después coge un texto real de tu aplicación (por ejemplo, la pantalla de confirmación de una reserva) y escríbelo con tu escala, asignando un nivel a cada línea. Si alguna línea no encaja en ningún nivel, o si dudas entre dos, apúntalo, porque o te falta un nivel o te sobra uno que se parece demasiado a otro. Por último, **duplica todos los tamaños de ese texto** para simular la letra al 200 % de Manuel y comprueba que la pantalla sigue entendiéndose.

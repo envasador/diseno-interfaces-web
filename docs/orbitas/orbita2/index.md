@@ -1,6 +1,6 @@
 # Órbita 2 — Fundar el sistema visual
 
-**Horas:** unas 15 · **RA principales:** RA1 (criterios a, b, d, e y f) · **Semanas:** de la 5 a la 7
+**Horas:** unas 15 · **RA principales:** RA1 (criterios a, b, d y f) y RA2 (criterio a) · **Semanas:** de la 5 a la 7
 
 En la Órbita 1 decidiste qué hace tu aplicación y cómo se recorre, y lo dibujaste todo en escala de grises. En esta órbita vas a decidir su aspecto, es decir, los colores, las tipografías, los iconos, los espacios entre elementos y la forma de los botones y las tarjetas, y para hacerlo con criterio vas a aprender antes cómo lee una persona una pantalla y qué patrones de interfaz ya conoce. Lo vas a hacer en un orden distinto al que seguramente esperas, porque antes de pintar ninguna pantalla vas a definir todos esos valores en Figma y a ponerle un nombre a cada uno, y solo cuando el sistema esté completo lo aplicarás a tus wireframes para convertirlos en las pantallas definitivas. Cada decisión visual que tomes tendrá que poder explicarse a partir de tus personas, porque un color o un tamaño de letra también ayudan (o estorban) a que Manuel y Lucía consigan lo que necesitan.
 
@@ -22,7 +22,7 @@ Todo el trabajo de esta órbita se hace en Figma Design, en el mismo archivo don
 | **Espaciado, retícula, radio y elevación** | Figma Design | Una escala de espacios basada en una cuadrícula de 4 u 8 píxeles, la retícula de columnas de cada tamaño de pantalla, los radios de las esquinas y los niveles de sombra | Decidirán los márgenes, el relleno, la colocación y la forma de todos los componentes que programes |
 | **Iconos** | Figma Design | Los iconos que usa tu aplicación, de una única librería, convertidos en componentes y con un tamaño definido por la escala | Se exportarán en SVG para la maquetación de la Órbita 3 |
 | **Guía de estilo** | Figma Design | Una página del archivo que muestra cada token y cada estilo con su nombre, su valor y el motivo de la decisión, junto a ejemplos de uso | Te servirá de referencia mientras maquetas en la Órbita 3 y será la base de la documentación de la Órbita 6 |
-| **Mockups** | Figma Design | Todas las pantallas del recorrido de tu user flow con el sistema aplicado, en modo claro y oscuro, enlazadas en un prototipo | Serán el modelo que maquetarás con HTML y CSS en la Órbita 3 |
+| **Mockups** | Figma Design | Tus wireframes rediseñados con el sistema aplicado: todas las pantallas del happy path, construidas con Auto layout y enlazadas en un prototipo, con la pantalla principal en un segundo ancho y en modo oscuro junto con otra pantalla | Serán el modelo que maquetarás con HTML y CSS en la Órbita 3 |
 
 Además, como en la Órbita 1, cualquier uso de una IA quedará anotado en el `CHANGELOG.md` del repositorio.
 
@@ -35,4 +35,6 @@ Además, como en la Órbita 1, cualquier uso de una IA quedará anotado en el `C
 5. [Espaciado, retícula y composición](05_espaciado_reticula.md)
 6. [Iconos e imágenes](06_iconos_imagenes.md)
 7. [Patrones de interfaz](07_patrones_interfaz.md)
-8. Del wireframe al mockup: guía de estilo y entregable (próximamente)
+8. [Del wireframe al mockup: guía de estilo y entregable](08_mockups_entregable.md)
+
+El trabajo de la órbita se organiza en la [hoja de ruta](00_hoja_de_ruta.md) y se entrega con el [proyecto de la Órbita 2](../../proyectos/orbita2/enunciado.md). Para la parte de Figma tienes dos ayudas: [variables en Figma](sesiones/ayuda_variables_figma.md) y [Auto layout, responsive y variables](sesiones/ayuda_autolayout_figma.md).
