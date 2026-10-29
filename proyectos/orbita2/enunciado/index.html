@@ -1,0 +1,2051 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/proyectos/orbita2/enunciado/">
+      
+      
+        <link rel="prev" href="../../../orbitas/orbita2/00_hoja_de_ruta/">
+      
+      
+        <link rel="next" href="../../../orbitas/orbita2/01_tokens_antes_que_pantallas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Proyecto: Diseñar para que se entienda - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#proyecto-de-la-orbita-2-disenar-para-que-se-entienda" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Proyecto: Diseñar para que se entienda
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../orbitas/orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../orbitas/orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../orbitas/orbita3/" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../orbitas/orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../orbitas/orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../orbitas/orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../orbitas/orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen y entregables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/00_hoja_de_ruta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto: Diseñar para que se entienda
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto: Diseñar para que se entienda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-encargo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El encargo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-tienes-que-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué tienes que hacer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué tienes que hacer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-prepara-el-archivo-y-haz-el-inventario-de-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1. Prepara el archivo y haz el inventario de decisiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-replantea-la-jerarquia-y-redisena-tus-wireframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2. Replantea la jerarquía y rediseña tus wireframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-construye-el-sistema-de-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3. Construye el sistema de color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-elige-la-tipografia-y-define-la-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4. Elige la tipografía y define la escala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-fija-el-espaciado-la-reticula-los-radios-y-la-elevacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5. Fija el espaciado, la retícula, los radios y la elevación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-6-elige-los-iconos-y-revisa-tus-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 6. Elige los iconos y revisa tus componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-7-monta-el-sistema-en-figma-variables-estilos-y-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 7. Monta el sistema en Figma: variables, estilos y componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-8-construye-los-mockups-el-prototipo-y-la-guia-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 8. Construye los mockups, el prototipo y la guía de estilo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué entregas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué entregas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-tiene-que-demostrar-tu-archivo-de-figma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que tiene que demostrar tu archivo de Figma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-resumen-de-la-entrega-orbita2md" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El resumen de la entrega: ORBITA2.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega-y-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega y plazo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultados-de-aprendizaje-y-criterios-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados de aprendizaje y criterios de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rubrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rúbrica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-auditoria-de-decision-oral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La auditoría de decisión oral
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/01_tokens_antes_que_pantallas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Por qué los tokens antes que las pantallas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/02_percepcion_visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Percepción visual y jerarquía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/03_color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Color: de la intuición al sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/04_tipografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Tipografía: legibilidad, escala y jerarquía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/05_espaciado_reticula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Espaciado, retícula y composición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/06_iconos_imagenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Iconos e imágenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/07_patrones_interfaz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Patrones de interfaz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/08_mockups_entregable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Del wireframe al mockup: guía de estilo y entregable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/sesiones/ayuda_variables_figma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ayuda: variables en Figma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orbitas/orbita2/sesiones/ayuda_autolayout_figma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ayuda: Auto layout, responsive y variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../orbitas/orbita3/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../orbitas/orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../orbitas/orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../orbitas/orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-encargo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El encargo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-tienes-que-hacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué tienes que hacer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué tienes que hacer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-prepara-el-archivo-y-haz-el-inventario-de-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1. Prepara el archivo y haz el inventario de decisiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-replantea-la-jerarquia-y-redisena-tus-wireframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2. Replantea la jerarquía y rediseña tus wireframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-construye-el-sistema-de-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3. Construye el sistema de color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-elige-la-tipografia-y-define-la-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4. Elige la tipografía y define la escala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-fija-el-espaciado-la-reticula-los-radios-y-la-elevacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5. Fija el espaciado, la retícula, los radios y la elevación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-6-elige-los-iconos-y-revisa-tus-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 6. Elige los iconos y revisa tus componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-7-monta-el-sistema-en-figma-variables-estilos-y-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 7. Monta el sistema en Figma: variables, estilos y componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-8-construye-los-mockups-el-prototipo-y-la-guia-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 8. Construye los mockups, el prototipo y la guía de estilo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué entregas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué entregas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-tiene-que-demostrar-tu-archivo-de-figma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que tiene que demostrar tu archivo de Figma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-resumen-de-la-entrega-orbita2md" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El resumen de la entrega: ORBITA2.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega-y-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega y plazo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultados-de-aprendizaje-y-criterios-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados de aprendizaje y criterios de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rubrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rúbrica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-auditoria-de-decision-oral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La auditoría de decisión oral
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="proyecto-de-la-orbita-2-disenar-para-que-se-entienda">Proyecto de la Órbita 2: Diseñar para que se entienda</h1>
+<p><strong>Horas:</strong> unas 15 · <strong>Semanas:</strong> de la 5 a la 7 · <strong>RA:</strong> RA1 y RA2 · <strong>Trabajo:</strong> individual</p>
+<h2 id="el-encargo">El encargo</h2>
+<p>En la Órbita 1 averiguaste para quién es tu aplicación, qué tiene que resolver y cómo se recorre, y lo dibujaste todo en escala de grises. Ahora toca decidir su aspecto: los colores, las tipografías, los espacios entre elementos, los iconos y la forma de los botones y las tarjetas. Es la fase en la que una aplicación que ya funciona empieza a entenderse a primera vista.</p>
+<p>Lo vas a hacer como se trabaja en cualquier equipo de producto. Antes de pintar ninguna pantalla, vas a construir en Figma un <strong>sistema visual</strong>: un conjunto de decisiones con nombre (los <strong>tokens</strong>) guardadas como variables, con un modo claro y otro oscuro. Cuando el sistema esté completo, lo aplicarás a todos tus wireframes de una vez para convertirlos en <strong>mockups</strong>, y escribirás una <strong>guía de estilo</strong> que explique el motivo de cada decisión. Si el sistema está bien hecho, cambiar el color principal de tu aplicación será cuestión de modificar una sola variable.</p>
+<p>Cada decisión visual tiene que salir de tu proyecto. Un azul o un tamaño de letra se eligen porque ayudan a tus personas a conseguir lo que necesitan en el contexto en el que usan la aplicación (con el móvil en una mano, con poca luz, con la letra aumentada o con una conexión lenta). Si una decisión solo se puede justificar con "me gusta más", todavía no está tomada.</p>
+<p>En los apuntes de la órbita sigue el ejemplo del polideportivo municipal, con Lucía y Manuel. Úsalo como referencia para entender qué se pide en cada paso, pero tu sistema tiene que salir de tus propias personas y de tu propio brief.</p>
+<p>Lo que construyas aquí es la base del resto del curso: en la Órbita 3 convertirás tus tokens en propiedades personalizadas de CSS y maquetarás tus mockups, en la Órbita 4 comprobarás con ellos la accesibilidad y en la Órbita 6 tu guía de estilo se convertirá en el <code>DESIGN.md</code> del proyecto.</p>
+<div class="admonition warning">
+<p class="admonition-title">Antes de empezar: solicita el plan de Educación de Figma</p>
+<p>El modo oscuro, que es obligatorio en este proyecto, se construye con los <strong>modos</strong> de las variables de Figma, y esa función no está disponible en el plan gratuito. Solicita el plan de Educación desde la página de Figma for Education con tu correo del centro el primer día de la órbita, porque la verificación puede tardar unos días.</p>
+</div>
+<hr />
+<h2 id="que-tienes-que-hacer">Qué tienes que hacer</h2>
+<p>El proyecto se organiza en ocho pasos, los mismos de la <a href="../../../orbitas/orbita2/00_hoja_de_ruta/">hoja de ruta</a>. Respeta el orden, porque cada paso utiliza las decisiones del anterior: no puedes comprobar el contraste de tus textos sin haber elegido antes los colores, ni crear las variables sin saber qué valores van a tener. En cada paso tienes enlazado el apartado de los apuntes donde se explica cómo hacerlo.</p>
+<p>Trabajarás en el mismo archivo de Figma Design de la Órbita 1 y en el mismo repositorio de GitHub, con el mismo <code>CHANGELOG.md</code>. Cada vez que uses una IA, anotarás qué le pediste, qué te devolvió, qué conservaste y qué cambiaste.</p>
+<h3 id="paso-1-prepara-el-archivo-y-haz-el-inventario-de-decisiones">Paso 1. Prepara el archivo y haz el inventario de decisiones</h3>
+<p>Ordena el archivo de Figma en cinco páginas: <strong>portada</strong>, <strong>guía de estilo</strong>, <strong>componentes</strong>, <strong>wireframes</strong> y <strong>mockups</strong>. Los wireframes de la Órbita 1 se quedan tal como los entregaste, porque son la prueba de cómo ha evolucionado tu proyecto.</p>
+<p>Después coge uno de tus wireframes y haz una lista con todas las decisiones visuales que necesitas para convertirlo en una pantalla terminada (el color del fondo, el de los textos, el del botón principal, el tamaño del título, el espacio entre tarjetas...). Junto a cada una, escribe el nombre del <strong>token semántico</strong> que le pondrías, en inglés y siguiendo la convención de los apuntes (<code>color/surface</code>, <code>color/on-surface</code>, <code>color/primary</code>...). Deja esta lista en la página de wireframes, al lado del frame que has analizado.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/01_tokens_antes_que_pantallas/">1. Por qué los tokens antes que las pantallas</a>.</p>
+<h3 id="paso-2-replantea-la-jerarquia-y-redisena-tus-wireframes">Paso 2. Replantea la jerarquía y rediseña tus wireframes</h3>
+<p>Tus wireframes de la Órbita 1 los dibujaste pensando en la estructura. Ahora, con lo que has visto sobre percepción visual, jerarquía y patrones de interfaz, toca mirarlos otra vez con ojos de diseñador y <strong>rediseñar lo que haga falta</strong> antes de ponerles color.</p>
+<p>Duplica las pantallas del happy path en una sección nueva de la página de wireframes llamada "Wireframes rediseñados" (los originales se quedan como estaban) y repásalas una a una con estas preguntas:</p>
+<ul>
+<li>¿Qué es lo primero que tiene que ver tu persona en esta pantalla? ¿Es lo que más destaca?</li>
+<li>¿Hay un único botón principal, y dice lo que va a pasar ("Reservar pista" en lugar de "Aceptar")?</li>
+<li>¿Están juntos los elementos que van juntos y separados los que no? Una etiqueta tiene que estar más cerca de su campo que del campo anterior.</li>
+<li>¿El orden de la pantalla sigue el orden en que tu persona toma las decisiones?</li>
+<li>¿Sobra algo que no ayuda a la tarea? ¿Usas un patrón que tu persona ya conoce, o uno que la obliga a pensar?</li>
+</ul>
+<p>Cambia en la copia todo lo que no pase estas preguntas: reordena, agrupa, quita, cambia un patrón por otro. Sigue trabajando en escala de grises. Junto a cada pantalla que cambies, escribe una nota breve con <strong>qué has cambiado y por qué</strong>, apoyada en tus personas o en un principio de los apuntes. Si una pantalla no necesita cambios, indícalo también.</p>
+<p>Si quieres comparar tu rediseño con otras propuestas, puedes usar <strong>Google Stitch</strong> para generar versiones alternativas de tus pantallas a partir de los wireframes. Úsalo como material de comparación: anota qué te parece acertado para tus personas y qué no, y lleva a tu rediseño solo lo que sepas justificar. <strong>El rediseño lo dibujas tú, y las pantallas de Stitch no pueden usarse como wireframes ni como mockups</strong>, ni importadas en Figma ni redibujadas tal cual. Si lo usas, guarda el enlace al proyecto de Stitch junto a tus wireframes rediseñados, entrégalo con el resto de enlaces y anótalo en el <code>CHANGELOG.md</code> como cualquier otro uso de IA.</p>
+<p>Los mockups del paso 8 se construyen a partir de estos wireframes rediseñados.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/02_percepcion_visual/">2. Percepción visual y jerarquía</a> y <a href="../../../orbitas/orbita2/07_patrones_interfaz/">7. Patrones de interfaz</a>.</p>
+<h3 id="paso-3-construye-el-sistema-de-color">Paso 3. Construye el sistema de color</h3>
+<p>Elige el color principal, el secundario y los neutros a partir de tu brief, de tus personas y de lo que viste en los referentes. Convierte cada uno en una <strong>escala</strong> del 50 al 900 y añade los colores de estado (error, éxito y advertencia). Estos son tus <strong>tokens primitivos</strong>.</p>
+<p>Con las escalas hechas, decide tus <strong>tokens semánticos</strong> (<code>primary</code>, <code>on-primary</code>, <code>surface</code>, <code>on-surface</code>, <code>error</code>...) y a qué tono de las escalas apunta cada uno en el modo claro y en el oscuro. Recoge en una tabla todas las parejas de fondo y texto con su contraste medido con Stark en los dos modos. Ningún texto normal puede bajar de <strong>4,5:1</strong>, y los bordes de los campos y los iconos tienen que llegar a <strong>3:1</strong>.</p>
+<p>Por último, convierte una captura de la paleta aplicada a tu wireframe a escala de grises y comprueba qué información depende solo del color. Ningún estado (un error, una opción seleccionada, una pista ocupada) puede distinguirse únicamente por su color.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/03_color/">3. Color: de la intuición al sistema</a>.</p>
+<h3 id="paso-4-elige-la-tipografia-y-define-la-escala">Paso 4. Elige la tipografía y define la escala</h3>
+<p>Elige <strong>una o dos familias de Google Fonts</strong> pensando en la legibilidad en pantalla y en el contexto de uso de tus personas. Usa solo los pesos que de verdad necesites (por ejemplo, el normal y la negrita), porque cada peso es un archivo más que el navegador tiene que descargar.</p>
+<p>Después construye una <strong>escala tipográfica</strong> de entre seis y ocho niveles, cada uno con su nombre (<code>display</code>, <code>heading-1</code>, <code>body</code>, <code>caption</code>...), su tamaño, su altura de línea y su peso. Pruébala con un texto real de tu aplicación y simula la letra al 200 % duplicando los tamaños, para comprobar que nada se corta ni se solapa.</p>
+<p>Para terminar, relaciona cada nivel con la <strong>etiqueta HTML</strong> a la que se aplicará cuando maquetes (<code>h1</code>, <code>h2</code>, <code>p</code>, <code>label</code>, <code>button</code>, <code>a</code>...). El navegador ya le da a cada etiqueta un aspecto por defecto (los <code>h1</code> grandes y en negrita, los enlaces azules y subrayados), y tu escala es la que va a sustituir ese aspecto en la Órbita 3. Recoge esta correspondencia en una tabla de tres columnas (nivel, etiqueta HTML y uso), teniendo en cuenta que la etiqueta la decide el significado del texto y el nivel decide su aspecto: un título de sección puede ser un <code>h2</code> aunque visualmente use el nivel <code>heading-3</code>.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/04_tipografia/">4. Tipografía: legibilidad, escala y jerarquía</a>.</p>
+<h3 id="paso-5-fija-el-espaciado-la-reticula-los-radios-y-la-elevacion">Paso 5. Fija el espaciado, la retícula, los radios y la elevación</h3>
+<p>Define una <strong>escala de espaciado</strong> sobre una cuadrícula de 4 u 8 píxeles, la <strong>retícula</strong> de columnas del dispositivo de tu persona principal (y de los demás tamaños de pantalla si tus personas los usan), una escala de <strong>radios</strong> y entre dos y cuatro niveles de <strong>elevación</strong>.</p>
+<p>Coloca la retícula sobre tu wireframe más complejo y comprueba la alineación y las separaciones. Mide los elementos que se pueden pulsar: en el móvil tienen que llegar a <strong>44 × 44 píxeles</strong>.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/05_espaciado_reticula/">5. Espaciado, retícula y composición</a>.</p>
+<h3 id="paso-6-elige-los-iconos-y-revisa-tus-componentes">Paso 6. Elige los iconos y revisa tus componentes</h3>
+<p>Elige <strong>una sola librería de iconos</strong> que tenga todos los que necesitas, anota su licencia y decide los tamaños que vas a usar a partir de tu escala. Convierte cada icono en un componente de Figma. Salvo los de significado universal, todos llevan una etiqueta de texto.</p>
+<p>Después haz el inventario de los <strong>componentes</strong> de tus wireframes: a qué nivel de Atomic Design pertenece cada uno (átomo, molécula u organismo), qué patrón conocido sigue y qué estados necesita (normal, <em>hover</em>, foco, pulsado, desactivado y error, según el caso). Recorre tu user flow buscando patrones engañosos, como una opción preseleccionada que beneficia a la empresa o un botón de cancelar que se ve menos que el de aceptar, y si encuentras alguno, anota cómo lo has corregido.</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/06_iconos_imagenes/">6. Iconos e imágenes</a> (la parte de iconos) y <a href="../../../orbitas/orbita2/07_patrones_interfaz/">7. Patrones de interfaz</a>.</p>
+<h3 id="paso-7-monta-el-sistema-en-figma-variables-estilos-y-componentes">Paso 7. Monta el sistema en Figma: variables, estilos y componentes</h3>
+<p>Este es el paso en el que más se nota si dominas Figma, y es una parte central del proyecto. Todo lo que hagas a partir de aquí tiene que salir del sistema, sin valores escritos a mano.</p>
+<p><strong>Variables.</strong> Pasa todas tus decisiones a variables, en dos colecciones:</p>
+<ul>
+<li>Una colección de <strong>primitivos</strong>, con un solo modo y las variables ocultas al publicar.</li>
+<li>Una colección de <strong>semánticos</strong>, con los modos <strong>claro</strong> y <strong>oscuro</strong>, en la que todos los valores son alias de los primitivos.</li>
+</ul>
+<p>Configura en cada variable semántica el <strong>ámbito</strong> (para que un color de texto no aparezca al elegir un fondo), una <strong>descripción</strong> que explique cuándo se usa y la <strong>sintaxis de código</strong> con el nombre que tendrá en CSS (por ejemplo, <code>var(--color-primary)</code>). Ese nombre es el que escribirás en la Órbita 3, así que piénsalo bien.</p>
+<p><strong>Estilos.</strong> Crea los estilos de texto de tu escala vinculados a las variables tipográficas, los estilos de efecto de la elevación y los estilos de retícula.</p>
+<p><strong>Componentes.</strong> Rehaz los componentes de tus wireframes (botones, campos de formulario, tarjetas, cabecera y navegación) para que estén construidos así:</p>
+<ul>
+<li>Con <strong>Auto layout</strong>, de modo que crezcan con su contenido (un botón con una etiqueta más larga se ensancha solo).</li>
+<li>Con tus <strong>variables</strong> en los colores, el relleno, el espacio entre elementos y el radio de las esquinas.</li>
+<li>Con <strong>propiedades de componente</strong>: una de texto para la etiqueta, una de mostrar u ocultar para el icono y una de cambio de instancia para elegir qué icono lleva.</li>
+<li>Con <strong>variantes</strong> para los estados. Como mínimo, el botón principal (normal, <em>hover</em>, foco, pulsado y desactivado) y los campos de formulario (normal, foco, error y desactivado).</li>
+</ul>
+<p>Ordénalos en la página de componentes por niveles de Atomic Design.</p>
+<p>Termina colocando un botón y una tarjeta en un frame y cambiando el modo a oscuro. Si algo no cambia, en algún sitio hay un valor escrito a mano que tienes que sustituir por una variable.</p>
+<p>Ayuda: <a href="../../../orbitas/orbita2/sesiones/ayuda_variables_figma/">variables en Figma</a> y <a href="../../../orbitas/orbita2/sesiones/ayuda_autolayout_figma/">Auto layout, responsive y variables</a>.</p>
+<h3 id="paso-8-construye-los-mockups-el-prototipo-y-la-guia-de-estilo">Paso 8. Construye los mockups, el prototipo y la guía de estilo</h3>
+<p>Duplica tus <strong>wireframes rediseñados</strong> en la página de mockups y conviértelos en <strong>mockups</strong> con tus componentes, estilos y variables, pantalla a pantalla y siguiendo el orden del user flow. Tienen que estar <strong>todas las pantallas del happy path</strong> (las de error y estado vacío se quedan como wireframes por ahora), con textos reales en lugar de textos de relleno. Si alguna pantalla lleva fotos o ilustraciones, deja por ahora el marcador del wireframe; las imágenes las trabajarás en la Órbita 3. Como apoyo, en los artículos de <a href="https://uifrommars.com/categoria/diseno-ui/">diseño de interfaces de UI From Mars</a> tienes muchos ejemplos de componentes y pantallas bien resueltos.</p>
+<p>Cada pantalla se construye entera con <strong>Auto layout</strong>, igual que los componentes:</p>
+<ul>
+<li>La pantalla, sus secciones y las tarjetas ocupan el ancho disponible (<strong>Fill</strong>), y los botones e iconos se ajustan a su contenido (<strong>Hug</strong>) o tienen su tamaño fijo.</li>
+<li>Todos los espacios (<em>gap</em> y relleno) salen de tus variables de espaciado.</li>
+<li>No hay ningún elemento colocado a mano. Si cambias un texto o añades una tarjeta, el resto se recoloca solo.</li>
+</ul>
+<p>Para comprobar que tus pantallas son <strong>responsive</strong>, duplica la pantalla principal y cámbiale el ancho al otro tipo de dispositivo: si tu persona principal usa el móvil (360 × 800), a escritorio (1280 × 800), y al revés. Con un buen Auto layout, solo tendrás que hacer pequeños ajustes (pasar unas tarjetas a dos columnas con <em>wrap</em> o poner un ancho máximo al texto), sin redibujar nada. Esa segunda versión forma parte del entregable.</p>
+<p>Haz además una versión en <strong>modo oscuro</strong> de la pantalla principal y de al menos otra pantalla del recorrido, aplicando el modo desde el panel derecho y colocándola junto a la clara con el mismo nombre.</p>
+<p>Cuando te falte un token o te sobre un nivel tipográfico, corrígelo en el sistema (nunca en la pantalla) y anótalo, porque es una decisión que tendrás que explicar.</p>
+<p>Con todas las pantallas terminadas, revísalas:</p>
+<ul>
+<li><strong>Jerarquía.</strong> Compara cada mockup con su wireframe rediseñado. El color y la tipografía tienen que reforzar lo que decidiste en el paso 2.</li>
+<li><strong>Contraste.</strong> Comprueba con Stark los textos y los iconos, en los dos modos.</li>
+<li><strong>Color.</strong> Ningún estado se distingue solo por el color.</li>
+<li><strong>Letra al 200 %.</strong> Duplica la pantalla más importante con todos los textos al doble: nada se corta ni se solapa.</li>
+<li><strong>Objetivos táctiles.</strong> Todo lo que se pulsa en el móvil mide al menos 44 × 44 píxeles.</li>
+<li><strong>Valores sueltos.</strong> Todos los colores, tamaños y espacios vienen de una variable o de un estilo.</li>
+</ul>
+<p>Enlaza las pantallas en un <strong>prototipo</strong> que recorra el happy path completo. Si añades transiciones, que sean breves, tal como pide el criterio 2.17 de las <strong>Web Sustainability Guidelines (WSG)</strong> del W3C. Si quieres, haz el <strong>test de los cinco segundos</strong> en Lyssna con la pantalla principal (es optativo) y deja los resultados en la página de mockups.</p>
+<p>Por último, escribe la <strong>guía de estilo</strong> en su página del archivo, con cuatro de las secciones del apartado 8: <strong>color</strong>, <strong>tipografía</strong>, <strong>componentes</strong> y <strong>decisiones que afectan al peso</strong>. El resto (principios, espaciado y retícula, radio y elevación, iconos e imágenes) lo completarás en la Órbita 6, cuando conviertas la guía en el <code>DESIGN.md</code> del proyecto, aunque los motivos de esas decisiones te los puedo preguntar igualmente en la auditoría oral. En la sección de tipografía incluye la tabla de correspondencia con las etiquetas HTML del paso 4. Lo que se evalúa de la guía son los <strong>motivos</strong>: junto a cada decisión importante tiene que haber una frase que la justifique con tus personas, con las pautas de accesibilidad, con las WSG o con los principios de los apuntes.</p>
+<p>Antes de entregar, haz las dos pruebas de terminado. Cambia <code>color/primary</code> para que apunte a otro color de tus primitivos y comprueba que cambia en todas las pantallas a la vez (después deshaz el cambio). Después cambia todos los mockups a modo oscuro y recórrelos para comprobar que nada desaparece contra el fondo. No tienes que entregar el resto de pantallas en oscuro, pero si algo falla al cambiar de modo, el problema está en tus variables y tienes que corregirlo.</p>
+<p>Cuando lo tengas todo, rellena el resumen de la entrega en el archivo <code>ORBITA2.md</code> de tu repositorio, con la plantilla que tienes en el apartado "Qué entregas".</p>
+<p>Apuntes: <a href="../../../orbitas/orbita2/08_mockups_entregable/">8. Del wireframe al mockup: guía de estilo y entregable</a>.</p>
+<hr />
+<h2 id="que-entregas">Qué entregas</h2>
+<p>Casi todo el entregable está en el archivo de Figma Design del proyecto. En el repositorio están el resumen de la entrega (<code>ORBITA2.md</code>) y el <code>CHANGELOG.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Dónde</th>
+<th>Qué tiene que incluir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inventario y wireframes rediseñados</strong></td>
+<td>Figma Design (página de wireframes)</td>
+<td>La lista de decisiones con sus tokens, los wireframes de la Órbita 1 sin modificar y, al lado, los rediseñados con una nota de qué cambia y por qué. El enlace al proyecto de Google Stitch, si lo has usado</td>
+</tr>
+<tr>
+<td><strong>Variables</strong></td>
+<td>Figma Design</td>
+<td>Colección de primitivos y colección de semánticos con los modos claro y oscuro, con ámbito, descripción y sintaxis de código</td>
+</tr>
+<tr>
+<td><strong>Estilos</strong></td>
+<td>Figma Design</td>
+<td>Estilos de texto de la escala tipográfica, estilos de efecto de la elevación y estilos de retícula</td>
+</tr>
+<tr>
+<td><strong>Componentes</strong></td>
+<td>Figma Design (página de componentes)</td>
+<td>Iconos y componentes con Auto layout, variables, propiedades y variantes de estado, ordenados por niveles de Atomic Design</td>
+</tr>
+<tr>
+<td><strong>Mockups y prototipo</strong></td>
+<td>Figma Design (página de mockups)</td>
+<td>Todas las pantallas del happy path en modo claro, construidas con Auto layout y enlazadas en un prototipo; la pantalla principal en un segundo ancho; y la pantalla principal y al menos otra en modo oscuro</td>
+</tr>
+<tr>
+<td><strong>Guía de estilo</strong></td>
+<td>Figma Design (página de guía de estilo)</td>
+<td>Las secciones de color, tipografía, componentes y decisiones que afectan al peso, con el motivo de cada decisión, la tabla de contraste en los dos modos y la correspondencia entre niveles tipográficos y etiquetas HTML</td>
+</tr>
+<tr>
+<td><strong>Resumen de la entrega</strong></td>
+<td>GitHub (<code>ORBITA2.md</code>)</td>
+<td>La plantilla del final de este apartado rellena: enlaces, dónde está cada cosa en Figma, lista de comprobación, resumen de decisiones, uso de IA y lo que ha quedado pendiente</td>
+</tr>
+<tr>
+<td><strong>CHANGELOG</strong></td>
+<td>GitHub (<code>CHANGELOG.md</code>)</td>
+<td>Cada uso de IA de la órbita, con lo que se pidió, lo que devolvió, lo que se conservó y lo que se cambió</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lo-que-tiene-que-demostrar-tu-archivo-de-figma">Lo que tiene que demostrar tu archivo de Figma</h3>
+<p>Una parte importante de la nota depende de cómo uses Figma. Antes de entregar, comprueba que tu archivo cumple esta lista:</p>
+<ol>
+<li><strong>Variables</strong> en dos colecciones (primitivos y semánticos), con alias, los modos claro y oscuro, ámbito, descripción y sintaxis de código.</li>
+<li><strong>Estilos</strong> de texto, efecto y retícula vinculados a las variables.</li>
+<li><strong>Componentes</strong> construidos con Auto layout y variables, con propiedades (texto, mostrar u ocultar icono, cambiar icono) y variantes de estado.</li>
+<li><strong>Mockups</strong> construidos enteros con Auto layout, con <em>Fill</em> y <em>Hug</em> bien usados y todos los espacios sacados de variables. Nada colocado a mano.</li>
+<li><strong>Responsive</strong>: la pantalla principal en un segundo ancho, hecha con los mismos componentes y sin redibujarla.</li>
+<li><strong>Modo oscuro</strong> aplicado con el selector de modo, sin duplicar componentes.</li>
+<li><strong>Prototipo</strong> que recorre el happy path completo.</li>
+</ol>
+<h3 id="el-resumen-de-la-entrega-orbita2md">El resumen de la entrega: <code>ORBITA2.md</code></h3>
+<p>Además del archivo de Figma, en la raíz de tu repositorio tiene que haber un archivo <code>ORBITA2.md</code> con el resumen de todo lo que has hecho en la órbita. <strong>La corrección empieza por este documento</strong>: en él dices dónde está cada cosa en Figma, qué has decidido y por qué, y qué te ha quedado pendiente. Lo que no aparezca en el resumen ni se encuentre en el archivo de Figma siguiendo sus indicaciones se considera no entregado. Enlázalo desde el <code>README.md</code>, igual que el <code>BRIEF.md</code>.</p>
+<p>Copia esta plantilla y rellénala. Las respuestas tienen que ser tuyas y breves: unas pocas frases en cada apartado bastan, siempre que digan algo concreto de tu proyecto.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># Órbita 2: sistema visual de [nombre de tu aplicación]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gu">## Enlaces</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>| Qué | Enlace |
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>|---|---|
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>| Archivo de Figma (versión "Entrega Órbita 2") | |
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>| Prototipo (enlace que empieza por <span class="sb">`figma.com/proto/`</span>) | |
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>| Proyecto de Google Stitch (solo si lo has usado) | |
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="gu">## Dónde está cada cosa en Figma</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>| Entregable | Página y sección del archivo |
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>|---|---|
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>| Inventario de decisiones | |
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>| Wireframes rediseñados con sus notas | |
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>| Componentes | |
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>| Mockups del happy path | |
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>| Pantalla principal en el segundo ancho | |
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>| Pantallas en modo oscuro | |
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>| Guía de estilo | |
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="gu">## Lista de comprobación de Figma</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="k">- [ ]</span> Variables en dos colecciones (primitivos y semánticos), con alias, modos claro y oscuro, ámbito, descripción y sintaxis de código.
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">- [ ]</span> Estilos de texto, efecto y retícula vinculados a las variables.
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="k">- [ ]</span> Componentes con Auto layout, variables, propiedades y variantes de estado.
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="k">- [ ]</span> Mockups construidos enteros con Auto layout y espacios sacados de variables.
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="k">- [ ]</span> Pantalla principal en un segundo ancho, con los mismos componentes.
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="k">- [ ]</span> Modo oscuro aplicado con el selector de modo.
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="k">- [ ]</span> Prototipo que recorre el happy path completo.
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="k">- [ ]</span> Prueba 1 superada: al cambiar <span class="sb">`color/primary`</span>, cambian todas las pantallas a la vez.
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">- [ ]</span> Prueba 2 superada: con todos los mockups en modo oscuro, nada desaparece contra el fondo.
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="gu">## Resumen de decisiones</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="gu">### Rediseño de los wireframes</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>Qué pantallas has cambiado, cuál es el cambio más importante y por qué (con tu persona o un principio de los apuntes).
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="gu">### Color</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>Color principal y secundario, y por qué los elegiste. Pareja de texto y fondo con el contraste más bajo de tu sistema y su valor, en cada modo.
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="gu">### Tipografía</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>Familias y pesos que usas, y por qué esas familias para tus personas.
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="gu">### Espaciado y retícula</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>Base de la escala (4 u 8 píxeles), columnas, medianil y margen de la retícula del dispositivo de tu persona principal.
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="gu">### Componentes</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>Lista de componentes con sus variantes de estado.
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="gu">### Responsive y modo oscuro</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>Qué tuviste que ajustar al pasar la pantalla principal al segundo ancho, y qué corregiste en tus variables al pasar los mockups a modo oscuro.
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="gu">## Uso de IA</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>Resumen en dos o tres frases de cómo has usado la IA en la órbita (o "no he usado ninguna herramienta de IA"). El detalle está en el [<span class="nt">CHANGELOG.md</span>](<span class="na">CHANGELOG.md</span>).
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="gu">## Lo que ha quedado pendiente</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>Lo que no has terminado o sabes que no funciona del todo, y por qué. Si está todo terminado, indícalo.
+</code></pre></div>
+<h3 id="entrega-y-plazo">Entrega y plazo</h3>
+<p><strong>Cómo se entrega.</strong> En la tarea de Moodle Centros sube el enlace al archivo <code>ORBITA2.md</code> de tu repositorio de GitHub. Desde él tienen que poder abrirse el archivo de Figma Design (con permiso de visualización), el prototipo y, si lo has usado, tu proyecto de Google Stitch.</p>
+<p>El enlace del prototipo es distinto del enlace del archivo. Para conseguirlo, abre el prototipo con el botón de reproducir (▶) y copia el enlace desde <strong>Compartir prototipo</strong>: tiene que empezar por <code>figma.com/proto/</code>. Configura el acceso para que cualquiera con el enlace pueda verlo y elige como punto de partida la primera pantalla de tu happy path. Así puedo recorrerlo de principio a fin sin entrar en tu archivo, igual que lo haría una persona usuaria. Antes de subirlo, abre cada enlace en una ventana privada del navegador y comprueba que se ve sin iniciar sesión. Como vas a seguir trabajando en el archivo en la Órbita 3, guarda una versión con nombre en el historial de versiones de Figma ("Entrega Órbita 2"), que será la que se evalúe.</p>
+<p><strong>Cómo se presenta.</strong> El archivo tiene que poder recorrerse sin que estés tú para explicarlo. Pon en la portada el nombre del proyecto, tu nombre y la fecha de la entrega, ordena cada página en secciones con título y usa los mismos nombres de pantalla que en el sitemap y en los wireframes.</p>
+<p><strong>Cuándo.</strong> Al final de la semana 7. La fecha y la hora exactas están en la tarea de Moodle Centros.</p>
+<hr />
+<h2 id="resultados-de-aprendizaje-y-criterios-de-evaluacion">Resultados de aprendizaje y criterios de evaluación</h2>
+<p>Este proyecto trabaja el RA1 y el RA2. Los textos de los resultados de aprendizaje y de los criterios son los que fija la Orden de 16 de junio de 2011 (BOJA n.º 114), sin modificar.</p>
+<p><strong>RA1. Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.</strong></p>
+<table>
+<thead>
+<tr>
+<th>CE</th>
+<th>Texto del criterio</th>
+<th>Dónde se trabaja en el proyecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RA1-a</td>
+<td>Se ha reconocido la importancia de la comunicación visual y sus principios básicos.</td>
+<td>Rediseño de los wireframes (paso 2), espaciado y retícula (paso 5) y composición de los mockups (paso 8)</td>
+</tr>
+<tr>
+<td>RA1-b</td>
+<td>Se han analizado y seleccionado los colores y tipografías adecuados para su visualización en pantalla.</td>
+<td>Sistema de color con su tabla de contraste (paso 3) y familias y escala tipográfica (paso 4)</td>
+</tr>
+<tr>
+<td>RA1-d</td>
+<td>Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación web.</td>
+<td>Guía de estilo y pruebas de terminado (paso 8)</td>
+</tr>
+<tr>
+<td>RA1-f</td>
+<td>Se han creado y utilizado plantillas de diseño.</td>
+<td>Variables, estilos y componentes (paso 7), y mockups responsive, modo oscuro y prototipo (paso 8)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>RA2. Crea interfaces web homogéneos definiendo y aplicando estilos.</strong></p>
+<table>
+<thead>
+<tr>
+<th>CE</th>
+<th>Texto del criterio</th>
+<th>Dónde se trabaja en el proyecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RA2-a</td>
+<td>Se han reconocido las posibilidades de modificar las etiquetas HTML.</td>
+<td>Tabla de niveles tipográficos y etiquetas HTML (paso 4) y sintaxis de código de las variables (paso 7)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rubrica">Rúbrica</h2>
+<p>La rúbrica tiene una fila por cada criterio de evaluación, y la nota de cada fila es la parte de rúbrica de ese CE. Tal como recoge la programación del módulo, cada CE se completa con una prueba teórica (RA1-a, RA1-b, RA1-d y RA2-a) o práctica (RA1-f), y los dos instrumentos cuentan lo mismo.</p>
+<table>
+<thead>
+<tr>
+<th>CE</th>
+<th>Muy insuficiente (0–2,5)</th>
+<th>Insuficiente (2,5–4,9)</th>
+<th>Suficiente (5–6)</th>
+<th>Notable (7–8)</th>
+<th>Sobresaliente (9–10)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RA1-a. Comunicación visual</strong></td>
+<td>No hay wireframes rediseñados ni escala de espaciado.</td>
+<td>Los wireframes no se han replanteado, o los cambios no se explican. Los espacios están puestos a ojo.</td>
+<td>Hay rediseño con notas, pero con pocos cambios o sin relación con las personas. La retícula y el espaciado se aplican a medias.</td>
+<td>Rediseño del happy path con un motivo para cada cambio, un solo botón principal por pantalla, elementos relacionados agrupados, retícula aplicada y objetivos táctiles de 44 × 44 píxeles.</td>
+<td>Los mockups mantienen la jerarquía del rediseño y la refuerzan con el color y la tipografía. Cada cambio se defiende con una persona y un principio de los apuntes.</td>
+</tr>
+<tr>
+<td><strong>RA1-b. Colores y tipografías</strong></td>
+<td>No hay paleta ni escala tipográfica.</td>
+<td>Colores sueltos sin escalas, textos por debajo de 4,5:1, o más de dos familias.</td>
+<td>Escalas de color y escala tipográfica hechas, pero falta la tabla de contraste o la prueba al 200 %.</td>
+<td>Escalas del 50 al 900 con colores de estado, tokens semánticos en los dos modos con todo el contraste por encima del mínimo, una o dos familias de Google Fonts con los pesos justos, y escala de seis a ocho niveles probada al 200 %.</td>
+<td>Cada color y cada familia se justifican con el brief o las personas, y ningún nivel de la escala sobra.</td>
+</tr>
+<tr>
+<td><strong>RA1-d. Guía de estilo</strong></td>
+<td>No hay guía de estilo.</td>
+<td>La guía solo muestra valores, sin motivos.</td>
+<td>Están las cuatro secciones, pero con motivos genéricos ("queda bien", "es moderno").</td>
+<td>Las cuatro secciones con un motivo comprobable para cada decisión importante, y las dos pruebas de terminado superadas.</td>
+<td>Alguien que no conoce el proyecto podría aplicar el sistema solo con la guía: los componentes tienen ejemplos de uso correcto e incorrecto y se explica también lo que se descartó.</td>
+</tr>
+<tr>
+<td><strong>RA1-f. Plantillas de diseño (uso de Figma)</strong></td>
+<td>No hay variables ni componentes.</td>
+<td>Mockups hechos con valores a mano o sin Auto layout, o sin modo oscuro.</td>
+<td>Hay variables, componentes y Auto layout, pero con fallos: espacios sin variables, anchos fijos que rompen la pantalla, componentes sin variantes, falta la versión en segundo ancho o el prototipo se rompe.</td>
+<td>Se cumplen los siete puntos de la lista "Lo que tiene que demostrar tu archivo de Figma".</td>
+<td>Además, el responsive se resuelve con una colección de modos para cada tamaño de pantalla, o la pantalla principal funciona en un tercer ancho, y los componentes tienen propiedades pensadas para reutilizarse en cualquier pantalla.</td>
+</tr>
+<tr>
+<td><strong>RA2-a. Etiquetas HTML</strong></td>
+<td>No hay tabla de etiquetas.</td>
+<td>La tabla está incompleta, o las etiquetas se eligen por el tamaño del texto.</td>
+<td>Tabla completa, pero sin el uso de cada nivel, o variables sin sintaxis de código.</td>
+<td>Tabla con nivel, etiqueta y uso, que separa lo que significa un texto de cómo se ve, y sintaxis de código en todas las variables semánticas.</td>
+<td>Se explica qué aspecto da el navegador por defecto a cada etiqueta y cómo lo cambiará tu sistema en CSS.</td>
+</tr>
+</tbody>
+</table>
+<p>Hay tres condiciones que afectan a toda la rúbrica:</p>
+<ul>
+<li><strong>El <code>ORBITA2.md</code> es el punto de partida de la corrección.</strong> Si falta, o si no dice dónde está cada cosa, lo que no se encuentre en el archivo de Figma se considera no entregado.</li>
+<li><strong>La redacción y el orden cuentan.</strong> Si una parte del archivo está tan mal redactada o tan desordenada que no se entiende sin que la expliques tú, su criterio no pasa de Suficiente.</li>
+<li><strong>El sistema tiene que estar en Figma.</strong> Si los mockups usan colores, tamaños o espacios escritos a mano, o si algún mockup reproduce una pantalla generada con Google Stitch, RA1-f no pasa de Insuficiente. Lo mismo ocurre si has usado Stitch y no has entregado el enlace.</li>
+<li><strong>Cada uso de IA tiene que estar en el <code>CHANGELOG.md</code></strong>, con lo que pediste, lo que te devolvió, lo que conservaste y lo que cambiaste. Si una decisión tiene un uso de IA sin anotar, el criterio al que pertenece se queda en Insuficiente.</li>
+</ul>
+<p>Si no has usado ninguna IA durante la órbita, indícalo en el <code>CHANGELOG.md</code> con una entrada al cerrarla:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gu">## AAAA-MM-DD · Cierre de la Órbita 2</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>No he usado ninguna herramienta de IA durante esta órbita.
+</code></pre></div>
+<h3 id="la-auditoria-de-decision-oral">La auditoría de decisión oral</h3>
+<p>Igual que en la Órbita 1, cada fila de la rúbrica se confirma en la <strong>auditoría de decisión oral</strong>. Te puedo preguntar, durante la órbita o más adelante, por qué tu color de error es ese tono, por qué el título de la pantalla de reserva usa ese nivel de la escala, qué pesos tipográficos usas o por qué tu barra de navegación tiene esos destinos. Una respuesta válida remite a tus personas, a tu brief, a tu user flow, a las pautas de accesibilidad, a las WSG o a los principios de percepción. Respuestas como "es lo que se lleva" o "me lo sugirió la IA" indican que esa decisión todavía no es tuya, y en ese caso el criterio correspondiente se queda en Insuficiente, por bien hecho que esté el archivo.</p>
+<p>Si tu guía de estilo recoge los motivos, en la auditoría solo tendrás que contarme lo que ya escribiste. Tenlo en cuenta al repartir el tiempo antes de la entrega: un mockup con algún detalle por pulir, pero con un sistema que sabes defender, vale más que unas pantallas impecables que no sabes explicar.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
