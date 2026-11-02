@@ -19,8 +19,8 @@ El módulo se organiza en seis fases, que llamamos órbitas. Cada una se apoya e
 | Órbita | Qué se trabaja | Horas |
 |---|---|---|
 | [1. Conocer a las personas](orbitas/orbita1/index.md) | Investigación de usuario, personas, user flows, sitemap y brief | 20h |
-| 2. Fundar el sistema visual | Tokens de color, tipografía, espaciado y variables en Figma Design | 15h |
-| 3. Maquetar para dar forma | HTML semántico, CSS, ITCSS, BEM, SCSS, responsive y componentes | 25h |
+| [2. Fundar el sistema visual](orbitas/orbita2/index.md) | Tokens de color, tipografía, espaciado y variables en Figma Design | 15h |
+| [3. Dar forma al sistema](orbitas/orbita3/index.md) | HTML semántico, CSS, Sass, ITCSS, BEM, responsive, multimedia y componentes | 25h |
 | 4. Diseñar para todos | Accesibilidad WCAG, ARIA, navegación por teclado y auditoría | 15h |
 | 5. Verificar con personas reales | Evaluación heurística, dark patterns, sostenibilidad y SEO | 10h |
 | 6. Documentar y defender | README, DESIGN.md, CHANGELOG y defensa oral del proyecto | 10h |
