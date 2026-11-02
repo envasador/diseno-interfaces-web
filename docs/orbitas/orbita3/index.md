@@ -8,19 +8,6 @@ Lo que construyas aquí es la versión en código de tu sistema de diseño. En l
 
 ---
 
-## Qué vas a entregar
-
-Todo el trabajo de esta órbita se hace en tu repositorio de GitHub, con el editor de código y Sass, y tu archivo de Figma pasa a ser la referencia que consultas mientras maquetas.
-
-| Documento | Herramienta | Qué es | Para qué lo usarás después |
-|---|---|---|---|
-| **Tokens en código** | SCSS | Los tokens primitivos y semánticos de Figma convertidos en propiedades personalizadas de CSS, con los mismos nombres y con el modo oscuro | Serán la base de la auditoría de contraste de la Órbita 4 y de la documentación de la Órbita 6 |
-| **Librería de componentes** | HTML y SCSS | El set mínimo de componentes de tu sistema (botones con todos sus estados, campos de formulario, tarjetas, navegación de escritorio y de móvil, componentes tipográficos, etiquetas, diálogos y avisos), organizado con ITCSS y nombrado con BEM | Cada componente se auditará con las herramientas de accesibilidad en la Órbita 4 |
-| **Pantallas maquetadas** | HTML y SCSS | Las pantallas del happy path construidas con tus componentes, adaptables a los dispositivos de tus personas | Serán las pantallas que evaluarás con personas reales en la Órbita 5 |
-| **Multimedia optimizada** | Squoosh, SVGOMG | Las imágenes y los iconos de tu aplicación en el formato y el tamaño adecuados, con su licencia anotada y un presupuesto de peso justificado | Será uno de los datos de la auditoría de sostenibilidad de la Órbita 5 |
-
-Además, como en las órbitas anteriores, cualquier uso de una IA quedará anotado en el `CHANGELOG.md` del repositorio.
-
 ## Apartados
 
 1. [Repaso de HTML5](01_html5.md)
