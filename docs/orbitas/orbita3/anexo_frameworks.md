@@ -1,6 +1,6 @@
 # Anexo: el sistema en JavaScript, React y Angular
 
-En los apartados de esta órbita has construido el sistema del polideportivo con HTML, Sass, ITCSS y BEM, en un proyecto sin ningún framework. En DWEC y en tus prácticas en empresa trabajarás con JavaScript, React o Angular, y es normal que te preguntes qué pasa con todo esto cuando el HTML ya no se escribe en un fichero `.html`, sino dentro de componentes. La respuesta corta es que **casi todo sigue igual**: los tokens, las capas de ITCSS y los nombres de BEM funcionan en los tres, y lo que cambia es dónde se guarda cada fichero y cómo se eligen las variantes de un componente.
+En los apartados de esta órbita has construido el sistema del polideportivo con HTML, Sass, ITCSS y BEM, en un proyecto sin ningún framework. En DWEC y en tus prácticas en empresa trabajarás con JavaScript, React o Angular, y es normal que te preguntes qué pasa con todo esto cuando el HTML pasa a escribirse dentro de componentes. La respuesta corta es que **casi todo sigue igual**: los tokens, las capas de ITCSS y los nombres de BEM funcionan en los tres, y lo que cambia es dónde se guarda cada fichero y cómo se eligen las variantes de un componente.
 
 En este anexo vas a ver el mismo trozo de la aplicación (la pantalla "Elegir hora", con sus tarjetas de pista, sus etiquetas y el diálogo de cancelar la reserva) construido de las tres formas. Los tres proyectos se han creado con las herramientas oficiales, se han compilado y se han probado en el navegador, así que puedes usarlos como punto de partida.
 
@@ -40,7 +40,7 @@ En los tres casos, `npm run dev` (o `ng serve` en Angular) arranca el servidor d
 
 ## JavaScript sin framework
 
-Sin framework, el proyecto se parece mucho al de los apartados anteriores. La única diferencia es que el SCSS ya no se compila con un script de Sass, sino que lo importa el JavaScript principal y Vite se encarga de compilarlo.
+Sin framework, el proyecto se parece mucho al de los apartados anteriores. La única diferencia es que el SCSS lo importa el JavaScript principal, y Vite se encarga de compilarlo.
 
 ```text
 src/
@@ -153,7 +153,7 @@ src/
     └── settings/ tools/ generic/ elements/ objects/ utilities/
 ```
 
-Con esta organización, la capa de componentes de ITCSS ya no es una carpeta dentro de `scss`, sino el conjunto de carpetas de `components`. Para que el orden de las capas se respete, hay dos detalles importantes. El primero es que `main.scss` **declara el orden de todas las capas** en su primera línea y se importa antes que cualquier componente:
+Con esta organización, la capa de componentes de ITCSS pasa a ser el conjunto de carpetas de `components`. Para que el orden de las capas se respete, hay dos detalles importantes. El primero es que `main.scss` **declara el orden de todas las capas** en su primera línea y se importa antes que cualquier componente:
 
 ```jsx
 // src/main.jsx
@@ -236,7 +236,7 @@ export function CourtCard({ name, price, features, free, featured = false }) {
 }
 ```
 
-El diálogo sigue usando el `<dialog>` nativo, pero en React no se llama directamente a `showModal()` desde un botón, sino que el componente recibe una propiedad `open` y la sincroniza con el elemento. Para tocar el elemento del DOM se usa una **referencia** (`useRef`), y para reaccionar a los cambios de `open`, un **efecto** (`useEffect`):
+El diálogo sigue usando el `<dialog>` nativo. En React, el componente recibe una propiedad `open` y la sincroniza con el elemento, en lugar de llamar a `showModal()` desde un botón. Para tocar el elemento del DOM se usa una **referencia** (`useRef`), y para reaccionar a los cambios de `open`, un **efecto** (`useEffect`):
 
 ```jsx
 // src/components/Dialog/Dialog.jsx

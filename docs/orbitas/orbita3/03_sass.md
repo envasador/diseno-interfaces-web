@@ -81,7 +81,7 @@ Al compilar, Sass las sustituye por su valor y desaparecen. En cambio, las propi
 
 ## Parciales y módulos
 
-Esta es la razón más importante para usar Sass. Un **parcial** es un fichero cuyo nombre empieza por guion bajo (`_button.scss`), que no se compila por separado sino como parte de otro. El fichero principal, `main.scss`, los carga todos con **`@use`**, y Sass los junta en un único `main.css`:
+Esta es la razón más importante para usar Sass. Un **parcial** es un fichero cuyo nombre empieza por guion bajo (`_button.scss`), que solo se compila como parte de otro. El fichero principal, `main.scss`, los carga todos con **`@use`**, y Sass los junta en un único `main.css`:
 
 ```scss
 // main.scss
