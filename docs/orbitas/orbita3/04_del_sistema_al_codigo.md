@@ -2,24 +2,24 @@
 
 ## 4. Del sistema de Figma a la hoja de estilos
 
-Al terminar la Órbita 2 tienes en Figma un sistema visual completo (los colores con su modo oscuro, la escala tipográfica, el espaciado, los radios, la elevación y los componentes con sus estados) y unos mockups del happy path construidos con él. Todo eso, de momento, es un dibujo. En esta órbita vas a convertirlo en una aplicación que se abre en el navegador, y la herramienta para hacerlo es CSS, que ya conoces del curso pasado. La diferencia está en el punto de partida, porque **las decisiones visuales ya están tomadas y justificadas** en Figma, y tu trabajo consiste en trasladarlas al código sin perder ninguna por el camino.
+En los tres apartados anteriores has repasado las herramientas: el HTML con el que se describe cada parte de una pantalla, el CSS con el que se decide su aspecto y Sass, con el que se organiza todo ese código. En este apartado vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (los colores con su modo oscuro, la escala tipográfica, el espaciado, los radios, la elevación y los componentes con sus estados) y unos mockups del happy path construidos con él, y aquí vas a ver cómo se traslada cada una de esas piezas al código. Lo importante es que **las decisiones visuales ya están tomadas y justificadas** en Figma, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.
 
-La sintaxis de una regla, los selectores, la cascada y la especificidad, el modelo de cajas, Flexbox, Grid, las media queries y las animaciones están explicados con detalle en los [apuntes de CSS3](02_css3.md) de esta órbita, que siguen el orden de [lenguajecss.com](https://lenguajecss.com/) y amplían lo que viste en Lenguajes de Marcas, y te remitiré a ellos cada vez que haga falta. Sass, la herramienta con la que organizarás todo este código, tiene sus propios [apuntes de Sass](03_sass.md). Lo que vas a encontrar aquí es cómo se corresponde cada pieza de tu sistema de Figma con una herramienta concreta de CSS, y por qué elegir una u otra. En la auditoría oral de esta órbita te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).
+Este apartado funciona como una hoja de ruta para maquetar. Cómo funciona cada propiedad ya lo tienes en los [apuntes de HTML5](01_html5.md), de [CSS3](02_css3.md) y de [Sass](03_sass.md), a los que te remitiré cada vez que haga falta, así que aquí te vas a centrar en qué herramienta corresponde a cada pieza de tu sistema y en por qué elegir una u otra. En la auditoría oral de esta órbita te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).
 
-Durante todo el apartado seguiremos con la aplicación de reservas del polideportivo, y en concreto con la pantalla en la que Lucía elige hora para la pista de pádel y pulsa "Reservar". En la semana del 16 de noviembre ordenarás todo este código con ITCSS, le pondrás nombres con BEM y lo pasarás a SCSS, así que aquí vamos a escribir CSS estándar, en un solo fichero y con nombres de clase sencillos.
+Durante todo el apartado seguiremos con la aplicación de reservas del polideportivo, y en concreto con la pantalla en la que Lucía elige hora para la pista de pádel y pulsa "Reservar". Los ejemplos están escritos en CSS estándar, porque así se ve exactamente lo que llega al navegador, pero en tu proyecto los escribirás en SCSS, repartidos en parciales, y los tokens los generarás con los bucles que viste en el apartado de Sass. En la semana del 16 de noviembre ordenarás todo ese código con ITCSS y le pondrás nombres con BEM.
 
-### Antes de empezar: comprueba que te acuerdas
+### Antes de empezar: comprueba que lo tienes claro
 
-Como este apartado da por sabido el lenguaje, merece la pena que compruebes antes si de verdad te acuerdas de lo esencial. Intenta contestar a estas preguntas sin mirar los apuntes:
+Como este apartado da por sabidos los tres anteriores, merece la pena que compruebes si te ha quedado lo esencial. Intenta contestar a estas preguntas sin mirar los apuntes:
 
-1. Si una regla con el selector `#reserva a` y otra con `.boton-reservar` cambian el color del mismo enlace, ¿cuál gana y por qué?
-2. ¿Cuánto mide de ancho una caja con `width: 300px`, `padding: 20px` y un borde de 2 píxeles si no has tocado `box-sizing`? ¿Y si tiene `box-sizing: border-box`?
-3. ¿Qué diferencia hay entre `1em` y `1rem`, y cuál de las dos usarías para un tamaño de letra?
-4. ¿Qué propiedades se heredan y cuáles no? Pon dos ejemplos de cada.
+1. ¿Cuándo es un `<a>` y cuándo un `<button>` lo que en tu mockup se ve como un botón?
+2. Si una regla con el selector `#reserva a` y otra con `.button` cambian el color del mismo enlace, ¿cuál gana y por qué?
+3. ¿Cuánto mide de ancho una caja con `width: 300px`, `padding: 20px` y un borde de 2 píxeles si no has tocado `box-sizing`? ¿Y si tiene `box-sizing: border-box`?
+4. ¿Qué diferencia hay entre `1em` y `1rem`, y cuál de las dos usarías para un tamaño de letra?
 5. ¿Cuándo usarías Flexbox y cuándo Grid?
-6. ¿Qué hace `var(--color-primary, blue)` si la variable no existe?
+6. ¿Por qué los tokens de tu sistema van en propiedades personalizadas y los breakpoints en variables de Sass?
 
-Si alguna se te atasca, repasa el apartado correspondiente de los apuntes de CSS3 antes del 4 de noviembre, porque en clase iremos rápido por esas partes. Yo os recomiendo tenerlos abiertos en otra pestaña mientras leéis este apartado.
+Si alguna se te atasca, vuelve al apartado correspondiente antes de seguir, y ten los apuntes abiertos en otra pestaña mientras lees este.
 
 ![Correspondencia entre las piezas del sistema de diseño en Figma y las herramientas de CSS que las implementan](img/orbita3_04_esquema_figma_a_css.svg)
 
@@ -361,4 +361,4 @@ Antes de pasar a ITCSS, comprueba con tu propia aplicación que puedes hacer est
 4. **Recorrer el happy path con el tabulador** y ver el foco en cada elemento que se puede pulsar.
 5. **Buscar `#` y `px` en tu hoja de estilos** y que solo aparezcan en el bloque de primitivos, en los bordes de 1 píxel y en `--radius-full`.
 
-Si alguna falla, la causa casi siempre es la misma, un valor escrito a mano en lugar de un token. Encontrarlos ahora, con un solo fichero y pocas pantallas, es mucho más fácil que hacerlo la semana que viene, cuando empieces a repartir este código en las carpetas de ITCSS.
+Si alguna falla, la causa casi siempre es la misma, un valor escrito a mano en lugar de un token. Encontrarlos ahora, con pocas pantallas maquetadas, es mucho más fácil que hacerlo más adelante, cuando reorganices todo el código en las carpetas de ITCSS.
