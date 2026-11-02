@@ -455,15 +455,21 @@ En el repaso de HTML5 viste que el nivel de un encabezado lo decide la estructur
     color: var(--color-on-surface-variant);
   }
 }
+```
 
-.prose {
-  max-width: 65ch;
+```scss
+// components/_prose.scss
+@scope (.prose) {
+  :scope { max-width: 65ch; }
+  :scope > * + * { margin-block-start: var(--space-4); }
 
-  > * + * { margin-block-start: var(--space-4); }
+  h2 { font: var(--font-heading-2); }
+  h3 { font: var(--font-heading-3); }
+  a  { color: var(--color-primary); }
 }
 ```
 
-El bloque `.prose` resuelve otro caso habitual, el de los textos largos (las normas de uso de las pistas, la política de cancelación): limita el ancho de las líneas a unos 65 caracteres, que es lo cómodo para leer, y separa cada párrafo, lista o título del anterior con el selector `> * + *`, que selecciona todos los hijos menos el primero. Así no hace falta poner una clase a cada párrafo.
+El componente `.prose` resuelve otro caso habitual, el de los textos largos (las normas de uso de las pistas, la política de cancelación), en los que no se pone una clase a cada párrafo. Usa `@scope`, que viste en el apartado de BEM, para dar estilo a los títulos y los enlaces que contiene sin que esos estilos afecten al resto de la pantalla. Limita el ancho de las líneas a unos 65 caracteres, que es lo cómodo para leer, y separa cada párrafo, lista o título del anterior con el selector `:scope > * + *`, que selecciona todos los hijos menos el primero.
 
 ## Etiquetas
 

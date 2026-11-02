@@ -165,6 +165,53 @@ Los modificadores y los tokens de componente del apartado 7 están hechos para i
 
 Así, un modificador ocupa dos o tres líneas, nunca repite declaraciones del bloque, y si el botón cambia de estructura, todas sus variantes cambian con él.
 
+## BEM y `@scope`
+
+BEM resuelve con una convención de nombres un problema que CSS tenía de origen: todas las reglas son globales, y una regla escrita para un componente puede acabar afectando a otro. Desde finales de 2025, CSS tiene una herramienta propia para ese mismo problema, la regla **`@scope`**, que funciona ya en todos los navegadores principales. Conviene que la conozcas, porque la vas a ver cada vez más, y que sepas cuándo te sirve en tu proyecto.
+
+### Qué hace `@scope`
+
+`@scope` limita un bloque de reglas a una parte del documento. Se escribe con un selector que marca la **raíz** del ámbito, y todas las reglas de dentro solo afectan a los elementos que están dentro de esa raíz. La pseudoclase **`:scope`** selecciona la propia raíz.
+
+```css
+@scope (.prose) {
+  :scope { max-width: 65ch; }        /* el propio .prose */
+  h2 { font: var(--font-heading-2); }
+  a  { color: var(--color-primary); }
+}
+```
+
+Con este código, solo los `<h2>` y los `<a>` que están dentro de un `.prose` reciben esos estilos, y los de la cabecera o la navegación no se ven afectados. Hay dos diferencias importantes con escribir `.prose h2`:
+
+- **La raíz no suma especificidad.** Dentro de `@scope`, el selector `h2` sigue teniendo la especificidad de una etiqueta, (0, 0, 1), y no la de `.prose h2`, (0, 1, 1). Así, cualquier componente que esté dentro puede sobrescribirlo con una sola clase.
+- **Gana el ámbito más cercano.** Si dos bloques `@scope` dan estilo al mismo elemento con la misma especificidad, gana el de la raíz más próxima al elemento en el árbol, aunque el otro esté escrito más abajo. Es un criterio nuevo de la cascada que se aplica justo después de la especificidad y antes del orden de aparición.
+
+`@scope` también admite un **límite inferior** con la palabra `to`, de modo que las reglas se aplican desde la raíz hasta ese límite, pero no dentro de él. Por la forma que tiene ese ámbito (una raíz con un hueco en medio), se le suele llamar *donut scope*.
+
+```css
+/* Los párrafos de la tarjeta, pero no los del contenido que se coloca dentro */
+@scope (.card) to (.card__content) {
+  p { margin: 0; }
+}
+```
+
+Sass entiende `@scope` y lo deja pasar tal cual al CSS compilado, así que puedes escribirlo en tus parciales, incluso con anidación dentro.
+
+### ¿`@scope` sustituye a BEM?
+
+Con `@scope` podrías escribir los componentes sin nombres de BEM, con selectores de etiqueta dentro de cada ámbito, y no se pisarían entre sí. Hay equipos que ya trabajan así, pero en este módulo **seguimos usando BEM para los componentes**, por varias razones:
+
+- **El HTML se explica solo.** `class="card__price"` dice qué es ese elemento y a qué componente pertenece, mientras que con un `<p>` sin clase dentro de una tarjeta hay que ir al CSS para averiguarlo.
+- **El código se corresponde con Figma.** Los elementos de BEM son las capas con nombre de tu componente, y los modificadores son sus variantes. Esa correspondencia es la que te permite defender cada decisión en la auditoría oral.
+- **Los estilos no dependen de la etiqueta.** Si mañana el precio pasa de `<p>` a `<span>`, `.card__price` sigue funcionando, mientras que una regla para `p` dentro de un `@scope` deja de aplicarse.
+- **Es muy reciente.** Hasta diciembre de 2025 no funcionaba en Firefox, y algunas personas usan todavía navegadores que no lo entienden. En esos navegadores, las reglas de dentro de `@scope` se ignoran por completo.
+
+### Cuándo te sirve en tu proyecto
+
+`@scope` es la herramienta adecuada para **el contenido en el que no puedes poner clases**. El caso más claro del polideportivo son las normas de uso de las pistas o la política de cancelación: son textos largos que alguien escribe en un editor (o que llegan de una base de datos en DWES), con sus títulos, sus listas y sus enlaces, y nadie va a añadir una clase de BEM a cada párrafo. Ahí, un bloque `@scope (.prose)` da estilo a todo ese contenido sin que esos estilos escapen al resto de la pantalla, y con la especificidad tan baja que cualquier componente que aparezca dentro puede sobrescribirlos.
+
+Como el contenido sigue leyéndose bien aunque el navegador ignore esas reglas (solo pierde algunos detalles de estilo), es un uso seguro incluso en navegadores antiguos. En tu arquitectura de ITCSS, ese bloque va en la capa de componentes, en su propio parcial (`components/_prose.scss`), igual que cualquier otro componente.
+
 ## Errores frecuentes
 
 | Así no | Así sí | Por qué |
@@ -192,4 +239,5 @@ Antes de pasar al apartado de multimedia, revisa el HTML y el SCSS de tus compon
 
 - [BEM: introducción y guía rápida (getbem.com)](https://getbem.com/introduction/)
 - [Documentación oficial de la metodología BEM (bem.info)](https://en.bem.info/methodology/)
+- [`@scope` (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/CSS/@scope)
 - [BEMIT: ITCSS y BEM juntos, de Harry Roberts (CSS Wizardry)](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
