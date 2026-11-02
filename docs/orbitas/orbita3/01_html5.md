@@ -1,6 +1,4 @@
-# Órbita 3 — Dar forma al sistema
-
-## 1. Repaso de HTML5
+# 1. Repaso de HTML5
 
 En esta órbita vas a convertir tus mockups de Figma en una aplicación que funciona en el navegador, y lo primero que hay que escribir es el HTML. Puede parecer el paso fácil, porque el HTML lo conoces desde el curso pasado y el trabajo vistoso llega después con CSS, pero en la práctica es el que más condiciona todo lo demás. **Un buen CSS solo puede construirse sobre un buen HTML**: si una lista de pistas está hecha con `<div>` sueltos, no podrás alinearla bien con Grid; si la hora de la reserva es un `<div>` con un evento de clic en lugar de un botón, no se podrá elegir con el teclado; y si la pantalla no tiene encabezados, Manuel no podrá recorrerla con el lector de pantalla del móvil, por muy bonita que la dejes.
 
@@ -8,7 +6,7 @@ Este apartado es un repaso de lo que necesitas de HTML5 para maquetar tu sistema
 
 ![De un wireframe de la Órbita 1 a los elementos de HTML que forman cada zona de la pantalla](img/orbita3_01_esquema_wireframe_html.svg)
 
-### La estructura de un documento
+## La estructura de un documento
 
 Todas las pantallas de tu aplicación empiezan igual, y conviene que tengas una plantilla correcta desde el primer día, porque cada error que haya en ella se repetirá en todas las páginas.
 
@@ -42,7 +40,7 @@ Cada línea tiene su razón de ser:
 
 El `<link>` al CSS va siempre en el `<head>`, para que el navegador tenga los estilos antes de pintar nada. Los `<script>`, cuando los añadas en DWEC, irán también en el `<head>` con el atributo `defer`, que hace que se descarguen sin detener la lectura del HTML.
 
-### Elementos, etiquetas y atributos
+## Elementos, etiquetas y atributos
 
 Un **elemento** de HTML se escribe con una **etiqueta de apertura** y una de **cierre** (`<p>` y `</p>`), y entre las dos va su contenido, que puede ser texto u otros elementos. Algunos elementos no tienen contenido y por eso no se cierran, como `<img>`, `<input>`, `<meta>` o `<br>`, y se les llama **elementos vacíos**. Los **atributos** van dentro de la etiqueta de apertura y añaden información o cambian el comportamiento del elemento: `<a href="/reservas">`, `<img src="pista.webp" alt="...">`.
 
@@ -59,7 +57,7 @@ Hay unos cuantos **atributos globales** que funcionan en cualquier elemento y qu
 
 Recuerda la regla de los apuntes de CSS3: **el `id` no se usa para dar estilo**. Pon a cada elemento la clase que necesites, y reserva el `id` para lo que no puede hacerse de otra forma.
 
-### Por qué importa la semántica
+## Por qué importa la semántica
 
 HTML tiene más de cien elementos, y casi todos sirven para decir **qué es** cada cosa, mientras que su aspecto lo decide el CSS. Un `<h2>` es el título de una sección, aunque en tu diseño se vea pequeño; un `<button>` es un control que hace algo cuando se pulsa, tenga la forma que tenga; y un `<nav>` es el bloque de navegación, esté arriba, abajo o escondido en un menú. Cuando eliges el elemento por su significado, ganas varias cosas a la vez:
 
@@ -71,7 +69,7 @@ HTML tiene más de cien elementos, y casi todos sirven para decir **qué es** ca
 
 La forma de saber si estás usando bien la semántica es preguntarte, ante cada elemento, **qué es esto para quien no lo ve**. Si la respuesta es "un título", es un encabezado. Si es "algo que se pulsa para hacer algo", es un botón. Y si es "nada, solo una caja para colocar cosas", entonces sí, es un `<div>`.
 
-### La estructura de una pantalla
+## La estructura de una pantalla
 
 HTML5 tiene un grupo de elementos que describen las grandes zonas de una pantalla, y los lectores de pantalla los usan como **puntos de referencia** (*landmarks*) para saltar directamente de una zona a otra.
 
@@ -89,7 +87,7 @@ Dos dudas aparecen siempre. La primera es la diferencia entre `<section>` y `<ar
 
 Si en una pantalla hay dos `<nav>` (el menú principal arriba y la barra de pestañas abajo en el móvil), ponle a cada uno un nombre con `aria-label`, para que el lector de pantalla pueda distinguirlos: `<nav aria-label="Principal">` y `<nav aria-label="Secciones">`.
 
-### Encabezados: el índice de la pantalla
+## Encabezados: el índice de la pantalla
 
 Los encabezados, de `<h1>` a `<h6>`, forman el **índice** de cada pantalla, y son la forma principal en la que una persona que usa un lector de pantalla se hace una idea de lo que hay. Por eso tienen unas reglas que hay que respetar:
 
@@ -101,7 +99,7 @@ Esta última regla conecta con tu escala tipográfica de la Órbita 2. Allí vis
 
 Una forma rápida de comprobar tus encabezados es leer solo ellos, en orden, como si fueran el índice de un libro. Si con ese índice se entiende qué hay en la pantalla, están bien.
 
-### Texto
+## Texto
 
 Para el texto de tus pantallas te van a bastar unos pocos elementos, pero conviene que uses el adecuado en cada caso:
 
@@ -110,7 +108,7 @@ Para el texto de tus pantallas te van a bastar unos pocos elementos, pero convie
 - **`<time>`** para las fechas y las horas, con el atributo `datetime` en formato estándar: `<time datetime="2026-11-12T19:00">jueves 12 a las 19:00</time>`. La persona lee la fecha escrita como le resulta natural, y el navegador, el buscador o tu JavaScript tienen la versión que pueden procesar. En una aplicación de reservas lo vas a usar en todas partes.
 - **`<small>`** para la letra pequeña, como los avisos legales o las condiciones, y **`<abbr>`** para las abreviaturas, con su forma completa en `title`.
 
-#### Listas
+### Listas
 
 Las listas son mucho más frecuentes de lo que parece en una interfaz, y casi cualquier grupo de elementos del mismo tipo es una lista: los enlaces de un menú, las pistas disponibles, las horas libres, las reservas de una persona. Marcarlas como lista permite que el lector de pantalla anuncie "lista, 6 elementos" antes de empezar, y Manuel sabe así cuántas pistas tiene por delante.
 
@@ -127,7 +125,7 @@ Las listas son mucho más frecuentes de lo que parece en una interfaz, y casi cu
 </dl>
 ```
 
-### Enlaces y botones
+## Enlaces y botones
 
 Esta es probablemente la distinción más importante de todo el apartado, y la que más se confunde cuando se maqueta a partir de un diseño, porque en Figma un enlace y un botón pueden tener exactamente el mismo aspecto. La regla es sencilla: **un enlace lleva a otro sitio y un botón hace algo**.
 
@@ -140,7 +138,7 @@ Dentro de un formulario, un `<button>` envía el formulario por defecto. Si un b
 
 Y una última regla: el texto de un enlace o de un botón tiene que entenderse **fuera de contexto**. Un lector de pantalla puede mostrar la lista de todos los enlaces de la página, y una lista con cinco "Ver más" no sirve de nada. "Ver horarios de la pista de pádel 2" sí. Si el diseño solo deja sitio para un icono, el texto va igualmente en el HTML, oculto visualmente o en un `aria-label`.
 
-### Imágenes y gráficos
+## Imágenes y gráficos
 
 Una imagen se inserta con `<img>`, y tiene cuatro atributos que no deberían faltar nunca:
 
@@ -159,7 +157,7 @@ Cuando una imagen tiene un pie de foto, se agrupan los dos con **`<figure>`** y 
 
 Los **iconos** de tu librería se insertan normalmente como SVG, dentro del HTML o con un `<img>`. Si el icono va acompañado de un texto que ya dice lo mismo (una lupa junto a la palabra "Buscar"), es decorativo y lleva `aria-hidden="true"` para que el lector de pantalla no lo anuncie dos veces. Si el icono va solo, el botón que lo contiene necesita un nombre accesible.
 
-### Tablas
+## Tablas
 
 Las tablas sirven para **datos con filas y columnas**, como el cuadrante de ocupación de las pistas o el historial de reservas, y nunca para colocar elementos en la pantalla (para eso está Grid). Una tabla bien hecha tiene un título y sus celdas de encabezado marcadas, para que el lector de pantalla pueda decir, al llegar a una celda, a qué fila y a qué columna pertenece.
 
@@ -185,7 +183,7 @@ Las tablas sirven para **datos con filas y columnas**, como el cuadrante de ocup
 
 `<caption>` es el título de la tabla, `<thead>` y `<tbody>` separan la cabecera de los datos y `scope` indica si cada `<th>` es el encabezado de una columna (`col`) o de una fila (`row`). En el móvil, una tabla ancha se envuelve en un contenedor con desplazamiento horizontal, como viste en los apuntes de CSS3.
 
-### Formularios
+## Formularios
 
 La aplicación del polideportivo es, en el fondo, un formulario: se elige una pista, un día y una hora y se envía. Los formularios son también la parte de una interfaz donde más fácil es equivocarse con el HTML, y donde más se nota.
 
@@ -224,7 +222,7 @@ En este ejemplo están casi todas las reglas que necesitas:
 - **Las ayudas y los mensajes de error se asocian al campo** con `aria-describedby`, para que el lector de pantalla los lea al llegar a él.
 - **Pide solo los campos imprescindibles.** Cada campo de más es tiempo, errores y datos que se guardan. Las **WSG** lo incluyen entre sus criterios, y el diseño ético también: si el polideportivo no necesita la fecha de nacimiento de Lucía para reservar una pista, no se la pidas.
 
-### Elementos interactivos nativos
+## Elementos interactivos nativos
 
 HTML tiene algunos elementos que resuelven sin JavaScript patrones que antes necesitaban una librería, y que encajan con varios de los componentes de la Órbita 2:
 
@@ -233,7 +231,7 @@ HTML tiene algunos elementos que resuelven sin JavaScript patrones que antes nec
 
 Antes de construir un desplegable o un diálogo con `<div>` y JavaScript, comprueba si existe un elemento nativo que lo haga. Casi siempre será más accesible, más ligero y más fácil de mantener.
 
-### Del wireframe al HTML
+## Del wireframe al HTML
 
 Con todo lo anterior ya puedes traducir tus pantallas. Te recomiendo hacerlo siempre en este orden, pantalla a pantalla y siguiendo tu user flow, y **escribir el HTML completo de una pantalla antes de escribir una sola línea de CSS**:
 
@@ -245,13 +243,13 @@ Con todo lo anterior ya puedes traducir tus pantallas. Te recomiendo hacerlo sie
 
 Cuando termines, haz la **prueba sin estilos**: abre la pantalla sin CSS (o desactívalo desde el inspector) y léela de arriba abajo. Sin ningún estilo, el HTML debería parecer un documento bien ordenado, con su título, sus secciones, sus listas y sus formularios con etiquetas, en el mismo orden en que tiene que leerse. Si algo no se entiende así, tampoco lo entenderá un lector de pantalla, y ningún CSS lo va a arreglar.
 
-### Validar el HTML
+## Validar el HTML
 
 Igual que el CSS, el HTML no da errores: el navegador intenta corregir lo que encuentra mal escrito, y a veces lo corrige de una forma distinta a la que esperabas. El [validador del W3C](https://validator.w3.org/) comprueba cada pantalla y te dice la línea exacta de cada error, como una etiqueta sin cerrar, un `id` repetido o una imagen sin `alt`. Valida todas las pantallas de tu proyecto y guarda la evidencia en el repositorio, porque en este módulo el uso de estándares es un criterio que se evalúa (RA6-b).
 
 Además del validador, el inspector del navegador tiene un panel de **accesibilidad** que te enseña cómo ve tu página un lector de pantalla: qué rol tiene cada elemento, qué nombre anuncia y cómo se organizan las regiones. Es una buena forma de comprobar, por ejemplo, que todos tus botones tienen un nombre que se entiende.
 
-### Antes de seguir
+## Antes de seguir
 
 Antes de pasar al CSS, comprueba en la pantalla principal de tu aplicación que puedes contestar que sí a estas preguntas:
 
@@ -265,7 +263,7 @@ Antes de pasar al CSS, comprueba en la pantalla principal de tu aplicación que 
 
 Si en algún momento usas una IA para generar o revisar tu HTML, anótalo en el `CHANGELOG.md`. Ten en cuenta que las herramientas que convierten un diseño en código (incluido el modo Dev de Figma o Google Stitch) tienden a generar `<div>` para todo, botones sin nombre e imágenes sin `alt`, así que revisa su resultado con las preguntas anteriores antes de usarlo.
 
-### Recursos
+## Recursos
 
 - [HTML en español, de Manz (lenguajehtml.com)](https://lenguajehtml.com/)
 - [Referencia de elementos HTML (MDN Web Docs)](https://developer.mozilla.org/es/docs/Web/HTML/Element)
