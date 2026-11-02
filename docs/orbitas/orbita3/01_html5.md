@@ -34,7 +34,7 @@ Cada línea tiene su razón de ser:
 - **`lang="es"`** indica el idioma del contenido. Los lectores de pantalla lo usan para elegir la pronunciación, y el navegador para separar las palabras con guiones o traducir la página. Si una parte del contenido está en otro idioma, ese elemento lleva su propio `lang`.
 - **`charset="UTF-8"`** asegura que las tildes y la eñe se ven bien. Tiene que ser lo primero del `<head>`.
 - **`viewport`** es imprescindible para el diseño adaptable. Sin esta línea, el móvil finge ser una pantalla de escritorio de unos 980 píxeles y lo encoge todo, y ninguna de tus media queries funcionará.
-- **`color-scheme`** avisa al navegador, antes incluso de descargar el CSS, de que tu aplicación tiene modo oscuro, y evita el fogonazo blanco que verían Lucía y cualquiera que tenga el modo oscuro activado mientras se carga la página.
+- **`color-scheme`** avisa al navegador, antes incluso de descargar el CSS, de que tu aplicación tiene modo oscuro, y evita el destello blanco que verían Lucía y cualquiera que tenga el modo oscuro activado mientras se carga la página.
 - **`<title>`** es lo primero que anuncia un lector de pantalla al abrir la página, lo que aparece en la pestaña y en los resultados de los buscadores. Cada pantalla tiene el suyo, de lo más concreto a lo más general, como en el ejemplo.
 - **`description`** es el texto que muestran los buscadores debajo del título (RA5-h).
 
@@ -62,7 +62,7 @@ Recuerda la regla de los apuntes de CSS3: **el `id` no se usa para dar estilo**.
 HTML tiene más de cien elementos, y casi todos sirven para decir **qué es** cada cosa, mientras que su aspecto lo decide el CSS. Un `<h2>` es el título de una sección, aunque en tu diseño se vea pequeño; un `<button>` es un control que hace algo cuando se pulsa, tenga la forma que tenga; y un `<nav>` es el bloque de navegación, esté arriba, abajo o escondido en un menú. Cuando eliges el elemento por su significado, ganas varias cosas a la vez:
 
 - **Accesibilidad.** Los lectores de pantalla anuncian cada elemento por su función ("botón", "encabezado de nivel 2", "navegación") y permiten saltar de uno a otro. Manuel puede pedirle al lector del móvil que le lea solo los encabezados de una pantalla para saber qué hay en ella (RA5-a).
-- **Comportamiento gratis.** Un `<button>` se puede enfocar con el tabulador, se activa con Intro y con Espacio y se puede desactivar con un atributo. Si lo construyes con un `<div>`, tendrás que programar todo eso a mano con JavaScript, y lo más probable es que se te olvide algo.
+- **Funcionamiento incluido en el navegador.** Un `<button>` se puede enfocar con el tabulador, se activa con Intro y con Espacio y se puede desactivar con un atributo. Si lo construyes con un `<div>`, tendrás que programar todo eso a mano con JavaScript, y lo más probable es que se te olvide algo.
 - **Buscadores.** Los buscadores entienden mejor una página con una estructura clara de encabezados y regiones (RA5-h).
 - **Menos código.** Los elementos nativos ya traen su comportamiento, así que no hace falta añadir clases, scripts ni librerías para conseguirlo. Las **WSG** recomiendan precisamente usar HTML semántico y elementos nativos antes que soluciones hechas con JavaScript, porque el resultado pesa menos y funciona aunque el script no llegue a cargar.
 - **Un CSS más limpio.** Cuando cada parte de la pantalla tiene un elemento con sentido, el CSS se escribe sobre una estructura que entiendes.
