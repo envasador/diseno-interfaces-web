@@ -4,7 +4,7 @@
 
 Cuando tu hoja de estilos implementa un sistema de diseño completo, empieza a crecer deprisa: los tokens primitivos, los semánticos con sus dos modos, la escala tipográfica, el reset, los estilos base y una docena de componentes con sus variantes y sus estados. Todo eso en un único fichero `main.css` de mil líneas es difícil de leer y todavía más difícil de mantener, y además te obliga a escribir a mano cosas que se repiten con un patrón muy claro, como las ocho variables de espaciado o las mismas tres líneas de foco en cada componente. **Sass** es la herramienta que se usa en la mayoría de los equipos para resolver esos dos problemas, y en este apartado vas a aprender a usarla para organizar tu sistema en varios ficheros y generar con unas pocas líneas lo que antes escribías una y otra vez (RA2-j).
 
-Estos apuntes siguen el orden de la sección de Sass de [lenguajecss.com](https://lenguajecss.com/sass/), y todos los ejemplos parten del CSS de los [apuntes de CSS3](02_css3.md) y del que escribirás en el [apartado 4](04_del_sistema_al_codigo.md). En la semana del 16 de noviembre repartirás este código en las carpetas de ITCSS y le pondrás nombres con BEM, y Sass es lo que hace que esa organización sea cómoda de mantener.
+Todos los ejemplos de estos apuntes parten del CSS de los [apuntes de CSS3](02_css3.md) y del que escribirás en el [apartado 4](04_del_sistema_al_codigo.md). En la semana del 16 de noviembre repartirás este código en las carpetas de ITCSS y le pondrás nombres con BEM, y Sass es lo que hace que esa organización sea cómoda de mantener.
 
 ![Sass reúne los ficheros parciales del sistema en un único main.css que es el que llega al navegador](img/orbita3_03_esquema_compilacion_sass.svg)
 
