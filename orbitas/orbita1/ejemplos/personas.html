@@ -1,0 +1,453 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<style>
+  .personas-wrap {
+    --red:      #E93456;
+    --ink:      #1F0318;
+    --bg:       #ffffff;
+    --bg-soft:  #f7f7f7;
+    --border:   #1F0318;
+    --shadow:   3px 3px 0 #1F0318;
+    --shadow-sm:2px 2px 0 #1F0318;
+    --font: 'IBM Plex Sans', -apple-system, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+    padding-block: 32px 48px;
+  }
+
+  /* Cabecera */
+  .pw-header {
+    margin-bottom: 40px;
+  }
+  .pw-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--red);
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 14px;
+  }
+  .pw-title {
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--red);
+    display: inline-block;
+  }
+  .pw-desc {
+    font-size: 14px;
+    color: var(--ink);
+    max-width: 60ch;
+    line-height: 1.7;
+    margin-top: 12px;
+    opacity: 0.7;
+  }
+
+  /* Grid */
+  .personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* Card */
+  .pw-card {
+    background: var(--bg);
+    border: 2px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  /* Cabecera tarjeta */
+  .pw-card-top {
+    background: var(--red);
+    padding: 18px 20px 16px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .pw-avatar {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+    display: block;
+  }
+  .pw-header-text { flex: 1; min-width: 0; }
+  .pw-type {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--ink);
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 7px;
+  }
+  .pw-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin-bottom: 2px;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+  }
+  .pw-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  /* Cita */
+  .pw-quote-wrap {
+    padding: 12px 20px;
+    background: var(--bg-soft);
+    border-bottom: 2px solid var(--border);
+  }
+  .pw-quote {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink);
+    line-height: 1.65;
+    margin: 0;
+  }
+  .pw-quote::before { content: '\201C\0020'; color: var(--red); font-weight: 600; }
+  .pw-quote::after  { content: '\0020\201D'; color: var(--red); font-weight: 600; }
+
+  /* Secciones */
+  .pw-section {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(31,3,24,0.12);
+  }
+  .pw-section:last-child { border-bottom: none; }
+
+  .pw-block-title {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--ink);
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 12px;
+  }
+
+  /* Chips */
+  .pw-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  .pw-chip {
+    border: 1.5px solid var(--border);
+    padding: 8px 11px;
+    background: var(--bg-soft);
+  }
+  .pw-chip-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .pw-chip-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* Listas */
+  .pw-list { display: flex; flex-direction: column; gap: 8px; }
+  .pw-item {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .pw-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    border: 2px solid var(--border);
+  }
+  .pw-dot--goal  { background: var(--red); }
+  .pw-dot--frust { background: var(--bg-soft); }
+
+  /* Data tag */
+  .pw-tag {
+    margin-top: 9px;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink);
+    background: var(--bg-soft);
+    border: 1.5px solid var(--border);
+    border-left: 3px solid var(--red);
+    padding: 3px 9px;
+  }
+
+  /* Bloque a11y */
+  .pw-a11y {
+    border: 1.5px solid var(--border);
+    background: var(--bg-soft);
+  }
+  .pw-a11y-item {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 13px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pw-a11y-item:last-child { border-bottom: none; }
+  .pw-a11y-label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 3px;
+  }
+
+  /* Footer */
+  .pw-footer {
+    padding: 12px 20px;
+    border-top: 2px solid var(--border);
+    background: var(--bg-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .pw-badge {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border: 2px solid var(--border);
+    color: #ffffff;
+    background: var(--ink);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Leyenda */
+  .pw-legend {
+    margin-top: 28px;
+    border: 2px solid var(--border);
+    background: var(--bg-soft);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .pw-legend-item {
+    display: flex;
+    gap: 9px;
+    font-size: 11.5px;
+    color: var(--ink);
+    line-height: 1.5;
+    padding: 12px 14px;
+    border-right: 1px solid rgba(31,3,24,0.12);
+    opacity: 0.75;
+  }
+  .pw-legend-item:last-child { border-right: none; }
+  .pw-legend-dot {
+    width: 9px;
+    height: 9px;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .pw-legend-dot--red  { background: var(--red); }
+  .pw-legend-dot--dark { background: var(--ink); }
+  .pw-legend-dot--soft { background: var(--bg); }
+
+  @media (max-width: 480px) {
+    .pw-chips { grid-template-columns: 1fr; }
+    .pw-card-top { flex-direction: column; gap: 10px; }
+    .pw-legend-item { border-right: none; border-bottom: 1px solid rgba(31,3,24,0.12); }
+    .pw-legend-item:last-child { border-bottom: none; }
+  }
+</style>
+
+<div class="personas-wrap">
+
+  <div class="pw-header">
+    <h1 class="pw-eyebrow">Órbita 1 · Recurso de ejemplo</h1>
+    <h2 class="pw-title">Dos personas de usuario</h2>
+    <p class="pw-desc">Cada atributo se puede rastrear hasta un dato observado o declarado. Si no tienes ese dato, el atributo no se incluye en la ficha.</p>
+  </div>
+
+  <div class="personas-grid">
+
+    <!-- PERSONA 1 -->
+    <article class="pw-card">
+      <div class="pw-card-top">
+        <svg class="pw-avatar" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="60" height="60" fill="#1F0318"/>
+          <rect x="14" y="40" width="32" height="22" fill="#E93456"/>
+          <circle cx="30" cy="24" r="13" fill="#FDDDE8"/>
+          <rect x="16" y="6" width="28" height="12" fill="#1F0318"/>
+          <rect x="12" y="14" width="7" height="13" fill="#1F0318"/>
+          <rect x="41" y="14" width="7" height="13" fill="#1F0318"/>
+          <circle cx="25.5" cy="24" r="2" fill="#1F0318"/>
+          <circle cx="34.5" cy="24" r="2" fill="#1F0318"/>
+          <path d="M25 31 Q30 35 35 31" stroke="#1F0318" stroke-width="2" fill="none" stroke-linecap="square"/>
+        </svg>
+        <div class="pw-header-text">
+          <span class="pw-type">Persona primaria</span>
+          <h3 class="pw-name">Nuria Campos</h3>
+          <p class="pw-meta">28 a. · Técnica de laboratorio · Valencia</p>
+        </div>
+      </div>
+
+      <div class="pw-quote-wrap">
+        <p class="pw-quote">Cuando llego a casa ya no quiero pensar. Solo quiero saber qué ceno esta semana sin que me lleve media hora.</p>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Contexto de uso</p>
+        <div class="pw-chips">
+          <div class="pw-chip"><span class="pw-chip-label">Dispositivo</span><span class="pw-chip-value">Móvil Android</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Conectividad</span><span class="pw-chip-value">WiFi / 4G</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Entorno</span><span class="pw-chip-value">Cocina, de pie</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Momento</span><span class="pw-chip-value">Tardes entre semana</span></div>
+        </div>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Objetivos</p>
+        <div class="pw-list">
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>Inmediato:</strong> Planificar cenas de lunes a viernes en menos de 5 minutos.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>De fondo:</strong> Comer mejor sin gastar más ni dedicar tiempo que no tiene.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>Oculto:</strong> Que su pareja y ella no tengan que decidir cada día lo que comen.</span></div>
+        </div>
+        <div class="pw-tag">Entrevista · "Decido sobre la marcha y al final siempre pido comida"</div>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Frustraciones</p>
+        <div class="pw-list">
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>Las apps de recetas dan demasiados resultados sin filtrar por ingredientes disponibles.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>Los pasos están pensados para alguien con tiempo. No queda claro cuándo puede dejar algo sin vigilar.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>Guarda recetas en favoritos y nunca las encuentra cuando las necesita.</span></div>
+        </div>
+        <div class="pw-tag">Test 5 seg. · Solo 1 de 4 usuarios encontró el filtro de ingredientes</div>
+      </div>
+
+      <footer class="pw-footer">
+        <span class="pw-badge">Planificadora semanal</span>
+        <span class="pw-badge">Poco tiempo</span>
+        <span class="pw-badge">Móvil-first</span>
+      </footer>
+    </article>
+
+    <!-- PERSONA 2 -->
+    <article class="pw-card">
+      <div class="pw-card-top">
+        <svg class="pw-avatar" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="60" height="60" fill="#1F0318"/>
+          <rect x="14" y="40" width="32" height="22" fill="#E93456"/>
+          <circle cx="30" cy="24" r="13" fill="#F5DBC8"/>
+          <rect x="16" y="8" width="28" height="10" fill="#3A1808"/>
+          <rect x="12" y="14" width="6" height="12" fill="#3A1808"/>
+          <rect x="18" y="21" width="10" height="7" fill="none" stroke="#1F0318" stroke-width="2"/>
+          <rect x="32" y="21" width="10" height="7" fill="none" stroke="#1F0318" stroke-width="2"/>
+          <line x1="28" y1="24.5" x2="32" y2="24.5" stroke="#1F0318" stroke-width="2"/>
+          <circle cx="23" cy="24.5" r="1.5" fill="#1F0318"/>
+          <circle cx="37" cy="24.5" r="1.5" fill="#1F0318"/>
+          <path d="M25 31 Q30 35 35 31" stroke="#1F0318" stroke-width="2" fill="none" stroke-linecap="square"/>
+        </svg>
+        <div class="pw-header-text">
+          <span class="pw-type">Diversidad funcional</span>
+          <h3 class="pw-name">Tomás Reyes</h3>
+          <p class="pw-meta">41 a. · Consultor freelance · Sevilla · Baja visión</p>
+        </div>
+      </div>
+
+      <div class="pw-quote-wrap">
+        <p class="pw-quote">Uso el ordenador igual que cualquiera, pero los textos con poco contraste me fatigan. Me cambia el rato que puedo trabajar.</p>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Contexto de uso</p>
+        <div class="pw-chips">
+          <div class="pw-chip"><span class="pw-chip-label">Dispositivo</span><span class="pw-chip-value">Portátil Windows</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Conectividad</span><span class="pw-chip-value">Fibra en casa</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Entorno</span><span class="pw-chip-value">Mesa, monitor exterior</span></div>
+          <div class="pw-chip"><span class="pw-chip-label">Momento</span><span class="pw-chip-value">Mañanas, luz natural</span></div>
+        </div>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Tecnologías de apoyo</p>
+        <div class="pw-a11y">
+          <div class="pw-a11y-item"><span class="pw-a11y-label">Condición</span>Degeneración macular central. Ve con visión periférica; pierde el foco en el centro del campo visual.</div>
+          <div class="pw-a11y-item"><span class="pw-a11y-label">Tecnologías activas</span>Magnificación al 175% (Windows). Alto contraste en algunas apps. Sin lector de pantalla.</div>
+          <div class="pw-a11y-item"><span class="pw-a11y-label">Configuración del sistema</span>Fuente a 18px. Tema oscuro en SO. Extensión de navegador para forzar contraste donde no lo aplican.</div>
+        </div>
+        <div class="pw-tag">WCAG 2.2 AA · ratio mínimo 4.5:1 en texto normal</div>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Objetivos</p>
+        <div class="pw-list">
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>Inmediato:</strong> Revisar y aprobar presupuestos de clientes sin esfuerzo visual extra.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>De fondo:</strong> Mantener productividad sin herramientas especializadas caras ni ayuda externa.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--goal"></span><span><strong>Oculto:</strong> Seguir trabajando de forma independiente mientras la condición progresa.</span></div>
+        </div>
+        <div class="pw-tag">Entrevista · "Cuando el contraste es bajo tengo que parar antes de lo que querría"</div>
+      </div>
+
+      <div class="pw-section">
+        <p class="pw-block-title">Frustraciones</p>
+        <div class="pw-list">
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>Gris claro sobre blanco en labels secundarios: con magnificación se pixela y el bajo contraste lo hace ilegible.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>Los focus ring son demasiado finos o desaparecen. Navegar con teclado se vuelve imposible.</span></div>
+          <div class="pw-item"><span class="pw-dot pw-dot--frust"></span><span>PDF sin estructura semántica: pierde el contexto al hacer zoom con la magnificación.</span></div>
+        </div>
+        <div class="pw-tag">Auditoría · Focus ring ausente en 6 de 8 componentes interactivos</div>
+      </div>
+
+      <footer class="pw-footer">
+        <span class="pw-badge">Baja visión</span>
+        <span class="pw-badge">Teclado + magnificación</span>
+        <span class="pw-badge">Alto contraste</span>
+      </footer>
+    </article>
+
+  </div><!-- /personas-grid -->
+
+  <div class="pw-legend">
+    <div class="pw-legend-item"><span class="pw-legend-dot pw-legend-dot--red"></span><span>Las etiquetas con borde rojo indican la fuente de investigación que respalda el dato.</span></div>
+    <div class="pw-legend-item"><span class="pw-legend-dot pw-legend-dot--dark"></span><span>Tres niveles de objetivo: inmediato, de fondo y oculto. El oculto exige preguntar más de una vez.</span></div>
+    <div class="pw-legend-item"><span class="pw-legend-dot pw-legend-dot--soft"></span><span>Frustraciones como observaciones concretas, no valoraciones generales.</span></div>
+    <div class="pw-legend-item"><span class="pw-legend-dot pw-legend-dot--red"></span><span>Las tecnologías de apoyo de Tomás cambian decisiones reales: contraste, tamaño mínimo, foco visible.</span></div>
+  </div>
+
+</div><!-- /personas-wrap -->

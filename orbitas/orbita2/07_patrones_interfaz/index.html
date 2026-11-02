@@ -1,0 +1,1589 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita2/07_patrones_interfaz/">
+      
+      
+        <link rel="prev" href="../06_iconos_imagenes/">
+      
+      
+        <link rel="next" href="../08_mockups_entregable/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>7. Patrones de interfaz - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#orbita-2-fundar-el-sistema-visual" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Patrones de interfaz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita3/" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen y entregables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_hoja_de_ruta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../proyectos/orbita2/enunciado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto: Diseñar para que se entienda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_tokens_antes_que_pantallas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Por qué los tokens antes que las pantallas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_percepcion_visual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Percepción visual y jerarquía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Color: de la intuición al sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_tipografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Tipografía: legibilidad, escala y jerarquía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_espaciado_reticula/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Espaciado, retícula y composición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_iconos_imagenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Iconos e imágenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Patrones de interfaz
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Patrones de interfaz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#7-patrones-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Patrones de interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Patrones de interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-patron-y-por-que-conviene-usarlo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un patrón y por qué conviene usarlo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-componentes-mas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los componentes más habituales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-estados-de-un-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los estados de un componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-organizan-los-componentes-atomic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se organizan los componentes: Atomic Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antipatrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antipatrones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patrones-enganosos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patrones engañosos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donde-buscar-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde buscar patrones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_mockups_entregable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Del wireframe al mockup: guía de estilo y entregable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesiones/ayuda_variables_figma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ayuda: variables en Figma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesiones/ayuda_autolayout_figma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ayuda: Auto layout, responsive y variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita3/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#7-patrones-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Patrones de interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Patrones de interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-patron-y-por-que-conviene-usarlo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es un patrón y por qué conviene usarlo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-componentes-mas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los componentes más habituales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#los-estados-de-un-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los estados de un componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-organizan-los-componentes-atomic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se organizan los componentes: Atomic Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antipatrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antipatrones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patrones-enganosos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patrones engañosos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donde-buscar-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde buscar patrones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="orbita-2-fundar-el-sistema-visual">Órbita 2 — Fundar el sistema visual</h1>
+<h2 id="7-patrones-de-interfaz">7. Patrones de interfaz</h2>
+<p>Cuando abres por primera vez una tienda online, sabes sin que nadie te lo explique que el carrito está arriba a la derecha, que el logotipo te lleva a la portada y que el botón más llamativo de la ficha de un producto sirve para comprarlo. Lo sabes porque lo has visto cientos de veces en otras webs. A esas soluciones que se repiten de una aplicación a otra se las llama <strong>patrones de interfaz</strong>, y son una de las herramientas más útiles que vas a tener como diseñador, porque te permiten aprovechar todo lo que tus personas ya han aprendido usando otras aplicaciones. En este apartado vas a conocer los patrones más habituales, los componentes con los que se construyen y los errores que conviene evitar, incluidos los que se cometen a propósito para engañar a quien usa la aplicación (RA1-c, RA6-c).</p>
+<h3 id="que-es-un-patron-y-por-que-conviene-usarlo">Qué es un patrón y por qué conviene usarlo</h3>
+<p>Un <strong>patrón</strong> es una solución que ya ha funcionado para un problema que aparece una y otra vez. El concepto viene de la arquitectura (el arquitecto Christopher Alexander describió en los años setenta los patrones que se repiten en las casas y las ciudades), y del diseño de interfaces lo recoge, por ejemplo, el libro <em>Designing Interfaces</em>, de Jenifer Tidwell, que tienes en la bibliografía del módulo. Una barra de pestañas, un formulario de pago en varios pasos o una lista con un buscador encima son patrones.</p>
+<p>La razón para usarlos la resume la <strong>ley de Jakob</strong>, otra de las Leyes UX: las personas pasan la mayor parte de su tiempo en otras aplicaciones, así que esperan que la tuya funcione igual que las que ya conocen. Cada vez que te apartas de un patrón establecido, obligas a quien usa tu aplicación a aprender algo nuevo, y eso solo compensa cuando la solución nueva es claramente mejor. Las <strong>Web Sustainability Guidelines (WSG)</strong> del W3C lo recogen en su <strong>criterio 2.10, "Usar patrones de diseño establecidos y componentes esenciales"</strong>, porque los patrones conocidos acortan los recorridos y evitan pantallas y pruebas inútiles.</p>
+<p>Usar patrones consiste en resolver los problemas habituales de la forma que la gente ya espera, para dedicar tu creatividad a lo que de verdad hace distinta a tu aplicación.</p>
+<h3 id="los-componentes-mas-habituales">Los componentes más habituales</h3>
+<p>Los patrones se construyen con <strong>componentes</strong>, que son las piezas reutilizables de una interfaz. Ya empezaste a crearlos en tus wireframes, y en esta órbita vas a darles su aspecto definitivo con tus tokens. Estos son los que aparecen en casi todas las aplicaciones (C1.f):</p>
+<p><strong>Botones.</strong> Una aplicación suele tener tres niveles: el <strong>principal</strong>, con el color <code>primary</code>, para la acción más importante de la pantalla; el <strong>secundario</strong>, con borde o con un fondo suave, para las acciones alternativas; y el <strong>terciario</strong> o de texto, para acciones de poca importancia como "Ver más". Como viste en el apartado 2, en cada pantalla debería haber un solo botón principal. La etiqueta de un botón dice lo que va a pasar ("Reservar pista", "Cancelar reserva") en lugar de un genérico "Aceptar".</p>
+<p><strong>Campos de formulario.</strong> Cada campo lleva una <strong>etiqueta visible encima</strong>, que no desaparece al escribir. Usar el texto de ejemplo del interior del campo (el <em>placeholder</em>) como etiqueta es un antipatrón muy extendido, porque en cuanto Manuel empieza a escribir ya no sabe qué le estaban pidiendo. Para elegir entre opciones se usan las <strong>casillas de verificación</strong> (cuando se pueden marcar varias), los <strong>botones de opción</strong> (cuando solo se puede elegir una entre pocas) y los <strong>desplegables</strong> (cuando son muchas). Los interruptores (<em>switches</em>) son para ajustes que se aplican al momento, como activar las notificaciones.</p>
+<p><strong>Tarjetas.</strong> Agrupan la información de un mismo elemento (la foto, el nombre y el precio de una pista) aplicando la región común del apartado 2. Si toda la tarjeta se puede pulsar, tiene que parecerlo, y no debería contener a la vez otros botones que hagan cosas distintas.</p>
+<p><strong>Navegación.</strong> En el móvil, la <strong>barra de navegación inferior</strong> con tres a cinco destinos es el patrón más cómodo para usar con una mano, como hace Lucía, porque queda al alcance del pulgar. El <strong>menú hamburguesa</strong> (las tres rayas que despliegan un menú) ahorra espacio, pero esconde las opciones, y los estudios de usabilidad muestran que lo que está escondido se usa mucho menos, así que resérvalo para las secciones secundarias. En escritorio, la navegación suele ir en una barra superior con todas las secciones principales a la vista. Las <strong>migas de pan</strong> (la ruta "Inicio &gt; Pistas &gt; Pádel") ayudan a orientarse cuando hay varios niveles.</p>
+<p><strong>Mensajes y avisos.</strong> Los <strong>avisos</strong> dentro de la pantalla informan de algo que afecta a lo que estás viendo ("Esta pista cierra por mantenimiento el día 12"); las <strong>notificaciones breves</strong> (<em>toasts</em>) confirman una acción y desaparecen solas ("Reserva cancelada"); y los <strong>cuadros de diálogo</strong> interrumpen para pedir una decisión que no puede esperar ("¿Seguro que quieres cancelar la reserva?"). Los cuadros de diálogo son los más molestos, así que úsalos solo cuando la acción no se pueda deshacer.</p>
+<p><strong>Estados vacíos y de carga.</strong> Una lista sin elementos ("Todavía no tienes reservas") es una oportunidad para explicar qué se puede hacer, con un botón que lleve a reservar. Mientras se cargan los datos, una versión gris de la estructura de la pantalla (lo que se llama un <em>skeleton</em>) le indica a Lucía que algo está pasando y evita que la pantalla dé saltos cuando llega el contenido.</p>
+<p>Conocer el <strong>nombre exacto</strong> de cada componente es más útil de lo que parece. Cuando hables con quien programe la aplicación, cuando busques cómo lo resuelven otros sistemas de diseño o cuando lo documentes en tu guía de estilo, decir "un <em>toast</em>" o "un <em>popover</em>" ahorra muchas explicaciones, y confundir un <em>tooltip</em> con un <em>popover</em> puede llevar a programar algo distinto de lo que habías diseñado. Si ves un elemento en una aplicación y no sabes cómo se llama, consulta <a href="https://namethatui.com">Name That UI</a>, un diccionario visual de componentes de interfaz en el que puedes buscar describiendo lo que ves con tus propias palabras, y que además explica las diferencias entre los que más se confunden.</p>
+<h3 id="los-estados-de-un-componente">Los estados de un componente</h3>
+<p>Cada componente tiene un aspecto distinto para cada <strong>estado</strong> en el que puede estar, y tienes que diseñarlos todos. Si no lo haces, quien lo programe en la Órbita 3 (que serás tú) tendrá que inventárselos sobre la marcha.</p>
+<p><img alt="Estados de un botón principal y de un campo de formulario con la paleta del polideportivo" src="../img/orbita2_07_esquema_estados.svg" /></p>
+<p>Los botones tienen como mínimo un estado <strong>normal</strong>, uno <strong>encima</strong> (cuando el ratón pasa por encima), uno de <strong>foco</strong> (cuando se llega a él con el teclado), uno <strong>pulsado</strong> y uno <strong>desactivado</strong>, y a menudo uno de <strong>carga</strong>, que evita que alguien pulse dos veces y reserve dos pistas. Los campos de formulario tienen, además del normal y el de foco, uno de <strong>error</strong> y uno desactivado. Fíjate en que cada estado usa un primitivo distinto de tu escala de color, y en que el error se indica con el color rojo y, además, con un icono y un texto que explica cómo arreglarlo, como viste en el apartado 3.</p>
+<p>El estado de foco merece especial atención. Las personas que navegan con el teclado, como quien no puede usar un ratón por una diversidad funcional motora, necesitan saber en todo momento qué elemento está seleccionado, y las pautas WCAG exigen que el foco sea visible (criterio 2.4.7, nivel AA). Diseña un contorno de foco claro y con contraste suficiente, y <strong>no lo elimines nunca porque "queda feo"</strong>. En cuanto al estado desactivado, úsalo con prudencia. Un botón de "Reservar" gris que no se puede pulsar no le dice a Manuel qué le falta, y suele ser mejor dejarlo activo y, al pulsarlo, señalar el campo que falta por rellenar (RA5-a).</p>
+<p>En Figma, los estados se crean como <strong>variantes</strong> de un mismo componente, de modo que en tus pantallas podrás cambiar de un estado a otro desde el panel de propiedades. Las variantes de tus botones y tus campos usarán los tokens de color, tipografía, espaciado y radio que has definido en los apartados anteriores.</p>
+<p>Si quieres un repaso rápido de todo esto, en este vídeo Kole Jain recorre en menos de diez minutos los conceptos básicos de UI y UX. Empieza por las <strong>affordances y los significantes</strong> (las pistas visuales que te indican que algo se puede pulsar, arrastrar o escribir), sigue con los botones, el feedback y los estados de los componentes, las microinteracciones y los elementos superpuestos, como los diálogos, y por el camino repasa también la jerarquía, las retículas, la tipografía, el color, el modo oscuro y las sombras, así que te sirve como resumen de casi toda la órbita. Está en inglés, así que, si te cuesta seguirlo, activa los subtítulos desde la configuración del reproductor.</p>
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin:24px 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/EcbgbKtOELY" title="Every UI/UX Concept Explained in Under 10 Minutes, de Kole Jain" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
+
+<p><small><strong>Fuente:</strong> vídeo de Kole Jain publicado en YouTube (<a href="https://www.youtube.com/watch?v=EcbgbKtOELY">ver en YouTube</a>, por si no se carga aquí). Se incluye con fines exclusivamente educativos; todos los derechos pertenecen a su autor.</small></p>
+<h3 id="como-se-organizan-los-componentes-atomic-design">Cómo se organizan los componentes: Atomic Design</h3>
+<p>Cuando una aplicación crece, la lista de componentes se vuelve difícil de manejar y hace falta una forma de ordenarlos. La más conocida es <strong>Atomic Design</strong>, que el diseñador Brad Frost propuso en 2013 y desarrolló en su libro <em>Atomic Design</em> (2016). Su idea central es que una interfaz se construye de abajo arriba, combinando piezas pequeñas para formar otras más grandes, y para explicarlo toma prestados los nombres de la química:</p>
+<ol>
+<li><strong>Átomos.</strong> Son las piezas más pequeñas que tienen sentido por sí mismas, como un botón, un campo de texto, un icono o la etiqueta de "Libre".</li>
+<li><strong>Moléculas.</strong> Son grupos pequeños de átomos que funcionan juntos como una unidad, como un campo de formulario completo (etiqueta, campo y mensaje de error) o un buscador (icono, campo y botón).</li>
+<li><strong>Organismos.</strong> Son bloques más complejos, formados por moléculas y átomos, que ya forman una sección reconocible de la pantalla, como la tarjeta de una pista o la barra de navegación inferior.</li>
+<li><strong>Plantillas.</strong> Son la estructura de una pantalla con sus organismos colocados, pero sin contenido real. Es lo que hiciste en la Órbita 1 con la plantilla de pantalla de tus wireframes (RA1-f).</li>
+<li><strong>Páginas.</strong> Son una plantilla con contenido real, es decir, tus mockups del apartado 8. En las páginas es donde se comprueba si el sistema aguanta los nombres de pista largos, las listas vacías y los mensajes de error de verdad.</li>
+</ol>
+<p>Por debajo de los átomos están los tokens que has definido en los apartados 3 a 5. Un átomo como el botón principal usa <code>color-primary</code>, <code>label</code>, <code>space-4</code> y <code>radius-md</code> en lugar de tener valores propios, y por eso, <strong>cuando cambias un token, el cambio llega a todos los niveles que hay por encima</strong>.</p>
+<p><img alt="Los niveles de Atomic Design aplicados al polideportivo: tokens, átomos, moléculas, organismos, plantillas y páginas" src="../img/orbita2_07_esquema_atomic_design.svg" /></p>
+<p>Atomic Design tiene más de diez años y se sigue usando en muchos equipos, aunque de una forma más flexible que al principio. El propio Frost explica que es un modelo mental para pensar la interfaz a la vez como un todo y como un conjunto de piezas, y que su proceso no es lineal, porque mientras diseñas una página descubrirás que te falta un átomo y tendrás que volver atrás. Por eso no merece la pena discutir si un componente concreto es una molécula o un organismo. <strong>Lo importante es que las piezas grandes se construyan con las pequeñas</strong> y que cada pieza tenga un nombre que diga para qué sirve. Los sistemas de diseño actuales lo combinan, además, con los tokens, que en la propuesta original apenas aparecían.</p>
+<p>En este módulo lo vas a usar para ordenar la página de componentes de tu archivo de Figma, con una sección para los átomos, otra para las moléculas y otra para los organismos, y te servirá también en la Órbita 3, porque la biblioteca de componentes en HTML y CSS se construye en el mismo orden, empezando por los átomos que reutilizarás en todo lo demás. Una buena señal de que tu sistema está bien construido es que, <strong>al cambiar un átomo (por ejemplo, el radio del botón), el cambio aparece en todas las moléculas, los organismos y las páginas que lo contienen</strong>.</p>
+<h3 id="antipatrones">Antipatrones</h3>
+<p>Un <strong>antipatrón</strong> es una solución que parece razonable y que se repite mucho, pero que causa problemas. Ya has visto dos: el texto de ejemplo usado como etiqueta y el menú hamburguesa para las secciones principales. Hay otros que encontrarás a menudo:</p>
+<ul>
+<li><strong>Los carruseles que avanzan solos.</strong> Mueven el contenido antes de que dé tiempo a leerlo, y casi nadie pasa de la segunda diapositiva.</li>
+<li><strong>Los iconos sin etiqueta de significado ambiguo</strong>, como viste en el apartado anterior.</li>
+<li><strong>El scroll infinito en páginas con pie.</strong> Si la lista no se acaba nunca, no hay forma de llegar al pie de página, donde suelen estar el contacto o los avisos legales.</li>
+<li><strong>Los formularios que borran lo escrito al dar un error</strong>, que obligan a Manuel a empezar de nuevo.</li>
+<li><strong>Los enlaces que dicen "Pincha aquí"</strong>, que no indican adónde llevan y que un lector de pantalla anuncia todos igual.</li>
+</ul>
+<h3 id="patrones-enganosos">Patrones engañosos</h3>
+<p>Hay patrones que se diseñan para que la persona haga algo que no quería hacer: aceptar un seguimiento, comprar un extra o no darse de baja. Se llaman <strong>patrones engañosos</strong> (en inglés, <em>deceptive patterns</em> o <em>dark patterns</em>), y el diseñador Harry Brignull los ha catalogado en deceptive.design. Ya viste uno en el apartado 2, la interferencia visual, y estos son otros que podrían aparecer en una aplicación como la del polideportivo:</p>
+<table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Cómo se vería en el polideportivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Urgencia falsa</strong></td>
+<td>Un aviso de "¡Solo queda 1 pista libre!" que aparece siempre, haya las que haya</td>
+</tr>
+<tr>
+<td><strong>Opciones preseleccionadas</strong></td>
+<td>El seguro de lesiones ya marcado en el pago, para que se contrate si nadie se fija</td>
+</tr>
+<tr>
+<td><strong>Confirmshaming</strong> (avergonzar para que aceptes)</td>
+<td>Un botón para rechazar el seguro con el texto "No, prefiero arriesgarme a lesionarme"</td>
+</tr>
+<tr>
+<td><strong>Costes ocultos</strong></td>
+<td>Unos gastos de gestión que solo aparecen en el último paso del pago</td>
+</tr>
+<tr>
+<td><strong>Difícil de cancelar</strong></td>
+<td>Reservar con un toque, pero tener que llamar por teléfono en horario de oficina para cancelar</td>
+</tr>
+<tr>
+<td><strong>Insistencia</strong></td>
+<td>Una ventana que pide activar las notificaciones cada vez que se abre la aplicación</td>
+</tr>
+</tbody>
+</table>
+<p>Estos patrones pueden aumentar las ventas durante un tiempo, pero acaban haciendo que la gente desconfíe de la aplicación, y algunos están prohibidos por la normativa europea de protección de los consumidores, como los costes ocultos y las casillas premarcadas para contratar servicios adicionales. Las <strong>Web Sustainability Guidelines (WSG)</strong> del W3C los rechazan en su <strong>criterio 2.11, "Evitar ser manipulador o engañoso"</strong>, entre otras cosas porque hacen que la gente cargue páginas y repita acciones que no necesitaba, y los Principios Éticos de la Web del W3C piden que la web respete a las personas y no se aproveche de ellas. En la Órbita 5 auditarás tu propio proyecto y el de un compañero buscando estos patrones, pero conviene que los evites desde ahora. La prueba es sencilla: si tuvieras que explicarle a Manuel por qué has diseñado así un elemento y la explicación te diera vergüenza, probablemente has diseñado un patrón engañoso.</p>
+<h3 id="donde-buscar-patrones">Dónde buscar patrones</h3>
+<p>Cuando tengas que resolver un problema de interfaz, busca primero cómo lo han resuelto otros. Los sistemas de diseño públicos de grandes organizaciones documentan sus componentes con mucho detalle, explican cuándo usar cada uno y, en muchos casos, incluyen pautas de accesibilidad. Algunos que te van a servir son <strong>Material Design</strong> (de Google), las <strong>Human Interface Guidelines</strong> (de Apple) y el <strong>GOV.UK Design System</strong>, el del gobierno británico, que es una referencia excelente en accesibilidad y en claridad, porque está pensado para que lo use toda la población. También puedes recorrer tus referentes de la Órbita 1 fijándote solo en cómo resuelven cada componente.</p>
+<h3 id="antes-de-seguir">Antes de seguir</h3>
+<p>Antes de pasar a Figma, haz una lista de todos los componentes que aparecen en tus wireframes (botones, campos, tarjetas, navegación, avisos...) y, junto a cada uno, anota a qué nivel de Atomic Design pertenece, qué patrón conocido sigue y en qué aplicación lo has visto. Si alguno no sigue ningún patrón, justifica por qué tu solución es mejor que la habitual. Después escribe, para tu botón principal y para tus campos de formulario, qué estados necesitan. Por último, <strong>recorre tu user flow buscando los momentos en los que tu aplicación pide algo a la persona</strong> (datos, pagos, permisos, confirmaciones) y comprueba que en ninguno de ellos has usado, sin darte cuenta, uno de los patrones engañosos de la tabla.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

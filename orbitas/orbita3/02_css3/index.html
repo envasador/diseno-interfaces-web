@@ -1,0 +1,2808 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita3/02_css3/">
+      
+      
+        <link rel="prev" href="../01_html5/">
+      
+      
+        <link rel="next" href="../03_sass/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>2. Apuntes de CSS3 - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-apuntes-de-css3" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Apuntes de CSS3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_html5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Repaso de HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Apuntes de CSS3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Apuntes de CSS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es CSS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anatomia-de-una-regla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anatomía de una regla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-enlaza-con-el-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se enlaza con el HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El inspector
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores básicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectores-de-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores de atributo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoclases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pseudoclases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoelementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pseudoelementos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anidación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-cascada-la-especificidad-y-la-herencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La cascada, la especificidad y la herencia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La cascada, la especificidad y la herencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-decide-el-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo decide el navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-especificidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La especificidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-herencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La herencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capas-y-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas y reset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables CSS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-modelo-de-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El modelo de cajas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El modelo de cajas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valores-abreviados-y-propiedades-logicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valores abreviados y propiedades lógicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-sizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        box-sizing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tamaños
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordes-esquinas-y-sombras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bordes, esquinas y sombras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fondos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fondos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posicionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Posicionamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flexbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diseno-adaptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diseño adaptable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diseño adaptable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-oscuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo oscuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transiciones-y-animaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones y animaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-impresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de impresión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-y-accesibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS y accesibilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buenas prácticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_sass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Apuntes de Sass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_itcss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Arquitectura ITCSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_bem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Nomenclatura BEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_multimedia_ecodiseno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Multimedia y ecodiseño
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_del_sistema_al_codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Del sistema de Figma a la hoja de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Componentes: el set mínimo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anexo_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo: JavaScript, React y Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué es CSS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anatomia-de-una-regla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anatomía de una regla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-enlaza-con-el-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se enlaza con el HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El inspector
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores básicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectores-de-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores de atributo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoclases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pseudoclases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoelementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pseudoelementos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anidación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-cascada-la-especificidad-y-la-herencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La cascada, la especificidad y la herencia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La cascada, la especificidad y la herencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-decide-el-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo decide el navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-especificidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La especificidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-herencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La herencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capas-y-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas y reset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables CSS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-modelo-de-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El modelo de cajas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El modelo de cajas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valores-abreviados-y-propiedades-logicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valores abreviados y propiedades lógicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-sizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        box-sizing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tamanos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tamaños
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordes-esquinas-y-sombras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bordes, esquinas y sombras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fondos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fondos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posicionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Posicionamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flexbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diseno-adaptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diseño adaptable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diseño adaptable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-oscuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo oscuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transiciones-y-animaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones y animaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-impresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de impresión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-y-accesibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS y accesibilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buenas prácticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2-apuntes-de-css3">2. Apuntes de CSS3</h1>
+<p>Estos apuntes recogen el CSS que necesitas para maquetar tu aplicación. Si cursaste Lenguajes de Marcas, muchas cosas te sonarán, pero CSS ha cambiado bastante en los últimos años y conviene repasarlo entero. Cada tema tiene una explicación corta y un ejemplo del polideportivo, y lo que no necesitas para empezar está en los recuadros plegables <strong>Para saber más</strong>, que puedes abrir cuando tengas curiosidad o te haga falta.</p>
+<p>Los nombres de las variables que aparecen en los ejemplos son los mismos tokens que creaste en Figma durante la Órbita 2 (<code>--color-primary</code>, <code>--space-4</code>...). En el <a href="../07_del_sistema_al_codigo/">apartado 7</a> verás cómo se pasa cada uno de Figma al código.</p>
+<p><img alt="Las cuatro capas del modelo de cajas, con los tokens del sistema que controlan cada una" src="../img/orbita3_02_esquema_modelo_cajas.svg" /></p>
+<h2 id="que-es-css">Qué es CSS</h2>
+<p>CSS (<em>Cascading Style Sheets</em>, hojas de estilo en cascada) es el lenguaje que decide el aspecto de una página. Su idea central es la <strong>separación entre contenido y presentación</strong>: el HTML dice qué es cada cosa (un título, un formulario, una tarjeta) y el CSS dice cómo se ve. Gracias a esa separación puedes cambiar el aspecto de toda la aplicación tocando un solo fichero, y ofrecer el mismo contenido en el móvil, en un monitor, en modo oscuro o impreso (RA2-a).</p>
+<p>Cuando se habla de <strong>CSS3</strong> se habla en realidad de todo el CSS moderno. Desde CSS2.1, el lenguaje evoluciona por partes (selectores, colores, Flexbox, Grid...) y cada año aparecen funciones nuevas. Antes de usar una muy reciente, comprueba en <a href="https://web.dev/baseline">Baseline</a> que funciona en todos los navegadores principales. Todo lo de estos apuntes funciona en los navegadores actuales.</p>
+<h2 id="anatomia-de-una-regla">Anatomía de una regla</h2>
+<p>En CSS todo gira en torno a la <strong>regla</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-on-surface</span><span class="p">);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>El <strong>selector</strong> (<code>h1</code>) dice a qué elementos se aplica, y entre llaves van las <strong>declaraciones</strong>, cada una formada por una <strong>propiedad</strong> (<code>font-size</code>), dos puntos, un <strong>valor</strong> (<code>2rem</code>) y un punto y coma. Pon siempre el punto y coma, también en la última, porque el día que añadas otra línea debajo lo agradecerás.</p>
+<p>Lo primero que tienes que saber de CSS es que <strong>el navegador no da errores</strong>: si escribes mal una propiedad, la ignora en silencio y sigue con la siguiente. Por eso el inspector y el validador son imprescindibles. Los comentarios se escriben entre <code>/*</code> y <code>*/</code>.</p>
+<h2 id="como-se-enlaza-con-el-html">Cómo se enlaza con el HTML</h2>
+<p>La forma correcta es una <strong>hoja de estilos externa</strong>, enlazada desde el <code>&lt;head&gt;</code>. Todas las pantallas usan el mismo fichero, el navegador lo guarda en caché y el HTML queda limpio (RA2-c).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"css/main.css"</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>También existen el bloque <code>&lt;style&gt;</code> dentro del <code>&lt;head&gt;</code> y el atributo <code>style</code> en una etiqueta (RA2-b), pero en este módulo no se usan: mezclan contenido y presentación, no se reutilizan y, en un equipo, nadie sabe dónde buscar un estilo si cada pantalla tiene los suyos.</p>
+<p>Recuerda que <strong>las rutas dentro del CSS se calculan desde el fichero CSS</strong>. Si la hoja está en <code>css/main.css</code> y la imagen en <code>img/pista.webp</code>, la ruta es <code>url("../img/pista.webp")</code>.</p>
+<h2 id="el-inspector">El inspector</h2>
+<p>Haz clic derecho sobre cualquier elemento y elige <strong>Inspeccionar</strong> (o pulsa <code>F12</code>). En el panel <strong>Estilos</strong> ves todas las reglas que afectan a ese elemento: las tachadas han perdido frente a otra regla y las que tienen un aviso tienen un error. En <strong>Calculado</strong> ves el valor final de cada propiedad y el diagrama del modelo de cajas. Puedes cambiar valores en directo, forzar estados como <code>:hover</code> y, en el panel <strong>Renderizado</strong>, simular el modo oscuro o la impresión. Cuando una regla "no funciona", la respuesta casi siempre está ahí.</p>
+<h2 id="selectores">Selectores</h2>
+<p>El selector decide a qué elementos se aplica una regla. Es la misma idea que usarás en DWEC con <code>document.querySelector()</code>.</p>
+<h3 id="selectores-basicos">Selectores básicos</h3>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Ejemplo</th>
+<th>Selecciona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>De etiqueta</td>
+<td><code>p</code></td>
+<td>Todos los <code>&lt;p&gt;</code></td>
+</tr>
+<tr>
+<td>De clase</td>
+<td><code>.card</code></td>
+<td>Los elementos con <code>class="card"</code></td>
+</tr>
+<tr>
+<td>De id</td>
+<td><code>#reserva</code></td>
+<td>El elemento con <code>id="reserva"</code></td>
+</tr>
+<tr>
+<td>Universal</td>
+<td><code>*</code></td>
+<td>Todos los elementos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>En este módulo se da estilo con clases</strong> (RA2-g). Un elemento puede tener varias (<code>class="button button--danger"</code>), y la misma clase se puede repetir en muchos elementos. Los ids se reservan para JavaScript y para los enlaces internos, por la razón que verás en la especificidad.</p>
+<p>Puedes <strong>agrupar</strong> selectores con comas cuando comparten estilos (<code>h1, h2, h3 { text-wrap: balance; }</code>) y <strong>combinarlos</strong> sin espacio para exigir varias condiciones a la vez (<code>.slot.is-selected</code>).</p>
+<h3 id="combinadores">Combinadores</h3>
+<p>Los combinadores seleccionan según la posición en el árbol del HTML:</p>
+<table>
+<thead>
+<tr>
+<th>Combinador</th>
+<th>Ejemplo</th>
+<th>Selecciona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Descendiente (espacio)</td>
+<td><code>nav a</code></td>
+<td>Los <code>&lt;a&gt;</code> que están dentro de un <code>&lt;nav&gt;</code>, a cualquier profundidad</td>
+</tr>
+<tr>
+<td>Hijo directo</td>
+<td><code>ul &gt; li</code></td>
+<td>Los <code>&lt;li&gt;</code> que son hijos directos de un <code>&lt;ul&gt;</code></td>
+</tr>
+<tr>
+<td>Hermano siguiente</td>
+<td><code>h2 + p</code></td>
+<td>El <code>&lt;p&gt;</code> que va justo después de un <code>&lt;h2&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="selectores-de-atributo">Selectores de atributo</h3>
+<p>Seleccionan según los atributos de HTML, y son muy útiles con formularios y con ARIA:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"date"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-body</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">"page"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c">/* la pantalla en la que estás */</span>
+</code></pre></div>
+<p>El segundo ejemplo es importante: si el menú marca la pantalla actual con <code>aria-current="page"</code>, el CSS puede darle estilo con ese mismo atributo, y la información sirve a la vez para la vista y para los lectores de pantalla.</p>
+<h3 id="pseudoclases">Pseudoclases</h3>
+<p>Una <strong>pseudoclase</strong> empieza por dos puntos y selecciona un elemento según su <strong>estado</strong>. Son la forma de dibujar en código las variantes de estado que tienes en Figma.</p>
+<table>
+<thead>
+<tr>
+<th>Pseudoclase</th>
+<th>Se activa cuando...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:hover</code></td>
+<td>Pasas el ratón por encima</td>
+</tr>
+<tr>
+<td><code>:focus-visible</code></td>
+<td>El elemento tiene el foco del teclado</td>
+</tr>
+<tr>
+<td><code>:active</code></td>
+<td>Lo estás pulsando</td>
+</tr>
+<tr>
+<td><code>:disabled</code></td>
+<td>Está desactivado</td>
+</tr>
+<tr>
+<td><code>:checked</code></td>
+<td>Una casilla o un botón de opción está marcado</td>
+</tr>
+<tr>
+<td><code>:user-invalid</code></td>
+<td>Un campo tiene un valor incorrecto después de que la persona lo haya tocado</td>
+</tr>
+<tr>
+<td><code>:first-child</code>, <code>:last-child</code>, <code>:nth-child(even)</code></td>
+<td>Ocupa esa posición entre sus hermanos</td>
+</tr>
+<tr>
+<td><code>:not(...)</code></td>
+<td>No cumple lo que va entre paréntesis</td>
+</tr>
+<tr>
+<td><code>:has(...)</code></td>
+<td>Contiene lo que va entre paréntesis</td>
+</tr>
+</tbody>
+</table>
+<p>De esta lista, dos merecen atención. <strong><code>:focus-visible</code></strong> marca el foco solo cuando llega por teclado, así que no aparece un recuadro cada vez que alguien hace clic. Y <strong><code>:has()</code></strong> permite dar estilo a un elemento según lo que tiene dentro, algo que CSS no podía hacer hasta hace poco:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c">/* La píldora de hora cambia cuando su botón de opción está marcado */</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.</span><span class="nc">slot</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="nt">input</span><span class="p">:</span><span class="nd">checked</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-on-primary</span><span class="p">);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</code></pre></div>
+<details class="info">
+<summary>Para saber más: <code>:is()</code> y <code>:where()</code></summary>
+<p><code>:is()</code> agrupa selectores para no repetir: <code>:is(header, footer) a</code> equivale a <code>header a, footer a</code>. <code>:where()</code> hace lo mismo, pero con especificidad cero, y por eso se usa mucho en los resets, para que cualquier otra regla pueda sobrescribirlos.</p>
+</details>
+<h3 id="pseudoelementos">Pseudoelementos</h3>
+<p>Un <strong>pseudoelemento</strong> empieza por dos dobles puntos y selecciona una parte de un elemento. Los más usados son <strong><code>::before</code></strong> y <strong><code>::after</code></strong>, que añaden contenido decorativo al principio o al final, y solo aparecen si tienen la propiedad <code>content</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">.</span><span class="nc">field--required</span><span class="w"> </span><span class="nt">label</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">" *"</span><span class="p">;</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>El contenido que generas así es <strong>decoración</strong>: los lectores de pantalla no siempre lo anuncian. Si el asterisco es la única pista de que un campo es obligatorio, el campo tiene que llevar también <code>required</code> en el HTML. Otros pseudoelementos útiles son <code>::placeholder</code> (el texto de ejemplo de un campo) y <code>::marker</code> (la viñeta de una lista).</p>
+<h2 id="anidacion">Anidación</h2>
+<p>CSS permite escribir unas reglas dentro de otras. El carácter <strong><code>&amp;</code></strong> representa el selector de fuera, y es obligatorio cuando le pegas algo sin espacio, como una pseudoclase:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">);</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="err">h3</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-heading-</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">            </span><span class="c">/* .card h3 */</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="o">&amp;</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--elevation-</span><span class="mi">2</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">    </span><span class="c">/* .card:hover */</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="err">}</span>
+</code></pre></div>
+<p>No anides más de dos niveles: cada nivel hace el selector más largo y lo ata más a la estructura del HTML. En el <a href="../03_sass/">apartado de Sass</a> verás que la anidación de Sass permite además formar nombres de clase (<code>&amp;__title</code>), algo que la de CSS no puede hacer.</p>
+<h2 id="la-cascada-la-especificidad-y-la-herencia">La cascada, la especificidad y la herencia</h2>
+<p>Cuando dos reglas intentan cambiar la misma propiedad del mismo elemento, el navegador tiene que decidir cuál gana. Eso es la <strong>cascada</strong>, y entenderla te ahorrará muchas horas de "probar hasta que sale" (RA2-e).</p>
+<h3 id="como-decide-el-navegador">Cómo decide el navegador</h3>
+<p>El navegador compara las dos reglas con estos criterios, en orden, y en cuanto uno deshace el empate deja de mirar los siguientes:</p>
+<ol>
+<li><strong>Importancia.</strong> Una declaración con <code>!important</code> gana a las normales.</li>
+<li><strong>Capas.</strong> Si usas <code>@layer</code>, gana la capa declarada después.</li>
+<li><strong>Especificidad.</strong> Gana el selector más específico.</li>
+<li><strong>Orden.</strong> Si todo empata, gana la regla escrita más abajo.</li>
+</ol>
+<p>Hay un criterio más entre la especificidad y el orden, la <strong>proximidad</strong>, que solo aparece cuando usas la regla <code>@scope</code>. Lo verás en el apartado de BEM.</p>
+<h3 id="la-especificidad">La especificidad</h3>
+<p>La especificidad es una puntuación de tres cifras (A, B, C) que se compara de izquierda a derecha, de modo que un punto en A gana a cualquier cantidad en B:</p>
+<ul>
+<li><strong>A</strong>: los ids.</li>
+<li><strong>B</strong>: las clases, los atributos y las pseudoclases.</li>
+<li><strong>C</strong>: las etiquetas y los pseudoelementos.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Especificidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>p</code></td>
+<td>(0, 0, 1)</td>
+</tr>
+<tr>
+<td><code>.card</code></td>
+<td>(0, 1, 0)</td>
+</tr>
+<tr>
+<td><code>.menu a:hover</code></td>
+<td>(0, 2, 1)</td>
+</tr>
+<tr>
+<td><code>#reserva</code></td>
+<td>(1, 0, 0)</td>
+</tr>
+</tbody>
+</table>
+<p>Un solo id gana a cualquier número de clases, y por eso un estilo puesto con un id obliga a usar otro id o un <code>!important</code> para cambiarlo después. La regla práctica es mantener la especificidad <strong>baja y uniforme</strong>: da estilo con una sola clase y deja <code>!important</code> como salida de emergencia. En un equipo, esta regla es la que evita que cada persona tenga que ganar a los selectores de las demás.</p>
+<h3 id="la-herencia">La herencia</h3>
+<p>Algunas propiedades <strong>se heredan</strong>: si se las das a un elemento, las reciben también todos sus descendientes. Por eso basta con poner el color y la tipografía en el <code>body</code> para que afecten a toda la página. En general, se heredan las propiedades del texto (<code>color</code>, <code>font-family</code>, <code>line-height</code>...) y no se heredan las de la caja (<code>margin</code>, <code>padding</code>, <code>border</code>, <code>background</code>...). Las propiedades personalizadas también se heredan, y en eso se basa todo el sistema de tokens.</p>
+<p>La palabra clave <code>inherit</code> obliga a heredar: <code>footer a { color: inherit; }</code> hace que los enlaces del pie tengan el color del texto que los rodea.</p>
+<h3 id="capas-y-reset">Capas y reset</h3>
+<p>Las <strong>capas de cascada</strong> (<code>@layer</code>) agrupan reglas y deciden de antemano cuál pesa más, sea cual sea la especificidad. En tu proyecto las capas son las de ITCSS, que verás en el <a href="../04_itcss/">apartado 4</a>.</p>
+<p>Casi todas las hojas de estilos empiezan con un pequeño <strong>reset</strong> que iguala las diferencias entre navegadores:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">*,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">img</span><span class="o">,</span><span class="w"> </span><span class="nt">picture</span><span class="o">,</span><span class="w"> </span><span class="nt">video</span><span class="o">,</span><span class="w"> </span><span class="nt">svg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span><span class="w"> </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">input</span><span class="o">,</span><span class="w"> </span><span class="nt">button</span><span class="o">,</span><span class="w"> </span><span class="nt">textarea</span><span class="o">,</span><span class="w"> </span><span class="nt">select</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="kc">inherit</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h2 id="unidades">Unidades</h2>
+<p>Elegir la unidad adecuada es lo que hace que un diseño se adapte bien o se rompa en cuanto cambia el tamaño de la ventana o de la letra.</p>
+<table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Relativa a</th>
+<th>Uso en tu proyecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>px</code></td>
+<td>Nada, es fija</td>
+<td>Bordes de 1 píxel</td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>El tamaño de letra del documento (16 px por defecto)</td>
+<td>Tamaños de letra, espaciados y breakpoints</td>
+</tr>
+<tr>
+<td><code>em</code></td>
+<td>El tamaño de letra del propio elemento</td>
+<td>Rellenos que crecen con el texto del componente</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>El tamaño del elemento padre</td>
+<td>Anchos</td>
+</tr>
+<tr>
+<td><code>vw</code>, <code>dvh</code></td>
+<td>El ancho o el alto de la ventana</td>
+<td>Tipografía fluida, pantallas completas en el móvil</td>
+</tr>
+<tr>
+<td><code>ch</code></td>
+<td>El ancho de un carácter</td>
+<td>Limitar el ancho de las líneas de texto</td>
+</tr>
+<tr>
+<td><code>fr</code></td>
+<td>Una fracción del espacio libre</td>
+<td>Columnas de Grid</td>
+</tr>
+</tbody>
+</table>
+<p>La unidad más importante para ti es <strong><code>rem</code></strong>, porque respeta el tamaño de letra que la persona ha elegido en su navegador. Si Manuel lo sube al 200 %, todo lo que esté en <code>rem</code> crece con él (RA5-a). Para pasar de los píxeles de Figma a <code>rem</code>, divide entre 16: 24 píxeles son <code>1.5rem</code>.</p>
+<p>CSS también hace cálculos. <strong><code>calc()</code></strong> opera con valores (<code>calc(100% - 2rem)</code>), <strong><code>min()</code></strong> elige el menor (<code>width: min(100%, 75rem)</code> ocupa todo el ancho, pero nunca más de 75rem) y <strong><code>clamp()</code></strong> fija un mínimo, un valor ideal y un máximo, que es la base de la <strong>tipografía fluida</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">.</span><span class="nc">welcome__title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="c">/* 32 px en el móvil, 40 px en escritorio, y entre medias crece con la ventana */</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="mi">2</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="kt">vw</span><span class="p">,</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">);</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="colores">Colores</h2>
+<p>Los colores se pueden escribir en varios formatos, todos equivalentes. En tu proyecto solo aparecen una vez, en los tokens primitivos, así que elige uno y úsalo siempre:</p>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>Ejemplo</th>
+<th>Cuándo te viene bien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hexadecimal</td>
+<td><code>#1A5FB4</code></td>
+<td>Es el que te da Figma</td>
+</tr>
+<tr>
+<td><code>rgb()</code></td>
+<td><code>rgb(26 95 180 / 50%)</code></td>
+<td>Cuando necesitas transparencia</td>
+</tr>
+<tr>
+<td><code>hsl()</code></td>
+<td><code>hsl(213 75% 40%)</code></td>
+<td>Para crear variaciones de un color moviendo la luminosidad</td>
+</tr>
+</tbody>
+</table>
+<p>Dos valores especiales te serán útiles: <code>transparent</code> y <strong><code>currentColor</code></strong>, que toma el color del texto del propio elemento y permite que un borde o un icono cambien de color con él (y con el modo oscuro).</p>
+<p>El texto y su fondo tienen que llegar a un <strong>contraste</strong> mínimo de 4,5:1 (3:1 para el texto grande y para los bordes de los controles). Lo comprobaste en Figma, y en el navegador lo ves al seleccionar un color en el inspector. Compruébalo en los dos modos.</p>
+<details class="info">
+<summary>Para saber más: <code>oklch()</code> y <code>color-mix()</code></summary>
+<p><strong><code>oklch()</code></strong> describe un color con luminosidad, croma y tono en un espacio de color diseñado para que dos colores con la misma luminosidad se perciban igual de claros, algo que <code>hsl()</code> no garantiza. Es el formato que se recomienda hoy para generar escalas.</p>
+<p><strong><code>color-mix()</code></strong> mezcla dos colores en la proporción que le digas, y es práctico para los estados: <code>color-mix(in oklch, var(--color-primary), black 15%)</code> es el color principal un 15 % más oscuro. Lo usarás en el botón del apartado 8.</p>
+</details>
+<h2 id="variables-css">Variables CSS</h2>
+<p>Las <strong>propiedades personalizadas</strong>, que todo el mundo llama variables CSS, son la herramienta con la que tus tokens llegan al código. Su nombre empieza por dos guiones y se leen con <code>var()</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w"> </span><span class="mh">#1A5FB4</span><span class="p">;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nv">--radius-md</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">);</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>:root</code> es el elemento <code>&lt;html&gt;</code>, y lo que se declara ahí está disponible en toda la página. Lo interesante es que una variable <strong>se puede redefinir dentro de un selector</strong>, y entonces cambia solo para ese elemento y sus descendientes. En eso se basan las variantes de los componentes y el modo oscuro: en lugar de reescribir las reglas, cambias el valor de unas pocas variables.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">.</span><span class="nc">badge</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--badge-color</span><span class="p">);</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--badge-color</span><span class="p">);</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">.</span><span class="nc">badge--free</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-success</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">.</span><span class="nc">badge--full</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<details class="info">
+<summary>Para saber más: <code>@property</code></summary>
+<p>Para el navegador, una propiedad personalizada normal es un texto sin tipo, y por eso no se puede animar. Con la regla <code>@property</code> puedes registrarla con su tipo (un color, una longitud...), y entonces el navegador sabe hacer una transición entre dos valores. No la necesitas para tus tokens.</p>
+</details>
+<h2 id="el-modelo-de-cajas">El modelo de cajas</h2>
+<p>Este es el concepto más importante de CSS: <strong>cada elemento es una caja</strong>, con cuatro capas de dentro hacia fuera, como ves en el esquema del principio:</p>
+<ol>
+<li><strong>Contenido</strong>: el texto o los elementos hijos. Lo controlan <code>width</code> y <code>height</code>.</li>
+<li><strong>Relleno</strong> (<code>padding</code>): el espacio entre el contenido y el borde.</li>
+<li><strong>Borde</strong> (<code>border</code>): la línea que lo rodea.</li>
+<li><strong>Margen</strong> (<code>margin</code>): el espacio exterior, que separa la caja de las demás.</li>
+</ol>
+<p>Es la misma estructura que un marco con Auto layout en Figma, donde también definías un relleno, un borde y un tamaño.</p>
+<h3 id="valores-abreviados-y-propiedades-logicas">Valores abreviados y propiedades lógicas</h3>
+<p><code>padding</code> y <code>margin</code> aceptan de uno a cuatro valores, en el sentido de las agujas del reloj empezando por arriba:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">padding</span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--space-4</span><span class="o">);</span><span class="w">                   </span><span class="c">/* los cuatro lados */</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nt">padding</span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--space-2</span><span class="o">)</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--space-4</span><span class="o">);</span><span class="w">    </span><span class="c">/* arriba y abajo | izquierda y derecha */</span>
+</code></pre></div>
+<p>En este módulo usamos las <strong>propiedades lógicas</strong>, que hablan de "línea" y "bloque" en lugar de "izquierda" y "arriba": <code>padding-inline</code> (los dos lados), <code>margin-block</code> (arriba y abajo), <code>margin-inline: auto</code> (centrar horizontalmente). Funcionan igual en castellano y se adaptan solas a los idiomas que se escriben de derecha a izquierda.</p>
+<h3 id="box-sizing"><code>box-sizing</code></h3>
+<p>Por defecto, <code>width</code> mide solo el contenido, y el relleno y el borde se suman por fuera: una caja de <code>300px</code> con <code>20px</code> de relleno mide en realidad 340 píxeles. Con <strong><code>box-sizing: border-box</code></strong>, el ancho incluye relleno y borde, que es como mide Figma. Por eso el reset lo aplica a todo.</p>
+<h3 id="tamanos">Tamaños</h3>
+<p>En la mayoría de los casos, <strong>no fijes la altura</strong>: deja que la caja crezca con su contenido, porque el texto puede ser más largo o verse con la letra al 200 %. Para poner límites usa <code>min-width</code>, <code>max-width</code> y <code>min-height</code>. En el móvil, todo lo que se pulsa tiene que medir al menos 44 × 44 píxeles, que en CSS es <code>min-height: 2.75rem</code>.</p>
+<p>Si el contenido no cabe, <strong><code>overflow</code></strong> decide qué pasa: <code>auto</code> añade una barra de desplazamiento solo si hace falta, que es lo habitual para una tabla ancha en el móvil.</p>
+<h3 id="bordes-esquinas-y-sombras">Bordes, esquinas y sombras</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-outline</span><span class="p">);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">);</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--elevation-</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>border</code> recibe grosor, estilo y color, y sin el estilo (<code>solid</code>, <code>dashed</code>...) no se ve. <code>border-radius</code> redondea las esquinas y <code>box-shadow</code> añade una sombra, y en tu sistema los dos reciben siempre un token. <strong><code>outline</code></strong> dibuja una línea por fuera que no ocupa espacio, y es la que se usa para el foco del teclado.</p>
+<p>Dos propiedades más te vendrán bien con las imágenes: <strong><code>aspect-ratio</code></strong> fija la proporción de una caja (<code>16 / 9</code>) y <strong><code>object-fit: cover</code></strong> hace que la imagen rellene su caja sin deformarse.</p>
+<details class="info">
+<summary>Para saber más: márgenes que colapsan</summary>
+<p>Cuando dos bloques están uno encima de otro, sus márgenes verticales no se suman: se queda el mayor. Si un párrafo tiene 20 píxeles de margen inferior y el siguiente 30 de margen superior, entre ellos hay 30. Esto no ocurre dentro de Flexbox ni de Grid, y es una razón más para separar los elementos con <code>gap</code>.</p>
+</details>
+<h2 id="fondos">Fondos</h2>
+<p><code>background-color</code> pinta el fondo de la caja, y <code>background-image</code> le pone una imagen o un degradado. Con <code>background-size: cover</code> la imagen cubre toda la caja, y con <code>background-position: center</code> se centra.</p>
+<p>Una imagen de fondo es <strong>decoración</strong>: no tiene <code>alt</code>. Si la imagen aporta información, tiene que ser un <code>&lt;img&gt;</code> en el HTML.</p>
+<p>Los <strong>degradados</strong> son imágenes que genera el navegador, sin descargar nada, y las WSG recomiendan usarlos en lugar de imágenes decorativas cuando el resultado es parecido:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">.</span><span class="nc">hero</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="k">background-image</span><span class="p">:</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">to</span><span class="w"> </span><span class="kc">bottom</span><span class="p">,</span><span class="w"> </span><span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">20</span><span class="kt">%</span><span class="p">),</span><span class="w"> </span><span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">70</span><span class="kt">%</span><span class="p">)),</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="nb">url</span><span class="p">(</span><span class="s2">"../img/polideportivo.webp"</span><span class="p">);</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">}</span>
+</code></pre></div>
+<p>El degradado oscuro encima de la foto asegura que el texto blanco se lea sobre cualquier zona de la imagen.</p>
+<h2 id="tipografia">Tipografía</h2>
+<p><strong><code>font-family</code></strong> recibe una lista de fuentes, y el navegador usa la primera que tenga. La última siempre es una familia genérica, por si no llega ninguna:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">--font-family-base</span><span class="p">:</span><span class="w"> </span><span class="s2">"Atkinson Hyperlegible"</span><span class="p">,</span><span class="w"> </span><span class="n">system-ui</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Para usar una fuente de <a href="https://fonts.google.com/">Google Fonts</a>, copia el <code>&lt;link&gt;</code> que te da en el <code>&lt;head&gt;</code>. Pide solo los pesos que uses: cada peso es un fichero más que descarga el móvil, y las <strong>WSG</strong> recomiendan limitar las variantes.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Para qué sirve</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>font-size</code></td>
+<td>Tamaño</td>
+<td><code>1rem</code></td>
+</tr>
+<tr>
+<td><code>font-weight</code></td>
+<td>Grosor</td>
+<td><code>600</code></td>
+</tr>
+<tr>
+<td><code>line-height</code></td>
+<td>Altura de línea, <strong>sin unidad</strong></td>
+<td><code>1.5</code></td>
+</tr>
+<tr>
+<td><code>font</code></td>
+<td>Todo lo anterior en una línea</td>
+<td><code>600 0.875rem/1.43 var(--font-family-base)</code></td>
+</tr>
+<tr>
+<td><code>text-align</code></td>
+<td>Alineación</td>
+<td><code>start</code>, <code>center</code></td>
+</tr>
+<tr>
+<td><code>text-transform</code></td>
+<td>Mayúsculas</td>
+<td><code>uppercase</code></td>
+</tr>
+<tr>
+<td><code>text-wrap</code></td>
+<td>Reparto en líneas</td>
+<td><code>balance</code> en los títulos</td>
+</tr>
+</tbody>
+</table>
+<p><code>line-height</code> va sin unidad para que se calcule con el tamaño de letra de cada elemento. Evita <code>text-align: justify</code>, que en pantallas estrechas deja huecos irregulares, y escribe en minúsculas en el HTML lo que quieras ver en mayúsculas, porque algunos lectores de pantalla deletrean las palabras en mayúsculas como si fueran siglas.</p>
+<p>En las listas de navegación es habitual quitar las viñetas con <code>list-style: none</code> y el relleno con <code>padding: 0</code>. Y si quitas el subrayado de los enlaces de un texto, tienen que distinguirse por algo más que el color.</p>
+<h2 id="display">Display</h2>
+<p>La propiedad <strong><code>display</code></strong> decide cómo se comporta una caja:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Comportamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>block</code></td>
+<td>Ocupa todo el ancho y empieza en una línea nueva</td>
+</tr>
+<tr>
+<td><code>inline</code></td>
+<td>Va dentro de la línea de texto e ignora <code>width</code> y <code>height</code></td>
+</tr>
+<tr>
+<td><code>inline-block</code></td>
+<td>Va en la línea, pero respeta tamaños y márgenes</td>
+</tr>
+<tr>
+<td><code>flex</code>, <code>grid</code></td>
+<td>Convierte la caja en un contenedor de maquetación</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>La elimina por completo</td>
+</tr>
+</tbody>
+</table>
+<p>Cambiar <code>display</code> <strong>solo cambia el aspecto</strong>, y el elemento conserva su significado: un <code>&lt;li&gt;</code> con <code>display: inline</code> sigue siendo un elemento de lista. Si quieres ocultar algo a la vista pero que lo lea un lector de pantalla, usa la utilidad <code>.u-visually-hidden</code> que verás en ITCSS.</p>
+<h2 id="posicionamiento">Posicionamiento</h2>
+<p>Por defecto, las cajas siguen el <strong>flujo normal</strong>: los bloques uno debajo de otro. La propiedad <strong><code>position</code></strong> permite sacarlas de ese flujo:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Qué hace</th>
+<th>Ejemplo en el polideportivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relative</code></td>
+<td>Sirve de referencia para sus hijos con <code>absolute</code></td>
+<td>La tarjeta</td>
+</tr>
+<tr>
+<td><code>absolute</code></td>
+<td>Se coloca respecto a su antepasado con <code>position</code></td>
+<td>La etiqueta "Nueva" en la esquina de la tarjeta</td>
+</tr>
+<tr>
+<td><code>fixed</code></td>
+<td>Se queda fija en la ventana</td>
+<td>Un botón de "volver arriba"</td>
+</tr>
+<tr>
+<td><code>sticky</code></td>
+<td>Se queda pegada al llegar a un borde al hacer scroll</td>
+<td>La barra con el botón "Reservar"</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">.</span><span class="nc">booking-bar</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">sticky</span><span class="p">;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="k">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                    </span><span class="c">/* el botón "Reservar" siempre a mano en el móvil */</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--elevation-</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>Cuando dos cajas se solapan, <strong><code>z-index</code></strong> decide cuál queda encima. <code>position</code> sirve para detalles, nunca para maquetar la pantalla entera: para eso están Flexbox y Grid.</p>
+<h2 id="flexbox">Flexbox</h2>
+<p><strong>Flexbox</strong> reparte elementos <strong>en una sola dirección</strong>, en fila o en columna. Es la herramienta para una barra de botones, una cabecera con el logo a un lado y el menú al otro o el interior de una tarjeta, y es el modelo en el que se basa el Auto layout de Figma.</p>
+<p>Se activa con <code>display: flex</code> en el <strong>contenedor</strong>, y afecta a sus <strong>hijos directos</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad del contenedor</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flex-direction</code></td>
+<td><code>row</code> (en fila) o <code>column</code> (en columna)</td>
+</tr>
+<tr>
+<td><code>justify-content</code></td>
+<td>Reparte en la dirección principal: <code>flex-start</code>, <code>center</code>, <code>space-between</code>...</td>
+</tr>
+<tr>
+<td><code>align-items</code></td>
+<td>Alinea en la otra dirección: <code>stretch</code>, <code>center</code>, <code>baseline</code>...</td>
+</tr>
+<tr>
+<td><code>flex-wrap</code></td>
+<td><code>wrap</code> pasa los elementos a otra línea si no caben</td>
+</tr>
+<tr>
+<td><code>gap</code></td>
+<td>El espacio entre elementos</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">.</span><span class="nc">app-header</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-between</span><span class="p">;</span><span class="w">   </span><span class="c">/* logo al principio, menú al final */</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>En los hijos, <strong><code>flex: 1</code></strong> hace que un elemento crezca para ocupar el espacio que sobra, como <em>Fill container</em> en Figma.</p>
+<p>Ten cuidado con <code>order</code> y <code>row-reverse</code>: cambian el orden en pantalla, pero no el del HTML, y quien navega con el teclado sigue el del HTML.</p>
+<h2 id="grid">Grid</h2>
+<p><strong>Grid</strong> reparte elementos <strong>en filas y columnas a la vez</strong>. Es la herramienta para la estructura de una pantalla y para cualquier colección que deba alinearse en columnas. La diferencia con Flexbox está en el punto de partida: en Flexbox el contenido decide cuánto ocupa cada elemento, mientras que en Grid defines primero la estructura y después colocas el contenido en ella. Lo normal es usar Grid para la estructura y Flexbox dentro de cada bloque.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">.</span><span class="nc">layout</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span><span class="w">   </span><span class="c">/* 4 columnas iguales, como la retícula del móvil */</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="p">}</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="p">.</span><span class="nc">layout__full</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-column</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">      </span><span class="c">/* ocupa toda la fila */</span>
+</code></pre></div>
+<p>La unidad <strong><code>fr</code></strong> es una fracción del espacio libre, y <code>repeat()</code> evita repetir columnas. Combinadas con <code>minmax()</code> y <code>auto-fit</code> dan el patrón más útil de Grid, una cuadrícula que decide sola cuántas columnas caben:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">.</span><span class="nc">court-list</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="nv">-fit</span><span class="p">,</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">16</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>"Tantas columnas como quepan, de al menos 16rem cada una": una en el móvil de Lucía, dos en una tableta, cuatro en un monitor, sin escribir ninguna media query.</p>
+<details class="info">
+<summary>Para saber más: áreas con nombre y <code>subgrid</code></summary>
+<p>Con <strong><code>grid-template-areas</code></strong> puedes dibujar la estructura de una pantalla como un mapa de texto, y colocar cada zona con <code>grid-area</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">.</span><span class="nc">booking</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">20</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="k">grid-template-areas</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="s2">"main summary"</span><span class="p">;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="p">}</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="p">.</span><span class="nc">booking__summary</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">summary</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Con <strong><code>subgrid</code></strong>, un hijo puede usar las filas o las columnas de la cuadrícula de su padre, lo que sirve, por ejemplo, para que los títulos de varias tarjetas queden a la misma altura.</p>
+</details>
+<h2 id="diseno-adaptable">Diseño adaptable</h2>
+<p>Tu aplicación se verá en pantallas de 360 píxeles y de 2560, y el <strong>diseño adaptable</strong> (<em>responsive</em>) es lo que hace que funcione en todas (RA2-i). Necesita la etiqueta <code>&lt;meta name="viewport"&gt;</code> en el HTML, y se apoya en las unidades relativas, <code>clamp()</code>, <code>max-width</code> y las cuadrículas con <code>auto-fit</code>, que ya adaptan mucho por sí solas.</p>
+<h3 id="media-queries">Media queries</h3>
+<p>Una <strong>media query</strong> aplica unas reglas solo cuando se cumple una condición, normalmente un ancho mínimo de la ventana. El ancho en el que cambia el diseño se llama <strong>breakpoint</strong>, y el correcto es aquel en el que tu diseño empieza a verse mal.</p>
+<p>Seguimos el enfoque <strong>mobile first</strong>: primero el diseño de una columna, y después media queries con <code>width &gt;=</code> para ir añadiendo columnas en pantallas más grandes. Escribe los breakpoints en <code>rem</code>, para que respondan también al tamaño de letra.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">.</span><span class="nc">court-list</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span><span class="w">                 </span><span class="c">/* móvil: una columna */</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span><span class="err">@media</span><span class="w"> </span><span class="err">(width</span><span class="w"> </span><span class="err">&gt;=</span><span class="w"> </span><span class="err">48rem)</span><span class="w"> </span><span class="err">{</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="err">}</span>
+</code></pre></div>
+<h3 id="container-queries">Container queries</h3>
+<p>Una media query pregunta por el ancho de la <strong>ventana</strong>, pero un componente puede estar en sitios de distinto ancho con la misma ventana (la tarjeta de pista en el listado y en el resumen lateral). Las <strong>container queries</strong> preguntan por el ancho del <strong>contenedor</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">.</span><span class="nc">booking__summary</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">container-type</span><span class="p">:</span><span class="w"> </span><span class="kc">inline</span><span class="o">-</span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span><span class="err">@container</span><span class="w"> </span><span class="err">(width</span><span class="w"> </span><span class="err">&gt;=</span><span class="w"> </span><span class="err">30rem)</span><span class="w"> </span><span class="err">{</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">rem</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w">   </span><span class="c">/* foto a la izquierda si hay sitio */</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="err">}</span>
+</code></pre></div>
+<p>Usa media queries para la estructura de la pantalla y container queries para los componentes que se reutilizan.</p>
+<h2 id="modo-oscuro">Modo oscuro</h2>
+<p>Con <strong><code>color-scheme: light dark</code></strong> avisas al navegador de que tu página tiene los dos modos, y la función <strong><code>light-dark()</code></strong> recibe el color de cada uno:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="w"> </span><span class="n">dark</span><span class="p">;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="nv">--color-surface</span><span class="p">:</span><span class="w">    </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">));</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span><span class="nv">--color-on-surface</span><span class="p">:</span><span class="w"> </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">));</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>Cada token tiene sus dos valores en la misma línea, igual que en la tabla de modos de Figma. Comprueba cada pareja de colores en los dos modos, y recuerda que sobre fondos oscuros las sombras apenas se ven, así que las tarjetas se distinguen mejor con un fondo algo más claro. En las pantallas OLED, un fondo oscuro gasta menos batería, y por eso las <strong>WSG</strong> recomiendan ofrecer este modo.</p>
+<details class="info">
+<summary>Para saber más: <code>prefers-color-scheme</code></summary>
+<p>La forma clásica, que verás en muchos tutoriales, es redefinir las variables dentro de <code>@media (prefers-color-scheme: dark) { ... }</code>. Funciona igual, pero cada token queda repartido en dos sitios.</p>
+</details>
+<h2 id="transiciones-y-animaciones">Transiciones y animaciones</h2>
+<p>El movimiento ayuda a entender lo que pasa (la píldora que cambia de color confirma que la hora se ha elegido), pero mal usado distrae, gasta batería y puede marear.</p>
+<p>Una <strong>transición</strong> hace que un cambio de estado ocurra poco a poco. Se declara en el estado normal, sobre una propiedad concreta y con una duración corta (entre 150 y 300 milisegundos):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">background-color</span><span class="w"> </span><span class="mi">150</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="err">&amp;:hover</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--button-bg-hover</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="err">}</span>
+</code></pre></div>
+<p>Las propiedades <strong><code>translate</code></strong>, <strong><code>scale</code></strong> y <strong><code>rotate</code></strong> mueven, escalan o giran una caja sin afectar al resto, y con <code>opacity</code> son las más eficientes para animar. Para animaciones con varios pasos, que empiezan solas, se usa <strong><code>@keyframes</code></strong> con la propiedad <code>animation</code>.</p>
+<p>Algunas personas tienen activada en su sistema la opción de <strong>reducir el movimiento</strong>, y hay que respetarla. Lo más sencillo es escribir las animaciones solo para quien no la ha activado:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-reduced-motion</span><span class="o">:</span><span class="w"> </span><span class="nt">no-preference</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="p">.</span><span class="nc">toast</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="mi">300</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease-out</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Las <strong>WSG</strong> piden usar las animaciones con moderación, y en el polideportivo solo se mueve algo cuando responde a lo que ha hecho la persona.</p>
+<h2 id="hoja-de-impresion">Hoja de impresión</h2>
+<p>Las reglas dentro de <strong><code>@media print</code></strong> solo se aplican al imprimir o al guardar en PDF (RA2-d). Sirven para que, por ejemplo, el justificante de una reserva salga limpio, sin menús, botones ni fondos que gastan tinta. Las <strong>WSG</strong> las incluyen entre sus criterios. Puedes probarla desde el panel Renderizado del inspector.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">print</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span><span class="nt">nav</span><span class="o">,</span><span class="w"> </span><span class="nt">footer</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="css-y-accesibilidad">CSS y accesibilidad</h2>
+<p>La accesibilidad se decide sobre todo en el HTML, pero el CSS puede estropearla. Revisa siempre estos puntos, que en la Órbita 4 comprobarás con herramientas:</p>
+<ul>
+<li><strong>El foco del teclado se ve siempre.</strong> Nunca escribas <code>outline: none</code> sin poner otro indicador igual de visible.</li>
+<li><strong>El contraste se comprueba en los dos modos.</strong></li>
+<li><strong>El color nunca es la única pista</strong>: un error o una hora ocupada necesitan también un icono, un texto o un tachado.</li>
+<li><strong>Tamaños en <code>rem</code></strong>, y la pantalla aguanta la letra al 200 %.</li>
+<li><strong>Objetivos táctiles de 44 × 44 píxeles</strong> en el móvil.</li>
+<li><strong>El movimiento se puede desactivar.</strong></li>
+</ul>
+<h2 id="buenas-practicas">Buenas prácticas</h2>
+<p>Estas reglas existen para que el código se pueda mantener cuando lo toca más de una persona, y conviene que las sigas aunque trabajes solo:</p>
+<ul>
+<li><strong>Una hoja de estilos externa</strong>, nunca estilos en línea.</li>
+<li><strong>Estilo con clases, nunca con ids.</strong></li>
+<li><strong>Ningún valor suelto</strong>: colores, tamaños, espacios, radios y sombras salen de un token.</li>
+<li><strong>Nombres según la función</strong>: <code>.alert--error</code> sigue teniendo sentido si cambias el rojo por otro color, y <code>.texto-rojo</code> deja de tenerlo.</li>
+<li><strong>No fijes alturas</strong> y no maquetes con <code>position: absolute</code>.</li>
+<li><strong>Mobile first.</strong></li>
+</ul>
+<h2 id="validar">Validar</h2>
+<p>Como el navegador ignora los errores en silencio, valida tu CSS con el <a href="https://jigsaw.w3.org/css-validator/">validador del W3C</a>, que te dice la línea de cada error (RA2-h). Puede marcar como error alguna función muy reciente (<code>light-dark()</code>, <code>@layer</code>): si te ocurre, compruébala en Baseline y explícalo en tu documentación. Ten en cuenta que lo que se valida es el <code>main.css</code> que genera Sass, que es el que llega al navegador.</p>
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li><a href="https://lenguajecss.com/css/">CSS en español, de Manz (lenguajecss.com)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/CSS">Documentación de CSS (MDN Web Docs)</a></li>
+<li><a href="https://web.dev/learn/css?hl=es">Aprende CSS (web.dev)</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/">Validador de CSS del W3C</a></li>
+<li><a href="https://flexboxfroggy.com/#es">Flexbox Froggy</a> y <a href="https://cssgridgarden.com/#es">Grid Garden</a>, dos juegos en español para practicar</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1693 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita3/07_del_sistema_al_codigo/">
+      
+      
+        <link rel="prev" href="../06_multimedia_ecodiseno/">
+      
+      
+        <link rel="next" href="../08_componentes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>7. Del sistema de Figma a la hoja de estilos - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-del-sistema-de-figma-a-la-hoja-de-estilos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Del sistema de Figma a la hoja de estilos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_html5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Repaso de HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_css3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Apuntes de CSS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_sass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Apuntes de Sass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_itcss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Arquitectura ITCSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_bem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Nomenclatura BEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_multimedia_ecodiseno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Multimedia y ecodiseño
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Del sistema de Figma a la hoja de estilos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Del sistema de Figma a la hoja de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-empezar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de empezar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-de-las-variables-de-figma-a-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tokens: de las variables de Figma a CSS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens: de las variables de Figma a CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokens-de-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tokens de componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espaciado-radios-y-elevacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Espaciado, radios y elevación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del-auto-layout-a-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Del Auto layout a Flexbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-la-reticula-a-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        De la retícula a Grid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movimiento-impresion-y-peso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Movimiento, impresión y peso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Componentes: el set mínimo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anexo_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo: JavaScript, React y Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-empezar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de empezar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-de-las-variables-de-figma-a-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tokens: de las variables de Figma a CSS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens: de las variables de Figma a CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokens-de-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tokens de componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espaciado-radios-y-elevacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Espaciado, radios y elevación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del-auto-layout-a-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Del Auto layout a Flexbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-la-reticula-a-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        De la retícula a Grid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movimiento-impresion-y-peso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Movimiento, impresión y peso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7-del-sistema-de-figma-a-la-hoja-de-estilos">7. Del sistema de Figma a la hoja de estilos</h1>
+<p>En los apartados anteriores has repasado las herramientas: el HTML, el CSS, Sass, ITCSS, BEM y la preparación de las imágenes. En este vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (colores con modo oscuro, escala tipográfica, espaciado, radios, elevación y componentes con sus estados), y aquí vas a ver <strong>cómo se traslada cada pieza al código</strong>. Las decisiones visuales ya están tomadas y justificadas, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.</p>
+<p>Este apartado funciona como una <strong>hoja de ruta para maquetar</strong>. Cómo funciona cada herramienta lo tienes en los apartados anteriores, y aquí te vas a centrar en qué herramienta corresponde a cada pieza de tu sistema. En la auditoría oral te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).</p>
+<p>Los ejemplos están en CSS, porque así se ve lo que llega al navegador, pero en tu proyecto los escribirás en SCSS, repartidos en las capas de ITCSS y con los nombres de BEM.</p>
+<p><img alt="Correspondencia entre las piezas del sistema de diseño en Figma y las herramientas de CSS que las implementan" src="../img/orbita3_07_esquema_figma_a_css.svg" /></p>
+<h2 id="antes-de-empezar">Antes de empezar</h2>
+<p>Comprueba que te ha quedado lo esencial de los apartados anteriores intentando contestar sin mirar:</p>
+<ol>
+<li>¿Cuándo es un <code>&lt;a&gt;</code> y cuándo un <code>&lt;button&gt;</code> lo que en tu mockup parece un botón?</li>
+<li>¿Por qué se da estilo con clases y no con ids?</li>
+<li>¿Por qué los tamaños van en <code>rem</code>?</li>
+<li>¿Cuándo usarías Flexbox y cuándo Grid?</li>
+</ol>
+<p>Si alguna se te atasca, vuelve al apartado correspondiente antes de seguir.</p>
+<h2 id="tokens-de-las-variables-de-figma-a-css">Tokens: de las variables de Figma a CSS</h2>
+<p>En Figma configuraste la <strong>sintaxis de código</strong> de cada variable, y ahora verás para qué: es el nombre que tendrá en tu hoja de estilos. La regla del módulo es que <strong>cada variable de Figma tiene una propiedad personalizada con el mismo nombre</strong> (RA1-d). En un equipo, esa coincidencia es lo que permite que quien diseña y quien programa hablen del mismo color con la misma palabra.</p>
+<p>Los <strong>primitivos</strong> se declaran en <code>:root</code> con su valor real, y los <strong>semánticos</strong> apuntan a un primitivo con <code>var()</code>. Para el modo oscuro, <code>light-dark()</code> recibe el primitivo de cada modo, igual que la tabla de modos de Figma:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="w"> </span><span class="n">dark</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="c">/* Primitivos */</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nv">--blue-200</span><span class="p">:</span><span class="w"> </span><span class="mh">#99C1F1</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nv">--blue-500</span><span class="p">:</span><span class="w"> </span><span class="mh">#1A5FB4</span><span class="p">;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nv">--gray-50</span><span class="p">:</span><span class="w">  </span><span class="mh">#F6F5F4</span><span class="p">;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nv">--gray-900</span><span class="p">:</span><span class="w"> </span><span class="mh">#1E1E24</span><span class="p">;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="c">/* Semánticos */</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w">    </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--blue-</span><span class="mi">500</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--blue-</span><span class="mi">200</span><span class="p">));</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nv">--color-surface</span><span class="p">:</span><span class="w">    </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">));</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nv">--color-on-surface</span><span class="p">:</span><span class="w"> </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">));</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+</code></pre></div>
+<p>En tu proyecto no escribirás esto a mano: lo generarás con los mapas y los bucles del apartado de Sass.</p>
+<p>La regla de la Órbita 2 sigue en pie: <strong>los componentes usan solo tokens semánticos</strong>. Si en la regla de un botón aparece <code>var(--blue-500)</code> o <code>#1A5FB4</code>, ese botón no cambiará en el modo oscuro. Para comprobarlo, busca <code>#</code> y los nombres de los primitivos en tus ficheros: solo deberían aparecer en Settings.</p>
+<details class="info">
+<summary>Para saber más: un interruptor de modo oscuro</summary>
+<p>Con <code>color-scheme: light dark</code>, la aplicación sigue la preferencia del sistema operativo. Si quieres un interruptor para elegir el modo, basta con que cambie un atributo del <code>&lt;html&gt;</code> y que una regla fuerce el esquema, porque <code>light-dark()</code> obedece siempre a <code>color-scheme</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">:</span><span class="nd">root</span><span class="o">[</span><span class="nt">data-theme</span><span class="o">=</span><span class="s2">"light"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">:</span><span class="nd">root</span><span class="o">[</span><span class="nt">data-theme</span><span class="o">=</span><span class="s2">"dark"</span><span class="o">]</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">dark</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Cambiar el atributo es trabajo de JavaScript, que verás en DWEC.</p>
+</details>
+<h3 id="tokens-de-componente">Tokens de componente</h3>
+<p>En la Órbita 2 quedó pendiente un tercer nivel de tokens, los <strong>tokens de componente</strong>: variables que solo existen dentro de un componente y apuntan a un semántico. Sirven para que cada variante cambie solo unas pocas variables:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nv">--button-bg</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nv">--button-fg</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-on-primary</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--button-bg</span><span class="p">);</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--button-fg</span><span class="p">);</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">.</span><span class="nc">button--danger</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nv">--button-bg</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nv">--button-fg</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-on-error</span><span class="p">);</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">}</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">La prueba del color principal</p>
+<p>En la Órbita 2 comprobaste tu sistema cambiando el color principal en Figma. En el código, la prueba es la misma: selecciona el <code>&lt;html&gt;</code> en el inspector, cambia el valor de <code>--blue-500</code> y recorre la aplicación. Si queda algún elemento con el azul anterior, hay un valor escrito a mano en algún sitio.</p>
+</div>
+<h2 id="tipografia">Tipografía</h2>
+<p>Cada nivel de tu escala se convierte en un token, y la propiedad <code>font</code> permite escribir peso, tamaño, altura de línea y familia en un solo valor:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nv">--font-family-base</span><span class="p">:</span><span class="w"> </span><span class="s2">"Atkinson Hyperlegible"</span><span class="p">,</span><span class="w"> </span><span class="n">system-ui</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nv">--font-heading-1</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="o">/</span><span class="mf">1.25</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-family-base</span><span class="p">);</span><span class="w">   </span><span class="c">/* 32 / 40 */</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nv">--font-body</span><span class="p">:</span><span class="w">      </span><span class="mi">400</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="o">/</span><span class="mf">1.5</span><span class="w">  </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-family-base</span><span class="p">);</span><span class="w">   </span><span class="c">/* 16 / 24 */</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nv">--font-label</span><span class="p">:</span><span class="w">     </span><span class="mi">600</span><span class="w"> </span><span class="mf">0.875</span><span class="kt">rem</span><span class="o">/</span><span class="mf">1.43</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-family-base</span><span class="p">);</span><span class="w"> </span><span class="c">/* 14 / 20 */</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>Al pasar los valores de Figma hay que hacer dos conversiones:</p>
+<ul>
+<li><strong>Tamaño en <code>rem</code></strong>: los píxeles entre 16 (32 px son <code>2rem</code>). Así la escala respeta la letra al 200 % de Manuel (RA5-a).</li>
+<li><strong>Altura de línea sin unidad</strong>: la altura entre el tamaño (24 entre 16 son <code>1.5</code>).</li>
+</ul>
+<p>Para los títulos muy grandes, que en el móvil ocupan demasiado, usa la tipografía fluida con <code>clamp()</code> de los apuntes de CSS3.</p>
+<h2 id="espaciado-radios-y-elevacion">Espaciado, radios y elevación</h2>
+<p><strong>Ningún relleno, margen o separación se escribe con un número suelto</strong>: todos salen de tu escala de espaciado, en <code>rem</code>, igual que los radios y las sombras salen de sus tokens. Si en tu código aparece <code>padding: 13px</code>, o es un error o te falta un valor en la escala, y en los dos casos hay que volver a Figma.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nv">--space-2</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span><span class="w">    </span><span class="c">/*  8 px */</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nv">--space-4</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span><span class="w">      </span><span class="c">/* 16 px */</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nv">--radius-md</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nv">--elevation-1</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgb</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">12</span><span class="kt">%</span><span class="p">);</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>Para separar los elementos de un componente, usa <strong><code>gap</code></strong> en lugar de márgenes: un margen va pegado al elemento y se lo lleva a cualquier sitio donde lo reutilices, mientras que <code>gap</code> lo decide el contenedor. Es la misma idea que el espaciado del Auto layout.</p>
+<h2 id="del-auto-layout-a-flexbox">Del Auto layout a Flexbox</h2>
+<p>El Auto layout de Figma está basado en Flexbox, así que cada opción tiene su propiedad:</p>
+<table>
+<thead>
+<tr>
+<th>En Figma (Auto layout)</th>
+<th>En CSS (Flexbox)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirección horizontal o vertical</td>
+<td><code>flex-direction: row</code> o <code>column</code></td>
+</tr>
+<tr>
+<td>Espaciado entre elementos</td>
+<td><code>gap</code></td>
+</tr>
+<tr>
+<td>Espaciado en <strong>Auto</strong></td>
+<td><code>justify-content: space-between</code></td>
+</tr>
+<tr>
+<td>Relleno</td>
+<td><code>padding</code></td>
+</tr>
+<tr>
+<td>Alineación</td>
+<td><code>justify-content</code> y <code>align-items</code></td>
+</tr>
+<tr>
+<td><em>Fill container</em></td>
+<td><code>flex: 1</code></td>
+</tr>
+<tr>
+<td><em>Wrap</em></td>
+<td><code>flex-wrap: wrap</code></td>
+</tr>
+</tbody>
+</table>
+<p>La tarjeta de pista era en Figma un Auto layout vertical con 16 píxeles de relleno y 8 de separación, con una fila horizontal dentro para el nombre y el precio:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">.</span><span class="nc">card__header</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-between</span><span class="p">;</span><span class="w">   </span><span class="c">/* espaciado "Auto" en Figma */</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">baseline</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">}</span>
+</code></pre></div>
+<p>Para comprobarlo, pon el componente de Figma y el inspector uno al lado del otro y compara los valores. El modo Dev de Figma te enseña el CSS de cada capa, pero en píxeles y sin tus tokens, así que úsalo solo para comprobar valores.</p>
+<h2 id="de-la-reticula-a-grid">De la retícula a Grid</h2>
+<p>La retícula de la Órbita 2 (cuatro columnas en el móvil, con medianiles y márgenes de 16 píxeles) se construye con <strong>Grid</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">.</span><span class="nc">o-layout</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="k">column-gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="k">padding-inline</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="kt">rem</span><span class="p">;</span><span class="w">            </span><span class="c">/* el ancho máximo del contenido en escritorio */</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="k">margin-inline</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>En la práctica, para los listados de tarjetas suele bastar el patrón <code>repeat(auto-fit, minmax(16rem, 1fr))</code>, que reparte las tarjetas en tantas columnas como quepan. La retícula de Figma te sirve para comprobar que, a cada ancho, todo cae donde lo dibujaste.</p>
+<h2 id="breakpoints">Breakpoints</h2>
+<p>El breakpoint correcto es <strong>el ancho en el que tu diseño empieza a verse mal</strong>, y en DIW añadimos un segundo criterio: <strong>tus personas</strong>. Si Lucía usa un móvil de 360 píxeles y Manuel una tableta, esos son los anchos que tienes que cuidar, y el breakpoint estará en algún punto entre los dos.</p>
+<p>Escribe el CSS <strong>mobile first</strong>, con los breakpoints en <code>rem</code> y con el mixin de breakpoint de Sass, y usa container queries para los componentes que aparecen en sitios de distinto ancho (RA2-i).</p>
+<h2 id="estados">Estados</h2>
+<p>Cada variante de estado que dibujaste en Figma tiene su selector en CSS:</p>
+<table>
+<thead>
+<tr>
+<th>Variante en Figma</th>
+<th>Selector en CSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hover</td>
+<td><code>:hover</code></td>
+</tr>
+<tr>
+<td>Foco</td>
+<td><code>:focus-visible</code></td>
+</tr>
+<tr>
+<td>Pulsado</td>
+<td><code>:active</code></td>
+</tr>
+<tr>
+<td>Desactivado</td>
+<td><code>:disabled</code> o <code>[aria-disabled="true"]</code></td>
+</tr>
+<tr>
+<td>Seleccionado</td>
+<td><code>:checked</code> o <code>[aria-pressed="true"]</code></td>
+</tr>
+<tr>
+<td>Error</td>
+<td><code>:user-invalid</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>El foco del teclado también es una variante de tu sistema.</strong> Si no la dibujaste en Figma, dibújala ahora, porque en la Órbita 4 recorrerás la aplicación con el tabulador. Y recuerda que ningún estado puede depender solo del color: la hora ocupada se tacha, además de aclararse. En el apartado 8 tienes el código completo de los estados de cada componente.</p>
+<h2 id="movimiento-impresion-y-peso">Movimiento, impresión y peso</h2>
+<p>Tres decisiones más completan el paso al código:</p>
+<ul>
+<li><strong>Movimiento.</strong> Transiciones cortas (entre 150 y 300 milisegundos) sobre propiedades concretas, siempre respetando <code>prefers-reduced-motion</code>. Si tu sistema usa siempre las mismas duraciones, conviértelas en tokens.</li>
+<li><strong>Impresión.</strong> Una hoja <code>@media print</code> para que el justificante de la reserva salga limpio (RA2-d).</li>
+<li><strong>Peso.</strong> Cada componente de Figma tiene una sola regla en el CSS, y no hay reglas para componentes que no existen. La pestaña <strong>Cobertura</strong> del inspector de Chrome te dice qué parte de tu CSS no se usa. Las <strong>WSG</strong> piden que el sistema de diseño sirva precisamente para no duplicar estilos.</li>
+</ul>
+<h2 id="validar">Validar</h2>
+<p>Pasa tu <code>main.css</code> por el <a href="https://jigsaw.w3.org/css-validator/">validador del W3C</a> y guarda la evidencia (RA2-h). Si marca como error alguna función reciente (<code>light-dark()</code>, <code>@layer</code>), compruébala en <a href="https://web.dev/baseline">Baseline</a> y explícalo en tu documentación.</p>
+<p>Si usas una IA para escribir o revisar tu CSS, anótalo en el <code>CHANGELOG.md</code>. Ten en cuenta que no conoce tus tokens, y que lo que devuelva vendrá lleno de valores escritos a mano que tendrás que sustituir.</p>
+<h2 id="antes-de-seguir">Antes de seguir</h2>
+<p>Comprueba con tu aplicación que puedes hacer todo esto sin tocar ninguna regla de componente:</p>
+<ol>
+<li><strong>Cambiar un primitivo</strong> en el inspector y que el cambio llegue a todas las pantallas.</li>
+<li><strong>Pasar al modo oscuro</strong> y que no quede nada ilegible.</li>
+<li><strong>Subir la letra al 200 %</strong> y que nada se corte ni se solape.</li>
+<li><strong>Recorrer el happy path con el tabulador</strong> viendo el foco en cada paso.</li>
+<li><strong>Buscar <code>#</code> y <code>px</code></strong> en tu SCSS y que solo aparezcan en Settings y en los bordes de 1 píxel.</li>
+</ol>
+<p>Si algo falla, casi siempre es por la misma causa: un valor escrito a mano en lugar de un token.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

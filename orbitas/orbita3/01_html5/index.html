@@ -1,0 +1,1712 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita3/01_html5/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02_css3/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>1. Repaso de HTML5 - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-repaso-de-html5" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Repaso de HTML5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Repaso de HTML5
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Repaso de HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#la-plantilla-de-cada-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La plantilla de cada pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-importa-la-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa la semántica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-zonas-de-una-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las zonas de una pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encabezados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encabezados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-y-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texto y listas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-y-botones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces y botones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imágenes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formularios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-interactivos-nativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementos interactivos nativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del-wireframe-al-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Del wireframe al HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_css3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Apuntes de CSS3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_sass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Apuntes de Sass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_itcss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Arquitectura ITCSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_bem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Nomenclatura BEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_multimedia_ecodiseno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Multimedia y ecodiseño
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_del_sistema_al_codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Del sistema de Figma a la hoja de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Componentes: el set mínimo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anexo_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo: JavaScript, React y Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#la-plantilla-de-cada-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La plantilla de cada pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-importa-la-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por qué importa la semántica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-zonas-de-una-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las zonas de una pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encabezados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encabezados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-y-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texto y listas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-y-botones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces y botones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imágenes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formularios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-interactivos-nativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementos interactivos nativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del-wireframe-al-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Del wireframe al HTML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-seguir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de seguir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-repaso-de-html5">1. Repaso de HTML5</h1>
+<p>En esta órbita vas a convertir tus mockups de Figma en una aplicación que funciona en el navegador, y lo primero que se escribe es el HTML. Parece el paso fácil, pero es el que más condiciona todo lo demás: <strong>un buen CSS solo puede construirse sobre un buen HTML</strong>. Si la lista de pistas está hecha con <code>&lt;div&gt;</code> sueltos, no se alinea bien; si la hora de la reserva es un <code>&lt;div&gt;</code> con un clic, no se puede elegir con el teclado; y si la pantalla no tiene encabezados, Manuel no puede recorrerla con el lector de pantalla del móvil.</p>
+<p>Este apartado repasa lo que necesitas de HTML5 para maquetar tu sistema, con el foco en <strong>elegir el elemento correcto</strong> para cada parte de tus wireframes (RA2-a, RA6-b). En la Órbita 4 volverás sobre el HTML desde el punto de vista de la accesibilidad.</p>
+<p><img alt="De un wireframe de la Órbita 1 a los elementos de HTML que forman cada zona de la pantalla" src="../img/orbita3_01_esquema_wireframe_html.svg" /></p>
+<h2 id="la-plantilla-de-cada-pantalla">La plantilla de cada pantalla</h2>
+<p>Todas las pantallas de tu aplicación empiezan igual, así que conviene tener una plantilla correcta desde el primer día:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"es"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"color-scheme"</span> <span class="na">content</span><span class="o">=</span><span class="s">"light dark"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Elegir hora · Pádel · Polideportivo municipal<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Reserva una pista del polideportivo en menos de un minuto."</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"css/main.css"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  <span class="cm">&lt;!-- contenido de la pantalla --&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Línea</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td>Hace que el navegador use el modo estándar</td>
+</tr>
+<tr>
+<td><code>lang="es"</code></td>
+<td>El lector de pantalla pronuncia en castellano</td>
+</tr>
+<tr>
+<td><code>charset="UTF-8"</code></td>
+<td>Las tildes y la eñe se ven bien</td>
+</tr>
+<tr>
+<td><code>viewport</code></td>
+<td>Sin ella, el móvil encoge la página y el diseño adaptable no funciona</td>
+</tr>
+<tr>
+<td><code>color-scheme</code></td>
+<td>Evita el destello blanco al cargar si la persona usa el modo oscuro</td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Lo primero que anuncia el lector de pantalla y lo que se ve en la pestaña; uno distinto por pantalla</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>El texto que muestran los buscadores (RA5-h)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="por-que-importa-la-semantica">Por qué importa la semántica</h2>
+<p>Casi todos los elementos de HTML sirven para decir <strong>qué es</strong> cada cosa, mientras que su aspecto lo decide el CSS. Un <code>&lt;h2&gt;</code> es el título de una sección aunque se vea pequeño, y un <code>&lt;button&gt;</code> es un control que hace algo, tenga la forma que tenga. Elegir el elemento por su significado tiene varias ventajas:</p>
+<ul>
+<li><strong>Accesibilidad.</strong> Los lectores de pantalla anuncian cada elemento por su función ("botón", "encabezado de nivel 2") y permiten saltar de uno a otro (RA5-a).</li>
+<li><strong>Funcionamiento incluido en el navegador.</strong> Un <code>&lt;button&gt;</code> ya se enfoca con el tabulador y se activa con Intro y con Espacio. Si lo haces con un <code>&lt;div&gt;</code>, tendrás que programarlo todo con JavaScript.</li>
+<li><strong>Menos código.</strong> Los elementos nativos ya traen su comportamiento, y las <strong>WSG</strong> recomiendan usarlos antes que soluciones con JavaScript, porque pesan menos.</li>
+<li><strong>Un código que entiende todo el equipo.</strong> Cualquiera que abra tu HTML sabe qué es cada parte sin mirar el diseño.</li>
+</ul>
+<p>Para saber si estás usando bien la semántica, pregúntate ante cada elemento <strong>qué es esto para quien no lo ve</strong>. Si es un título, es un encabezado; si se pulsa para hacer algo, es un botón; y si es solo una caja para colocar cosas, entonces sí, es un <code>&lt;div&gt;</code>.</p>
+<h2 id="las-zonas-de-una-pantalla">Las zonas de una pantalla</h2>
+<p>HTML5 tiene elementos para las grandes zonas de una pantalla, y los lectores de pantalla los usan para saltar de una a otra:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Qué es</th>
+<th>En el polideportivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;header&gt;</code></td>
+<td>La cabecera</td>
+<td>El logo y el menú</td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Un bloque de navegación</td>
+<td>El menú principal y la barra inferior del móvil</td>
+</tr>
+<tr>
+<td><code>&lt;main&gt;</code></td>
+<td>El contenido principal (<strong>uno por página</strong>)</td>
+<td>El selector de pista y hora</td>
+</tr>
+<tr>
+<td><code>&lt;aside&gt;</code></td>
+<td>Contenido complementario</td>
+<td>El resumen de la reserva</td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>El pie</td>
+<td>El horario y el teléfono</td>
+</tr>
+<tr>
+<td><code>&lt;section&gt;</code></td>
+<td>Una parte temática, con su encabezado</td>
+<td>"Horas libres"</td>
+</tr>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td>Un contenido que se entiende por sí solo</td>
+<td>Cada tarjeta de pista</td>
+</tr>
+</tbody>
+</table>
+<p>Un <code>&lt;div&gt;</code> es correcto cuando solo necesitas un contenedor para el CSS, como el envoltorio de una cuadrícula. Lo que hay que evitar es usarlo para algo que ya tiene un elemento propio. Si hay dos <code>&lt;nav&gt;</code>, ponle a cada uno un nombre con <code>aria-label</code> ("Principal", "Secciones") para que se puedan distinguir.</p>
+<h2 id="encabezados">Encabezados</h2>
+<p>Los encabezados, de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, forman <strong>el índice de cada pantalla</strong>, y siguen tres reglas:</p>
+<ol>
+<li><strong>Un único <code>&lt;h1&gt;</code> por pantalla</strong>, con su título ("Elegir hora").</li>
+<li><strong>Sin saltos de nivel</strong>: después de un <code>&lt;h2&gt;</code> viene otro <code>&lt;h2&gt;</code> o un <code>&lt;h3&gt;</code>, nunca un <code>&lt;h4&gt;</code>.</li>
+<li><strong>El nivel lo decide la estructura.</strong> El título de una tarjeta es un <code>&lt;h3&gt;</code> si le toca serlo, aunque en tu diseño se vea pequeño. El tamaño lo decides en el CSS con tu escala tipográfica.</li>
+</ol>
+<p>Una forma rápida de comprobarlos es leer solo los encabezados, en orden, como el índice de un libro. Si se entiende qué hay en la pantalla, están bien.</p>
+<h2 id="texto-y-listas">Texto y listas</h2>
+<p>Para el texto te bastan pocos elementos: <strong><code>&lt;p&gt;</code></strong> para los párrafos, <strong><code>&lt;strong&gt;</code></strong> para lo importante y <strong><code>&lt;em&gt;</code></strong> para el énfasis. Para las fechas y las horas, que en una aplicación de reservas aparecen en todas partes, usa <strong><code>&lt;time&gt;</code></strong> con el valor en formato estándar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">time</span> <span class="na">datetime</span><span class="o">=</span><span class="s">"2026-11-12T19:00"</span><span class="p">&gt;</span>jueves 12 a las 19:00<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Casi cualquier grupo de elementos del mismo tipo es una <strong>lista</strong>: el menú, las pistas disponibles, las horas libres. Marcarlo como lista permite que el lector de pantalla diga "lista, 6 elementos" antes de empezar. Usa <code>&lt;ul&gt;</code> para las listas sin orden, <code>&lt;ol&gt;</code> para los pasos y <code>&lt;dl&gt;</code> para parejas de nombre y valor, como el resumen de una reserva:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">dl</span> <span class="na">class</span><span class="o">=</span><span class="s">"booking-summary"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Pista<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Pádel 2<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Hora<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>  <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;&lt;</span><span class="nt">time</span> <span class="na">datetime</span><span class="o">=</span><span class="s">"19:00"</span><span class="p">&gt;</span>19:00<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="enlaces-y-botones">Enlaces y botones</h2>
+<p>Esta es la distinción más importante del apartado, porque en Figma un enlace y un botón pueden verse igual: <strong>un enlace lleva a otro sitio y un botón hace algo</strong>.</p>
+<ul>
+<li><strong><code>&lt;a href="..."&gt;</code></strong> cuando al pulsarlo cambias de pantalla. "Ver mis reservas" es un enlace, aunque parezca un botón.</li>
+<li><strong><code>&lt;button&gt;</code></strong> cuando al pulsarlo pasa algo en la pantalla: enviar el formulario, abrir un diálogo. "Reservar" y "Cancelar reserva" son botones.</li>
+</ul>
+<p>El aspecto lo decides después en el CSS, y tu componente <code>.button</code> se puede aplicar a los dos. Dentro de un formulario, ponle a cada botón su tipo: <code>type="submit"</code> al que envía y <code>type="button"</code> a los demás.</p>
+<p>El texto de un enlace o un botón tiene que entenderse <strong>fuera de contexto</strong>. Un lector de pantalla puede listar todos los enlaces de la página, y en esa lista cinco "Ver más" no sirven de nada, mientras que "Ver horarios de la pista de pádel 2" se entiende sin ver la pantalla.</p>
+<h2 id="imagenes">Imágenes</h2>
+<p>Una imagen lleva siempre estos atributos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"img/pista-padel-2.webp"</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>     <span class="na">alt</span><span class="o">=</span><span class="s">"Pista de pádel cubierta con paredes de cristal"</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>     <span class="na">width</span><span class="o">=</span><span class="s">"640"</span> <span class="na">height</span><span class="o">=</span><span class="s">"360"</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>     <span class="na">loading</span><span class="o">=</span><span class="s">"lazy"</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li><strong><code>alt</code></strong> describe lo que la imagen aporta. Si es decorativa, va vacío (<code>alt=""</code>), para que el lector de pantalla la ignore.</li>
+<li><strong><code>width</code> y <code>height</code></strong> dicen la proporción, para que el navegador reserve el hueco y la página no salte al cargar.</li>
+<li><strong><code>loading="lazy"</code></strong> hace que solo se descargue cuando va a aparecer en pantalla, y ahorra datos a Lucía, como piden las <strong>WSG</strong>. La imagen principal de la pantalla no lo lleva.</li>
+</ul>
+<p>Los iconos que acompañan a un texto que dice lo mismo son decorativos y llevan <code>aria-hidden="true"</code>. Cómo elegir el formato y el tamaño de cada imagen lo verás en el apartado de multimedia.</p>
+<h2 id="formularios">Formularios</h2>
+<p>La aplicación del polideportivo es, en el fondo, un formulario: se elige pista, día y hora, y se envía.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"/reservas"</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"date"</span><span class="p">&gt;</span>Día<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"date"</span> <span class="na">id</span><span class="o">=</span><span class="s">"date"</span> <span class="na">name</span><span class="o">=</span><span class="s">"date"</span> <span class="na">required</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Hora<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"time"</span> <span class="na">value</span><span class="o">=</span><span class="s">"18:00"</span><span class="p">&gt;</span> 18:00<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"time"</span> <span class="na">value</span><span class="o">=</span><span class="s">"19:00"</span><span class="p">&gt;</span> 19:00<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"phone"</span><span class="p">&gt;</span>Teléfono de contacto<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"tel"</span> <span class="na">id</span><span class="o">=</span><span class="s">"phone"</span> <span class="na">name</span><span class="o">=</span><span class="s">"phone"</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">"tel"</span><span class="p">&gt;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span><span class="p">&gt;</span>Reservar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Las reglas que necesitas están todas en el ejemplo:</p>
+<ul>
+<li><strong>Cada campo tiene su <code>&lt;label&gt;</code></strong>, unido con <code>for</code> e <code>id</code>. Un <code>placeholder</code> no la sustituye, porque desaparece al escribir.</li>
+<li><strong>Los grupos de opciones van en un <code>&lt;fieldset&gt;</code> con su <code>&lt;legend&gt;</code>.</strong> Las horas son botones de opción con el mismo <code>name</code>, porque solo se puede elegir una.</li>
+<li><strong>El tipo de campo correcto</strong> (<code>date</code>, <code>time</code>, <code>email</code>, <code>tel</code>) muestra el teclado o el selector adecuado en el móvil y valida el formato sin JavaScript.</li>
+<li><strong><code>required</code></strong> y el resto de atributos de validación le dicen al navegador qué es un valor correcto.</li>
+<li><strong>Pide solo lo imprescindible.</strong> Cada campo de más es tiempo y datos guardados, y las <strong>WSG</strong> y el diseño ético lo desaconsejan.</li>
+</ul>
+<h2 id="elementos-interactivos-nativos">Elementos interactivos nativos</h2>
+<p>Antes de construir algo con <code>&lt;div&gt;</code> y JavaScript, comprueba si HTML ya lo tiene. Dos elementos te van a servir:</p>
+<ul>
+<li><strong><code>&lt;details&gt;</code> y <code>&lt;summary&gt;</code></strong> forman un bloque que se abre y se cierra, útil para las preguntas frecuentes o las condiciones de la reserva.</li>
+<li><strong><code>&lt;dialog&gt;</code></strong> es un cuadro de diálogo, como el de "¿Seguro que quieres cancelar la reserva?". El navegador se encarga del foco, de la tecla Escape y del fondo oscuro.</li>
+</ul>
+<details class="info">
+<summary>Para saber más: tablas</summary>
+<p>Las tablas sirven para <strong>datos con filas y columnas</strong>, como el historial de reservas, y nunca para colocar elementos en la pantalla. Una tabla bien hecha tiene un título en <code>&lt;caption&gt;</code> y sus encabezados en <code>&lt;th&gt;</code> con <code>scope="col"</code> o <code>scope="row"</code>, para que el lector de pantalla diga a qué fila y columna pertenece cada celda.</p>
+</details>
+<h2 id="del-wireframe-al-html">Del wireframe al HTML</h2>
+<p>Te recomiendo traducir cada pantalla en este orden, y <strong>escribir el HTML completo antes de escribir CSS</strong>:</p>
+<ol>
+<li><strong>Las zonas</strong>: cabecera, navegación, contenido principal, pie.</li>
+<li><strong>Los encabezados</strong>: el <code>&lt;h1&gt;</code> y los de cada sección.</li>
+<li><strong>Los componentes</strong>: qué elemento es cada uno (la tarjeta es un <code>&lt;article&gt;</code> dentro de un <code>&lt;li&gt;</code>, la hora es un botón de opción, "Reservar" es un <code>&lt;button&gt;</code>).</li>
+<li><strong>El contenido real</strong>, con su longitud de verdad.</li>
+<li><strong>Las clases</strong>, al final.</li>
+</ol>
+<p>Cuando termines, haz la <strong>prueba sin estilos</strong>: desactiva el CSS desde el inspector y lee la pantalla de arriba abajo. Tiene que parecer un documento ordenado, con su título, sus secciones, sus listas y sus formularios con etiquetas. Si algo no se entiende así, tampoco lo entenderá un lector de pantalla.</p>
+<h2 id="validar">Validar</h2>
+<p>El navegador corrige en silencio los errores de HTML, y a veces de una forma que no esperas. Pasa cada pantalla por el <a href="https://validator.w3.org/">validador del W3C</a> y guarda la evidencia, porque el uso de estándares se evalúa (RA6-b).</p>
+<h2 id="antes-de-seguir">Antes de seguir</h2>
+<p>Comprueba en tu pantalla principal que:</p>
+<ol>
+<li>La plantilla tiene <code>lang</code>, <code>viewport</code>, <code>color-scheme</code> y un <code>&lt;title&gt;</code> propio.</li>
+<li>Hay un único <code>&lt;main&gt;</code> y un único <code>&lt;h1&gt;</code>, y los encabezados no se saltan niveles.</li>
+<li>Lo que lleva a otro sitio es un <code>&lt;a&gt;</code> y lo que hace algo es un <code>&lt;button&gt;</code>.</li>
+<li>Cada campo tiene su <code>&lt;label&gt;</code>, y cada grupo de opciones su <code>&lt;fieldset&gt;</code>.</li>
+<li>Las imágenes tienen <code>alt</code>, <code>width</code> y <code>height</code>.</li>
+<li>La pantalla se entiende con el CSS desactivado.</li>
+<li>El validador no da errores.</li>
+</ol>
+<p>Si usas una IA o una herramienta que convierte diseños en código (como el modo Dev de Figma o Google Stitch), anótalo en el <code>CHANGELOG.md</code> y revisa su resultado con esta lista: suelen generar <code>&lt;div&gt;</code> para todo, botones sin nombre e imágenes sin <code>alt</code>.</p>
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li><a href="https://lenguajehtml.com/">HTML en español, de Manz (lenguajehtml.com)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element">Referencia de elementos HTML (MDN Web Docs)</a></li>
+<li><a href="https://validator.w3.org/">Validador del W3C</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
