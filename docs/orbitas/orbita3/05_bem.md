@@ -212,6 +212,96 @@ Con `@scope` podrías escribir los componentes sin nombres de BEM, con selectore
 
 Como el contenido sigue leyéndose bien aunque el navegador ignore esas reglas (solo pierde algunos detalles de estilo), es un uso seguro incluso en navegadores antiguos. En tu arquitectura de ITCSS, ese bloque va en la capa de componentes, en su propio parcial (`components/_prose.scss`), igual que cualquier otro componente.
 
+### Ejemplos de uso
+
+Estos tres ejemplos salen del polideportivo y muestran los tres usos en los que `@scope` resuelve algo que con BEM sería incómodo. Los tres se han comprobado en el navegador.
+
+!!! example "Ejemplo 1: el texto de las normas de uso"
+
+    Las normas de uso de las pistas son un texto largo con títulos, listas y enlaces, que llega tal cual de un editor o de una base de datos, sin ninguna clase.
+
+    ```html
+    <header class="app-header">
+      <a href="/">Polideportivo</a>
+    </header>
+
+    <article class="prose">
+      <h2>Normas de uso</h2>
+      <p>Las pistas se reservan en tramos de una hora.</p>
+      <ul>
+        <li>Llega con cinco minutos de antelación.</li>
+        <li>Usa calzado deportivo de suela clara.</li>
+      </ul>
+      <p>Consulta la <a href="/cancelaciones">política de cancelación</a>.</p>
+    </article>
+    ```
+
+    ```scss
+    // components/_prose.scss
+    @scope (.prose) {
+      :scope { max-width: 65ch; }
+      :scope > * + * { margin-block-start: var(--space-4); }
+
+      h2 { font: var(--font-heading-2); }
+      ul { padding-inline-start: var(--space-6); }
+      a  { color: var(--color-primary); text-underline-offset: 0.15em; }
+    }
+    ```
+
+    El título, la lista y el enlace de las normas reciben su estilo sin que haya que ponerles clase, y el enlace de la cabecera queda como estaba, porque está fuera de `.prose`. Como dentro del ámbito los selectores tienen la especificidad de una etiqueta, cualquier componente con su clase de BEM los puede sobrescribir.
+
+!!! example "Ejemplo 2: un componente dentro del texto"
+
+    A veces, en medio de ese texto aparece un componente de tu sistema, como un aviso con el horario de los festivos. Con el código del ejemplo anterior, las reglas de `.prose` para los párrafos y los enlaces también se aplicarían dentro del aviso y podrían cambiar su aspecto. El límite inferior con `to` lo evita:
+
+    ```html
+    <article class="prose">
+      <p>Las pistas se reservan en tramos de una hora.</p>
+      <div class="alert alert--warning" role="status">
+        <p class="alert__text">Los festivos el polideportivo cierra a las 14:00.</p>
+      </div>
+      <p>Consulta la <a href="/cancelaciones">política de cancelación</a>.</p>
+    </article>
+    ```
+
+    ```scss
+    @scope (.prose) to (.alert, .card, .dialog) {
+      p { color: var(--color-on-surface); }
+      a { color: var(--color-primary); }
+    }
+    ```
+
+    Las reglas se aplican a los párrafos de las normas, pero se detienen al llegar a un aviso, a una tarjeta o a un diálogo, que conservan exactamente el aspecto que tienen en cualquier otra pantalla. Es la forma de que el texto y los componentes convivan sin pisarse.
+
+!!! example "Ejemplo 3: zonas claras dentro de zonas oscuras"
+
+    En la pantalla de inicio del polideportivo hay una franja oscura con la oferta de verano, y dentro de ella, una tarjeta clara con el precio. Los enlaces tienen que usar un azul oscuro sobre los fondos claros y un azul claro sobre los oscuros. Con selectores descendientes normales, el resultado es incorrecto:
+
+    ```html
+    <section class="surface-dark">
+      <a href="/verano">Ver la oferta de verano</a>
+      <div class="surface-light">
+        <a href="/precios">Consultar precios</a>
+      </div>
+    </section>
+    ```
+
+    ```css
+    /* Sin @scope */
+    .surface-light a { color: var(--blue-500); }
+    .surface-dark a  { color: var(--blue-200); }
+    ```
+
+    El enlace "Consultar precios" está dentro de `.surface-light`, pero también dentro de `.surface-dark`, así que las dos reglas lo seleccionan con la misma especificidad, y gana la que está escrita después. El enlace queda en azul claro sobre un fondo claro, prácticamente ilegible. Con `@scope`, el empate lo decide la **proximidad**:
+
+    ```css
+    /* Con @scope */
+    @scope (.surface-light) { a { color: var(--blue-500); } }
+    @scope (.surface-dark)  { a { color: var(--blue-200); } }
+    ```
+
+    Ahora cada enlace toma el color de la zona más cercana que lo contiene, sin importar el orden de las reglas ni cuántas zonas haya unas dentro de otras. En tu proyecto, el modo oscuro general lo resuelven los tokens con `light-dark()`, pero si tu diseño mezcla zonas claras y oscuras en una misma pantalla, este es el patrón que lo hace funcionar.
+
 ## Errores frecuentes
 
 | Así no | Así sí | Por qué |
