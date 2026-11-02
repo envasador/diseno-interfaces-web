@@ -13,10 +13,10 @@ Lo que construyas aquí es la versión en código de tu sistema de diseño. En l
 1. [Repaso de HTML5](01_html5.md)
 2. [Apuntes de CSS3](02_css3.md)
 3. [Apuntes de Sass](03_sass.md)
-4. [Del sistema de Figma a la hoja de estilos](04_del_sistema_al_codigo.md)
-5. Arquitectura ITCSS (próximamente)
-6. Nomenclatura BEM (próximamente)
-7. Multimedia y ecodiseño (próximamente)
-8. Componentes: el set mínimo (próximamente)
+4. [Arquitectura ITCSS](04_itcss.md)
+5. [Nomenclatura BEM](05_bem.md)
+6. [Multimedia y ecodiseño](06_multimedia_ecodiseno.md)
+7. [Del sistema de Figma a la hoja de estilos](07_del_sistema_al_codigo.md)
+8. [Componentes: el set mínimo](08_componentes.md)
 
-Los tres primeros apartados son los apuntes de referencia de las herramientas, y el cuarto es la hoja de ruta para aplicarlas a tu sistema. Te recomiendo leerlos en orden y volver a los apuntes cada vez que te atasques con una propiedad concreta.
+Los seis primeros apartados explican las herramientas: el lenguaje (HTML5, CSS3 y Sass), la forma de organizar y nombrar el código (ITCSS y BEM) y la preparación de las imágenes y los vídeos. El séptimo es la hoja de ruta para aplicarlas a tu sistema de Figma, y el octavo muestra cómo se construye cada uno de los componentes que necesita casi cualquier aplicación. Te recomiendo leerlos en orden y volver a los apuntes cada vez que te atasques con algo concreto.

@@ -1,16 +1,14 @@
-# Órbita 3 — Dar forma al sistema
+# 7. Del sistema de Figma a la hoja de estilos
 
-## 4. Del sistema de Figma a la hoja de estilos
+En los seis apartados anteriores has repasado las herramientas: el HTML con el que se describe cada parte de una pantalla, el CSS con el que se decide su aspecto, Sass, ITCSS y BEM, con los que se organiza y se nombra todo ese código, y la preparación de las imágenes y los vídeos. En este apartado vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (los colores con su modo oscuro, la escala tipográfica, el espaciado, los radios, la elevación y los componentes con sus estados) y unos mockups del happy path construidos con él, y aquí vas a ver cómo se traslada cada una de esas piezas al código. Lo importante es que **las decisiones visuales ya están tomadas y justificadas** en Figma, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.
 
-En los tres apartados anteriores has repasado las herramientas: el HTML con el que se describe cada parte de una pantalla, el CSS con el que se decide su aspecto y Sass, con el que se organiza todo ese código. En este apartado vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (los colores con su modo oscuro, la escala tipográfica, el espaciado, los radios, la elevación y los componentes con sus estados) y unos mockups del happy path construidos con él, y aquí vas a ver cómo se traslada cada una de esas piezas al código. Lo importante es que **las decisiones visuales ya están tomadas y justificadas** en Figma, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.
+Este apartado funciona como una hoja de ruta para maquetar. Cómo funciona cada herramienta ya lo tienes en los apartados anteriores, sobre todo en los apuntes de [HTML5](01_html5.md), de [CSS3](02_css3.md) y de [Sass](03_sass.md), a los que te remitiré cada vez que haga falta, así que aquí te vas a centrar en qué herramienta corresponde a cada pieza de tu sistema y en por qué elegir una u otra. En la auditoría oral de esta órbita te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).
 
-Este apartado funciona como una hoja de ruta para maquetar. Cómo funciona cada propiedad ya lo tienes en los [apuntes de HTML5](01_html5.md), de [CSS3](02_css3.md) y de [Sass](03_sass.md), a los que te remitiré cada vez que haga falta, así que aquí te vas a centrar en qué herramienta corresponde a cada pieza de tu sistema y en por qué elegir una u otra. En la auditoría oral de esta órbita te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).
+Durante todo el apartado seguiremos con la aplicación de reservas del polideportivo, y en concreto con la pantalla en la que Lucía elige hora para la pista de pádel y pulsa "Reservar". Los ejemplos están escritos en CSS estándar, porque así se ve exactamente lo que llega al navegador, pero en tu proyecto los escribirás en SCSS, repartidos en parciales, con los tokens generados por los bucles del apartado de Sass, las capas de [ITCSS](04_itcss.md) y los nombres de [BEM](05_bem.md). Cómo se construye cada componente del sistema lo verás con detalle en el [apartado 8](08_componentes.md).
 
-Durante todo el apartado seguiremos con la aplicación de reservas del polideportivo, y en concreto con la pantalla en la que Lucía elige hora para la pista de pádel y pulsa "Reservar". Los ejemplos están escritos en CSS estándar, porque así se ve exactamente lo que llega al navegador, pero en tu proyecto los escribirás en SCSS, repartidos en parciales, y los tokens los generarás con los bucles que viste en el apartado de Sass. En la semana del 16 de noviembre ordenarás todo ese código con ITCSS y le pondrás nombres con BEM.
+## Antes de empezar: comprueba que lo tienes claro
 
-### Antes de empezar: comprueba que lo tienes claro
-
-Como este apartado da por sabidos los tres anteriores, merece la pena que compruebes si te ha quedado lo esencial. Intenta contestar a estas preguntas sin mirar los apuntes:
+Como este apartado da por sabidos los anteriores, merece la pena que compruebes si te ha quedado lo esencial. Intenta contestar a estas preguntas sin mirar los apuntes:
 
 1. ¿Cuándo es un `<a>` y cuándo un `<button>` lo que en tu mockup se ve como un botón?
 2. Si una regla con el selector `#reserva a` y otra con `.button` cambian el color del mismo enlace, ¿cuál gana y por qué?
@@ -21,9 +19,9 @@ Como este apartado da por sabidos los tres anteriores, merece la pena que compru
 
 Si alguna se te atasca, vuelve al apartado correspondiente antes de seguir, y ten los apuntes abiertos en otra pestaña mientras lees este.
 
-![Correspondencia entre las piezas del sistema de diseño en Figma y las herramientas de CSS que las implementan](img/orbita3_04_esquema_figma_a_css.svg)
+![Correspondencia entre las piezas del sistema de diseño en Figma y las herramientas de CSS que las implementan](img/orbita3_07_esquema_figma_a_css.svg)
 
-### Las variables de Figma se convierten en propiedades personalizadas
+## Las variables de Figma se convierten en propiedades personalizadas
 
 En la Órbita 2 creaste dos colecciones de variables en Figma, una de primitivos y otra de semánticos, y a cada variable le configuraste la **sintaxis de código**. Ahora entenderás para qué servía ese campo: es el nombre exacto que tendrá esa variable en tu hoja de estilos. CSS tiene un mecanismo que funciona igual que las variables de Figma, las **propiedades personalizadas** (las variables CSS de los apuntes de CSS3), y la regla de este módulo es que **cada variable de Figma tiene una propiedad personalizada con el mismo nombre**, de modo que el diseño y el código hablen el mismo idioma (RA1-d, RA2-g).
 
@@ -72,7 +70,7 @@ Cambiar el atributo es trabajo de JavaScript y lo harás en DWEC, pero los estil
 
 La regla de oro de la Órbita 2 sigue en pie en el código: **las reglas de tus componentes usan solo tokens semánticos**. Si en la hoja de estilos de un botón aparece `var(--blue-500)` o, peor todavía, `#1A5FB4`, ese botón no cambiará en el modo oscuro y no sabrás por qué. Una forma rápida de comprobarlo es buscar en tu fichero el carácter `#` y los nombres de los primitivos, porque solo deberían aparecer en el bloque de primitivos.
 
-#### El tercer nivel: tokens de componente
+### El tercer nivel: tokens de componente
 
 En la Órbita 2 os dije que dejaríamos para esta órbita un tercer nivel de tokens, los **tokens de componente**, y este es el momento. Un token de componente es una variable que solo existe dentro de un componente y que apunta a un semántico. Sirve para que todas las variantes de un componente se escriban cambiando unas pocas variables, sin repetir las declaraciones.
 
@@ -95,32 +93,31 @@ En la Órbita 2 os dije que dejaríamos para esta órbita un tercer nivel de tok
 }
 ```
 
-El botón de cancelar la reserva (`button--danger`) solo cambia dos variables, y todo lo demás lo hereda del botón normal. La forma de nombrar la variante con dos guiones la entenderás bien cuando veamos BEM. Como las propiedades personalizadas se heredan, el valor de `--button-bg` solo existe dentro de `.button` y de sus descendientes, y no puede chocar con ningún otro componente que use un nombre parecido.
+El botón de cancelar la reserva (`button--danger`) solo cambia dos variables, y todo lo demás lo hereda del botón normal. La forma de nombrar la variante, con dos guiones, es la de los modificadores de BEM. Como las propiedades personalizadas se heredan, el valor de `--button-bg` solo existe dentro de `.button` y de sus descendientes, y no puede chocar con ningún otro componente que use un nombre parecido.
 
 !!! example "Ejemplo: la prueba del color principal, ahora en código"
 
     En la Órbita 2 comprobaste que tu sistema funcionaba cambiando el color principal en las variables de Figma y viendo que cambiaba en todas las pantallas. En el código la prueba es la misma: abre el inspector, selecciona el `<html>`, cambia el valor de `--blue-500` en el panel de Estilos y recorre la aplicación. Si queda un solo botón, enlace o borde con el azul anterior, tienes un valor escrito a mano en algún sitio, y el panel de Estilos te dirá en qué regla está.
 
-### La cascada como herramienta para ordenar el sistema
+## La cascada como herramienta para ordenar el sistema
 
 Cuando se aprende CSS, la cascada aparece sobre todo como un problema que había que entender para que las reglas no se pisaran entre sí. Cuando la hoja de estilos implementa un sistema de diseño, conviene verla al revés, como una herramienta para **decidir de antemano qué tipo de regla puede ganar a cuál**. Los tokens tienen que estar disponibles en todas partes, los estilos base de las etiquetas (el `body`, los encabezados, los enlaces) tienen que ser fáciles de sobrescribir, y los componentes tienen que poder sobrescribir a los estilos base sin necesidad de selectores largos.
 
-Para eso sirven las **capas de cascada** (`@layer`), que en los apuntes de CSS3 aparecen como algo para proyectos grandes. Tu proyecto ya lo es, porque tiene un sistema de diseño detrás. Al principio del fichero declaras el orden de las capas, y a partir de ahí una regla de una capa posterior gana siempre a una de una capa anterior, sea cual sea la especificidad de sus selectores.
+Para eso sirven las **capas de cascada** (`@layer`), que en los apuntes de CSS3 aparecen como algo para proyectos grandes. Tu proyecto ya lo es, porque tiene un sistema de diseño detrás. Al principio del fichero declaras el orden de las capas, y a partir de ahí una regla de una capa posterior gana siempre a una de una capa anterior, sea cual sea la especificidad de sus selectores. En tu proyecto, las capas son las de **ITCSS**, que viste en el apartado 4, y cada pieza del sistema va en la suya:
 
 ```css
-@layer reset, tokens, base, components, utilities;
+@layer settings, generic, elements, objects, components, utilities;
 
-@layer reset {
+@layer settings {
+  :root { /* primitivos, semánticos y el resto de tokens */ }
+}
+
+@layer generic {
   *, *::before, *::after { box-sizing: border-box; }
   body { margin: 0; }
-  img, svg, video { display: block; max-width: 100%; height: auto; }
 }
 
-@layer tokens {
-  :root { /* primitivos y semánticos */ }
-}
-
-@layer base {
+@layer elements {
   body {
     background-color: var(--color-surface);
     color: var(--color-on-surface);
@@ -134,9 +131,9 @@ Para eso sirven las **capas de cascada** (`@layer`), que en los apuntes de CSS3 
 }
 ```
 
-Fíjate en que este orden (de lo más general a lo más concreto, y de lo que afecta a todo a lo que afecta a un solo elemento) es el mismo que seguía la lista de buenas prácticas de los apuntes de CSS3 para ordenar una hoja de estilos. En la semana del 16 de noviembre verás que tiene nombre, **ITCSS**, y que se organiza en siete capas en lugar de cinco. Por ahora, con estas cinco tienes suficiente, y te ahorrarás casi todos los `!important` (RA2-e).
+Los tokens van en la primera capa porque tienen que estar disponibles para todo lo demás, los estilos de las etiquetas son fáciles de sobrescribir porque van antes que los componentes, y ningún componente necesita un selector largo ni un `!important` para ganar a un estilo base (RA2-e).
 
-### Tipografía: la escala en unidades relativas
+## Tipografía: la escala en unidades relativas
 
 Tu escala tipográfica de la Órbita 2 tenía entre seis y ocho niveles, cada uno con un tamaño, una altura de línea y un peso. En CSS, cada nivel se convierte en un token, y lo más cómodo es usar la propiedad abreviada `font`, que admite el peso, el tamaño, la altura de línea y la familia en un solo valor.
 
@@ -164,7 +161,7 @@ El nivel `display` es el que más problemas da en un móvil, y en la Órbita 2 o
 
 Para cargar la fuente, Google Fonts te da el `<link>` preparado. Pide solo las familias y los pesos que aparecen en tu escala (en el ejemplo, 400, 600 y 700) y comprueba que la URL incluye `display=swap`, que hace que el texto se vea con la fuente del sistema mientras se descarga la tuya. **Cada peso es un fichero más que descarga el móvil de Lucía**, que tiene una conexión regular en el polideportivo, y las Web Sustainability Guidelines del W3C (**WSG**) recomiendan limitar las variantes tipográficas por esa razón. La pila de fuentes, con `system-ui` y `sans-serif` al final, garantiza que la aplicación se lea bien aunque la fuente no llegue a cargar.
 
-### Espaciado, radios y elevación: el modelo de cajas con tokens
+## Espaciado, radios y elevación: el modelo de cajas con tokens
 
 Todo lo que explican los apuntes de CSS3 sobre el modelo de cajas sigue valiendo, con una diferencia de fondo: ahora **ningún relleno, margen o separación se escribe con un número suelto**, porque todos salen de tu escala de espaciado. Si en tu hoja de estilos aparece `padding: 13px`, o bien es un error o bien te falta un valor en la escala, y en los dos casos hay que volver a Figma a resolverlo.
 
@@ -187,7 +184,7 @@ En los apuntes de CSS3 verás también que las sombras apenas se ven sobre un fo
 
 Para separar los elementos de un componente, prefiere **`gap`** dentro de un contenedor Flexbox o Grid a los márgenes. Un margen va pegado al elemento que lo tiene, de modo que cuando reutilizas ese elemento en otra pantalla se lleva el margen consigo y te descoloca lo que haya alrededor. Con `gap`, la separación la decide el contenedor y solo aparece cuando hay dos elementos que separar. Esa idea es justo la que usabas en Figma con el espaciado de Auto layout, y en la sección siguiente verás que la correspondencia es casi exacta. Usa también las **propiedades lógicas** (`padding-inline`, `margin-block`), que en este módulo son la forma habitual de escribir el espaciado.
 
-### Del Auto layout a Flexbox
+## Del Auto layout a Flexbox
 
 Si construiste tus componentes con Auto layout, ya has hecho Flexbox sin saberlo, porque Figma creó el Auto layout copiando el modelo de Flexbox. Cada opción del panel de Auto layout tiene su propiedad de CSS, y con esta tabla puedes trasladar un componente de un sitio a otro sin pensar demasiado.
 
@@ -204,7 +201,7 @@ Si construiste tus componentes con Auto layout, ya has hecho Flexbox sin saberlo
 | Ajustar a la línea siguiente (*Wrap*) | `flex-wrap: wrap` |
 | Ancho mínimo y máximo | `min-width` y `max-width` |
 
-La tarjeta de pista del polideportivo, por ejemplo, era en Figma un Auto layout vertical con 16 píxeles de relleno y 8 de separación, y dentro tenía una fila horizontal con el nombre de la pista a un lado y el precio al otro. En CSS queda así (los dos guiones bajos de `card__header` indican que esa clase es una parte de la tarjeta, y los entenderás del todo cuando veamos BEM):
+La tarjeta de pista del polideportivo, por ejemplo, era en Figma un Auto layout vertical con 16 píxeles de relleno y 8 de separación, y dentro tenía una fila horizontal con el nombre de la pista a un lado y el precio al otro. En CSS queda así, con los nombres de BEM:
 
 ```html
 <article class="card">
@@ -237,12 +234,12 @@ La tarjeta de pista del polideportivo, por ejemplo, era en Figma un Auto layout 
 
 Abre tu componente en Figma y el inspector del navegador uno al lado del otro, y compara los valores del panel de Auto layout con los de la pestaña **Calculado**. Si coinciden, el componente está bien trasladado. El modo **Dev** de Figma te enseña el CSS de cualquier capa, y puede ayudarte a comprobar un valor concreto, pero ten en cuenta que escribe los valores en píxeles y no conoce tus tokens, así que su código no se puede copiar tal cual en tu proyecto.
 
-### De la retícula a Grid
+## De la retícula a Grid
 
 La retícula que definiste en la Órbita 2 (cuatro columnas en el móvil, con medianiles y márgenes de 16 píxeles, y la que elegiste para escritorio) se construye en CSS con **Grid**, que es la herramienta de CSS pensada para colocar elementos en filas y columnas a la vez. Las columnas se escriben con `fr`, los medianiles con `column-gap` y los márgenes con `padding-inline`, todo con tokens.
 
 ```css
-.layout {
+.o-layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: var(--space-4);
@@ -251,12 +248,13 @@ La retícula que definiste en la Órbita 2 (cuatro columnas en el móvil, con me
   margin-inline: auto;
 }
 
-.layout__full { grid-column: 1 / -1; }   /* ocupa toda la fila */
+/* objeto de ITCSS: solo coloca, no tiene aspecto */
+.o-layout__full { grid-column: 1 / -1; }   /* ocupa toda la fila */
 ```
 
 En la práctica, no todas las pantallas necesitan una retícula de doce columnas declarada en el código. Para la estructura general (cabecera, contenido y pie) y para los listados de tarjetas, los patrones de los apuntes de CSS3 suelen ser suficientes, sobre todo el de `repeat(auto-fit, minmax(16rem, 1fr))`, que reparte las pistas disponibles en tantas columnas como quepan sin que tengas que escribir ninguna media query. La retícula completa de Figma te sirve para comprobar que, a cada ancho, los elementos caen donde los dibujaste.
 
-### Responsive: los breakpoints salen de tus personas
+## Responsive: los breakpoints salen de tus personas
 
 En la Órbita 2 dejamos para esta órbita los puntos exactos en los que la web cambia de retícula (los breakpoints), y los apuntes de CSS3 te dan el criterio técnico para elegirlos, que es buscar **el ancho en el que tu diseño empieza a verse mal** estrechando la ventana poco a poco, en lugar de copiar una lista de dispositivos de internet. En DIW añadimos un segundo criterio, que son tus personas. Si Lucía usa un móvil de 360 píxeles de ancho y Manuel consulta las reservas en la tableta de su nieta, esos son los dos anchos que tienes que cuidar más, y el breakpoint tiene que estar en algún punto entre los dos, allí donde tu diseño de una columna empiece a desperdiciar espacio.
 
@@ -275,7 +273,7 @@ Escribe la hoja de estilos con el enfoque **mobile first** (primero el diseño d
 
 Para los componentes que aparecen en sitios de distinto ancho, como la tarjeta de pista, que está en el listado principal y también en el resumen lateral de la reserva, usa las **container queries**, que preguntan por el ancho del contenedor en el que está colocado el componente. En Figma tenías que dibujar dos variantes de la tarjeta, y en el código basta con una tarjeta que se adapta sola (RA2-i).
 
-### Los estados de los componentes
+## Los estados de los componentes
 
 Cada componente de tu sistema tenía en Figma sus **variantes de estado** (normal, hover, foco, pulsado, desactivado y, en los campos, error), y cada una tiene en CSS una pseudoclase o un selector de atributo que la activa. Las más importantes las tienes explicadas en los apuntes de CSS3, y lo único nuevo es que ahora cada estado tiene que coincidir con la variante que dibujaste.
 
@@ -318,13 +316,13 @@ El ejemplo más claro del polideportivo son los botones de hora, aquellas píldo
 
 Fíjate en la última regla. Una hora ocupada que solo se distingue por ser más clara pasa desapercibida para una persona con baja visión, así que se tacha además de aclararse, por la misma razón que en la Órbita 2 convertías la paleta a escala de grises. **El foco del teclado también es una variante de tu sistema**, y si no la dibujaste en Figma, dibújala ahora, porque en la Órbita 4 navegarás toda tu aplicación con el tabulador y el foco tiene que verse en cada paso.
 
-### El movimiento, con moderación
+## El movimiento, con moderación
 
 Las transiciones sirven para que los cambios de estado se entiendan (la píldora que pasa a azul confirma que la hora ha quedado elegida), y para eso bastan duraciones cortas, entre 150 y 300 milisegundos, sobre propiedades concretas como `background-color`, `opacity` o `translate`. Si tu sistema usa siempre las mismas duraciones, conviértelas también en tokens (`--duration-fast: 150ms`), igual que el resto de decisiones.
 
 El movimiento tiene un coste que no se ve. Las **WSG** piden usar las animaciones con moderación, porque cada animación obliga al procesador del dispositivo a redibujar la pantalla y gasta batería, y una animación infinita la gasta mientras la página esté abierta. Coincide con lo que pide la accesibilidad, porque a las personas con trastornos vestibulares las animaciones grandes les provocan mareos, así que respeta siempre `prefers-reduced-motion` con alguna de las dos técnicas que tienes en los apuntes de CSS3. En la app del polideportivo no hay ninguna animación que no responda a algo que ha hecho la persona.
 
-### Hojas de estilos alternativas: la impresión
+## Hojas de estilos alternativas: la impresión
 
 El modo oscuro es una presentación alternativa de tu aplicación, y hay otra que casi siempre se olvida, la impresa. Mucha gente imprime o guarda en PDF el justificante de una reserva, y si la página sale con la cabecera, el menú, los botones y el fondo oscuro, gasta tinta y papel para nada. Las WSG incluyen entre sus criterios una **hoja de estilos de impresión**, y con unas pocas reglas en `@media print` la pantalla de confirmación del polideportivo sale como un justificante limpio (RA2-d).
 
@@ -339,21 +337,21 @@ El modo oscuro es una presentación alternativa de tu aplicación, y hay otra qu
 
 Para comprobarla sin imprimir, en el panel **Renderizado** del inspector de Chrome puedes emular el medio `print`, igual que emulas el modo oscuro.
 
-### Cuánto pesa tu CSS
+## Cuánto pesa tu CSS
 
 Una hoja de estilos que implementa un sistema de diseño suele pesar poco, porque cada valor está escrito una vez y cada componente se escribe una sola vez con sus variantes. El problema llega cuando se acumulan reglas que ya no se usan, componentes duplicados con nombres distintos o una librería entera para usar dos botones. Las **WSG** recomiendan que **el sistema de diseño sea la herramienta para no duplicar estilos ni componentes**, y en tu proyecto eso significa que cada componente de Figma tiene una sola regla en el CSS y que no hay reglas en el CSS para componentes que no existen en Figma.
 
 Para comprobarlo, en la pestaña **Cobertura** (*Coverage*) de las herramientas de Chrome puedes ver qué porcentaje de tu hoja de estilos se usa en cada pantalla. En una aplicación con varias pantallas siempre habrá reglas sin usar en cada una, pero si una regla no se usa en ninguna, sobra. El peso total de tu página lo medirás en la Órbita 5 con Website Carbon Calculator o Ecograder, y conviene que el CSS no sea el motivo de un mal resultado.
 
-### Validar y comprobar
+## Validar y comprobar
 
 Pasa tu hoja de estilos por el [validador de CSS del W3C](https://jigsaw.w3.org/css-validator/) y guarda la evidencia en tu repositorio (RA2-h). Es posible que te marque como error alguna funcionalidad reciente de las que usamos en este apartado, como `light-dark()`, las capas o la anidación. Si te ocurre, comprueba en [Baseline](https://web.dev/baseline) que está disponible en todos los navegadores principales y explícalo en el `ORBITA3.md`.
 
 Si en algún momento usas una IA para escribir o revisar parte de tu CSS, anótalo en el `CHANGELOG.md` con la herramienta, lo que le pediste y lo que cambiaste de su respuesta. Ten en cuenta que, salvo que se los des, no conoce tus tokens, y que el código que devuelva vendrá lleno de valores escritos a mano que tendrás que sustituir por los de tu sistema.
 
-### Antes de seguir
+## Antes de seguir
 
-Antes de pasar a ITCSS, comprueba con tu propia aplicación que puedes hacer estas cosas sin tocar ninguna regla de componente:
+Antes de pasar a los componentes, comprueba con tu propia aplicación que puedes hacer estas cosas sin tocar ninguna regla de componente:
 
 1. **Cambiar un primitivo de color en el inspector** y que el cambio llegue a todas las pantallas.
 2. **Pasar al modo oscuro** desde el panel Renderizado y que no quede ningún texto ilegible ni ningún fondo claro.
@@ -361,4 +359,4 @@ Antes de pasar a ITCSS, comprueba con tu propia aplicación que puedes hacer est
 4. **Recorrer el happy path con el tabulador** y ver el foco en cada elemento que se puede pulsar.
 5. **Buscar `#` y `px` en tu hoja de estilos** y que solo aparezcan en el bloque de primitivos, en los bordes de 1 píxel y en `--radius-full`.
 
-Si alguna falla, la causa casi siempre es la misma, un valor escrito a mano en lugar de un token. Encontrarlos ahora, con pocas pantallas maquetadas, es mucho más fácil que hacerlo más adelante, cuando reorganices todo el código en las carpetas de ITCSS.
+Si alguna falla, la causa casi siempre es la misma, un valor escrito a mano en lugar de un token. Encontrarlos ahora, con pocas pantallas maquetadas, es mucho más fácil que hacerlo más adelante, cuando tengas todos los componentes maquetados.
