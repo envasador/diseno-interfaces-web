@@ -89,6 +89,7 @@ nav:
     - 6. Multimedia y ecodiseño: orbitas/orbita3/06_multimedia_ecodiseno.md
     - 7. Del sistema de Figma a la hoja de estilos: orbitas/orbita3/07_del_sistema_al_codigo.md
     - "8. Componentes: el set mínimo": orbitas/orbita3/08_componentes.md
+    - "Anexo: JavaScript, React y Angular": orbitas/orbita3/anexo_frameworks.md
 
   - Órbita 4:
     - Resumen y entregables: orbitas/orbita4/index.md
