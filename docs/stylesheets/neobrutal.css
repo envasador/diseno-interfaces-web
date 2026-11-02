@@ -69,6 +69,26 @@ body,
   border-bottom-color: #555 !important;
 }
 
+/* Títulos de sección (h2): banda con borde izquierdo para separar cada tema */
+.md-typeset h2 {
+  color: #1F0318 !important;
+  margin-top: 3.5rem !important;
+  padding: 0.3rem 0 0.3rem 0.8rem !important;
+  border-left: 6px solid #E93456 !important;
+  background: #FFF0F7 !important;
+}
+
+/* El h2 que va justo debajo del título de la página no necesita tanto aire */
+.md-typeset h1 + h2 {
+  margin-top: 0.8rem !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #e0e0e0 !important;
+  border-left-color: #E93456 !important;
+  background: #1a1a1a !important;
+}
+
 /* ===== ENLACES ===== */
 .md-typeset a:not(.md-button),
 .md-typeset a:not(.md-button):link{

@@ -1,4 +1,4 @@
-mkdocs serve -f mkdocs.local.yml# Órbita 2 — Fundar el sistema visual
+# Órbita 2 — Fundar el sistema visual
 
 ## 3. Color: de la intuición al sistema
 
