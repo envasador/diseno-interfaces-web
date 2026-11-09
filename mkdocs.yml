@@ -81,6 +81,7 @@ nav:
 
   - Órbita 3:
     - Resumen: orbitas/orbita3/index.md
+    - "Actividad de clase: maqueta tu prototipo": orbitas/orbita3/sesiones/actividad_maqueta_prototipo.md
     - 1. Repaso de HTML5: orbitas/orbita3/01_html5.md
     - 2. Apuntes de CSS3: orbitas/orbita3/02_css3.md
     - 3. Apuntes de Sass: orbitas/orbita3/03_sass.md
