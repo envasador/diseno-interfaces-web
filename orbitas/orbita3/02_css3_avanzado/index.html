@@ -1,0 +1,2794 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material didáctico del módulo Diseño de Interfaces Web del CFGS Desarrollo de aplicaciones web del IES Rafael Alberti.">
+      
+      
+      
+        <link rel="canonical" href="https://envasador.github.io/diseno-interfaces-web/orbitas/orbita3/02_css3_avanzado/">
+      
+      
+        <link rel="prev" href="../02_css3_base/">
+      
+      
+        <link rel="next" href="../03_sass/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/sello-safael-alberti-imago-blanco.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>2.2 CSS3 avanzado - Diseño de Interfaces WEB.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/neobrutal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#22-css3-avanzado" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-header__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diseño de Interfaces WEB.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.2 CSS3 avanzado
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita1/" class="md-tabs__link">
+          
+  
+  
+  Órbita 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita2/" class="md-tabs__link">
+          
+  
+  
+  Órbita 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Órbita 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita4/" class="md-tabs__link">
+          
+  
+  
+  Órbita 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita5/" class="md-tabs__link">
+          
+  
+  
+  Órbita 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../orbita6/" class="md-tabs__link">
+          
+  
+  
+  Órbita 6
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Diseño de Interfaces WEB." class="md-nav__button md-logo" aria-label="Diseño de Interfaces WEB." data-md-component="logo">
+      
+  <img src="../../../assets/sello-safael-alberti-imago-blanco.svg" alt="logo">
+
+    </a>
+    Diseño de Interfaces WEB.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Órbita 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesiones/actividad_maqueta_prototipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actividad de clase: maqueta tu prototipo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_html5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Repaso de HTML5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_css3_base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 CSS3 base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 CSS3 avanzado
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 CSS3 avanzado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#selectores-para-los-estados-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores para los estados de la interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores para los estados de la interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-aria-como-selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de ARIA como selectores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :user-invalid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :has()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-y-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :is() y :where()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anidacion-con-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anidación con tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capas-de-cascada-y-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas de cascada y @scope
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Capas de cascada y @scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        @layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        @scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-reset-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El reset del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades-y-funciones-de-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades y funciones de cálculo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidades y funciones de cálculo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#de-los-pixeles-de-figma-a-rem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        De los píxeles de Figma a rem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dvh-y-ch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dvh y ch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min-max-y-clamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        min(), max() y clamp()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-moderno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color moderno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Color moderno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oklch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        oklch()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        color-mix()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contraste-en-los-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contraste en los controles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-como-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables como tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-logicas-y-tamanos-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades lógicas y tamaños del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades lógicas y tamaños del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-logicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades lógicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-tactiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos táctiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagenes-dentro-de-su-caja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imágenes dentro de su caja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipografía del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-propiedad-abreviada-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La propiedad abreviada font
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-propias-con-font-face" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes propias con @font-face
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        text-wrap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocultar-sin-esconder-a-los-lectores-de-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocultar sin esconder a los lectores de pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid-avanzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid avanzado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grid avanzado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#areas-con-nombre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Áreas con nombre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocupar-toda-la-fila" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocupar toda la fila
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgrid
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container queries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-queries-de-preferencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media queries de preferencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-oscuro-con-light-dark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo oscuro con light-dark()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transiciones-transformaciones-y-animaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones, transformaciones y animaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transiciones, transformaciones y animaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animaciones-con-keyframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animaciones con @keyframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respetar-a-quien-prefiere-menos-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respetar a quien prefiere menos movimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-impresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de impresión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-en-un-sistema-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS en un sistema de diseño
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar-el-css-moderno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar el CSS moderno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_sass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Apuntes de Sass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_itcss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Arquitectura ITCSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_bem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Nomenclatura BEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_multimedia_ecodiseno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Multimedia y ecodiseño
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_del_sistema_al_codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Del sistema de Figma a la hoja de estilos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Componentes: el set mínimo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anexo_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexo: JavaScript, React y Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 4
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 5
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../orbita6/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Órbita 6
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#selectores-para-los-estados-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selectores para los estados de la interfaz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selectores para los estados de la interfaz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-aria-como-selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de ARIA como selectores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :user-invalid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :has()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-y-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :is() y :where()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anidacion-con-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anidación con tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capas-de-cascada-y-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capas de cascada y @scope
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Capas de cascada y @scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        @layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        @scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-reset-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El reset del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidades-y-funciones-de-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades y funciones de cálculo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidades y funciones de cálculo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#de-los-pixeles-de-figma-a-rem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        De los píxeles de Figma a rem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dvh-y-ch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dvh y ch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min-max-y-clamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        min(), max() y clamp()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-moderno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color moderno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Color moderno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oklch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        oklch()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-mix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        color-mix()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contraste-en-los-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contraste en los controles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-como-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables como tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-logicas-y-tamanos-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades lógicas y tamaños del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades lógicas y tamaños del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-logicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades lógicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-tactiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos táctiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagenes-dentro-de-su-caja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imágenes dentro de su caja
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipografia-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipografía del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipografía del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-propiedad-abreviada-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La propiedad abreviada font
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-propias-con-font-face" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuentes propias con @font-face
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        text-wrap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocultar-sin-esconder-a-los-lectores-de-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocultar sin esconder a los lectores de pantalla
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid-avanzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid avanzado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grid avanzado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#areas-con-nombre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Áreas con nombre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocupar-toda-la-fila" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ocupar toda la fila
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgrid
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container queries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-queries-de-preferencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media queries de preferencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-oscuro-con-light-dark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo oscuro con light-dark()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transiciones-transformaciones-y-animaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones, transformaciones y animaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transiciones, transformaciones y animaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animaciones-con-keyframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animaciones con @keyframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respetar-a-quien-prefiere-menos-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respetar a quien prefiere menos movimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hoja-de-impresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoja de impresión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-en-un-sistema-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS en un sistema de diseño
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar-el-css-moderno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validar el CSS moderno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="22-css3-avanzado">2.2 CSS3 avanzado</h1>
+<p>Estos apuntes empiezan donde terminan los de <a href="../02_css3_base/">CSS3 base</a>. Allí tienes la sintaxis, los selectores, la cascada, el modelo de cajas, Flexbox, Grid, las media queries y un primer modo oscuro. Aquí tienes lo que se añade cuando el CSS deja de ser una página de ejercicios y pasa a ser la versión en código de un <strong>sistema de diseño</strong>: selectores que reaccionan al estado de la interfaz, capas de cascada, tipografía fluida, colores modernos, <em>container queries</em>, <code>light-dark()</code>, movimiento, impresión y las reglas que mantienen ordenada una hoja de estilos que tocan varias personas.</p>
+<p>Los ejemplos son del polideportivo, y los nombres de las variables son los tokens que creaste en Figma durante la Órbita 2 (<code>--color-primary</code>, <code>--space-4</code>...). En el <a href="../07_del_sistema_al_codigo/">apartado 7</a> verás cómo se pasa cada uno de Figma al código. Lo que no necesitas para empezar está en los recuadros plegables <strong>Para saber más</strong>.</p>
+<p><img alt="Las cuatro capas del modelo de cajas, con los tokens del sistema que controlan cada una" src="../img/orbita3_02_esquema_modelo_cajas.svg" /></p>
+<h2 id="selectores-para-los-estados-de-la-interfaz">Selectores para los estados de la interfaz</h2>
+<p>En CSS3 base viste los selectores uno a uno. En una aplicación, su trabajo principal es dibujar en código las <strong>variantes de estado</strong> que tienes en Figma: el botón pulsado, la hora elegida, el campo con error, la pantalla en la que estás.</p>
+<h3 id="atributos-de-aria-como-selectores">Atributos de ARIA como selectores</h3>
+<p>Los selectores de atributo sirven también para los atributos de ARIA, y eso tiene una ventaja enorme: la misma información sirve a la vez para la vista y para los lectores de pantalla.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">"page"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">          </span><span class="c">/* la pantalla en la que estás */</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">"true"</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">menu__icon</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">rotate</span><span class="p">:</span><span class="w"> </span><span class="mi">180</span><span class="kt">deg</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c">/* el menú desplegado */</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="o">[</span><span class="nt">aria-invalid</span><span class="o">=</span><span class="s2">"true"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Si el menú marca la pantalla actual con <code>aria-current="page"</code>, no hace falta una clase <code>.is-active</code> aparte: el CSS lee el mismo atributo que anuncia el lector de pantalla, y es imposible que la vista y la accesibilidad digan cosas distintas.</p>
+<h3 id="user-invalid"><code>:user-invalid</code></h3>
+<p><code>:invalid</code> se activa en cuanto un campo no cumple sus restricciones, así que un formulario recién abierto aparece entero en rojo. <strong><code>:user-invalid</code></strong> espera a que la persona haya tocado el campo, que es justo cuando tiene sentido avisar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">field__input</span><span class="p">:</span><span class="nd">user-invalid</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="p">;</span><span class="w">          </span><span class="c">/* el color nunca es la única pista */</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="has"><code>:has()</code></h3>
+<p><strong><code>:has()</code></strong> da estilo a un elemento según lo que tiene dentro. Durante años se le llamó «el selector padre», porque por primera vez CSS puede mirar hacia abajo para decidir el aspecto de un elemento de arriba.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">/* La píldora de hora cambia cuando su botón de opción está marcado */</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.</span><span class="nc">slot</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="nt">input</span><span class="p">:</span><span class="nd">checked</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-on-primary</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c">/* El bloque entero del campo se marca cuando el campo tiene un error */</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">.</span><span class="nc">field</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="p">.</span><span class="nc">field__input</span><span class="p">:</span><span class="nd">user-invalid</span><span class="o">)</span><span class="w"> </span><span class="p">.</span><span class="nc">field__error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c">/* Una tarjeta sin foto ocupa menos alto */</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="nt">img</span><span class="o">))</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">padding-block</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Con <code>:has()</code> desaparecen muchas clases que antes se añadían con JavaScript solo para cambiar el aspecto del contenedor.</p>
+<h3 id="is-y-where"><code>:is()</code> y <code>:where()</code></h3>
+<p><strong><code>:is()</code></strong> agrupa selectores para no repetir: <code>:is(header, footer) a</code> equivale a <code>header a, footer a</code>, y vale lo que el selector más específico que contiene. <strong><code>:where()</code></strong> hace lo mismo con especificidad cero, y por eso se usa en los resets y en los estilos por defecto que cualquier componente tiene que poder sobrescribir:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">:</span><span class="nd">where</span><span class="o">(</span><span class="nt">ul</span><span class="o">,</span><span class="w"> </span><span class="nt">ol</span><span class="o">)[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"list"</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">list-style</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h2 id="anidacion-con-tokens">Anidación con tokens</h2>
+<p>La anidación de CSS3 base se vuelve más útil cuando agrupas dentro de cada componente sus estados, sus variantes y sus media queries, todo con tokens:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="err">h3</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-heading-</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">            </span><span class="c">/* .card h3 */</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="o">&amp;</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--elevation-</span><span class="mi">2</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">    </span><span class="c">/* .card:hover */</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">width</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nt">48rem</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="nt">padding</span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--space-6</span><span class="o">);</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="err">}</span>
+</code></pre></div>
+<p>Recuerda el límite de dos niveles. En el <a href="../03_sass/">apartado de Sass</a> verás que la anidación de Sass permite además <strong>formar nombres de clase</strong> (<code>&amp;__title</code> produce <code>.card__title</code>), algo que la anidación de CSS no puede hacer y que encaja con BEM.</p>
+<h2 id="capas-de-cascada-y-scope">Capas de cascada y <code>@scope</code></h2>
+<p>En la cascada de CSS3 base había tres criterios: importancia, especificidad y orden. El CSS actual añade dos más, y el orden completo queda así:</p>
+<ol>
+<li><strong>Importancia.</strong> <code>!important</code> gana a las declaraciones normales.</li>
+<li><strong>Capas.</strong> Si usas <code>@layer</code>, gana la capa declarada después.</li>
+<li><strong>Especificidad.</strong> Gana el selector más específico.</li>
+<li><strong>Proximidad.</strong> Con <code>@scope</code>, gana la regla cuyo ámbito está más cerca del elemento.</li>
+<li><strong>Orden.</strong> Si todo empata, gana la regla escrita más abajo.</li>
+</ol>
+<h3 id="layer"><code>@layer</code></h3>
+<p>Las <strong>capas de cascada</strong> agrupan reglas y deciden de antemano cuál pesa más, sea cual sea la especificidad de sus selectores. Las capas se declaran en una línea, en orden de menor a mayor peso, y después se rellenan:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">settings</span><span class="o">,</span><span class="w"> </span><span class="nt">generic</span><span class="o">,</span><span class="w"> </span><span class="nt">elements</span><span class="o">,</span><span class="w"> </span><span class="nt">objects</span><span class="o">,</span><span class="w"> </span><span class="nt">components</span><span class="o">,</span><span class="w"> </span><span class="nt">utilities</span><span class="p">;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">generic</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="o">*,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">components</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">}</span>
+</code></pre></div>
+<p>Una regla de <code>components</code> gana a cualquier regla de <code>generic</code>, aunque la de <code>generic</code> tenga un selector más específico. Así se acaban las batallas de especificidad entre partes de la hoja de estilos. En tu proyecto, las capas son las de ITCSS, que verás en el <a href="../04_itcss/">apartado 4</a>. Los estilos que no están en ninguna capa ganan a todos los que sí lo están.</p>
+<h3 id="scope"><code>@scope</code></h3>
+<p><strong><code>@scope</code></strong> limita una regla a una zona del documento. Dentro de <code>@scope (.card)</code>, un selector como <code>img</code> solo afecta a las imágenes de las tarjetas, y si dos ámbitos compiten (una tarjeta dentro de un panel), gana el más cercano al elemento.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">@</span><span class="k">scope</span><span class="w"> </span><span class="o">(</span><span class="p">.</span><span class="nc">card</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">img</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">aspect-ratio</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w"> </span><span class="k">object-fit</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Es la forma nativa de conseguir lo que BEM consigue con los nombres de clase. En este módulo seguiremos usando BEM, pero conviene que lo reconozcas.</p>
+<h3 id="el-reset-del-proyecto">El reset del proyecto</h3>
+<p>El reset de CSS3 base se amplía un poco en una aplicación con formularios. La última regla hace que los campos y los botones usen la tipografía de la página en lugar de la del sistema:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">@</span><span class="k">layer</span><span class="w"> </span><span class="nt">generic</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="o">*,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="o">*</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">img</span><span class="o">,</span><span class="w"> </span><span class="nt">picture</span><span class="o">,</span><span class="w"> </span><span class="nt">video</span><span class="o">,</span><span class="w"> </span><span class="nt">svg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span><span class="w"> </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">input</span><span class="o">,</span><span class="w"> </span><span class="nt">button</span><span class="o">,</span><span class="w"> </span><span class="nt">textarea</span><span class="o">,</span><span class="w"> </span><span class="nt">select</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="kc">inherit</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="unidades-y-funciones-de-calculo">Unidades y funciones de cálculo</h2>
+<h3 id="de-los-pixeles-de-figma-a-rem">De los píxeles de Figma a <code>rem</code></h3>
+<p>Figma trabaja en píxeles, y tu código en <code>rem</code>. Para pasar de uno a otro, <strong>divide entre 16</strong>: 24 píxeles son <code>1.5rem</code>, 44 píxeles son <code>2.75rem</code>. Los tamaños de letra, los espaciados y también los <strong>breakpoints</strong> van en <code>rem</code>, para que todo responda al tamaño de letra que la persona ha elegido. Si Manuel sube la letra de su navegador al 200 %, todo lo que esté en <code>rem</code> crece con él (RA5-a).</p>
+<h3 id="dvh-y-ch"><code>dvh</code> y <code>ch</code></h3>
+<p>En el móvil, <code>100vh</code> mide más que la pantalla visible, porque no descuenta la barra del navegador. <strong><code>dvh</code></strong> (<em>dynamic viewport height</em>) sí la descuenta, y es la unidad correcta para una pantalla completa: <code>min-height: 100dvh</code>. <strong><code>ch</code></strong> es el ancho de un carácter, y <code>max-width: 65ch</code> deja líneas de unos 65 caracteres, cómodas de leer.</p>
+<h3 id="min-max-y-clamp"><code>min()</code>, <code>max()</code> y <code>clamp()</code></h3>
+<p>Además de <code>calc()</code>, CSS tiene tres funciones que eligen un valor según el espacio disponible. <strong><code>min()</code></strong> elige el menor de varios valores y <strong><code>max()</code></strong> el mayor:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">.</span><span class="nc">page</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="kt">rem</span><span class="p">);</span><span class="w">   </span><span class="c">/* todo el ancho con 1rem de margen, nunca más de 75rem */</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="k">margin-inline</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong><code>clamp()</code></strong> recibe un mínimo, un valor ideal y un máximo, y es la base de la <strong>tipografía fluida</strong>: un tamaño que crece con la ventana sin salirse de unos límites, sin una sola media query.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">.</span><span class="nc">welcome__title</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="c">/* 32 px en el móvil, 40 px en escritorio, y entre medias crece con la ventana */</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="mi">2</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="kt">vw</span><span class="p">,</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">);</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>Fíjate en que el valor ideal mezcla <code>rem</code> y <code>vw</code>. Si fuera solo <code>vw</code>, el título no crecería cuando la persona sube el tamaño de letra.</p>
+<h2 id="color-moderno">Color moderno</h2>
+<h3 id="oklch"><code>oklch()</code></h3>
+<p><strong><code>oklch()</code></strong> describe un color con luminosidad, croma y tono en un espacio de color diseñado para que dos colores con la misma luminosidad <strong>se perciban igual de claros</strong>, algo que <code>hsl()</code> no garantiza: en <code>hsl()</code>, un amarillo y un azul con la misma luminosidad parecen de claridad muy distinta. Por eso es el formato que se recomienda hoy para generar las escalas de un sistema.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nv">--blue-500</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mi">52</span><span class="kt">%</span><span class="w"> </span><span class="mf">0.15</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="nv">--blue-700</span><span class="p">:</span><span class="w"> </span><span class="nf">oklch</span><span class="p">(</span><span class="mi">40</span><span class="kt">%</span><span class="w"> </span><span class="mf">0.13</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span><span class="w">   </span><span class="c">/* el mismo tono, más oscuro */</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="color-mix"><code>color-mix()</code></h3>
+<p><strong><code>color-mix()</code></strong> mezcla dos colores en la proporción que le digas, y es muy práctico para los estados, porque no obliga a crear un token nuevo para cada uno:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">.</span><span class="nc">button</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">color-mix</span><span class="p">(</span><span class="n">in</span><span class="w"> </span><span class="n">oklch</span><span class="p">,</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">),</span><span class="w"> </span><span class="kc">black</span><span class="w"> </span><span class="mi">15</span><span class="kt">%</span><span class="p">);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Lo usarás en el botón del <a href="../08_componentes/">apartado 8</a>.</p>
+<h3 id="contraste-en-los-controles">Contraste en los controles</h3>
+<p>En CSS3 base viste el contraste del texto (4,5:1, y 3:1 para el texto grande). Hay un tercer valor que afecta a los componentes: los <strong>bordes de los controles</strong> (un campo de texto, una casilla) y los indicadores de foco necesitan al menos <strong>3:1</strong> con el fondo. Un campo con un borde gris clarito sobre blanco se ve bonito en Figma y es invisible para mucha gente. Comprueba todas las parejas <strong>en los dos modos</strong>.</p>
+<h2 id="variables-como-tokens">Variables como tokens</h2>
+<p>Las variables de CSS3 base son, en tu proyecto, la herramienta con la que <strong>los tokens llegan al código</strong>. Se organizan en dos niveles, igual que en Figma: los <strong>primitivos</strong> guardan los valores (<code>--blue-500</code>) y los <strong>semánticos</strong> dicen para qué se usa cada uno (<code>--color-primary: var(--blue-500)</code>). Los componentes solo usan tokens semánticos, y por eso un cambio de marca o el modo oscuro se resuelven tocando unas pocas líneas.</p>
+<p>Los componentes pueden tener además <strong>variables locales</strong> para sus variantes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">.</span><span class="nc">badge</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--badge-color</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--badge-color</span><span class="p">);</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">}</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">.</span><span class="nc">badge--free</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-success</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="p">.</span><span class="nc">badge--full</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">--badge-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-error</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<details class="info">
+<summary>Para saber más: <code>@property</code></summary>
+<p>Para el navegador, una propiedad personalizada normal es un texto sin tipo, y por eso no sabe hacer una transición entre dos valores. Con la regla <code>@property</code> puedes registrarla con su tipo (un color, una longitud, un ángulo...), y entonces se puede animar. No la necesitas para tus tokens.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">@</span><span class="k">property</span><span class="w"> </span><span class="nt">--progress</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">syntax</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;percentage&gt;"</span><span class="o">;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nt">inherits</span><span class="o">:</span><span class="w"> </span><span class="nt">false</span><span class="o">;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="nt">initial-value</span><span class="o">:</span><span class="w"> </span><span class="nt">0</span><span class="o">%;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">}</span>
+</code></pre></div>
+</details>
+<h2 id="propiedades-logicas-y-tamanos-del-sistema">Propiedades lógicas y tamaños del sistema</h2>
+<h3 id="propiedades-logicas">Propiedades lógicas</h3>
+<p>En este módulo usamos las <strong>propiedades lógicas</strong>, que hablan de «línea» y «bloque» en lugar de «izquierda» y «arriba». Funcionan igual en castellano y se adaptan solas a los idiomas que se escriben de derecha a izquierda:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad física</th>
+<th>Propiedad lógica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>padding-left</code> y <code>padding-right</code></td>
+<td><code>padding-inline</code></td>
+</tr>
+<tr>
+<td><code>margin-top</code> y <code>margin-bottom</code></td>
+<td><code>margin-block</code></td>
+</tr>
+<tr>
+<td><code>margin-left: auto; margin-right: auto</code></td>
+<td><code>margin-inline: auto</code></td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td><code>inline-size</code></td>
+</tr>
+<tr>
+<td><code>text-align: left</code></td>
+<td><code>text-align: start</code></td>
+</tr>
+</tbody>
+</table>
+<p>Un marco con Auto layout en Figma es exactamente esto: un relleno en horizontal, uno en vertical y un espacio entre elementos, que en CSS son <code>padding-inline</code>, <code>padding-block</code> y <code>gap</code>.</p>
+<h3 id="objetivos-tactiles">Objetivos táctiles</h3>
+<p>En el móvil, todo lo que se pulsa tiene que medir al menos <strong>44 × 44 píxeles</strong>, que en CSS es <code>min-block-size: 2.75rem</code> (o <code>min-height: 2.75rem</code>). Usa <code>min-</code> y no la altura fija, para que el botón crezca si la letra es más grande.</p>
+<h3 id="imagenes-dentro-de-su-caja">Imágenes dentro de su caja</h3>
+<p><strong><code>aspect-ratio</code></strong> fija la proporción de una caja (<code>16 / 9</code>, <code>1</code>), de modo que basta con darle el ancho, y <strong><code>object-fit: cover</code></strong> hace que una imagen rellene esa caja recortando lo que sobre, sin deformarse. Juntas resuelven las fotos de las tarjetas de pista, que llegan con tamaños distintos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">.</span><span class="nc">card__image</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="k">aspect-ratio</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="k">object-fit</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">)</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--radius-md</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="tipografia-del-sistema">Tipografía del sistema</h2>
+<h3 id="la-propiedad-abreviada-font">La propiedad abreviada <code>font</code></h3>
+<p>Los estilos de texto de Figma (tamaño, peso, altura de línea y familia) caben en una sola propiedad, <strong><code>font</code></strong>, y por eso cada estilo de texto es un único token:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nv">--font-label</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="w"> </span><span class="mf">0.875</span><span class="kt">rem</span><span class="o">/</span><span class="mf">1.43</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-family-base</span><span class="p">);</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">}</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--font-label</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>El orden es peso, tamaño, una barra, altura de línea y familia. El tamaño y la familia son obligatorios.</p>
+<h3 id="fuentes-propias-con-font-face">Fuentes propias con <code>@font-face</code></h3>
+<p>Google Fonts es lo más cómodo, pero cada visita hace una petición a otro servidor. Alojar los ficheros en tu proyecto y declararlos con <strong><code>@font-face</code></strong> es más rápido y más respetuoso con la privacidad. El formato es <strong>WOFF2</strong>, y <code>font-display: swap</code> muestra el texto con una fuente de reserva mientras la tuya se descarga, en lugar de dejarlo invisible:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">@</span><span class="k">font-face</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s2">"Atkinson Hyperlegible"</span><span class="o">;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="nt">src</span><span class="o">:</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">"../fonts/atkinson-regular.woff2"</span><span class="o">)</span><span class="w"> </span><span class="nt">format</span><span class="o">(</span><span class="s2">"woff2"</span><span class="o">);</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nt">font-weight</span><span class="o">:</span><span class="w"> </span><span class="nt">400</span><span class="o">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="nt">font-display</span><span class="o">:</span><span class="w"> </span><span class="nt">swap</span><span class="o">;</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>Las <strong>WSG</strong> recomiendan limitar las familias y los pesos: cada uno es un fichero más que descarga el móvil. Dos familias y tres pesos son más que suficientes.</p>
+<h3 id="text-wrap"><code>text-wrap</code></h3>
+<p><strong><code>text-wrap: balance</code></strong> reparte un título en líneas de longitud parecida, para que no quede una palabra sola en la última. <strong><code>text-wrap: pretty</code></strong> hace algo parecido en los párrafos, evitando que la última línea tenga una sola palabra. Ponlos en tus estilos base:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">h1</span><span class="o">,</span><span class="w"> </span><span class="nt">h2</span><span class="o">,</span><span class="w"> </span><span class="nt">h3</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">text-wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">balance</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">text-wrap</span><span class="p">:</span><span class="w"> </span><span class="n">pretty</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h2 id="ocultar-sin-esconder-a-los-lectores-de-pantalla">Ocultar sin esconder a los lectores de pantalla</h2>
+<p><code>display: none</code> y <code>visibility: hidden</code> ocultan el contenido a todo el mundo, también a los lectores de pantalla. Cuando quieres ocultar algo a la vista y que un lector de pantalla sí lo lea (el texto de un botón que solo muestra un icono, una etiqueta que el diseño no dibuja), se usa una utilidad que en ITCSS se llama <code>.u-visually-hidden</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">.</span><span class="nc">u-visually-hidden</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="k">inline-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="k">block-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span><span class="k">clip-path</span><span class="p">:</span><span class="w"> </span><span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">);</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span><span class="k">white-space</span><span class="p">:</span><span class="w"> </span><span class="kc">nowrap</span><span class="p">;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"icon-button"</span><span class="p">&gt;</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"u-visually-hidden"</span><span class="p">&gt;</span>Cerrar<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="grid-avanzado">Grid avanzado</h2>
+<h3 id="areas-con-nombre">Áreas con nombre</h3>
+<p>Con <strong><code>grid-template-areas</code></strong> dibujas la estructura de una pantalla como un mapa de texto: cada cadena es una fila y cada palabra, una columna. Después colocas cada zona con <code>grid-area</code>. Es la forma más legible de maquetar una pantalla, y la que mejor se entiende cuando la abres meses después.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">.</span><span class="nc">booking</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span><span class="k">grid-template-areas</span><span class="p">:</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="s2">"main"</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="s2">"summary"</span><span class="p">;</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">  </span><span class="err">@media</span><span class="w"> </span><span class="err">(width</span><span class="w"> </span><span class="err">&gt;=</span><span class="w"> </span><span class="err">64rem)</span><span class="w"> </span><span class="err">{</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">20</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span><span class="k">grid-template-areas</span><span class="p">:</span><span class="w"> </span><span class="s2">"main summary"</span><span class="p">;</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="err">}</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="p">.</span><span class="nc">booking__main</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="p">.</span><span class="nc">booking__summary</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">summary</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>En el móvil, el resumen de la reserva va debajo; en escritorio, a la derecha. El HTML no cambia, solo el mapa.</p>
+<h3 id="ocupar-toda-la-fila">Ocupar toda la fila</h3>
+<p>Las líneas de la cuadrícula se numeran desde 1, y los números negativos cuentan desde el final. Por eso <code>grid-column: 1 / -1</code> hace que un elemento ocupe toda la fila, tenga la cuadrícula las columnas que tenga:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">.</span><span class="nc">layout</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span><span class="w">   </span><span class="c">/* las 4 columnas de la retícula del móvil */</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">}</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="p">.</span><span class="nc">layout__full</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-column</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h3 id="subgrid"><code>subgrid</code></h3>
+<p>Cuando varias tarjetas están en fila, cada una calcula sus alturas por su cuenta, y los títulos o los botones quedan a alturas distintas. Con <strong><code>subgrid</code></strong>, un hijo usa las filas de la cuadrícula de su padre, y todas las tarjetas comparten las mismas:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">.</span><span class="nc">court-list</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="nv">-fit</span><span class="p">,</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">16</span><span class="kt">rem</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">4</span><span class="p">);</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="p">}</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">  </span><span class="k">grid-row</span><span class="p">:</span><span class="w"> </span><span class="n">span</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">                </span><span class="c">/* foto, texto y botón */</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">  </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="n">subgrid</span><span class="p">;</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="container-queries">Container queries</h2>
+<p>Una media query pregunta por el ancho de la <strong>ventana</strong>, pero un componente puede estar en sitios de distinto ancho con la misma ventana: la tarjeta de pista aparece en el listado, ancha, y en el resumen lateral, estrecha. Las <strong>container queries</strong> preguntan por el ancho del <strong>contenedor</strong>.</p>
+<p>Primero declaras el contenedor con <code>container-type: inline-size</code>, y después sus descendientes se adaptan con <code>@container</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">.</span><span class="nc">booking__summary</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">container-type</span><span class="p">:</span><span class="w"> </span><span class="kc">inline</span><span class="o">-</span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--space-</span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="err">@container</span><span class="w"> </span><span class="err">(width</span><span class="w"> </span><span class="err">&gt;=</span><span class="w"> </span><span class="err">30rem)</span><span class="w"> </span><span class="err">{</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">rem</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w">   </span><span class="c">/* foto a la izquierda si hay sitio */</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="err">}</span>
+</code></pre></div>
+<p>La regla práctica: <strong>media queries para la estructura de la pantalla y container queries para los componentes</strong> que se reutilizan en sitios distintos. Un componente que se adapta a su contenedor funciona igual en cualquier pantalla donde lo pongas, que es lo que se espera de un componente de un sistema.</p>
+<details class="info">
+<summary>Para saber más: unidades de contenedor</summary>
+<p>Dentro de un contenedor puedes usar <code>cqi</code>, el 1 % del ancho del contenedor. <code>font-size: clamp(1rem, 4cqi, 1.5rem)</code> hace que el título de una tarjeta crezca con la tarjeta, no con la ventana.</p>
+</details>
+<h2 id="media-queries-de-preferencias">Media queries de preferencias</h2>
+<p>Además del ancho, las media queries pueden preguntar por el dispositivo y por las <strong>preferencias</strong> que la persona ha elegido en su sistema. Respetarlas forma parte de la accesibilidad.</p>
+<table>
+<thead>
+<tr>
+<th>Media query</th>
+<th>Pregunta</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(hover: hover)</code></td>
+<td>Si hay un puntero que pasa por encima (un ratón)</td>
+<td>Efectos de <code>:hover</code> solo donde tienen sentido</td>
+</tr>
+<tr>
+<td><code>(pointer: coarse)</code></td>
+<td>Si el puntero es poco preciso (un dedo)</td>
+<td>Objetivos táctiles más grandes</td>
+</tr>
+<tr>
+<td><code>(prefers-color-scheme: dark)</code></td>
+<td>Si prefiere el modo oscuro</td>
+<td>Modo oscuro clásico</td>
+</tr>
+<tr>
+<td><code>(prefers-reduced-motion: reduce)</code></td>
+<td>Si prefiere menos movimiento</td>
+<td>Quitar o suavizar animaciones</td>
+</tr>
+<tr>
+<td><code>(prefers-contrast: more)</code></td>
+<td>Si pide más contraste</td>
+<td>Bordes más gruesos, colores más fuertes</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">hover</span><span class="o">:</span><span class="w"> </span><span class="nt">hover</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--elevation-</span><span class="mi">2</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>En una pantalla táctil, el <code>:hover</code> se queda «pegado» después de tocar. Con <code>(hover: hover)</code> el efecto solo aparece con ratón.</p>
+<h2 id="modo-oscuro-con-light-dark">Modo oscuro con <code>light-dark()</code></h2>
+<p>En CSS3 base hiciste el modo oscuro redefiniendo las variables dentro de <code>@media (prefers-color-scheme: dark)</code>. Funciona, pero cada token queda repartido en dos sitios de la hoja de estilos. La función <strong><code>light-dark()</code></strong> recibe los dos valores en la misma línea: el primero para el modo claro y el segundo para el oscuro.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="w"> </span><span class="n">dark</span><span class="p">;</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="nv">--color-surface</span><span class="p">:</span><span class="w">    </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">));</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">  </span><span class="nv">--color-on-surface</span><span class="p">:</span><span class="w"> </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">900</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--gray-</span><span class="mi">50</span><span class="p">));</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">  </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w">    </span><span class="nf">light-dark</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--blue-</span><span class="mi">600</span><span class="p">),</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--blue-</span><span class="mi">300</span><span class="p">));</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>light-dark()</code> <strong>solo funciona si has declarado <code>color-scheme</code></strong>. Cada token tiene sus dos valores juntos, igual que en la tabla de modos de las variables de Figma, y comprobar que ninguno se ha quedado sin su versión oscura es tan fácil como leer la lista.</p>
+<p>Sobre fondos oscuros las sombras apenas se ven, así que las superficies elevadas se distinguen mejor con un fondo algo más claro que el de la página. En las pantallas OLED un fondo oscuro gasta menos batería, y por eso las <strong>WSG</strong> recomiendan ofrecer este modo.</p>
+<details class="info">
+<summary>Para saber más: un selector de tema</summary>
+<p>Si quieres que la persona pueda elegir el modo además de seguir al sistema, basta con cambiar <code>color-scheme</code> en el <code>&lt;html&gt;</code>. Con <code>:root[data-theme="dark"] { color-scheme: dark; }</code> y un botón que cambie ese atributo con JavaScript, <code>light-dark()</code> hace el resto.</p>
+</details>
+<h2 id="transiciones-transformaciones-y-animaciones">Transiciones, transformaciones y animaciones</h2>
+<p>El movimiento, bien usado, ayuda a entender lo que pasa: la píldora que cambia de color poco a poco confirma que la hora se ha elegido, y un panel que se desliza indica de dónde viene. Mal usado, distrae, gasta batería y puede marear.</p>
+<h3 id="transiciones">Transiciones</h3>
+<p>Cuando una propiedad cambia de valor (al pasar a <code>:hover</code>, al marcar una casilla), el cambio es instantáneo. Una <strong>transición</strong> hace que ocurra de forma gradual. La propiedad <code>transition</code> recibe qué propiedad animar, la duración, la curva de velocidad y, si hace falta, un retardo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-primary</span><span class="p">);</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">background-color</span><span class="w"> </span><span class="mi">150</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease</span><span class="p">,</span><span class="w"> </span><span class="k">scale</span><span class="w"> </span><span class="mi">150</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">  </span><span class="err">&amp;:hover</span><span class="w">  </span><span class="err">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--button-bg-hover</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">  </span><span class="o">&amp;</span><span class="p">:</span><span class="nd">active</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">scale</span><span class="p">:</span><span class="w"> </span><span class="mf">0.97</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="err">}</span>
+</code></pre></div>
+<p>Tres reglas. La transición se declara en el <strong>estado normal</strong>, para que funcione al entrar y al salir. Las duraciones de una interfaz son cortas, <strong>entre 150 y 300 milisegundos</strong>; más largas, la aplicación parece lenta. Y evita <code>transition: all</code>, que anima propiedades que no esperabas.</p>
+<p>Las duraciones y las curvas también pueden ser tokens (<code>--duration-fast: 150ms</code>), para que todo el sistema se mueva al mismo ritmo.</p>
+<h3 id="transformaciones">Transformaciones</h3>
+<p>Las <strong>transformaciones</strong> mueven, escalan o giran una caja <strong>sin afectar al resto de la página</strong>: las demás cajas se comportan como si siguiera en su sitio. Por eso, junto con <code>opacity</code>, son las propiedades más eficientes para animar. Hoy tienes tres propiedades independientes:</p>
+<ul>
+<li><strong><code>translate</code></strong> desplaza la caja: <code>translate: 0 -4px</code> la sube 4 píxeles.</li>
+<li><strong><code>scale</code></strong> la escala: <code>scale: 1.05</code> la agranda un 5 %.</li>
+<li><strong><code>rotate</code></strong> la gira: <code>rotate: 180deg</code>.</li>
+</ul>
+<p>Verás también la propiedad clásica <code>transform</code>, que las reúne en un solo valor (<code>transform: translateY(-4px) scale(1.05)</code>). Funciona igual, pero si en un estado cambias solo una de ellas, tienes que volver a escribirlas todas.</p>
+<h3 id="animaciones-con-keyframes">Animaciones con <code>@keyframes</code></h3>
+<p>Una transición va de un estado a otro cuando algo cambia. Una <strong>animación</strong> puede tener varios pasos, repetirse y empezar sola. Se define en dos partes: un bloque <strong><code>@keyframes</code></strong> con nombre, que describe los estados en porcentajes del tiempo (o con <code>from</code> y <code>to</code>), y la propiedad <strong><code>animation</code></strong> en el elemento.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">appear</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">  </span><span class="nt">from</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">translate</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">  </span><span class="nt">to</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="k">translate</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="p">}</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="p">.</span><span class="nc">toast</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">  </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="mi">300</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease-out</span><span class="p">;</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>animation-name</code></td>
+<td>El nombre del <code>@keyframes</code></td>
+</tr>
+<tr>
+<td><code>animation-duration</code></td>
+<td>Lo que dura un ciclo</td>
+</tr>
+<tr>
+<td><code>animation-timing-function</code></td>
+<td>La curva de velocidad</td>
+</tr>
+<tr>
+<td><code>animation-delay</code></td>
+<td>El retardo antes de empezar</td>
+</tr>
+<tr>
+<td><code>animation-iteration-count</code></td>
+<td>El número de repeticiones, o <code>infinite</code></td>
+</tr>
+<tr>
+<td><code>animation-direction</code></td>
+<td><code>normal</code>, <code>reverse</code> o <code>alternate</code> (ida y vuelta)</td>
+</tr>
+<tr>
+<td><code>animation-fill-mode</code></td>
+<td><code>forwards</code> conserva el estado final al terminar</td>
+</tr>
+</tbody>
+</table>
+<h3 id="respetar-a-quien-prefiere-menos-movimiento">Respetar a quien prefiere menos movimiento</h3>
+<p>Para algunas personas, sobre todo con trastornos vestibulares, las animaciones grandes provocan mareos reales. Los sistemas operativos tienen una opción para <strong>reducir el movimiento</strong>, y CSS la expone con <code>prefers-reduced-motion</code>. La forma más limpia de respetarla es escribir las animaciones solo para quien <strong>no</strong> la ha activado:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-reduced-motion</span><span class="o">:</span><span class="w"> </span><span class="nt">no-preference</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">  </span><span class="p">.</span><span class="nc">toast</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="mi">300</span><span class="kt">ms</span><span class="w"> </span><span class="kc">ease-out</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Las <strong>WSG</strong> piden usar las animaciones con moderación. En el polideportivo solo se mueve algo cuando responde a lo que ha hecho la persona.</p>
+<details class="info">
+<summary>Para saber más: transiciones entre vistas</summary>
+<p>La API de <strong>View Transitions</strong> anima el paso de una pantalla a otra (por ejemplo, la foto de la pista que crece desde el listado hasta la ficha). Entre páginas de un mismo sitio basta con <code>@view-transition { navigation: auto; }</code> en el CSS de las dos páginas. Comprueba en Baseline su disponibilidad antes de usarla.</p>
+</details>
+<h2 id="hoja-de-impresion">Hoja de impresión</h2>
+<p>Las reglas dentro de <strong><code>@media print</code></strong> solo se aplican al imprimir o al guardar en PDF (RA2-d). Sirven para que, por ejemplo, el justificante de una reserva salga limpio, sin menús, botones ni fondos que gastan tinta. Las <strong>WSG</strong> las incluyen entre sus criterios. Puedes probarla desde el panel <strong>Renderizado</strong> del inspector.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">print</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">  </span><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">  </span><span class="nt">nav</span><span class="o">,</span><span class="w"> </span><span class="nt">footer</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">button</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="w">  </span><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">"http"</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">" ("</span><span class="w"> </span><span class="nb">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span><span class="w"> </span><span class="s2">")"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">  </span><span class="c">/* la dirección de los enlaces, en papel */</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="css-en-un-sistema-de-diseno">CSS en un sistema de diseño</h2>
+<p>La accesibilidad y las buenas prácticas de CSS3 base siguen valiendo. En un sistema de diseño se añaden unas cuantas reglas más, que existen para que el código se pueda mantener cuando lo toca más de una persona:</p>
+<ul>
+<li><strong>Ningún valor suelto.</strong> Colores, tamaños de letra, espacios, radios, sombras y duraciones salen de un token. Si escribes <code>#1A5FB4</code> o <code>16px</code> en un componente, falta un token.</li>
+<li><strong>Solo tokens semánticos en los componentes.</strong> <code>var(--color-primary)</code>, nunca <code>var(--blue-500)</code>.</li>
+<li><strong>Estilo con una sola clase</strong>, con nombres BEM, y especificidad (0, 1, 0) en casi todas las reglas.</li>
+<li><strong>Capas en el orden de ITCSS</strong>, para que la especificidad deje de ser un problema.</li>
+<li><strong>Estados con pseudoclases y atributos de ARIA</strong>, y el color nunca como única pista.</li>
+<li><strong>El foco del teclado se ve siempre</strong>, con <code>:focus-visible</code> y un contraste de 3:1.</li>
+<li><strong>Media queries para la pantalla, container queries para los componentes.</strong></li>
+<li><strong>El movimiento se puede desactivar</strong>, y la página aguanta la letra al 200 %.</li>
+</ul>
+<p>En la Órbita 4 comprobarás todo esto con herramientas.</p>
+<h2 id="validar-el-css-moderno">Validar el CSS moderno</h2>
+<p>El <a href="https://jigsaw.w3.org/css-validator/">validador del W3C</a> va siempre un poco por detrás del lenguaje, y puede marcar como error funciones recientes como <code>light-dark()</code>, <code>@layer</code>, <code>@scope</code> o <code>:user-invalid</code> (RA2-h). Si te ocurre, compruébala en <a href="https://web.dev/baseline">Baseline</a>: si está disponible en los navegadores principales, déjala y explícalo en tu documentación. Ten en cuenta que lo que se valida es el <code>main.css</code> que genera Sass, que es el que llega al navegador.</p>
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li><a href="https://lenguajecss.com/css/">CSS en español, de Manz (lenguajecss.com)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/CSS">Documentación de CSS (MDN Web Docs)</a></li>
+<li><a href="https://web.dev/learn/css?hl=es">Aprende CSS (web.dev)</a></li>
+<li><a href="https://web.dev/baseline">Baseline: qué funciones web están disponibles en todos los navegadores</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/">Validador de CSS del W3C</a></li>
+<li><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines (W3C)</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.prune", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
