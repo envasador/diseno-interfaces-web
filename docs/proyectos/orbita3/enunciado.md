@@ -58,11 +58,11 @@ Reúnelos en `componentes.html`, con todas sus variantes y estados en los dos mo
 
 Monta las pantallas solo con tus objetos y componentes, usando Flexbox y Grid. Si te falta algo, créalo como componente o como variante (y añádelo también en Figma).
 
-Maqueta **mobile first**, con los breakpoints en `rem` y elegidos según los dispositivos de tus personas. Usa al menos una *container query* en un componente que aparezca en sitios de distinto ancho.
+La aplicación tiene que adaptarse a los anchos de pantalla de tus personas, con los breakpoints en `rem`. Usa al menos una *container query* en un componente que aparezca en sitios de distinto ancho.
 
 ### Paso 7. Pon las imágenes
 
-Sustituye los marcadores de los mockups por las imágenes reales: WebP para las fotos y SVG para los iconos, reducidas al tamaño de su hueco, con `width`, `height`, `alt` y `object-fit`. Usa imágenes propias, de bancos libres o con licencia abierta. La optimización, las versiones para cada ancho y las licencias se trabajan en la Órbita 4.
+Sustituye los marcadores de los mockups por las imágenes reales, con el formato y el tamaño adecuados. Usa imágenes propias, de bancos libres o con licencia abierta. La optimización, las versiones para cada ancho y las licencias se trabajan en la Órbita 4.
 
 ### Paso 8. Modo oscuro y movimiento
 
@@ -141,7 +141,7 @@ Cada fila es la parte de rúbrica de su CE, que se completa con una prueba teór
 | **RA2-c. Estilos globales** | Estilos en línea o dentro de cada HTML. | Una hoja externa sin organizar, o tokens que no coinciden con las variables de Figma. | Tokens y capas de ITCSS presentes, con reglas en la capa equivocada o tokens con nombres distintos de los de Figma. | Hoja externa organizada en las capas de ITCSS, con los tokens en Settings y los mismos nombres que en Figma, y la prueba del color principal superada. | Las capas se garantizan con `@layer`, y los componentes usan tokens de componente para sus variantes. |
 | **RA2-d. Hojas alternativas** | Solo hay modo claro. | El modo oscuro está incompleto o deja textos ilegibles. | Modo oscuro completo, con algún color sin ajustar. | Modo oscuro con `light-dark()` comprobado en todas las pantallas. | Además, la aplicación respeta `prefers-reduced-motion` y los colores del modo oscuro están ajustados (superficies elevadas más claras, sin negro puro). |
 | **RA2-e. Redefinir estilos** | No hay reset ni estados. | Reset copiado sin usar, o componentes sin estados. | Reset y estados principales (hover y foco), con estados que faltan o `!important` para ganar a otras reglas. | Reset, estilos de las etiquetas y todos los estados de Figma en cada componente, con los modificadores de BEM y sin `!important`. | Los estados se escriben con pseudoclases y atributos de ARIA, sin clases de estado que sobren. |
-| **RA2-f. Propiedades de los elementos** | La maquetación está hecha con posiciones absolutas o con alturas fijas. | Las pantallas se rompen al cambiar el ancho o el tamaño de la letra. | Flexbox y Grid bien usados en general, con alturas fijas o márgenes donde iría `gap`. | Cada pantalla se construye con Flexbox y Grid, sin alturas fijas, mobile first, con breakpoints en `rem` y al menos una container query. | En la auditoría oral sabes decir de qué token sale cada valor de cualquier componente y por qué cada breakpoint está donde está. |
+| **RA2-f. Propiedades de los elementos** | La maquetación está hecha con posiciones absolutas o con alturas fijas. | Las pantallas se rompen al cambiar el ancho o el tamaño de la letra. | Flexbox y Grid bien usados en general, con alturas fijas o márgenes donde iría `gap`. | Cada pantalla se construye con Flexbox y Grid, sin alturas fijas, adaptada a los anchos de tus personas, con breakpoints en `rem` y al menos una container query. | En la auditoría oral sabes decir de qué token sale cada valor de cualquier componente y por qué cada breakpoint está donde está. |
 | **RA2-g. Clases de estilos** | No hay clases o se da estilo con ids. | Nombres sin metodología, o selectores largos que dependen de la estructura del HTML. | BEM con inconsistencias o algún selector anidado de más. | Todos los componentes con BEM coherente, selectores de una sola clase y un fichero por componente. | Los nombres de los componentes, sus partes y sus variantes coinciden con los de Figma. |
 
 ### La auditoría oral
