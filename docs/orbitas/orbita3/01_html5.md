@@ -117,7 +117,7 @@ Una imagen lleva siempre estos atributos:
 - **`width` y `height`** dicen la proporción, para que el navegador reserve el hueco y la página no salte al cargar.
 - **`loading="lazy"`** hace que solo se descargue cuando va a aparecer en pantalla, y ahorra datos a Lucía, como piden las **WSG**. La imagen principal de la pantalla no lo lleva.
 
-Los iconos que acompañan a un texto que dice lo mismo son decorativos y llevan `aria-hidden="true"`. Cómo elegir el formato y el tamaño de cada imagen lo verás en el apartado de multimedia.
+Los iconos que acompañan a un texto que dice lo mismo son decorativos y llevan `aria-hidden="true"`. Cómo elegir el formato y el tamaño de cada imagen lo verás en la Órbita 4.
 
 ## Formularios
 

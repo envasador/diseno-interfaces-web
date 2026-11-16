@@ -81,6 +81,7 @@ nav:
 
   - Órbita 3:
     - Resumen: orbitas/orbita3/index.md
+    - "Proyecto: Maquetar para dar forma": proyectos/orbita3/enunciado.md
     - "Actividad de clase: maqueta tu prototipo": orbitas/orbita3/sesiones/actividad_maqueta_prototipo.md
     - 1. Repaso de HTML5: orbitas/orbita3/01_html5.md
     - 2.1 CSS3 base: orbitas/orbita3/02_css3_base.md
@@ -88,9 +89,8 @@ nav:
     - 3. Apuntes de Sass: orbitas/orbita3/03_sass.md
     - 4. Arquitectura ITCSS: orbitas/orbita3/04_itcss.md
     - 5. Nomenclatura BEM: orbitas/orbita3/05_bem.md
-    - 6. Multimedia y ecodiseño: orbitas/orbita3/06_multimedia_ecodiseno.md
-    - 7. Del sistema de Figma a la hoja de estilos: orbitas/orbita3/07_del_sistema_al_codigo.md
-    - "8. Componentes: el set mínimo": orbitas/orbita3/08_componentes.md
+    - 6. Del sistema de Figma a la hoja de estilos: orbitas/orbita3/06_del_sistema_al_codigo.md
+    - "7. Componentes: el set mínimo": orbitas/orbita3/07_componentes.md
     - "Anexo: JavaScript, React y Angular": orbitas/orbita3/anexo_frameworks.md
 
   - Órbita 4:
@@ -100,9 +100,10 @@ nav:
     - 3. HTML semántico y estructura: orbitas/orbita4/03_html_accesible.md
     - 4. ARIA — roles, estados y propiedades: orbitas/orbita4/04_aria.md
     - 5. Navegación por teclado y gestión del foco: orbitas/orbita4/05_teclado_foco.md
-    - 6. Multimedia accesible: orbitas/orbita4/06_multimedia_accesible.md
-    - 7. Comunicación clara y microcopy: orbitas/orbita4/07_microcopy.md
-    - 8. Herramientas de auditoría: orbitas/orbita4/08_herramientas.md
+    - 6. Multimedia y ecodiseño: orbitas/orbita4/06_multimedia_ecodiseno.md
+    - 7. Multimedia accesible: orbitas/orbita4/07_multimedia_accesible.md
+    - 8. Comunicación clara y microcopy: orbitas/orbita4/08_microcopy.md
+    - 9. Herramientas de auditoría: orbitas/orbita4/09_herramientas.md
 
   - Órbita 5:
     - Resumen y entregables: orbitas/orbita5/index.md

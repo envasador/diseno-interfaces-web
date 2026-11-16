@@ -92,7 +92,7 @@ El vídeo es lo más pesado de la web, así que antes de añadir uno pregúntate
 </video>
 ```
 
-`controls` muestra los controles del navegador, `preload="none"` no descarga nada hasta que se pulsa y `poster` muestra una imagen mientras tanto. Los subtítulos (`<track>`) los verás en la Órbita 4. Las **WSG** piden **no reproducir vídeo de forma automática**: gasta datos que nadie ha pedido, distrae y molesta. El audio funciona igual con `<audio controls preload="none">`, y si tiene información, necesita una transcripción.
+`controls` muestra los controles del navegador, `preload="none"` no descarga nada hasta que se pulsa y `poster` muestra una imagen mientras tanto. Los subtítulos (`<track>`) los verás en el apartado de multimedia accesible. Las **WSG** piden **no reproducir vídeo de forma automática**: gasta datos que nadie ha pedido, distrae y molesta. El audio funciona igual con `<audio controls preload="none">`, y si tiene información, necesita una transcripción.
 
 Si el vídeo está en YouTube, su `<iframe>` carga mucho código aunque nadie lo reproduzca. Añádele `loading="lazy"` o, mejor, muestra una imagen con un enlace al vídeo.
 

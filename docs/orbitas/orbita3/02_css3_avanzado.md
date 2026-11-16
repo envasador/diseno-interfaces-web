@@ -2,7 +2,7 @@
 
 Estos apuntes empiezan donde terminan los de [CSS3 base](02_css3_base.md). Allí tienes la sintaxis, los selectores, la cascada, el modelo de cajas, Flexbox, Grid, las media queries y un primer modo oscuro. Aquí tienes lo que se añade cuando el CSS deja de ser una página de ejercicios y pasa a ser la versión en código de un **sistema de diseño**: selectores que reaccionan al estado de la interfaz, capas de cascada, tipografía fluida, colores modernos, *container queries*, `light-dark()`, movimiento, impresión y las reglas que mantienen ordenada una hoja de estilos que tocan varias personas.
 
-Los ejemplos son del polideportivo, y los nombres de las variables son los tokens que creaste en Figma durante la Órbita 2 (`--color-primary`, `--space-4`...). En el [apartado 7](07_del_sistema_al_codigo.md) verás cómo se pasa cada uno de Figma al código. Lo que no necesitas para empezar está en los recuadros plegables **Para saber más**.
+Los ejemplos son del polideportivo, y los nombres de las variables son los tokens que creaste en Figma durante la Órbita 2 (`--color-primary`, `--space-4`...). En el [apartado 6](06_del_sistema_al_codigo.md) verás cómo se pasa cada uno de Figma al código. Lo que no necesitas para empezar está en los recuadros plegables **Para saber más**.
 
 ![Las cuatro capas del modelo de cajas, con los tokens del sistema que controlan cada una](img/orbita3_02_esquema_modelo_cajas.svg)
 
@@ -188,7 +188,7 @@ Fíjate en que el valor ideal mezcla `rem` y `vw`. Si fuera solo `vw`, el títul
 }
 ```
 
-Lo usarás en el botón del [apartado 8](08_componentes.md).
+Lo usarás en el botón del [apartado 7](07_componentes.md).
 
 ### Contraste en los controles
 

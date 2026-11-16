@@ -178,7 +178,7 @@ El segundo es que el SCSS de cada componente **se envuelve en `@layer components
 @layer components {
   .button {
     --button-bg: var(--color-primary);
-    /* ...el mismo código del apartado 8... */
+    /* ...el mismo código del apartado 7... */
 
     &--secondary { /* ... */ }
     &--danger    { /* ... */ }
@@ -436,7 +436,7 @@ Tu proyecto es individual, pero en una empresa este sistema lo mantiene un equip
 - **Un componente, una carpeta, una persona.** Como cada componente está aislado en su carpeta y sus nombres no chocan, dos personas pueden construir el botón y la tarjeta a la vez, en dos ramas de Git distintas, sin conflictos.
 - **Los tokens no se tocan sin acuerdo.** Cambiar un token afecta a toda la aplicación, así que cualquier cambio en `settings` se revisa entre todos y se refleja también en Figma.
 - **Las mismas convenciones en todo el código.** BEM, el orden de las capas y los nombres de las variantes se deciden una vez y se documentan en el `README.md`, para que cualquiera que llegue nuevo al proyecto sepa cómo escribir un componente.
-- **Revisión antes de unir.** Antes de unir una rama a la principal, otra persona revisa que el componente cumple la lista del apartado 8: los tokens, los estados, el teclado, los dos modos.
+- **Revisión antes de unir.** Antes de unir una rama a la principal, otra persona revisa que el componente cumple la lista del apartado 7: los tokens, los estados, el teclado, los dos modos.
 
 En tu proyecto individual puedes practicarlo igual: crea una rama de Git para cada componente, haz commits pequeños con mensajes claros y repasa tú mismo la lista antes de unirla.
 

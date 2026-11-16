@@ -1,6 +1,6 @@
-# 7. Del sistema de Figma a la hoja de estilos
+# 6. Del sistema de Figma a la hoja de estilos
 
-En los apartados anteriores has repasado las herramientas: el HTML, el CSS, Sass, ITCSS, BEM y la preparación de las imágenes. En este vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (colores con modo oscuro, escala tipográfica, espaciado, radios, elevación y componentes con sus estados), y aquí vas a ver **cómo se traslada cada pieza al código**. Las decisiones visuales ya están tomadas y justificadas, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.
+En los apartados anteriores has repasado las herramientas: el HTML, el CSS, Sass, ITCSS y BEM. En este vas a usarlas juntas sobre tu propio proyecto. Al terminar la Órbita 2 tenías en Figma un sistema visual completo (colores con modo oscuro, escala tipográfica, espaciado, radios, elevación y componentes con sus estados), y aquí vas a ver **cómo se traslada cada pieza al código**. Las decisiones visuales ya están tomadas y justificadas, así que tu trabajo consiste en llevarlas a la hoja de estilos sin perder ninguna por el camino.
 
 Este apartado funciona como una **hoja de ruta para maquetar**. Cómo funciona cada herramienta lo tienes en los apartados anteriores, y aquí te vas a centrar en qué herramienta corresponde a cada pieza de tu sistema. En la auditoría oral te voy a señalar un botón cualquiera de tu aplicación y te voy a preguntar por qué tiene ese relleno y de qué token sale (RA2-f).
 
@@ -184,7 +184,7 @@ Cada variante de estado que dibujaste en Figma tiene su selector en CSS:
 | Seleccionado | `:checked` o `[aria-pressed="true"]` |
 | Error | `:user-invalid` |
 
-**El foco del teclado también es una variante de tu sistema.** Si no la dibujaste en Figma, dibújala ahora, porque en la Órbita 4 recorrerás la aplicación con el tabulador. Y recuerda que ningún estado puede depender solo del color: la hora ocupada se tacha, además de aclararse. En el apartado 8 tienes el código completo de los estados de cada componente.
+**El foco del teclado también es una variante de tu sistema.** Si no la dibujaste en Figma, dibújala ahora, porque en la Órbita 4 recorrerás la aplicación con el tabulador. Y recuerda que ningún estado puede depender solo del color: la hora ocupada se tacha, además de aclararse. En el apartado 7 tienes el código completo de los estados de cada componente.
 
 ## Movimiento, impresión y peso
 

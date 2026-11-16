@@ -74,7 +74,7 @@ Los **objetos** son patrones de colocación sin colores, bordes ni tipografía: 
 
 ### Components
 
-Es la capa donde pasarás más tiempo. Contiene **las piezas de tu sistema de diseño**, las mismas que tienes como componentes en Figma, **una por fichero**. Cada componente lleva todo lo que lo define (su aspecto, sus partes, sus variantes y sus estados), y lo verás en detalle en el apartado 8.
+Es la capa donde pasarás más tiempo. Contiene **las piezas de tu sistema de diseño**, las mismas que tienes como componentes en Figma, **una por fichero**. Cada componente lleva todo lo que lo define (su aspecto, sus partes, sus variantes y sus estados), y lo verás en detalle en el apartado 7.
 
 Un componente **no decide dónde se coloca**: no lleva márgenes exteriores ni anchos fijos. Lo coloca el objeto que lo contiene, y por eso la misma tarjeta funciona en el listado y en el resumen lateral.
 

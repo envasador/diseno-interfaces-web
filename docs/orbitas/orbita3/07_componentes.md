@@ -1,4 +1,4 @@
-# 8. Componentes: el set mínimo
+# 7. Componentes: el set mínimo
 
 Casi todas las aplicaciones están construidas con los mismos tipos de pieza: botones, campos de formulario, tarjetas, una navegación, estilos de texto, etiquetas, diálogos y avisos. Lo que cambia de una aplicación a otra es cómo se ven y cómo se combinan, y eso lo decidiste en tu sistema de Figma. En este apartado vas a ver cómo se construye en código cada uno de esos componentes, juntando todo lo anterior: el HTML correcto, los tokens, ITCSS, BEM y los estados.
 
