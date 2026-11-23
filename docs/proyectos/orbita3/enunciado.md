@@ -40,17 +40,27 @@ Activa **GitHub Pages** desde el principio y pon la dirección al principio del 
 
 Escribe el HTML de todas las pantallas (las del happy path y las que necesiten las funcionalidades de DWEC), sin CSS: zonas semánticas, encabezados sin saltos y el elemento correcto para cada cosa (`<a>` si lleva a otra pantalla, `<button>` si hace algo). Valídalo en el W3C.
 
+Las pantallas o partes que se generan con JavaScript en el cliente (un listado de tarjetas, un aviso, un diálogo) **tienen que respetar la misma semántica**: el HTML que crea el script debe ser el que escribirías a mano, con sus zonas, sus encabezados y el elemento correcto para cada cosa. Para validarlo, abre la pantalla en el navegador, copia el HTML ya generado desde el inspector (clic derecho en `<html>` y *Copiar > Copiar outerHTML*) y pásalo por el validador del W3C con la opción de entrada directa.
+
 ### Paso 3. Lleva los tokens al código
 
 Convierte cada variable de Figma en una propiedad personalizada **con el mismo nombre** que su sintaxis de código: los primitivos con su valor, los semánticos apuntando a un primitivo y el modo oscuro con `light-dark()`. Incluye la tipografía (en `rem`), el espaciado, los radios y la elevación.
+
+En este paso es normal usar una IA o una herramienta que extraiga las variables de Figma. Revisa después que los nombres coinciden con los de Figma y que cada semántico apunta a un primitivo.
 
 ### Paso 4. Escribe la base
 
 Escribe el reset, los estilos de las etiquetas y los objetos (contenedor, pila, cuadrícula).
 
+- **Reset y etiquetas:** el reset deja el punto de partida igual en todos los navegadores, y los estilos de las etiquetas (`body`, `h1`, `a`...) usan tus tokens. En estas dos capas **no hay ninguna clase**.
+- **Objetos:** solo deciden dónde van las cosas y cuánto espacio hay entre ellas, sin color, bordes ni tipografía. Se nombran con BEM, como cualquier otra clase (`.container`, `.stack`, `.grid`).
+
 ### Paso 5. Construye los componentes
 
-Construye los componentes de tu aplicación (botones, campos, tarjetas, navegación, textos, etiquetas, diálogos, avisos), cada uno en su parcial, con los mismos nombres que en Figma y con **todos sus estados**, incluido el foco del teclado.
+Construye los componentes de tu aplicación (botones, campos, tarjetas, navegación, etiquetas, diálogos, avisos), cada uno en su parcial, con los mismos nombres que en Figma y con **todos sus estados**, incluido el foco del teclado.
+
+- **Variantes y estados:** cada variante cambia solo sus tokens de componente (como en el botón del apartado 7), y los estados incluyen hover, foco, desactivado y error.
+- **El elemento correcto:** `<button>`, `<dialog>`, `<nav>`, `<label>`... El apartado 7 te sirve de referencia.
 
 Reúnelos en `componentes.html`, con todas sus variantes y estados en los dos modos.
 
@@ -59,6 +69,9 @@ Reúnelos en `componentes.html`, con todas sus variantes y estados en los dos mo
 Monta las pantallas solo con tus objetos y componentes, usando Flexbox y Grid. Si te falta algo, créalo como componente o como variante (y añádelo también en Figma).
 
 La aplicación tiene que adaptarse a los anchos de pantalla de tus personas, con los breakpoints en `rem`. Usa al menos una *container query* en un componente que aparezca en sitios de distinto ancho.
+
+- **Breakpoints:** guárdalos como variables de Sass (`$bp-md: 48rem;`) y úsalos con el mixin `from()` del apartado 3. Elígelos donde tu diseño empieza a verse mal, teniendo en cuenta los anchos de tus personas.
+- **Container query:** el candidato más claro es la tarjeta, que aparece en el listado y en un lateral, y por eso no debe depender del ancho de la pantalla.
 
 ### Paso 7. Pon las imágenes
 
@@ -119,7 +132,7 @@ Los textos son los de la Orden de 16 de junio de 2011 (BOJA n.º 114).
 | RA1-f | Se han creado y utilizado plantillas de diseño. | Pasos 4 y 5 |
 | RA2-a | Se han reconocido las posibilidades de modificar las etiquetas HTML. | Pasos 2 y 4 |
 | RA2-c | Se han definido y asociado estilos globales en hojas externas. | Pasos 1, 3 y 4 |
-| RA2-d | Se han definido hojas de estilos alternativas. | Pasos 3 y 7 |
+| RA2-d | Se han definido hojas de estilos alternativas. | Pasos 3 y 8 |
 | RA2-e | Se han redefinido estilos. | Pasos 4 y 5 |
 | RA2-f | Se han identificado las distintas propiedades de cada elemento. | Pasos 5 y 6 |
 | RA2-g | Se han creado clases de estilos. | Paso 5 |
@@ -137,7 +150,7 @@ Cada fila es la parte de rúbrica de su CE, que se completa con una prueba teór
 | **RA1-a. Comunicación visual** | Las pantallas no se parecen a los mockups. | Se reconoce el diseño, pero la jerarquía o los espacios cambian mucho respecto a Figma. | Pantallas parecidas a los mockups, con espacios o alineaciones que no salen de la escala ni de la retícula. | Todas las pantallas, con sus imágenes reales, mantienen la jerarquía, el espaciado y la retícula de los mockups en los dos anchos, y las que no tenían mockup siguen el mismo sistema. | Las diferencias con Figma están justificadas y corregidas también en Figma, y la jerarquía se mantiene con la letra al 200 %. |
 | **RA1-b. Colores y tipografías** | Colores y tipografías distintos de los del sistema. | Colores o tamaños escritos a mano, tamaños en `px` o textos por debajo del contraste mínimo. | Escala tipográfica y colores pasados a tokens, con algún valor suelto o sin comprobar el contraste en modo oscuro. | Todos los colores y textos salen de tokens, con tamaños en `rem`, alturas de línea sin unidad y el contraste comprobado en los dos modos. | Además, los títulos grandes usan tipografía fluida con `clamp()` y la fuente se carga solo con los pesos que se usan. |
 | **RA1-f. Plantillas de diseño** | No hay componentes reutilizables. | Cada pantalla tiene sus propios estilos, o los elementos repetidos están escritos de nuevo en cada sitio. | Hay componentes y objetos, pero alguna pantalla tiene estilos propios, o la página de componentes está incompleta. | Todas las pantallas se construyen con la misma plantilla, los objetos y los componentes, y la página de componentes los muestra todos con sus variantes y estados en los dos modos. | Con los componentes que tienes se podría montar una pantalla nueva sin escribir CSS. |
-| **RA2-a. Etiquetas HTML** | El HTML está hecho de `<div>` y `<span>`. | Faltan las zonas semánticas, hay saltos en los encabezados o botones hechos con enlaces o `<div>`. | HTML mayoritariamente semántico, con algún elemento mal elegido o errores en el validador. | HTML semántico y validado en todas las pantallas, con el elemento correcto para cada cosa y las etiquetas con estilo propio en la capa Elements. | La página se lee en orden y se entiende sin CSS, y los atributos de ARIA que usas sirven a la vez como selectores de estado. |
+| **RA2-a. Etiquetas HTML** | El HTML está hecho de `<div>` y `<span>`. | Faltan las zonas semánticas, hay saltos en los encabezados o botones hechos con enlaces o `<div>`. | HTML mayoritariamente semántico, con algún elemento mal elegido o errores en el validador. | HTML semántico y validado en todas las pantallas, también el que genera JavaScript, con el elemento correcto para cada cosa y las etiquetas con estilo propio en la capa Elements. | La página se lee en orden y se entiende sin CSS, y los atributos de ARIA que usas sirven a la vez como selectores de estado. |
 | **RA2-c. Estilos globales** | Estilos en línea o dentro de cada HTML. | Una hoja externa sin organizar, o tokens que no coinciden con las variables de Figma. | Tokens y capas de ITCSS presentes, con reglas en la capa equivocada o tokens con nombres distintos de los de Figma. | Hoja externa organizada en las capas de ITCSS, con los tokens en Settings y los mismos nombres que en Figma, y la prueba del color principal superada. | Las capas se garantizan con `@layer`, y los componentes usan tokens de componente para sus variantes. |
 | **RA2-d. Hojas alternativas** | Solo hay modo claro. | El modo oscuro está incompleto o deja textos ilegibles. | Modo oscuro completo, con algún color sin ajustar. | Modo oscuro con `light-dark()` comprobado en todas las pantallas. | Además, la aplicación respeta `prefers-reduced-motion` y los colores del modo oscuro están ajustados (superficies elevadas más claras, sin negro puro). |
 | **RA2-e. Redefinir estilos** | No hay reset ni estados. | Reset copiado sin usar, o componentes sin estados. | Reset y estados principales (hover y foco), con estados que faltan o `!important` para ganar a otras reglas. | Reset, estilos de las etiquetas y todos los estados de Figma en cada componente, con los modificadores de BEM y sin `!important`. | Los estados se escriben con pseudoclases y atributos de ARIA, sin clases de estado que sobren. |
