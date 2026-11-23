@@ -297,10 +297,10 @@ p { text-wrap: pretty; }
 
 ## Ocultar sin esconder a los lectores de pantalla
 
-`display: none` y `visibility: hidden` ocultan el contenido a todo el mundo, también a los lectores de pantalla. Cuando quieres ocultar algo a la vista y que un lector de pantalla sí lo lea (el texto de un botón que solo muestra un icono, una etiqueta que el diseño no dibuja), se usa una utilidad que en ITCSS se llama `.u-visually-hidden`:
+`display: none` y `visibility: hidden` ocultan el contenido a todo el mundo, también a los lectores de pantalla. Cuando quieres ocultar algo a la vista y que un lector de pantalla sí lo lea (el texto de un botón que solo muestra un icono, una etiqueta que el diseño no dibuja), se usa una utilidad que en ITCSS se llama `.visually-hidden`:
 
 ```css
-.u-visually-hidden {
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -313,7 +313,7 @@ p { text-wrap: pretty; }
 ```html
 <button class="icon-button">
   <svg aria-hidden="true">...</svg>
-  <span class="u-visually-hidden">Cerrar</span>
+  <span class="visually-hidden">Cerrar</span>
 </button>
 ```
 

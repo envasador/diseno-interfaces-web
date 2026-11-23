@@ -42,7 +42,7 @@ Los **primitivos** se declaran en `:root` con su valor real, y los **semánticos
 }
 ```
 
-En tu proyecto no escribirás esto a mano: lo generarás con los mapas y los bucles del apartado de Sass.
+Este bloque va en `settings/_custom-properties.scss`, el único sitio donde aparecen los valores de los tokens.
 
 La regla de la Órbita 2 sigue en pie: **los componentes usan solo tokens semánticos**. Si en la regla de un botón aparece `var(--blue-500)` o `#1A5FB4`, ese botón no cambiará en el modo oscuro. Para comprobarlo, busca `#` y los nombres de los primitivos en tus ficheros: solo deberían aparecer en Settings.
 
@@ -153,7 +153,7 @@ Para comprobarlo, pon el componente de Figma y el inspector uno al lado del otro
 La retícula de la Órbita 2 (cuatro columnas en el móvil, con medianiles y márgenes de 16 píxeles) se construye con **Grid**:
 
 ```css
-.o-layout {
+.layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: var(--space-4);
@@ -169,7 +169,7 @@ En la práctica, para los listados de tarjetas suele bastar el patrón `repeat(a
 
 El breakpoint correcto es **el ancho en el que tu diseño empieza a verse mal**, y en DIW añadimos un segundo criterio: **tus personas**. Si Lucía usa un móvil de 360 píxeles y Manuel una tableta, esos son los anchos que tienes que cuidar, y el breakpoint estará en algún punto entre los dos.
 
-Escribe el CSS **mobile first**, con los breakpoints en `rem` y con el mixin de breakpoint de Sass, y usa container queries para los componentes que aparecen en sitios de distinto ancho (RA2-i).
+Escribe el CSS **mobile first**, con los breakpoints en `rem`, guardados como variables de Sass, y con el mixin de breakpoint, y usa container queries para los componentes que aparecen en sitios de distinto ancho (RA2-i).
 
 ## Estados
 

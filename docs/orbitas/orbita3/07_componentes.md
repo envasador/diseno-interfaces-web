@@ -32,7 +32,7 @@ El polideportivo tiene tres variantes: la principal ("Reservar"), la secundaria 
 
 ```scss
 // components/_button.scss
-@use "../tools" as *;
+@use "../tools/mixins" as *;
 
 .button {
   // Tokens de componente
@@ -110,7 +110,7 @@ Son tres componentes que trabajan juntos: `.field` agrupa la etiqueta, el contro
 
 ```scss
 // components/_field.scss
-@use "../tools" as *;
+@use "../tools/mixins" as *;
 
 .field {
   display: flex;
@@ -184,7 +184,7 @@ Tres detalles importantes:
 Visualmente son botones con forma de píldora, pero por dentro son **botones de opción** con el mismo `name`, porque solo se puede elegir una hora. El control se oculta visualmente (sin quitarlo, para que funcione con el teclado) y la etiqueta cambia de aspecto con `:has()`:
 
 ```html
-<fieldset class="o-cluster">
+<fieldset class="cluster">
   <legend class="field__label">Hora</legend>
   <label class="slot"><input class="slot__input" type="radio" name="time" value="18:00"> 18:00</label>
   <label class="slot"><input class="slot__input" type="radio" name="time" value="19:00"> 19:00</label>
@@ -194,7 +194,7 @@ Visualmente son botones con forma de píldora, pero por dentro son **botones de 
 
 ```scss
 // components/_slot.scss
-@use "../tools" as *;
+@use "../tools/mixins" as *;
 
 .slot {
   display: inline-flex;
@@ -303,11 +303,12 @@ El polideportivo tiene dos navegaciones: un menú horizontal en escritorio y una
 
 ```scss
 // components/_nav.scss
-@use "../tools" as *;
+@use "../tools/mixins" as *;
+@use "../settings/breakpoints" as *;
 
 .main-nav {
   display: none;
-  @include from("md") { display: block; }
+  @include from($bp-md) { display: block; }
 
   &__list { display: flex; gap: var(--space-6); }
 
@@ -336,7 +337,7 @@ El polideportivo tiene dos navegaciones: un menú horizontal en escritorio y una
   bottom: 0;
   background-color: var(--color-surface-raised);
   box-shadow: var(--elevation-2);
-  @include from("md") { display: none; }
+  @include from($bp-md) { display: none; }
 
   &__list {
     display: grid;
@@ -523,14 +524,14 @@ Los avisos comunican el resultado de una acción, como que la reserva se ha conf
 Ningún componente decide dónde se coloca: eso lo hacen los objetos de ITCSS. Con unos pocos objetos y una docena de componentes puedes construir todas las pantallas del polideportivo:
 
 ```html
-<main class="o-container o-stack">
+<main class="container stack">
   <h1>Elegir hora</h1>
   <div class="alert alert--success" role="status">...</div>
-  <ul class="o-grid" role="list">
+  <ul class="grid" role="list">
     <li><article class="card">...</article></li>
     <li><article class="card card--featured">...</article></li>
   </ul>
-  <form class="o-stack">...</form>
+  <form class="stack">...</form>
 </main>
 ```
 

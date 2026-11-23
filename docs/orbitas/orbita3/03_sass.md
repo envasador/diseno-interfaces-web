@@ -4,19 +4,15 @@ Cuando una hoja de estilos implementa un sistema de diseño completo, crece depr
 
 ![Sass reúne los ficheros parciales del sistema en un único main.css que es el que llega al navegador](img/orbita3_03_esquema_compilacion_sass.svg)
 
-## Qué es un preprocesador
+En este apartado vemos las ocho ideas básicas de Sass, en el mismo orden que su guía oficial: preprocesado, variables, anidación, parciales, módulos, mixins, extend y operadores.
+
+## 1. Preprocesado
 
 Un **preprocesador** es un programa que lee un fichero escrito en un lenguaje parecido a CSS, pero con más posibilidades, y lo **compila**, es decir, lo traduce a CSS normal. Tú escribes los ficheros de Sass, el compilador genera el `main.css` y el HTML enlaza ese `main.css`. El navegador nunca ve tus ficheros de Sass.
 
-CSS ya tiene variables y anidación propias, pero Sass trabaja **antes** de que el código llegue al navegador, y eso le permite hacer cosas que CSS no puede:
+CSS ya tiene variables y anidación propias, pero Sass trabaja **antes** de que el código llegue al navegador, y eso le permite repartir el código en muchos ficheros, reutilizar grupos de declaraciones y hacer cálculos.
 
-- **Repartir el código en muchos ficheros** y juntarlos en uno solo.
-- **Generar código** con bucles, como todas las variables de espaciado a partir de una lista.
-- **Reutilizar grupos de declaraciones** con los mixins, como el anillo de foco de todos los componentes.
-- **Formar nombres de clase** con la anidación, que es lo que pide BEM.
-- **Avisarte con un error** si algo no cuadra, en lugar de ignorarlo en silencio.
-
-## Instalar y compilar
+### Instalar y compilar
 
 La versión oficial se llama **Dart Sass** y se instala con `npm` dentro de tu proyecto:
 
@@ -44,13 +40,26 @@ Añade `node_modules` al `.gitignore`, pero sube el `css/main.css` compilado, po
 
     El navegador ignora los errores de CSS, pero Sass hace lo contrario: si algo está mal, **no compila** y te dice el fichero y la línea. Si un cambio no aparece en el navegador, mira primero la terminal, porque probablemente Sass ha fallado y el `main.css` se ha quedado en la versión anterior.
 
-## SCSS
+### SCSS
 
 Sass tiene dos sintaxis, y en este módulo usamos **SCSS** (ficheros `.scss`), que tiene las mismas llaves y puntos y coma que CSS. Cualquier CSS válido es SCSS válido, así que puedes pegar en un fichero `.scss` el CSS que ya tienes y mejorarlo poco a poco.
 
 En SCSS hay dos tipos de comentarios: los de una línea con `//`, que desaparecen al compilar y son solo para quien lee el código, y los de CSS con `/* */`, que llegan al `main.css`.
 
-## Anidación
+## 2. Variables
+
+Las variables de Sass empiezan por `$` y guardan un valor para reutilizarlo:
+
+```scss
+$bp-md: 48rem;
+```
+
+Al compilar, Sass las sustituye por su valor y desaparecen. En cambio, las propiedades personalizadas de CSS (`--color-primary`) llegan al navegador y existen mientras la página está abierta. De ahí sale la regla del proyecto:
+
+- **Los tokens van en propiedades personalizadas**, porque tienen que cambiar con el modo oscuro, redefinirse en los componentes y llamarse igual que en Figma.
+- **Las variables de Sass se usan para lo que solo hace falta al compilar**, como los breakpoints. Tienen que ser de Sass porque `var()` no funciona dentro de la condición de una media query.
+
+## 3. Anidación
 
 La anidación de Sass funciona como la de CSS, con una diferencia que te va a servir mucho: **`&` se sustituye por el texto del selector**, así que puedes pegarle cualquier cosa detrás y formar nombres de clase nuevos.
 
@@ -64,59 +73,39 @@ La anidación de Sass funciona como la de CSS, con una diferencia que te va a se
 }
 ```
 
-Así, todo un componente queda dentro de un único bloque y el CSS compilado tiene selectores de una sola clase. Los nombres `card__title` y `card--featured` siguen la convención BEM, que verás en el apartado 5. Con `&__` y `&--`, casi nunca necesitarás más de un nivel de anidación.
+Así, todo un componente queda dentro de un único bloque y el CSS compilado tiene selectores de una sola clase. Los nombres `card__title` y `card--featured` siguen la convención BEM, que verás en el apartado 5.
 
-## Variables
+!!! warning "No anides de más"
 
-Las variables de Sass empiezan por `$`:
+    Anidar demasiado complica el mantenimiento y genera selectores largos y muy específicos. Con `&__` y `&--`, casi nunca necesitarás más de un nivel de anidación.
 
-```scss
-$space-unit: 4px;
-```
+## 4. Parciales
 
-Al compilar, Sass las sustituye por su valor y desaparecen. En cambio, las propiedades personalizadas de CSS (`--color-primary`) llegan al navegador y existen mientras la página está abierta. De ahí sale la regla del proyecto:
+Un **parcial** es un fichero cuyo nombre empieza por guion bajo (`_button.scss`). Sass **no genera un CSS propio** para él: solo se compila como parte de otro fichero que lo carga. Es la razón más importante para usar Sass, porque te permite tener **un fichero por componente**, y que cada persona del equipo trabaje en el suyo sin tocar los de las demás.
 
-- **Los tokens van en propiedades personalizadas**, porque tienen que cambiar con el modo oscuro, redefinirse en los componentes y llamarse igual que en Figma.
-- **Las variables de Sass se usan para lo que solo hace falta al compilar**: los datos con los que se generan los tokens y los breakpoints. Los breakpoints tienen que ser de Sass porque `var()` no funciona dentro de la condición de una media query.
+## 5. Módulos
 
-## Parciales y módulos
-
-Esta es la razón más importante para usar Sass. Un **parcial** es un fichero cuyo nombre empieza por guion bajo (`_button.scss`), que solo se compila como parte de otro. El fichero principal, `main.scss`, los carga todos con **`@use`**, y Sass los junta en un único `main.css`:
+Para cargar un parcial dentro de otro fichero se usa **`@use`**, y Sass los junta todos en un único `main.css`. Se escribe el nombre sin el guion bajo y sin la extensión:
 
 ```scss
 // main.scss
-@use "settings";
-@use "components/button";
-@use "components/card";
+@use "variables";
+@use "button";
+@use "card";
 ```
 
-Con un fichero por componente, cada persona del equipo puede trabajar en el suyo sin tocar los de las demás.
+`@use` también da acceso a las variables, funciones y mixins del fichero que carga, a través de su nombre, que actúa como **espacio de nombres**: `variables.$breakpoints`. Con `as *` puedes usarlos sin prefijo, y es lo habitual con las herramientas que usas en todas partes. **Cada fichero carga con `@use` lo que necesita**, aunque otro fichero ya lo haya cargado.
 
-`@use` también da acceso a las variables, funciones y mixins del fichero que carga, a través de su nombre: `tokens.$breakpoints`. Con `as *` puedes usarlos sin prefijo, y es lo habitual con las herramientas que usas en todas partes. **Cada fichero carga con `@use` lo que necesita**, aunque otro fichero ya lo haya cargado.
+!!! warning "`@import` está obsoleto"
 
-En tutoriales antiguos verás `@import` en lugar de `@use`. Está obsoleto y desaparecerá, así que usa siempre `@use`.
+    En tutoriales antiguos verás `@import` en lugar de `@use`. Está obsoleto y desaparecerá, así que usa siempre `@use`. Los módulos solo funcionan con Dart Sass, que es el que instalamos.
 
-??? info "Para saber más: `@forward` y `_index.scss`"
-
-    Si una carpeta tiene varios parciales que siempre se usan juntos, puedes crear en ella un `_index.scss` que los reúna con `@forward`. Al hacer `@use` de la carpeta, Sass carga ese fichero:
-
-    ```scss
-    // tools/_index.scss
-    @forward "functions";
-    @forward "mixins";
-    ```
-
-    ```scss
-    // components/_button.scss
-    @use "../tools" as *;   // funciones y mixins en una línea
-    ```
-
-## Mixins
+## 6. Mixins
 
 Un **mixin** es un grupo de declaraciones con nombre que puedes incluir en cualquier regla. Se define con `@mixin` y se usa con `@include`, y puede recibir parámetros con un valor por defecto:
 
 ```scss
-// tools/_mixins.scss
+// _mixins.scss
 @mixin focus-ring($color: var(--color-primary)) {
   outline: 3px solid $color;
   outline-offset: 2px;
@@ -129,141 +118,78 @@ Un **mixin** es un grupo de declaraciones con nombre que puedes incluir en cualq
 }
 ```
 
-Todos los componentes usan el mismo anillo de foco, y si un día decides cambiarlo, lo cambias en un sitio. Un mixin también puede recibir un bloque de reglas, que se coloca donde está **`@content`**. Así se escriben los breakpoints con nombre:
+Todos los componentes usan el mismo anillo de foco, y si un día decides cambiarlo, lo cambias en un sitio. Un mixin también puede recibir un bloque de reglas, que se coloca donde está **`@content`**. Así se escriben los breakpoints:
 
 ```scss
-@mixin from($bp) {
-  @media (width >= map.get($breakpoints, $bp)) {
+@mixin from($width) {
+  @media (width >= $width) {
     @content;
   }
 }
 
 .court-list {
-  @include from("md") { grid-template-columns: repeat(2, 1fr); }
+  @include from($bp-md) { grid-template-columns: repeat(2, 1fr); }
 }
 ```
 
 Usa los mixins para cosas pequeñas, porque **cada `@include` copia el código** en el CSS final. Para reutilizar un componente entero, usa su clase en el HTML.
 
-??? info "Para saber más: `@extend`"
+## 7. Extend
 
-    `@extend` hace que un selector herede las reglas de otro agrupándolos en el CSS compilado. Tiene efectos difíciles de prever (cambia el orden de las reglas y no funciona dentro de media queries), y por eso muchos equipos lo evitan. En tu proyecto, usa un mixin pequeño o una clase base.
-
-## Funciones
-
-Sass hace cálculos al compilar, y trae funciones organizadas en módulos que se cargan con `@use "sass:..."`: `sass:math` para los números, `sass:map` para los mapas, `sass:color` para los colores. También puedes escribir las tuyas con `@function`. La más útil para tu proyecto convierte los píxeles de Figma en `rem`:
+`@extend` hace que un selector **comparta las propiedades de otro**. Se usa sobre todo con los **placeholders**, selectores que empiezan por `%` y que **solo aparecen en el CSS si alguien los extiende**:
 
 ```scss
-// tools/_functions.scss
-@use "sass:math";
-
-@function rem($px) {
-  @return math.div($px, 16px) * 1rem;
+%message {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
 }
-```
 
-Con ella puedes escribir en el código los mismos números que ves en el diseño: `rem(24px)` da `1.5rem`.
-
-En tutoriales antiguos verás funciones como `darken()` o `lighten()`, que están obsoletas. Además, las funciones de color de Sass no funcionan con propiedades personalizadas, así que para los estados de los colores usa `color-mix()` de CSS.
-
-## Mapas y bucles
-
-Un **mapa** es una lista de parejas de clave y valor, como un objeto de JavaScript, y es la forma natural de guardar en Sass los datos de tu sistema. Con un bucle **`@each`** puedes recorrerlo y **generar todos los tokens**:
-
-```scss
-// settings/_tokens.scss
-$primitives: (
-  "blue-200": #99C1F1,
-  "blue-500": #1A5FB4,
-  "gray-50":  #F6F5F4,
-  "gray-900": #1E1E24,
-);
-
-// Cada semántico: (primitivo en modo claro, primitivo en modo oscuro)
-$semantic: (
-  "primary":    ("blue-500", "blue-200"),
-  "surface":    ("gray-50", "gray-900"),
-  "on-surface": ("gray-900", "gray-50"),
-);
-```
-
-```scss
-// settings/_custom-properties.scss
-@use "sass:list";
-@use "tokens" as t;
-
-:root {
-  color-scheme: light dark;
-
-  @each $name, $value in t.$primitives {
-    --#{$name}: #{$value};
-  }
-
-  @each $name, $pair in t.$semantic {
-    --color-#{$name}: light-dark(var(--#{list.nth($pair, 1)}), var(--#{list.nth($pair, 2)}));
-  }
-}
+.message-success { @extend %message; border-color: var(--color-success); }
+.message-error   { @extend %message; border-color: var(--color-error); }
 ```
 
 ```css
-/* CSS compilado */
-:root {
-  color-scheme: light dark;
-  --blue-200: #99C1F1;
-  --blue-500: #1A5FB4;
-  --gray-50: #F6F5F4;
-  --gray-900: #1E1E24;
-  --color-primary: light-dark(var(--blue-500), var(--blue-200));
-  --color-surface: light-dark(var(--gray-50), var(--gray-900));
-  --color-on-surface: light-dark(var(--gray-900), var(--gray-50));
+/* CSS compilado: los selectores se agrupan */
+.message-success, .message-error {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+}
+.message-success { border-color: var(--color-success); }
+.message-error   { border-color: var(--color-error); }
+```
+
+A diferencia de un mixin, que copia el código en cada sitio, `@extend` agrupa los selectores y el código no se repite. Pero tiene efectos difíciles de prever (cambia el orden de las reglas y no funciona dentro de media queries), y por eso muchos equipos lo evitan. **En tu proyecto, usa un mixin pequeño o una clase base** y deja `@extend` para cuando entiendas bien lo que hace.
+
+## 8. Operadores
+
+Sass hace cálculos al compilar con los operadores `+`, `-`, `*` y `%` (resto). La división se hace con **`math.div()`**, que viene en el módulo `sass:math`, porque la barra `/` ya no divide:
+
+```scss
+@use "sass:math";
+
+.sidebar {
+  inline-size: math.div(300px, 960px) * 100%;   // 31.25%
 }
 ```
 
-Los datos quedan en un solo sitio, con la misma forma que las tablas de tu guía de estilo, y añadir un color es añadir una línea al mapa. La sintaxis **`#{...}`** se llama **interpolación**, y sirve para meter el valor de una variable dentro de un nombre o de un texto. Con las propiedades personalizadas es obligatoria: sin ella, Sass escribiría literalmente `$value` en el CSS.
-
-Ten cuidado con los bucles que generan clases: con tres líneas es fácil crear noventa clases y usar diez, y las **WSG** piden no enviar al navegador código que no se usa.
-
-??? info "Para saber más: condiciones y otros bucles"
-
-    Sass también tiene `@if` y `@else` para las condiciones, `@for` para repetir entre dos números y `@error` para detener la compilación con un mensaje. El mixin de breakpoint completo los usa para avisar si alguien pide un breakpoint que no existe:
-
-    ```scss
-    @mixin from($bp) {
-      @if not map.has-key($breakpoints, $bp) {
-        @error "El breakpoint `#{$bp}` no existe.";
-      }
-      @media (width >= map.get($breakpoints, $bp)) { @content; }
-    }
-    ```
-
-## Cómo organizar los ficheros
-
-Con todo esto ya puedes repartir tu hoja de estilos en parciales, y la pregunta es qué carpetas crear y en qué orden cargarlas. En este módulo seguimos **ITCSS**, que verás en el apartado siguiente: una carpeta por capa, cargadas de lo más general a lo más concreto.
+Es útil para convertir los números de Figma a unidades relativas. Los píxeles de Figma pasan a `rem` dividiendo entre 16:
 
 ```scss
-// main.scss: un adelanto de la estructura de ITCSS
-@use "settings";     // tokens y mapas
-@use "generic";      // reset
-@use "elements";     // estilos de las etiquetas
-@use "objects";      // patrones de colocación: .o-stack, .o-grid...
-@use "components";   // .button, .card, .slot...
-@use "utilities";    // clases de ayuda: .u-visually-hidden...
+padding: math.div(24px, 16px) * 1rem;   // 1.5rem
 ```
 
 ## Antes de seguir
 
-Antes de pasar a ITCSS, comprueba que:
+Antes de pasar al siguiente apartado, comprueba que:
 
 1. **`npm run dev` compila sin errores** y recompila al guardar.
-2. Tus tokens están en **mapas** y se generan como **propiedades personalizadas** con `@each`.
+2. Tus tokens son **propiedades personalizadas** y solo usas variables de Sass para lo que se necesita al compilar.
 3. Cada componente está en **su propio parcial** y no tiene más de un nivel de anidación.
-4. No hay ningún `@import`.
+4. Cargas los ficheros con **`@use`**, nunca con `@import`.
 5. **`npm run build` genera un `main.css` comprimido.**
-
-Si usas una IA para escribir o revisar tu Sass, anótalo en el `CHANGELOG.md` y comprueba que lo que te devuelve no usa `@import` ni funciones obsoletas, porque buena parte del código de Sass que hay en internet es anterior a 2024.
 
 ## Recursos
 
+- [Sass Basics: la guía oficial](https://sass-lang.com/guide/)
 - [Sass en español, de Manz (lenguajecss.com)](https://lenguajecss.com/sass/)
-- [Documentación oficial de Sass](https://sass-lang.com/documentation/)
 - [Sass Playground](https://sass-lang.com/playground/), para probar código sin instalar nada

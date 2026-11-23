@@ -1,4 +1,4 @@
-# 4. Arquitectura ITCSS
+# 4. Organizar el Sass: carpetas y capas
 
 Con Sass ya puedes repartir tu hoja de estilos en muchos ficheros, pero queda una pregunta sin respuesta obvia: **qué va en cada fichero y en qué orden se cargan**. Si cada persona del equipo lo decide sobre la marcha, al cabo de un mes nadie sabe dónde está el estilo del botón de reservar, hay tres ficheros que tocan los enlaces y empiezan a aparecer los `!important`. **ITCSS** es un criterio para tomar esas decisiones siempre igual, de modo que cualquiera que abra el proyecto sepa dónde buscar y dónde escribir (RA2-e, RA2-j).
 
@@ -16,17 +16,17 @@ Ordenado así, cada regla puede sobrescribir a las anteriores sin trucos, porque
 
 | Capa | Qué contiene | Genera CSS | Ejemplo del polideportivo |
 |---|---|---|---|
-| **Settings** | Los datos del sistema | Solo los tokens | Mapas de colores, breakpoints, propiedades personalizadas |
-| **Tools** | Funciones y mixins | No | `rem()`, `focus-ring`, `from()` |
+| **Settings** | Los datos del sistema | Solo los tokens | Propiedades personalizadas, breakpoints |
+| **Tools** | Los mixins | No | `focus-ring`, `from()` |
 | **Generic** | El reset | Sí | `box-sizing`, márgenes del `body` |
 | **Elements** | El estilo base de cada etiqueta, **sin clases** | Sí | `body`, `h1`, `a` |
-| **Objects** | Patrones de colocación **sin aspecto** | Sí | `.o-stack`, `.o-grid` |
+| **Objects** | Patrones de colocación **sin aspecto** | Sí | `.stack`, `.grid` |
 | **Components** | Las piezas del sistema | Sí | `.button`, `.card`, `.slot` |
-| **Utilities** | Clases de una sola función | Sí | `.u-visually-hidden` |
+| **Utilities** | Clases de una sola función | Sí | `.visually-hidden` |
 
 ### Settings y Tools
 
-Son las dos capas que no generan CSS, salvo el fichero que convierte los tokens en propiedades personalizadas. **Settings** guarda los datos del sistema (los mapas de colores, el espaciado, los breakpoints) y **Tools**, las funciones y los mixins. Cualquier otro fichero puede cargarlas con `@use`.
+Son las dos capas que no generan CSS, salvo el fichero que escribe los tokens como propiedades personalizadas. **Settings** guarda los datos del sistema (los colores, el espaciado, los breakpoints) y **Tools**, los mixins. Cualquier otro fichero puede cargarlas con `@use`.
 
 ### Generic y Elements
 
@@ -56,21 +56,21 @@ Los **objetos** son patrones de colocación sin colores, bordes ni tipografía: 
 
 ```scss
 // objects/_stack.scss: elementos uno debajo de otro
-.o-stack {
+.stack {
   display: flex;
   flex-direction: column;
   gap: var(--stack-gap, var(--space-4));
 }
 
 // objects/_grid.scss: tantas columnas como quepan
-.o-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: var(--space-4);
 }
 ```
 
-`var(--stack-gap, var(--space-4))` da una separación por defecto que quien usa el objeto puede cambiar sin tocarlo. En el polideportivo, `.o-grid` coloca el listado de pistas y `.o-stack` el formulario de reserva, y los dos se reutilizan en otras pantallas.
+`var(--stack-gap, var(--space-4))` da una separación por defecto que quien usa el objeto puede cambiar sin tocarlo. En el polideportivo, `.grid` coloca el listado de pistas y `.stack` el formulario de reserva, y los dos se reutilizan en otras pantallas. Como cualquier otra clase, un objeto se nombra con BEM (apartado 5), sin prefijo: la carpeta ya indica a qué capa pertenece.
 
 ### Components
 
@@ -80,7 +80,19 @@ Un componente **no decide dónde se coloca**: no lleva márgenes exteriores ni a
 
 ### Utilities
 
-Clases de una sola función que tienen que ganar siempre, como `.u-visually-hidden`, que oculta un texto a la vista pero lo deja para los lectores de pantalla. Úsalas poco: si una pantalla necesita muchas, lo que le falta es un componente.
+Clases de una sola función que tienen que ganar siempre, como `.visually-hidden`, que oculta un texto a la vista pero lo deja para los lectores de pantalla. Úsalas poco: si una pantalla necesita muchas, lo que le falta es un componente.
+
+## Si te pierdes, piensa en tres bloques
+
+Las siete capas se pueden recordar como tres bloques, de lo que no genera CSS a lo que se usa en el HTML:
+
+| Bloque | Capas | Idea |
+|---|---|---|
+| **Herramientas** | Settings y Tools | Los datos y los mixins de Sass. Casi no generan CSS |
+| **Base** | Generic y Elements | Afecta a toda la web, y solo usa **etiquetas**, nunca clases |
+| **Piezas** | Objects, Components y Utilities | Son las **clases** que escribes en el HTML |
+
+¿Y lo que solo ocurre en una página? ITCSS no tiene una capa para eso. Si es una pieza nueva, es un **componente** más, con su nombre BEM (`.home-hero`). Si es un componente que se ve distinto en un sitio, se resuelve con un **modificador** (`.card--featured`), no con una regla que lo retoque desde fuera.
 
 ## Dónde va cada cosa
 
@@ -99,8 +111,8 @@ En Sass, cada capa es una carpeta, y `main.scss` las carga en el orden del triá
 ```text
 scss/
 ├── main.scss
-├── settings/     _tokens.scss, _breakpoints.scss, _custom-properties.scss
-├── tools/        _functions.scss, _mixins.scss
+├── settings/     _custom-properties.scss, _breakpoints.scss
+├── tools/        _mixins.scss
 ├── generic/      _reset.scss
 ├── elements/     _page.scss, _headings.scss, _links.scss
 ├── objects/      _container.scss, _stack.scss, _cluster.scss, _grid.scss
@@ -126,14 +138,10 @@ La primera línea con `@layer` declara el orden. Como `@use` no se puede escribi
 
 Esta organización es la que permite trabajar en equipo: cada persona sabe en qué carpeta escribir, cada componente está en su fichero y nadie necesita tocar el de los demás.
 
-## Prefijos
-
-En este módulo, los objetos llevan el prefijo **`o-`** y las utilidades **`u-`**, para que al leer el HTML se sepa de dónde viene cada clase. Los componentes van sin prefijo, para que su nombre coincida con el de Figma (`button`, `card`).
-
 ## Errores frecuentes
 
 - **Clases en la capa Elements.** `.card h3` en `elements/` mete un componente donde no toca.
-- **Aspecto en los objetos.** Un `.o-stack` con color de fondo deja de ser reutilizable.
+- **Aspecto en los objetos.** Un `.stack` con color de fondo deja de ser reutilizable.
 - **Componentes que se colocan solos.** Un `margin-top` en la tarjeta funciona en un sitio y estorba en otro.
 - **Componentes que cambian a otros.** `.card .button` ata los dos componentes. La variante del botón se elige en el HTML.
 - **Un fichero para todos los componentes.** Un componente, un fichero.
@@ -146,13 +154,45 @@ En este módulo, los objetos llevan el prefijo **`o-`** y las utilidades **`u-`*
 
     Un framework de CSS completo trae cientos de componentes y miles de clases pensadas para cualquier proyecto, y si no se configura con cuidado, la mayor parte llega al navegador sin usarse. Con ITCSS y tus propios tokens solo escribes lo que tu sistema necesita: el CSS completo del polideportivo ocupa unos 10 KB comprimido, menos que una fotografía. Las **WSG** piden precisamente no enviar código que no se usa.
 
+## Practica: ¿en qué capa va?
+
+Usa las cinco preguntas de arriba para decidir en qué capa va cada una de estas reglas. Intenta hacerlo antes de abrir la solución.
+
+| Nº | Regla |
+|---|---|
+| 1 | `*, *::before, *::after { box-sizing: border-box; }` |
+| 2 | `h2 { font: var(--font-heading-2); }` |
+| 3 | `.card__title { font: var(--font-heading-3); }` |
+| 4 | `@mixin from($width) { @media (width >= $width) { @content; } }` |
+| 5 | `$bp-md: 48rem;` |
+| 6 | `.grid { display: grid; gap: var(--space-4); }` |
+| 7 | `.visually-hidden { clip-path: inset(50%); }` |
+| 8 | `@mixin focus-ring { outline: 3px solid var(--color-primary); }` |
+| 9 | `a { color: var(--color-primary); }` |
+| 10 | `.button--danger { --button-bg: var(--color-error); }` |
+
+??? success "Solución"
+
+    | Nº | Capa | Por qué |
+    |---|---|---|
+    | 1 | **Generic** | Es un reset: afecta a todo el documento |
+    | 2 | **Elements** | Solo usa una etiqueta, sin clases |
+    | 3 | **Components** | Es una parte (`__title`) de un componente |
+    | 4 | **Tools** | Es un mixin de Sass y no genera CSS |
+    | 5 | **Settings** | Es un dato del sistema (un breakpoint) |
+    | 6 | **Objects** | Solo coloca (rejilla y espacio), sin aspecto |
+    | 7 | **Utilities** | Una sola función que tiene que ganar siempre |
+    | 8 | **Tools** | Es un mixin de Sass y no genera CSS |
+    | 9 | **Elements** | Estilo base de una etiqueta |
+    | 10 | **Components** | Es una variante (modificador BEM) de un componente |
+
 ## Antes de seguir
 
 Comprueba que:
 
 1. Tu carpeta `scss` tiene **una carpeta por capa**, cargadas en el orden del triángulo.
 2. En Generic y Elements **no hay ninguna clase**.
-3. Los objetos **solo colocan** y llevan el prefijo `o-`.
+3. Los objetos **solo colocan**, sin color, bordes ni tipografía.
 4. Cada componente está **en su propio fichero**, sin márgenes exteriores ni anchos fijos.
 5. No hay ningún `!important`.
 

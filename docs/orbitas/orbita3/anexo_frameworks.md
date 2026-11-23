@@ -76,7 +76,7 @@ Cuando una parte de la pantalla se genera con JavaScript (por ejemplo, las tarje
 
 ```html
 <!-- index.html -->
-<ul class="o-grid" id="court-list" role="list"></ul>
+<ul class="grid" id="court-list" role="list"></ul>
 
 <template id="court-card">
   <li>
@@ -173,7 +173,7 @@ El segundo es que el SCSS de cada componente **se envuelve en `@layer components
 
 ```scss
 // src/components/Button/Button.scss
-@use "../../scss/tools" as *;
+@use "../../scss/tools/mixins" as *;
 
 @layer components {
   .button {

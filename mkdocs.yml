@@ -87,7 +87,7 @@ nav:
     - 2.1 CSS3 base: orbitas/orbita3/02_css3_base.md
     - 2.2 CSS3 avanzado: orbitas/orbita3/02_css3_avanzado.md
     - 3. Apuntes de Sass: orbitas/orbita3/03_sass.md
-    - 4. Arquitectura ITCSS: orbitas/orbita3/04_itcss.md
+    - "4. Organizar el Sass: carpetas y capas": orbitas/orbita3/04_itcss.md
     - 5. Nomenclatura BEM: orbitas/orbita3/05_bem.md
     - 6. Del sistema de Figma a la hoja de estilos: orbitas/orbita3/06_del_sistema_al_codigo.md
     - "7. Componentes: el set mínimo": orbitas/orbita3/07_componentes.md
