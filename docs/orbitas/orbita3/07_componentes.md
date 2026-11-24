@@ -27,11 +27,23 @@ Te recomiendo una **página de prueba** con todos los componentes y todas sus va
 
 Tres variantes: la principal ("Reservar"), la secundaria ("Ver más horas") y la de peligro ("Cancelar reserva"). Si lleva a otra pantalla es un `<a>`, y si hace algo es un `<button>`: el mismo componente sirve para los dos.
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <button class="button" type="submit">Reservar</button>
 <button class="button button--secondary" type="button">Ver más horas</button>
 <button class="button button--danger" type="button">Cancelar reserva</button>
 ```
+
+</div>
+<div class="demo__resultado">
+  <button class="button" type="button">Reservar</button>
+  <button class="button button--secondary" type="button">Ver más horas</button>
+  <button class="button button--danger" type="button">Cancelar reserva</button>
+  <p class="demo__nota">Pasa el ratón por encima o recórrelos con el tabulador para ver el hover y el foco.</p>
+</div>
+</div>
 
 ```scss
 // components/_button.scss
@@ -81,6 +93,9 @@ Un botón con `disabled` no recibe el foco, y quien navega con teclado no sabe q
 
 Un campo agrupa la etiqueta, el control y el mensaje de error.
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <div class="field">
   <label class="field__label" for="phone">Teléfono de contacto</label>
@@ -88,6 +103,17 @@ Un campo agrupa la etiqueta, el control y el mensaje de error.
   <p class="field__error" id="phone-error">Escribe un teléfono para poder avisarte.</p>
 </div>
 ```
+
+</div>
+<div class="demo__resultado">
+  <div class="field">
+    <label class="field__label" for="demo-phone">Teléfono de contacto</label>
+    <input class="input" type="tel" id="demo-phone" required aria-describedby="demo-phone-error">
+    <p class="field__error" id="demo-phone-error">Escribe un teléfono para poder avisarte.</p>
+  </div>
+  <p class="demo__nota">Escribe algo, bórralo y sal del campo: aparece el error.</p>
+</div>
+</div>
 
 ```scss
 // components/_field.scss
@@ -132,6 +158,9 @@ Tres detalles importantes:
 
 La tarjeta de pista aparece en el listado, en el resumen de la reserva y en "Mis reservas", así que tiene que funcionar a cualquier ancho y **no decide dónde se coloca**.
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <article class="card">
   <img class="card__media" src="img/pista-padel-2.webp" alt="" width="800" height="450" loading="lazy">
@@ -144,6 +173,32 @@ La tarjeta de pista aparece en el listado, en el resumen de la reserva y en "Mis
   </footer>
 </article>
 ```
+
+</div>
+<div class="demo__resultado">
+  <article class="card">
+    <span class="card__media" aria-hidden="true"></span>
+    <header class="card__header">
+      <h3 class="card__title">Pista de pádel 2</h3>
+      <p class="card__price">8 € / hora</p>
+    </header>
+    <footer class="card__actions">
+      <a class="button" href="#tarjetas">Ver horarios</a>
+    </footer>
+  </article>
+  <article class="card card--featured">
+    <span class="card__media" aria-hidden="true"></span>
+    <header class="card__header">
+      <h3 class="card__title">Pista de tenis 1</h3>
+      <p class="card__price">12 € / hora</p>
+    </header>
+    <footer class="card__actions">
+      <a class="button" href="#tarjetas">Ver horarios</a>
+    </footer>
+  </article>
+  <p class="demo__nota">A la derecha, la variante <code>card--featured</code>. El degradado sustituye a la foto.</p>
+</div>
+</div>
 
 ```scss
 // components/_card.scss
@@ -176,6 +231,9 @@ La imagen lleva `alt=""` porque aquí es decorativa: el nombre de la pista ya es
 
 ## Navegación
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <nav class="main-nav" aria-label="Principal">
   <ul class="main-nav__list" role="list">
@@ -184,6 +242,17 @@ La imagen lleva `alt=""` porque aquí es decorativa: el nombre de la pista ya es
   </ul>
 </nav>
 ```
+
+</div>
+<div class="demo__resultado">
+  <nav class="main-nav" aria-label="Ejemplo de navegación">
+    <ul class="main-nav__list" role="list">
+      <li><a class="main-nav__link" href="#navegacion" aria-current="page">Pistas</a></li>
+      <li><a class="main-nav__link" href="#navegacion">Mis reservas</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
 
 ```scss
 // components/_nav.scss
@@ -214,9 +283,20 @@ El `<nav>` lleva su `aria-label`, y la pantalla actual se marca con `aria-curren
 
 Indican un estado, como "Libre" o "Completa". Son el ejemplo más claro de un componente resuelto con **un solo token de componente**:
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <span class="badge badge--free">Libre</span>
 ```
+
+</div>
+<div class="demo__resultado">
+  <span class="badge badge--free">Libre</span>
+  <span class="badge badge--full">Completa</span>
+  <p class="demo__nota">A la derecha, la variante <code>badge--full</code>.</p>
+</div>
+</div>
 
 ```scss
 // components/_badge.scss
@@ -241,6 +321,9 @@ Como el color se usa para el texto, tiene que llegar a 4,5:1 de contraste en los
 
 Un diálogo interrumpe lo que la persona está haciendo, así que se usa poco: en el polideportivo, solo para cancelar una reserva. El elemento `<dialog>` resuelve casi todo: al abrirlo con `showModal()`, el navegador lo pone encima, oscurece el fondo, lleva el foco dentro y lo cierra con Escape.
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <button class="button button--danger" type="button" id="open-cancel">Cancelar reserva</button>
 
@@ -258,6 +341,21 @@ Un diálogo interrumpe lo que la persona está haciendo, así que se usa poco: e
     .addEventListener('click', () => document.getElementById('cancel-dialog').showModal());
 </script>
 ```
+
+</div>
+<div class="demo__resultado">
+  <button class="button button--danger" type="button" onclick="this.nextElementSibling.showModal()">Cancelar reserva</button>
+  <dialog class="dialog" aria-labelledby="demo-cancel-title">
+    <h2 id="demo-cancel-title">¿Cancelar la reserva?</h2>
+    <p>Se liberará la pista de pádel 2 el jueves 12 a las 19:00.</p>
+    <form class="dialog__actions" method="dialog">
+      <button class="button button--secondary">Mantener la reserva</button>
+      <button class="button button--danger">Sí, cancelar</button>
+    </form>
+  </dialog>
+  <p class="demo__nota">Pulsa el botón para abrir el diálogo, y ciérralo con sus botones o con Escape.</p>
+</div>
+</div>
 
 ```scss
 // components/_dialog.scss
@@ -281,11 +379,26 @@ JavaScript solo hace falta para abrirlo: el formulario con `method="dialog"` lo 
 
 Comunican el resultado de una acción, como que la reserva se ha confirmado:
 
+<div class="demo" markdown>
+<div class="demo__codigo" markdown>
+
 ```html
 <p class="alert alert--success" role="status">
   <strong>Reserva confirmada.</strong> Pádel 2, jueves 12 a las 19:00.
 </p>
 ```
+
+</div>
+<div class="demo__resultado">
+  <p class="alert alert--success">
+    <strong>Reserva confirmada.</strong> Pádel 2, jueves 12 a las 19:00.
+  </p>
+  <p class="alert alert--error">
+    <strong>No se ha podido reservar.</strong> La pista ya está ocupada a esa hora.
+  </p>
+  <p class="demo__nota">Debajo, la variante <code>alert--error</code>.</p>
+</div>
+</div>
 
 ```scss
 // components/_alert.scss

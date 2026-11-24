@@ -1,0 +1,241 @@
+/* ===========================================
+   Bloques «Código | Resultado» de los apuntes
+   Solo para la web de apuntes: pinta los componentes del apartado 7
+   dentro de .demo__resultado sin tocar el resto de la página.
+   =========================================== */
+
+.md-typeset .demo {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1.5em 0;
+  border: var(--borde, 3px solid #240509);
+  box-shadow: var(--sombra, 4px 4px 0 #240509);
+}
+
+.md-typeset .demo > div { min-width: 0; }
+
+.md-typeset .demo__codigo,
+.md-typeset .demo__resultado { position: relative; padding: 2.2em 1em 1em; }
+
+.md-typeset .demo__codigo pre { margin: 0; }
+
+.md-typeset .demo__codigo::before,
+.md-typeset .demo__resultado::before {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  padding: 0.2em 0.7em;
+  background-color: #240509;
+  color: #FBFBF8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.md-typeset .demo__codigo::before { content: "Código"; }
+.md-typeset .demo__resultado::before { content: "Resultado"; }
+
+.md-typeset .demo__resultado { border-block-start: 3px solid #240509; }
+
+.md-typeset .demo__nota {
+  margin: 0.8em 0 0;
+  font-size: 0.7rem;
+  color: #4A5568;
+}
+
+/* ---------- Tokens del polideportivo (modo claro) ---------- */
+.md-typeset .demo__resultado {
+  --color-primary: #1A5FB4;
+  --color-on-primary: #FFFFFF;
+  --color-error: #C01C28;
+  --color-on-error: #FFFFFF;
+  --color-success: #26734D;
+  --color-outline: #77767B;
+  --color-surface: #F6F5F4;
+  --color-surface-raised: #FFFFFF;
+  --color-on-surface: #1E1E24;
+  --space-1: 0.25em; --space-2: 0.5em; --space-3: 0.75em;
+  --space-4: 1em;    --space-6: 1.5em;
+  --radius-sm: 4px;  --radius-md: 8px; --radius-lg: 16px; --radius-full: 9999px;
+  --font-label: 600 1em/1.25 "IBM Plex Sans", system-ui, sans-serif;
+  --font-heading-2: 700 1.4em/1.2 "IBM Plex Sans", system-ui, sans-serif;
+  --font-heading-3: 700 1.15em/1.25 "IBM Plex Sans", system-ui, sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--space-3);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-size: 0.8rem;
+}
+
+/* Quita los estilos de la web de apuntes dentro del resultado */
+.md-typeset .demo__resultado :is(h2, h3, p, ul, li) { margin: 0; padding: 0; color: inherit; }
+.md-typeset .demo__resultado ul { list-style: none; }
+.md-typeset .demo__resultado a,
+.md-typeset .demo__resultado a:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* ---------- Botón ---------- */
+.md-typeset .demo__resultado .button {
+  --button-bg: var(--color-primary);
+  --button-bg-hover: color-mix(in oklch, var(--color-primary), black 15%);
+  --button-fg: var(--color-on-primary);
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 2.75em;
+  padding: var(--space-3) var(--space-6);
+  border: 2px solid var(--button-bg);
+  border-radius: var(--radius-md);
+  background-color: var(--button-bg) !important;
+  color: var(--button-fg) !important;
+  font: var(--font-label);
+  cursor: pointer;
+}
+.md-typeset .demo__resultado .button:hover { background-color: var(--button-bg-hover) !important; }
+.md-typeset .demo__resultado .button:focus-visible,
+.md-typeset .demo__resultado .input:focus-visible,
+.md-typeset .demo__resultado .main-nav__link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+.md-typeset .demo__resultado .button--secondary {
+  --button-bg: transparent;
+  --button-bg-hover: color-mix(in oklch, var(--color-primary), transparent 90%);
+  --button-fg: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.md-typeset .demo__resultado .button--danger {
+  --button-bg: var(--color-error);
+  --button-bg-hover: color-mix(in oklch, var(--color-error), black 15%);
+  --button-fg: var(--color-on-error);
+}
+
+/* ---------- Campo ---------- */
+.md-typeset .demo__resultado .field { display: flex; flex-direction: column; gap: var(--space-1); width: 100%; }
+.md-typeset .demo__resultado .field__label { font: var(--font-label); }
+.md-typeset .demo__resultado .field__error { display: none; color: var(--color-error); }
+.md-typeset .demo__resultado .field:has(:user-invalid) .field__error { display: block; }
+.md-typeset .demo__resultado .input {
+  min-height: 2.75em;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-raised);
+  color: var(--color-on-surface);
+  font: inherit;
+}
+.md-typeset .demo__resultado .input:user-invalid { border-color: var(--color-error); border-width: 2px; }
+
+/* ---------- Tarjeta ---------- */
+.md-typeset .demo__resultado .card {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  width: min(100%, 18em);
+  padding: var(--space-4);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-raised);
+}
+.md-typeset .demo__resultado .card__media {
+  display: block; aspect-ratio: 16 / 9; width: 100%;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #99C1F1, #1A5FB4);
+}
+.md-typeset .demo__resultado .card__header { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
+.md-typeset .demo__resultado .card__title { font: var(--font-heading-3); }
+.md-typeset .demo__resultado .card__price { font: var(--font-label); }
+.md-typeset .demo__resultado .card__actions { margin-block-start: auto; }
+.md-typeset .demo__resultado .card--featured { border: 2px solid var(--color-primary); }
+
+/* ---------- Navegación ---------- */
+.md-typeset .demo__resultado .main-nav__list { display: flex; gap: var(--space-6); }
+.md-typeset .demo__resultado .main-nav__link {
+  display: inline-flex; align-items: center; min-height: 2.75em;
+  color: var(--color-on-surface) !important;
+  font: var(--font-label);
+}
+.md-typeset .demo__resultado .main-nav__link:hover { color: var(--color-primary) !important; }
+.md-typeset .demo__resultado .main-nav__link[aria-current="page"] {
+  color: var(--color-primary) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 0.4em !important;
+}
+
+/* ---------- Etiqueta ---------- */
+.md-typeset .demo__resultado .badge {
+  --badge-color: var(--color-primary);
+  display: inline-flex;
+  padding: var(--space-1) var(--space-3);
+  border: 2px solid var(--badge-color);
+  border-radius: var(--radius-full);
+  color: var(--badge-color);
+  font: var(--font-label);
+}
+.md-typeset .demo__resultado .badge--free { --badge-color: var(--color-success); }
+.md-typeset .demo__resultado .badge--full { --badge-color: var(--color-error); }
+
+/* ---------- Diálogo ---------- */
+.md-typeset .demo__resultado .dialog {
+  width: min(100% - 2 * var(--space-4), 28em);
+  padding: var(--space-6);
+  border: none;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-raised);
+  color: var(--color-on-surface);
+  font-size: 0.8rem;
+}
+.md-typeset .demo__resultado .dialog::backdrop { background-color: rgb(0 0 0 / 50%); }
+.md-typeset .demo__resultado .dialog h2 { font: var(--font-heading-2); }
+.md-typeset .demo__resultado .dialog p { margin-block: var(--space-4); }
+.md-typeset .demo__resultado .dialog__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--space-2); }
+
+/* ---------- Aviso ---------- */
+.md-typeset .demo__resultado .alert {
+  --alert-accent: var(--color-primary);
+  width: 100%;
+  padding: var(--space-4);
+  border-inline-start: 4px solid var(--alert-accent);
+  background-color: var(--color-surface-raised);
+}
+.md-typeset .demo__resultado .alert--success { --alert-accent: var(--color-success); }
+.md-typeset .demo__resultado .alert--error { --alert-accent: var(--color-error); }
+
+/* ---------- Enlaces dentro del resultado ----------
+   La web de apuntes da a todos los enlaces color, subrayado y borde con
+   mucha prioridad (.md-typeset a:not(.md-button):link). Aquí se anulan. */
+.md-typeset .demo .demo__resultado a:is(:link, :visited, :hover) {
+  border-bottom: none !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.md-typeset .demo .demo__resultado a.button:is(:link, :visited) {
+  background-color: var(--button-bg) !important;
+  color: var(--button-fg) !important;
+}
+.md-typeset .demo .demo__resultado a.button:hover { background-color: var(--button-bg-hover) !important; }
+.md-typeset .demo .demo__resultado a.main-nav__link:is(:link, :visited) { color: var(--color-on-surface) !important; }
+.md-typeset .demo .demo__resultado a.main-nav__link:hover { color: var(--color-primary) !important; }
+.md-typeset .demo .demo__resultado a.main-nav__link[aria-current="page"] {
+  color: var(--color-primary) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 0.4em !important;
+}
+
+/* ---------- Encabezados dentro del resultado ----------
+   La web de apuntes pinta los h2 y h3 con banda rosa, márgenes y su propia
+   tipografía, todo con !important. Aquí se devuelven al componente. */
+.md-typeset .demo .demo__resultado :is(h2, h3) {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  color: var(--color-on-surface) !important;
+  font-weight: 700 !important;
+}

@@ -32,6 +32,7 @@ theme:
 extra_css:
   - https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap
   - stylesheets/neobrutal.css
+  - stylesheets/demo-componentes.css
 
 plugins:
   - search:
