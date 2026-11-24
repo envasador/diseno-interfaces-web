@@ -38,9 +38,9 @@ Activa **GitHub Pages** desde el principio y pon la dirección al principio del 
 
 ### Paso 2. Escribe el HTML
 
-Escribe el HTML de todas las pantallas (las del happy path y las que necesiten las funcionalidades de DWEC), sin CSS: zonas semánticas, encabezados sin saltos y el elemento correcto para cada cosa (`<a>` si lleva a otra pantalla, `<button>` si hace algo). Valídalo en el W3C.
+Escribe el HTML de todas las pantallas (las del happy path y las que necesiten las funcionalidades de DWEC) Valídalo en el W3C.
 
-Las pantallas o partes que se generan con JavaScript en el cliente (un listado de tarjetas, un aviso, un diálogo) **tienen que respetar la misma semántica**: el HTML que crea el script debe ser el que escribirías a mano, con sus zonas, sus encabezados y el elemento correcto para cada cosa. Para validarlo, abre la pantalla en el navegador, copia el HTML ya generado desde el inspector (clic derecho en `<html>` y *Copiar > Copiar outerHTML*) y pásalo por el validador del W3C con la opción de entrada directa.
+Las pantallas o partes que se generan con JavaScript en el cliente (un listado de tarjetas, un aviso, un diálogo) **tienen que respetar la misma semántica**: el HTML que crea el script debe ser el que escribirías a mano, con sus zonas, sus encabezados y el elemento correcto para cada cosa.
 
 ### Paso 3. Lleva los tokens al código
 
@@ -52,21 +52,20 @@ En este paso es normal usar una IA o una herramienta que extraiga las variables 
 
 Escribe el reset, los estilos de las etiquetas y los objetos (contenedor, pila, cuadrícula).
 
-- **Reset y etiquetas:** el reset deja el punto de partida igual en todos los navegadores, y los estilos de las etiquetas (`body`, `h1`, `a`...) usan tus tokens. En estas dos capas **no hay ninguna clase**.
-- **Objetos:** solo deciden dónde van las cosas y cuánto espacio hay entre ellas, sin color, bordes ni tipografía. Se nombran con BEM, como cualquier otra clase (`.container`, `.stack`, `.grid`).
+- **Reset y etiquetas:** el reset deja el estilo a cero, es decir como un punto de partida que es igual en todos los navegadores.
+- **Objetos:** Generalmente son cosas genéricas, solo deciden dónde van las cosas y cuánto espacio hay entre ellas, sin añadirle color, bordes ni tipografía. La tendrás que nombrar con BEM, como cualquier otra clase del proyecto. (`.container`, `.stack`, `.grid`).
 
 ### Paso 5. Construye los componentes
 
-Construye los componentes de tu aplicación (botones, campos, tarjetas, navegación, etiquetas, diálogos, avisos), cada uno en su parcial, con los mismos nombres que en Figma y con **todos sus estados**, incluido el foco del teclado.
+Construye los componentes de tu aplicación (botones, campos, tarjetas, navegación, etiquetas, diálogos, avisos), cada uno en su parcial, con los mismos nombres que en Figma y con **todos sus estados**, incluido el focus del teclado.
 
-- **Variantes y estados:** cada variante cambia solo sus tokens de componente (como en el botón del apartado 7), y los estados incluyen hover, foco, desactivado y error.
-- **El elemento correcto:** `<button>`, `<dialog>`, `<nav>`, `<label>`... El apartado 7 te sirve de referencia.
+- **Variantes y estados:** cada variante cambia solo sus tokens de componente (como en el botón del apartado 7), y los estados incluyen hover, focus, desactivado y error.
 
 Reúnelos en `componentes.html`, con todas sus variantes y estados en los dos modos.
 
 ### Paso 6. Maqueta las pantallas
 
-Monta las pantallas solo con tus objetos y componentes, usando Flexbox y Grid. Si te falta algo, créalo como componente o como variante (y añádelo también en Figma).
+Monta las pantallas solo con tus objetos y componentes, usando Flexbox y Grid. Si te falta algo, créalo como componente o como variante.
 
 La aplicación tiene que adaptarse a los anchos de pantalla de tus personas, con los breakpoints en `rem`. Usa al menos una *container query* en un componente que aparezca en sitios de distinto ancho.
 
@@ -83,9 +82,9 @@ Revisa todas las pantallas en modo oscuro (puedes simularlo desde el panel Rende
 
 ---
 
-## Qué entregas
+## Qué tienes que entregar.
 
-En el repositorio y en GitHub Pages: la aplicación, el código, `componentes.html`, las imágenes, el `CHANGELOG.md` con cada uso de IA y el `ORBITA3.md`.
+El repositorio y la aplicación desplegada en GitHub Pages: la aplicación, el código, `componentes.html`, las imágenes, el `CHANGELOG.md` con cada uso de IA y el `ORBITA3.md`.
 
 La corrección empieza por el **`ORBITA3.md`**, enlazado desde el `README.md`. Lo que no esté en él ni se encuentre siguiendo sus indicaciones se considera no entregado. Usa esta plantilla:
 
