@@ -19,7 +19,9 @@ scss/
 └── components/_button.scss            ← el botón (una pieza de Figma)
 ```
 
-**1. Settings: el dato.**
+### 1. Guarda el color
+
+El color es un dato del sistema, así que va en `settings` como propiedad personalizada. Cualquier otro fichero lo usará con `var()`.
 
 ```scss
 // settings/_custom-properties.scss
@@ -28,7 +30,9 @@ scss/
 }
 ```
 
-**2. Tools: lo que se reutiliza.** Un mixin de Sass guarda el anillo de foco para usarlo en cualquier componente:
+### 2. Crea el anillo de foco
+
+El anillo de foco lo van a necesitar muchos componentes, así que se escribe una vez como mixin en `tools` y se reutiliza.
 
 ```scss
 // tools/_mixins.scss
@@ -38,7 +42,9 @@ scss/
 }
 ```
 
-**3. Components: la pieza.** Aquí se juntan las tres herramientas: `@use` carga el mixin, la anidación con `&` forma los nombres de BEM, y el fichero está en la carpeta de componentes:
+### 3. Escribe el botón
+
+El botón es una pieza de tu Figma, así que va en `components`. Aquí se juntan las tres herramientas: `@use` carga el mixin, y la anidación con `&` forma los nombres de BEM.
 
 ```scss
 // components/_button.scss
@@ -54,14 +60,18 @@ scss/
 }
 ```
 
-**4. El HTML** usa los nombres de BEM: la clase base y, si hace falta, el modificador.
+### 4. Úsalo en el HTML
+
+El HTML solo necesita los nombres de BEM: la clase base y, si hace falta, el modificador.
 
 ```html
 <button class="button" type="submit">Reservar</button>
 <button class="button button--secondary" type="button">Ver más horas</button>
 ```
 
-**Y esto es lo que llega al navegador.** Sass ha convertido el bloque en selectores de **una sola clase**, con la misma especificidad:
+### 5. Lo que llega al navegador
+
+Sass convierte el bloque en selectores de **una sola clase**, todos con la misma especificidad.
 
 ```css
 .button { padding: var(--space-3) var(--space-6); background-color: var(--color-primary); color: var(--color-on-primary); }
